@@ -1,44 +1,44 @@
 # New Zealand Tech-for-Good Guide
 
-This is a living directory of New Zealand organisations, projects, networks, and people who use technology for public good — open data, civic tech, climate tech, accessibility, Māori data sovereignty, humanitarian response, and more.
+This is a living directory of New Zealand organisations, projects, networks, and people who use technology for public good: open data, civic tech, climate tech, accessibility, Māori data sovereignty, humanitarian response, and more.
 
 **Who this is for:** people looking for NZ tech-for-good groups to work with, volunteer with, learn from, or connect to each other.
 
-**How this guide is built:** it's generated from the YAML entries in `data/entries/`. Accuracy comes first — an entry is only added once its website (or another reliable source) confirms the details. This is a work in progress. It will grow, and some links or details may go out of date over time. See [CONTRIBUTING.md](CONTRIBUTING.md) to add or fix an entry.
+**How this guide is built:** it's generated from the YAML entries in `data/entries/`. Accuracy comes first: an entry is only added once its website (or another reliable source) confirms the details. This is a work in progress. It will grow, and some links or details may go out of date over time. See [CONTRIBUTING.md](CONTRIBUTING.md) to add or fix an entry.
 
 ## How to read this
 
-Entries are grouped by **domain** — the area of public good the organisation works in. Each entry is a short, plain-language block: what the organisation does, where it's based, its links, and its tags. Where two entries are linked (for example, one runs on another's data, or they grew out of the same network), that connection is shown as a line in the diagrams below. No connection is invented — a line only appears if it's recorded in the underlying data.
+Entries are grouped by **domain**: the area of public good the organisation works in. Each entry is a short, plain-language block: what the organisation does, where it's based, its links, and its tags. Where two entries are linked (for example, one runs on another's data, or they grew out of the same network), that connection is shown as a line in the diagrams below. No connection is invented: a line only appears if it's recorded in the underlying data.
 
-**Legend — domains in this guide:**
+**Legend: domains in this guide**
 
-- **Disability & Accessibility Tech** (disability & accessibility tech) — 5 entries
-- **Human Rights Tech** (human-rights tech) — 4 entries
-- **Tech Ethics & Responsible AI** (tech-ethics / responsible-AI) — 1 entry
-- **Legal Aid & Justice Tech** (legal-aid / justice tech) — 7 entries
-- **Refugee & Migrant Support Tech** (refugee / migrant support tech) — 6 entries
-- **Green & Climate Tech** (green / climate-tech) — 11 entries
-- **GovTech** (govtech) — 4 entries
-- **Open Data** (open-data) — 24 entries
-- **Makerspaces & Hackerspaces** (makerspaces / hackerspaces) — 2 entries
-- **Environmental Citizen Science** (environmental citizen-science) — 3 entries
-- **Worker & Platform Co-ops** (worker-coop / platform-coop tech) — 4 entries
-- **Research & Education Tech** (research / education tech) — 6 entries
-- **Mental Health Tech** (mental-health tech) — 2 entries
-- **Nonprofit & NGO Tech** (nonprofit / NGO tech) — 4 entries
-- **Housing & Homelessness Tech** (housing / homelessness tech) — 1 entry
-- **Iwi & Māori Tech Initiatives** (iwi / Māori tech initiatives) — 4 entries
-- **Food Rescue & Food Security Tech** (food-rescue / food-security tech) — 3 entries
-- **Crisis & Humanitarian Tech** (crisis / humanitarian-tech) — 4 entries
-- **Volunteering & Giving Platforms** (volunteering / giving platforms) — 1 entry
-- **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good) — 2 entries
-- **Civic Tech** (civic-tech) — 5 entries
-- **Health Tech for Good / Hauora Māori** (health tech for good / hauora Māori) — 1 entry
-- **Disability Employment Tech** (disability employment tech) — 2 entries
-- **Digital Inclusion** (digital-inclusion) — 1 entry
-- **Education Equity Tech** (education equity tech) — 2 entries
-- **Journalism & Media Tech** (journalism / media-tech) — 3 entries
-- **Māori Data Sovereignty** (Māori data sovereignty / indigenous data) — 5 entries
+- **Disability & Accessibility Tech** (disability & accessibility tech): 5 entries
+- **Human Rights Tech** (human-rights tech): 4 entries
+- **Tech Ethics & Responsible AI** (tech-ethics / responsible-AI): 1 entry
+- **Legal Aid & Justice Tech** (legal-aid / justice tech): 7 entries
+- **Refugee & Migrant Support Tech** (refugee / migrant support tech): 6 entries
+- **Green & Climate Tech** (green / climate-tech): 11 entries
+- **GovTech** (govtech): 4 entries
+- **Open Data** (open-data): 24 entries
+- **Makerspaces & Hackerspaces** (makerspaces / hackerspaces): 2 entries
+- **Environmental Citizen Science** (environmental citizen-science): 3 entries
+- **Worker & Platform Co-ops** (worker-coop / platform-coop tech): 4 entries
+- **Research & Education Tech** (research / education tech): 6 entries
+- **Mental Health Tech** (mental-health tech): 2 entries
+- **Nonprofit & NGO Tech** (nonprofit / NGO tech): 4 entries
+- **Housing & Homelessness Tech** (housing / homelessness tech): 1 entry
+- **Iwi & Māori Tech Initiatives** (iwi / Māori tech initiatives): 4 entries
+- **Food Rescue & Food Security Tech** (food-rescue / food-security tech): 3 entries
+- **Crisis & Humanitarian Tech** (crisis / humanitarian-tech): 4 entries
+- **Volunteering & Giving Platforms** (volunteering / giving platforms): 1 entry
+- **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good): 2 entries
+- **Civic Tech** (civic-tech): 5 entries
+- **Health Tech for Good / Hauora Māori** (health tech for good / hauora Māori): 1 entry
+- **Disability Employment Tech** (disability employment tech): 2 entries
+- **Digital Inclusion** (digital-inclusion): 1 entry
+- **Education Equity Tech** (education equity tech): 2 entries
+- **Journalism & Media Tech** (journalism / media-tech): 3 entries
+- **Māori Data Sovereignty** (Māori data sovereignty / indigenous data): 5 entries
 
 **Total entries: 117, across 27 domains.**
 
@@ -743,7 +743,7 @@ _24 entries in this domain._
 
 **DigitalNZ**
 
-- DigitalNZ, run by the National Library of New Zealand, is a search service and open application programming interface (API) that brings together more than 30 million digitised items — photos, articles, and records — from over 200 New Zealand museums, libraries, and archives into one searchable place.
+- DigitalNZ, run by the National Library of New Zealand, is a search service and open application programming interface (API) that brings together more than 30 million digitised items (photos, articles, and records) from over 200 New Zealand museums, libraries, and archives into one searchable place.
 - Region: national
 - Links: [Website](https://digitalnz.org) · [GitHub](https://github.com/DigitalNZ)
 - Tags: open data, cultural heritage, API, aggregator, open source
@@ -967,7 +967,7 @@ _4 entries in this domain._
 
 **Loomio**
 
-- Loomio is a Wellington-based worker-owned cooperative that builds open-source software helping groups — from community organisations to unions — discuss a topic and reach a collective decision online.
+- Loomio is a Wellington-based worker-owned cooperative that builds open-source software helping groups, from community organisations to unions, discuss a topic and reach a collective decision online.
 - Region: Wellington
 - Links: [Website](https://www.loomio.com) · [GitHub](https://github.com/loomio)
 - Tags: worker cooperative, decision-making, open source, civic tech
@@ -1338,7 +1338,7 @@ _3 entries in this domain._
 
 **NZ On Air — Public Interest Journalism Fund**
 
-- The Public Interest Journalism Fund was a NZ$55 million government fund, run through NZ On Air, that supported New Zealand news organisations — including small, Māori, Pacific, and ethnic media — to keep producing investigative and community journalism.
+- The Public Interest Journalism Fund was a NZ$55 million government fund, run through NZ On Air, that supported New Zealand news organisations (including small, Māori, Pacific, and ethnic media) to keep producing investigative and community journalism.
 - Region: national
 - Links: [Website](https://www.nzonair.govt.nz/news/government-backs-sustainable-public-interest-journalism/)
 - Tags: journalism funding, government agency, media innovation, public interest
@@ -1358,7 +1358,7 @@ _5 entries in this domain._
 
 **Ngā Pae o te Māramatanga**
 
-- Ngā Pae o te Māramatanga is Aotearoa's only Māori Centre of Research Excellence, funding and coordinating research across universities to grow Māori scholarship and support thriving Māori futures.
+- Ngā Pae o te Māramatanga is Aotearoa's only Māori Centre of Research Excellence, funding and coordinating research across universities to grow Māori scholarship and support Māori futures.
 - Region: Auckland
 - Links: [Website](https://www.maramatanga.ac.nz)
 - Tags: Māori research, Centre of Research Excellence, indigenous scholarship, University of Auckland

@@ -26,20 +26,20 @@ humanitarian response, and more. Each entry is a short, plain-language
 description with links, verified against a live source.
 
 It's for people looking for NZ tech-for-good groups to work with, volunteer
-with, or learn from — and for anyone mapping out who's doing what in this
-space.
+with, or learn from. It's also for anyone mapping out who's doing what in
+this space.
 
-"Tech-for-good" here means technology used for a public benefit —
+"Tech-for-good" here means technology used for a public benefit:
 not-for-profit, government, community, or mission-led work, rather than
 purely commercial products. Aotearoa New Zealand only.
 
 ## Browse it now
 
-**🌐 [Browse the live website](https://olitreadwell.github.io/nz-tech-for-good/)** — searchable, filter by
+**🌐 [Browse the live website](https://olitreadwell.github.io/nz-tech-for-good/)**: searchable, filter by
 domain, region, or tag, with a page for every organisation and ecosystem
 diagrams. (Deploys from `main`; give it a minute after a change.)
 
-**📖 [Or read the full directory in GUIDE.md](GUIDE.md)** — every entry, grouped
+**📖 [Or read the full directory in GUIDE.md](GUIDE.md)**: every entry, grouped
 by domain, with a short description, region, links, tags, and diagrams
 showing how entries connect to each other.
 
@@ -82,35 +82,35 @@ See the full breakdown, with entries listed under each domain, in
 
 ### A couple of example entries
 
-**data.govt.nz** (Open Data) — the New Zealand government's central website
+**data.govt.nz** (Open Data): the New Zealand government's central website
 for finding and downloading open datasets published by government agencies,
 covering topics like health, education, transport, and the environment.
 
-**DigitalNZ** (Open Data) — run by the National Library of New Zealand, a
+**DigitalNZ** (Open Data): run by the National Library of New Zealand, a
 search service and open API that brings together more than 30 million
 digitised items from over 200 NZ museums, libraries, and archives into one
 searchable place.
 
-**🌐 [Browse the live website](https://olitreadwell.github.io/nz-tech-for-good/)** — the full directory as a
+**🌐 [Browse the live website](https://olitreadwell.github.io/nz-tech-for-good/)**: the full directory as a
 searchable, filterable site.
 
 ## Add an organisation / contribute
 
-Know a group that should be listed? There are two ways to add one — no
+Know a group that should be listed? There are two ways to add one, no
 coding needed for the first:
 
-1. **[Suggest an entry](../../issues/new?template=add-entry.yml)** — fill in
+1. **[Suggest an entry](../../issues/new?template=add-entry.yml)**: fill in
    a short issue form with what you know. Someone will verify it and add it.
-2. **Open a pull request** — copy `data/entry.template.yaml` to
+2. **Open a pull request**: copy `data/entry.template.yaml` to
    `data/entries/<slug>.yaml`, fill it in, and submit. Full steps are in
    [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Every entry must be verified against a live source before it's added.
-**Never invent a fact** — leave a field empty rather than guess.
+**Never invent a fact**: leave a field empty rather than guess.
 
 ## Use the data
 
-The raw data lives in [`data/entries/`](data/entries/) — one YAML file per
+The raw data lives in [`data/entries/`](data/entries/): one YAML file per
 entry, shaped by [`schema/entry.schema.json`](schema/entry.schema.json).
 [`GUIDE.md`](GUIDE.md) is generated from these files, so if you want the
 structured version for your own tooling (a search index, a map, etc.), read
@@ -118,7 +118,7 @@ the YAML directly.
 
 - **Code** (scripts, schema, tooling) is [MIT licensed](LICENSE).
 - **Data** (the directory entries) is
-  [CC-BY-SA-4.0 licensed](LICENSE-DATA.md) — reuse and share it, including
+  [CC-BY-SA-4.0 licensed](LICENSE-DATA.md): reuse and share it, including
   commercially, as long as you credit this project and share alike.
 
 ### Machine-readable data
@@ -126,7 +126,7 @@ the YAML directly.
 If you'd rather not parse YAML, the whole directory is also exported as
 [`data/exports/entries.json`](data/exports/entries.json) (one JSON object
 per entry) and [`data/exports/entries.csv`](data/exports/entries.csv) (the
-same data flattened to columns) — both regenerated from `data/entries/` by
+same data flattened to columns), both regenerated from `data/entries/` by
 `scripts/export.py` and kept in sync by CI.
 
 ## How it's maintained
@@ -139,7 +139,7 @@ same data flattened to columns) — both regenerated from `data/entries/` by
 - Accuracy comes first: every entry is verified against a live source, and
   nothing is invented. See [CONTRIBUTING.md](CONTRIBUTING.md) for the rules.
 - This directory lists **public professional information only**. It does
-  not currently list any named people — see
+  not currently list any named people: see
   [docs/known-gaps.md](docs/known-gaps.md) for why, and how to help close
   that gap.
 
@@ -148,21 +148,21 @@ same data flattened to columns) — both regenerated from `data/entries/` by
 Other Aotearoa New Zealand places to find open data, tech-for-good, and
 accessibility work. Every link below was checked and resolves:
 
-- **[data.govt.nz](https://data.govt.nz)** — the New Zealand government's
+- **[data.govt.nz](https://data.govt.nz)** is the New Zealand government's
   open data catalogue: public datasets from across government.
-- **[Stats NZ / Tatauranga Aotearoa](https://www.stats.govt.nz)** — the
+- **[Stats NZ / Tatauranga Aotearoa](https://www.stats.govt.nz)** is the
   official statistics agency; source data on people, economy, and environment.
-- **[LINZ Data Service](https://data.linz.govt.nz)** — Land Information New
+- **[LINZ Data Service](https://data.linz.govt.nz)** is Land Information New
   Zealand's open geospatial, land, and mapping data.
-- **[Figure.NZ](https://figure.nz)** — a charity that turns New Zealand data
+- **[Figure.NZ](https://figure.nz)** is a charity that turns New Zealand data
   into free, easy-to-read charts so more people can understand it.
-- **[Te Mana Raraunga](https://www.temanararaunga.maori.nz)** — the Māori Data
+- **[Te Mana Raraunga](https://www.temanararaunga.maori.nz)** is the Māori Data
   Sovereignty Network, advocating for Māori rights and interests in data.
-- **[Digital.govt.nz — accessibility](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/accessibility/)**
-  — the New Zealand Government Web Accessibility Standard and related guidance.
-- **[New Zealand Open Source Society](https://nzoss.nz)** — a community group
+- **[Digital.govt.nz: accessibility](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/accessibility/)**
+  is the New Zealand Government Web Accessibility Standard and related guidance.
+- **[New Zealand Open Source Society](https://nzoss.nz)** is a community group
   promoting open source software and open standards in New Zealand.
-- **[IT Professionals NZ](https://itp.nz)** — a professional body and community
+- **[IT Professionals NZ](https://itp.nz)** is a professional body and community
   for people working in tech across New Zealand.
 
 Know a directory, registry, or community hub that belongs here? Please
@@ -184,7 +184,7 @@ python3 scripts/linkcheck.py     # optional: check all links for dead ones
 ```
 
 Run both `validate.py` and `build_guide.py` after adding or editing an
-entry, and commit the regenerated `GUIDE.md` — CI fails a PR if it's out of
+entry, and commit the regenerated `GUIDE.md`. CI fails a PR if it's out of
 date. Full contribution steps, including commit message style, are in
 [CONTRIBUTING.md](CONTRIBUTING.md).
 

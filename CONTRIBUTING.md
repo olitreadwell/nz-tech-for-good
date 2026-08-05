@@ -29,7 +29,7 @@ Open the new file and fill in each field. Required fields are `name`,
 
 **Domain:** reuse an existing domain from
 [`schema/entry.schema.json`](schema/entry.schema.json) where it fits. Only
-propose a new domain if none of the existing ones apply — and if you do,
+propose a new domain if none of the existing ones apply, and if you do,
 you'll need to add it to the `enum` list in the schema too.
 
 ### 3. Verify, don't invent
@@ -42,8 +42,8 @@ in the `source` field, e.g.:
 source: "orgname.nz homepage, verified 2026-08-05"
 ```
 
-If you don't know something — a founding year, whether they take
-contributors, a careers page — leave it `null` or an empty string. Do not
+If you don't know something (a founding year, whether they take
+contributors, a careers page), leave it `null` or an empty string. Do not
 guess. An empty field is honest; a guessed field is not.
 
 ### 4. Validate locally
@@ -76,7 +76,7 @@ Same flow: edit the YAML file, update `last_verified` to today's date, run
 
 ## People and privacy
 
-Only include public professional information — something the organisation
+Only include public professional information: something the organisation
 or person has already made public (a company LinkedIn page, a named role on
 a website). Don't add private contact details, personal social accounts, or
 anything not already public.
@@ -84,6 +84,13 @@ anything not already public.
 If someone listed in this directory asks for their information to be
 corrected or removed, open an issue and it will be actioned promptly. This
 takes priority over completeness.
+
+## Writing style
+
+The `what:` field, and any other prose you add or edit (README, this file,
+docs), follows the rules in [docs/STYLE.md](STYLE.md): no em dashes, no
+banned puffery words. `python3 scripts/stylecheck.py` checks this and runs
+in CI.
 
 ## Running the scripts
 
@@ -95,6 +102,7 @@ Install both from `requirements.txt`:
 pip install -r requirements.txt
 python3 scripts/validate.py
 python3 scripts/build_guide.py
+python3 scripts/stylecheck.py
 python3 scripts/linkcheck.py   # optional: checks all links for dead ones
 ```
 
@@ -113,5 +121,5 @@ feat: add Te Hiku Media entry
   initiatives domain, verified against tehiku.nz.
 ```
 
-Don't add a `Co-Authored-By` trailer for AI tools — the tool is a
+Don't add a `Co-Authored-By` trailer for AI tools: the tool is a
 facilitator, not a co-author.
