@@ -4,3 +4,9 @@ dist/
 .astro/
 .DS_Store
 npm-debug.log*
+
+# Test tooling output
+coverage/
+.features-gen/
+playwright-report/
+test-results/

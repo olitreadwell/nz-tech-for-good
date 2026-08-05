@@ -1,0 +1,7 @@
+name: Civic Data Lab
+domain: civic-tech
+what: A fixture organisation used for testing, in the same domain as Civic Watch.
+region: Auckland
+website: ''
+related_to:
+- Civic Watch

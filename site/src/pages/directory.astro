@@ -95,6 +95,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     <a href={import.meta.env.BASE_URL + "regions/"}>region</a> instead.
   </p>
 
+  <h2 class="visually-hidden">Organisations</h2>
   <ul class="grid" id="entry-list">
     {entries.map((entry) => <EntryCard entry={entry} />)}
   </ul>
