@@ -35,7 +35,11 @@ purely commercial products. Aotearoa New Zealand only.
 
 ## Browse it now
 
-**📖 [Browse the full directory in GUIDE.md](GUIDE.md)** — every entry, grouped
+**🌐 [Browse the live website](https://olitreadwell.github.io/nz-tech-for-good/)** — searchable, filter by
+domain, region, or tag, with a page for every organisation and ecosystem
+diagrams. (Deploys from `main`; give it a minute after a change.)
+
+**📖 [Or read the full directory in GUIDE.md](GUIDE.md)** — every entry, grouped
 by domain, with a short description, region, links, tags, and diagrams
 showing how entries connect to each other.
 
@@ -87,8 +91,8 @@ search service and open API that brings together more than 30 million
 digitised items from over 200 NZ museums, libraries, and archives into one
 searchable place.
 
-_TODO: once a browsable GitHub Pages site exists for this directory
-(tracked in [docs/roadmap.md](docs/roadmap.md)), link it here._
+**🌐 [Browse the live website](https://olitreadwell.github.io/nz-tech-for-good/)** — the full directory as a
+searchable, filterable site.
 
 ## Add an organisation / contribute
 
