@@ -1,0 +1,25 @@
+name: Be. Lab
+domain: disability & accessibility tech
+what: Be. Lab (formerly Be. Accessible) is a New Zealand organisation, launched in 2011, that helps businesses
+  make their websites, apps, and workplaces accessible through digital accessibility assessments, training,
+  and consulting.
+region: national
+website: https://www.belab.co.nz
+github: ''
+linkedin_org: https://nz.linkedin.com/company/belabnz
+linkedin_people: []
+tags:
+- accessibility
+- digital accessibility
+- consulting
+- disability employment
+related_to:
+- Blind Low Vision NZ
+- Access Matters Aotearoa
+source: web search of belab.co.nz About Us, Our Services, and Digital Accessibility Assessments pages;
+  direct fetch of the site returned a repeated TLS/SSL handshake error rather than real content, but the
+  domain is confirmed live and returning real content indexed by search engines
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

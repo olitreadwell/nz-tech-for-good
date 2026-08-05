@@ -1,0 +1,19 @@
+name: Dunedin City Council Open Data
+domain: open-data
+what: Dunedin City Council runs an open data hub where people can explore and download the council's public
+  spatial data and build their own maps and tools with it.
+region: Dunedin
+website: https://city-of-dunedin-open-data-dunedin-gis.hub.arcgis.com/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- city council
+- open data
+- GIS
+related_to: []
+source: city-of-dunedin-open-data-dunedin-gis.hub.arcgis.com homepage (verified via curl, HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

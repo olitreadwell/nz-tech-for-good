@@ -1,0 +1,74 @@
+# Template for a new directory entry.
+#
+# Copy this file to data/entries/<slug>.yaml, where <slug> is the
+# organisation's name in lowercase with hyphens instead of spaces
+# (drop macrons in the filename only — keep them in the content below).
+# Example: "Te Hiku Media" -> data/entries/te-hiku-media.yaml
+#
+# Fill in every field marked required. Leave optional fields as null,
+# empty string, or empty list if you don't have a verified value —
+# never guess or invent a value.
+#
+# Once filled in, run `python3 scripts/validate.py` to check it against
+# schema/entry.schema.json, then `python3 scripts/build_guide.py` to
+# regenerate GUIDE.md. See CONTRIBUTING.md for the full walkthrough.
+
+# Required. The organisation, project, or network's name.
+name: ""
+
+# Required. One of the domains listed in schema/entry.schema.json.
+# Reuse an existing domain where it fits — only add a new one if none fit.
+domain: ""
+
+# Required. One or two plain-language sentences: what it does, why it
+# matters. Write for someone who has never heard of it.
+what: ""
+
+# Required. The NZ region it's based in (e.g. "Auckland", "Wellington"),
+# or "national" if it operates across the country.
+region: ""
+
+# Its main website URL. Leave as an empty string if it doesn't have one.
+website: ""
+
+# Its GitHub org/repo URL. Leave as an empty string if none.
+github: ""
+
+# Its LinkedIn company page URL. Leave as an empty string if none.
+linkedin_org: ""
+
+# Publicly known people connected to this entry, if verified. Usually
+# leave this as an empty list — this is a known gap in the directory.
+linkedin_people: []
+# linkedin_people:
+#   - name: "Jane Doe"
+#     role: "Founder"
+#     linkedin_url: "https://linkedin.com/in/janedoe"
+
+# A short list of descriptive tags, lowercase, e.g. ["open data", "civic tech"].
+tags: []
+
+# Other entries' exact `name` values this one is meaningfully connected
+# to — for example, it runs on another entry's data, or grew out of the
+# same network. Only include real, verifiable connections.
+related_to: []
+
+# Required. How you verified this entry — which page you checked, and
+# how (e.g. "orgname.nz homepage, verified 2026-08-05").
+source: ""
+
+# Optional. The year the organisation or project was founded, if you
+# have verified it. Leave as null if unverified — do not guess.
+founding_year: null
+
+# Optional. Whether the organisation is known to take outside
+# contributors or volunteers. Leave as null if unverified.
+takes_contributors: null
+
+# Optional. A careers or volunteering page URL. Leave as an empty
+# string if none on file.
+careers_url: ""
+
+# The date (YYYY-MM-DD) you last checked these details against a live
+# source. Update this whenever you re-verify an existing entry.
+last_verified: ""

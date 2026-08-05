@@ -1,0 +1,20 @@
+name: Christchurch City Council Open Data Portal
+domain: open-data
+what: Christchurch City Council's Spatial Open Data Portal publishes public datasets about council assets,
+  infrastructure, and planning rules, so contractors and residents can find authoritative maps of the
+  city.
+region: Christchurch
+website: https://opendata-christchurchcity.hub.arcgis.com/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- city council
+- open data
+- GIS
+related_to: []
+source: opendata-christchurchcity.hub.arcgis.com homepage (verified via curl, HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

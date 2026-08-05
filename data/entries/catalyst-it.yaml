@@ -1,0 +1,24 @@
+name: Catalyst IT
+domain: research / education tech
+what: Catalyst IT is a New Zealand-owned open-source software company, founded in Wellington in 1997,
+  that builds and supports open-source systems for education (such as Moodle) and libraries (such as Koha),
+  and does significant work for the public sector.
+region: Wellington
+website: https://www.catalyst.net.nz
+github: ''
+linkedin_org: https://nz.linkedin.com/company/catalyst-it-limited
+linkedin_people: []
+tags:
+- open source
+- education technology
+- library systems
+- government contractor
+related_to:
+- Digital.govt.nz
+source: web search of catalyst.net.nz official pages (about-us, our-history, government-and-public-sector);
+  direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is
+  confirmed live and returning real content indexed by search engines
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

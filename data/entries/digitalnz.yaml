@@ -1,0 +1,24 @@
+name: DigitalNZ
+domain: open-data
+what: DigitalNZ, run by the National Library of New Zealand, is a search service and open application
+  programming interface (API) that brings together more than 30 million digitised items — photos, articles,
+  and records — from over 200 New Zealand museums, libraries, and archives into one searchable place.
+region: national
+website: https://digitalnz.org
+github: https://github.com/DigitalNZ
+linkedin_org: ''
+linkedin_people: []
+tags:
+- open data
+- cultural heritage
+- API
+- aggregator
+- open source
+related_to:
+- data.govt.nz
+- GovHack Aotearoa
+source: digitalnz.org and github.com/DigitalNZ (both verified via WebFetch)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

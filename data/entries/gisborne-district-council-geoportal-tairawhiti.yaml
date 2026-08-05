@@ -1,0 +1,19 @@
+name: Gisborne District Council Geoportal (Tairāwhiti)
+domain: open-data
+what: Gisborne District Council's Geoportal Data Hub lets people explore and download public spatial data
+  for the Tairāwhiti (Gisborne) region, like parks, public toilets, and sites of geological significance.
+region: Gisborne
+website: https://geoportal-gizzy.opendata.arcgis.com/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- district council
+- open data
+- GIS
+related_to: []
+source: geoportal-gizzy.opendata.arcgis.com homepage (verified via curl, HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

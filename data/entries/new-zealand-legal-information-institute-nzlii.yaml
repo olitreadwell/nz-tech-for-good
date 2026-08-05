@@ -1,0 +1,24 @@
+name: New Zealand Legal Information Institute (NZLII)
+domain: legal-aid / justice tech
+what: The New Zealand Legal Information Institute is a free website, run by the law faculties of Otago,
+  Canterbury, and Victoria University of Wellington, that gives anyone free access to New Zealand court
+  decisions, legislation, and law journals that would otherwise cost money to search.
+region: national
+website: https://www.nzlii.org/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- legal information
+- open access
+- case law
+- university
+related_to:
+- OpenLaw NZ
+- Community Law Centres o Aotearoa
+source: nzlii.org returned an HTTP 403 from the site's own bot-protection when checked directly, but its
+  existence and content are corroborated by Wikipedia and lawfoundation.org.nz, both found via web search
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

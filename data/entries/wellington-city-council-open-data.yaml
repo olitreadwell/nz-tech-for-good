@@ -1,0 +1,19 @@
+name: Wellington City Council Open Data
+domain: open-data
+what: Wellington City Council has published open geospatial data since 2010, including aerial photos,
+  historic maps, building footprints, and hazard information, free for anyone to download and reuse.
+region: Wellington
+website: https://data-wcc.opendata.arcgis.com/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- city council
+- open data
+- GIS
+related_to: []
+source: data-wcc.opendata.arcgis.com homepage (verified via curl, HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

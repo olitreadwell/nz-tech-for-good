@@ -1,0 +1,24 @@
+name: Kura Matahuna Unleash Space Makerspace (University of Auckland)
+domain: makerspaces / hackerspaces
+what: Kura Matahuna Unleash Space Makerspace is a free workshop at the University of Auckland, open to
+  all students and staff, with 3D printers, laser cutters, and electronics gear, where people learn to
+  build and prototype their own projects after safety training.
+region: Auckland
+website: https://www.auckland.ac.nz/en/cie/locations/unleash-space/makerspace.html
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- makerspace
+- university
+- digital fabrication
+- prototyping
+- innovation hub
+related_to:
+- Hackland
+- Auckland Library of Tools
+source: auckland.ac.nz Unleash Space makerspace page (verified via curl and WebFetch, HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

@@ -1,0 +1,24 @@
+name: Trap.NZ
+domain: green / climate-tech
+what: Trap.NZ is a free app built by New Zealand company Groundtruth, with support from WWF-New Zealand,
+  that lets community volunteers record and map where they trap pest animals like rats and possums, so
+  more than 9,000 conservation groups can see where pests are being caught across the country.
+region: national
+website: https://trap.nz
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- predator control
+- conservation
+- community science
+- Predator Free 2050
+- mapping
+related_to:
+- The Cacophony Project
+source: trap.nz homepage (verified via curl, HTTP 200); doc.govt.nz and predatorfreenz.org pages describing
+  Trap.NZ found via web search
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

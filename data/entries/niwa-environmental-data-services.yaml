@@ -1,0 +1,23 @@
+name: NIWA Environmental Data Services
+domain: open-data
+what: NIWA, now part of Earth Sciences New Zealand after a 2025 merger with GNS Science, runs online tools
+  like the Hydro Web Portal and National Climate Database, which let people look up New Zealand's river
+  flow, rainfall, and climate data for free.
+region: national
+website: https://niwa.co.nz/environmental-information/environmental-information-services-0
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- climate data
+- water data
+- open data
+- science institute
+related_to:
+- GeoNet
+source: niwa.co.nz/environmental-information/environmental-information-services-0 (verified via curl,
+  HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

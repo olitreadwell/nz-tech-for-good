@@ -1,0 +1,23 @@
+name: Digital Natives Academy
+domain: iwi / Māori tech initiatives
+what: Digital Natives Academy is a Rotorua-based charity, started in 2014, that gives young people, especially
+  Māori rangatahi (youth), free training and access to technology in coding, robotics, animation, and
+  game development, to help them move from using technology to creating it.
+region: Rotorua
+website: https://digitalnatives.academy/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- Māori tech
+- youth technology education
+- digital skills
+- charity
+related_to:
+- Dev Academy Aotearoa
+source: digitalnatives.academy homepage (verified via curl, HTTP 200); web search of digitalnatives.academy
+  and Wikipedia
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

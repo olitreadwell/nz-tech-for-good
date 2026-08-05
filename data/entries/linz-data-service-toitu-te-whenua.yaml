@@ -1,0 +1,24 @@
+name: LINZ Data Service (Toitū Te Whenua)
+domain: open-data
+what: The LINZ Data Service, run by Land Information New Zealand (a government agency, known in Māori
+  as Toitū Te Whenua), gives free open access to New Zealand's land, property, and seabed data, including
+  maps, aerial imagery, and elevation data.
+region: national
+website: https://www.linz.govt.nz/products-services/data/linz-data-service
+github: https://github.com/linz
+linkedin_org: ''
+linkedin_people: []
+tags:
+- open data
+- geospatial
+- government
+- mapping
+- open source
+related_to:
+- data.govt.nz
+- GovHack Aotearoa
+source: linz.govt.nz page and github.com/linz (both verified via WebFetch)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

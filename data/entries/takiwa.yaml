@@ -1,0 +1,24 @@
+name: Takiwā
+domain: iwi / Māori tech initiatives
+what: Takiwā is a New Zealand geospatial mapping platform, running since 2012, that lets Māori landowners,
+  iwi, and other indigenous communities collect and control their own cultural and environmental data
+  on interactive maps, instead of only government agencies holding that data.
+region: national
+website: https://www.takiwa.co/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- Māori tech
+- indigenous data sovereignty
+- geospatial
+- mapping
+- startup
+related_to:
+- Te Kāhui Raraunga
+- Te Mana Raraunga
+source: takiwa.co homepage (verified via curl and WebFetch, HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

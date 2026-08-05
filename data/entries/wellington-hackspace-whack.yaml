@@ -1,0 +1,22 @@
+name: Wellington Hackspace (WHACK)
+domain: civic-tech
+what: WHACK, or Wellington Hackspace, is a member-run community workshop in Wellington where people share
+  tools like 3D printers, laser cutters, and CNC machines, and learn making and electronics skills from
+  each other.
+region: Wellington
+website: https://whack.nz
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- makerspace
+- hackerspace
+- community tech space
+- volunteer-run
+related_to:
+- Hackland
+source: whack.nz homepage (verified via curl, HTTP 200); whack.nz/spaces page found via web search
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

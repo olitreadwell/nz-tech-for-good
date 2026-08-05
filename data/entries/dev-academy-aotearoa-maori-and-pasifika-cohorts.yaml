@@ -1,0 +1,23 @@
+name: Dev Academy Aotearoa (Māori and Pasifika cohorts)
+domain: iwi / Māori tech initiatives
+what: Dev Academy Aotearoa is a New Zealand coding bootcamp that runs dedicated scholarships for Māori,
+  Pasifika, and women, cutting course fees so more people from these groups can retrain as web developers,
+  and it has graduated more than twice the share of women and Māori compared with a typical computer science
+  degree.
+region: national
+website: https://devacademy.co.nz/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- Māori tech
+- coding bootcamp
+- scholarships
+- digital skills
+related_to:
+- Digital Natives Academy
+source: devacademy.co.nz homepage (verified via curl, HTTP 200); web search of devacademy.co.nz and ecommercenews.co.nz
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

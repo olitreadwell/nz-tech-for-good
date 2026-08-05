@@ -1,0 +1,136 @@
+name: Suggest a directory entry
+description: Suggest a New Zealand tech-for-good organisation, project, or network to add to the directory.
+title: "[Entry] "
+labels: ["new entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an entry! Please only include information you
+        can verify against a live source (the organisation's own website,
+        GitHub, or LinkedIn page) — link to it in the "Source" field below.
+        If you don't know a field, leave it blank rather than guessing.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The organisation, project, or network's name.
+      placeholder: "e.g. Te Hiku Media"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      description: The area of public good this works in. Pick the closest fit — if none fit, choose "Other / not sure" and explain in the description.
+      options:
+        - Māori data sovereignty / indigenous data
+        - civic-tech
+        - crisis / humanitarian-tech
+        - digital-inclusion
+        - disability & accessibility tech
+        - disability employment tech
+        - education equity tech
+        - environmental citizen-science
+        - financial-inclusion / fintech-for-good
+        - food-rescue / food-security tech
+        - govtech
+        - green / climate-tech
+        - health tech for good / hauora Māori
+        - housing / homelessness tech
+        - human-rights tech
+        - iwi / Māori tech initiatives
+        - journalism / media-tech
+        - legal-aid / justice tech
+        - makerspaces / hackerspaces
+        - mental-health tech
+        - nonprofit / NGO tech
+        - open-data
+        - refugee / migrant support tech
+        - research / education tech
+        - tech-ethics / responsible-AI
+        - volunteering / giving platforms
+        - worker-coop / platform-coop tech
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What it does
+      description: One or two plain-language sentences describing what it does and why it matters.
+    validations:
+      required: true
+
+  - type: input
+    id: region
+    attributes:
+      label: Region
+      description: The NZ region it's based in, or "national".
+      placeholder: "e.g. Wellington, or national"
+    validations:
+      required: true
+
+  - type: input
+    id: website
+    attributes:
+      label: Website URL
+      placeholder: "https://example.nz"
+    validations:
+      required: false
+
+  - type: input
+    id: github
+    attributes:
+      label: GitHub URL
+      placeholder: "https://github.com/example"
+    validations:
+      required: false
+
+  - type: input
+    id: linkedin_org
+    attributes:
+      label: LinkedIn company page URL
+      placeholder: "https://linkedin.com/company/example"
+    validations:
+      required: false
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: A short, comma-separated list of descriptive tags.
+      placeholder: "open data, civic tech, open source"
+    validations:
+      required: false
+
+  - type: input
+    id: related_to
+    attributes:
+      label: Related entries
+      description: Names of other entries in the directory this one is meaningfully connected to, if any.
+      placeholder: "e.g. Figure.NZ, data.govt.nz"
+    validations:
+      required: false
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: How you verified this — which page you checked, and when.
+      placeholder: "example.nz homepage, checked 2026-08-05"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I've verified this information against a live source and haven't guessed or invented any details.
+          required: true
+        - label: This is public professional information, not private contact details.
+          required: true

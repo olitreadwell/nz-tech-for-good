@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/olitreadwell/nz-tech-for-good/schema/entry.schema.json",
+  "title": "NZ Tech-for-Good directory entry",
+  "description": "One organisation, project, or network in the Aotearoa New Zealand tech-for-good directory.",
+  "type": "object",
+  "required": ["name", "domain", "what", "region", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The organisation, project, or network's name.",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "description": "The area of public good this entry works in. Reuse an existing domain where it fits.",
+      "enum": [
+        "Māori data sovereignty / indigenous data",
+        "civic-tech",
+        "crisis / humanitarian-tech",
+        "digital-inclusion",
+        "disability & accessibility tech",
+        "disability employment tech",
+        "education equity tech",
+        "environmental citizen-science",
+        "financial-inclusion / fintech-for-good",
+        "food-rescue / food-security tech",
+        "govtech",
+        "green / climate-tech",
+        "health tech for good / hauora Māori",
+        "housing / homelessness tech",
+        "human-rights tech",
+        "iwi / Māori tech initiatives",
+        "journalism / media-tech",
+        "legal-aid / justice tech",
+        "makerspaces / hackerspaces",
+        "mental-health tech",
+        "nonprofit / NGO tech",
+        "open-data",
+        "refugee / migrant support tech",
+        "research / education tech",
+        "tech-ethics / responsible-AI",
+        "volunteering / giving platforms",
+        "worker-coop / platform-coop tech"
+      ]
+    },
+    "what": {
+      "type": "string",
+      "description": "One or two plain-language sentences describing what it does and why it matters.",
+      "minLength": 1
+    },
+    "region": {
+      "type": "string",
+      "description": "The NZ region it's based in, or \"national\".",
+      "minLength": 1
+    },
+    "website": {
+      "type": "string",
+      "description": "Its main website URL, or an empty string if none."
+    },
+    "github": {
+      "type": "string",
+      "description": "Its GitHub org/repo URL, or an empty string if none."
+    },
+    "linkedin_org": {
+      "type": "string",
+      "description": "Its LinkedIn company page URL, or an empty string if none."
+    },
+    "linkedin_people": {
+      "type": "array",
+      "description": "Relevant people connected to this entry, if any is publicly known and on file.",
+      "items": {
+        "type": "object",
+        "required": ["name", "role", "linkedin_url"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": "string" },
+          "linkedin_url": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "tags": {
+      "type": "array",
+      "description": "A short list of descriptive tags.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "related_to": {
+      "type": "array",
+      "description": "Other entries' `name` values this one is meaningfully connected to (only real, verifiable connections).",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "source": {
+      "type": "string",
+      "description": "How the entry was verified (e.g. which page was fetched, and how).",
+      "minLength": 1
+    },
+    "founding_year": {
+      "type": ["integer", "null"],
+      "description": "The year the organisation or project was founded, if known. Leave null if not verified.",
+      "default": null
+    },
+    "takes_contributors": {
+      "type": ["boolean", "null"],
+      "description": "Whether the organisation is known to take outside contributors or volunteers. Leave null if not verified.",
+      "default": null
+    },
+    "careers_url": {
+      "type": "string",
+      "description": "A careers or volunteering page URL, or an empty string if none on file.",
+      "default": ""
+    },
+    "last_verified": {
+      "type": "string",
+      "description": "The date (YYYY-MM-DD) this entry's details were last checked against a live source.",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  }
+}

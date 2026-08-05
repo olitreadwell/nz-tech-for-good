@@ -1,0 +1,20 @@
+name: Environment Canterbury Open Data
+domain: open-data
+what: Environment Canterbury runs an open data portal where anyone can download the regional council's
+  public information about air quality, freshwater, and resource consents in the Canterbury region.
+region: Canterbury
+website: https://data.ecan.govt.nz/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- regional council
+- open data
+- environment
+- GIS
+related_to: []
+source: data.ecan.govt.nz homepage (verified via curl, HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

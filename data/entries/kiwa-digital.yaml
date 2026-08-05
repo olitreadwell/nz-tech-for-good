@@ -1,0 +1,22 @@
+name: Kiwa Digital
+domain: iwi / Māori tech initiatives
+what: Kiwa Digital is an Auckland technology company, founded in 2003, that builds apps and cloud software
+  helping Indigenous communities record, protect, and share their languages and cultural stories, including
+  tools for te reo Māori.
+region: Auckland
+website: https://kiwadigital.com/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- Māori tech
+- indigenous language technology
+- cultural data sovereignty
+- startup
+related_to:
+- Te Hiku Media / Papa Reo
+source: kiwadigital.com about-us page (verified via curl and WebFetch, HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

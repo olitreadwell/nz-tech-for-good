@@ -1,0 +1,23 @@
+name: data.govt.nz
+domain: open-data
+what: data.govt.nz is the New Zealand government's central website for finding and downloading open datasets
+  published by government agencies, covering topics like health, education, transport, and the environment.
+region: national
+website: https://data.govt.nz
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- open data
+- government
+- data catalogue
+- govtech
+related_to:
+- LINZ Data Service
+- DigitalNZ
+- GovHack Aotearoa
+source: data.govt.nz homepage (verified via WebFetch)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

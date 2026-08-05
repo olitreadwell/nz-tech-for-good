@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate entries and guide
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml jsonschema
+
+      - name: Validate entries against schema
+        run: python3 scripts/validate.py
+
+      - name: Regenerate GUIDE.md
+        run: python3 scripts/build_guide.py
+
+      - name: Fail if GUIDE.md is out of date
+        run: |
+          if ! git diff --exit-code GUIDE.md; then
+            echo ""
+            echo "GUIDE.md is out of date. Run 'python3 scripts/build_guide.py' locally and commit the result."
+            exit 1
+          fi
+
+      - name: Check links (non-blocking)
+        continue-on-error: true
+        run: python3 scripts/linkcheck.py

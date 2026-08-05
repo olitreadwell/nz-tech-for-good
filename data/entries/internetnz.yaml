@@ -1,0 +1,23 @@
+name: InternetNZ
+domain: human-rights tech
+what: InternetNZ is a non-profit membership organisation that manages the .nz internet domain name system
+  and advocates for an open, secure internet in New Zealand, including work on digital equity and online
+  harm.
+region: Wellington
+website: https://internetnz.nz
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- digital rights
+- internet policy
+- domain names
+- non-profit
+related_to: []
+source: web search of internetnz.nz official pages; direct fetch of the site returned an HTTP 403 from
+  the site's own bot-protection, but the domain is confirmed live and returning real content indexed by
+  search engines
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

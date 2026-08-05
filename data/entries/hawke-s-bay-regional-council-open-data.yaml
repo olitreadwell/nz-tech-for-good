@@ -1,0 +1,23 @@
+name: Hawke's Bay Regional Council Open Data
+domain: open-data
+what: Hawke's Bay Regional Council's open data page lets people view and download council-collected data,
+  like water quality and environmental monitoring information, for free reuse.
+region: Hawke's Bay
+website: https://www.hbrc.govt.nz/our-council/open-data/
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- open data
+- environmental data
+- local government
+- council
+related_to:
+- data.govt.nz
+source: web search of hbrc.govt.nz open data page; direct fetch of the site returned an HTTP 403 from
+  the site's own bot-protection, but the domain is confirmed live and returning real content indexed by
+  search engines
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

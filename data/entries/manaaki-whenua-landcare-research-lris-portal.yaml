@@ -1,0 +1,25 @@
+name: Manaaki Whenua Landcare Research LRIS Portal
+domain: open-data
+what: The Land Resource Information System (LRIS) Portal, run by Crown research institute Manaaki Whenua
+  Landcare Research, is a free online tool with over 200 layers of New Zealand land data, like soil types,
+  erosion risk, and land cover, that anyone can search and download.
+region: national
+website: https://soils.landcareresearch.co.nz/tools/lris-portal
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- land data
+- soil data
+- conservation
+- Crown research institute
+- open data
+related_to:
+- LINZ Data Service (Toitū Te Whenua)
+- Koordinates
+source: soils.landcareresearch.co.nz/tools/lris-portal (verified via curl, HTTP 200); landcareresearch.co.nz
+  description pages found via web search
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

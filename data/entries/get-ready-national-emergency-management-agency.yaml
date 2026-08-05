@@ -1,0 +1,25 @@
+name: Get Ready (National Emergency Management Agency)
+domain: crisis / humanitarian-tech
+what: Get Ready is the New Zealand government's National Emergency Management Agency website that helps
+  people prepare for disasters like earthquakes and floods, including information on the Emergency Mobile
+  Alert system that broadcasts warnings straight to phones without needing an app.
+region: national
+website: https://getready.govt.nz
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- disaster preparedness
+- government agency
+- emergency alerts
+- civil defence
+related_to:
+- GeoNet
+- New Zealand Red Cross
+source: web search of getready.govt.nz and civildefence.govt.nz official pages; direct fetch of the site
+  returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning
+  real content indexed by search engines
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

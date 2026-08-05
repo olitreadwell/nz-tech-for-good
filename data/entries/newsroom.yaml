@@ -1,0 +1,22 @@
+name: Newsroom
+domain: journalism / media-tech
+what: Newsroom is a New Zealand-owned, independent, reader- and donor-supported news website known for
+  investigative reporting on politics, business, and climate change.
+region: Auckland
+website: https://newsroom.co.nz
+github: ''
+linkedin_org: https://nz.linkedin.com/company/newsroom-new-zealand
+linkedin_people: []
+tags:
+- independent media
+- investigative journalism
+- reader-funded
+related_to:
+- NZ On Air — Public Interest Journalism Fund
+source: web search of newsroom.co.nz About page and LinkedIn listing; direct fetch of the site returned
+  an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real
+  content indexed by search engines
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

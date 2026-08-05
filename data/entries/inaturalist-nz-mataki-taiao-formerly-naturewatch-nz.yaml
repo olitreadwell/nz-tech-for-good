@@ -1,0 +1,25 @@
+name: iNaturalist NZ – Mātaki Taiao (formerly NatureWatch NZ)
+domain: environmental citizen-science
+what: iNaturalist NZ – Mātaki Taiao, run by the New Zealand Bio-Recording Network Trust, is a website
+  and app where anyone can record sightings of plants, animals, and fungi, helping scientists track new
+  and spreading species across the country; it started in 2006 as NatureWatch NZ and rebranded in 2018.
+region: national
+website: https://www.inaturalist.nz
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- citizen science
+- biodiversity
+- conservation
+- open data
+related_to:
+- The Cacophony Project
+- Trap.NZ
+source: inaturalist.nz redirected to www.inaturalist.nz but was blocked by the site's own Cloudflare bot-protection
+  (403); corroborated via iNaturalist.org's own blog post 'From NatureWatch NZ to iNaturalist NZ' and
+  DOC's blog, found via web search
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'

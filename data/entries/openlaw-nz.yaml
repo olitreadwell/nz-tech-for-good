@@ -1,0 +1,21 @@
+name: OpenLaw NZ
+domain: legal-aid / justice tech
+what: OpenLaw NZ is a non-profit charity, started in 2018, that builds free and open-source legal research
+  tools because New Zealand had no free way to search its own laws and court cases online.
+region: national
+website: https://www.openlaw.nz/our-mission
+github: ''
+linkedin_org: ''
+linkedin_people: []
+tags:
+- legal tech
+- open source
+- access to justice
+- non-profit
+related_to:
+- Community Law Centres o Aotearoa
+source: openlaw.nz/our-mission (verified via curl, HTTP 200)
+founding_year: null
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-05'
