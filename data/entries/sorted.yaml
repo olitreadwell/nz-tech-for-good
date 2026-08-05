@@ -1,0 +1,22 @@
+name: Sorted
+domain: financial-inclusion / fintech-for-good
+what: Sorted is a free money guidance platform run by Te Ara Ahunga Ora Retirement Commission that
+  gives New Zealanders budgeting tools, debt, KiwiSaver and retirement calculators, and a free
+  automated savings app, to lift financial capability nationwide.
+region: national
+website: https://sorted.org.nz
+github: ''
+linkedin_org: https://nz.linkedin.com/company/retirement-commission
+linkedin_people: []
+tags:
+- financial literacy
+- budgeting
+- KiwiSaver
+- government service
+- financial capability
+related_to: []
+source: sorted.org.nz homepage, verified via WebFetch 2026-08-06
+founding_year: 2001
+takes_contributors: null
+careers_url: ''
+last_verified: '2026-08-06'
