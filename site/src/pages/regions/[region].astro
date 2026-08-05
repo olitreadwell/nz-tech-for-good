@@ -1,0 +1,44 @@
+---
+import Layout from "../../components/Layout.astro";
+import EntryCard from "../../components/EntryCard.astro";
+import { url } from "../../lib/url";
+import { regions, entriesByRegion, type Facet } from "../../lib/data";
+
+export function getStaticPaths() {
+  return regions.map((r) => ({
+    params: { region: r.slug },
+    props: { region: r },
+  }));
+}
+
+interface Props {
+  region: Facet;
+}
+const { region } = Astro.props;
+const items = entriesByRegion(region.name);
+const noun = items.length === 1 ? "organisation" : "organisations";
+const heading =
+  region.name === "national" ? "National (all of NZ)" : region.name;
+---
+
+<Layout
+  title={heading}
+  active="regions"
+  description={`${items.length} ${noun} based in ${heading} in the NZ Tech-for-Good directory.`}
+>
+  <p class="crumbs">
+    <a href={url("/regions/")}>← All regions</a>
+  </p>
+  <div class="prose">
+    <h1>{heading}</h1>
+    <p class="lead">
+      {items.length}
+      {noun}
+      {region.name === "national" ? "working nationally." : `based in ${region.name}.`}
+    </p>
+  </div>
+
+  <ul class="grid">
+    {items.map((entry) => <EntryCard entry={entry} />)}
+  </ul>
+</Layout>

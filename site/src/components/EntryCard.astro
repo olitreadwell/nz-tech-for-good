@@ -1,0 +1,81 @@
+---
+import type { Entry } from "../lib/data";
+import { slugify } from "../lib/data";
+import { url } from "../lib/url";
+
+interface Props {
+  entry: Entry;
+  /** Show the domain as a pill (hidden on domain pages where it is redundant). */
+  showDomain?: boolean;
+}
+const { entry, showDomain = true } = Astro.props;
+
+const searchBlob = [
+  entry.name,
+  entry.what,
+  entry.region,
+  entry.domainLabel,
+  entry.tags.join(" "),
+]
+  .join(" ")
+  .toLowerCase();
+---
+
+<li
+  class="card"
+  data-entry
+  data-domain={entry.domain}
+  data-region={entry.region}
+  data-tags={entry.tags.join("|")}
+  data-search={searchBlob}
+>
+  {
+    showDomain && (
+      <a class="pill domain-flag" href={url(`/domains/${slugify(entry.domain)}/`)}>
+        {entry.domainLabel}
+      </a>
+    )
+  }
+  <h3>
+    <a href={url(`/entry/${entry.slug}/`)}>{entry.name}</a>
+  </h3>
+  <p class="what">{entry.what}</p>
+  <p class="meta">
+    <span>📍 {entry.region}</span>
+    {entry.founding_year && <span>Est. {entry.founding_year}</span>}
+  </p>
+  {
+    entry.tags.length > 0 && (
+      <ul class="tag-row" aria-label="Tags">
+        {entry.tags.slice(0, 5).map((t) => (
+          <li>
+            <span class="pill">{t}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  <p class="links">
+    {
+      entry.website && (
+        <a href={entry.website} rel="noopener">
+          Website<span class="visually-hidden"> for {entry.name}</span> ↗
+        </a>
+      )
+    }
+    {
+      entry.github && (
+        <a href={entry.github} rel="noopener">
+          GitHub<span class="visually-hidden"> for {entry.name}</span> ↗
+        </a>
+      )
+    }
+    {
+      entry.linkedin_org && (
+        <a href={entry.linkedin_org} rel="noopener">
+          LinkedIn<span class="visually-hidden"> for {entry.name}</span> ↗
+        </a>
+      )
+    }
+  </p>
+</li>

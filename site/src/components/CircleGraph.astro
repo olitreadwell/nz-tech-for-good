@@ -1,0 +1,120 @@
+---
+/**
+ * Deterministic circular relationship graph rendered as inline SVG.
+ * No JavaScript and no external libraries, so it works everywhere and prints.
+ * Every graph is paired with a text list of the same connections (below it,
+ * in the page) so the information is never locked inside the image.
+ */
+interface Node {
+  id: string;
+  label: string;
+  count: number;
+  href?: string;
+}
+interface Edge {
+  a: string;
+  b: string;
+  count?: number;
+}
+interface Props {
+  nodes: Node[];
+  edges: Edge[];
+  /** Accessible title describing the whole graph. */
+  title: string;
+  size?: number;
+}
+const { nodes, edges, title, size = 760 } = Astro.props;
+
+const maxCount = Math.max(...nodes.map((n) => n.count), 1);
+const minR = 16;
+const maxR = 34;
+
+// Labels sit outside the ring on the left and right. Reserve horizontal room
+// for the longest one so nothing is clipped by the viewBox (rough width at the
+// 12px label font). The circle itself stays centred within the padded canvas.
+const longest = nodes.reduce((m, n) => Math.max(m, n.label.length), 0);
+const padX = Math.min(260, longest * 6.8 + maxR + 14);
+const cx = size / 2;
+const cy = size / 2;
+const ring = size * 0.32;
+const vbW = size + padX * 2;
+
+// Position each node evenly around the ring, starting at the top.
+const positions = new Map<string, { x: number; y: number; angle: number; r: number }>();
+nodes.forEach((n, i) => {
+  const angle = (i / nodes.length) * Math.PI * 2 - Math.PI / 2;
+  const x = cx + Math.cos(angle) * ring;
+  const y = cy + Math.sin(angle) * ring;
+  const r = minR + (maxR - minR) * Math.sqrt(n.count / maxCount);
+  positions.set(n.id, { x, y, angle, r });
+});
+
+const maxEdge = Math.max(...edges.map((e) => e.count ?? 1), 1);
+const titleId = `graph-title-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<div class="graph-wrap">
+  <svg
+    viewBox={`${-padX} 0 ${vbW} ${size}`}
+    width={vbW}
+    height={size}
+    role="img"
+    aria-labelledby={titleId}
+    style="max-width:100%;height:auto;"
+  >
+    <title id={titleId}>{title}</title>
+    <g>
+      {
+        edges.map((e) => {
+          const pa = positions.get(e.a);
+          const pb = positions.get(e.b);
+          if (!pa || !pb) return null;
+          const w = 1 + ((e.count ?? 1) / maxEdge) * 4;
+          return (
+            <line
+              class="graph-edge"
+              x1={pa.x}
+              y1={pa.y}
+              x2={pb.x}
+              y2={pb.y}
+              stroke-width={w}
+              stroke-linecap="round"
+            />
+          );
+        })
+      }
+    </g>
+    <g>
+      {
+        nodes.map((n) => {
+          const p = positions.get(n.id)!;
+          // Anchor labels away from the centre so they don't overlap the ring.
+          const isRight = Math.cos(p.angle) >= -0.01;
+          const anchor = isRight ? "start" : "end";
+          const lx = p.x + (isRight ? p.r + 6 : -(p.r + 6));
+          return (
+            <g>
+              <circle class="graph-node" cx={p.x} cy={p.y} r={p.r} />
+              <text
+                class="graph-count"
+                x={p.x}
+                y={p.y + 4}
+                text-anchor="middle"
+              >
+                {n.count}
+              </text>
+              <text
+                class="graph-node-label"
+                x={lx}
+                y={p.y + 4}
+                text-anchor={anchor}
+              >
+                {n.label}
+              </text>
+            </g>
+          );
+        })
+      }
+    </g>
+  </svg>
+</div>
