@@ -23,6 +23,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 ENTRIES_DIR = ROOT / "data" / "entries"
+DOMAIN_DESCRIPTIONS_PATH = ROOT / "data" / "domain-descriptions.yaml"
 OUT = ROOT / "GUIDE.md"
 
 try:
@@ -30,6 +31,9 @@ try:
 except ImportError:
     print("ERROR: pyyaml is not installed. Run: pip install pyyaml")
     sys.exit(1)
+
+with open(DOMAIN_DESCRIPTIONS_PATH, encoding="utf-8") as f:
+    domain_descriptions = yaml.safe_load(f) or {}
 
 entries = []
 skipped = 0
@@ -265,6 +269,10 @@ for d in domain_order:
     ents = sorted(by_domain[d], key=lambda e: e["name"].lower())
     lines.append(f"## {label}")
     lines.append("")
+    description = domain_descriptions.get(d, "")
+    if description:
+        lines.append(description)
+        lines.append("")
     noun = "entry" if len(ents) == 1 else "entries"
     lines.append(f"_{len(ents)} {noun} in this domain._")
     lines.append("")
@@ -276,6 +284,10 @@ for d in domain_order:
             link_parts.append(f"[GitHub]({e['github']})")
         if e.get("linkedin_org"):
             link_parts.append(f"[LinkedIn]({e['linkedin_org']})")
+        if e.get("community_url"):
+            link_parts.append(f"[Community]({e['community_url']})")
+        if e.get("events_url"):
+            link_parts.append(f"[Events]({e['events_url']})")
         links_str = " · ".join(link_parts) if link_parts else "_no links on file_"
         tags_str = ", ".join(e.get("tags", []) or [])
         lines.append(f"**{e['name']}**")

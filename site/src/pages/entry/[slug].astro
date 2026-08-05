@@ -55,6 +55,20 @@ const slugFor = (name: string) => entries.find((e) => e.name === name)?.slug;
           </a>
         )
       }
+      {
+        entry.community_url && (
+          <a href={entry.community_url} rel="noopener">
+            Join community ↗
+          </a>
+        )
+      }
+      {
+        entry.events_url && (
+          <a href={entry.events_url} rel="noopener">
+            Events ↗
+          </a>
+        )
+      }
     </p>
   </div>
 

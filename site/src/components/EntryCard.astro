@@ -77,5 +77,19 @@ const searchBlob = [
         </a>
       )
     }
+    {
+      entry.community_url && (
+        <a href={entry.community_url} rel="noopener">
+          Join community<span class="visually-hidden"> for {entry.name}</span> ↗
+        </a>
+      )
+    }
+    {
+      entry.events_url && (
+        <a href={entry.events_url} rel="noopener">
+          Events<span class="visually-hidden"> for {entry.name}</span> ↗
+        </a>
+      )
+    }
   </p>
 </li>

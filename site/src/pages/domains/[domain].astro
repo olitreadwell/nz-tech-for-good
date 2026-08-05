@@ -7,6 +7,7 @@ import {
   domains,
   entriesByDomain,
   internalEdges,
+  domainDescription,
   type Domain,
 } from "../../lib/data";
 
@@ -23,6 +24,7 @@ interface Props {
 const { domain } = Astro.props;
 const items = entriesByDomain(domain.key);
 const iedges = internalEdges(domain.key);
+const description = domainDescription(domain.key);
 
 // Only build a close-up graph when there are real internal connections.
 const graphNodes = iedges.length
@@ -43,6 +45,7 @@ const noun = items.length === 1 ? "organisation" : "organisations";
   </p>
   <div class="prose">
     <h1>{domain.label}</h1>
+    {description && <p>{description}</p>}
     <p class="lead">{items.length} {noun} in this domain.</p>
   </div>
 

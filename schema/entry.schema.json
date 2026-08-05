@@ -67,6 +67,16 @@
       "type": "string",
       "description": "Its LinkedIn company page URL, or an empty string if none."
     },
+    "community_url": {
+      "type": "string",
+      "description": "A Slack, Discord, or other community chat invite/join URL, or an empty string if none.",
+      "default": ""
+    },
+    "events_url": {
+      "type": "string",
+      "description": "A meetup, events calendar, or events listing URL, or an empty string if none.",
+      "default": ""
+    },
     "linkedin_people": {
       "type": "array",
       "description": "Relevant people connected to this entry, if any is publicly known and on file.",
