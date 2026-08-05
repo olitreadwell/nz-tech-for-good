@@ -27,6 +27,15 @@ jobs:
       - name: Data-quality checks (duplicates fatal, freshness/slug warnings non-fatal)
         run: python3 scripts/dataquality.py
 
+      - name: Coverage report (domains/regions, non-blocking)
+        run: |
+          {
+            echo "## Coverage report"
+            echo '```'
+            python3 scripts/coverage.py
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Regenerate GUIDE.md
         run: python3 scripts/build_guide.py
 

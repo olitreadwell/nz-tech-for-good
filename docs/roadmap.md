@@ -63,8 +63,9 @@ account-level settings only the repo owner can change.
   `last_verified` date is older than, say, 12 months, for re-checking.
 - [ ] Add duplicate-URL detection to `validate.py` (two entries pointing at the
   same website often means an accidental duplicate).
-- [ ] Add a coverage report: count entries per domain and per region, and flag
+- [x] Add a coverage report: count entries per domain and per region, and flag
   thin domains that need more entries. Surface it in the job summary.
+  (`scripts/coverage.py`, done 2026-08-06)
 - [ ] Normalise region values against a fixed list (schema `enum`) so filtering
   and mapping stay reliable.
 - [ ] Backfill `github` and `linkedin_org` fields where missing but publicly
