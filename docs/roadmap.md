@@ -25,13 +25,15 @@ account-level settings only the repo owner can change.
   issues/PRs politely, with generous timeouts (this is a low-traffic repo).
 - [ ] Add a labeler workflow that auto-labels PRs touching `data/entries/`
   vs `scripts/` vs `docs/` so triage is faster.
-- [ ] Add an "entry count" badge or shield to the README, generated from a
+- [x] Add an "entry count" badge or shield to the README, generated from a
   small step in CI (keeps the headline number honest as the directory grows).
+  (`scripts/badge_entry_count.py`, checked by the `validate` job in
+  `.github/workflows/ci.yml`)
 
 ## CI & quality gates
 
-- [ ] Pin all GitHub Actions to commit SHAs (not just major tags) for supply-
-  chain safety; let Dependabot bump them. (Currently pinned to `@v4`/`@v5`.)
+- [x] Pin all GitHub Actions to commit SHAs (not just major tags) for supply-
+  chain safety; let Dependabot bump them. (`.github/workflows/*.yml`)
 - [ ] Add a lint step for the YAML entries (e.g. `yamllint`) so formatting
   stays consistent, not just schema-valid.
 - [ ] Add a spell/style check for `GUIDE.md` and docs (e.g. a lightweight
