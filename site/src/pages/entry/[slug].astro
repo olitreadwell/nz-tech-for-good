@@ -1,0 +1,153 @@
+---
+import Layout from "../../components/Layout.astro";
+import { url } from "../../lib/url";
+import { entries, slugify, relatedEntries, type Entry } from "../../lib/data";
+
+export function getStaticPaths() {
+  return entries.map((e) => ({ params: { slug: e.slug }, props: { entry: e } }));
+}
+
+interface Props {
+  entry: Entry;
+}
+const { entry } = Astro.props;
+const related = relatedEntries(entry);
+const slugFor = (name: string) => entries.find((e) => e.name === name)?.slug;
+---
+
+<Layout title={entry.name} description={entry.what}>
+  <p class="crumbs">
+    <a href={url("/directory/")}>← Directory</a>
+  </p>
+
+  <div class="detail-header prose">
+    <a class="pill" href={url(`/domains/${slugify(entry.domain)}/`)}
+      >{entry.domainLabel}</a
+    >
+    <h1>{entry.name}</h1>
+    <p class="lead">{entry.what}</p>
+    <p class="links" style="font-weight:600;">
+      {
+        entry.website && (
+          <a href={entry.website} rel="noopener">
+            Visit website ↗
+          </a>
+        )
+      }
+      {
+        entry.github && (
+          <a href={entry.github} rel="noopener">
+            GitHub ↗
+          </a>
+        )
+      }
+      {
+        entry.linkedin_org && (
+          <a href={entry.linkedin_org} rel="noopener">
+            LinkedIn ↗
+          </a>
+        )
+      }
+      {
+        entry.careers_url && (
+          <a href={entry.careers_url} rel="noopener">
+            Careers / volunteering ↗
+          </a>
+        )
+      }
+    </p>
+  </div>
+
+  <dl class="def-list">
+    <dt>Domain</dt>
+    <dd>
+      <a href={url(`/domains/${slugify(entry.domain)}/`)}>{entry.domainLabel}</a>
+    </dd>
+    <dt>Region</dt>
+    <dd>
+      <a href={url(`/regions/${slugify(entry.region)}/`)}>
+        {entry.region === "national" ? "National (all of NZ)" : entry.region}
+      </a>
+    </dd>
+    {entry.founding_year && (
+      <>
+        <dt>Founded</dt>
+        <dd>{entry.founding_year}</dd>
+      </>
+    )}
+    {
+      entry.tags.length > 0 && (
+        <>
+          <dt>Tags</dt>
+          <dd>
+            <ul class="tag-row">
+              {entry.tags.map((t) => (
+                <li>
+                  <span class="pill">{t}</span>
+                </li>
+              ))}
+            </ul>
+          </dd>
+        </>
+      )
+    }
+    {entry.last_verified && (
+      <>
+        <dt>Last verified</dt>
+        <dd>{entry.last_verified}</dd>
+      </>
+    )}
+  </dl>
+
+  {
+    related.length > 0 && (
+      <section aria-labelledby="related-heading">
+        <h2 id="related-heading">Related organisations</h2>
+        <p>Groups connected to {entry.name} in the directory.</p>
+        <ul class="tag-row">
+          {related.map((r) => {
+            const s = slugFor(r.name);
+            return (
+              <li>
+                {s ? (
+                  <a class="pill" href={url(`/entry/${s}/`)}>
+                    {r.name}
+                  </a>
+                ) : (
+                  <span class="pill">{r.name}</span>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    entry.linkedin_people && entry.linkedin_people.length > 0 && (
+      <section aria-labelledby="people-heading">
+        <h2 id="people-heading">People</h2>
+        <ul>
+          {entry.linkedin_people.map((p) => (
+            <li>
+              <a href={p.linkedin_url} rel="noopener">
+                {p.name}
+              </a>{" "}
+              — {p.role}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    entry.source && (
+      <section aria-labelledby="source-heading" class="prose">
+        <h2 id="source-heading">How this was verified</h2>
+        <p style="color:var(--text-muted);">{entry.source}</p>
+      </section>
+    )
+  }
+</Layout>

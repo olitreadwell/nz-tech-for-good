@@ -1,0 +1,93 @@
+---
+import Layout from "../components/Layout.astro";
+import CircleGraph from "../components/CircleGraph.astro";
+import { url } from "../lib/url";
+import { domains, domainEdges, domainLabel, slugify } from "../lib/data";
+
+// Domains that have at least one cross-domain connection go in the graph;
+// the rest are listed separately so the picture stays readable.
+const connectedKeys = new Set<string>();
+for (const e of domainEdges) {
+  connectedKeys.add(e.a);
+  connectedKeys.add(e.b);
+}
+const connected = domains.filter((d) => connectedKeys.has(d.key));
+const isolated = domains.filter((d) => !connectedKeys.has(d.key));
+
+const nodes = connected.map((d) => ({
+  id: d.key,
+  label: d.label,
+  count: d.count,
+}));
+const edges = domainEdges.map((e) => ({ a: e.a, b: e.b, count: e.count }));
+
+// Sort the readable connection list by strength.
+const edgeList = [...domainEdges].sort((x, y) => y.count - x.count);
+---
+
+<Layout
+  title="Ecosystem"
+  active="ecosystem"
+  description="How the domains in the NZ Tech-for-Good directory connect, drawn from verified relationships between organisations."
+>
+  <div class="prose">
+    <h1>The ecosystem</h1>
+    <p class="lead">
+      How the domains connect. A line is drawn between two domains whenever an
+      organisation in one lists an organisation in the other as related. Thicker
+      lines mean more connections. Node size shows how many organisations a
+      domain holds.
+    </p>
+    <p>
+      No connection is invented — a line only appears if it is recorded in the
+      underlying data. The same connections are written out in full below the
+      diagram.
+    </p>
+  </div>
+
+  <CircleGraph
+    nodes={nodes}
+    edges={edges}
+    title="Relationship map of connected domains in the NZ Tech-for-Good directory"
+  />
+
+  <section aria-labelledby="conn-list-heading">
+    <h2 id="conn-list-heading">Connections in full</h2>
+    <p>Every cross-domain link shown above, strongest first.</p>
+    <ul>
+      {
+        edgeList.map((e) => (
+          <li>
+            <a href={url(`/domains/${slugify(e.a)}/`)}>{domainLabel(e.a)}</a>
+            {" ↔ "}
+            <a href={url(`/domains/${slugify(e.b)}/`)}>{domainLabel(e.b)}</a>
+            {" — "}
+            {e.count} {e.count === 1 ? "link" : "links"}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {
+    isolated.length > 0 && (
+      <section aria-labelledby="isolated-heading">
+        <h2 id="isolated-heading">Domains without cross-domain links</h2>
+        <p>
+          These domains have no recorded connections to organisations in other
+          domains yet. That usually means the links simply have not been mapped,
+          not that the work stands alone.
+        </p>
+        <ul class="tag-row">
+          {isolated.map((d) => (
+            <li>
+              <a class="pill" href={url(`/domains/${d.slug}/`)}>
+                {d.label} ({d.count})
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+</Layout>

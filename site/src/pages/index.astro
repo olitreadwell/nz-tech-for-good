@@ -1,0 +1,87 @@
+---
+import Layout from "../components/Layout.astro";
+import { url } from "../lib/url";
+import { totalEntries, domains, regions } from "../lib/data";
+
+const topDomains = domains.slice(0, 8);
+---
+
+<Layout title="NZ Tech-for-Good" active="home">
+  <section class="prose">
+    <h1>Aotearoa New Zealand tech for public good</h1>
+    <p class="lead">
+      A plain-language directory of New Zealand organisations, projects, and
+      networks that use technology to help people — open data, civic tech,
+      climate tech, accessibility, Māori data sovereignty, humanitarian
+      response, and more.
+    </p>
+    <p>
+      It is for anyone looking for NZ tech-for-good groups to work with,
+      volunteer with, or learn from — and for anyone mapping who is doing what
+      in this space. Every entry is a short description with links, checked
+      against a live source. Nothing here is invented.
+    </p>
+    <p>
+      <a class="button" href={url("/directory/")}
+        >Browse the directory ({totalEntries} organisations)</a
+      >
+      <a class="button secondary" href={url("/ecosystem/")}
+        >See how they connect</a
+      >
+    </p>
+  </section>
+
+  <ul class="stat-row" aria-label="Directory at a glance">
+    <li class="stat">
+      <div class="n">{totalEntries}</div>
+      <div class="l">organisations</div>
+    </li>
+    <li class="stat">
+      <div class="n">{domains.length}</div>
+      <div class="l">domains</div>
+    </li>
+    <li class="stat">
+      <div class="n">{regions.length}</div>
+      <div class="l">regions</div>
+    </li>
+  </ul>
+
+  <section aria-labelledby="domains-heading">
+    <h2 id="domains-heading">Explore by domain</h2>
+    <p>The areas of public good these groups work in. Biggest first.</p>
+    <ul class="tiles">
+      {
+        topDomains.map((d) => (
+          <li>
+            <a class="tile" href={url(`/domains/${d.slug}/`)}>
+              <span class="tile-name">{d.label}</span>
+              <span class="tile-count">{d.count}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <p>
+      <a href={url("/domains/")}>See all {domains.length} domains →</a>
+    </p>
+  </section>
+
+  <section aria-labelledby="how-heading" class="prose">
+    <h2 id="how-heading">How this directory works</h2>
+    <p>
+      The directory is built from open data files, one per organisation. Each
+      is verified against a live source before it is added — if a fact cannot
+      be confirmed, the field is left blank rather than guessed. The data is
+      shared under a
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license"
+        >Creative Commons BY-SA&nbsp;4.0</a
+      > licence, so you can reuse it with credit.
+    </p>
+    <p>
+      Know a group that should be listed, or spotted something out of date?
+      <a href="https://github.com/olitreadwell/nz-tech-for-good"
+        >Suggest a change or add an organisation on GitHub</a
+      >. No coding is needed to suggest one.
+    </p>
+  </section>
+</Layout>
