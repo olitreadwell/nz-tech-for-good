@@ -121,6 +121,14 @@ the YAML directly.
   [CC-BY-SA-4.0 licensed](LICENSE-DATA.md) — reuse and share it, including
   commercially, as long as you credit this project and share alike.
 
+### Machine-readable data
+
+If you'd rather not parse YAML, the whole directory is also exported as
+[`data/exports/entries.json`](data/exports/entries.json) (one JSON object
+per entry) and [`data/exports/entries.csv`](data/exports/entries.csv) (the
+same data flattened to columns) — both regenerated from `data/entries/` by
+`scripts/export.py` and kept in sync by CI.
+
 ## How it's maintained
 
 - Links are checked automatically every week
