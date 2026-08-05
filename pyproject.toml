@@ -1,0 +1,18 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+bdd_features_base_dir = "tests/features"
+markers = [
+    "unit: pure-function tests, no I/O or subprocess",
+    "integration: script functions working together against fixture data, in-process",
+    "smoke: runs the real CLI as a subprocess against fixture data",
+]
+
+[tool.coverage.run]
+source = ["scripts"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+]

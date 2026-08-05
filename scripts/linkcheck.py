@@ -27,7 +27,7 @@ ENTRIES_DIR = ROOT / "data" / "entries"
 
 try:
     import yaml
-except ImportError:
+except ImportError:  # pragma: no cover - needs pyyaml missing to trigger
     print("ERROR: pyyaml is not installed. Run: pip install pyyaml")
     sys.exit(1)
 
