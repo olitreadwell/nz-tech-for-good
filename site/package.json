@@ -12,10 +12,10 @@
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "vitest run --coverage",
     "test:unit:watch": "vitest",
-    "test:e2e": "playwright test",
-    "test:e2e:smoke": "playwright test --grep @smoke",
-    "test:a11y": "playwright test --grep @a11y",
-    "test:e2e:ui": "playwright test --ui"
+    "test:e2e": "bddgen && playwright test",
+    "test:e2e:smoke": "bddgen && playwright test --grep @smoke",
+    "test:a11y": "bddgen && playwright test --grep @a11y",
+    "test:e2e:ui": "bddgen && playwright test --ui"
   },
   "dependencies": {
     "astro": "^5.13.0",

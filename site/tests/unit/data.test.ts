@@ -48,6 +48,18 @@ describe("domainLabel()", () => {
   });
 });
 
+describe("domainDescription()", () => {
+  it("returns the explainer text for a known domain key", () => {
+    expect(data.domainDescription("civic-tech")).toContain(
+      "take part in how their communities"
+    );
+  });
+
+  it("falls back to an empty string for an unknown domain", () => {
+    expect(data.domainDescription("some-unmapped-domain")).toBe("");
+  });
+});
+
 describe("slugify()", () => {
   it("lowercases and hyphenates", () => {
     expect(data.slugify("Civic Tech")).toBe("civic-tech");
