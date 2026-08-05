@@ -866,7 +866,7 @@
   {
     "name": "DigitalNZ",
     "domain": "open-data",
-    "what": "DigitalNZ, run by the National Library of New Zealand, is a search service and open application programming interface (API) that brings together more than 30 million digitised items — photos, articles, and records — from over 200 New Zealand museums, libraries, and archives into one searchable place.",
+    "what": "DigitalNZ, run by the National Library of New Zealand, is a search service and open application programming interface (API) that brings together more than 30 million digitised items (photos, articles, and records) from over 200 New Zealand museums, libraries, and archives into one searchable place.",
     "region": "national",
     "website": "https://digitalnz.org",
     "github": "https://github.com/DigitalNZ",
@@ -1696,7 +1696,7 @@
   {
     "name": "Loomio",
     "domain": "worker-coop / platform-coop tech",
-    "what": "Loomio is a Wellington-based worker-owned cooperative that builds open-source software helping groups — from community organisations to unions — discuss a topic and reach a collective decision online.",
+    "what": "Loomio is a Wellington-based worker-owned cooperative that builds open-source software helping groups, from community organisations to unions, discuss a topic and reach a collective decision online.",
     "region": "Wellington",
     "website": "https://www.loomio.com",
     "github": "https://github.com/loomio",
@@ -1885,7 +1885,7 @@
   {
     "name": "Ngā Pae o te Māramatanga",
     "domain": "Māori data sovereignty / indigenous data",
-    "what": "Ngā Pae o te Māramatanga is Aotearoa's only Māori Centre of Research Excellence, funding and coordinating research across universities to grow Māori scholarship and support thriving Māori futures.",
+    "what": "Ngā Pae o te Māramatanga is Aotearoa's only Māori Centre of Research Excellence, funding and coordinating research across universities to grow Māori scholarship and support Māori futures.",
     "region": "Auckland",
     "website": "https://www.maramatanga.ac.nz",
     "github": "",
@@ -2005,7 +2005,7 @@
   {
     "name": "NZ On Air — Public Interest Journalism Fund",
     "domain": "journalism / media-tech",
-    "what": "The Public Interest Journalism Fund was a NZ$55 million government fund, run through NZ On Air, that supported New Zealand news organisations — including small, Māori, Pacific, and ethnic media — to keep producing investigative and community journalism.",
+    "what": "The Public Interest Journalism Fund was a NZ$55 million government fund, run through NZ On Air, that supported New Zealand news organisations (including small, Māori, Pacific, and ethnic media) to keep producing investigative and community journalism.",
     "region": "national",
     "website": "https://www.nzonair.govt.nz/news/government-backs-sustainable-public-interest-journalism/",
     "github": "",

@@ -39,7 +39,7 @@ const edgeList = [...domainEdges].sort((x, y) => y.count - x.count);
       domain holds.
     </p>
     <p>
-      No connection is invented — a line only appears if it is recorded in the
+      No connection is invented: a line only appears if it is recorded in the
       underlying data. The same connections are written out in full below the
       diagram.
     </p>
@@ -61,7 +61,7 @@ const edgeList = [...domainEdges].sort((x, y) => y.count - x.count);
             <a href={url(`/domains/${slugify(e.a)}/`)}>{domainLabel(e.a)}</a>
             {" ↔ "}
             <a href={url(`/domains/${slugify(e.b)}/`)}>{domainLabel(e.b)}</a>
-            {" — "}
+            {" · "}
             {e.count} {e.count === 1 ? "link" : "links"}
           </li>
         ))

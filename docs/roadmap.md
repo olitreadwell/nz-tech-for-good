@@ -47,7 +47,7 @@ account-level settings only the repo owner can change.
 - [x] Add a "Related directories & further reading" section to the README
   linking verified NZ open-data, tech-for-good, and accessibility resources.
 - [ ] Close the people/LinkedIn enrichment gap described in
-  [docs/known-gaps.md](known-gaps.md) — add `linkedin_people` to entries, one
+  [docs/known-gaps.md](known-gaps.md): add `linkedin_people` to entries, one
   verified person at a time, following the people-and-privacy rules.
 - [ ] Add a short "How entries are chosen" doc explaining the scope boundary
   (what counts as tech-for-good, what is out of scope) so contributors self-
@@ -82,12 +82,12 @@ account-level settings only the repo owner can change.
 - [ ] **(needs Oli)** Add a social-preview image so shared links look good.
 - [ ] Publish `GUIDE.md` as a browsable GitHub Pages site. Non-trivial: needs
   a static-site build step (the guide is a single 70KB+ page) with in-page
-  search and per-domain navigation. Scope it as its own change — do not
+  search and per-domain navigation. Scope it as its own change, do not
   half-build it. Options: a minimal Jekyll/MkDocs setup, or a small generator
   that emits one HTML page per domain from the YAML.
 - [ ] Add a `CODEOWNERS` file so review requests route automatically.
 - [ ] Add a `.github/FUNDING.yml` if/when there is a funding channel to point
-  at (skip until there is a real one — do not invent).
+  at (skip until there is a real one, do not invent).
 - [ ] Add an all-contributors setup to credit everyone who adds or verifies
   entries.
 - [ ] Add a short "good first issue" set (e.g. verify N entries, add one

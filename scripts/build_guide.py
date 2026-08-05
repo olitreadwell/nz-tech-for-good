@@ -160,7 +160,7 @@ lines.append("# New Zealand Tech-for-Good Guide")
 lines.append("")
 lines.append(
     "This is a living directory of New Zealand organisations, projects, "
-    "networks, and people who use technology for public good — open data, "
+    "networks, and people who use technology for public good: open data, "
     "civic tech, climate tech, accessibility, Māori data sovereignty, "
     "humanitarian response, and more."
 )
@@ -172,7 +172,7 @@ lines.append(
 lines.append("")
 lines.append(
     "**How this guide is built:** it's generated from the YAML entries in "
-    "`data/entries/`. Accuracy comes first — an entry is only added once "
+    "`data/entries/`. Accuracy comes first: an entry is only added once "
     "its website (or another reliable source) confirms the details. This "
     "is a work in progress. It will grow, and some links or details may "
     "go out of date over time. See [CONTRIBUTING.md](CONTRIBUTING.md) to "
@@ -182,21 +182,21 @@ lines.append("")
 lines.append("## How to read this")
 lines.append("")
 lines.append(
-    "Entries are grouped by **domain** — the area of public good the "
+    "Entries are grouped by **domain**: the area of public good the "
     "organisation works in. Each entry is a short, plain-language block: "
     "what the organisation does, where it's based, its links, and its tags. "
     "Where two entries are linked (for example, one runs on another's data, "
     "or they grew out of the same network), that connection is shown as a "
-    "line in the diagrams below. No connection is invented — a line only "
+    "line in the diagrams below. No connection is invented: a line only "
     "appears if it's recorded in the underlying data."
 )
 lines.append("")
-lines.append("**Legend — domains in this guide:**")
+lines.append("**Legend: domains in this guide**")
 lines.append("")
 for d in domain_order:
     n = len(by_domain[d])
     noun = "entry" if n == 1 else "entries"
-    lines.append(f"- **{domain_label_short.get(d, d)}** ({d}) — {n} {noun}")
+    lines.append(f"- **{domain_label_short.get(d, d)}** ({d}): {n} {noun}")
 lines.append("")
 
 total = len(entries)

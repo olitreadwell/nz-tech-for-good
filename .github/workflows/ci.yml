@@ -38,6 +38,9 @@ jobs:
             exit 1
           fi
 
+      - name: Style check (em dashes, banned words)
+        run: python3 scripts/stylecheck.py
+
       - name: Regenerate data exports
         run: python3 scripts/export.py
 
