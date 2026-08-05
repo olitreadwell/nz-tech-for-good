@@ -19,3 +19,13 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Ruflo local secrets and runtime data
+.env
+.env.local
+.env.*.local
+.claude-flow/
+.claude/
+.swarm/
+ruvector.db
+.agents/
