@@ -36,8 +36,8 @@ account-level settings only the repo owner can change.
   stays consistent, not just schema-valid.
 - [ ] Add a spell/style check for `GUIDE.md` and docs (e.g. a lightweight
   vale or codespell pass, non-blocking at first).
-- [ ] Cache pip dependencies in CI to speed up runs (`actions/setup-python`
-  cache key on `requirements.txt`).
+- [x] Cache pip dependencies in CI to speed up runs (`actions/setup-python`
+  cache key on `requirements.txt`). (`.github/workflows/ci.yml`, `.github/workflows/linkcheck.yml`, done 2026-08-06)
 - [ ] Run the link check inside the main CI as advisory only (already
   non-blocking) but surface a summary in the job step summary
   (`$GITHUB_STEP_SUMMARY`) so it is visible without opening logs.
