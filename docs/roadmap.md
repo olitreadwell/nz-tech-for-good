@@ -95,6 +95,50 @@ account-level settings only the repo owner can change.
 - [ ] Add a short "good first issue" set (e.g. verify N entries, add one
   resource) to lower the barrier for new contributors.
 
+## Get involved (research-backed, added 2026-08-06)
+
+This directory currently answers "what exists" well and "what do I do next"
+poorly. See `docs/research-get-involved.md` for the comparative research
+behind this section (Civic Tech Field Guide, Tech for Good Organisers
+Network, Digital Aotearoa Collective, Tech for Good New Zealand, Catchafire)
+and why these items exist.
+
+**Data-only, safe for a loop iteration to just do:**
+
+- [ ] Add **Tech for Good New Zealand** (meetup.com/tech-for-good-new-zealand,
+  Auckland-based, part of the global NetSquared network) as a directory
+  entry. Directly answers "where do I find the next event."
+- [ ] Add **Digital Aotearoa Collective** (digitalaotearoa.github.io/chat,
+  active NZ Slack community, own GitHub org) as a directory entry.
+- [ ] Research and add any other currently-active NZ tech-for-good meetups,
+  Slack/Discord communities, or event series not yet in the directory
+  (verify each is genuinely active, not a dead group, before adding).
+
+**Needs a design/product decision before building (do not silently build
+these in a loop iteration, bring to Oli first):**
+
+- [ ] A "Get involved" page on the site with a small number of clear, low-
+  commitment next actions (join a community, find an event, add an entry,
+  read the guide for a domain), modeled on Civic Tech Field Guide's four-
+  entry-point homepage pattern, not a wall of links.
+- [ ] Short "what is this and why does it matter" explainer text for each
+  domain (e.g. what "food-rescue / food-security tech" covers and why it's
+  its own category), shown on each domain page. Needs someone to write
+  27 short, accurate explainers, not just generate them.
+- [ ] Consider new optional schema fields for a `community_url` (Slack/
+  Discord invite) and `events_url` (meetup/events page), separate from
+  `website`, so community-type entries (and orgs that run their own
+  communities) can surface these distinctly. This is a schema change:
+  needs `schema/entry.schema.json`, `data/entry.template.yaml`,
+  `scripts/validate.py`, and every affected script/page updated together,
+  not added piecemeal.
+- [ ] A prominent "Add an entry" call to action on the directory/homepage
+  (not just a CONTRIBUTING.md link), pointing at the existing
+  add-entry issue form.
+- [ ] Consider whether this project should have its own social presence
+  (a place to follow for new entries). **(needs Oli)** this means
+  creating and owning an account, not something to invent.
+
 ---
 
 ## Recently shipped
