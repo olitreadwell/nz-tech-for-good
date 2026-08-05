@@ -104,8 +104,11 @@ for e in entries:
         edge_set.add(key)
 
 # --- domain-level overview edges ---
+# Iterate the edges in sorted order so the generated diagram is byte-for-byte
+# deterministic. Set iteration order varies with Python's hash seed, which
+# made GUIDE.md differ between runs and broke the CI freshness check.
 domain_edge_counts = defaultdict(int)
-for a, b in edge_set:
+for a, b in sorted(edge_set):
     da, db = entry_domain[a], entry_domain[b]
     if da == db:
         continue
@@ -114,7 +117,7 @@ for a, b in edge_set:
 
 # --- per-domain internal edges ---
 internal_edges = defaultdict(list)
-for a, b in edge_set:
+for a, b in sorted(edge_set):
     da, db = entry_domain[a], entry_domain[b]
     if da == db:
         internal_edges[da].append((a, b))
@@ -219,7 +222,7 @@ for d in domain_order:
     noun = "entry" if n == 1 else "entries"
     lines.append(f'    {domain_ids[d]}["{label}<br/>({n} {noun})"]')
 seen_domain_edges = set()
-for (da, db), count in domain_edge_counts.items():
+for (da, db), count in sorted(domain_edge_counts.items()):
     key = tuple(sorted((da, db)))
     if key in seen_domain_edges:
         continue
@@ -251,7 +254,7 @@ for d in mini_domains:
         ids[e["name"]] = nid
         safe_label = e["name"].replace('"', "'")
         lines.append(f'    {nid}["{safe_label}"]')
-    for a, b in internal_edges[d]:
+    for a, b in sorted(internal_edges[d]):
         lines.append(f"    {ids[a]} --- {ids[b]}")
     lines.append("```")
     lines.append("")

@@ -75,23 +75,23 @@ flowchart TD
     d24["Education Equity Tech<br/>(2 entries)"]
     d25["Journalism & Media Tech<br/>(3 entries)"]
     d26["Māori Data Sovereignty<br/>(5 entries)"]
-    d26 ---|"1 link"| d2
-    d24 ---|"3 links"| d15
-    d20 ---|"3 links"| d7
-    d0 ---|"2 links"| d22
-    d6 ---|"1 link"| d7
-    d26 ---|"3 links"| d15
-    d9 ---|"4 links"| d5
     d26 ---|"1 link"| d21
-    d17 ---|"2 links"| d7
-    d20 ---|"1 link"| d1
-    d17 ---|"1 link"| d13
-    d20 ---|"2 links"| d8
-    d17 ---|"1 link"| d12
+    d26 ---|"3 links"| d15
+    d26 ---|"1 link"| d2
     d20 ---|"1 link"| d6
-    d13 ---|"1 link"| d18
-    d5 ---|"1 link"| d11
+    d20 ---|"1 link"| d1
+    d20 ---|"2 links"| d8
+    d20 ---|"3 links"| d7
+    d17 ---|"1 link"| d12
+    d17 ---|"1 link"| d13
+    d17 ---|"2 links"| d7
+    d0 ---|"2 links"| d22
+    d24 ---|"3 links"| d15
+    d9 ---|"4 links"| d5
+    d6 ---|"1 link"| d7
     d6 ---|"1 link"| d11
+    d5 ---|"1 link"| d11
+    d13 ---|"1 link"| d18
 ```
 
 ### Domain close-ups
@@ -107,12 +107,12 @@ flowchart TD
     n_BeLab["Be. Lab"]
     n_BlindLowVisionNZ["Blind Low Vision NZ"]
     n_CreativeTechNZ["Creative Tech NZ"]
-    n_AccessMattersAotearoaAcc --- n_CreativeTechNZ
-    n_BeLab --- n_BlindLowVisionNZ
-    n_AccessMattersAotearoaAcc --- n_BeLab
-    n_AccessMattersAotearoaAcc --- n_BlindLowVisionNZ
     n_AccessAdvisors --- n_BeLab
     n_AccessAdvisors --- n_BlindLowVisionNZ
+    n_AccessMattersAotearoaAcc --- n_BeLab
+    n_AccessMattersAotearoaAcc --- n_BlindLowVisionNZ
+    n_AccessMattersAotearoaAcc --- n_CreativeTechNZ
+    n_BeLab --- n_BlindLowVisionNZ
 ```
 
 **Human Rights Tech**
@@ -138,14 +138,14 @@ flowchart TD
     n_NewZealandLegalInformati["New Zealand Legal Information Institute (NZLII)"]
     n_OpenLawNZ["OpenLaw NZ"]
     n_WellingtonCommunityJusti["Wellington Community Justice Project"]
-    n_CommunityLawCentresoAote --- n_NewZealandLegalInformati
-    n_ALTERAdvancingLawandTech --- n_WellingtonCommunityJusti
     n_ALTERAdvancingLawandTech --- n_OpenLawNZ
+    n_ALTERAdvancingLawandTech --- n_WellingtonCommunityJusti
     n_CitizensAdviceBureauNewZ --- n_CommunityLawCentresoAote
-    n_NewZealandLegalInformati --- n_OpenLawNZ
-    n_CommunityLawCentresoAote --- n_WellingtonCommunityJusti
-    n_CommunityLawCentresoAote --- n_OpenLawNZ
     n_CommunityLawCentresoAote --- n_JustSpeak
+    n_CommunityLawCentresoAote --- n_NewZealandLegalInformati
+    n_CommunityLawCentresoAote --- n_OpenLawNZ
+    n_CommunityLawCentresoAote --- n_WellingtonCommunityJusti
+    n_NewZealandLegalInformati --- n_OpenLawNZ
 ```
 
 **Refugee & Migrant Support Tech**
@@ -158,12 +158,12 @@ flowchart TD
     n_ChangeMakersResettlement["ChangeMakers Resettlement Forum"]
     n_HOSTInternationalAotearo["HOST International Aotearoa"]
     n_RefugeesasSurvivorsNewZe["Refugees as Survivors New Zealand (RASNZ)"]
-    n_BelongAotearoa --- n_HOSTInternationalAotearo
     n_AotearoaResettledCommuni --- n_BelongAotearoa
     n_AotearoaResettledCommuni --- n_ChangeMakersResettlement
     n_AsylumSeekersSupportTrus --- n_BelongAotearoa
-    n_BelongAotearoa --- n_RefugeesasSurvivorsNewZe
     n_BelongAotearoa --- n_ChangeMakersResettlement
+    n_BelongAotearoa --- n_HOSTInternationalAotearo
+    n_BelongAotearoa --- n_RefugeesasSurvivorsNewZe
 ```
 
 **Green & Climate Tech**
@@ -181,8 +181,8 @@ flowchart TD
     n_TheCacophonyProject["The Cacophony Project"]
     n_TohaNetwork["Toha Network"]
     n_TrapNZ["Trap.NZ"]
-    n_TheCacophonyProject --- n_TrapNZ
     n_CarbonCrop --- n_CawthronInstituteOceanTe
+    n_TheCacophonyProject --- n_TrapNZ
 ```
 
 **GovTech**
@@ -193,8 +193,8 @@ flowchart TD
     n_DigitalIdentityNewZealan["Digital Identity New Zealand"]
     n_Digitalgovtnz["Digital.govt.nz"]
     n_GOVIS["GOVIS"]
-    n_DigitalIdentityNewZealan --- n_Digitalgovtnz
     n_AucklandCodesignLab --- n_Digitalgovtnz
+    n_DigitalIdentityNewZealan --- n_Digitalgovtnz
     n_Digitalgovtnz --- n_GOVIS
 ```
 
@@ -226,17 +226,17 @@ flowchart TD
     n_TasmanDistrictCouncilGeo["Tasman District Council GeoHUB"]
     n_WaikatoOpenDataHub["Waikato Open Data Hub"]
     n_WellingtonCityCouncilOpe["Wellington City Council Open Data"]
-    n_HawkesBayRegionalCouncil --- n_datagovtnz
-    n_LINZDataServiceToitTeWhe --- n_datagovtnz
+    n_AucklandCouncilOpenData --- n_Koordinates
     n_AucklandCouncilOpenData --- n_datagovtnz
     n_DigitalNZ --- n_datagovtnz
-    n_LINZDataServiceToitTeWhe --- n_ManaakiWhenuaLandcareRes
-    n_Koordinates --- n_datagovtnz
-    n_WaikatoOpenDataHub --- n_datagovtnz
+    n_HawkesBayRegionalCouncil --- n_datagovtnz
     n_Koordinates --- n_LINZDataServiceToitTeWhe
     n_Koordinates --- n_ManaakiWhenuaLandcareRes
+    n_Koordinates --- n_datagovtnz
+    n_LINZDataServiceToitTeWhe --- n_ManaakiWhenuaLandcareRes
+    n_LINZDataServiceToitTeWhe --- n_datagovtnz
     n_OtagoRegionalCouncilSpat --- n_datagovtnz
-    n_AucklandCouncilOpenData --- n_Koordinates
+    n_WaikatoOpenDataHub --- n_datagovtnz
 ```
 
 **Makerspaces & Hackerspaces**
@@ -266,11 +266,11 @@ flowchart TD
     n_CooperativeBusinessNewZe["Cooperative Business New Zealand"]
     n_Enspiral["Enspiral"]
     n_Loomio["Loomio"]
-    n_Enspiral --- n_Loomio
-    n_CooperativeBusinessNewZe --- n_Loomio
-    n_CooperativeBusinessNewZe --- n_Enspiral
     n_BridgeSeatCooperative --- n_CooperativeBusinessNewZe
     n_BridgeSeatCooperative --- n_Loomio
+    n_CooperativeBusinessNewZe --- n_Enspiral
+    n_CooperativeBusinessNewZe --- n_Loomio
+    n_Enspiral --- n_Loomio
 ```
 
 **Mental Health Tech**
@@ -311,9 +311,9 @@ flowchart TD
     n_EverybodyEats["Everybody Eats"]
     n_Kaibosh["Kaibosh"]
     n_KiwiHarvest["KiwiHarvest"]
+    n_EverybodyEats --- n_Kaibosh
     n_EverybodyEats --- n_KiwiHarvest
     n_Kaibosh --- n_KiwiHarvest
-    n_EverybodyEats --- n_Kaibosh
 ```
 
 **Crisis & Humanitarian Tech**
@@ -324,8 +324,8 @@ flowchart TD
     n_GetReadyNationalEmergenc["Get Ready (National Emergency Management Agency)"]
     n_NewZealandRedCross["New Zealand Red Cross"]
     n_WhakarongorauAotearoa["Whakarongorau Aotearoa"]
-    n_GetReadyNationalEmergenc --- n_NewZealandRedCross
     n_GeoNet --- n_GetReadyNationalEmergenc
+    n_GetReadyNationalEmergenc --- n_NewZealandRedCross
     n_NewZealandRedCross --- n_WhakarongorauAotearoa
 ```
 
@@ -347,8 +347,8 @@ flowchart TD
     n_NZGovTech["NZ GovTech"]
     n_PublicGoodAotearoaTeIwiW["Public Good Aotearoa (Te Iwi Whānui)"]
     n_WellingtonHackspaceWHACK["Wellington Hackspace (WHACK)"]
-    n_Hackland --- n_WellingtonHackspaceWHACK
     n_GovHackAotearoaNewZealan --- n_NZGovTech
+    n_Hackland --- n_WellingtonHackspaceWHACK
 ```
 
 **Disability Employment Tech**
@@ -367,8 +367,8 @@ flowchart TD
     n_Newsroom["Newsroom"]
     n_NZOnAirPublicInterestJou["NZ On Air — Public Interest Journalism Fund"]
     n_TheSpinoff["The Spinoff"]
-    n_Newsroom --- n_TheSpinoff
     n_NZOnAirPublicInterestJou --- n_Newsroom
+    n_Newsroom --- n_TheSpinoff
 ```
 
 **Māori Data Sovereignty**
@@ -380,12 +380,12 @@ flowchart TD
     n_TeHhiriDigitalInnovation["Te Hīhiri Digital Innovation Hub"]
     n_TeKhuiRaraunga["Te Kāhui Raraunga"]
     n_TeManaRaraunga["Te Mana Raraunga"]
+    n_NgPaeoteMramatanga --- n_TeKhuiRaraunga
+    n_NgPaeoteMramatanga --- n_TeManaRaraunga
+    n_TeHikuMediaPapaReo --- n_TeManaRaraunga
     n_TeHhiriDigitalInnovation --- n_TeKhuiRaraunga
     n_TeHhiriDigitalInnovation --- n_TeManaRaraunga
     n_TeKhuiRaraunga --- n_TeManaRaraunga
-    n_TeHikuMediaPapaReo --- n_TeManaRaraunga
-    n_NgPaeoteMramatanga --- n_TeKhuiRaraunga
-    n_NgPaeoteMramatanga --- n_TeManaRaraunga
 ```
 
 ## Disability & Accessibility Tech
