@@ -146,6 +146,56 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Amotai",
+    "domain": "iwi / Māori tech initiatives",
+    "what": "Amotai is Aotearoa's supplier diversity intermediary, connecting public and private sector buyers with over 2,200 verified Māori and Pasifika-owned businesses, including more than 100 tech suppliers working across AI, cybersecurity, automation, and digital services. Founded in 2018 within Auckland Council, it now operates nationally, helping grow Māori and Pasifika business capability and increasing the share of procurement contracts awarded to these communities.",
+    "region": "national",
+    "website": "https://amotai.nz",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/amotai",
+    "linkedin_people": [],
+    "tags": [
+      "māori-business",
+      "pasifika-business",
+      "supplier-diversity",
+      "procurement",
+      "economic-equity"
+    ],
+    "related_to": [],
+    "source": "amotai.nz confirmed active via web search; Amotai Supplier Diversity Awards 2025 event confirmed via OurAuckland (August 2025); founding in 2018 at Auckland Council confirmed by multiple sources including The Spinoff and Amotai's own founding story page; verified via web search 2026-08-05",
+    "founding_year": 2018,
+    "takes_contributors": false,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Aotearoa Food Rescue Alliance",
+    "domain": "food-rescue / food-security tech",
+    "what": "The Aotearoa Food Rescue Alliance (AFRA) is the national peak body for food rescue organisations in New Zealand, providing sector coordination, shared data collection through a sector data portal, and advocacy to government on food security policy.",
+    "region": "national",
+    "website": "https://afra.org.nz",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/aotearoa-food-rescue-alliance",
+    "linkedin_people": [],
+    "tags": [
+      "food rescue",
+      "food security",
+      "advocacy",
+      "data",
+      "national"
+    ],
+    "related_to": [
+      "KiwiHarvest",
+      "Kaibosh",
+      "Everybody Eats"
+    ],
+    "source": "Web search confirmed via afra.org.nz/about-us/, waiwaste.org.nz/about/aotearoa-food-rescue-alliance/, LinkedIn company page, and Facebook page showing active posts in 2025; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
+    "founding_year": 2021,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
     "name": "Aotearoa Resettled Community Coalition (ARCC)",
     "domain": "refugee / migrant support tech",
     "what": "The Aotearoa Resettled Community Coalition is an Auckland umbrella charity representing 26 member organisations from former refugee communities, helping people find housing, healthcare, and legal services, and giving them a collective voice on resettlement issues.",
@@ -625,6 +675,31 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Com2Tech",
+    "domain": "digital-inclusion",
+    "what": "Com2Tech is a volunteer-led community trust in Dunedin that provides free digital skills classes, low-cost refurbished devices, and community tech support to help people of all ages get online, including dedicated programmes for seniors and job-seekers.",
+    "region": "Otago",
+    "website": "https://www.com2.tech",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/community-communications-technology-trust-com2tech",
+    "linkedin_people": [],
+    "tags": [
+      "digital inclusion",
+      "device recycling",
+      "community tech",
+      "seniors",
+      "dunedin"
+    ],
+    "related_to": [
+      "Katoa Connect (formerly 20/20 Trust)"
+    ],
+    "source": "Web search confirmed via odt.co.nz Otago Daily Times article, volunteersouth.org.nz/organisation-profile/1529-community-communications-technology-trust-com2tech, digitalinclusion.nz/placemarks/com2tech/, and LinkedIn company page; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
+    "founding_year": null,
+    "takes_contributors": true,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
     "name": "Community Housing Aotearoa",
     "domain": "housing / homelessness tech",
     "what": "Community Housing Aotearoa is the peak body for New Zealand's community housing sector, representing more than 175 housing providers and partners who together house around 30,000 people, and it campaigns and shares research so more New Zealanders can access a warm, safe, affordable home.",
@@ -787,6 +862,31 @@
     "source": "devacademy.co.nz homepage (verified via curl, HTTP 200); web search of devacademy.co.nz and ecommercenews.co.nz",
     "founding_year": null,
     "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Digital Future Aotearoa",
+    "domain": "education equity tech",
+    "what": "Digital Future Aotearoa is a Christchurch-based charitable trust (CC51617) that runs Code Club Aotearoa, a national network of free coding clubs for children, and the Recycle a Device programme, which refurbishes donated laptops for students who cannot afford a device.",
+    "region": "Canterbury",
+    "website": "https://www.digitalfutureaotearoa.nz",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/digital-future-aotearoa",
+    "linkedin_people": [],
+    "tags": [
+      "coding education",
+      "digital inclusion",
+      "device recycling",
+      "youth",
+      "christchurch"
+    ],
+    "related_to": [
+      "Digital Natives Academy"
+    ],
+    "source": "Web search confirmed via internetnz.nz/news-and-articles/announcing-a-new-partner-digital-future-aotearoa/, NZ Charities Register CC51617 at register.charities.govt.nz/Charity/CC51617, and LinkedIn company page; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
+    "founding_year": 2015,
+    "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-05"
   },
@@ -1022,6 +1122,29 @@
     ],
     "source": "everybodyeats.nz homepage title confirmed via curl (HTTP 200); WebFetch was blocked by the site's own bot-protection (403)",
     "founding_year": null,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Fibre Fale",
+    "domain": "digital-inclusion",
+    "what": "Fibre Fale is a Pasifika-led social enterprise creating pathways into the technology industry for Pacific people in Aotearoa. Founded in 2022, it delivers events, mentoring programmes, and free AI literacy resources (including the 'AI with Eteroa' online course), with a goal of equal Pasifika representation in the NZ tech workforce by 2042.",
+    "region": "Auckland",
+    "website": "https://www.fibrefale.com",
+    "github": "",
+    "linkedin_org": "https://www.linkedin.com/company/fibre-fale",
+    "linkedin_people": [],
+    "tags": [
+      "pasifika",
+      "digital-inclusion",
+      "tech-pathways",
+      "ai-literacy",
+      "social-enterprise"
+    ],
+    "related_to": [],
+    "source": "fibrefale.com confirmed via Foundation North grant announcement and DigitalNZ record; NZBN 9429048083638 confirmed on Company Hub; launch event November 2022 on Eventbrite; RNZ interview with co-founders confirmed; verified via web search 2026-08-05",
+    "founding_year": 2022,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -1470,6 +1593,32 @@
     ],
     "source": "justspeak.org.nz homepage (verified via curl, HTTP 200); web search of justspeak.org.nz purpose page",
     "founding_year": null,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Kai Commitment",
+    "domain": "food-rescue / food-security tech",
+    "what": "Kai Commitment is a registered New Zealand charity running a food-waste measurement programme for large food businesses, using a Target-Measure-Act-Collaborate data framework to help signatories set reduction targets and track progress toward halving food waste by 2030.",
+    "region": "national",
+    "website": "https://kaicommitment.org.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "food waste",
+      "data measurement",
+      "sustainability",
+      "sdg 12.3",
+      "charity"
+    ],
+    "related_to": [
+      "KiwiHarvest",
+      "Kaibosh"
+    ],
+    "source": "Web search confirmed via kaicommitment.org.nz/about/, tmnz.co.nz/nz-food-waste-champions-12-3-kai-commitment-impact-story/, and NZ Charities Register CC60845 at register.charities.govt.nz/Charity/CC60845; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
+    "founding_year": 2020,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -2170,6 +2319,29 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Pūhoro STEMM Academy",
+    "domain": "education equity tech",
+    "what": "Pūhoro STEMM Academy supports Māori secondary school students (rangatahi) into science, technology, engineering, mathematics, and mātauranga (STEMM) pathways. Founded in 2016 at Massey University in Palmerston North, it delivers kaupapa Māori mentoring, tutoring, and wānanga across 12 regions, improving academic achievement and building pathways into high-value STEMM careers for rangatahi who would otherwise be under-represented in these fields.",
+    "region": "national",
+    "website": "https://www.puhoro.org.nz",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/p%C5%ABhoro",
+    "linkedin_people": [],
+    "tags": [
+      "kaupapa-māori",
+      "stemm",
+      "rangatahi",
+      "science-pathways",
+      "education"
+    ],
+    "related_to": [],
+    "source": "Multiple web search results (puhoro.org.nz, Massey University news, ZoomInfo, Our Land & Water, NZ Herald) confirm active status as of 2026-08-05; Ministry of Education funding secured until 2027; founding year 2016 at Massey University corroborated across multiple independent sources",
+    "founding_year": 2016,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
     "name": "REANNZ",
     "domain": "research / education tech",
     "what": "REANNZ (Research and Education Advanced Network New Zealand) is a Crown-owned non-profit that runs New Zealand's high-speed internet network dedicated to universities, research institutes, and schools, connecting them to more than 120 similar networks worldwide.",
@@ -2308,6 +2480,29 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Taiuru & Associates",
+    "domain": "Māori data sovereignty / indigenous data",
+    "what": "Taiuru & Associates is a New Zealand consultancy specialising in Māori data sovereignty, AI governance, and responsible emerging technology. It advises iwi, government agencies, and private organisations on tikanga Māori and digital systems, producing widely cited frameworks, Te Tiriti-based AI ethical principles, and policy guidance to protect Māori rights in the data and AI age.",
+    "region": "national",
+    "website": "https://www.taiuru.co.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "māori-data-sovereignty",
+      "ai-governance",
+      "responsible-ai",
+      "tech-ethics",
+      "indigenous-rights"
+    ],
+    "related_to": [],
+    "source": "taiuru.co.nz confirmed active via web search with content updated July 2026 (including Māori AI Sovereign Principles, Data Governance Report 2025 pages); Dr Karaitiana Taiuru confirmed as chair of AI Forum NZ Māori Advisory Panel; listed on AI Health Research NZ and ResearchGate; verified via web search 2026-08-05",
+    "founding_year": null,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
     "name": "Takiwā",
     "domain": "iwi / Māori tech initiatives",
     "what": "Takiwā is a New Zealand geospatial mapping platform, running since 2012, that lets Māori landowners, iwi, and other indigenous communities collect and control their own cultural and environmental data on interactive maps, instead of only government agencies holding that data.",
@@ -2372,6 +2567,29 @@
     "related_to": [],
     "source": "geohub.tasman.govt.nz homepage (verified via curl, HTTP 200)",
     "founding_year": null,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Te Hapori Matihiko",
+    "domain": "iwi / Māori tech initiatives",
+    "what": "Te Hapori Matihiko is a global community for Māori working in, or aspiring to work in, the digital and tech industries. Founded in 2022 by Katie Brown and Lee Timutimu with MBIE Māori Innovation funding, it provides advocacy, professional networking, and cultural support, and runs the annual Ngā Tohu Matihiko awards celebrating Māori excellence in digital and technology across Aotearoa and the world.",
+    "region": "national",
+    "website": "https://matihiko.nz",
+    "github": "",
+    "linkedin_org": "https://www.linkedin.com/company/te-hapori-matihiko",
+    "linkedin_people": [],
+    "tags": [
+      "māori-tech",
+      "digital-community",
+      "advocacy",
+      "tech-leadership",
+      "te-ao-māori"
+    ],
+    "related_to": [],
+    "source": "matihiko.nz confirmed active via web search; Ngā Tohu Matihiko 2025 awards confirmed by NZ Herald, Reseller News, and Thaiger; founded 2022 by Katie Brown and Lee Timutimu confirmed via Poutama Trust, Social Good NZ and matihiko.nz itself; verified via web search 2026-08-05",
+    "founding_year": 2022,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -2515,6 +2733,29 @@
     ],
     "related_to": [],
     "source": "cacophony.org.nz homepage (verified via WebFetch) and github.com/TheCacophonyProject (verified via web search); opensource.com background via web search",
+    "founding_year": null,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-05"
+  },
+  {
+    "name": "The Cause Collective",
+    "domain": "digital-inclusion",
+    "what": "The Cause Collective is a South Auckland charitable organisation that runs a Creative and Tech Hub and a mobile tech van, giving rangatahi Maori and Pasifika free hands-on technology training, device access, and pathways into the tech sector.",
+    "region": "Tamaki Makaurau",
+    "website": "https://www.thecausecollective.org.nz",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/the-cause-collective-nz",
+    "linkedin_people": [],
+    "tags": [
+      "digital inclusion",
+      "maori",
+      "pasifika",
+      "youth tech",
+      "south auckland"
+    ],
+    "related_to": [],
+    "source": "Web search confirmed via aceaotearoa.org.nz/news-and-resources/news/cause-collective-championing-maori-and-pacific-talent-tech, tindall.org.nz/one-community-shaping-aotearoas-tech-future-the-cause-collective/, and LinkedIn company page; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
