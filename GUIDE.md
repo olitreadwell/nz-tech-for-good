@@ -16,6 +16,8 @@ Entries are grouped by **domain**: the area of public good the organisation work
 - **Human Rights Tech** (human-rights tech): 4 entries
 - **Tech Ethics & Responsible AI** (tech-ethics / responsible-AI): 1 entry
 - **Legal Aid & Justice Tech** (legal-aid / justice tech): 7 entries
+- **Iwi & Māori Tech Initiatives** (iwi / Māori tech initiatives): 6 entries
+- **Food Rescue & Food Security Tech** (food-rescue / food-security tech): 5 entries
 - **Refugee & Migrant Support Tech** (refugee / migrant support tech): 6 entries
 - **Green & Climate Tech** (green / climate-tech): 11 entries
 - **GovTech** (govtech): 4 entries
@@ -26,21 +28,19 @@ Entries are grouped by **domain**: the area of public good the organisation work
 - **Research & Education Tech** (research / education tech): 6 entries
 - **Mental Health Tech** (mental-health tech): 2 entries
 - **Nonprofit & NGO Tech** (nonprofit / NGO tech): 4 entries
+- **Digital Inclusion** (digital-inclusion): 4 entries
 - **Housing & Homelessness Tech** (housing / homelessness tech): 1 entry
-- **Iwi & Māori Tech Initiatives** (iwi / Māori tech initiatives): 4 entries
-- **Food Rescue & Food Security Tech** (food-rescue / food-security tech): 3 entries
+- **Education Equity Tech** (education equity tech): 4 entries
 - **Crisis & Humanitarian Tech** (crisis / humanitarian-tech): 4 entries
 - **Volunteering & Giving Platforms** (volunteering / giving platforms): 1 entry
 - **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good): 2 entries
 - **Civic Tech** (civic-tech): 5 entries
 - **Health Tech for Good / Hauora Māori** (health tech for good / hauora Māori): 1 entry
 - **Disability Employment Tech** (disability employment tech): 2 entries
-- **Digital Inclusion** (digital-inclusion): 1 entry
-- **Education Equity Tech** (education equity tech): 2 entries
 - **Journalism & Media Tech** (journalism / media-tech): 3 entries
-- **Māori Data Sovereignty** (Māori data sovereignty / indigenous data): 5 entries
+- **Māori Data Sovereignty** (Māori data sovereignty / indigenous data): 6 entries
 
-**Total entries: 117, across 27 domains.**
+**Total entries: 127, across 27 domains.**
 
 ## Ecosystem overview
 
@@ -52,46 +52,46 @@ flowchart TD
     d1["Human Rights Tech<br/>(4 entries)"]
     d2["Tech Ethics & Responsible AI<br/>(1 entry)"]
     d3["Legal Aid & Justice Tech<br/>(7 entries)"]
-    d4["Refugee & Migrant Support Tech<br/>(6 entries)"]
-    d5["Green & Climate Tech<br/>(11 entries)"]
-    d6["GovTech<br/>(4 entries)"]
-    d7["Open Data<br/>(24 entries)"]
-    d8["Makerspaces & Hackerspaces<br/>(2 entries)"]
-    d9["Environmental Citizen Science<br/>(3 entries)"]
-    d10["Worker & Platform Co-ops<br/>(4 entries)"]
-    d11["Research & Education Tech<br/>(6 entries)"]
-    d12["Mental Health Tech<br/>(2 entries)"]
-    d13["Nonprofit & NGO Tech<br/>(4 entries)"]
-    d14["Housing & Homelessness Tech<br/>(1 entry)"]
-    d15["Iwi & Māori Tech Initiatives<br/>(4 entries)"]
-    d16["Food Rescue & Food Security Tech<br/>(3 entries)"]
-    d17["Crisis & Humanitarian Tech<br/>(4 entries)"]
-    d18["Volunteering & Giving Platforms<br/>(1 entry)"]
-    d19["Financial Inclusion & Fintech for Good<br/>(2 entries)"]
-    d20["Civic Tech<br/>(5 entries)"]
-    d21["Health Tech for Good / Hauora Māori<br/>(1 entry)"]
-    d22["Disability Employment Tech<br/>(2 entries)"]
-    d23["Digital Inclusion<br/>(1 entry)"]
-    d24["Education Equity Tech<br/>(2 entries)"]
+    d4["Iwi & Māori Tech Initiatives<br/>(6 entries)"]
+    d5["Food Rescue & Food Security Tech<br/>(5 entries)"]
+    d6["Refugee & Migrant Support Tech<br/>(6 entries)"]
+    d7["Green & Climate Tech<br/>(11 entries)"]
+    d8["GovTech<br/>(4 entries)"]
+    d9["Open Data<br/>(24 entries)"]
+    d10["Makerspaces & Hackerspaces<br/>(2 entries)"]
+    d11["Environmental Citizen Science<br/>(3 entries)"]
+    d12["Worker & Platform Co-ops<br/>(4 entries)"]
+    d13["Research & Education Tech<br/>(6 entries)"]
+    d14["Mental Health Tech<br/>(2 entries)"]
+    d15["Nonprofit & NGO Tech<br/>(4 entries)"]
+    d16["Digital Inclusion<br/>(4 entries)"]
+    d17["Housing & Homelessness Tech<br/>(1 entry)"]
+    d18["Education Equity Tech<br/>(4 entries)"]
+    d19["Crisis & Humanitarian Tech<br/>(4 entries)"]
+    d20["Volunteering & Giving Platforms<br/>(1 entry)"]
+    d21["Financial Inclusion & Fintech for Good<br/>(2 entries)"]
+    d22["Civic Tech<br/>(5 entries)"]
+    d23["Health Tech for Good / Hauora Māori<br/>(1 entry)"]
+    d24["Disability Employment Tech<br/>(2 entries)"]
     d25["Journalism & Media Tech<br/>(3 entries)"]
-    d26["Māori Data Sovereignty<br/>(5 entries)"]
-    d26 ---|"1 link"| d21
-    d26 ---|"3 links"| d15
+    d26["Māori Data Sovereignty<br/>(6 entries)"]
+    d26 ---|"1 link"| d23
+    d26 ---|"3 links"| d4
     d26 ---|"1 link"| d2
-    d20 ---|"1 link"| d6
-    d20 ---|"1 link"| d1
-    d20 ---|"2 links"| d8
-    d20 ---|"3 links"| d7
-    d17 ---|"1 link"| d12
-    d17 ---|"1 link"| d13
-    d17 ---|"2 links"| d7
-    d0 ---|"2 links"| d22
-    d24 ---|"3 links"| d15
-    d9 ---|"4 links"| d5
-    d6 ---|"1 link"| d7
-    d6 ---|"1 link"| d11
-    d5 ---|"1 link"| d11
-    d13 ---|"1 link"| d18
+    d22 ---|"1 link"| d8
+    d22 ---|"1 link"| d1
+    d22 ---|"2 links"| d10
+    d22 ---|"3 links"| d9
+    d19 ---|"1 link"| d14
+    d19 ---|"1 link"| d15
+    d19 ---|"2 links"| d9
+    d0 ---|"2 links"| d24
+    d18 ---|"4 links"| d4
+    d11 ---|"4 links"| d7
+    d8 ---|"1 link"| d9
+    d8 ---|"1 link"| d13
+    d7 ---|"1 link"| d13
+    d15 ---|"1 link"| d20
 ```
 
 ### Domain close-ups
@@ -146,6 +146,38 @@ flowchart TD
     n_CommunityLawCentresoAote --- n_OpenLawNZ
     n_CommunityLawCentresoAote --- n_WellingtonCommunityJusti
     n_NewZealandLegalInformati --- n_OpenLawNZ
+```
+
+**Iwi & Māori Tech Initiatives**
+
+```mermaid
+flowchart TD
+    n_Amotai["Amotai"]
+    n_DevAcademyAotearoaMorian["Dev Academy Aotearoa (Māori and Pasifika cohorts)"]
+    n_DigitalNativesAcademy["Digital Natives Academy"]
+    n_KiwaDigital["Kiwa Digital"]
+    n_Takiw["Takiwā"]
+    n_TeHaporiMatihiko["Te Hapori Matihiko"]
+    n_DevAcademyAotearoaMorian --- n_DigitalNativesAcademy
+```
+
+**Food Rescue & Food Security Tech**
+
+```mermaid
+flowchart TD
+    n_AotearoaFoodRescueAllian["Aotearoa Food Rescue Alliance"]
+    n_EverybodyEats["Everybody Eats"]
+    n_KaiCommitment["Kai Commitment"]
+    n_Kaibosh["Kaibosh"]
+    n_KiwiHarvest["KiwiHarvest"]
+    n_AotearoaFoodRescueAllian --- n_EverybodyEats
+    n_AotearoaFoodRescueAllian --- n_Kaibosh
+    n_AotearoaFoodRescueAllian --- n_KiwiHarvest
+    n_EverybodyEats --- n_Kaibosh
+    n_EverybodyEats --- n_KiwiHarvest
+    n_KaiCommitment --- n_Kaibosh
+    n_KaiCommitment --- n_KiwiHarvest
+    n_Kaibosh --- n_KiwiHarvest
 ```
 
 **Refugee & Migrant Support Tech**
@@ -293,27 +325,15 @@ flowchart TD
     n_Collaborate --- n_VolunteeringNewZealandTa
 ```
 
-**Iwi & Māori Tech Initiatives**
+**Digital Inclusion**
 
 ```mermaid
 flowchart TD
-    n_DevAcademyAotearoaMorian["Dev Academy Aotearoa (Māori and Pasifika cohorts)"]
-    n_DigitalNativesAcademy["Digital Natives Academy"]
-    n_KiwaDigital["Kiwa Digital"]
-    n_Takiw["Takiwā"]
-    n_DevAcademyAotearoaMorian --- n_DigitalNativesAcademy
-```
-
-**Food Rescue & Food Security Tech**
-
-```mermaid
-flowchart TD
-    n_EverybodyEats["Everybody Eats"]
-    n_Kaibosh["Kaibosh"]
-    n_KiwiHarvest["KiwiHarvest"]
-    n_EverybodyEats --- n_Kaibosh
-    n_EverybodyEats --- n_KiwiHarvest
-    n_Kaibosh --- n_KiwiHarvest
+    n_Com2Tech["Com2Tech"]
+    n_FibreFale["Fibre Fale"]
+    n_KatoaConnectformerly2020["Katoa Connect (formerly 20/20 Trust)"]
+    n_TheCauseCollective["The Cause Collective"]
+    n_Com2Tech --- n_KatoaConnectformerly2020
 ```
 
 **Crisis & Humanitarian Tech**
@@ -376,6 +396,7 @@ flowchart TD
 ```mermaid
 flowchart TD
     n_NgPaeoteMramatanga["Ngā Pae o te Māramatanga"]
+    n_TaiuruAssociates["Taiuru & Associates"]
     n_TeHikuMediaPapaReo["Te Hiku Media / Papa Reo"]
     n_TeHhiriDigitalInnovation["Te Hīhiri Digital Innovation Hub"]
     n_TeKhuiRaraunga["Te Kāhui Raraunga"]
@@ -536,6 +557,100 @@ _7 entries in this domain._
 - Links: [Website](https://www.wellingtoncjp.com/)
 - Tags: access to justice, student-led, advocacy, non-profit
 - Related: Community Law Centres o Aotearoa
+
+## Iwi & Māori Tech Initiatives
+
+_6 entries in this domain._
+
+**Amotai**
+
+- Amotai is Aotearoa's supplier diversity intermediary, connecting public and private sector buyers with over 2,200 verified Māori and Pasifika-owned businesses — including more than 100 tech suppliers working across AI, cybersecurity, automation, and digital services. Founded in 2018 within Auckland Council, it now operates nationally, helping grow Māori and Pasifika business capability and increasing the share of procurement contracts awarded to these communities.
+- Region: national
+- Links: [Website](https://amotai.nz) · [LinkedIn](https://nz.linkedin.com/company/amotai)
+- Tags: māori-business, pasifika-business, supplier-diversity, procurement, economic-equity
+
+**Dev Academy Aotearoa (Māori and Pasifika cohorts)**
+
+- Dev Academy Aotearoa is a New Zealand coding bootcamp that runs dedicated scholarships for Māori, Pasifika, and women, cutting course fees so more people from these groups can retrain as web developers, and it has graduated more than twice the share of women and Māori compared with a typical computer science degree.
+- Region: national
+- Links: [Website](https://devacademy.co.nz/)
+- Tags: Māori tech, coding bootcamp, scholarships, digital skills
+- Related: Digital Natives Academy
+
+**Digital Natives Academy**
+
+- Digital Natives Academy is a Rotorua-based charity, started in 2014, that gives young people, especially Māori rangatahi (youth), free training and access to technology in coding, robotics, animation, and game development, to help them move from using technology to creating it.
+- Region: Rotorua
+- Links: [Website](https://digitalnatives.academy/)
+- Tags: Māori tech, youth technology education, digital skills, charity
+- Related: Dev Academy Aotearoa
+
+**Kiwa Digital**
+
+- Kiwa Digital is an Auckland technology company, founded in 2003, that builds apps and cloud software helping Indigenous communities record, protect, and share their languages and cultural stories, including tools for te reo Māori.
+- Region: Auckland
+- Links: [Website](https://kiwadigital.com/)
+- Tags: Māori tech, indigenous language technology, cultural data sovereignty, startup
+- Related: Te Hiku Media / Papa Reo
+
+**Takiwā**
+
+- Takiwā is a New Zealand geospatial mapping platform, running since 2012, that lets Māori landowners, iwi, and other indigenous communities collect and control their own cultural and environmental data on interactive maps, instead of only government agencies holding that data.
+- Region: national
+- Links: [Website](https://www.takiwa.co/)
+- Tags: Māori tech, indigenous data sovereignty, geospatial, mapping, startup
+- Related: Te Kāhui Raraunga, Te Mana Raraunga
+
+**Te Hapori Matihiko**
+
+- Te Hapori Matihiko is a global community for Māori working in, or aspiring to work in, the digital and tech industries. Founded in 2022 by Katie Brown and Lee Timutimu with MBIE Māori Innovation funding, it provides advocacy, professional networking, and cultural support, and runs the annual Ngā Tohu Matihiko awards celebrating Māori excellence in digital and technology across Aotearoa and the world.
+- Region: national
+- Links: [Website](https://matihiko.nz) · [LinkedIn](https://www.linkedin.com/company/te-hapori-matihiko)
+- Tags: māori-tech, digital-community, advocacy, tech-leadership, te-ao-māori
+
+## Food Rescue & Food Security Tech
+
+_5 entries in this domain._
+
+**Aotearoa Food Rescue Alliance**
+
+- The Aotearoa Food Rescue Alliance (AFRA) is the national peak body for food rescue organisations in New Zealand, providing sector coordination, shared data collection through a sector data portal, and advocacy to government on food security policy.
+- Region: national
+- Links: [Website](https://afra.org.nz) · [LinkedIn](https://nz.linkedin.com/company/aotearoa-food-rescue-alliance)
+- Tags: food rescue, food security, advocacy, data, national
+- Related: KiwiHarvest, Kaibosh, Everybody Eats
+
+**Everybody Eats**
+
+- Everybody Eats is a New Zealand charity that runs pay-what-you-can restaurants cooking three-course meals from surplus and rescued food, so anyone can eat a proper meal regardless of what they can afford to pay.
+- Region: national
+- Links: [Website](https://everybodyeats.nz)
+- Tags: food rescue, food security, charity, hospitality
+- Related: KiwiHarvest, Kaibosh
+
+**Kai Commitment**
+
+- Kai Commitment is a registered New Zealand charity running a food-waste measurement programme for large food businesses, using a Target-Measure-Act-Collaborate data framework to help signatories set reduction targets and track progress toward halving food waste by 2030.
+- Region: national
+- Links: [Website](https://kaicommitment.org.nz)
+- Tags: food waste, data measurement, sustainability, sdg 12.3, charity
+- Related: KiwiHarvest, Kaibosh
+
+**Kaibosh**
+
+- Kaibosh is a food rescue charity that has worked in the Wellington region since 2008, using volunteers to collect surplus food from shops and farms and pass it on to community groups, aiming for zero food poverty and zero food waste.
+- Region: Wellington
+- Links: [Website](https://kaibosh.org.nz)
+- Tags: food rescue, food security, charity, volunteer-run
+- Related: KiwiHarvest, Everybody Eats
+
+**KiwiHarvest**
+
+- KiwiHarvest is a New Zealand charity, founded in 2012 by Deborah Manning, that collects surplus food from supermarkets, growers, and other businesses before it goes to waste, and gives it to charities feeding people in need.
+- Region: national
+- Links: [Website](https://www.kiwiharvest.org.nz) · [LinkedIn](https://www.linkedin.com/company/kiwiharvest)
+- Tags: food rescue, food security, charity, sustainability
+- Related: Kaibosh, Everybody Eats
 
 ## Refugee & Migrant Support Tech
 
@@ -1075,6 +1190,39 @@ _4 entries in this domain._
 - Tags: volunteering, nonprofit tech, peak body, community organisations
 - Related: Collaborate
 
+## Digital Inclusion
+
+_4 entries in this domain._
+
+**Com2Tech**
+
+- Com2Tech is a volunteer-led community trust in Dunedin that provides free digital skills classes, low-cost refurbished devices, and community tech support to help people of all ages get online, including dedicated programmes for seniors and job-seekers.
+- Region: Otago
+- Links: [Website](https://www.com2.tech) · [LinkedIn](https://nz.linkedin.com/company/community-communications-technology-trust-com2tech)
+- Tags: digital inclusion, device recycling, community tech, seniors, dunedin
+- Related: Katoa Connect (formerly 20/20 Trust)
+
+**Fibre Fale**
+
+- Fibre Fale is a Pasifika-led social enterprise creating pathways into the technology industry for Pacific people in Aotearoa. Founded in November 2022 by Eteroa Lafaele (Forbes 30 Under 30, NZ Young New Zealander of the Year 2025) and Julia Pahina, it delivers events, mentoring programmes, and free AI literacy resources — including the 'AI with Eteroa' online course — with a goal of equal Pasifika representation in the NZ tech workforce by 2042.
+- Region: Auckland
+- Links: [Website](https://www.fibrefale.com) · [LinkedIn](https://www.linkedin.com/company/fibre-fale)
+- Tags: pasifika, digital-inclusion, tech-pathways, ai-literacy, social-enterprise
+
+**Katoa Connect (formerly 20/20 Trust)**
+
+- Katoa Connect, previously known as the 20/20 Trust, is a New Zealand charity that helps adults build everyday digital skills, like online banking and job applications, so the more than 800,000 New Zealand adults who currently lack these skills are not left behind.
+- Region: national
+- Links: [Website](https://www.katoaconnect.org.nz)
+- Tags: digital inclusion, digital skills, charity, adult education
+
+**The Cause Collective**
+
+- The Cause Collective is a South Auckland charitable organisation that runs a Creative and Tech Hub and a mobile tech van, giving rangatahi Maori and Pasifika free hands-on technology training, device access, and pathways into the tech sector.
+- Region: Tamaki Makaurau
+- Links: [Website](https://www.thecausecollective.org.nz) · [LinkedIn](https://nz.linkedin.com/company/the-cause-collective-nz)
+- Tags: digital inclusion, maori, pasifika, youth tech, south auckland
+
 ## Housing & Homelessness Tech
 
 _1 entry in this domain._
@@ -1086,69 +1234,40 @@ _1 entry in this domain._
 - Links: [Website](https://www.communityhousing.org.nz)
 - Tags: housing, homelessness, peak body, advocacy
 
-## Iwi & Māori Tech Initiatives
+## Education Equity Tech
 
 _4 entries in this domain._
 
-**Dev Academy Aotearoa (Māori and Pasifika cohorts)**
+**Digital Future Aotearoa**
 
-- Dev Academy Aotearoa is a New Zealand coding bootcamp that runs dedicated scholarships for Māori, Pasifika, and women, cutting course fees so more people from these groups can retrain as web developers, and it has graduated more than twice the share of women and Māori compared with a typical computer science degree.
-- Region: national
-- Links: [Website](https://devacademy.co.nz/)
-- Tags: Māori tech, coding bootcamp, scholarships, digital skills
+- Digital Future Aotearoa is a Christchurch-based charitable trust (CC51617) that runs Code Club Aotearoa, a national network of free coding clubs for children, and the Recycle a Device programme, which refurbishes donated laptops for students who cannot afford a device.
+- Region: Canterbury
+- Links: [Website](https://www.digitalfutureaotearoa.nz) · [LinkedIn](https://nz.linkedin.com/company/digital-future-aotearoa)
+- Tags: coding education, digital inclusion, device recycling, youth, christchurch
 - Related: Digital Natives Academy
 
-**Digital Natives Academy**
+**Manaiakalani Education Trust**
 
-- Digital Natives Academy is a Rotorua-based charity, started in 2014, that gives young people, especially Māori rangatahi (youth), free training and access to technology in coding, robotics, animation, and game development, to help them move from using technology to creating it.
-- Region: Rotorua
-- Links: [Website](https://digitalnatives.academy/)
-- Tags: Māori tech, youth technology education, digital skills, charity
-- Related: Dev Academy Aotearoa
-
-**Kiwa Digital**
-
-- Kiwa Digital is an Auckland technology company, founded in 2003, that builds apps and cloud software helping Indigenous communities record, protect, and share their languages and cultural stories, including tools for te reo Māori.
+- Manaiakalani Education Trust is an Auckland-based charity that runs a digital learning programme for schools in lower-income communities, giving students devices and teachers training so technology helps close, rather than widen, the education gap for Māori and Pacific students.
 - Region: Auckland
-- Links: [Website](https://kiwadigital.com/)
-- Tags: Māori tech, indigenous language technology, cultural data sovereignty, startup
-- Related: Te Hiku Media / Papa Reo
+- Links: [Website](https://www.manaiakalani.org) · [LinkedIn](https://www.linkedin.com/company/manaiakalani-education-trust)
+- Tags: education equity, digital learning, charity, Māori and Pacific education
+- Related: Dev Academy Aotearoa (Māori and Pasifika cohorts), Digital Natives Academy
 
-**Takiwā**
+**Pūhoro STEMM Academy**
 
-- Takiwā is a New Zealand geospatial mapping platform, running since 2012, that lets Māori landowners, iwi, and other indigenous communities collect and control their own cultural and environmental data on interactive maps, instead of only government agencies holding that data.
+- Pūhoro STEMM Academy supports Māori secondary school students (rangatahi) into science, technology, engineering, mathematics, and mātauranga (STEMM) pathways. Founded in 2016 at Massey University in Palmerston North, it delivers kaupapa Māori mentoring, tutoring, and wānanga across 12 regions, improving academic achievement and building pathways into high-value STEMM careers for rangatahi who would otherwise be under-represented in these fields.
 - Region: national
-- Links: [Website](https://www.takiwa.co/)
-- Tags: Māori tech, indigenous data sovereignty, geospatial, mapping, startup
-- Related: Te Kāhui Raraunga, Te Mana Raraunga
+- Links: [Website](https://www.puhoro.org.nz) · [LinkedIn](https://nz.linkedin.com/company/p%C5%ABhoro)
+- Tags: kaupapa-māori, stemm, rangatahi, science-pathways, education
 
-## Food Rescue & Food Security Tech
+**Summer of Tech**
 
-_3 entries in this domain._
-
-**Everybody Eats**
-
-- Everybody Eats is a New Zealand charity that runs pay-what-you-can restaurants cooking three-course meals from surplus and rescued food, so anyone can eat a proper meal regardless of what they can afford to pay.
+- Summer of Tech is a New Zealand charitable programme that connects students and junior tech talent with employers through internships and mentoring, helping people get their first step into a tech career.
 - Region: national
-- Links: [Website](https://everybodyeats.nz)
-- Tags: food rescue, food security, charity, hospitality
-- Related: KiwiHarvest, Kaibosh
-
-**Kaibosh**
-
-- Kaibosh is a food rescue charity that has worked in the Wellington region since 2008, using volunteers to collect surplus food from shops and farms and pass it on to community groups, aiming for zero food poverty and zero food waste.
-- Region: Wellington
-- Links: [Website](https://kaibosh.org.nz)
-- Tags: food rescue, food security, charity, volunteer-run
-- Related: KiwiHarvest, Everybody Eats
-
-**KiwiHarvest**
-
-- KiwiHarvest is a New Zealand charity, founded in 2012 by Deborah Manning, that collects surplus food from supermarkets, growers, and other businesses before it goes to waste, and gives it to charities feeding people in need.
-- Region: national
-- Links: [Website](https://www.kiwiharvest.org.nz) · [LinkedIn](https://www.linkedin.com/company/kiwiharvest)
-- Tags: food rescue, food security, charity, sustainability
-- Related: Kaibosh, Everybody Eats
+- Links: [Website](https://www.summeroftech.co.nz)
+- Tags: internships, tech careers, talent pipeline, charity
+- Related: Dev Academy Aotearoa
 
 ## Crisis & Humanitarian Tech
 
@@ -1293,37 +1412,6 @@ _2 entries in this domain._
 - Tags: disability employment, employment service, non-profit
 - Related: IHC New Zealand, Blind Low Vision NZ
 
-## Digital Inclusion
-
-_1 entry in this domain._
-
-**Katoa Connect (formerly 20/20 Trust)**
-
-- Katoa Connect, previously known as the 20/20 Trust, is a New Zealand charity that helps adults build everyday digital skills, like online banking and job applications, so the more than 800,000 New Zealand adults who currently lack these skills are not left behind.
-- Region: national
-- Links: [Website](https://www.katoaconnect.org.nz)
-- Tags: digital inclusion, digital skills, charity, adult education
-
-## Education Equity Tech
-
-_2 entries in this domain._
-
-**Manaiakalani Education Trust**
-
-- Manaiakalani Education Trust is an Auckland-based charity that runs a digital learning programme for schools in lower-income communities, giving students devices and teachers training so technology helps close, rather than widen, the education gap for Māori and Pacific students.
-- Region: Auckland
-- Links: [Website](https://www.manaiakalani.org) · [LinkedIn](https://www.linkedin.com/company/manaiakalani-education-trust)
-- Tags: education equity, digital learning, charity, Māori and Pacific education
-- Related: Dev Academy Aotearoa (Māori and Pasifika cohorts), Digital Natives Academy
-
-**Summer of Tech**
-
-- Summer of Tech is a New Zealand charitable programme that connects students and junior tech talent with employers through internships and mentoring, helping people get their first step into a tech career.
-- Region: national
-- Links: [Website](https://www.summeroftech.co.nz)
-- Tags: internships, tech careers, talent pipeline, charity
-- Related: Dev Academy Aotearoa
-
 ## Journalism & Media Tech
 
 _3 entries in this domain._
@@ -1354,7 +1442,7 @@ _3 entries in this domain._
 
 ## Māori Data Sovereignty
 
-_5 entries in this domain._
+_6 entries in this domain._
 
 **Ngā Pae o te Māramatanga**
 
@@ -1363,6 +1451,13 @@ _5 entries in this domain._
 - Links: [Website](https://www.maramatanga.ac.nz)
 - Tags: Māori research, Centre of Research Excellence, indigenous scholarship, University of Auckland
 - Related: Te Mana Raraunga, Te Kāhui Raraunga
+
+**Taiuru & Associates**
+
+- Taiuru & Associates is a New Zealand boutique consultancy led by Dr Karaitiana Taiuru specialising in Māori data sovereignty, AI governance, and responsible emerging technology. It advises iwi, government agencies, and private organisations on navigating the intersection of tikanga Māori and digital systems — producing widely cited frameworks, Te Tiriti-based AI ethical principles, and policy guidance to protect Māori rights in the data and AI age.
+- Region: national
+- Links: [Website](https://www.taiuru.co.nz)
+- Tags: māori-data-sovereignty, ai-governance, responsible-ai, tech-ethics, indigenous-rights
 
 **Te Hiku Media / Papa Reo**
 

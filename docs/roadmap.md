@@ -52,8 +52,8 @@ account-level settings only the repo owner can change.
 - [ ] Add a short "How entries are chosen" doc explaining the scope boundary
   (what counts as tech-for-good, what is out of scope) so contributors self-
   select before opening an issue.
-- [ ] Add a `CHANGELOG.md` or a dated "recent additions" section so returning
-  visitors can see what is new without diffing.
+- [x] Add a `CHANGELOG.md` or a dated "recent additions" section so returning
+  visitors can see what is new without diffing. (`CHANGELOG.md` added 2026-08-05)
 - [ ] Cross-link related entries in the data (an optional `related` field) and
   render those links in `GUIDE.md`, deepening the existing connection diagrams.
 
@@ -61,8 +61,8 @@ account-level settings only the repo owner can change.
 
 - [ ] Add a `last_verified` freshness check: a script that flags entries whose
   `last_verified` date is older than, say, 12 months, for re-checking.
-- [ ] Add duplicate-URL detection to `validate.py` (two entries pointing at the
-  same website often means an accidental duplicate).
+- [x] Add duplicate-URL detection to `validate.py` (two entries pointing at the
+  same website often means an accidental duplicate). (done 2026-08-05)
 - [ ] Add a coverage report: count entries per domain and per region, and flag
   thin domains that need more entries. Surface it in the job summary.
 - [ ] Normalise region values against a fixed list (schema `enum`) so filtering
