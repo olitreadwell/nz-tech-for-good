@@ -564,7 +564,7 @@ _6 entries in this domain._
 
 **Amotai**
 
-- Amotai is Aotearoa's supplier diversity intermediary, connecting public and private sector buyers with over 2,200 verified Māori and Pasifika-owned businesses — including more than 100 tech suppliers working across AI, cybersecurity, automation, and digital services. Founded in 2018 within Auckland Council, it now operates nationally, helping grow Māori and Pasifika business capability and increasing the share of procurement contracts awarded to these communities.
+- Amotai is Aotearoa's supplier diversity intermediary, connecting public and private sector buyers with over 2,200 verified Māori and Pasifika-owned businesses, including more than 100 tech suppliers working across AI, cybersecurity, automation, and digital services. Founded in 2018 within Auckland Council, it now operates nationally, helping grow Māori and Pasifika business capability and increasing the share of procurement contracts awarded to these communities.
 - Region: national
 - Links: [Website](https://amotai.nz) · [LinkedIn](https://nz.linkedin.com/company/amotai)
 - Tags: māori-business, pasifika-business, supplier-diversity, procurement, economic-equity
@@ -1204,7 +1204,7 @@ _4 entries in this domain._
 
 **Fibre Fale**
 
-- Fibre Fale is a Pasifika-led social enterprise creating pathways into the technology industry for Pacific people in Aotearoa. Founded in November 2022 by Eteroa Lafaele (Forbes 30 Under 30, NZ Young New Zealander of the Year 2025) and Julia Pahina, it delivers events, mentoring programmes, and free AI literacy resources — including the 'AI with Eteroa' online course — with a goal of equal Pasifika representation in the NZ tech workforce by 2042.
+- Fibre Fale is a Pasifika-led social enterprise creating pathways into the technology industry for Pacific people in Aotearoa. Founded in 2022, it delivers events, mentoring programmes, and free AI literacy resources (including the 'AI with Eteroa' online course), with a goal of equal Pasifika representation in the NZ tech workforce by 2042.
 - Region: Auckland
 - Links: [Website](https://www.fibrefale.com) · [LinkedIn](https://www.linkedin.com/company/fibre-fale)
 - Tags: pasifika, digital-inclusion, tech-pathways, ai-literacy, social-enterprise
@@ -1454,7 +1454,7 @@ _6 entries in this domain._
 
 **Taiuru & Associates**
 
-- Taiuru & Associates is a New Zealand boutique consultancy led by Dr Karaitiana Taiuru specialising in Māori data sovereignty, AI governance, and responsible emerging technology. It advises iwi, government agencies, and private organisations on navigating the intersection of tikanga Māori and digital systems — producing widely cited frameworks, Te Tiriti-based AI ethical principles, and policy guidance to protect Māori rights in the data and AI age.
+- Taiuru & Associates is a New Zealand consultancy specialising in Māori data sovereignty, AI governance, and responsible emerging technology. It advises iwi, government agencies, and private organisations on tikanga Māori and digital systems, producing widely cited frameworks, Te Tiriti-based AI ethical principles, and policy guidance to protect Māori rights in the data and AI age.
 - Region: national
 - Links: [Website](https://www.taiuru.co.nz)
 - Tags: māori-data-sovereignty, ai-governance, responsible-ai, tech-ethics, indigenous-rights
