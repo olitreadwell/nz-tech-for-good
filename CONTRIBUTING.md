@@ -88,14 +88,18 @@ takes priority over completeness.
 ## Running the scripts
 
 Both scripts need `pyyaml`; `validate.py` also uses `jsonschema` for full
-schema checking (it degrades to a basic check if that's not installed):
+schema checking (it degrades to a basic check if that's not installed).
+Install both from `requirements.txt`:
 
 ```bash
-pip install pyyaml jsonschema
+pip install -r requirements.txt
 python3 scripts/validate.py
 python3 scripts/build_guide.py
 python3 scripts/linkcheck.py   # optional: checks all links for dead ones
 ```
+
+`linkcheck.py` prefers [lychee](https://github.com/lycheeverse/lychee) if it
+is installed, and falls back to a basic checker if not.
 
 ## Commit messages
 

@@ -19,7 +19,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install pyyaml jsonschema
+        run: pip install -r requirements.txt
 
       - name: Validate entries against schema
         run: python3 scripts/validate.py

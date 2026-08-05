@@ -1,0 +1,5 @@
+# Python dependencies for the build, validation, and link-check scripts.
+# Install with: pip install -r requirements.txt
+# (lychee, used by scripts/linkcheck.py, is a separate binary — see CONTRIBUTING.md)
+pyyaml>=6.0
+jsonschema>=4.0
