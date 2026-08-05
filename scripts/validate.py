@@ -72,6 +72,7 @@ def main():
 
     names_seen = defaultdict(list)
     slugs_seen = defaultdict(list)
+    websites_seen = defaultdict(list)
 
     total_pass = 0
     total_fail = 0
@@ -95,6 +96,10 @@ def main():
 
         if entry.get("name"):
             names_seen[entry["name"]].append(path.name)
+
+        raw_url = str(entry.get('website') or '').strip().rstrip('/')
+        if raw_url:
+            websites_seen[raw_url].append(path.name)
 
         if validator is not None:
             errors = sorted(validator.iter_errors(entry), key=lambda e: e.path)
@@ -121,6 +126,11 @@ def main():
         if len(paths) > 1:
             dup_found = True
             print(f"FAIL  duplicate slug '{slug}' used in: {', '.join(paths)}")
+
+    for url, paths in websites_seen.items():
+        if len(paths) > 1:
+            dup_found = True
+            print(f"FAIL  duplicate website URL '{url}' used in: {', '.join(paths)}")
 
     print()
     print(f"{total_pass} passed, {total_fail} failed, {len(files)} total entries")
