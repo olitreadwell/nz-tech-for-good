@@ -354,6 +354,10 @@ a.pill:visited {
   gap: 0.6rem;
   height: 100%;
 }
+
+.card[hidden] {
+  display: none;
+}
 .card h3 {
   margin: 0;
   font-size: 1.15rem;
