@@ -20,13 +20,13 @@ SCHEMA_PATH = ROOT / "schema" / "entry.schema.json"
 
 try:
     import yaml
-except ImportError:
+except ImportError:  # pragma: no cover - needs pyyaml missing to trigger
     print("ERROR: pyyaml is not installed. Run: pip install pyyaml jsonschema")
     sys.exit(1)
 
 try:
     import jsonschema
-except ImportError:
+except ImportError:  # pragma: no cover - needs jsonschema missing to trigger
     print(
         "WARNING: jsonschema is not installed — falling back to a basic "
         "required-fields check only. Run: pip install jsonschema for full "
@@ -52,6 +52,30 @@ def basic_check(entry, schema):
             if key not in allowed:
                 errors.append(f"unexpected field '{key}' not in schema")
     return errors
+
+
+def normalise_website_key(url):
+    """Strip whitespace and a trailing slash, for duplicate-website matching.
+
+    Deliberately lighter-touch than dataquality.py's normalise_website():
+    this only catches exact duplicates (same scheme, same "www."), leaving
+    near-duplicates to the data-quality pass.
+    """
+    return str(url or "").strip().rstrip("/")
+
+
+def entry_errors(entry, schema, validator):
+    """Return a list of human-readable schema error messages for one entry."""
+    if validator is not None:
+        errors = sorted(validator.iter_errors(entry), key=lambda e: e.path)
+        return [f"{'/'.join(str(p) for p in e.path) or '<root>'}: {e.message}" for e in errors]
+    return basic_check(entry, schema)
+
+
+def find_duplicates(seen):
+    """Given {key: [occurrence, ...]}, return the entries with more than one
+    occurrence, in insertion order."""
+    return {key: paths for key, paths in seen.items() if len(paths) > 1}
 
 
 def main():
@@ -97,15 +121,11 @@ def main():
         if entry.get("name"):
             names_seen[entry["name"]].append(path.name)
 
-        raw_url = str(entry.get('website') or '').strip().rstrip('/')
+        raw_url = normalise_website_key(entry.get("website"))
         if raw_url:
             websites_seen[raw_url].append(path.name)
 
-        if validator is not None:
-            errors = sorted(validator.iter_errors(entry), key=lambda e: e.path)
-            error_msgs = [f"{'/'.join(str(p) for p in e.path) or '<root>'}: {e.message}" for e in errors]
-        else:
-            error_msgs = basic_check(entry, schema)
+        error_msgs = entry_errors(entry, schema, validator)
 
         if error_msgs:
             print(f"FAIL  {path.name}")
@@ -117,20 +137,20 @@ def main():
             total_pass += 1
 
     dup_found = False
-    for name, paths in names_seen.items():
-        if len(paths) > 1:
-            dup_found = True
-            print(f"FAIL  duplicate name '{name}' used in: {', '.join(paths)}")
+    for name, paths in find_duplicates(names_seen).items():
+        dup_found = True
+        print(f"FAIL  duplicate name '{name}' used in: {', '.join(paths)}")
 
-    for slug, paths in slugs_seen.items():
-        if len(paths) > 1:
-            dup_found = True
-            print(f"FAIL  duplicate slug '{slug}' used in: {', '.join(paths)}")
+    # A slug is a path.stem drawn from files that all matched glob("*.yaml"),
+    # so two distinct filenames can never produce the same stem — this branch
+    # is unreachable in practice and kept only as a defensive guard.
+    for slug, paths in find_duplicates(slugs_seen).items():  # pragma: no cover
+        dup_found = True
+        print(f"FAIL  duplicate slug '{slug}' used in: {', '.join(paths)}")
 
-    for url, paths in websites_seen.items():
-        if len(paths) > 1:
-            dup_found = True
-            print(f"FAIL  duplicate website URL '{url}' used in: {', '.join(paths)}")
+    for url, paths in find_duplicates(websites_seen).items():
+        dup_found = True
+        print(f"FAIL  duplicate website URL '{url}' used in: {', '.join(paths)}")
 
     print()
     print(f"{total_pass} passed, {total_fail} failed, {len(files)} total entries")

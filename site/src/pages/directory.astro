@@ -15,6 +15,12 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       All {totalEntries} organisations. Filter by domain, region, or tag, or search
       by name.
     </p>
+    <p>
+      Missing one? <a
+        href="https://github.com/olitreadwell/nz-tech-for-good/issues/new?template=add-entry.yml"
+        >Suggest an entry</a
+      >. No coding needed.
+    </p>
   </div>
 
   <form class="filters" role="search" aria-label="Filter organisations">
@@ -89,6 +95,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     <a href={import.meta.env.BASE_URL + "regions/"}>region</a> instead.
   </p>
 
+  <h2 class="visually-hidden">Organisations</h2>
   <ul class="grid" id="entry-list">
     {entries.map((entry) => <EntryCard entry={entry} />)}
   </ul>

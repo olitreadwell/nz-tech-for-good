@@ -1,0 +1,7 @@
+# Extra Python dependencies for running the test suite in tests/.
+# Install with: pip install -r requirements.txt -r requirements-dev.txt
+# (CI installs both requirements.txt and this file; this file does not
+# duplicate the runtime deps already listed in requirements.txt.)
+pytest>=8.0
+pytest-bdd>=7.0
+pytest-cov>=5.0

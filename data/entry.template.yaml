@@ -37,6 +37,14 @@ github: ""
 # Its LinkedIn company page URL. Leave as an empty string if none.
 linkedin_org: ""
 
+# A Slack, Discord, or other community chat invite/join URL. Leave as an
+# empty string if none. Only use a real, currently-working invite link.
+community_url: ""
+
+# A meetup, events calendar, or events listing URL. Leave as an empty
+# string if none.
+events_url: ""
+
 # Publicly known people connected to this entry, if verified. Usually
 # leave this as an empty list — this is a known gap in the directory.
 linkedin_people: []

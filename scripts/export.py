@@ -31,7 +31,7 @@ CSV_OUT = EXPORTS_DIR / "entries.csv"
 
 try:
     import yaml
-except ImportError:
+except ImportError:  # pragma: no cover - needs pyyaml missing to trigger
     print("ERROR: pyyaml is not installed. Run: pip install pyyaml")
     sys.exit(1)
 
@@ -46,6 +46,8 @@ FIELDS = [
     "website",
     "github",
     "linkedin_org",
+    "community_url",
+    "events_url",
     "linkedin_people",
     "tags",
     "related_to",
@@ -60,6 +62,8 @@ DEFAULTS = {
     "website": "",
     "github": "",
     "linkedin_org": "",
+    "community_url": "",
+    "events_url": "",
     "linkedin_people": [],
     "tags": [],
     "related_to": [],

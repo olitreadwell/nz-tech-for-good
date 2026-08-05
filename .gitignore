@@ -10,6 +10,8 @@ env/
 .mypy_cache/
 .pytest_cache/
 .ruff_cache/
+.coverage
+htmlcov/
 
 # OS
 .DS_Store
@@ -29,3 +31,4 @@ Thumbs.db
 .swarm/
 ruvector.db
 .agents/
+/CLAUDE.md

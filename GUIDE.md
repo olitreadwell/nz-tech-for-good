@@ -29,18 +29,18 @@ Entries are grouped by **domain**: the area of public good the organisation work
 - **Research & Education Tech** (research / education tech): 6 entries
 - **Mental Health Tech** (mental-health tech): 3 entries
 - **Education Equity Tech** (education equity tech): 5 entries
-- **Nonprofit & NGO Tech** (nonprofit / NGO tech): 4 entries
+- **Nonprofit & NGO Tech** (nonprofit / NGO tech): 5 entries
 - **Digital Inclusion** (digital-inclusion): 9 entries
 - **Housing & Homelessness Tech** (housing / homelessness tech): 3 entries
+- **Civic Tech** (civic-tech): 6 entries
 - **Crisis & Humanitarian Tech** (crisis / humanitarian-tech): 4 entries
 - **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good): 3 entries
-- **Civic Tech** (civic-tech): 5 entries
 - **Health Tech for Good / Hauora Māori** (health tech for good / hauora Māori): 3 entries
 - **Disability Employment Tech** (disability employment tech): 3 entries
 - **Journalism & Media Tech** (journalism / media-tech): 3 entries
 - **Māori Data Sovereignty** (Māori data sovereignty / indigenous data): 7 entries
 
-**Total entries: 152, across 27 domains.**
+**Total entries: 154, across 27 domains.**
 
 ## Ecosystem overview
 
@@ -65,12 +65,12 @@ flowchart TD
     d14["Research & Education Tech<br/>(6 entries)"]
     d15["Mental Health Tech<br/>(3 entries)"]
     d16["Education Equity Tech<br/>(5 entries)"]
-    d17["Nonprofit & NGO Tech<br/>(4 entries)"]
+    d17["Nonprofit & NGO Tech<br/>(5 entries)"]
     d18["Digital Inclusion<br/>(9 entries)"]
     d19["Housing & Homelessness Tech<br/>(3 entries)"]
-    d20["Crisis & Humanitarian Tech<br/>(4 entries)"]
-    d21["Financial Inclusion & Fintech for Good<br/>(3 entries)"]
-    d22["Civic Tech<br/>(5 entries)"]
+    d20["Civic Tech<br/>(6 entries)"]
+    d21["Crisis & Humanitarian Tech<br/>(4 entries)"]
+    d22["Financial Inclusion & Fintech for Good<br/>(3 entries)"]
     d23["Health Tech for Good / Hauora Māori<br/>(3 entries)"]
     d24["Disability Employment Tech<br/>(3 entries)"]
     d25["Journalism & Media Tech<br/>(3 entries)"]
@@ -78,13 +78,13 @@ flowchart TD
     d26 ---|"1 link"| d23
     d26 ---|"3 links"| d4
     d26 ---|"1 link"| d2
-    d22 ---|"1 link"| d8
-    d22 ---|"1 link"| d1
-    d22 ---|"2 links"| d10
-    d22 ---|"3 links"| d9
-    d20 ---|"1 link"| d15
-    d20 ---|"1 link"| d17
-    d20 ---|"2 links"| d9
+    d20 ---|"1 link"| d8
+    d20 ---|"1 link"| d1
+    d20 ---|"2 links"| d10
+    d20 ---|"3 links"| d9
+    d21 ---|"1 link"| d15
+    d21 ---|"1 link"| d17
+    d21 ---|"2 links"| d9
     d0 ---|"2 links"| d24
     d16 ---|"4 links"| d4
     d11 ---|"5 links"| d7
@@ -340,6 +340,7 @@ flowchart TD
     n_Collaborate["Collaborate"]
     n_ConsumerNZ["Consumer NZ"]
     n_HuiECommunityAotearoa["Hui E! Community Aotearoa"]
+    n_TechforGoodNewZealand["Tech for Good New Zealand"]
     n_VolunteeringNewZealandTa["Volunteering New Zealand (Tūao Aotearoa)"]
     n_Collaborate --- n_VolunteeringNewZealandTa
 ```
@@ -371,6 +372,20 @@ flowchart TD
     n_CommunityHousingAotearoa --- n_HousingFirstAuckland
 ```
 
+**Civic Tech**
+
+```mermaid
+flowchart TD
+    n_DigitalAotearoaCollectiv["Digital Aotearoa Collective"]
+    n_GovHackAotearoaNewZealan["GovHack Aotearoa New Zealand"]
+    n_Hackland["Hackland"]
+    n_NZGovTech["NZ GovTech"]
+    n_PublicGoodAotearoaTeIwiW["Public Good Aotearoa (Te Iwi Whānui)"]
+    n_WellingtonHackspaceWHACK["Wellington Hackspace (WHACK)"]
+    n_GovHackAotearoaNewZealan --- n_NZGovTech
+    n_Hackland --- n_WellingtonHackspaceWHACK
+```
+
 **Crisis & Humanitarian Tech**
 
 ```mermaid
@@ -392,19 +407,6 @@ flowchart TD
     n_NgTngataMicrofinance["Ngā Tāngata Microfinance"]
     n_Sorted["Sorted"]
     n_GoodShepherdNewZealand --- n_NgTngataMicrofinance
-```
-
-**Civic Tech**
-
-```mermaid
-flowchart TD
-    n_GovHackAotearoaNewZealan["GovHack Aotearoa New Zealand"]
-    n_Hackland["Hackland"]
-    n_NZGovTech["NZ GovTech"]
-    n_PublicGoodAotearoaTeIwiW["Public Good Aotearoa (Te Iwi Whānui)"]
-    n_WellingtonHackspaceWHACK["Wellington Hackspace (WHACK)"]
-    n_GovHackAotearoaNewZealan --- n_NZGovTech
-    n_Hackland --- n_WellingtonHackspaceWHACK
 ```
 
 **Disability Employment Tech**
@@ -452,6 +454,8 @@ flowchart TD
 
 ## Disability & Accessibility Tech
 
+Tools and consultancy that make websites, services, and physical spaces usable by disabled people, and organisations advocating for that.
+
 _5 entries in this domain._
 
 **Access Advisors**
@@ -496,6 +500,8 @@ _5 entries in this domain._
 
 ## Human Rights Tech
 
+Digital campaigning, advocacy, and organising tools used to defend and advance human rights.
+
 _4 entries in this domain._
 
 **ActionStation**
@@ -530,6 +536,8 @@ _4 entries in this domain._
 
 ## Tech Ethics & Responsible AI
 
+Groups working on the ethical, safe, and accountable use of technology and AI, including policy research and public education.
+
 _4 entries in this domain._
 
 **AI Forum New Zealand**
@@ -562,6 +570,8 @@ _4 entries in this domain._
 - Tags: AI policy, AI ethics, university research, governance, Otago
 
 ## Legal Aid & Justice Tech
+
+Free or low-cost legal information and tools that help people understand and exercise their legal rights without a lawyer.
 
 _7 entries in this domain._
 
@@ -622,6 +632,8 @@ _7 entries in this domain._
 
 ## Iwi & Māori Tech Initiatives
 
+Technology initiatives run by or for iwi and Māori communities: digital infrastructure, connectivity, and community-led tech projects.
+
 _7 entries in this domain._
 
 **Amotai**
@@ -679,6 +691,8 @@ _7 entries in this domain._
 
 ## Food Rescue & Food Security Tech
 
+Platforms that move surplus food to people who need it, or help organisations measure and reduce food waste.
+
 _6 entries in this domain._
 
 **Aotearoa Food Rescue Alliance**
@@ -730,6 +744,8 @@ _6 entries in this domain._
 
 ## Refugee & Migrant Support Tech
 
+Tools and services that help refugees and migrants settle, connect, and access support in a new country.
+
 _6 entries in this domain._
 
 **Aotearoa Resettled Community Coalition (ARCC)**
@@ -780,6 +796,8 @@ _6 entries in this domain._
 - Related: Belong Aotearoa
 
 ## Green & Climate Tech
+
+Tools that measure, reduce, or help people respond to climate change and its effects, from carbon tracking to clean-energy platforms.
 
 _11 entries in this domain._
 
@@ -864,6 +882,8 @@ _11 entries in this domain._
 
 ## GovTech
 
+Software and data services built for or by government agencies, used to run public services or open government data to the public.
+
 _4 entries in this domain._
 
 **Auckland Co-design Lab**
@@ -899,6 +919,8 @@ _4 entries in this domain._
 - Related: Digital.govt.nz, NZ GovTech
 
 ## Open Data
+
+Government or organisational data published for anyone to use, and the platforms that host and serve it.
 
 _24 entries in this domain._
 
@@ -1082,6 +1104,8 @@ _24 entries in this domain._
 
 ## Makerspaces & Hackerspaces
 
+Shared physical spaces with tools like 3D printers and workshops, open to the public to build, learn, and prototype.
+
 _4 entries in this domain._
 
 **Auckland Library of Tools**
@@ -1115,6 +1139,8 @@ _4 entries in this domain._
 - Tags: makerspace, hackerspace, community tech space, STEM education, charity
 
 ## Environmental Citizen Science
+
+Tools that let everyday people help track and protect the environment: counting birds, mapping pests, monitoring waterways, and more.
 
 _4 entries in this domain._
 
@@ -1152,6 +1178,8 @@ _4 entries in this domain._
 
 ## Volunteering & Giving Platforms
 
+Platforms that connect volunteers with organisations that need help, or make it easier to donate money, skills, or time.
+
 _4 entries in this domain._
 
 **Boosted**
@@ -1188,6 +1216,8 @@ _4 entries in this domain._
 
 ## Worker & Platform Co-ops
 
+Technology built and owned cooperatively by the people who use or work on it, rather than by outside shareholders.
+
 _4 entries in this domain._
 
 **Bridge Seat Cooperative**
@@ -1223,6 +1253,8 @@ _4 entries in this domain._
 - Related: Enspiral
 
 ## Research & Education Tech
+
+Research institutions and platforms studying or supporting technology's role in society, and education programmes about it.
 
 _6 entries in this domain._
 
@@ -1272,6 +1304,8 @@ _6 entries in this domain._
 
 ## Mental Health Tech
 
+Digital tools that support mental health and wellbeing, from self-help apps to platforms connecting people with support.
+
 _3 entries in this domain._
 
 **Clearhead**
@@ -1298,6 +1332,8 @@ _3 entries in this domain._
 - Tags: youth mental health, digital therapy, CBT, gaming, research
 
 ## Education Equity Tech
+
+Tech that closes gaps in education: devices, coding programmes, and digital skills training for learners who wouldn't otherwise get them.
 
 _5 entries in this domain._
 
@@ -1341,7 +1377,9 @@ _5 entries in this domain._
 
 ## Nonprofit & NGO Tech
 
-_4 entries in this domain._
+Software, consultancies, and infrastructure built specifically to serve nonprofits and NGOs.
+
+_5 entries in this domain._
 
 **Collaborate**
 
@@ -1365,6 +1403,13 @@ _4 entries in this domain._
 - Links: [Website](https://www.huie.org.nz)
 - Tags: community sector, capability building, Treaty partnership, network
 
+**Tech for Good New Zealand**
+
+- A free, volunteer-run meetup community for anyone interested in using technology for social good in Aotearoa. Part of the global NetSquared network, it brings together charities, community groups, social enterprises, tech professionals, and digital marketers at regular events.
+- Region: Auckland
+- Links: [Website](https://www.meetup.com/tech-for-good-new-zealand/) · [Events](https://www.meetup.com/tech-for-good-new-zealand/events/)
+- Tags: community, meetup, netsquared, networking
+
 **Volunteering New Zealand (Tūao Aotearoa)**
 
 - Volunteering New Zealand is the national body for volunteering, an incorporated society that runs training, online tools, and a volunteer centre network to help community organisations recruit and manage volunteers.
@@ -1374,6 +1419,8 @@ _4 entries in this domain._
 - Related: Collaborate
 
 ## Digital Inclusion
+
+Helping people who are shut out of the digital world get online, get devices, and build the skills and confidence to use them.
 
 _9 entries in this domain._
 
@@ -1444,6 +1491,8 @@ _9 entries in this domain._
 
 ## Housing & Homelessness Tech
 
+Tools and data systems that help people find housing, coordinate homelessness services, or understand their rights as tenants.
+
 _3 entries in this domain._
 
 **Community Housing Aotearoa**
@@ -1468,72 +1517,18 @@ _3 entries in this domain._
 - Links: [Website](https://rentersunited.org.nz)
 - Tags: housing, tenancy, renters, advocacy
 
-## Crisis & Humanitarian Tech
-
-_4 entries in this domain._
-
-**GeoNet**
-
-- GeoNet is New Zealand's natural hazard monitoring system, run by GNS Science with government partners, using over 1,000 sensors to provide free, real-time open data on earthquakes, volcanoes, tsunamis, and landslides.
-- Region: national
-- Links: [Website](https://www.geonet.org.nz)
-- Tags: disaster monitoring, open data, earthquakes, science agency
-- Related: data.govt.nz
-
-**Get Ready (National Emergency Management Agency)**
-
-- Get Ready is the New Zealand government's National Emergency Management Agency website that helps people prepare for disasters like earthquakes and floods, including information on the Emergency Mobile Alert system that broadcasts warnings straight to phones without needing an app.
-- Region: national
-- Links: [Website](https://getready.govt.nz)
-- Tags: disaster preparedness, government agency, emergency alerts, civil defence
-- Related: GeoNet, New Zealand Red Cross
-
-**New Zealand Red Cross**
-
-- New Zealand Red Cross runs the free Hazard App, downloaded over 200,000 times, which sends official emergency warnings and step-by-step guidance to help people prepare for and get through disasters.
-- Region: national
-- Links: [Website](https://www.redcross.org.nz)
-- Tags: disaster response, emergency app, humanitarian, NGO
-- Related: Collaborate
-
-**Whakarongorau Aotearoa**
-
-- Whakarongorau Aotearoa (formerly Homecare Medical) is New Zealand's government-funded telehealth provider, running free 24/7 phone and text services like Healthline and the 1737 Need to Talk mental health line for millions of callers a year.
-- Region: national
-- Links: [Website](https://whakarongorau.nz) · [LinkedIn](https://nz.linkedin.com/company/whakarongorau-new-zealand)
-- Tags: telehealth, crisis line, mental health, government-funded
-- Related: New Zealand Red Cross
-
-## Financial Inclusion & Fintech for Good
-
-_3 entries in this domain._
-
-**Good Shepherd New Zealand**
-
-- Good Shepherd New Zealand is a charity that helps women, girls, and families facing hardship, including family violence, by giving no-interest loans, insurance help, and financial counselling so people can avoid predatory lenders and unmanageable debt.
-- Region: Wellington
-- Links: [Website](https://www.goodshepherd.org.nz) · [LinkedIn](https://www.linkedin.com/company/good-shepherd-nz)
-- Tags: financial inclusion, microfinance, charity, family violence support
-- Related: Ngā Tāngata Microfinance
-
-**Ngā Tāngata Microfinance**
-
-- Ngā Tāngata Microfinance is a New Zealand non-profit, backed by Kiwibank, that gives interest-free and fee-free loans up to $5,000 to financially vulnerable New Zealanders, after they work with a financial mentor, so people can avoid high-interest debt.
-- Region: national
-- Links: [Website](https://ngatangatamicrofinance.org.nz)
-- Tags: financial inclusion, microfinance, non-profit, fintech
-- Related: Good Shepherd New Zealand
-
-**Sorted**
-
-- Sorted is a free money guidance platform run by Te Ara Ahunga Ora Retirement Commission that gives New Zealanders budgeting tools, debt, KiwiSaver and retirement calculators, and a free automated savings app, to lift financial capability nationwide.
-- Region: national
-- Links: [Website](https://sorted.org.nz) · [LinkedIn](https://nz.linkedin.com/company/retirement-commission)
-- Tags: financial literacy, budgeting, KiwiSaver, government service, financial capability
-
 ## Civic Tech
 
-_5 entries in this domain._
+Tools that help people take part in how their communities and government work: petitions, submissions, participatory budgeting, and ways to hold decision-makers to account.
+
+_6 entries in this domain._
+
+**Digital Aotearoa Collective**
+
+- A civil society initiative connecting people across Aotearoa New Zealand who want to use technology and digital tools for the public good. Runs an open Slack community and a GitHub organisation for collaborative projects.
+- Region: national
+- Links: [Website](https://github.com/digitalaotearoa) · [GitHub](https://github.com/digitalaotearoa) · [Community](https://digitalaotearoa.github.io/chat/)
+- Tags: community, slack, open source, civil society
 
 **GovHack Aotearoa New Zealand**
 
@@ -1574,7 +1569,76 @@ _5 entries in this domain._
 - Tags: makerspace, hackerspace, community tech space, volunteer-run
 - Related: Hackland
 
+## Crisis & Humanitarian Tech
+
+Technology used during emergencies and disasters: coordinating relief, sharing warnings, and helping people find help fast when it matters most.
+
+_4 entries in this domain._
+
+**GeoNet**
+
+- GeoNet is New Zealand's natural hazard monitoring system, run by GNS Science with government partners, using over 1,000 sensors to provide free, real-time open data on earthquakes, volcanoes, tsunamis, and landslides.
+- Region: national
+- Links: [Website](https://www.geonet.org.nz)
+- Tags: disaster monitoring, open data, earthquakes, science agency
+- Related: data.govt.nz
+
+**Get Ready (National Emergency Management Agency)**
+
+- Get Ready is the New Zealand government's National Emergency Management Agency website that helps people prepare for disasters like earthquakes and floods, including information on the Emergency Mobile Alert system that broadcasts warnings straight to phones without needing an app.
+- Region: national
+- Links: [Website](https://getready.govt.nz)
+- Tags: disaster preparedness, government agency, emergency alerts, civil defence
+- Related: GeoNet, New Zealand Red Cross
+
+**New Zealand Red Cross**
+
+- New Zealand Red Cross runs the free Hazard App, downloaded over 200,000 times, which sends official emergency warnings and step-by-step guidance to help people prepare for and get through disasters.
+- Region: national
+- Links: [Website](https://www.redcross.org.nz)
+- Tags: disaster response, emergency app, humanitarian, NGO
+- Related: Collaborate
+
+**Whakarongorau Aotearoa**
+
+- Whakarongorau Aotearoa (formerly Homecare Medical) is New Zealand's government-funded telehealth provider, running free 24/7 phone and text services like Healthline and the 1737 Need to Talk mental health line for millions of callers a year.
+- Region: national
+- Links: [Website](https://whakarongorau.nz) · [LinkedIn](https://nz.linkedin.com/company/whakarongorau-new-zealand)
+- Tags: telehealth, crisis line, mental health, government-funded
+- Related: New Zealand Red Cross
+
+## Financial Inclusion & Fintech for Good
+
+Tools that help people who are excluded from mainstream banking manage money, build savings, or access fair credit.
+
+_3 entries in this domain._
+
+**Good Shepherd New Zealand**
+
+- Good Shepherd New Zealand is a charity that helps women, girls, and families facing hardship, including family violence, by giving no-interest loans, insurance help, and financial counselling so people can avoid predatory lenders and unmanageable debt.
+- Region: Wellington
+- Links: [Website](https://www.goodshepherd.org.nz) · [LinkedIn](https://www.linkedin.com/company/good-shepherd-nz)
+- Tags: financial inclusion, microfinance, charity, family violence support
+- Related: Ngā Tāngata Microfinance
+
+**Ngā Tāngata Microfinance**
+
+- Ngā Tāngata Microfinance is a New Zealand non-profit, backed by Kiwibank, that gives interest-free and fee-free loans up to $5,000 to financially vulnerable New Zealanders, after they work with a financial mentor, so people can avoid high-interest debt.
+- Region: national
+- Links: [Website](https://ngatangatamicrofinance.org.nz)
+- Tags: financial inclusion, microfinance, non-profit, fintech
+- Related: Good Shepherd New Zealand
+
+**Sorted**
+
+- Sorted is a free money guidance platform run by Te Ara Ahunga Ora Retirement Commission that gives New Zealanders budgeting tools, debt, KiwiSaver and retirement calculators, and a free automated savings app, to lift financial capability nationwide.
+- Region: national
+- Links: [Website](https://sorted.org.nz) · [LinkedIn](https://nz.linkedin.com/company/retirement-commission)
+- Tags: financial literacy, budgeting, KiwiSaver, government service, financial capability
+
 ## Health Tech for Good / Hauora Māori
+
+Digital health tools built for public benefit, including Māori-led and Māori-owned tech supporting hauora (holistic wellbeing).
 
 _3 entries in this domain._
 
@@ -1601,6 +1665,8 @@ _3 entries in this domain._
 - Tags: hauora Māori, health tech, Māori-owned, case management
 
 ## Disability Employment Tech
+
+Tools and platforms that connect disabled people with employers, or make workplaces and hiring processes more accessible.
 
 _3 entries in this domain._
 
@@ -1630,6 +1696,8 @@ _3 entries in this domain._
 
 ## Journalism & Media Tech
 
+Public-interest journalism and the platforms or funding that support independent, accountable reporting.
+
 _3 entries in this domain._
 
 **Newsroom**
@@ -1657,6 +1725,8 @@ _3 entries in this domain._
 - Related: Newsroom
 
 ## Māori Data Sovereignty
+
+Making sure Māori data, about Māori people, land, and taonga, stays under Māori control and governance, instead of being held or used by others without consent.
 
 _7 entries in this domain._
 

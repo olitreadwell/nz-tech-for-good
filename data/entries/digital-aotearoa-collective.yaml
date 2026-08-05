@@ -1,0 +1,23 @@
+name: "Digital Aotearoa Collective"
+domain: "civic-tech"
+what: >-
+  A civil society initiative connecting people across Aotearoa New Zealand
+  who want to use technology and digital tools for the public good. Runs an
+  open Slack community and a GitHub organisation for collaborative
+  projects.
+region: "national"
+website: "https://github.com/digitalaotearoa"
+github: "https://github.com/digitalaotearoa"
+linkedin_org: ""
+community_url: "https://digitalaotearoa.github.io/chat/"
+events_url: ""
+linkedin_people: []
+tags: ["community", "slack", "open source", "civil society"]
+related_to: []
+source: >-
+  digitalaotearoa.github.io/chat and github.com/digitalaotearoa, verified
+  2026-08-06
+founding_year: null
+takes_contributors: true
+careers_url: ""
+last_verified: "2026-08-06"

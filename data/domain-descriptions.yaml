@@ -1,0 +1,120 @@
+# Short, plain-language explainers for each domain in schema/entry.schema.json.
+#
+# One or two sentences per domain: what it covers, in words someone new to
+# the space would understand. These are shown on the site's domain pages
+# and in GUIDE.md. Every key here must match a domain value in the schema's
+# enum exactly; scripts/validate.py checks that at build time.
+#
+# Keep these short and concrete. No em dashes, no banned words (see
+# docs/STYLE.md) — scripts/stylecheck.py checks this file too.
+
+"Māori data sovereignty / indigenous data": >-
+  Making sure Māori data, about Māori people, land, and taonga, stays
+  under Māori control and governance, instead of being held or used by
+  others without consent.
+
+"civic-tech": >-
+  Tools that help people take part in how their communities and
+  government work: petitions, submissions, participatory budgeting, and
+  ways to hold decision-makers to account.
+
+"crisis / humanitarian-tech": >-
+  Technology used during emergencies and disasters: coordinating relief,
+  sharing warnings, and helping people find help fast when it matters
+  most.
+
+"digital-inclusion": >-
+  Helping people who are shut out of the digital world get online, get
+  devices, and build the skills and confidence to use them.
+
+"disability & accessibility tech": >-
+  Tools and consultancy that make websites, services, and physical spaces
+  usable by disabled people, and organisations advocating for that.
+
+"disability employment tech": >-
+  Tools and platforms that connect disabled people with employers, or
+  make workplaces and hiring processes more accessible.
+
+"education equity tech": >-
+  Tech that closes gaps in education: devices, coding programmes, and
+  digital skills training for learners who wouldn't otherwise get them.
+
+"environmental citizen-science": >-
+  Tools that let everyday people help track and protect the environment:
+  counting birds, mapping pests, monitoring waterways, and more.
+
+"financial-inclusion / fintech-for-good": >-
+  Tools that help people who are excluded from mainstream banking manage
+  money, build savings, or access fair credit.
+
+"food-rescue / food-security tech": >-
+  Platforms that move surplus food to people who need it, or help
+  organisations measure and reduce food waste.
+
+"govtech": >-
+  Software and data services built for or by government agencies, used
+  to run public services or open government data to the public.
+
+"green / climate-tech": >-
+  Tools that measure, reduce, or help people respond to climate change and
+  its effects, from carbon tracking to clean-energy platforms.
+
+"health tech for good / hauora Māori": >-
+  Digital health tools built for public benefit, including Māori-led and
+  Māori-owned tech supporting hauora (holistic wellbeing).
+
+"housing / homelessness tech": >-
+  Tools and data systems that help people find housing, coordinate
+  homelessness services, or understand their rights as tenants.
+
+"human-rights tech": >-
+  Digital campaigning, advocacy, and organising tools used to defend and
+  advance human rights.
+
+"iwi / Māori tech initiatives": >-
+  Technology initiatives run by or for iwi and Māori communities: digital
+  infrastructure, connectivity, and community-led tech projects.
+
+"journalism / media-tech": >-
+  Public-interest journalism and the platforms or funding that support
+  independent, accountable reporting.
+
+"legal-aid / justice tech": >-
+  Free or low-cost legal information and tools that help people
+  understand and exercise their legal rights without a lawyer.
+
+"makerspaces / hackerspaces": >-
+  Shared physical spaces with tools like 3D printers and workshops, open
+  to the public to build, learn, and prototype.
+
+"mental-health tech": >-
+  Digital tools that support mental health and wellbeing, from self-help
+  apps to platforms connecting people with support.
+
+"nonprofit / NGO tech": >-
+  Software, consultancies, and infrastructure built specifically to serve
+  nonprofits and NGOs.
+
+"open-data": >-
+  Government or organisational data published for anyone to use, and the
+  platforms that host and serve it.
+
+"refugee / migrant support tech": >-
+  Tools and services that help refugees and migrants settle, connect, and
+  access support in a new country.
+
+"research / education tech": >-
+  Research institutions and platforms studying or supporting technology's
+  role in society, and education programmes about it.
+
+"tech-ethics / responsible-AI": >-
+  Groups working on the ethical, safe, and accountable use of technology
+  and AI, including policy research and public education.
+
+"volunteering / giving platforms": >-
+  Platforms that connect volunteers with organisations that need help, or
+  make it easier to donate money, skills, or time.
+
+"worker-coop / platform-coop tech": >-
+  Technology built and owned cooperatively by the people who use or work
+  on it, rather than by outside shareholders.
