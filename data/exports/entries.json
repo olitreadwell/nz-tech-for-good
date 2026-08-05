@@ -96,6 +96,29 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "AI Safety Aotearoa",
+    "domain": "tech-ethics / responsible-AI",
+    "what": "AI Safety Aotearoa is an independent public education initiative that explains AI risks and safety in plain language for New Zealanders, covering topics like deepfakes, data sovereignty, algorithmic bias and election integrity through explainers, research and community events.",
+    "region": "Wellington",
+    "website": "https://www.aisafetyaotearoa.org",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "AI safety",
+      "AI ethics",
+      "public education",
+      "responsible AI",
+      "advocacy"
+    ],
+    "related_to": [],
+    "source": "aisafetyaotearoa.org homepage and get-involved page, verified via WebFetch 2026-08-06",
+    "founding_year": 2025,
+    "takes_contributors": true,
+    "careers_url": "https://www.aisafetyaotearoa.org/get-involved",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "ALTER (Advancing Law and Technology Responsibly)",
     "domain": "legal-aid / justice tech",
     "what": "ALTER is a University of Auckland Law School initiative that runs a student hackathon, fellowships, and publications to build technology that improves access to legal and social support in New Zealand, while thinking carefully about the ethics of that technology.",
@@ -651,6 +674,30 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Code 4 Change NZ",
+    "domain": "education equity tech",
+    "what": "Code 4 Change NZ is a charity that delivers free coding, robotics, and 3D design and printing programmes to South Auckland primary schools, working to close the digital equity gap for Māori, Pacific, and other underserved tamariki who miss out on tech and STEM education because of cost or access barriers.",
+    "region": "Auckland",
+    "website": "https://code4changenz.org",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "coding education",
+      "STEM",
+      "Māori",
+      "Pasifika",
+      "South Auckland",
+      "digital equity"
+    ],
+    "related_to": [],
+    "source": "code4changenz.org homepage (verified via WebFetch) and Foundation North \"Digital Equity in South Auckland\" article, registered charity CC63744 since 29 October 2024",
+    "founding_year": 2024,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "Collaborate",
     "domain": "nonprofit / NGO tech",
     "what": "Collaborate is a New Zealand volunteering app that matches people's skills and interests to volunteer roles at non-profit and community organisations, and has been used by groups including New Zealand Red Cross.",
@@ -866,6 +913,29 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "DigiFale",
+    "domain": "digital-inclusion",
+    "what": "DigiFale is an intergenerational digital health literacy programme for Pacific communities, training young \"navigators\" to teach their elders how to use phones and online health services with confidence, starting in a Niue community in Māngere in 2020.",
+    "region": "Auckland",
+    "website": "https://digifale.com",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "Pasifika",
+      "digital inclusion",
+      "digital health literacy",
+      "intergenerational",
+      "community navigators"
+    ],
+    "related_to": [],
+    "source": "digifale.com homepage and internetnz.nz article \"DIGIFALE – an intergenerational approach to improving digital inclusion\" (verified via WebFetch), most recent site update 23 July 2025",
+    "founding_year": 2020,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "Digital Future Aotearoa",
     "domain": "education equity tech",
     "what": "Digital Future Aotearoa is a Christchurch-based charitable trust (CC51617) that runs Code Club Aotearoa, a national network of free coding clubs for children, and the Recycle a Device programme, which refurbishes donated laptops for students who cannot afford a device.",
@@ -913,6 +983,31 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Digital Inclusion Alliance Aotearoa",
+    "domain": "digital-inclusion",
+    "what": "Digital Inclusion Alliance Aotearoa is a Wellington-based charity that runs a federated network of more than 300 local partner organisations across New Zealand, delivering programmes like Digital Steps and Digi-Coaches so more people can get online, build digital skills, and find work.",
+    "region": "Wellington",
+    "website": "https://digitalinclusionalliance.nz",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/digital-inclusion-alliance-aotearoa",
+    "linkedin_people": [],
+    "tags": [
+      "digital inclusion",
+      "digital skills",
+      "charity",
+      "federated network",
+      "community partnerships"
+    ],
+    "related_to": [
+      "Katoa Connect (formerly 20/20 Trust)"
+    ],
+    "source": "digitalinclusionalliance.nz/about/objective (verified via WebFetch); digitalinclusionalliance.nz/contact for Wellington registered office, found via web search",
+    "founding_year": 2018,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Digital Natives Academy",
@@ -1264,6 +1359,29 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Gone Good",
+    "domain": "food-rescue / food-security tech",
+    "what": "Gone Good is a New Zealand-owned app, built by the team behind Delivereasy, that lets cafes, bakeries and restaurants sell unsold food as discounted \"Mystery Bags\" near closing time instead of binning it, cutting food waste and giving customers cheap meals.",
+    "region": "national",
+    "website": "https://www.gonegood.co.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "food waste",
+      "food rescue",
+      "app",
+      "surplus food",
+      "hospitality"
+    ],
+    "related_to": [],
+    "source": "gonegood.co.nz and app store listings; NZ Herald \"Christchurch eateries join Gone Good app to cut food waste and costs\" and The Post \"NZ firm Delivereasy launches food waste app ahead of global rival\", verified 2026-08-06",
+    "founding_year": null,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Good Shepherd New Zealand",
@@ -1695,6 +1813,32 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Kiwi Coast",
+    "domain": "environmental citizen-science",
+    "what": "Kiwi Coast Trust links more than 270 community, hapu, and iwi-led pest control groups along 291 kilometres of Northland coastline, coordinating them with AI-enabled traps, radio-tagged kiwi tracking, and shared data tools so volunteers can build New Zealand's first kiwi corridor.",
+    "region": "Northland",
+    "website": "https://kiwicoast.org.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "conservation",
+      "citizen science",
+      "predator control",
+      "community network",
+      "kiwi recovery"
+    ],
+    "related_to": [
+      "Predator Free NZ Trust",
+      "Trap.NZ"
+    ],
+    "source": "kiwicoast.org.nz and kiwicoast.org.nz/about (verified via WebFetch); NZ Herald and Farmers Weekly coverage of AI trap technology, and Northland Regional Council partnership release, found via web search",
+    "founding_year": null,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "KiwiHarvest",
     "domain": "food-rescue / food-security tech",
     "what": "KiwiHarvest is a New Zealand charity, founded in 2012 by Deborah Manning, that collects surplus food from supermarkets, growers, and other businesses before it goes to waste, and gives it to charities feeding people in need.",
@@ -1916,6 +2060,29 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Marae Digital Connectivity Programme",
+    "domain": "iwi / Māori tech initiatives",
+    "what": "The Marae Digital Connectivity Programme gives rural marae free broadband, wifi hardware, and technical support so whānau, hapū, and iwi can hold virtual hui and reach health, social, and education services online, administered jointly by Te Puni Kōkiri, MBIE, and National Infrastructure Funding and Financing.",
+    "region": "national",
+    "website": "https://www.tpk.govt.nz/en/nga-putea-me-nga-ratonga/marae/marae-digital-connectivity",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "marae",
+      "broadband",
+      "digital connectivity",
+      "govtech",
+      "rural"
+    ],
+    "related_to": [],
+    "source": "tpk.govt.nz marae digital connectivity page and nationalinfrastructure.govt.nz programme page (verified via WebFetch), 676 marae connected, funded through 30 June 2027",
+    "founding_year": 2019,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Marlborough District Council Open Data",
@@ -2411,6 +2578,52 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Sorted",
+    "domain": "financial-inclusion / fintech-for-good",
+    "what": "Sorted is a free money guidance platform run by Te Ara Ahunga Ora Retirement Commission that gives New Zealanders budgeting tools, debt, KiwiSaver and retirement calculators, and a free automated savings app, to lift financial capability nationwide.",
+    "region": "national",
+    "website": "https://sorted.org.nz",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/retirement-commission",
+    "linkedin_people": [],
+    "tags": [
+      "financial literacy",
+      "budgeting",
+      "KiwiSaver",
+      "government service",
+      "financial capability"
+    ],
+    "related_to": [],
+    "source": "sorted.org.nz homepage, verified via WebFetch 2026-08-06",
+    "founding_year": 2001,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
+    "name": "SPARX",
+    "domain": "mental-health tech",
+    "what": "SPARX is a free self-help game, built by the University of Auckland, that teaches young people cognitive behavioural therapy skills to manage depression and anxiety through a fantasy quest storyline, available online and as a mobile app.",
+    "region": "Auckland",
+    "website": "https://www.sparx.org.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "youth mental health",
+      "digital therapy",
+      "CBT",
+      "gaming",
+      "research"
+    ],
+    "related_to": [],
+    "source": "sparx.org.nz/about-us, verified via WebFetch 2026-08-06",
+    "founding_year": 2012,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "Summer of Tech",
     "domain": "education equity tech",
     "what": "Summer of Tech is a New Zealand charitable programme that connects students and junior tech talent with employers through internships and mentoring, helping people get their first step into a tech career.",
@@ -2693,6 +2906,31 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Te Pā Tūwatawata",
+    "domain": "Māori data sovereignty / indigenous data",
+    "what": "Te Pā Tūwatawata is Aotearoa's first decentralised, Māori-owned data storage network, letting marae, hapū, iwi, and other Māori organisations store their data on New Zealand-owned infrastructure under their own tikanga rather than on foreign-owned cloud servers.",
+    "region": "national",
+    "website": "https://tepatuwatawata.io",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "Māori data sovereignty",
+      "data storage",
+      "decentralised infrastructure",
+      "tikanga",
+      "open source"
+    ],
+    "related_to": [
+      "Te Kāhui Raraunga"
+    ],
+    "source": "tepatuwatawata.io homepage and kahuiraraunga.io/panui/tepaatuuwatawata (verified via WebFetch), launch reported by Waatea News 22 May 2026",
+    "founding_year": 2026,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "Te Pūnaha Matatini",
     "domain": "research / education tech",
     "what": "Te Pūnaha Matatini is a research centre that studies complex systems, like disease spread, ecosystems, and social networks, to help New Zealand understand and respond to big interconnected challenges.",
@@ -2784,6 +3022,29 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Tinkd Makerspace",
+    "domain": "makerspaces / hackerspaces",
+    "what": "Tinkd Makerspace is a not-for-profit community workshop in Tauranga, run by STEM Wana Trust, where people share 3D printers, laser cutters, sewing machines, and electronics gear, and learn making and digital skills from each other at open evening and weekend sessions.",
+    "region": "Tauranga",
+    "website": "https://tinkd.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "makerspace",
+      "hackerspace",
+      "community tech space",
+      "STEM education",
+      "charity"
+    ],
+    "related_to": [],
+    "source": "tinkd.nz/our-story and tinkd.nz homepage (verified via WebFetch); stemwana.nz Tinkd Makerspace page found via web search",
+    "founding_year": 2020,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Toha Network",
@@ -2970,6 +3231,29 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "WestREAP (Westland Rural Education Activities Programme)",
+    "domain": "digital-inclusion",
+    "what": "WestREAP is a not-for-profit based in Hokitika that has run adult and community education across the West Coast for more than 40 years, including digital literacy workshops that help isolated communities, like Runanga, learn everyday technology skills such as Wi-Fi calling to stay in touch with whanau.",
+    "region": "West Coast",
+    "website": "https://www.westreap.org.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "digital inclusion",
+      "digital literacy",
+      "rural education",
+      "charity",
+      "adult education"
+    ],
+    "related_to": [],
+    "source": "westreap.org.nz/about (verified via WebFetch); aceaotearoa.org.nz article \"WestREAP's ACE Programmes Strengthening Rural Communities\" describing its digital literacy workshops, found via web search",
+    "founding_year": null,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Whakarongorau Aotearoa",
