@@ -14,7 +14,7 @@ Entries are grouped by **domain**: the area of public good the organisation work
 
 - **Disability & Accessibility Tech** (disability & accessibility tech): 5 entries
 - **Human Rights Tech** (human-rights tech): 4 entries
-- **Tech Ethics & Responsible AI** (tech-ethics / responsible-AI): 2 entries
+- **Tech Ethics & Responsible AI** (tech-ethics / responsible-AI): 4 entries
 - **Legal Aid & Justice Tech** (legal-aid / justice tech): 7 entries
 - **Iwi & Māori Tech Initiatives** (iwi / Māori tech initiatives): 7 entries
 - **Food Rescue & Food Security Tech** (food-rescue / food-security tech): 6 entries
@@ -22,25 +22,25 @@ Entries are grouped by **domain**: the area of public good the organisation work
 - **Green & Climate Tech** (green / climate-tech): 11 entries
 - **GovTech** (govtech): 4 entries
 - **Open Data** (open-data): 24 entries
-- **Makerspaces & Hackerspaces** (makerspaces / hackerspaces): 3 entries
+- **Makerspaces & Hackerspaces** (makerspaces / hackerspaces): 4 entries
 - **Environmental Citizen Science** (environmental citizen-science): 4 entries
+- **Volunteering & Giving Platforms** (volunteering / giving platforms): 4 entries
 - **Worker & Platform Co-ops** (worker-coop / platform-coop tech): 4 entries
 - **Research & Education Tech** (research / education tech): 6 entries
 - **Mental Health Tech** (mental-health tech): 3 entries
 - **Education Equity Tech** (education equity tech): 5 entries
 - **Nonprofit & NGO Tech** (nonprofit / NGO tech): 4 entries
-- **Digital Inclusion** (digital-inclusion): 7 entries
-- **Housing & Homelessness Tech** (housing / homelessness tech): 1 entry
+- **Digital Inclusion** (digital-inclusion): 9 entries
+- **Housing & Homelessness Tech** (housing / homelessness tech): 3 entries
 - **Crisis & Humanitarian Tech** (crisis / humanitarian-tech): 4 entries
-- **Volunteering & Giving Platforms** (volunteering / giving platforms): 1 entry
 - **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good): 3 entries
 - **Civic Tech** (civic-tech): 5 entries
-- **Health Tech for Good / Hauora Māori** (health tech for good / hauora Māori): 1 entry
-- **Disability Employment Tech** (disability employment tech): 2 entries
+- **Health Tech for Good / Hauora Māori** (health tech for good / hauora Māori): 3 entries
+- **Disability Employment Tech** (disability employment tech): 3 entries
 - **Journalism & Media Tech** (journalism / media-tech): 3 entries
 - **Māori Data Sovereignty** (Māori data sovereignty / indigenous data): 7 entries
 
-**Total entries: 139, across 27 domains.**
+**Total entries: 152, across 27 domains.**
 
 ## Ecosystem overview
 
@@ -50,7 +50,7 @@ This diagram shows the domains as nodes, sized by how many entries each holds, w
 flowchart TD
     d0["Disability & Accessibility Tech<br/>(5 entries)"]
     d1["Human Rights Tech<br/>(4 entries)"]
-    d2["Tech Ethics & Responsible AI<br/>(2 entries)"]
+    d2["Tech Ethics & Responsible AI<br/>(4 entries)"]
     d3["Legal Aid & Justice Tech<br/>(7 entries)"]
     d4["Iwi & Māori Tech Initiatives<br/>(7 entries)"]
     d5["Food Rescue & Food Security Tech<br/>(6 entries)"]
@@ -58,21 +58,21 @@ flowchart TD
     d7["Green & Climate Tech<br/>(11 entries)"]
     d8["GovTech<br/>(4 entries)"]
     d9["Open Data<br/>(24 entries)"]
-    d10["Makerspaces & Hackerspaces<br/>(3 entries)"]
+    d10["Makerspaces & Hackerspaces<br/>(4 entries)"]
     d11["Environmental Citizen Science<br/>(4 entries)"]
-    d12["Worker & Platform Co-ops<br/>(4 entries)"]
-    d13["Research & Education Tech<br/>(6 entries)"]
-    d14["Mental Health Tech<br/>(3 entries)"]
-    d15["Education Equity Tech<br/>(5 entries)"]
-    d16["Nonprofit & NGO Tech<br/>(4 entries)"]
-    d17["Digital Inclusion<br/>(7 entries)"]
-    d18["Housing & Homelessness Tech<br/>(1 entry)"]
-    d19["Crisis & Humanitarian Tech<br/>(4 entries)"]
-    d20["Volunteering & Giving Platforms<br/>(1 entry)"]
+    d12["Volunteering & Giving Platforms<br/>(4 entries)"]
+    d13["Worker & Platform Co-ops<br/>(4 entries)"]
+    d14["Research & Education Tech<br/>(6 entries)"]
+    d15["Mental Health Tech<br/>(3 entries)"]
+    d16["Education Equity Tech<br/>(5 entries)"]
+    d17["Nonprofit & NGO Tech<br/>(4 entries)"]
+    d18["Digital Inclusion<br/>(9 entries)"]
+    d19["Housing & Homelessness Tech<br/>(3 entries)"]
+    d20["Crisis & Humanitarian Tech<br/>(4 entries)"]
     d21["Financial Inclusion & Fintech for Good<br/>(3 entries)"]
     d22["Civic Tech<br/>(5 entries)"]
-    d23["Health Tech for Good / Hauora Māori<br/>(1 entry)"]
-    d24["Disability Employment Tech<br/>(2 entries)"]
+    d23["Health Tech for Good / Hauora Māori<br/>(3 entries)"]
+    d24["Disability Employment Tech<br/>(3 entries)"]
     d25["Journalism & Media Tech<br/>(3 entries)"]
     d26["Māori Data Sovereignty<br/>(7 entries)"]
     d26 ---|"1 link"| d23
@@ -82,16 +82,16 @@ flowchart TD
     d22 ---|"1 link"| d1
     d22 ---|"2 links"| d10
     d22 ---|"3 links"| d9
-    d19 ---|"1 link"| d14
-    d19 ---|"1 link"| d16
-    d19 ---|"2 links"| d9
+    d20 ---|"1 link"| d15
+    d20 ---|"1 link"| d17
+    d20 ---|"2 links"| d9
     d0 ---|"2 links"| d24
-    d15 ---|"4 links"| d4
+    d16 ---|"4 links"| d4
     d11 ---|"5 links"| d7
     d8 ---|"1 link"| d9
-    d8 ---|"1 link"| d13
-    d7 ---|"1 link"| d13
-    d16 ---|"1 link"| d20
+    d8 ---|"1 link"| d14
+    d7 ---|"1 link"| d14
+    d17 ---|"2 links"| d12
 ```
 
 ### Domain close-ups
@@ -279,6 +279,7 @@ flowchart TD
 flowchart TD
     n_AucklandLibraryofTools["Auckland Library of Tools"]
     n_KuraMatahunaUnleashSpace["Kura Matahuna Unleash Space Makerspace (University of Auckland)"]
+    n_TeAuPngao["Te Au Pūngao"]
     n_TinkdMakerspace["Tinkd Makerspace"]
     n_AucklandLibraryofTools --- n_KuraMatahunaUnleashSpace
 ```
@@ -293,6 +294,18 @@ flowchart TD
     n_PredatorFreeNZTrust["Predator Free NZ Trust"]
     n_BirdsNewZealandOrnitholo --- n_iNaturalistNZMtakiTaiaof
     n_KiwiCoast --- n_PredatorFreeNZTrust
+```
+
+**Volunteering & Giving Platforms**
+
+```mermaid
+flowchart TD
+    n_Boosted["Boosted"]
+    n_Givealittle["Givealittle"]
+    n_SEEKVolunteer["SEEK Volunteer"]
+    n_TheGoodRegistry["The Good Registry"]
+    n_Boosted --- n_Givealittle
+    n_Givealittle --- n_TheGoodRegistry
 ```
 
 **Worker & Platform Co-ops**
@@ -338,12 +351,24 @@ flowchart TD
     n_Com2Tech["Com2Tech"]
     n_DigiFale["DigiFale"]
     n_DigitalInclusionAlliance["Digital Inclusion Alliance Aotearoa"]
+    n_EPICWestport["EPIC Westport"]
     n_FibreFale["Fibre Fale"]
     n_KatoaConnectformerly2020["Katoa Connect (formerly 20/20 Trust)"]
     n_TheCauseCollective["The Cause Collective"]
+    n_TolagaBayInnovation["Tolaga Bay Innovation"]
     n_WestREAPWestlandRuralEdu["WestREAP (Westland Rural Education Activities Programme)"]
     n_Com2Tech --- n_KatoaConnectformerly2020
     n_DigitalInclusionAlliance --- n_KatoaConnectformerly2020
+```
+
+**Housing & Homelessness Tech**
+
+```mermaid
+flowchart TD
+    n_CommunityHousingAotearoa["Community Housing Aotearoa"]
+    n_HousingFirstAuckland["Housing First Auckland"]
+    n_RentersUnited["Renters United"]
+    n_CommunityHousingAotearoa --- n_HousingFirstAuckland
 ```
 
 **Crisis & Humanitarian Tech**
@@ -387,8 +412,11 @@ flowchart TD
 ```mermaid
 flowchart TD
     n_IHCNewZealand["IHC New Zealand"]
+    n_OneinSix["One in Six"]
     n_Workbridge["Workbridge"]
+    n_IHCNewZealand --- n_OneinSix
     n_IHCNewZealand --- n_Workbridge
+    n_OneinSix --- n_Workbridge
 ```
 
 **Journalism & Media Tech**
@@ -502,7 +530,7 @@ _4 entries in this domain._
 
 ## Tech Ethics & Responsible AI
 
-_2 entries in this domain._
+_4 entries in this domain._
 
 **AI Forum New Zealand**
 
@@ -518,6 +546,20 @@ _2 entries in this domain._
 - Region: Wellington
 - Links: [Website](https://www.aisafetyaotearoa.org)
 - Tags: AI safety, AI ethics, public education, responsible AI, advocacy
+
+**Brainbox Institute**
+
+- Brainbox Institute is a public interest think tank and consultancy working at the intersection of law, technology and policy, best known for building and maintaining the NZ AI Policy Tracker and advising government and civil society on AI regulation, disinformation and digital governance.
+- Region: national
+- Links: [Website](https://www.brainbox.institute) · [LinkedIn](https://www.linkedin.com/company/brainbox-institute/)
+- Tags: AI policy, think tank, law and technology, regulation, consultancy
+
+**Centre for Artificial Intelligence and Public Policy (CAIPP)**
+
+- CAIPP is a University of Otago research centre that studies the policy, regulation, ethics and governance implications of artificial intelligence, drawing on researchers across law, philosophy, computer science and other fields, and advising government agencies including the Department of Internal Affairs on AI-related policy.
+- Region: Dunedin
+- Links: [Website](https://www.otago.ac.nz/caipp)
+- Tags: AI policy, AI ethics, university research, governance, Otago
 
 ## Legal Aid & Justice Tech
 
@@ -1040,7 +1082,7 @@ _24 entries in this domain._
 
 ## Makerspaces & Hackerspaces
 
-_3 entries in this domain._
+_4 entries in this domain._
 
 **Auckland Library of Tools**
 
@@ -1057,6 +1099,13 @@ _3 entries in this domain._
 - Links: [Website](https://www.auckland.ac.nz/en/cie/locations/unleash-space/makerspace.html)
 - Tags: makerspace, university, digital fabrication, prototyping, innovation hub
 - Related: Hackland, Auckland Library of Tools
+
+**Te Au Pūngao**
+
+- Te Au Pūngao is Marlborough's technology and innovation hub in Blenheim, run by Whiringa under contract to Marlborough District Council, offering co-working space, 3D printers, soldering stations and VR headsets, plus a microgrants programme to help local start-ups take their first steps.
+- Region: Marlborough
+- Links: [Website](https://www.teaupungao.com)
+- Tags: makerspace, coworking, innovation hub, Marlborough, microgrants
 
 **Tinkd Makerspace**
 
@@ -1100,6 +1149,42 @@ _4 entries in this domain._
 - Links: [Website](https://predatorfreenz.org)
 - Tags: conservation, citizen science, predator control, community mapping
 - Related: Trap.NZ, The Cacophony Project
+
+## Volunteering & Giving Platforms
+
+_4 entries in this domain._
+
+**Boosted**
+
+- Boosted is Aotearoa New Zealand's arts crowdfunding platform, run by the charitable trust Arts Foundation Te Tumu Toi. It gives artists one-on-one coaching to run all-or-nothing giving campaigns, and has helped raise more than $10 million for creative projects since it launched in 2013.
+- Region: national
+- Links: [Website](https://www.boosted.org.nz) · [LinkedIn](https://nz.linkedin.com/company/boosted-nz)
+- Tags: crowdfunding, giving platform, arts funding, creative sector
+- Related: Givealittle
+
+**Givealittle**
+
+- Givealittle is a New Zealand-owned, not-for-profit crowdfunding website, owned by Perpetual Guardian, where people and charities can raise money online for personal causes, community projects, and disaster response.
+- Region: Auckland
+- Links: [Website](https://www.givealittle.co.nz) · [LinkedIn](https://www.linkedin.com/company/givealittle)
+- Tags: crowdfunding, giving platform, charity, fundraising
+- Related: Volunteering New Zealand (Tūao Aotearoa)
+
+**SEEK Volunteer**
+
+- SEEK Volunteer is a free, non-profit platform that matches people across Aotearoa with volunteer roles at community organisations, covering everything from food rescue to mental health to arts and culture. It has run in New Zealand since 2015, alongside SEEK's paid job listings.
+- Region: national
+- Links: [Website](https://seekvolunteer.co.nz)
+- Tags: volunteering, volunteer matching, matching platform, community
+- Related: Volunteering New Zealand (Tūao Aotearoa)
+
+**The Good Registry**
+
+- The Good Registry is a Wellington social enterprise and charitable trust that sells charity gift cards and runs corporate giving programmes, letting people split a gift between more than 60 New Zealand causes instead of buying more stuff. It was founded in 2017 by Christine Langdon, Tracey Bridges, and Sue McCabe.
+- Region: Wellington
+- Links: [Website](https://thegoodregistry.com) · [LinkedIn](https://nz.linkedin.com/company/the-good-registry)
+- Tags: charity gift cards, corporate giving, giving platform, social enterprise
+- Related: Givealittle
 
 ## Worker & Platform Co-ops
 
@@ -1290,7 +1375,7 @@ _4 entries in this domain._
 
 ## Digital Inclusion
 
-_7 entries in this domain._
+_9 entries in this domain._
 
 **Com2Tech**
 
@@ -1315,6 +1400,13 @@ _7 entries in this domain._
 - Tags: digital inclusion, digital skills, charity, federated network, community partnerships
 - Related: Katoa Connect (formerly 20/20 Trust)
 
+**EPIC Westport**
+
+- EPIC Westport is a Buller innovation hub and business incubator offering digital literacy workshops, mentoring and co-working space, set up to help the region's economy diversify into digital industries after major local job losses at Solid Energy and Holcim Cement.
+- Region: West Coast
+- Links: [Website](https://www.epicwestport.co.nz)
+- Tags: digital literacy, business incubator, coworking, regional development, West Coast
+
 **Fibre Fale**
 
 - Fibre Fale is a Pasifika-led social enterprise creating pathways into the technology industry for Pacific people in Aotearoa. Founded in 2022, it delivers events, mentoring programmes, and free AI literacy resources (including the 'AI with Eteroa' online course), with a goal of equal Pasifika representation in the NZ tech workforce by 2042.
@@ -1336,6 +1428,13 @@ _7 entries in this domain._
 - Links: [Website](https://www.thecausecollective.org.nz) · [LinkedIn](https://nz.linkedin.com/company/the-cause-collective-nz)
 - Tags: digital inclusion, maori, pasifika, youth tech, south auckland
 
+**Tolaga Bay Innovation**
+
+- Tolaga Bay Innovation runs a co-working and technology hub in Uawa (Tolaga Bay) offering digital skills training, business mentorship and seed funding to grassroots and Māori entrepreneurs, and is part of the Te Tairāwhiti Digital Equity Collective helping set up tech hubs from Hicks Bay to Wairoa.
+- Region: Gisborne
+- Links: [Website](https://www.tbict.org)
+- Tags: digital equity, rural, Māori entrepreneurship, tech hub, East Coast
+
 **WestREAP (Westland Rural Education Activities Programme)**
 
 - WestREAP is a not-for-profit based in Hokitika that has run adult and community education across the West Coast for more than 40 years, including digital literacy workshops that help isolated communities, like Runanga, learn everyday technology skills such as Wi-Fi calling to stay in touch with whanau.
@@ -1345,7 +1444,7 @@ _7 entries in this domain._
 
 ## Housing & Homelessness Tech
 
-_1 entry in this domain._
+_3 entries in this domain._
 
 **Community Housing Aotearoa**
 
@@ -1353,6 +1452,21 @@ _1 entry in this domain._
 - Region: Wellington
 - Links: [Website](https://www.communityhousing.org.nz)
 - Tags: housing, homelessness, peak body, advocacy
+
+**Housing First Auckland**
+
+- Housing First Auckland is a collective of Auckland City Mission, Lifewise, LinkPeople, and Visionwest, working to end chronic homelessness in Tāmaki Makaurau, with backbone support from Wise Group, whose Wild Bamboo team runs the shared Recordbase data system the collective uses to coordinate referrals, track outcomes, and report on progress across the partner agencies.
+- Region: Auckland
+- Links: [Website](https://www.housingfirst.co.nz)
+- Tags: housing, homelessness, data coordination, collective impact
+- Related: Community Housing Aotearoa
+
+**Renters United**
+
+- Renters United is a renter advocacy group that campaigns for warmer, safer, and more secure rentals in Aotearoa, and it built TenancyHelp, a free tool that lets renters draft letters, look up Tenancy Tribunal decisions, and get plain-language answers about their rights when dealing with issues like rent rises or unrepaired homes.
+- Region: Wellington
+- Links: [Website](https://rentersunited.org.nz)
+- Tags: housing, tenancy, renters, advocacy
 
 ## Crisis & Humanitarian Tech
 
@@ -1389,18 +1503,6 @@ _4 entries in this domain._
 - Links: [Website](https://whakarongorau.nz) · [LinkedIn](https://nz.linkedin.com/company/whakarongorau-new-zealand)
 - Tags: telehealth, crisis line, mental health, government-funded
 - Related: New Zealand Red Cross
-
-## Volunteering & Giving Platforms
-
-_1 entry in this domain._
-
-**Givealittle**
-
-- Givealittle is a New Zealand-owned, not-for-profit crowdfunding website, owned by Perpetual Guardian, where people and charities can raise money online for personal causes, community projects, and disaster response.
-- Region: Auckland
-- Links: [Website](https://www.givealittle.co.nz) · [LinkedIn](https://www.linkedin.com/company/givealittle)
-- Tags: crowdfunding, giving platform, charity, fundraising
-- Related: Volunteering New Zealand (Tūao Aotearoa)
 
 ## Financial Inclusion & Fintech for Good
 
@@ -1474,7 +1576,7 @@ _5 entries in this domain._
 
 ## Health Tech for Good / Hauora Māori
 
-_1 entry in this domain._
+_3 entries in this domain._
 
 **Hāpai Te Hauora**
 
@@ -1484,9 +1586,23 @@ _1 entry in this domain._
 - Tags: hauora Māori, public health, Māori-led, non-profit
 - Related: Te Mana Raraunga
 
+**Karo**
+
+- Karo is a Māori-owned tech company that builds digital tools for primary and community health providers and social services, including Te Pokapū (a claims and decision support system), Kotahi (client and case management for NGOs and community organisations), and Māramatanga (data insights and reporting), used across most of the primary care sector.
+- Region: Wellington
+- Links: [Website](https://karo.co.nz)
+- Tags: hauora Māori, health tech, Māori-owned, data and reporting
+
+**Whānau Tahi**
+
+- Whānau Tahi is a Māori-owned health and social services software company, set up by Te Whānau O Waipareira Trust to build the Whānau Tahi Navigator case management platform, and it now serves more than 100 health and social service organisations and over 100,000 patients across New Zealand, and has expanded into the Australian and North American markets.
+- Region: Auckland
+- Links: [Website](https://www.whanautahi.com)
+- Tags: hauora Māori, health tech, Māori-owned, case management
+
 ## Disability Employment Tech
 
-_2 entries in this domain._
+_3 entries in this domain._
 
 **IHC New Zealand**
 
@@ -1495,6 +1611,14 @@ _2 entries in this domain._
 - Links: [Website](https://www.ihc.org.nz)
 - Tags: disability support, intellectual disability, charity, advocacy
 - Related: Blind Low Vision NZ, Workbridge
+
+**One in Six**
+
+- One in Six is a disability employment hub built by the New Zealand Disability Employers' Network and Whaikaha, the Ministry of Disabled People, giving employers free tools, guidance, and the ARM-Up accessible recruitment model to hire and support disabled staff. It launched in February 2026, and takes its name from the one in six New Zealanders who are disabled.
+- Region: national
+- Links: [Website](https://oneinsix.nz)
+- Tags: disability employment, accessible recruitment, employer resource, disability inclusion
+- Related: Workbridge, IHC New Zealand
 
 **Workbridge**
 

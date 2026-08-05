@@ -484,6 +484,53 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Boosted",
+    "domain": "volunteering / giving platforms",
+    "what": "Boosted is Aotearoa New Zealand's arts crowdfunding platform, run by the charitable trust Arts Foundation Te Tumu Toi. It gives artists one-on-one coaching to run all-or-nothing giving campaigns, and has helped raise more than $10 million for creative projects since it launched in 2013.",
+    "region": "national",
+    "website": "https://www.boosted.org.nz",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/boosted-nz",
+    "linkedin_people": [],
+    "tags": [
+      "crowdfunding",
+      "giving platform",
+      "arts funding",
+      "creative sector"
+    ],
+    "related_to": [
+      "Givealittle"
+    ],
+    "source": "thearts.co.nz/boosted pages and boosted.org.nz (verified via WebSearch, WebFetch blocked by 403); NZ Herald coverage of the Boosted relaunch; LinkedIn company page confirmed via WebSearch",
+    "founding_year": 2013,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
+    "name": "Brainbox Institute",
+    "domain": "tech-ethics / responsible-AI",
+    "what": "Brainbox Institute is a public interest think tank and consultancy working at the intersection of law, technology and policy, best known for building and maintaining the NZ AI Policy Tracker and advising government and civil society on AI regulation, disinformation and digital governance.",
+    "region": "national",
+    "website": "https://www.brainbox.institute",
+    "github": "",
+    "linkedin_org": "https://www.linkedin.com/company/brainbox-institute/",
+    "linkedin_people": [],
+    "tags": [
+      "AI policy",
+      "think tank",
+      "law and technology",
+      "regulation",
+      "consultancy"
+    ],
+    "related_to": [],
+    "source": "brainbox.institute (About, Contact, NZ AI Policy Tracker pages, verified via WebFetch); LinkedIn company page (verified via WebFetch); BusinessDesk article on Brainbox's approach to AI regulation",
+    "founding_year": 2018,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "Bridge Seat Cooperative",
     "domain": "worker-coop / platform-coop tech",
     "what": "Bridge Seat Cooperative is a small worker-owned group of freelance technology workers based in New Zealand who host services for the decentralised social web, aiming to keep parts of the internet run as a shared public service rather than for commercial profit.",
@@ -579,6 +626,29 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Centre for Artificial Intelligence and Public Policy (CAIPP)",
+    "domain": "tech-ethics / responsible-AI",
+    "what": "CAIPP is a University of Otago research centre that studies the policy, regulation, ethics and governance implications of artificial intelligence, drawing on researchers across law, philosophy, computer science and other fields, and advising government agencies including the Department of Internal Affairs on AI-related policy.",
+    "region": "Dunedin",
+    "website": "https://www.otago.ac.nz/caipp",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "AI policy",
+      "AI ethics",
+      "university research",
+      "governance",
+      "Otago"
+    ],
+    "related_to": [],
+    "source": "otago.ac.nz/caipp About, Projects, People and News pages (content verified via WebSearch, direct fetch blocked by Cloudflare); DX Talks podcast episode with Professor James Maclaurin on NZ's AI landscape; Otago Magazine \"AI rules and realities\" feature",
+    "founding_year": 2018,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "ChangeMakers Resettlement Forum",
@@ -1197,6 +1267,29 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "EPIC Westport",
+    "domain": "digital-inclusion",
+    "what": "EPIC Westport is a Buller innovation hub and business incubator offering digital literacy workshops, mentoring and co-working space, set up to help the region's economy diversify into digital industries after major local job losses at Solid Energy and Holcim Cement.",
+    "region": "West Coast",
+    "website": "https://www.epicwestport.co.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "digital literacy",
+      "business incubator",
+      "coworking",
+      "regional development",
+      "West Coast"
+    ],
+    "related_to": [],
+    "source": "epicwestport.co.nz About page (verified via WebFetch); Beehive.govt.nz release \"EPIC co-working space opens in Westport\"; Stuff.co.nz article on EPIC's arrival in Westport",
+    "founding_year": 2016,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "Everybody Eats",
     "domain": "food-rescue / food-security tech",
     "what": "Everybody Eats is a New Zealand charity that runs pay-what-you-can restaurants cooking three-course meals from surplus and rescued food, so anyone can eat a proper meal regardless of what they can afford to pay.",
@@ -1574,6 +1667,30 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Housing First Auckland",
+    "domain": "housing / homelessness tech",
+    "what": "Housing First Auckland is a collective of Auckland City Mission, Lifewise, LinkPeople, and Visionwest, working to end chronic homelessness in Tāmaki Makaurau, with backbone support from Wise Group, whose Wild Bamboo team runs the shared Recordbase data system the collective uses to coordinate referrals, track outcomes, and report on progress across the partner agencies.",
+    "region": "Auckland",
+    "website": "https://www.housingfirst.co.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "housing",
+      "homelessness",
+      "data coordination",
+      "collective impact"
+    ],
+    "related_to": [
+      "Community Housing Aotearoa"
+    ],
+    "source": "housingfirst.co.nz/our-collective and wildbamboo.co.nz/products/recordbase (verified via WebFetch and WebSearch)",
+    "founding_year": 2017,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "Hui E! Community Aotearoa",
     "domain": "nonprofit / NGO tech",
     "what": "Hui E! Community Aotearoa connects community groups, hapū, and iwi around the country, helping them build capability and pushing for fairer funding and policy for the community sector.",
@@ -1765,6 +1882,28 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Karo",
+    "domain": "health tech for good / hauora Māori",
+    "what": "Karo is a Māori-owned tech company that builds digital tools for primary and community health providers and social services, including Te Pokapū (a claims and decision support system), Kotahi (client and case management for NGOs and community organisations), and Māramatanga (data insights and reporting), used across most of the primary care sector.",
+    "region": "Wellington",
+    "website": "https://karo.co.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "hauora Māori",
+      "health tech",
+      "Māori-owned",
+      "data and reporting"
+    ],
+    "related_to": [],
+    "source": "karo.co.nz homepage and acc.co.nz/newsroom/stories/karo-data-management (verified via WebFetch)",
+    "founding_year": 2009,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Katoa Connect (formerly 20/20 Trust)",
@@ -2343,6 +2482,31 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "One in Six",
+    "domain": "disability employment tech",
+    "what": "One in Six is a disability employment hub built by the New Zealand Disability Employers' Network and Whaikaha, the Ministry of Disabled People, giving employers free tools, guidance, and the ARM-Up accessible recruitment model to hire and support disabled staff. It launched in February 2026, and takes its name from the one in six New Zealanders who are disabled.",
+    "region": "national",
+    "website": "https://oneinsix.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "disability employment",
+      "accessible recruitment",
+      "employer resource",
+      "disability inclusion"
+    ],
+    "related_to": [
+      "Workbridge",
+      "IHC New Zealand"
+    ],
+    "source": "oneinsix.nz about and knowledge hub pages (verified via WebFetch); Whaikaha - Ministry of Disabled People news page confirming the launch, and the NZ Disability Employers' Network launch post (verified via WebSearch)",
+    "founding_year": 2026,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "OpenLaw NZ",
     "domain": "legal-aid / justice tech",
     "what": "OpenLaw NZ is a non-profit charity, started in 2018, that builds free and open-source legal research tools because New Zealand had no free way to search its own laws and court cases online.",
@@ -2555,6 +2719,28 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "Renters United",
+    "domain": "housing / homelessness tech",
+    "what": "Renters United is a renter advocacy group that campaigns for warmer, safer, and more secure rentals in Aotearoa, and it built TenancyHelp, a free tool that lets renters draft letters, look up Tenancy Tribunal decisions, and get plain-language answers about their rights when dealing with issues like rent rises or unrepaired homes.",
+    "region": "Wellington",
+    "website": "https://rentersunited.org.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "housing",
+      "tenancy",
+      "renters",
+      "advocacy"
+    ],
+    "related_to": [],
+    "source": "rentersunited.org.nz and x.com/rentersunited/status/1932683777794589091 (verified via WebFetch and WebSearch)",
+    "founding_year": 2015,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "Rewiring Aotearoa",
     "domain": "green / climate-tech",
     "what": "Rewiring Aotearoa is a New Zealand non-profit that researches and campaigns for households and small businesses to switch from fossil-fuel machines, like petrol cars and gas heaters, to electric ones powered by renewable energy, so people save money and cut carbon emissions.",
@@ -2576,6 +2762,30 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "SEEK Volunteer",
+    "domain": "volunteering / giving platforms",
+    "what": "SEEK Volunteer is a free, non-profit platform that matches people across Aotearoa with volunteer roles at community organisations, covering everything from food rescue to mental health to arts and culture. It has run in New Zealand since 2015, alongside SEEK's paid job listings.",
+    "region": "national",
+    "website": "https://seekvolunteer.co.nz",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "volunteering",
+      "volunteer matching",
+      "matching platform",
+      "community"
+    ],
+    "related_to": [
+      "Volunteering New Zealand (Tūao Aotearoa)"
+    ],
+    "source": "seekvolunteer.co.nz homepage and volunteering pages (verified via WebFetch); Volunteering New Zealand news post confirming the partnership, and coverage noting the 2015 NZ launch (verified via WebSearch)",
+    "founding_year": 2015,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Sorted",
@@ -2783,6 +2993,29 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Te Au Pūngao",
+    "domain": "makerspaces / hackerspaces",
+    "what": "Te Au Pūngao is Marlborough's technology and innovation hub in Blenheim, run by Whiringa under contract to Marlborough District Council, offering co-working space, 3D printers, soldering stations and VR headsets, plus a microgrants programme to help local start-ups take their first steps.",
+    "region": "Marlborough",
+    "website": "https://www.teaupungao.com",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "makerspace",
+      "coworking",
+      "innovation hub",
+      "Marlborough",
+      "microgrants"
+    ],
+    "related_to": [],
+    "source": "Scoop \"New Marlborough Tech Hub A 'Gamechanger'\" (31 Jul 2025); whiringa.com (verified via WebFetch); Weekly Voice article on the Te Au Pūngao microgrants programme",
+    "founding_year": 2025,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Te Hapori Matihiko",
@@ -3000,6 +3233,30 @@
     "last_verified": "2026-08-05"
   },
   {
+    "name": "The Good Registry",
+    "domain": "volunteering / giving platforms",
+    "what": "The Good Registry is a Wellington social enterprise and charitable trust that sells charity gift cards and runs corporate giving programmes, letting people split a gift between more than 60 New Zealand causes instead of buying more stuff. It was founded in 2017 by Christine Langdon, Tracey Bridges, and Sue McCabe.",
+    "region": "Wellington",
+    "website": "https://thegoodregistry.com",
+    "github": "",
+    "linkedin_org": "https://nz.linkedin.com/company/the-good-registry",
+    "linkedin_people": [],
+    "tags": [
+      "charity gift cards",
+      "corporate giving",
+      "giving platform",
+      "social enterprise"
+    ],
+    "related_to": [
+      "Givealittle"
+    ],
+    "source": "thegoodregistry.com about page (verified via WebFetch); WebSearch results confirming the 2017 founding date and Wellington base; LinkedIn company page confirmed via WebSearch",
+    "founding_year": 2017,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
+  },
+  {
     "name": "The Spinoff",
     "domain": "journalism / media-tech",
     "what": "The Spinoff is an independent, digital-native New Zealand news and culture website, founded in 2014, covering politics, society, and Māori affairs through articles, podcasts, newsletters, and a mobile app.",
@@ -3067,6 +3324,29 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Tolaga Bay Innovation",
+    "domain": "digital-inclusion",
+    "what": "Tolaga Bay Innovation runs a co-working and technology hub in Uawa (Tolaga Bay) offering digital skills training, business mentorship and seed funding to grassroots and Māori entrepreneurs, and is part of the Te Tairāwhiti Digital Equity Collective helping set up tech hubs from Hicks Bay to Wairoa.",
+    "region": "Gisborne",
+    "website": "https://www.tbict.org",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "digital equity",
+      "rural",
+      "Māori entrepreneurship",
+      "tech hub",
+      "East Coast"
+    ],
+    "related_to": [],
+    "source": "tbict.org homepage and projects page (verified via WebFetch); InternetNZ article \"Stories from Te Tairāwhiti, united for digital equity\"",
+    "founding_year": 2018,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Trap.NZ",
@@ -3278,6 +3558,28 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
+  },
+  {
+    "name": "Whānau Tahi",
+    "domain": "health tech for good / hauora Māori",
+    "what": "Whānau Tahi is a Māori-owned health and social services software company, set up by Te Whānau O Waipareira Trust to build the Whānau Tahi Navigator case management platform, and it now serves more than 100 health and social service organisations and over 100,000 patients across New Zealand, and has expanded into the Australian and North American markets.",
+    "region": "Auckland",
+    "website": "https://www.whanautahi.com",
+    "github": "",
+    "linkedin_org": "",
+    "linkedin_people": [],
+    "tags": [
+      "hauora Māori",
+      "health tech",
+      "Māori-owned",
+      "case management"
+    ],
+    "related_to": [],
+    "source": "whanautahi.com homepage and idealog.co.nz/tech/2016/06/maori-health-software-company-whanau-tahi-makes-history (verified via WebFetch and WebSearch)",
+    "founding_year": 2010,
+    "takes_contributors": null,
+    "careers_url": "",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "Workbridge",

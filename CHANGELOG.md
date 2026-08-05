@@ -7,6 +7,37 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added — 2026-08-06 (loop iteration 3)
+
+**13 new directory entries (152 total, up from 139), targeted at thin domains**
+
+*Health tech / housing tech*
+- **Karo** — Māori-owned health tech for primary/community providers (`health tech for good / hauora Māori`)
+- **Whānau Tahi** — Māori-owned case-management software, 100+ health/social orgs (`health tech for good / hauora Māori`)
+- **Housing First Auckland** — homelessness collective backed by a referral/outcomes data system (`housing / homelessness tech`)
+- **Renters United** — Wellington renter advocacy group, built the TenancyHelp tool (`housing / homelessness tech`)
+
+*Volunteering / disability employment*
+- **SEEK Volunteer** — free volunteer-matching platform, run by SEEK since 2015 (`volunteering / giving platforms`)
+- **Boosted** — Aotearoa's arts crowdfunding platform (`volunteering / giving platforms`)
+- **The Good Registry** — Wellington social enterprise, charity gift cards and corporate giving (`volunteering / giving platforms`)
+- **One in Six** — disability employment hub with an accessible recruitment model, launched Feb 2026 (`disability employment tech`)
+
+*Tech ethics / regional NZ*
+- **Brainbox Institute** — public interest think tank, builds the NZ AI Policy Tracker (`tech-ethics / responsible-AI`)
+- **Centre for Artificial Intelligence and Public Policy (CAIPP)** — Otago University research centre on AI policy and governance (`tech-ethics / responsible-AI`)
+- **Tolaga Bay Innovation** — digital skills hub, Te Tairāwhiti Digital Equity Collective (`digital-inclusion`, Gisborne)
+- **Te Au Pūngao** — council-backed makerspace with 3D printers and microgrants (`makerspaces / hackerspaces`, Marlborough)
+- **EPIC Westport** — innovation hub and digital literacy programme (`digital-inclusion`, West Coast)
+
+Every domain now has at least 3 entries (`scripts/coverage.py` no longer flags any thin domains).
+
+**Site/tooling**
+- Cached pip dependencies in `ci.yml` and `linkcheck.yml` (`actions/setup-python` built-in cache)
+- Added an `ocr` (alibaba/open-code-review) delegation-mode review step before every push: no new API key needed, findings reviewed against `ocr`'s security/correctness/reliability ruleset before merging to main
+- Added a worktree/branch cleanup step at the end of each successful iteration
+- Added a cost-aware model policy for subagents: cheap model for mechanical writing, default model kept for org-verification research and judgment calls
+
 ### Added — 2026-08-06 (loop iteration 2)
 
 **12 new directory entries (139 total, up from 127)**
