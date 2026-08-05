@@ -24,6 +24,9 @@ jobs:
       - name: Validate entries against schema
         run: python3 scripts/validate.py
 
+      - name: Data-quality checks (duplicates fatal, freshness/slug warnings non-fatal)
+        run: python3 scripts/dataquality.py
+
       - name: Regenerate GUIDE.md
         run: python3 scripts/build_guide.py
 
