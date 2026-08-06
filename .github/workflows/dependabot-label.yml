@@ -1,0 +1,31 @@
+name: Label Dependabot PRs
+
+# Tags each Dependabot PR with "automerge" if it's a patch or minor version
+# bump. Major bumps never get this label, so they always wait for a human.
+# The actual merge happens later, in dependabot-automerge-sweep.yml, after a
+# cooling-off period. This workflow only labels; it never merges.
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  label:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Label patch/minor updates as auto-merge eligible
+        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr edit "$PR_URL" --add-label automerge
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
