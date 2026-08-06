@@ -17,8 +17,12 @@ account-level settings only the repo owner can change.
 - [x] Add a scheduled weekly link-check workflow that runs
   `scripts/linkcheck.py` and opens/updates a single tracking issue on genuine
   dead links, closing it when they recover. (`.github/workflows/linkcheck.yml`)
-- [x] Add Dependabot for the `github-actions` and `pip` ecosystems.
-  (`.github/dependabot.yml` + `requirements.txt`)
+- [x] Add Dependabot for the `github-actions`, `pip`, and `npm` (site/)
+  ecosystems. (`.github/dependabot.yml`)
+- [x] Auto-merge patch/minor Dependabot updates after a 3-day cooling-off
+  period, all checks green, no changes-requested review, and no `on-hold`
+  label. Major bumps always wait for a human. (`.github/workflows/
+  dependabot-label.yml` + `dependabot-automerge-sweep.yml`, done 2026-08-06)
 - [ ] Auto-close stale link-check issues if left open with no new failures for
   N weeks (belt-and-braces on top of the recover-close logic).
 - [ ] Add a `stale` workflow (actions/stale) to nudge and close abandoned
