@@ -102,10 +102,10 @@ export function EntryCard({
       </h3>
       <p className="mt-1 text-sm text-text-muted line-clamp-2">{what}</p>
       <p className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-text-muted">
-        <span className="inline-flex items-center gap-1">
+        <Link href={`/regions/${region.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} className="inline-flex items-center gap-1 hover:text-brand">
           <MapPin className="h-3.5 w-3.5" />
           {region}
-        </span>
+        </Link>
         {founding_year && <span>Est. {founding_year}</span>}
         {github && <MetaIcon icon={GitBranch} label="Has GitHub" />}
         {linkedin_org && <MetaIcon icon={Briefcase} label="Has LinkedIn" />}
@@ -118,12 +118,13 @@ export function EntryCard({
       {tags.length > 0 && (
         <div className="mt-2 flex flex-wrap gap-1">
           {tags.slice(0, 5).map((t) => (
-            <span
+            <Link
               key={t}
-              className="rounded-full bg-surface-alt px-2 py-0.5 text-xs text-text-muted"
+              href={`/directory?q=${encodeURIComponent(t)}`}
+              className="rounded-full bg-surface-alt px-2 py-0.5 text-xs text-text-muted hover:bg-brand-soft hover:text-brand"
             >
               {t}
-            </span>
+            </Link>
           ))}
         </div>
       )}

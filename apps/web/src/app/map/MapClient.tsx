@@ -35,8 +35,26 @@ export function MapClient({ entries }: { entries: Entry[] }) {
   useEffect(() => {
     if (!mapRef.current || typeof window === "undefined") return;
 
-    const L = (window as any).L;
-    if (!L) return;
+    const loadLeaflet = async () => {
+      // Load CSS
+      if (!document.querySelector('link[href*="leaflet"]')) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+        document.head.appendChild(link);
+      }
+      // Load JS
+      if (!(window as any).L) {
+        await new Promise<void>((resolve) => {
+          const script = document.createElement("script");
+          script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+          script.onload = () => resolve();
+          document.head.appendChild(script);
+        });
+      }
+
+      const L = (window as any).L;
+      if (!L || !mapRef.current) return;
 
     const map = L.map(mapRef.current).setView([-40.9, 174.0], 6);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -102,7 +120,8 @@ export function MapClient({ entries }: { entries: Entry[] }) {
             )
             .join("");
       });
-    }
+    };
+    loadLeaflet();
   }, [entries]);
 
   const regionEntries: Record<string, Entry[]> = {};
@@ -120,11 +139,6 @@ export function MapClient({ entries }: { entries: Entry[] }) {
       <p className="mt-2 text-text-muted">
         {entries.length} organisations across {regionList.length} regions.
       </p>
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      />
-      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" />
       <div className="mt-4 flex flex-col gap-4 lg:flex-row">
         <div
           ref={mapRef}
