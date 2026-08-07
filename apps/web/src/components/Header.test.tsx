@@ -1,6 +1,10 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { Header } from "@/components/Header";
+
+vi.mock("next/navigation", () => ({
+  usePathname: () => "/directory",
+}));
 
 describe("Header", () => {
   it("renders the site name", () => {
