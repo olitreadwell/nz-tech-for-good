@@ -1,4 +1,4 @@
-import "@olitreadwell/ui/src/styles/globals.css";
+import "../../../../packages/ui/src/styles/globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
