@@ -27,6 +27,15 @@ const slugFor = (name: string) => entries.find((e) => e.name === name)?.slug;
     <h1>{entry.name}</h1>
     <p class="lead">{entry.what}</p>
     <p class="links" style="font-weight:600;">
+      <button
+        type="button"
+        id="copy-link"
+        class="js-only"
+        style="font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.3rem 0.7rem;cursor:pointer;font-weight:600;margin-right:0.5rem;"
+        title="Copy link to this entry"
+      >
+        🔗 Copy link
+      </button>
       {
         entry.website && (
           <a href={entry.website} rel="noopener">
@@ -165,3 +174,18 @@ const slugFor = (name: string) => entries.find((e) => e.name === name)?.slug;
     )
   }
 </Layout>
+
+<script is:inline>
+  (function() {
+    var btn = document.getElementById("copy-link");
+    if (!btn) return;
+    btn.addEventListener("click", function() {
+      navigator.clipboard.writeText(window.location.href).then(function() {
+        btn.textContent = "✓ Copied!";
+        setTimeout(function() { btn.textContent = "🔗 Copy link"; }, 2000);
+      }).catch(function() {
+        btn.textContent = "⚠ Copy failed";
+      });
+    });
+  })();
+</script>

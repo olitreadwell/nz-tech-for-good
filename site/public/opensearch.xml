@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>NZ Tech-for-Good</ShortName>
+  <Description>Search the NZ Tech-for-Good directory of organisations using technology for public good</Description>
+  <Url type="text/html" template="https://olitreadwell.github.io/nz-tech-for-good/directory/?q={searchTerms}"/>
+  <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>

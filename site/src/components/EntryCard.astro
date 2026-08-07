@@ -10,6 +10,17 @@ interface Props {
 }
 const { entry, showDomain = true } = Astro.props;
 
+// Days since last verification
+const daysAgo = entry.last_verified
+  ? Math.floor((Date.now() - new Date(entry.last_verified).getTime()) / 86400000)
+  : null;
+const freshness =
+  daysAgo === null ? null
+  : daysAgo <= 7 ? "Verified this week"
+  : daysAgo <= 30 ? `Verified ${daysAgo} days ago`
+  : daysAgo <= 90 ? `Verified ${Math.round(daysAgo / 7)} weeks ago`
+  : `Verified ${Math.round(daysAgo / 30)} months ago`;
+
 const searchBlob = [
   entry.name,
   entry.what,
@@ -43,6 +54,7 @@ const searchBlob = [
   <p class="meta">
     <span>📍 {entry.region}</span>
     {entry.founding_year && <span>Est. {entry.founding_year}</span>}
+    {freshness && <span class={daysAgo !== null && daysAgo > 90 ? "stale" : ""}>🕐 {freshness}</span>}
   </p>
   {
     entry.tags.length > 0 && (
