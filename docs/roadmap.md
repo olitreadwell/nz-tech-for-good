@@ -47,9 +47,13 @@ account-level settings only the repo owner can change.
   2026-08-07, non-blocking.)
 - [x] Cache pip dependencies in CI to speed up runs (`actions/setup-python`
   cache key on `requirements.txt`). (`.github/workflows/ci.yml`, `.github/workflows/linkcheck.yml`, done 2026-08-06)
-- [ ] Run the link check inside the main CI as advisory only (already
+- [x] Run the link check inside the main CI as advisory only (already
   non-blocking) but surface a summary in the job step summary
   (`$GITHUB_STEP_SUMMARY`) so it is visible without opening logs.
+  (Done 2026-08-07)
+- [x] Auto-close stale link-check issues if left open with no new failures for
+  N weeks (belt-and-braces on top of the recover-close logic). (Added nag
+  comment after 4 weeks of unresolved dead links, done 2026-08-07)
 
 ## Content & knowledge
 

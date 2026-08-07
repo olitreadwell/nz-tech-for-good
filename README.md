@@ -4,7 +4,7 @@ A directory of Aotearoa New Zealand organisations, projects, networks, and
 people who use technology for public good.
 
 [![CI](https://github.com/olitreadwell/nz-tech-for-good/actions/workflows/ci.yml/badge.svg)](https://github.com/olitreadwell/nz-tech-for-good/actions/workflows/ci.yml)
-[![Entries](https://img.shields.io/badge/entries-176-brightgreen)](GUIDE.md)
+[![Entries](https://img.shields.io/github/directory-file-count/olitreadwell/nz-tech-for-good/data/entries?type=file&extension=yaml&label=entries&color=brightgreen)](GUIDE.md)
 [![License: MIT (code) / CC-BY-SA-4.0 (data)](https://img.shields.io/badge/license-MIT%20%2F%20CC--BY--SA--4.0-blue)](#use-the-data)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)](#add-an-organisation--contribute)
 

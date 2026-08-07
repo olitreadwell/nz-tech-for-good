@@ -78,7 +78,17 @@ jobs:
 
       - name: Check links (non-blocking)
         continue-on-error: true
-        run: python3 scripts/linkcheck.py
+        run: python3 scripts/linkcheck.py | tee linkcheck-output.txt
+
+      - name: Link-check summary
+        if: always()
+        run: |
+          {
+            echo "## Link check"
+            echo '```'
+            cat linkcheck-output.txt 2>/dev/null || echo "(no output)"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
   site-tests:
     name: Site tests (Vitest + Playwright-BDD)

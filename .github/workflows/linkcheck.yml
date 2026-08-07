@@ -100,3 +100,20 @@ jobs:
             gh issue comment "$existing" --body "Link check passed on $(date -u +%Y-%m-%d) — no dead links remain. Closing automatically."
             gh issue close "$existing"
           fi
+
+      - name: Nag on long-unresolved dead links
+        if: steps.check.outputs.exit_code != '0'
+        run: |
+          set -euo pipefail
+          existing=$(gh issue list --label link-check --state open --json number,createdAt -q '.[0]' 2>/dev/null || true)
+          if [ -z "${existing:-}" ]; then
+            echo "No open link-check issue."
+            exit 0
+          fi
+          number=$(echo "$existing" | jq -r '.number')
+          created=$(echo "$existing" | jq -r '.createdAt')
+          created_epoch=$(date -u -d "$created" +%s 2>/dev/null || date -u -jf "%Y-%m-%dT%H:%M:%SZ" "$created" +%s)
+          four_weeks_ago=$(date -u -d "-4 weeks" +%s 2>/dev/null || date -u -v-4w +%s)
+          if [ "$created_epoch" -lt "$four_weeks_ago" ]; then
+            gh issue comment "$number" --body "This issue has been open for over 4 weeks with unresolved dead links. These links may be permanently dead — consider removing or updating the affected entries."
+          fi
