@@ -17,13 +17,16 @@ export function Header() {
 
   return (
     <header className="border-b border-border bg-surface">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <div className="mx-auto flex max-w-5xl items-center px-4 py-3">
         <Link href="/" className="text-lg font-extrabold tracking-tight">
           NZ Tech-for-Good
         </Link>
 
-        {/* Desktop nav */}
-        <nav aria-label="Primary" className="hidden gap-1 sm:flex">
+        {/* Desktop nav — right aligned */}
+        <nav
+          aria-label="Primary"
+          className="ml-auto hidden gap-1 sm:flex"
+        >
           {links.map((l) => (
             <Link
               key={l.href}
@@ -35,10 +38,11 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Mobile toggle */}
+        {/* Mobile hamburger — right aligned */}
         <button
           type="button"
-          className="sm:hidden rounded border border-border p-1.5"
+          data-testid="menu-toggle"
+          className="ml-auto rounded border border-border p-1.5 sm:hidden"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
@@ -47,17 +51,17 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile nav */}
+      {/* Mobile nav dropdown */}
       {open && (
         <nav
           aria-label="Primary mobile"
-          className="border-t border-border px-4 pb-3 sm:hidden"
+          className="border-t border-border px-4 py-2 sm:hidden"
         >
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="block rounded px-3 py-2 text-sm font-medium text-text-muted hover:bg-surface-alt hover:text-text"
+              className="block rounded-lg px-3 py-2.5 text-sm font-medium hover:bg-surface-alt"
               onClick={() => setOpen(false)}
             >
               {l.label}

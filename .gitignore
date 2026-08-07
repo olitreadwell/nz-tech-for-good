@@ -40,3 +40,4 @@ ruvector.db
 .next/
 *.tsbuildinfo
 out/
+next-env.d.ts
