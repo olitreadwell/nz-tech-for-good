@@ -40,6 +40,9 @@ const searchBlob = [
   data-tags={entry.tags.join("|")}
   data-search={searchBlob}
   data-verified={entry.last_verified || ""}
+  data-contributors={entry.takes_contributors === true ? "true" : "false"}
+  data-careers={entry.careers_url ? "true" : "false"}
+  data-founded={entry.founding_year ? String(entry.founding_year) : ""}
 >
   {
     showDomain && (

@@ -42,6 +42,8 @@ const sameDomain = entries
       </button>
       <button type="button" id="share-twitter" class="js-only" title="Share on X (Twitter)" style="font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.3rem 0.7rem;cursor:pointer;font-weight:600;margin-right:0.5rem;">𝕏 Share</button>
       <a href={`https://github.com/olitreadwell/nz-tech-for-good/edit/main/data/entries/${entry.slug}.yaml`} target="_blank" rel="noopener noreferrer" style="font:inherit;font-size:0.85rem;color:var(--text-muted);">✏ Edit on GitHub</a>
+      <button type="button" id="save-entry" class="js-only" title="Save this entry" style="font:inherit;font-size:0.85rem;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.3rem 0.7rem;cursor:pointer;margin-left:0.5rem;">☆ Save</button>
+      <button type="button" id="cite-entry" class="js-only" title="Cite this entry" style="font:inherit;font-size:0.85rem;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.3rem 0.7rem;cursor:pointer;margin-left:0.5rem;">📝 Cite</button>
       {
         entry.website && (
           <a href={entry.website} target="_blank" rel="noopener noreferrer">
@@ -251,6 +253,20 @@ const sameDomain = entries
       }
     } catch(e) {}
 
+    // Save entry
+    var saveBtn = document.getElementById("save-entry");
+    if (saveBtn) {
+      var slug = window.location.pathname.split("/entry/")[1]?.replace(/\/$/, "");
+      var saved = JSON.parse(localStorage.getItem("saved-entries") || "[]");
+      if (saved.indexOf(slug) !== -1) saveBtn.textContent = "★ Saved";
+      saveBtn.addEventListener("click", function() {
+        var idx = saved.indexOf(slug);
+        if (idx === -1) { saved.push(slug); saveBtn.textContent = "★ Saved"; }
+        else { saved.splice(idx, 1); saveBtn.textContent = "☆ Save"; }
+        localStorage.setItem("saved-entries", JSON.stringify(saved));
+      });
+    }
+
     // Share on Twitter
     var shareBtn = document.getElementById("share-twitter");
     if (shareBtn) {
@@ -258,6 +274,19 @@ const sameDomain = entries
         var text = encodeURIComponent(document.title + " — NZ Tech-for-Good directory");
         var url = encodeURIComponent(window.location.href);
         window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url, "_blank", "width=550,height=420");
+      });
+    }
+
+    // Citation
+    var citeBtn = document.getElementById("cite-entry");
+    if (citeBtn) {
+      citeBtn.addEventListener("click", function() {
+        var name = document.querySelector("h1").textContent;
+        var url = window.location.href;
+        var today = new Date().toISOString().slice(0, 10);
+        var apa = name + ". (" + today + "). In <i>NZ Tech-for-Good</i>. Retrieved from " + url;
+        var mla = "\"" + name + ".\" <i>NZ Tech-for-Good</i>, " + today + ", " + url + ".";
+        prompt("APA citation (copy with Ctrl+C/Cmd+C):", apa.replace(/<[^>]+>/g, ""));
       });
     }
   })();

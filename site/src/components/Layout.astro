@@ -50,6 +50,14 @@ const fullTitle =
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register(new URL("/nz-tech-for-good/sw.js", window.location.origin));
       }
+      // Offline/online banner
+      var offlineBanner = document.getElementById("offline-banner");
+      function updateOnline() {
+        offlineBanner.hidden = navigator.onLine;
+      }
+      window.addEventListener("online", updateOnline);
+      window.addEventListener("offline", updateOnline);
+      updateOnline();
     </script>
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
@@ -73,8 +81,9 @@ const fullTitle =
   </head>
   <body>
     <div id="scroll-progress" style="position:fixed;top:0;left:0;height:3px;background:var(--accent,#2563eb);z-index:1000;width:0;"></div>
+    <div id="offline-banner" hidden style="background:#f59e0b;color:#000;text-align:center;padding:0.5rem;font-weight:600;font-size:0.9rem;">You are offline. Some features may be limited.</div>
     <a class="skip-link" href="#main">Skip to main content</a>
-    <header class="site-header">
+    <header class="site-header" role="banner">
       <div class="bar">
         <a class="brand" href={url("/")}>
           <span class="mark" aria-hidden="true">◇</span>
@@ -140,11 +149,11 @@ const fullTitle =
       )
     }
 
-    <main id="main">
+    <main id="main" role="main">
       <slot />
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="inner">
         <p style="margin:0;">
           Community-maintained directory. Data licensed
@@ -160,7 +169,7 @@ const fullTitle =
           >
         </p>
         <p style="margin:0;font-size:0.8rem;color:var(--text-muted);">
-          Updated: {new Date().toISOString().slice(0, 10)}
+          Updated: {new Date().toISOString().slice(0, 10)} · <span lang="mi">Aotearoa</span>
         </p>
       </div>
     </footer>

@@ -473,10 +473,11 @@ a.pill:visited {
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
 }
+/* Mobile-first: single column */
 .def-list {
   display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 0.4rem 1.25rem;
+  grid-template-columns: 1fr;
+  gap: 0.25rem 0;
   margin: 0 0 1.5rem;
 }
 .def-list dt {
@@ -484,16 +485,28 @@ a.pill:visited {
   color: var(--text-muted);
 }
 .def-list dd {
-  margin: 0;
+  margin: 0 0 0.75rem;
 }
-@media (max-width: 34rem) {
+
+/* Desktop: two columns */
+@media (min-width: 34rem) {
   .def-list {
-    grid-template-columns: 1fr;
-    gap: 0.1rem 0;
+    grid-template-columns: max-content 1fr;
+    gap: 0.4rem 1.25rem;
   }
   .def-list dd {
-    margin-bottom: 0.75rem;
+    margin: 0;
   }
+}
+
+/* Touch targets — minimum 44×44px for fingers */
+button, .button, select, .pill, .tile, .tag, .site-nav a, .crumbs a {
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+}
+input[type="search"], input[type="text"] {
+  min-height: 44px;
 }
 
 /* Filter controls (directory) --------------------------------------------- */

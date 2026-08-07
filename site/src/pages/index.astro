@@ -48,6 +48,32 @@ const newest = recentEntries.slice(0, 5);
     </li>
   </ul>
 
+  <section aria-labelledby="start-heading" class="js-only" id="start-here" style="background:var(--surface);border:2px solid var(--accent);border-radius:var(--radius);padding:1.25rem;margin:1.5rem 0;">
+    <h2 id="start-heading" style="margin-top:0;">👋 New to NZ tech-for-good?</h2>
+    <p style="margin:0.5rem 0 1rem;">This directory lists {totalEntries} organisations using technology for public good across Aotearoa. Here is how to get started:</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.75rem;">
+      <a href={url("/directory/")} style="display:block;padding:0.75rem;border:1px solid var(--border);border-radius:var(--radius-sm);text-decoration:none;color:var(--text);">
+        <strong>🔍 Browse the directory</strong><br/>
+        <span style="font-size:0.85rem;color:var(--text-muted);">All {totalEntries} organisations, filterable by domain, region, tag, and more.</span>
+      </a>
+      <a href={url("/domains/")} style="display:block;padding:0.75rem;border:1px solid var(--border);border-radius:var(--radius-sm);text-decoration:none;color:var(--text);">
+        <strong>📂 Explore by domain</strong><br/>
+        <span style="font-size:0.85rem;color:var(--text-muted);">{domains.length} areas from open data to climate tech, each with a short explainer.</span>
+      </a>
+      <a href={url("/get-involved/")} style="display:block;padding:0.75rem;border:1px solid var(--border);border-radius:var(--radius-sm);text-decoration:none;color:var(--text);">
+        <strong>🤝 Get involved</strong><br/>
+        <span style="font-size:0.85rem;color:var(--text-muted);">Find communities, events, volunteer opportunities, and how to contribute.</span>
+      </a>
+      <a href={url("/stats/")} style="display:block;padding:0.75rem;border:1px solid var(--border);border-radius:var(--radius-sm);text-decoration:none;color:var(--text);">
+        <strong>📊 See the numbers</strong><br/>
+        <span style="font-size:0.85rem;color:var(--text-muted);">Entry growth, domain distribution, data completeness, and more.</span>
+      </a>
+    </div>
+    <p style="margin:0.75rem 0 0;font-size:0.85rem;">
+      <button type="button" id="hide-start" style="font:inherit;border:none;background:none;color:var(--text-muted);cursor:pointer;text-decoration:underline;">Hide this section</button>
+    </p>
+  </section>
+
   <section aria-labelledby="domains-heading">
     <h2 id="domains-heading">Explore by domain</h2>
     <p>The areas of public good these groups work in. Biggest first.</p>
@@ -97,3 +123,17 @@ const newest = recentEntries.slice(0, 5);
     </p>
   </section>
 </Layout>
+
+<script is:inline>
+  // Hide start-here section
+  (function() {
+    var section = document.getElementById("start-here");
+    var btn = document.getElementById("hide-start");
+    if (!section || !btn) return;
+    if (localStorage.getItem("hide-start-here")) section.hidden = true;
+    btn.addEventListener("click", function() {
+      section.hidden = true;
+      localStorage.setItem("hide-start-here", "1");
+    });
+  })();
+</script>

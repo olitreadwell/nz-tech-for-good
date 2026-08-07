@@ -81,7 +81,13 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         </select>
       </div>
     </div>
-    <div class="js-only">
+    <div class="js-only" style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+      <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
+        <input type="checkbox" id="f-contributors" /> Takes contributors/volunteers
+      </label>
+      <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
+        <input type="checkbox" id="f-careers" /> Has careers/volunteering page
+      </label>
       <button
         type="button"
         id="clear-filters"
@@ -141,6 +147,8 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     var domainSel = document.getElementById("f-domain");
     var regionSel = document.getElementById("f-region");
     var tagSel = document.getElementById("f-tag");
+    var contributorsCb = document.getElementById("f-contributors");
+    var careersCb = document.getElementById("f-careers");
     var status = document.getElementById("result-count");
     var noResults = document.getElementById("no-results");
     var clearBtn = document.getElementById("clear-filters");
@@ -182,6 +190,8 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
           var tags = card.getAttribute("data-tags").split("|");
           if (tags.indexOf(tag) === -1) ok = false;
         }
+        if (contributorsCb.checked && card.getAttribute("data-contributors") !== "true") ok = false;
+        if (careersCb.checked && card.getAttribute("data-careers") !== "true") ok = false;
         card.hidden = !ok;
         if (ok) shown++;
       });
@@ -224,12 +234,17 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       el.addEventListener("input", apply);
       el.addEventListener("change", apply);
     });
+    [contributorsCb, careersCb].forEach(function(cb) {
+      cb.addEventListener("change", apply);
+    });
     if (clearBtn) {
       clearBtn.addEventListener("click", function () {
         q.value = "";
         domainSel.value = "";
         regionSel.value = "";
         tagSel.value = "";
+        contributorsCb.checked = false;
+        careersCb.checked = false;
         apply();
         q.focus();
       });
