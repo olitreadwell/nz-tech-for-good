@@ -119,10 +119,10 @@ and why these items exist.
 
 **Data-only, safe for a loop iteration to just do:**
 
-- [ ] Add **Tech for Good New Zealand** (meetup.com/tech-for-good-new-zealand,
+- [x] Add **Tech for Good New Zealand** (meetup.com/tech-for-good-new-zealand,
   Auckland-based, part of the global NetSquared network) as a directory
   entry. Directly answers "where do I find the next event."
-- [ ] Add **Digital Aotearoa Collective** (digitalaotearoa.github.io/chat,
+- [x] Add **Digital Aotearoa Collective** (digitalaotearoa.github.io/chat,
   active NZ Slack community, own GitHub org) as a directory entry.
 - [ ] Research and add any other currently-active NZ tech-for-good meetups,
   Slack/Discord communities, or event series not yet in the directory
