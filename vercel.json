@@ -3,5 +3,7 @@
     "enabled": true,
     "autoJobCancelation": true
   },
-  "ignoreCommand": "[ \"$VERCEL_GIT_COMMIT_REF\" != \"main\" ] && [ \"$VERCEL_GIT_COMMIT_REF\" != \"claude/dev\" ] && [ \"$VERCEL_GIT_COMMIT_REF\" != \"dev\" ]"
+  "buildCommand": "cd apps/web && npm run build",
+  "outputDirectory": "apps/web/.next",
+  "installCommand": "npm install"
 }

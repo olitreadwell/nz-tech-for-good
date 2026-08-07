@@ -80,7 +80,7 @@ export function MapClient({ entries }: { entries: Entry[] }) {
         container.innerHTML =
           "<h3 class='font-bold text-sm mb-2'>Results (" + filtered.length + ")</h3>" +
           filtered.slice(0, 20).map((e) =>
-            "<div class='mb-1 text-sm'><a href='/nz-tech-for-good/entry/" + e.slug + "/' class='text-brand hover:underline'>" + e.name + "</a> <span class='text-text-muted'>· " + e.domainLabel + " · " + e.region + "</span></div>"
+            "<div class='mb-1 text-sm'><a href='/entry/" + e.slug + "/' class='text-brand hover:underline'>" + e.name + "</a> <span class='text-text-muted'>· " + e.domainLabel + " · " + e.region + "</span></div>"
           ).join("");
       });
     }

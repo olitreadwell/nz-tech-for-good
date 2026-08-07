@@ -19,11 +19,11 @@ export default function SavedPage() {
             } catch(e) { var slugs = []; }
             var root = document.getElementById("saved-root");
             if (slugs.length === 0) {
-              root.innerHTML = '<p class="text-text-muted">No saved entries yet. Browse the <a href="/nz-tech-for-good/directory" class="text-brand hover:underline">directory</a> to find organisations to bookmark.</p>';
+              root.innerHTML = '<p class="text-text-muted">No saved entries yet. Browse the <a href="/directory" class="text-brand hover:underline">directory</a> to find organisations to bookmark.</p>';
             } else {
               root.innerHTML = '<p class="text-sm text-text-muted mb-3">' + slugs.length + ' saved ' + (slugs.length === 1 ? 'entry' : 'entries') + '.</p><ul class="space-y-2">' +
                 slugs.map(function(s) {
-                  return '<li><a href="/nz-tech-for-good/entry/' + s + '/" class="block rounded-lg border border-border p-3 font-semibold hover:text-brand">' + s.replace(/-/g, ' ') + '</a></li>';
+                  return '<li><a href="/entry/' + s + '/" class="block rounded-lg border border-border p-3 font-semibold hover:text-brand">' + s.replace(/-/g, ' ') + '</a></li>';
                 }).join('') +
                 '</ul><button onclick="localStorage.removeItem(\\'saved-entries\\');location.reload()" class="mt-4 rounded-lg border border-border px-4 py-2 text-sm hover:bg-surface-alt">Clear all saved</button>';
             }
