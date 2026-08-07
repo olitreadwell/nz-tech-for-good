@@ -22,18 +22,22 @@ export default async function DomainPage({
   const items = entries.filter((e) => e.domain === d.key);
 
   // Connected domains
-  const relatedDomains = domains.filter(
-    (x) => x.key !== d.key && entries.some((e) => e.domain === x.key),
-  ).slice(0, 8);
+  const relatedDomains = domains
+    .filter((x) => x.key !== d.key && entries.some((e) => e.domain === x.key))
+    .slice(0, 8);
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-8">
-      <Link href="/domains" className="mb-4 inline-block text-sm text-text-muted hover:text-brand">
+      <Link
+        href="/domains"
+        className="mb-4 inline-block text-sm text-text-muted hover:text-brand"
+      >
         ← All domains
       </Link>
       <h1 className="text-3xl font-extrabold tracking-tight">{d.label}</h1>
       <p className="mt-2 text-lg text-text-muted">
-        {items.length} {items.length === 1 ? "organisation" : "organisations"} in this domain.
+        {items.length} {items.length === 1 ? "organisation" : "organisations"}{" "}
+        in this domain.
       </p>
 
       {relatedDomains.length > 0 && (

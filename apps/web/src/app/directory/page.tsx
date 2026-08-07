@@ -22,7 +22,10 @@ export default function DirectoryPage() {
         data-regions={JSON.stringify(regions)}
       />
 
-      <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" id="entry-list">
+      <ul
+        className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        id="entry-list"
+      >
         {entries.map((entry) => (
           <EntryCard key={entry.slug} {...entry} />
         ))}
@@ -44,9 +47,9 @@ export default function DirectoryPage() {
               // Build filter bar
               var bar = document.createElement('div');
               bar.className = 'flex flex-wrap gap-3 mb-4';
-              bar.innerHTML = '<input type="search" id="dir-search" placeholder="Search '+entries.length+' organisations..." class="flex-1 min-w-[200px] rounded-lg border border-border bg-surface px-3 py-2 text-sm" />' +
-                '<select id="dir-domain" class="rounded-lg border border-border bg-surface px-3 py-2 text-sm"><option value="">All domains</option>'+domains.map(function(d){return '<option value="'+d.key+'">'+d.label+' ('+d.count+')</option>'}).join('')+'</select>' +
-                '<select id="dir-region" class="rounded-lg border border-border bg-surface px-3 py-2 text-sm"><option value="">All regions</option>'+regions.map(function(r){return '<option value="'+r.slug+'">'+r.name+' ('+r.count+')</option>'}).join('')+'</select>' +
+              bar.innerHTML = '<input type="search" id="dir-search" placeholder="Search '+entries.length+' organisations..." class="w-full sm:flex-1 min-w-[200px] rounded-lg border border-border bg-surface px-3 py-2 text-sm" />' +
+                '<select id="dir-domain" class="w-full sm:w-auto rounded-lg border border-border bg-surface px-3 py-2 text-sm"><option value="">All domains</option>'+domains.map(function(d){return '<option value="'+d.key+'">'+d.label+' ('+d.count+')</option>'}).join('')+'</select>' +
+                '<select id="dir-region" class="w-full sm:w-auto rounded-lg border border-border bg-surface px-3 py-2 text-sm"><option value="">All regions</option>'+regions.map(function(r){return '<option value="'+r.slug+'">'+r.name+' ('+r.count+')</option>'}).join('')+'</select>' +
                 '<div id="dir-pagination" class="flex items-center gap-2 ml-auto"></div>';
               list.parentNode.insertBefore(bar, list);
 

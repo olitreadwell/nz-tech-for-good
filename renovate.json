@@ -1,0 +1,83 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":dependencyDashboard", ":semanticCommits"],
+  "timezone": "Pacific/Auckland",
+  "schedule": ["before 6am on monday"],
+  "prConcurrentLimit": 5,
+  "minimumReleaseAge": "3 days",
+  "platformAutomerge": true,
+  "lockFileMaintenance": { "enabled": true },
+  "packageRules": [
+    {
+      "description": "React core must bump in lockstep",
+      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"],
+      "groupName": "react"
+    },
+    {
+      "description": "Next.js and its eslint config move together",
+      "matchPackageNames": ["next", "eslint-config-next"],
+      "groupName": "next.js"
+    },
+    {
+      "description": "Test tooling",
+      "matchPackageNames": ["@testing-library/**", "vitest", "@vitest/coverage-v8", "jsdom"],
+      "groupName": "testing"
+    },
+    {
+      "description": "Playwright browser + runner + accessibility",
+      "matchPackageNames": ["@playwright/test", "@axe-core/playwright"],
+      "groupName": "playwright"
+    },
+    {
+      "description": "Lint and format tooling",
+      "matchPackageNames": ["eslint", "eslint-**", "prettier", "prettier-**"],
+      "groupName": "lint & format"
+    },
+    {
+      "description": "Tailwind CSS",
+      "matchPackageNames": ["tailwindcss", "@tailwindcss/**"],
+      "groupName": "tailwind"
+    },
+    {
+      "description": "TypeScript",
+      "matchPackageNames": ["typescript", "@types/**"],
+      "groupName": "typescript"
+    },
+    {
+      "description": "Turbo monorepo tools",
+      "matchPackageNames": ["turbo", "@turbo/**"],
+      "groupName": "turbo"
+    },
+    {
+      "description": "Auto-merge low-risk devDependency updates once CI passes",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
+    },
+    {
+      "description": "Auto-merge patch updates to production dependencies once CI passes",
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    },
+    {
+      "description": "Minor updates to production dependencies need a human look",
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor"],
+      "automerge": false
+    },
+    {
+      "description": "Hold major updates for manual approval",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true,
+      "automerge": false
+    },
+    {
+      "description": "Security patches skip the release-age wait",
+      "matchUpdateTypes": ["patch", "minor"],
+      "vulnerabilityAlerts": true,
+      "minimumReleaseAge": null,
+      "automerge": true
+    }
+  ]
+}

@@ -58,10 +58,7 @@ function domainLabel(domain: string): string {
   return DOMAIN_LABELS[domain] ?? domain;
 }
 
-const ENTRIES_DIR = path.resolve(
-  process.cwd(),
-  "../../data/entries",
-);
+const ENTRIES_DIR = path.resolve(process.cwd(), "../../data/entries");
 
 let _entries: Entry[] | null = null;
 

@@ -73,15 +73,34 @@ export function MapClient({ entries }: { entries: Entry[] }) {
     if (search) {
       search.addEventListener("input", () => {
         const q = search.value.toLowerCase();
-        if (!q) { container.innerHTML = ""; return; }
+        if (!q) {
+          container.innerHTML = "";
+          return;
+        }
         const filtered = entries.filter((e) =>
-          (e.name + " " + e.what + " " + e.tags.join(" ")).toLowerCase().includes(q),
+          (e.name + " " + e.what + " " + e.tags.join(" "))
+            .toLowerCase()
+            .includes(q),
         );
         container.innerHTML =
-          "<h3 class='font-bold text-sm mb-2'>Results (" + filtered.length + ")</h3>" +
-          filtered.slice(0, 20).map((e) =>
-            "<div class='mb-1 text-sm'><a href='/entry/" + e.slug + "/' class='text-brand hover:underline'>" + e.name + "</a> <span class='text-text-muted'>· " + e.domainLabel + " · " + e.region + "</span></div>"
-          ).join("");
+          "<h3 class='font-bold text-sm mb-2'>Results (" +
+          filtered.length +
+          ")</h3>" +
+          filtered
+            .slice(0, 20)
+            .map(
+              (e) =>
+                "<div class='mb-1 text-sm'><a href='/entry/" +
+                e.slug +
+                "/' class='text-brand hover:underline'>" +
+                e.name +
+                "</a> <span class='text-text-muted'>· " +
+                e.domainLabel +
+                " · " +
+                e.region +
+                "</span></div>",
+            )
+            .join("");
       });
     }
   }, [entries]);
@@ -101,13 +120,36 @@ export function MapClient({ entries }: { entries: Entry[] }) {
       <p className="mt-2 text-text-muted">
         {entries.length} organisations across {regionList.length} regions.
       </p>
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      />
       <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" />
-      <div className="mt-4 flex flex-wrap gap-4">
-        <div ref={mapRef} className="h-[60vh] min-h-[400px] flex-1 rounded-lg border border-border" />
-        <div className="w-72 flex-shrink-0">
-          <input type="search" id="map-search" placeholder="Search entries..." className="mb-3 w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm" />
-          <div className="max-h-[55vh] overflow-y-auto">
+      <div className="mt-4 flex flex-col gap-4 lg:flex-row">
+        <div
+          ref={mapRef}
+          className="h-[40vh] min-h-[300px] w-full rounded-lg border border-border lg:h-[65vh] lg:flex-1"
+        />
+        <div className="w-full lg:w-72 lg:flex-shrink-0">
+          <input
+            type="search"
+            id="map-search"
+            placeholder="Search entries..."
+            className="mb-3 w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm"
+          />
+          <details className="lg:hidden mb-3">
+            <summary className="cursor-pointer text-sm font-medium text-text-muted">
+              Regions ({regionList.length})
+            </summary>
+            <div className="mt-2 max-h-40 overflow-y-auto">
+              {regionList.map((r) => (
+                <div key={r.name} className="rounded px-2 py-1 text-sm">
+                  {r.name} <span className="text-text-muted">({r.count})</span>
+                </div>
+              ))}
+            </div>
+          </details>
+          <div className="hidden max-h-[55vh] overflow-y-auto lg:block">
             {regionList.map((r) => (
               <div key={r.name} className="rounded px-2 py-1 text-sm">
                 {r.name} <span className="text-text-muted">({r.count})</span>

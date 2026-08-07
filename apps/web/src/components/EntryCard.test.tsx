@@ -43,11 +43,15 @@ describe("EntryCard", () => {
 
   it("shows contributors badge when true", () => {
     render(<EntryCard {...baseEntry} takes_contributors={true} />);
-    expect(screen.getAllByText("Contributors").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText("Contributors").length).toBeGreaterThanOrEqual(
+      1,
+    );
   });
 
   it("hides contributors badge when false", () => {
-    const { container } = render(<EntryCard {...baseEntry} takes_contributors={false} />);
+    const { container } = render(
+      <EntryCard {...baseEntry} takes_contributors={false} />,
+    );
     // The green badge with "Contributors" text should not exist
     const badges = container.querySelectorAll(".bg-green-100");
     expect(badges.length).toBe(0);
