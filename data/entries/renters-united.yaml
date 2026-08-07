@@ -4,7 +4,7 @@ what: Renters United is a renter advocacy group that campaigns for warmer, safer
   Aotearoa, and it built TenancyHelp, a free tool that lets renters draft letters, look up Tenancy Tribunal
   decisions, and get plain-language answers about their rights when dealing with issues like rent rises or
   unrepaired homes.
-region: Wellington
+region: wellington
 website: https://rentersunited.org.nz
 github: ''
 linkedin_org: ''
@@ -18,6 +18,6 @@ related_to: []
 source: rentersunited.org.nz and x.com/rentersunited/status/1932683777794589091 (verified via WebFetch and
   WebSearch)
 founding_year: 2015
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-06'

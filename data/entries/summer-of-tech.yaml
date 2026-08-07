@@ -4,7 +4,7 @@ what: Summer of Tech is a New Zealand charitable programme that connects student
   with employers through internships and mentoring, helping people get their first step into a tech career.
 region: national
 website: https://www.summeroftech.co.nz
-github: ''
+github: https://github.com/summeroftech
 linkedin_org: ''
 linkedin_people: []
 tags:
@@ -15,7 +15,7 @@ tags:
 related_to:
 - Dev Academy Aotearoa
 source: summeroftech.co.nz homepage (verified via WebFetch)
-founding_year: null
-takes_contributors: null
+founding_year: 2006
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

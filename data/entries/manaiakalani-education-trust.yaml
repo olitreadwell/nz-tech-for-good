@@ -3,7 +3,7 @@ domain: education equity tech
 what: Manaiakalani Education Trust is an Auckland-based charity that runs a digital learning programme
   for schools in lower-income communities, giving students devices and teachers training so technology
   helps close, rather than widen, the education gap for Māori and Pacific students.
-region: Auckland
+region: auckland
 website: https://www.manaiakalani.org
 github: ''
 linkedin_org: https://www.linkedin.com/company/manaiakalani-education-trust
@@ -17,7 +17,7 @@ related_to:
 - Dev Academy Aotearoa (Māori and Pasifika cohorts)
 - Digital Natives Academy
 source: manaiakalani.org homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch
-founding_year: null
-takes_contributors: null
+founding_year: 2007
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

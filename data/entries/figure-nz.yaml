@@ -2,9 +2,9 @@ name: Figure.NZ
 domain: open-data
 what: Figure.NZ is a charity that publishes free, easy-to-understand data and charts about New Zealand,
   so anyone can find and reuse the country's numbers without needing to be a data expert.
-region: Auckland
+region: auckland
 website: https://figure.nz
-github: ''
+github: https://github.com/FigureNZ
 linkedin_org: https://nz.linkedin.com/company/figure-nz
 linkedin_people: []
 tags:
@@ -12,9 +12,10 @@ tags:
 - data visualisation
 - data literacy
 - charity
-related_to: []
+related_to:
+- data.govt.nz
 source: figure.nz homepage (verified via WebFetch); LinkedIn company listing found via web search
-founding_year: null
-takes_contributors: null
+founding_year: 2012
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

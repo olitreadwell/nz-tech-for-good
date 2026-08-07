@@ -3,7 +3,7 @@ domain: open-data
 what: The Waikato Open Data Hub is a website where nine councils across the Waikato region share their
   maps and datasets together, covering things like roads, pipes, and land boundaries, so anyone can search
   and download them in one place.
-region: Waikato
+region: waikato
 website: https://colabsolutions.govt.nz/shared-services/geospatial-projects-and-services/wodh/
 github: ''
 linkedin_org: ''
@@ -16,7 +16,7 @@ tags:
 related_to:
 - data.govt.nz
 source: colabsolutions.govt.nz Waikato Open Data Hub page (verified via WebFetch)
-founding_year: null
+founding_year: 2016
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-05'

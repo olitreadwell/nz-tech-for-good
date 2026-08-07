@@ -3,7 +3,7 @@ domain: green / climate-tech
 what: CarbonCrop is a New Zealand company, spun out of the Nelson AI Institute in 2020, that uses artificial
   intelligence and satellite imagery to help farmers and landowners measure their native forests and turn
   forest restoration into paid carbon credits.
-region: Nelson
+region: tasman-nelson
 website: https://www.carboncrop.com
 github: ''
 linkedin_org: https://nz.linkedin.com/company/carboncrop
@@ -16,7 +16,7 @@ tags:
 - startup
 related_to: []
 source: carboncrop.com (verified via WebFetch); LinkedIn company listing found via web search
-founding_year: null
-takes_contributors: null
+founding_year: 2020
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

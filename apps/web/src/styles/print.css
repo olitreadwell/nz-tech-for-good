@@ -1,0 +1,8 @@
+@media print {
+  header, footer, nav, .skip-link, #scroll-progress, #back-to-top { display: none !important; }
+  body { font-size: 11pt; color: #000; background: #fff; }
+  a { color: #000; text-decoration: underline; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #666; }
+  .grid { display: block; }
+  .grid > * { break-inside: avoid; margin-bottom: 1rem; }
+}

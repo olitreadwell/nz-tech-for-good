@@ -3,7 +3,7 @@ domain: digital-inclusion
 what: Tolaga Bay Innovation runs a co-working and technology hub in Uawa (Tolaga Bay) offering digital
   skills training, business mentorship and seed funding to grassroots and Māori entrepreneurs, and is
   part of the Te Tairāwhiti Digital Equity Collective helping set up tech hubs from Hicks Bay to Wairoa.
-region: Gisborne
+region: gisborne
 website: https://www.tbict.org
 github: ''
 linkedin_org: ''
@@ -18,6 +18,6 @@ related_to: []
 source: tbict.org homepage and projects page (verified via WebFetch); InternetNZ article "Stories from
   Te Tairāwhiti, united for digital equity"
 founding_year: 2018
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-06'

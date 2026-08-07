@@ -3,7 +3,7 @@ domain: refugee / migrant support tech
 what: The Asylum Seekers Support Trust is the only New Zealand organisation that focuses specifically
   on people seeking asylum, giving them emergency housing and practical help from qualified social workers
   while their claims are processed.
-region: Auckland
+region: auckland
 website: https://asst.org.nz/
 github: ''
 linkedin_org: ''
@@ -17,6 +17,6 @@ related_to:
 - Belong Aotearoa
 source: asst.org.nz homepage (verified via curl, HTTP 200); web search of asst.org.nz about-us page
 founding_year: null
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

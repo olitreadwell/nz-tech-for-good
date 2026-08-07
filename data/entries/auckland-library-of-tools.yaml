@@ -3,7 +3,7 @@ domain: makerspaces / hackerspaces
 what: Auckland Library of Tools is a Grey Lynn community hub where people can borrow up to 10 tools at
   a time, from power drills to sewing machines, instead of buying their own, and it also runs monthly
   repair cafes to help people fix things rather than throw them away.
-region: Auckland
+region: auckland
 website: https://www.aucklandlibraryoftools.com/
 github: ''
 linkedin_org: ''
@@ -17,7 +17,7 @@ tags:
 related_to:
 - Hackland
 source: aucklandlibraryoftools.com homepage (verified via curl and WebFetch, HTTP 200)
-founding_year: null
-takes_contributors: null
+founding_year: 2018
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

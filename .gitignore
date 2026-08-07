@@ -32,3 +32,14 @@ Thumbs.db
 ruvector.db
 .agents/
 /CLAUDE.md
+
+
+
+.omo/
+.codegraph/dist/
+.next/
+*.tsbuildinfo
+out/
+next-env.d.ts
+coverage/
+.vercel

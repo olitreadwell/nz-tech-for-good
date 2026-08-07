@@ -3,7 +3,7 @@ domain: green / climate-tech
 what: The Sustainable Business Network is New Zealand's longest-running sustainable business organisation,
   helping companies act on climate change, waste, and nature through training, tools, and research reports
   on clean-tech innovation.
-region: Auckland
+region: auckland
 website: https://sustainable.org.nz
 github: ''
 linkedin_org: https://nz.linkedin.com/company/sustainable-business-network
@@ -17,7 +17,7 @@ related_to: []
 source: web search of sustainable.org.nz official pages; direct fetch of the site returned an HTTP 403
   from the site's own bot-protection, but the domain is confirmed live and returning real content indexed
   by search engines
-founding_year: null
-takes_contributors: null
+founding_year: 2002
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

@@ -6,7 +6,7 @@
 # enum exactly; scripts/validate.py checks that at build time.
 #
 # Keep these short and concrete. No em dashes, no banned words (see
-# docs/STYLE.md) — scripts/stylecheck.py checks this file too.
+# docs/STYLE.md) ; scripts/stylecheck.py checks this file too.
 
 "Māori data sovereignty / indigenous data": >-
   Making sure Māori data, about Māori people, land, and taonga, stays

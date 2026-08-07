@@ -3,7 +3,7 @@ domain: civic-tech
 what: Hackland is a volunteer-run community makerspace in Grey Lynn, Auckland, where members share tools
   like 3D printers, laser cutters, and woodworking and metalworking equipment, and learn skills from each
   other at weekly open evenings.
-region: Auckland
+region: auckland
 website: https://hackland.nz
 github: https://github.com/HakLand
 linkedin_org: ''
@@ -13,9 +13,10 @@ tags:
 - hackerspace
 - community tech space
 - volunteer-run
-related_to: []
+related_to:
+- Tinkd Makerspace
 source: hackland.nz homepage (verified via WebFetch) and github.com/HakLand (verified via web search)
-founding_year: null
-takes_contributors: null
+founding_year: 2015
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

@@ -3,7 +3,7 @@ domain: open-data
 what: Bay of Plenty Maps is an open data site where Bay of Plenty Regional Council, Tauranga City Council,
   Western Bay of Plenty District Council, and Whakatāne District Council share public spatial data, like
   resource consents and council boundaries.
-region: Bay of Plenty
+region: bay-of-plenty
 website: https://data-boprc.opendata.arcgis.com/
 github: ''
 linkedin_org: ''
@@ -15,7 +15,7 @@ tags:
 - GIS
 related_to: []
 source: data-boprc.opendata.arcgis.com homepage (verified via curl, HTTP 200)
-founding_year: null
+founding_year: 2015
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-05'

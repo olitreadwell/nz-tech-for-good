@@ -2,7 +2,7 @@ name: Tasman District Council GeoHUB
 domain: open-data
 what: Tasman District Council's GeoHUB is an open data catalogue where people can download the council's
   public GIS layers, like property and planning information, for the Tasman region.
-region: Tasman
+region: tasman-nelson
 website: https://geohub.tasman.govt.nz/
 github: ''
 linkedin_org: ''

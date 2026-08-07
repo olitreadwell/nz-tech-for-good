@@ -3,9 +3,9 @@ domain: makerspaces / hackerspaces
 what: Tinkd Makerspace is a not-for-profit community workshop in Tauranga, run by STEM Wana Trust, where
   people share 3D printers, laser cutters, sewing machines, and electronics gear, and learn making and
   digital skills from each other at open evening and weekend sessions.
-region: Tauranga
+region: bay-of-plenty
 website: https://tinkd.nz
-github: ''
+github: https://github.com/tinkdnz
 linkedin_org: ''
 linkedin_people: []
 tags:
@@ -14,10 +14,11 @@ tags:
 - community tech space
 - STEM education
 - charity
-related_to: []
+related_to:
+- Hackland
 source: tinkd.nz/our-story and tinkd.nz homepage (verified via WebFetch); stemwana.nz Tinkd Makerspace
   page found via web search
 founding_year: 2020
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-06'
