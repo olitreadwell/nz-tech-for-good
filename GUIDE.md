@@ -501,7 +501,7 @@ _5 entries in this domain._
 
 - Be. Lab (formerly Be. Accessible) is a New Zealand organisation, launched in 2011, that helps businesses make their websites, apps, and workplaces accessible through digital accessibility assessments, training, and consulting.
 - Region: national
-- Links: [Website](https://www.belab.co.nz) · [LinkedIn](https://nz.linkedin.com/company/belabnz)
+- Links: [Website](https://www.belab.co.nz) · [LinkedIn](https://www.linkedin.com/company/belabnz)
 - Tags: accessibility, digital accessibility, consulting, disability employment
 - Related: Blind Low Vision NZ, Access Matters Aotearoa
 
@@ -1307,7 +1307,7 @@ _4 entries in this domain._
 
 - Boosted is Aotearoa New Zealand's arts crowdfunding platform, run by the charitable trust Arts Foundation Te Tumu Toi. It gives artists one-on-one coaching to run all-or-nothing giving campaigns, and has helped raise more than $10 million for creative projects since it launched in 2013.
 - Region: national
-- Links: [Website](https://www.boosted.org.nz) · [LinkedIn](https://nz.linkedin.com/company/boosted-nz)
+- Links: [Website](https://www.boosted.org.nz) · [LinkedIn](https://www.linkedin.com/company/theartsnz)
 - Tags: crowdfunding, giving platform, arts funding, creative sector
 - Related: Givealittle
 
@@ -1621,7 +1621,7 @@ _12 entries in this domain._
 
 - Com2Tech is a volunteer-led community trust in Dunedin that provides free digital skills classes, low-cost refurbished devices, and community tech support to help people of all ages get online, including dedicated programmes for seniors and job-seekers.
 - Region: otago
-- Links: [Website](https://www.com2.tech) · [LinkedIn](https://nz.linkedin.com/company/community-communications-technology-trust-com2tech)
+- Links: [Website](https://www.com2.tech) · [LinkedIn](https://www.linkedin.com/company/com2tech)
 - Tags: digital inclusion, device recycling, community tech, seniors, dunedin
 - Related: Katoa Connect (formerly 20/20 Trust)
 

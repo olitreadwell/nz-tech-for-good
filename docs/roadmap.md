@@ -62,9 +62,10 @@ account-level settings only the repo owner can change.
 - [ ] Close the people/LinkedIn enrichment gap described in
   [docs/known-gaps.md](known-gaps.md): add `linkedin_people` to entries, one
   verified person at a time, following the people-and-privacy rules.
-- [ ] Add a short "How entries are chosen" doc explaining the scope boundary
+- [x] Add a short "How entries are chosen" doc explaining the scope boundary
   (what counts as tech-for-good, what is out of scope) so contributors self-
-  select before opening an issue.
+  select before opening an issue. (`docs/how-entries-are-chosen.md`, done
+  2026-08-07)
 - [x] Add a `CHANGELOG.md` or a dated "recent additions" section so returning
   visitors can see what is new without diffing. (`CHANGELOG.md` added 2026-08-05)
 - [ ] Cross-link related entries in the data (an optional `related` field) and
