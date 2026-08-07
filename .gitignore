@@ -42,3 +42,4 @@ ruvector.db
 out/
 next-env.d.ts
 coverage/
+.vercel

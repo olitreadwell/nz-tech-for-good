@@ -50,6 +50,16 @@ export default function DirectoryPage() {
               bar.innerHTML = '<input type="search" id="dir-search" placeholder="Search '+entries.length+' organisations..." class="w-full sm:flex-1 min-w-[200px] rounded-lg border border-border bg-surface px-3 py-2 text-sm" />' +
                 '<select id="dir-domain" class="w-full sm:w-auto rounded-lg border border-border bg-surface px-3 py-2 text-sm"><option value="">All domains</option>'+domains.map(function(d){return '<option value="'+d.key+'">'+d.label+' ('+d.count+')</option>'}).join('')+'</select>' +
                 '<select id="dir-region" class="w-full sm:w-auto rounded-lg border border-border bg-surface px-3 py-2 text-sm"><option value="">All regions</option>'+regions.map(function(r){return '<option value="'+r.slug+'">'+r.name+' ('+r.count+')</option>'}).join('')+'</select>' +
+                '<div class="flex flex-wrap gap-x-3 gap-y-1 text-xs">' +
+                  '<label class="cursor-pointer"><input type="checkbox" id="f-contributors"> Contributors</label>' +
+                  '<label class="cursor-pointer"><input type="checkbox" id="f-careers"> Careers page</label>' +
+                  '<label class="cursor-pointer"><input type="checkbox" id="f-remote"> Remote</label>' +
+                  '<label class="cursor-pointer"><input type="checkbox" id="f-github"> GitHub</label>' +
+                  '<label class="cursor-pointer"><input type="checkbox" id="f-linkedin"> LinkedIn</label>' +
+                  '<label class="cursor-pointer"><input type="checkbox" id="f-community"> Community</label>' +
+                  '<label class="cursor-pointer"><input type="checkbox" id="f-events"> Events</label>' +
+                  '<select id="f-decade" class="rounded border border-border bg-surface px-2 py-0.5 text-xs"><option value="">Any decade</option><option value="pre-2000">Pre-2000s</option><option value="2000s">2000s</option><option value="2010s">2010s</option><option value="2020s">2020s</option></select>' +
+                '</div>' +
                 '<div id="dir-pagination" class="flex items-center gap-2 ml-auto"></div>';
               list.parentNode.insertBefore(bar, list);
 
@@ -57,10 +67,32 @@ export default function DirectoryPage() {
                 var q = (document.getElementById('dir-search').value||'').toLowerCase();
                 var dom = document.getElementById('dir-domain').value;
                 var reg = document.getElementById('dir-region').value;
+                var contributors = document.getElementById('f-contributors').checked;
+                var careers = document.getElementById('f-careers').checked;
+                var remote = document.getElementById('f-remote').checked;
+                var github = document.getElementById('f-github').checked;
+                var linkedin = document.getElementById('f-linkedin').checked;
+                var community = document.getElementById('f-community').checked;
+                var events = document.getElementById('f-events').checked;
+                var decade = document.getElementById('f-decade').value;
                 var visible = cards.filter(function(c) {
                   if (q && c.textContent.toLowerCase().indexOf(q)===-1) return false;
                   if (dom && c.getAttribute('data-domain')!==dom) return false;
                   if (reg && c.getAttribute('data-region')!==reg) return false;
+                  if (contributors && c.getAttribute('data-contributors')!=='true') return false;
+                  if (careers && c.getAttribute('data-careers')!=='true') return false;
+                  if (remote && c.getAttribute('data-tags').indexOf('remote')===-1) return false;
+                  if (github && c.getAttribute('data-github')!=='true') return false;
+                  if (linkedin && c.getAttribute('data-linkedin')!=='true') return false;
+                  if (community && c.getAttribute('data-community')!=='true') return false;
+                  if (events && c.getAttribute('data-events')!=='true') return false;
+                  if (decade) {
+                    var fy = parseInt(c.getAttribute('data-founded'))||0;
+                    if (decade==='pre-2000' && (fy>=2000||fy===0)) return false;
+                    if (decade==='2000s' && (fy<2000||fy>=2010)) return false;
+                    if (decade==='2010s' && (fy<2010||fy>=2020)) return false;
+                    if (decade==='2020s' && fy<2020) return false;
+                  }
                   return true;
                 });
                 currentPage = 1;

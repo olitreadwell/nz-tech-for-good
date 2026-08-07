@@ -36,6 +36,30 @@ export default async function EntryPage({
         ← Directory
       </Link>
 
+      <nav aria-label="Breadcrumb" className="mb-2 text-sm text-text-muted">
+        <Link href="/" className="hover:text-brand">Home</Link>
+        <span className="mx-1">/</span>
+        <Link href="/directory" className="hover:text-brand">Directory</Link>
+        <span className="mx-1">/</span>
+        <span>{entry.name}</span>
+      </nav>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: entry.name,
+            description: entry.what,
+            url: entry.website || undefined,
+            sameAs: [entry.github, entry.linkedin_org, entry.community_url, entry.events_url].filter(Boolean),
+            foundingDate: entry.founding_year ? String(entry.founding_year) : undefined,
+            location: entry.region !== "national" ? { "@type": "Place", name: entry.region } : { "@type": "Country", name: "New Zealand" },
+          }),
+        }}
+      />
+
       <div className="mb-4 flex items-center gap-2">
         <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-sm font-medium text-brand">
           {entry.domainLabel}
