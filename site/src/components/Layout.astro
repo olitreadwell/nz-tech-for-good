@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import { url } from "../lib/url";
+import BackToTop from "./BackToTop.astro";
 
 interface Props {
   title: string;
@@ -20,6 +21,7 @@ const nav = [
   { key: "domains", label: "Domains", href: url("/domains/") },
   { key: "regions", label: "Regions", href: url("/regions/") },
   { key: "ecosystem", label: "Ecosystem", href: url("/ecosystem/") },
+  { key: "stats", label: "Stats", href: url("/stats/") },
   { key: "get-involved", label: "Get Involved", href: url("/get-involved/") },
 ];
 
@@ -39,6 +41,10 @@ const fullTitle =
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
     <!-- Set the theme before paint so there is no flash; falls back to OS setting. -->
     <script is:inline>
       (function () {
@@ -111,6 +117,8 @@ const fullTitle =
         </p>
       </div>
     </footer>
+
+    <BackToTop />
 
     <script is:inline>
       (function () {

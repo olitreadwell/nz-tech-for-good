@@ -119,6 +119,22 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     );
     var total = cards.length;
 
+    function readURL() {
+      var p = new URLSearchParams(window.location.search);
+      return { q: p.get("q") || "", domain: p.get("domain") || "", region: p.get("region") || "", tag: p.get("tag") || "" };
+    }
+
+    function syncURL() {
+      var p = new URLSearchParams();
+      if (q.value) p.set("q", q.value);
+      if (domainSel.value) p.set("domain", domainSel.value);
+      if (regionSel.value) p.set("region", regionSel.value);
+      if (tagSel.value) p.set("tag", tagSel.value);
+      var s = p.toString();
+      var url = window.location.pathname + (s ? "?" + s : "");
+      history.replaceState(null, "", url);
+    }
+
     function apply() {
       var text = q.value.trim().toLowerCase();
       var dom = domainSel.value;
@@ -147,7 +163,18 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
           "Showing " + shown + " of " + total + " organisations.";
       }
       noResults.hidden = shown !== 0;
+      syncURL();
     }
+
+    // Init from URL params on load
+    (function() {
+      var u = readURL();
+      if (u.q) q.value = u.q;
+      if (u.domain) domainSel.value = u.domain;
+      if (u.region) regionSel.value = u.region;
+      if (u.tag) tagSel.value = u.tag;
+      apply();
+    })();
 
     [q, domainSel, regionSel, tagSel].forEach(function (el) {
       el.addEventListener("input", apply);

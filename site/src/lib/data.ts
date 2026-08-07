@@ -185,6 +185,13 @@ export const tags: Facet[] = (() => {
 
 export const totalEntries = entries.length;
 
+/** Entries sorted by last_verified date, newest first. */
+export const recentEntries: Entry[] = [...entries].sort((a, b) => {
+  const da = a.last_verified || "";
+  const db = b.last_verified || "";
+  return db.localeCompare(da);
+});
+
 export function entriesByDomain(domainKey: string): Entry[] {
   return entries.filter((e) => e.domain === domainKey);
 }
