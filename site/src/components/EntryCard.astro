@@ -58,6 +58,7 @@ const searchBlob = [
   <p class="meta">
     <span>📍 {entry.region}</span>
     {entry.founding_year && <span>Est. {entry.founding_year}</span>}
+    {entry.takes_contributors && <span style="color:var(--accent);font-weight:600;">Takes contributors</span>}
     {freshness && <span class={daysAgo !== null && daysAgo > 90 ? "stale" : ""}>🕐 {freshness}</span>}
   </p>
   {

@@ -1,0 +1,175 @@
+---
+import Layout from "../components/Layout.astro";
+import { url } from "../lib/url";
+import { entries, regions, domains, slugify, domainLabel } from "../lib/data";
+import { REGION_COORDS } from "../lib/regions";
+
+// Group entries by region with counts
+const regionEntries = new Map<string, typeof entries>();
+for (const e of entries) {
+  if (!regionEntries.has(e.region)) regionEntries.set(e.region, []);
+  regionEntries.get(e.region)!.push(e);
+}
+
+// Region markers with lat/lng and count
+const markers = regions
+  .filter((r) => REGION_COORDS[r.name])
+  .map((r) => ({
+    name: r.name,
+    slug: r.slug,
+    count: r.count,
+    latlng: REGION_COORDS[r.name],
+    entries: regionEntries.get(r.name) || [],
+  }));
+
+// Domain color palette
+const PALETTE = ["#2563eb","#dc2626","#16a34a","#ca8a04","#9333ea","#0891b2","#e11d48","#65a30d","#d97706","#4f46e5","#0d9488","#b91c1c","#7c3aed","#0284c7","#c026d3","#ea580c","#059669","#db2777","#6366f1","#14b8a6","#be123c","#854d0e","#4338ca","#0e7490","#9d174d","#a16207","#1d4ed8"];
+const domainColor = new Map(domains.map((d, i) => [d.key, PALETTE[i % PALETTE.length]]));
+---
+
+<Layout
+  title="Map"
+  active="map"
+  description={`Interactive map showing ${entries.length} organisations across ${regions.length} NZ regions.`}
+>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <div id="map-container" style="display:flex;gap:0;flex-wrap:wrap;">
+    <div id="map" style="flex:1;min-width:280px;height:70vh;min-height:400px;border-radius:var(--radius);overflow:hidden;"></div>
+    <div id="map-panel" style="width:320px;padding:0 0 0 1rem;overflow-y:auto;max-height:70vh;">
+      <h2 style="margin-top:0;">Regions</h2>
+      <div class="field" style="margin-bottom:0.5rem;">
+        <input type="search" id="map-search" placeholder="Search entries…" style="width:100%;font:inherit;padding:0.4rem 0.6rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg);color:var(--text);" />
+      </div>
+      <div class="field" style="margin-bottom:1rem;">
+        <select id="map-domain" style="width:100%;font:inherit;padding:0.4rem 0.6rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg);color:var(--text);">
+          <option value="">All domains</option>
+          {domains.map((d) => <option value={d.key}>{d.label} ({d.count})</option>)}
+        </select>
+      </div>
+      <ul id="map-region-list" style="list-style:none;padding:0;margin:0;">
+        {markers.map((m) => (
+          <li style="margin-bottom:0.3rem;">
+            <button type="button" class="region-btn" data-region={m.name}
+              style="font:inherit;border:none;background:none;color:var(--text);cursor:pointer;text-align:left;width:100%;padding:0.3rem 0.5rem;border-radius:var(--radius-sm);font-size:0.9rem;">
+              <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--accent);margin-right:0.4rem;"></span>
+              {m.name === "national" ? "National" : m.name}
+              <span style="color:var(--text-muted);margin-left:0.3rem;">({m.count})</span>
+            </button>
+          </li>
+        ))}
+      </ul>
+      <div id="map-entries" style="margin-top:1rem;"></div>
+    </div>
+  </div>
+
+  <style>
+    @media (max-width: 768px) {
+      #map-container { flex-direction: column; }
+      #map-panel { width: 100%; padding: 1rem 0 0 0; max-height: none; }
+      #map { height: 50vh; }
+    }
+    .region-btn:hover { background: var(--surface); }
+    .region-btn.active { background: var(--accent); color: white; }
+    .region-btn.active span { color: white; }
+  </style>
+</Layout>
+
+<script>
+  // Wait for Leaflet to load
+  (function waitForL() {
+    if (typeof L === "undefined") { setTimeout(waitForL, 100); return; }
+    initMap();
+  })();
+
+  function initMap() {
+    var map = L.map("map").setView([-40.9, 174.0], 6);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 18,
+    }).addTo(map);
+
+    var allMarkers = MARKERS.map(function(m) {
+      var color = "#2563eb";
+      var radius = Math.max(8, Math.min(28, m.count * 2));
+      var circle = L.circleMarker(m.latlng, {
+        radius: radius,
+        fillColor: color,
+        color: "#fff",
+        weight: 2,
+        fillOpacity: 0.8,
+      }).addTo(map);
+      circle.bindTooltip(m.name === "national" ? "National" : m.name + " (" + m.count + ")");
+      circle.on("click", function() { showRegion(m.name); });
+      return { circle: circle, name: m.name };
+    });
+
+    function showRegion(regionName) {
+      var btns = document.querySelectorAll(".region-btn");
+      btns.forEach(function(b) {
+        b.classList.toggle("active", b.dataset.region === regionName);
+      });
+      var q = document.getElementById("map-search");
+      q.value = "";
+      var d = document.getElementById("map-domain");
+      d.value = "";
+      renderEntries(regionName, "", "");
+    }
+
+    function renderEntries(region, search, domain) {
+      var container = document.getElementById("map-entries");
+      var regionMarker = MARKERS.find(function(m) { return m.name === region; });
+      if (!regionMarker) { container.innerHTML = "<p>Select a region to see entries.</p>"; return; }
+      var filtered = regionMarker.entries;
+      if (search) {
+        var s = search.toLowerCase();
+        filtered = filtered.filter(function(e) {
+          return (e.name + " " + e.what + " " + e.tags.join(" ")).toLowerCase().indexOf(s) !== -1;
+        });
+      }
+      if (domain) {
+        filtered = filtered.filter(function(e) { return e.domain === domain; });
+      }
+      if (filtered.length === 0) {
+        container.innerHTML = "<p>No entries match.</p>";
+        return;
+      }
+      container.innerHTML = "<h3>" + (region === "national" ? "National" : region) + " (" + filtered.length + ")</h3>" +
+        filtered.map(function(e) {
+          return '<div style="margin-bottom:0.5rem;padding:0.5rem;border:1px solid var(--border);border-radius:var(--radius-sm);"><a href="/nz-tech-for-good/entry/' + e.slug + '/" style="font-weight:600;">' + e.name + '</a><br/><span style="font-size:0.85rem;color:var(--text-muted);">' + e.domainLabel + '</span></div>';
+        }).join("");
+    }
+
+    // Region button clicks
+    document.querySelectorAll(".region-btn").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        showRegion(btn.dataset.region);
+      });
+    });
+
+    // Search
+    document.getElementById("map-search").addEventListener("input", function() {
+      var active = document.querySelector(".region-btn.active");
+      var region = active ? active.dataset.region : "national";
+      var domain = document.getElementById("map-domain").value;
+      renderEntries(region, this.value, domain);
+    });
+
+    // Domain filter
+    document.getElementById("map-domain").addEventListener("change", function() {
+      var active = document.querySelector(".region-btn.active");
+      var region = active ? active.dataset.region : "national";
+      var search = document.getElementById("map-search").value;
+      renderEntries(region, search, this.value);
+    });
+
+    // Show national by default
+    showRegion("national");
+  }
+</script>
+
+<script is:inline define:vars={{ markers }}>
+  var MARKERS = [{markers.map(m => JSON.stringify(m)).join(",")}].map(JSON.parse);
+</script>

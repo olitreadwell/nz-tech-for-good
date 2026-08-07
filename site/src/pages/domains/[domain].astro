@@ -8,6 +8,7 @@ import {
   entriesByDomain,
   internalEdges,
   domainDescription,
+  domainEdges,
   type Domain,
 } from "../../lib/data";
 
@@ -33,6 +34,17 @@ const graphNodes = iedges.length
 const graphEdges = iedges.map(([a, b]) => ({ a, b }));
 
 const noun = items.length === 1 ? "organisation" : "organisations";
+
+// Connected domains from cross-domain edges
+const connectedDomains = domainEdges
+  .filter((e) => e.a === domain.key || e.b === domain.key)
+  .map((e) => {
+    const other = e.a === domain.key ? e.b : e.a;
+    const d = domains.find((x) => x.key === other);
+    return d ? { label: d.label, slug: d.slug, count: e.count } : null;
+  })
+  .filter(Boolean)
+  .sort((a, b) => (b?.count ?? 0) - (a?.count ?? 0));
 ---
 
 <Layout
@@ -83,6 +95,24 @@ const noun = items.length === 1 ? "organisation" : "organisations";
           {graphEdges.map((e) => (
             <li>
               <strong>{e.a}</strong> ↔ <strong>{e.b}</strong>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    connectedDomains.length > 0 && (
+      <section aria-labelledby="connected-heading">
+        <h2 id="connected-heading">Connected domains</h2>
+        <p>Other domains with recorded relationships to {domain.label} organisations.</p>
+        <ul class="tag-row">
+          {connectedDomains.map((d) => d && (
+            <li>
+              <a class="pill" href={url(`/domains/${d.slug}/`)}>
+                {d.label} ({d.count})
+              </a>
             </li>
           ))}
         </ul>

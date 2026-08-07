@@ -83,10 +83,10 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     </div>
     <div class="js-only" style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
       <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
-        <input type="checkbox" id="f-contributors" /> Takes contributors/volunteers
+        <input type="checkbox" id="f-contributors" /> Takes contributors/volunteers <span id="count-contributors" style="color:var(--text-muted);"></span>
       </label>
       <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
-        <input type="checkbox" id="f-careers" /> Has careers/volunteering page
+        <input type="checkbox" id="f-careers" /> Has careers/volunteering page <span id="count-careers" style="color:var(--text-muted);"></span>
       </label>
     </div>
     <div class="js-only" style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;">
@@ -227,6 +227,18 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
           "Showing " + shown + " of " + total + " organisations.";
       }
       noResults.hidden = shown !== 0;
+
+      // Update filter counts
+      var countContributors = document.getElementById("count-contributors");
+      var countCareers = document.getElementById("count-careers");
+      if (countContributors) {
+        var c = cards.filter(function(c) { return c.getAttribute("data-contributors") === "true"; }).length;
+        countContributors.textContent = "(" + c + ")";
+      }
+      if (countCareers) {
+        var c2 = cards.filter(function(c) { return c.getAttribute("data-careers") === "true"; }).length;
+        countCareers.textContent = "(" + c2 + ")";
+      }
       if (shown === 0) {
         noResults.innerHTML = 'No organisations match those filters. Try <a href="javascript:void(0)" id="clear-suggest">clearing all filters</a> or <a href="' + (window.location.origin + '/nz-tech-for-good/domains/') + '">browsing by domain</a>.';
         var clearSuggest = document.getElementById("clear-suggest");
