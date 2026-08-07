@@ -50,6 +50,21 @@ const noun = items.length === 1 ? "organisation" : "organisations";
   </div>
 
   {
+    items.length > 5 && (
+      <details class="toc" style="margin:1rem 0;padding:0.75rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface);">
+        <summary style="cursor:pointer;font-weight:600;">Jump to an organisation ({items.length})</summary>
+        <ul style="columns:2;column-gap:2rem;margin-top:0.5rem;padding-left:1.2rem;">
+          {items.map((entry) => (
+            <li style="break-inside:avoid;">
+              <a href={url(`/entry/${entry.slug}/`)}>{entry.name}</a>
+            </li>
+          ))}
+        </ul>
+      </details>
+    )
+  }
+
+  {
     graphEdges.length > 0 && (
       <section aria-labelledby="connections-heading">
         <h2 id="connections-heading">How these connect</h2>
