@@ -92,18 +92,47 @@ const domainColor = new Map(domains.map((d, i) => [d.key, PALETTE[i % PALETTE.le
     }).addTo(map);
 
     var allMarkers = MARKERS.map(function(m) {
-      var color = "#2563eb";
-      var radius = Math.max(8, Math.min(28, m.count * 2));
+      // Find the most common domain in this region for the color
+      var domainCounts = {};
+      m.entries.forEach(function(e) { domainCounts[e.domain] = (domainCounts[e.domain] || 0) + 1; });
+      var topDomain = Object.keys(domainCounts).sort(function(a,b) { return domainCounts[b] - domainCounts[a]; })[0];
+      var color = DOMAIN_COLORS[topDomain] || "#2563eb";
+      var radius = Math.max(8, Math.min(30, m.count * 2.5));
+      
       var circle = L.circleMarker(m.latlng, {
         radius: radius,
         fillColor: color,
         color: "#fff",
-        weight: 2,
-        fillOpacity: 0.8,
+        weight: 2.5,
+        fillOpacity: 0.85,
       }).addTo(map);
       circle.bindTooltip(m.name === "national" ? "National" : m.name + " (" + m.count + ")");
+
+      // Popup with top entries
+      var topEntries = m.entries.slice(0, 5).map(function(e) {
+        return '<a href="/nz-tech-for-good/entry/' + e.slug + '/">' + e.name + '</a> <span style="color:#888;">(' + e.domainLabel + ')</span>';
+      }).join('<br/>');
+      circle.bindPopup('<strong>' + (m.name === "national" ? "National" : m.name) + ' (' + m.count + ')</strong><br/>' + topEntries + (m.entries.length > 5 ? '<br/><em>+ ' + (m.entries.length - 5) + ' more</em>' : ''));
+
       circle.on("click", function() { showRegion(m.name); });
       return { circle: circle, name: m.name };
+    });
+
+    // Keyboard navigation
+    var regionList = MARKERS.map(function(m) { return m.name; }).filter(function(n) { return n !== "national"; });
+    var currentIdx = -1;
+    document.addEventListener("keydown", function(e) {
+      if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") return;
+      if (e.key === "ArrowDown" || e.key === "ArrowRight") {
+        e.preventDefault();
+        currentIdx = (currentIdx + 1) % regionList.length;
+        showRegion(regionList[currentIdx]);
+      }
+      if (e.key === "ArrowUp" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        currentIdx = currentIdx <= 0 ? regionList.length - 1 : currentIdx - 1;
+        showRegion(regionList[currentIdx]);
+      }
     });
 
     function showRegion(regionName) {
@@ -170,6 +199,7 @@ const domainColor = new Map(domains.map((d, i) => [d.key, PALETTE[i % PALETTE.le
   }
 </script>
 
-<script is:inline define:vars={{ markers }}>
-  var MARKERS = [{markers.map(m => JSON.stringify(m)).join(",")}].map(JSON.parse);
+<script is:inline define:vars={{ markers: markers.map(m => JSON.stringify(m)), domainColors: JSON.stringify(Object.fromEntries(domainColor)) }}>
+  var MARKERS = markers.map(JSON.parse);
+  var DOMAIN_COLORS = JSON.parse(domainColors);
 </script>
