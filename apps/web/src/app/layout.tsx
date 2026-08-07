@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description:
     "A directory of Aotearoa New Zealand organisations using technology for public good.",
   icons: { icon: "/favicon.svg" },
+  alternates: { types: { "application/rss+xml": "/feed.xml" } },
 };
 
 export default function RootLayout({
