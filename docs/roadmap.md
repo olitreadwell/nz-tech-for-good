@@ -116,10 +116,21 @@ account-level settings only the repo owner can change.
   (`.github/CODEOWNERS`, done 2026-08-07)
 - [ ] Add a `.github/FUNDING.yml` if/when there is a funding channel to point
   at (skip until there is a real one, do not invent).
-- [ ] Add an all-contributors setup to credit everyone who adds or verifies
-  entries.
-- [ ] Add a short "good first issue" set (e.g. verify N entries, add one
-  resource) to lower the barrier for new contributors.
+- [x] Add an all-contributors setup to credit everyone who adds or verifies
+  entries. (`.all-contributorsrc` + README section, done 2026-08-07)
+- [x] Add a short "good first issue" set (e.g. verify N entries, add one
+  resource) to lower the barrier for new contributors. (Issues #23, #24,
+  #25 created, done 2026-08-07)
+- [x] Backfill `github` and `linkedin_org` fields where missing but publicly
+  available, one verified source at a time. (9 GitHub orgs backfilled:
+  InternetNZ, Enspiral, ActionStation, GeoNet, GovHackNZ, Figure.NZ,
+  Summer of Tech, Catalyst IT, Tinkd Makerspace, done 2026-08-07)
+- [x] Cross-link entries via `related_to` where real, verifiable connections
+  exist (e.g. same network, data dependency, shared founder). (9 new
+  cross-links added: ActionStation↔Amnesty, Choices NZ↔Workbridge,
+  BenefitMe↔DAC, Headstrong↔SPARX, Figure.NZ↔data.govt.nz,
+  Newsroom↔Spinoff, Public Interest↔Newsroom+Spinoff, Hackland↔Tinkd,
+  NZDEN↔Workbridge, done 2026-08-07)
 
 ## Get involved (research-backed, added 2026-08-06)
 

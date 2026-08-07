@@ -13,6 +13,7 @@ tags:
 - reader-funded
 related_to:
 - NZ On Air — Public Interest Journalism Fund
+- The Spinoff
 source: web search of newsroom.co.nz About page and LinkedIn listing; direct fetch of the site returned
   an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real
   content indexed by search engines

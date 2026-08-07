@@ -79,8 +79,9 @@ flowchart TD
     d26 ---|"3 links"| d4
     d26 ---|"1 link"| d2
     d23 ---|"1 link"| d8
+    d23 ---|"1 link"| d12
     d23 ---|"1 link"| d1
-    d23 ---|"2 links"| d10
+    d23 ---|"3 links"| d10
     d23 ---|"4 links"| d9
     d25 ---|"1 link"| d18
     d25 ---|"1 link"| d20
@@ -264,6 +265,7 @@ flowchart TD
     n_AucklandCouncilOpenData --- n_Koordinates
     n_AucklandCouncilOpenData --- n_datagovtnz
     n_DigitalNZ --- n_datagovtnz
+    n_FigureNZ --- n_datagovtnz
     n_HawkesBayRegionalCouncil --- n_datagovtnz
     n_Koordinates --- n_LINZDataServiceToitTeWhe
     n_Koordinates --- n_ManaakiWhenuaLandcareRes
@@ -346,8 +348,10 @@ flowchart TD
     n_NZDisabilityEmployersNet["NZ Disability Employers' Network"]
     n_OneinSix["One in Six"]
     n_Workbridge["Workbridge"]
+    n_ChoicesNZ --- n_Workbridge
     n_IHCNewZealand --- n_OneinSix
     n_IHCNewZealand --- n_Workbridge
+    n_NZDisabilityEmployersNet --- n_Workbridge
     n_OneinSix --- n_Workbridge
 ```
 
@@ -363,6 +367,7 @@ flowchart TD
     n_ScreenSense["Screen Sense"]
     n_SPARX["SPARX"]
     n_Clearhead --- n_GroovformerlyMentemia
+    n_Headstrong --- n_SPARX
 ```
 
 **Nonprofit & NGO Tech**
@@ -439,7 +444,9 @@ flowchart TD
     n_PublicInterest["Public Interest"]
     n_TheSpinoff["The Spinoff"]
     n_NZOnAirPublicInterestJou --- n_Newsroom
+    n_Newsroom --- n_PublicInterest
     n_Newsroom --- n_TheSpinoff
+    n_PublicInterest --- n_TheSpinoff
 ```
 
 **Crisis & Humanitarian Tech**
@@ -531,8 +538,9 @@ _4 entries in this domain._
 
 - ActionStation is a New Zealand digital campaigning organisation that helps everyday people run online petitions and coordinated campaigns on issues like Te Tiriti o Waitangi (the Treaty of Waitangi), climate justice, and welfare.
 - Region: wellington
-- Links: [Website](https://actionstation.org.nz) · [LinkedIn](https://nz.linkedin.com/company/actionstation)
+- Links: [Website](https://actionstation.org.nz) · [GitHub](https://github.com/actionstation) · [LinkedIn](https://nz.linkedin.com/company/actionstation)
 - Tags: digital campaigning, advocacy, petitions, Te Tiriti
+- Related: Amnesty International Aotearoa New Zealand
 
 **Amnesty International Aotearoa New Zealand**
 
@@ -546,7 +554,7 @@ _4 entries in this domain._
 
 - InternetNZ is a non-profit membership organisation that manages the .nz internet domain name system and advocates for an open, secure internet in New Zealand, including work on digital equity and online harm.
 - Region: wellington
-- Links: [Website](https://internetnz.nz)
+- Links: [Website](https://internetnz.nz) · [GitHub](https://github.com/InternetNZ)
 - Tags: digital rights, internet policy, domain names, non-profit
 
 **Privacy Foundation New Zealand**
@@ -1017,8 +1025,9 @@ _24 entries in this domain._
 
 - Figure.NZ is a charity that publishes free, easy-to-understand data and charts about New Zealand, so anyone can find and reuse the country's numbers without needing to be a data expert.
 - Region: auckland
-- Links: [Website](https://figure.nz) · [LinkedIn](https://nz.linkedin.com/company/figure-nz)
+- Links: [Website](https://figure.nz) · [GitHub](https://github.com/FigureNZ) · [LinkedIn](https://nz.linkedin.com/company/figure-nz)
 - Tags: open data, data visualisation, data literacy, charity
+- Related: data.govt.nz
 
 **Gisborne District Council Geoportal (Tairāwhiti)**
 
@@ -1165,8 +1174,9 @@ _4 entries in this domain._
 
 - Tinkd Makerspace is a not-for-profit community workshop in Tauranga, run by STEM Wana Trust, where people share 3D printers, laser cutters, sewing machines, and electronics gear, and learn making and digital skills from each other at open evening and weekend sessions.
 - Region: bay-of-plenty
-- Links: [Website](https://tinkd.nz)
+- Links: [Website](https://tinkd.nz) · [GitHub](https://github.com/tinkdnz)
 - Tags: makerspace, hackerspace, community tech space, STEM education, charity
+- Related: Hackland
 
 ## Health Tech for Good / Hauora Māori
 
@@ -1222,6 +1232,7 @@ _6 entries in this domain._
 - Region: national
 - Links: [Website](https://benefitme.nz)
 - Tags: benefits, social-support, digital-inclusion, legal-rights
+- Related: Digital Aotearoa Collective
 
 **Community Housing Aotearoa**
 
@@ -1361,7 +1372,7 @@ _4 entries in this domain._
 
 - Enspiral is a Wellington-founded network of people and social enterprises who support each other to do work that helps society, and it is the community that the decision-making tool Loomio originally grew out of.
 - Region: wellington
-- Links: [Website](https://www.enspiral.com) · [LinkedIn](https://nz.linkedin.com/company/enspiral)
+- Links: [Website](https://www.enspiral.com) · [GitHub](https://github.com/enspiral) · [LinkedIn](https://nz.linkedin.com/company/enspiral)
 - Tags: social enterprise network, cooperative, incubator, collective
 - Related: Loomio
 
@@ -1383,7 +1394,7 @@ _6 entries in this domain._
 
 - Catalyst IT is a New Zealand-owned open-source software company, founded in Wellington in 1997, that builds and supports open-source systems for education (such as Moodle) and libraries (such as Koha), and does significant work for the public sector.
 - Region: wellington
-- Links: [Website](https://www.catalyst.net.nz) · [LinkedIn](https://nz.linkedin.com/company/catalyst-it-limited)
+- Links: [Website](https://www.catalyst.net.nz) · [GitHub](https://github.com/catalyst) · [LinkedIn](https://nz.linkedin.com/company/catalyst-it-limited)
 - Tags: open source, education technology, library systems, government contractor
 - Related: Digital.govt.nz
 
@@ -1435,6 +1446,7 @@ _5 entries in this domain._
 - Region: national
 - Links: [Website](https://www.choicesnz.org.nz)
 - Tags: disability-employment, job-support, inclusive-hiring, training
+- Related: Workbridge
 
 **IHC New Zealand**
 
@@ -1450,6 +1462,7 @@ _5 entries in this domain._
 - Region: auckland
 - Links: [Website](https://nzden.org.nz)
 - Tags: disability-employment, workplace-inclusion, accessibility, employer-network, neurodiversity
+- Related: Workbridge
 
 **One in Six**
 
@@ -1495,6 +1508,7 @@ _7 entries in this domain._
 - Region: national
 - Links: [Website](https://www.headstrong.org.nz)
 - Tags: youth-mental-health, chatbot, CBT, Te-Whare-Tapa-Whā, digital-therapeutics
+- Related: SPARX
 
 **ignite**
 
@@ -1564,7 +1578,7 @@ _5 entries in this domain._
 
 - Summer of Tech is a New Zealand charitable programme that connects students and junior tech talent with employers through internships and mentoring, helping people get their first step into a tech career.
 - Region: national
-- Links: [Website](https://www.summeroftech.co.nz)
+- Links: [Website](https://www.summeroftech.co.nz) · [GitHub](https://github.com/summeroftech)
 - Tags: internships, tech careers, talent pipeline, charity
 - Related: Dev Academy Aotearoa
 
@@ -1773,7 +1787,7 @@ _9 entries in this domain._
 
 - GovHack is an annual 46-hour hackathon held across Australia and New Zealand where teams build projects using open government data, run in NZ cities including Auckland, Wellington, Christchurch, and Dunedin.
 - Region: national
-- Links: [Website](https://www.govhack.org) · [LinkedIn](https://nz.linkedin.com/company/govhack)
+- Links: [Website](https://www.govhack.org) · [GitHub](https://github.com/GovHackNZ) · [LinkedIn](https://nz.linkedin.com/company/govhack)
 - Tags: hackathon, open data, civic tech, volunteer-run
 - Related: data.govt.nz, DigitalNZ, LINZ Data Service
 
@@ -1783,6 +1797,7 @@ _9 entries in this domain._
 - Region: auckland
 - Links: [Website](https://hackland.nz) · [GitHub](https://github.com/HakLand)
 - Tags: makerspace, hackerspace, community tech space, volunteer-run
+- Related: Tinkd Makerspace
 
 **Lobby for Good**
 
@@ -1842,7 +1857,7 @@ _5 entries in this domain._
 - Region: auckland
 - Links: [Website](https://newsroom.co.nz) · [LinkedIn](https://nz.linkedin.com/company/newsroom-new-zealand)
 - Tags: independent media, investigative journalism, reader-funded
-- Related: NZ On Air — Public Interest Journalism Fund
+- Related: NZ On Air — Public Interest Journalism Fund, The Spinoff
 
 **NZ On Air — Public Interest Journalism Fund**
 
@@ -1858,6 +1873,7 @@ _5 entries in this domain._
 - Region: national
 - Links: [Website](https://www.publicinterest.nz)
 - Tags: independent-media, politics, analysis, audience-funded, journalism
+- Related: Newsroom, The Spinoff
 
 **The Spinoff**
 
@@ -1877,7 +1893,7 @@ _4 entries in this domain._
 
 - GeoNet is New Zealand's natural hazard monitoring system, run by GNS Science with government partners, using over 1,000 sensors to provide free, real-time open data on earthquakes, volcanoes, tsunamis, and landslides.
 - Region: national
-- Links: [Website](https://www.geonet.org.nz)
+- Links: [Website](https://www.geonet.org.nz) · [GitHub](https://github.com/GeoNet)
 - Tags: disaster monitoring, open data, earthquakes, science agency
 - Related: data.govt.nz
 

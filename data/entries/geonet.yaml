@@ -5,7 +5,7 @@ what: GeoNet is New Zealand's natural hazard monitoring system, run by GNS Scien
   landslides.
 region: national
 website: https://www.geonet.org.nz
-github: ''
+github: https://github.com/GeoNet
 linkedin_org: ''
 linkedin_people: []
 tags:
