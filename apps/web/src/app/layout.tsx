@@ -1,6 +1,8 @@
 import "../../../../packages/ui/src/styles/globals.css";
 import type { Metadata } from "next";
 
+import { Header } from "@/components/Header";
+
 export const metadata: Metadata = {
   title: {
     template: "%s · NZ Tech-for-Good",
@@ -18,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-NZ">
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
