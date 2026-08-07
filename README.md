@@ -4,7 +4,7 @@ A directory of Aotearoa New Zealand organisations, projects, networks, and
 people who use technology for public good.
 
 [![CI](https://github.com/olitreadwell/nz-tech-for-good/actions/workflows/ci.yml/badge.svg)](https://github.com/olitreadwell/nz-tech-for-good/actions/workflows/ci.yml)
-[![Entries](https://img.shields.io/badge/entries-117-brightgreen)](GUIDE.md)
+[![Entries](https://img.shields.io/badge/entries-170-brightgreen)](GUIDE.md)
 [![License: MIT (code) / CC-BY-SA-4.0 (data)](https://img.shields.io/badge/license-MIT%20%2F%20CC--BY--SA--4.0-blue)](#use-the-data)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)](#add-an-organisation--contribute)
 
@@ -45,37 +45,37 @@ showing how entries connect to each other.
 
 ### Domains at a glance
 
-117 entries across 27 domains:
+170 entries across 27 domains:
 
 | Domain | Entries |
 | --- | --- |
 | Open Data | 24 |
 | Green & Climate Tech | 11 |
+| Digital Inclusion | 9 |
+| Iwi & Māori Tech Initiatives | 8 |
 | Legal Aid & Justice Tech | 7 |
+| Mental Health Tech | 7 |
+| Māori Data Sovereignty | 7 |
+| Civic Tech | 6 |
+| Food Rescue & Food Security Tech | 6 |
+| Housing & Homelessness Tech | 6 |
 | Refugee & Migrant Support Tech | 6 |
 | Research & Education Tech | 6 |
 | Disability & Accessibility Tech | 5 |
-| Civic Tech | 5 |
-| Māori Data Sovereignty | 5 |
-| Human Rights Tech | 4 |
-| GovTech | 4 |
-| Worker & Platform Co-ops | 4 |
-| Nonprofit & NGO Tech | 4 |
-| Iwi & Māori Tech Initiatives | 4 |
+| Disability Employment Tech | 5 |
+| Education Equity Tech | 5 |
+| Financial Inclusion & Fintech for Good | 5 |
+| Health Tech for Good / Hauora Māori | 5 |
+| Journalism & Media Tech | 5 |
+| Nonprofit & NGO Tech | 5 |
 | Crisis & Humanitarian Tech | 4 |
-| Environmental Citizen Science | 3 |
-| Food Rescue & Food Security Tech | 3 |
-| Journalism & Media Tech | 3 |
-| Makerspaces & Hackerspaces | 2 |
-| Mental Health Tech | 2 |
-| Financial Inclusion & Fintech for Good | 2 |
-| Disability Employment Tech | 2 |
-| Education Equity Tech | 2 |
-| Tech Ethics & Responsible AI | 1 |
-| Housing & Homelessness Tech | 1 |
-| Volunteering & Giving Platforms | 1 |
-| Health Tech for Good / Hauora Māori | 1 |
-| Digital Inclusion | 1 |
+| Environmental Citizen Science | 4 |
+| GovTech | 4 |
+| Human Rights Tech | 4 |
+| Makerspaces & Hackerspaces | 4 |
+| Tech Ethics & Responsible AI | 4 |
+| Volunteering & Giving Platforms | 4 |
+| Worker & Platform Co-ops | 4 |
 
 See the full breakdown, with entries listed under each domain, in
 [GUIDE.md](GUIDE.md).

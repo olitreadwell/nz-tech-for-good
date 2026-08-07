@@ -1,5 +1,18 @@
 # Known gaps
 
+## Recently filled (2026-08-07)
+
+20 entries added across 6 under-covered domains:
+- Financial Inclusion & Fintech: +3 (Ngā Tāngata Microfinance, Community Finance, Money Sweetspot)
+- Disability Employment Tech: +3 (NZ Disability Employers' Network, Choices NZ, One in Six)
+- Housing & Homelessness Tech: +4 (Housing First Auckland, The People's Project, BenefitMe, Home Steps)
+- Health Tech / Hauora Māori: +3 (Awa Digital, Health Navigator Charitable Trust, Whānau Tahi)
+- Mental Health Tech: +4 (Headstrong, ignite, Le Va, Screen Sense)
+- Journalism & Media Tech: +2 (Public Interest, elocal)
+- Iwi & Māori Tech Initiatives: +1 (IndigiShare)
+
+Total entries: 117 → 170 across 27 domains.
+
 ## People / LinkedIn enrichment
 
 No entry currently has `linkedin_people` filled in, even though the schema

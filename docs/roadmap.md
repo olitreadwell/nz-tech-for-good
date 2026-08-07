@@ -151,3 +151,7 @@ these in a loop iteration, bring to Oli first):**
 - Dependabot config + `requirements.txt` (CI now installs from it).
 - README "Related directories & further reading" section (8 verified links).
 - Repo topics set for discoverability.
+- 20 new entries across 6 domains: financial inclusion (+3), disability
+  employment (+3), housing (+4), health tech (+3), mental health (+4),
+  journalism (+2), plus IndigiShare in iwi/Māori tech (+1). Total: 117→170
+  entries, 27 domains. (2026-08-07)
