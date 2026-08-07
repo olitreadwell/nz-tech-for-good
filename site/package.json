@@ -20,7 +20,7 @@
   "dependencies": {
     "@astrojs/react": "^6.0.2",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^5.13.0",
+    "astro": "^7.1.6",
     "js-yaml": "^4.1.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
