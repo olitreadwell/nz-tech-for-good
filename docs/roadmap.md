@@ -185,6 +185,11 @@ these in a loop iteration, bring to Oli first):**
 - Dependabot config + `requirements.txt` (CI now installs from it).
 - README "Related directories & further reading" section (8 verified links).
 - Repo topics set for discoverability.
+- Sitemap, RSS feed, tags page, robots.txt, print styles, freshness
+  indicators, copy-link button, OpenSearch, keyboard shortcuts, breadcrumb
+  nav, mobile hamburger menu, Schema.org structured data, no-results
+  suggestions, OG/Twitter Card meta tags, recently-added section, stats
+  page, URL-based filter sync, JSON API endpoint. (2026-08-07)
 - 20 new entries across 6 domains: financial inclusion (+3), disability
   employment (+3), housing (+4), health tech (+3), mental health (+4),
   journalism (+2), plus IndigiShare in iwi/Māori tech (+1). Total: 117→170
