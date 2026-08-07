@@ -21,12 +21,8 @@ const {
 } = Astro.props;
 
 const nav = [
-  { key: "directory", label: "Directory", href: url("/directory/") },
+  { key: "directory", label: "Browse", href: url("/directory/") },
   { key: "map", label: "Map", href: url("/map/") },
-  { key: "domains", label: "Domains", href: url("/domains/") },
-  { key: "regions", label: "Regions", href: url("/regions/") },
-  { key: "tags", label: "Tags", href: url("/tags/") },
-  { key: "ecosystem", label: "Ecosystem", href: url("/ecosystem/") },
   { key: "stats", label: "Stats", href: url("/stats/") },
   { key: "get-involved", label: "Get Involved", href: url("/get-involved/") },
   { key: "saved", label: "Saved", href: url("/saved/") },
@@ -44,6 +40,7 @@ const fullTitle =
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href={url("/favicon.svg")} />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
     <link rel="alternate" type="application/rss+xml" title="NZ Tech-for-Good" href={url("/feed.xml")} />
     <link rel="search" type="application/opensearchdescription+xml" title="NZ Tech-for-Good" href={url("/opensearch.xml")} />

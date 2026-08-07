@@ -63,6 +63,10 @@ const searchBlob = [
     <span>📍 {entry.region}</span>
     {entry.founding_year && <span>Est. {entry.founding_year}</span>}
     {entry.takes_contributors && <span style="color:var(--accent);font-weight:600;">Takes contributors</span>}
+    {entry.github && <span title="Has GitHub">🐙</span>}
+    {entry.linkedin_org && <span title="Has LinkedIn">💼</span>}
+    {entry.community_url && <span title="Has community">💬</span>}
+    {entry.events_url && <span title="Has events">📅</span>}
     {freshness && <span class={daysAgo !== null && daysAgo > 90 ? "stale" : ""}>🕐 {freshness}</span>}
   </p>
   {
