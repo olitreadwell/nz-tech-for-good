@@ -263,12 +263,17 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       var cb = document.createElement("input");
       cb.type = "checkbox";
       cb.className = "compare-cb";
-      cb.title = "Select " + name + " for comparison";
+      cb.id = "cmp-" + slug;
       cb.style.cssText = "margin-right:0.4rem;cursor:pointer;";
       cb.dataset.slug = slug;
       cb.dataset.name = name;
       cb.addEventListener("change", updateCompare);
+      var label = document.createElement("label");
+      label.htmlFor = "cmp-" + slug;
+      label.className = "visually-hidden";
+      label.textContent = "Select " + name + " for comparison";
       link.parentNode.insertBefore(cb, link);
+      link.parentNode.insertBefore(label, link);
     });
 
     function updateCompare() {
