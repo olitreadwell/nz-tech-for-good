@@ -18,7 +18,7 @@ related_to:
 source: web search of privacyfoundation.nz About Us and working-groups pages; direct fetch of the site
   returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning
   real content indexed by search engines
-founding_year: null
+founding_year: 1990
 takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

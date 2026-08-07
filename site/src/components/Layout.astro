@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/print.css";
 import { url } from "../lib/url";
 import BackToTop from "./BackToTop.astro";
 
@@ -20,6 +21,7 @@ const nav = [
   { key: "directory", label: "Directory", href: url("/directory/") },
   { key: "domains", label: "Domains", href: url("/domains/") },
   { key: "regions", label: "Regions", href: url("/regions/") },
+  { key: "tags", label: "Tags", href: url("/tags/") },
   { key: "ecosystem", label: "Ecosystem", href: url("/ecosystem/") },
   { key: "stats", label: "Stats", href: url("/stats/") },
   { key: "get-involved", label: "Get Involved", href: url("/get-involved/") },
@@ -38,6 +40,7 @@ const fullTitle =
     <meta name="description" content={description} />
     <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="alternate" type="application/rss+xml" title="NZ Tech-for-Good" href={url("/feed.xml")} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
