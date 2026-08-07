@@ -8,9 +8,9 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 const links = [
   { href: "/directory", label: "Browse" },
   { href: "/map", label: "Map" },
+  { href: "/ecosystem", label: "Ecosystem" },
   { href: "/stats", label: "Stats" },
   { href: "/get-involved", label: "Get Involved" },
-  { href: "/saved", label: "Saved" },
 ];
 
 export function Header() {

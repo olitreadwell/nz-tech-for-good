@@ -50,6 +50,21 @@ export function Footer() {
                   Stats
                 </Link>
               </li>
+              <li>
+                <Link href="/regions" className="text-text-muted hover:text-text">
+                  Regions
+                </Link>
+              </li>
+              <li>
+                <Link href="/tags" className="text-text-muted hover:text-text">
+                  Tags
+                </Link>
+              </li>
+              <li>
+                <Link href="/saved" className="text-text-muted hover:text-text">
+                  Saved
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
