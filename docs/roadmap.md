@@ -154,24 +154,25 @@ and why these items exist.
 **Needs a design/product decision before building (do not silently build
 these in a loop iteration, bring to Oli first):**
 
-- [ ] A "Get involved" page on the site with a small number of clear, low-
+- [x] A "Get involved" page on the site with a small number of clear, low-
   commitment next actions (join a community, find an event, add an entry,
   read the guide for a domain), modeled on Civic Tech Field Guide's four-
-  entry-point homepage pattern, not a wall of links.
-- [ ] Short "what is this and why does it matter" explainer text for each
+  entry-point homepage pattern, not a wall of links. (`site/src/pages/
+  get-involved.astro`, done 2026-08-07)
+- [x] Short "what is this and why does it matter" explainer text for each
   domain (e.g. what "food-rescue / food-security tech" covers and why it's
-  its own category), shown on each domain page. Needs someone to write
-  27 short, accurate explainers, not just generate them.
-- [ ] Consider new optional schema fields for a `community_url` (Slack/
+  its own category), shown on each domain page. (
+  `data/domain-descriptions.yaml` — all 27 domains have descriptions,
+  done 2026-08-07)
+- [x] Consider new optional schema fields for a `community_url` (Slack/
   Discord invite) and `events_url` (meetup/events page), separate from
-  `website`, so community-type entries (and orgs that run their own
-  communities) can surface these distinctly. This is a schema change:
-  needs `schema/entry.schema.json`, `data/entry.template.yaml`,
-  `scripts/validate.py`, and every affected script/page updated together,
-  not added piecemeal.
-- [ ] A prominent "Add an entry" call to action on the directory/homepage
+  `website`. (Already added to `schema/entry.schema.json`,
+  `data/entry.template.yaml`, and all scripts/pages — fields exist and
+  are rendered on entry detail pages, done 2026-08-07)
+- [x] A prominent "Add an entry" call to action on the directory/homepage
   (not just a CONTRIBUTING.md link), pointing at the existing
-  add-entry issue form.
+  add-entry issue form. (Present on index.astro, directory.astro, and
+  get-involved.astro, done 2026-08-07)
 - [ ] Consider whether this project should have its own social presence
   (a place to follow for new entries). **(needs Oli)** this means
   creating and owning an account, not something to invent.

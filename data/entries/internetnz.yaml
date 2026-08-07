@@ -18,6 +18,6 @@ source: web search of internetnz.nz official pages; direct fetch of the site ret
   the site's own bot-protection, but the domain is confirmed live and returning real content indexed by
   search engines
 founding_year: 1995
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'
