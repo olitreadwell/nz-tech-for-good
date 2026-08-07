@@ -88,6 +88,16 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
         <input type="checkbox" id="f-careers" /> Has careers/volunteering page
       </label>
+    </div>
+    <div class="js-only" style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;">
+      <label for="f-decade" style="font-size:0.85rem;">Founded:</label>
+      <select id="f-decade" style="font:inherit;border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.25rem 0.5rem;background:var(--surface);color:var(--text);">
+        <option value="">Any</option>
+        <option value="pre-2000">Before 2000</option>
+        <option value="2000s">2000–2009</option>
+        <option value="2010s">2010–2019</option>
+        <option value="2020s">2020+</option>
+      </select>
       <button
         type="button"
         id="clear-filters"
@@ -149,6 +159,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     var tagSel = document.getElementById("f-tag");
     var contributorsCb = document.getElementById("f-contributors");
     var careersCb = document.getElementById("f-careers");
+    var decadeSel = document.getElementById("f-decade");
     var status = document.getElementById("result-count");
     var noResults = document.getElementById("no-results");
     var clearBtn = document.getElementById("clear-filters");
@@ -192,6 +203,14 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         }
         if (contributorsCb.checked && card.getAttribute("data-contributors") !== "true") ok = false;
         if (careersCb.checked && card.getAttribute("data-careers") !== "true") ok = false;
+        var decade = decadeSel.value;
+        if (decade) {
+          var fy = parseInt(card.getAttribute("data-founded")) || 0;
+          if (decade === "pre-2000" && (fy >= 2000 || fy === 0)) ok = false;
+          if (decade === "2000s" && (fy < 2000 || fy >= 2010)) ok = false;
+          if (decade === "2010s" && (fy < 2010 || fy >= 2020)) ok = false;
+          if (decade === "2020s" && fy < 2020) ok = false;
+        }
         card.hidden = !ok;
         if (ok) shown++;
       });
@@ -234,7 +253,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       el.addEventListener("input", apply);
       el.addEventListener("change", apply);
     });
-    [contributorsCb, careersCb].forEach(function(cb) {
+    [contributorsCb, careersCb, decadeSel].forEach(function(cb) {
       cb.addEventListener("change", apply);
     });
     if (clearBtn) {
@@ -245,6 +264,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         tagSel.value = "";
         contributorsCb.checked = false;
         careersCb.checked = false;
+        decadeSel.value = "";
         apply();
         q.focus();
       });

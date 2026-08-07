@@ -6,5 +6,11 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
-  "icons": []
+  "icons": [
+    {
+      "src": "/nz-tech-for-good/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
 }
