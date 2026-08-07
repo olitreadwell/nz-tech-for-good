@@ -16,31 +16,31 @@ Entries are grouped by **domain**: the area of public good the organisation work
 - **Human Rights Tech** (human-rights tech): 4 entries
 - **Tech Ethics & Responsible AI** (tech-ethics / responsible-AI): 4 entries
 - **Legal Aid & Justice Tech** (legal-aid / justice tech): 7 entries
-- **Iwi & Māori Tech Initiatives** (iwi / Māori tech initiatives): 7 entries
+- **Iwi & Māori Tech Initiatives** (iwi / Māori tech initiatives): 8 entries
 - **Food Rescue & Food Security Tech** (food-rescue / food-security tech): 6 entries
 - **Refugee & Migrant Support Tech** (refugee / migrant support tech): 6 entries
 - **Green & Climate Tech** (green / climate-tech): 11 entries
 - **GovTech** (govtech): 4 entries
 - **Open Data** (open-data): 24 entries
 - **Makerspaces & Hackerspaces** (makerspaces / hackerspaces): 4 entries
+- **Health Tech for Good / Hauora Māori** (health tech for good / hauora Māori): 5 entries
+- **Housing & Homelessness Tech** (housing / homelessness tech): 6 entries
 - **Environmental Citizen Science** (environmental citizen-science): 4 entries
 - **Volunteering & Giving Platforms** (volunteering / giving platforms): 4 entries
 - **Worker & Platform Co-ops** (worker-coop / platform-coop tech): 4 entries
 - **Research & Education Tech** (research / education tech): 6 entries
-- **Mental Health Tech** (mental-health tech): 3 entries
+- **Disability Employment Tech** (disability employment tech): 5 entries
+- **Mental Health Tech** (mental-health tech): 7 entries
 - **Education Equity Tech** (education equity tech): 5 entries
 - **Nonprofit & NGO Tech** (nonprofit / NGO tech): 5 entries
 - **Digital Inclusion** (digital-inclusion): 9 entries
-- **Housing & Homelessness Tech** (housing / homelessness tech): 3 entries
+- **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good): 5 entries
 - **Civic Tech** (civic-tech): 6 entries
+- **Journalism & Media Tech** (journalism / media-tech): 5 entries
 - **Crisis & Humanitarian Tech** (crisis / humanitarian-tech): 4 entries
-- **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good): 3 entries
-- **Health Tech for Good / Hauora Māori** (health tech for good / hauora Māori): 3 entries
-- **Disability Employment Tech** (disability employment tech): 3 entries
-- **Journalism & Media Tech** (journalism / media-tech): 3 entries
 - **Māori Data Sovereignty** (Māori data sovereignty / indigenous data): 7 entries
 
-**Total entries: 154, across 27 domains.**
+**Total entries: 170, across 27 domains.**
 
 ## Ecosystem overview
 
@@ -52,46 +52,46 @@ flowchart TD
     d1["Human Rights Tech<br/>(4 entries)"]
     d2["Tech Ethics & Responsible AI<br/>(4 entries)"]
     d3["Legal Aid & Justice Tech<br/>(7 entries)"]
-    d4["Iwi & Māori Tech Initiatives<br/>(7 entries)"]
+    d4["Iwi & Māori Tech Initiatives<br/>(8 entries)"]
     d5["Food Rescue & Food Security Tech<br/>(6 entries)"]
     d6["Refugee & Migrant Support Tech<br/>(6 entries)"]
     d7["Green & Climate Tech<br/>(11 entries)"]
     d8["GovTech<br/>(4 entries)"]
     d9["Open Data<br/>(24 entries)"]
     d10["Makerspaces & Hackerspaces<br/>(4 entries)"]
-    d11["Environmental Citizen Science<br/>(4 entries)"]
-    d12["Volunteering & Giving Platforms<br/>(4 entries)"]
-    d13["Worker & Platform Co-ops<br/>(4 entries)"]
-    d14["Research & Education Tech<br/>(6 entries)"]
-    d15["Mental Health Tech<br/>(3 entries)"]
-    d16["Education Equity Tech<br/>(5 entries)"]
-    d17["Nonprofit & NGO Tech<br/>(5 entries)"]
-    d18["Digital Inclusion<br/>(9 entries)"]
-    d19["Housing & Homelessness Tech<br/>(3 entries)"]
-    d20["Civic Tech<br/>(6 entries)"]
-    d21["Crisis & Humanitarian Tech<br/>(4 entries)"]
-    d22["Financial Inclusion & Fintech for Good<br/>(3 entries)"]
-    d23["Health Tech for Good / Hauora Māori<br/>(3 entries)"]
-    d24["Disability Employment Tech<br/>(3 entries)"]
-    d25["Journalism & Media Tech<br/>(3 entries)"]
+    d11["Health Tech for Good / Hauora Māori<br/>(5 entries)"]
+    d12["Housing & Homelessness Tech<br/>(6 entries)"]
+    d13["Environmental Citizen Science<br/>(4 entries)"]
+    d14["Volunteering & Giving Platforms<br/>(4 entries)"]
+    d15["Worker & Platform Co-ops<br/>(4 entries)"]
+    d16["Research & Education Tech<br/>(6 entries)"]
+    d17["Disability Employment Tech<br/>(5 entries)"]
+    d18["Mental Health Tech<br/>(7 entries)"]
+    d19["Education Equity Tech<br/>(5 entries)"]
+    d20["Nonprofit & NGO Tech<br/>(5 entries)"]
+    d21["Digital Inclusion<br/>(9 entries)"]
+    d22["Financial Inclusion & Fintech for Good<br/>(5 entries)"]
+    d23["Civic Tech<br/>(6 entries)"]
+    d24["Journalism & Media Tech<br/>(5 entries)"]
+    d25["Crisis & Humanitarian Tech<br/>(4 entries)"]
     d26["Māori Data Sovereignty<br/>(7 entries)"]
-    d26 ---|"1 link"| d23
+    d26 ---|"1 link"| d11
     d26 ---|"3 links"| d4
     d26 ---|"1 link"| d2
-    d20 ---|"1 link"| d8
-    d20 ---|"1 link"| d1
-    d20 ---|"2 links"| d10
-    d20 ---|"3 links"| d9
-    d21 ---|"1 link"| d15
-    d21 ---|"1 link"| d17
-    d21 ---|"2 links"| d9
-    d0 ---|"2 links"| d24
-    d16 ---|"4 links"| d4
-    d11 ---|"5 links"| d7
+    d23 ---|"1 link"| d8
+    d23 ---|"1 link"| d1
+    d23 ---|"2 links"| d10
+    d23 ---|"3 links"| d9
+    d25 ---|"1 link"| d18
+    d25 ---|"1 link"| d20
+    d25 ---|"2 links"| d9
+    d0 ---|"2 links"| d17
+    d19 ---|"4 links"| d4
+    d13 ---|"5 links"| d7
     d8 ---|"1 link"| d9
-    d8 ---|"1 link"| d14
-    d7 ---|"1 link"| d14
-    d17 ---|"2 links"| d12
+    d8 ---|"1 link"| d16
+    d7 ---|"1 link"| d16
+    d20 ---|"2 links"| d14
 ```
 
 ### Domain close-ups
@@ -155,6 +155,7 @@ flowchart TD
     n_Amotai["Amotai"]
     n_DevAcademyAotearoaMorian["Dev Academy Aotearoa (Māori and Pasifika cohorts)"]
     n_DigitalNativesAcademy["Digital Natives Academy"]
+    n_IndigiShare["IndigiShare"]
     n_KiwaDigital["Kiwa Digital"]
     n_MaraeDigitalConnectivity["Marae Digital Connectivity Programme"]
     n_Takiw["Takiwā"]
@@ -284,6 +285,19 @@ flowchart TD
     n_AucklandLibraryofTools --- n_KuraMatahunaUnleashSpace
 ```
 
+**Housing & Homelessness Tech**
+
+```mermaid
+flowchart TD
+    n_BenefitMe["BenefitMe"]
+    n_CommunityHousingAotearoa["Community Housing Aotearoa"]
+    n_HomeSteps["Home Steps"]
+    n_HousingFirstAuckland["Housing First Auckland"]
+    n_RentersUnited["Renters United"]
+    n_ThePeoplesProject["The People's Project"]
+    n_CommunityHousingAotearoa --- n_HousingFirstAuckland
+```
+
 **Environmental Citizen Science**
 
 ```mermaid
@@ -323,12 +337,30 @@ flowchart TD
     n_Enspiral --- n_Loomio
 ```
 
+**Disability Employment Tech**
+
+```mermaid
+flowchart TD
+    n_ChoicesNZ["Choices NZ"]
+    n_IHCNewZealand["IHC New Zealand"]
+    n_NZDisabilityEmployersNet["NZ Disability Employers' Network"]
+    n_OneinSix["One in Six"]
+    n_Workbridge["Workbridge"]
+    n_IHCNewZealand --- n_OneinSix
+    n_IHCNewZealand --- n_Workbridge
+    n_OneinSix --- n_Workbridge
+```
+
 **Mental Health Tech**
 
 ```mermaid
 flowchart TD
     n_Clearhead["Clearhead"]
     n_GroovformerlyMentemia["Groov (formerly Mentemia)"]
+    n_Headstrong["Headstrong"]
+    n_ignite["ignite"]
+    n_LeVa["Le Va"]
+    n_ScreenSense["Screen Sense"]
     n_SPARX["SPARX"]
     n_Clearhead --- n_GroovformerlyMentemia
 ```
@@ -362,14 +394,16 @@ flowchart TD
     n_DigitalInclusionAlliance --- n_KatoaConnectformerly2020
 ```
 
-**Housing & Homelessness Tech**
+**Financial Inclusion & Fintech for Good**
 
 ```mermaid
 flowchart TD
-    n_CommunityHousingAotearoa["Community Housing Aotearoa"]
-    n_HousingFirstAuckland["Housing First Auckland"]
-    n_RentersUnited["Renters United"]
-    n_CommunityHousingAotearoa --- n_HousingFirstAuckland
+    n_CommunityFinance["Community Finance"]
+    n_GoodShepherdNewZealand["Good Shepherd New Zealand"]
+    n_MoneySweetspot["Money Sweetspot"]
+    n_NgTngataMicrofinance["Ngā Tāngata Microfinance"]
+    n_Sorted["Sorted"]
+    n_GoodShepherdNewZealand --- n_NgTngataMicrofinance
 ```
 
 **Civic Tech**
@@ -386,6 +420,19 @@ flowchart TD
     n_Hackland --- n_WellingtonHackspaceWHACK
 ```
 
+**Journalism & Media Tech**
+
+```mermaid
+flowchart TD
+    n_elocal["elocal"]
+    n_Newsroom["Newsroom"]
+    n_NZOnAirPublicInterestJou["NZ On Air — Public Interest Journalism Fund"]
+    n_PublicInterest["Public Interest"]
+    n_TheSpinoff["The Spinoff"]
+    n_NZOnAirPublicInterestJou --- n_Newsroom
+    n_Newsroom --- n_TheSpinoff
+```
+
 **Crisis & Humanitarian Tech**
 
 ```mermaid
@@ -397,39 +444,6 @@ flowchart TD
     n_GeoNet --- n_GetReadyNationalEmergenc
     n_GetReadyNationalEmergenc --- n_NewZealandRedCross
     n_NewZealandRedCross --- n_WhakarongorauAotearoa
-```
-
-**Financial Inclusion & Fintech for Good**
-
-```mermaid
-flowchart TD
-    n_GoodShepherdNewZealand["Good Shepherd New Zealand"]
-    n_NgTngataMicrofinance["Ngā Tāngata Microfinance"]
-    n_Sorted["Sorted"]
-    n_GoodShepherdNewZealand --- n_NgTngataMicrofinance
-```
-
-**Disability Employment Tech**
-
-```mermaid
-flowchart TD
-    n_IHCNewZealand["IHC New Zealand"]
-    n_OneinSix["One in Six"]
-    n_Workbridge["Workbridge"]
-    n_IHCNewZealand --- n_OneinSix
-    n_IHCNewZealand --- n_Workbridge
-    n_OneinSix --- n_Workbridge
-```
-
-**Journalism & Media Tech**
-
-```mermaid
-flowchart TD
-    n_Newsroom["Newsroom"]
-    n_NZOnAirPublicInterestJou["NZ On Air — Public Interest Journalism Fund"]
-    n_TheSpinoff["The Spinoff"]
-    n_NZOnAirPublicInterestJou --- n_Newsroom
-    n_Newsroom --- n_TheSpinoff
 ```
 
 **Māori Data Sovereignty**
@@ -634,7 +648,7 @@ _7 entries in this domain._
 
 Technology initiatives run by or for iwi and Māori communities: digital infrastructure, connectivity, and community-led tech projects.
 
-_7 entries in this domain._
+_8 entries in this domain._
 
 **Amotai**
 
@@ -658,6 +672,13 @@ _7 entries in this domain._
 - Links: [Website](https://digitalnatives.academy/)
 - Tags: Māori tech, youth technology education, digital skills, charity
 - Related: Dev Academy Aotearoa
+
+**IndigiShare**
+
+- IndigiShare is a kaupapa Māori fintech startup building economic resilience for indigenous communities through zero-interest peer-to-peer lending, a business development programme (Te Aka Matua), and culturally-grounded financial products powered by koha.
+- Region: Bay of Plenty
+- Links: [Website](https://indigishare.co.nz)
+- Tags: kaupapa Māori, fintech, peer-to-peer lending, indigenous-economy, financial-inclusion
 
 **Kiwa Digital**
 
@@ -1138,6 +1159,97 @@ _4 entries in this domain._
 - Links: [Website](https://tinkd.nz)
 - Tags: makerspace, hackerspace, community tech space, STEM education, charity
 
+## Health Tech for Good / Hauora Māori
+
+Digital health tools built for public benefit, including Māori-led and Māori-owned tech supporting hauora (holistic wellbeing).
+
+_5 entries in this domain._
+
+**Awa Digital**
+
+- Awa Digital is a Māori-owned health technology company building AI-powered clinical documentation infrastructure (Tuhi) deployed within the Health NZ ecosystem, with Māori data sovereignty embedded in every layer.
+- Region: national
+- Links: [Website](https://awadigital.co.nz)
+- Tags: Māori-owned, health-tech, clinical-documentation, AI, Māori-data-sovereignty
+
+**Health Navigator Charitable Trust**
+
+- The Health Navigator Charitable Trust runs Healthify (NZ's largest consumer health website with over 1.1 million monthly page views), the NZ Health App Library, and the Digital Health Accreditation Pathway (DHAP) for evaluating digital health tools.
+- Region: national
+- Links: [Website](https://www.hnct.nz)
+- Tags: digital-health, health-information, health-apps, consumer-health, accreditation
+
+**Hāpai Te Hauora**
+
+- Hāpai Te Hauora is a Māori public health organisation that works on issues like tobacco control, alcohol and drug harm, and mental wellbeing, and shares research, resources, and grant funding to support Māori-led community health projects.
+- Region: national
+- Links: [Website](https://hapai.co.nz)
+- Tags: hauora Māori, public health, Māori-led, non-profit
+- Related: Te Mana Raraunga
+
+**Karo**
+
+- Karo is a Māori-owned tech company that builds digital tools for primary and community health providers and social services, including Te Pokapū (a claims and decision support system), Kotahi (client and case management for NGOs and community organisations), and Māramatanga (data insights and reporting), used across most of the primary care sector.
+- Region: Wellington
+- Links: [Website](https://karo.co.nz)
+- Tags: hauora Māori, health tech, Māori-owned, data and reporting
+
+**Whānau Tahi**
+
+- Whānau Tahi is a Māori-owned health and social services software company, set up by Te Whānau O Waipareira Trust to build the Whānau Tahi Navigator case management platform, and it now serves more than 100 health and social service organisations and over 100,000 patients across New Zealand, and has expanded into the Australian and North American markets.
+- Region: Auckland
+- Links: [Website](https://www.whanautahi.com)
+- Tags: hauora Māori, health tech, Māori-owned, case management
+
+## Housing & Homelessness Tech
+
+Tools and data systems that help people find housing, coordinate homelessness services, or understand their rights as tenants.
+
+_6 entries in this domain._
+
+**BenefitMe**
+
+- BenefitMe is a free tool by the Digital Aotearoa Collective that helps New Zealanders discover their legal entitlements to benefits and social support, designed to reduce the power imbalance between people seeking help and government departments.
+- Region: national
+- Links: [Website](https://benefitme.nz)
+- Tags: benefits, social-support, digital-inclusion, legal-rights
+
+**Community Housing Aotearoa**
+
+- Community Housing Aotearoa is the peak body for New Zealand's community housing sector, representing more than 175 housing providers and partners who together house around 30,000 people, and it campaigns and shares research so more New Zealanders can access a warm, safe, affordable home.
+- Region: Wellington
+- Links: [Website](https://www.communityhousing.org.nz)
+- Tags: housing, homelessness, peak body, advocacy
+
+**Home Steps**
+
+- Home Steps is a free digital companion by the Vector Group Charitable Trust providing calm explainers, checklists, and NZ support signposting for whānau navigating renting, money, bills, employment, and emergency readiness — available 24/7.
+- Region: national
+- Links: [Website](https://homesteps.vectorgroup.org.nz)
+- Tags: housing-support, financial-literacy, digital-companion, whānau
+
+**Housing First Auckland**
+
+- Housing First Auckland is a collective of Auckland City Mission, Lifewise, LinkPeople, and Visionwest, working to end chronic homelessness in Tāmaki Makaurau, with backbone support from Wise Group, whose Wild Bamboo team runs the shared Recordbase data system the collective uses to coordinate referrals, track outcomes, and report on progress across the partner agencies.
+- Region: Auckland
+- Links: [Website](https://www.housingfirst.co.nz)
+- Tags: housing, homelessness, data coordination, collective impact
+- Related: Community Housing Aotearoa
+
+**Renters United**
+
+- Renters United is a renter advocacy group that campaigns for warmer, safer, and more secure rentals in Aotearoa, and it built TenancyHelp, a free tool that lets renters draft letters, look up Tenancy Tribunal decisions, and get plain-language answers about their rights when dealing with issues like rent rises or unrepaired homes.
+- Region: Wellington
+- Links: [Website](https://rentersunited.org.nz)
+- Tags: housing, tenancy, renters, advocacy
+
+**The People's Project**
+
+- The People's Project uses the Housing First approach to support people experiencing homelessness in Hamilton and Tauranga, combining immediate housing with individualised specialist support — part of the Wise Group, with over 1,765 housing outcomes delivered.
+- Region: Waikato
+- Links: [Website](https://www.thepeoplesproject.org.nz)
+- Tags: housing-first, homelessness, waikato, bay-of-plenty
+
 ## Environmental Citizen Science
 
 Tools that let everyday people help track and protect the environment: counting birds, mapping pests, monitoring waterways, and more.
@@ -1302,11 +1414,55 @@ _6 entries in this domain._
 - Links: [Website](https://core-ed.org) · [LinkedIn](https://nz.linkedin.com/company/tatai-aho-rau-core-education)
 - Tags: education technology, research, teacher training, charity
 
+## Disability Employment Tech
+
+Tools and platforms that connect disabled people with employers, or make workplaces and hiring processes more accessible.
+
+_5 entries in this domain._
+
+**Choices NZ**
+
+- Choices NZ works with disabled people and health-impaired job seekers to achieve employment through pre-employment training and tailored on-the-job support, partnering with local businesses across nine NZ regions.
+- Region: national
+- Links: [Website](https://www.choicesnz.org.nz)
+- Tags: disability-employment, job-support, inclusive-hiring, training
+
+**IHC New Zealand**
+
+- IHC is New Zealand's largest charity supporting people with intellectual disabilities, running housing, community, and advocacy services through its subsidiaries IDEA Services, Choices NZ, and Accessible Properties, so people can live full lives in their communities.
+- Region: national
+- Links: [Website](https://www.ihc.org.nz)
+- Tags: disability support, intellectual disability, charity, advocacy
+- Related: Blind Low Vision NZ, Workbridge
+
+**NZ Disability Employers' Network**
+
+- The NZ Disability Employers' Network (NZDEN) is a collective of NZ employers committed to improving disability inclusion and accessibility practices, running the Accessibility Tick programme and the annual Disability Inclusive Pathways Conference.
+- Region: Auckland
+- Links: [Website](https://nzden.org.nz)
+- Tags: disability-employment, workplace-inclusion, accessibility, employer-network, neurodiversity
+
+**One in Six**
+
+- One in Six is a disability employment hub built by the New Zealand Disability Employers' Network and Whaikaha, the Ministry of Disabled People, giving employers free tools, guidance, and the ARM-Up accessible recruitment model to hire and support disabled staff. It launched in February 2026, and takes its name from the one in six New Zealanders who are disabled.
+- Region: national
+- Links: [Website](https://oneinsix.nz)
+- Tags: disability employment, accessible recruitment, employer resource, disability inclusion
+- Related: Workbridge, IHC New Zealand
+
+**Workbridge**
+
+- Workbridge is a New Zealand employment service that helps disabled jobseekers find work, offering things like CV help, employer connections, and up to a year of ongoing support once someone starts a new job.
+- Region: national
+- Links: [Website](https://www.workbridge.co.nz)
+- Tags: disability employment, employment service, non-profit
+- Related: IHC New Zealand, Blind Low Vision NZ
+
 ## Mental Health Tech
 
 Digital tools that support mental health and wellbeing, from self-help apps to platforms connecting people with support.
 
-_3 entries in this domain._
+_7 entries in this domain._
 
 **Clearhead**
 
@@ -1323,6 +1479,34 @@ _3 entries in this domain._
 - Links: [Website](https://www.groovnow.com)
 - Tags: mental health, wellbeing app, corporate wellbeing, startup
 - Related: Whakarongorau Aotearoa
+
+**Headstrong**
+
+- Headstrong is a free mental health app for NZ teenagers developed by the University of Auckland alongside rangatahi, using chatbot guides to deliver evidence-based psychological skills grounded in Te Whare Tapa Whā, funded by Health NZ.
+- Region: national
+- Links: [Website](https://www.headstrong.org.nz)
+- Tags: youth-mental-health, chatbot, CBT, Te-Whare-Tapa-Whā, digital-therapeutics
+
+**ignite**
+
+- ignite is a digital wellbeing platform connecting individuals and organisations to mental health and wellbeing support across NZ — offering counsellors, psychologists, and holistic practitioners bookable online with no referral or waitlist, including a free rural wellbeing programme with Farmlands and the Rural Support Trust.
+- Region: national
+- Links: [Website](https://ignite.org.nz)
+- Tags: wellbeing-platform, mental-health, telehealth, rural-health, counselling
+
+**Le Va**
+
+- Le Va is a Pasifika-led organisation that runs Aunty Dee, a free online structured problem-solving tool for Pasifika young people, alongside community-led suicide prevention programmes that have engaged over 590,000 people across Aotearoa.
+- Region: Auckland
+- Links: [Website](https://www.leva.co.nz)
+- Tags: Pasifika, youth-mental-health, suicide-prevention, digital-tool, community-led
+
+**Screen Sense**
+
+- Screen Sense provides cyberpsychology-informed resources, self-paced courses, and practical tools to help adults and young people build healthier relationships with technology — addressing screen time, digital habits, and online wellbeing without shame or fear.
+- Region: national
+- Links: [Website](https://digitalwellbeing.org.nz)
+- Tags: digital-wellbeing, screen-time, cyberpsychology, digital-habits, self-regulation
 
 **SPARX**
 
@@ -1489,33 +1673,48 @@ _9 entries in this domain._
 - Links: [Website](https://www.westreap.org.nz)
 - Tags: digital inclusion, digital literacy, rural education, charity, adult education
 
-## Housing & Homelessness Tech
+## Financial Inclusion & Fintech for Good
 
-Tools and data systems that help people find housing, coordinate homelessness services, or understand their rights as tenants.
+Tools that help people who are excluded from mainstream banking manage money, build savings, or access fair credit.
 
-_3 entries in this domain._
+_5 entries in this domain._
 
-**Community Housing Aotearoa**
+**Community Finance**
 
-- Community Housing Aotearoa is the peak body for New Zealand's community housing sector, representing more than 175 housing providers and partners who together house around 30,000 people, and it campaigns and shares research so more New Zealanders can access a warm, safe, affordable home.
-- Region: Wellington
-- Links: [Website](https://www.communityhousing.org.nz)
-- Tags: housing, homelessness, peak body, advocacy
-
-**Housing First Auckland**
-
-- Housing First Auckland is a collective of Auckland City Mission, Lifewise, LinkPeople, and Visionwest, working to end chronic homelessness in Tāmaki Makaurau, with backbone support from Wise Group, whose Wild Bamboo team runs the shared Recordbase data system the collective uses to coordinate referrals, track outcomes, and report on progress across the partner agencies.
+- Community Finance is a social enterprise that provides low-cost finance to New Zealand's community housing providers, with over $150 million in impact investments enabled through partnerships with Westpac NZ and Simplicity.
 - Region: Auckland
-- Links: [Website](https://www.housingfirst.co.nz)
-- Tags: housing, homelessness, data coordination, collective impact
-- Related: Community Housing Aotearoa
+- Links: [Website](https://communityfinance.co.nz) · [LinkedIn](https://linkedin.com/company/communityfinance)
+- Tags: social-enterprise, impact-investing, community-housing, finance
 
-**Renters United**
+**Good Shepherd New Zealand**
 
-- Renters United is a renter advocacy group that campaigns for warmer, safer, and more secure rentals in Aotearoa, and it built TenancyHelp, a free tool that lets renters draft letters, look up Tenancy Tribunal decisions, and get plain-language answers about their rights when dealing with issues like rent rises or unrepaired homes.
+- Good Shepherd New Zealand is a charity that helps women, girls, and families facing hardship, including family violence, by giving no-interest loans, insurance help, and financial counselling so people can avoid predatory lenders and unmanageable debt.
 - Region: Wellington
-- Links: [Website](https://rentersunited.org.nz)
-- Tags: housing, tenancy, renters, advocacy
+- Links: [Website](https://www.goodshepherd.org.nz) · [LinkedIn](https://www.linkedin.com/company/good-shepherd-nz)
+- Tags: financial inclusion, microfinance, charity, family violence support
+- Related: Ngā Tāngata Microfinance
+
+**Money Sweetspot**
+
+- Money Sweetspot is a purpose-led lender that provides fair, transparent loans while linking financial education to debt repayment and savings — designed to help people move through debt with dignity rather than profit from it.
+- Region: Auckland
+- Links: [Website](https://www.moneysweetspot.co.nz)
+- Tags: ethical-lending, financial-education, debt-support, social-enterprise
+
+**Ngā Tāngata Microfinance**
+
+- Ngā Tāngata Microfinance is a New Zealand non-profit, backed by Kiwibank, that gives interest-free and fee-free loans up to $5,000 to financially vulnerable New Zealanders, after they work with a financial mentor, so people can avoid high-interest debt.
+- Region: national
+- Links: [Website](https://ngatangatamicrofinance.org.nz)
+- Tags: financial inclusion, microfinance, non-profit, fintech
+- Related: Good Shepherd New Zealand
+
+**Sorted**
+
+- Sorted is a free money guidance platform run by Te Ara Ahunga Ora Retirement Commission that gives New Zealanders budgeting tools, debt, KiwiSaver and retirement calculators, and a free automated savings app, to lift financial capability nationwide.
+- Region: national
+- Links: [Website](https://sorted.org.nz) · [LinkedIn](https://nz.linkedin.com/company/retirement-commission)
+- Tags: financial literacy, budgeting, KiwiSaver, government service, financial capability
 
 ## Civic Tech
 
@@ -1569,6 +1768,50 @@ _6 entries in this domain._
 - Tags: makerspace, hackerspace, community tech space, volunteer-run
 - Related: Hackland
 
+## Journalism & Media Tech
+
+Public-interest journalism and the platforms or funding that support independent, accountable reporting.
+
+_5 entries in this domain._
+
+**elocal**
+
+- elocal is an independent NZ news and opinion platform established in 2004, committed to evidence-led, independent journalism — covering underreported stories on economics, policy, and sovereignty without corporate or political influence.
+- Region: national
+- Links: [Website](https://www.elocal.co.nz)
+- Tags: independent-media, investigative-journalism, opinion, policy, sovereignty
+
+**Newsroom**
+
+- Newsroom is a New Zealand-owned, independent, reader- and donor-supported news website known for investigative reporting on politics, business, and climate change.
+- Region: Auckland
+- Links: [Website](https://newsroom.co.nz) · [LinkedIn](https://nz.linkedin.com/company/newsroom-new-zealand)
+- Tags: independent media, investigative journalism, reader-funded
+- Related: NZ On Air — Public Interest Journalism Fund
+
+**NZ On Air — Public Interest Journalism Fund**
+
+- The Public Interest Journalism Fund was a NZ$55 million government fund, run through NZ On Air, that supported New Zealand news organisations (including small, Māori, Pacific, and ethnic media) to keep producing investigative and community journalism.
+- Region: national
+- Links: [Website](https://www.nzonair.govt.nz/news/government-backs-sustainable-public-interest-journalism/)
+- Tags: journalism funding, government agency, media innovation, public interest
+- Related: Newsroom
+
+**Public Interest**
+
+- Public Interest is an independent, audience-funded media organisation producing clear analysis of NZ politics, economics, and culture — looking past the daily news cycle to examine how power works, who holds it, and who misses out.
+- Region: national
+- Links: [Website](https://www.publicinterest.nz)
+- Tags: independent-media, politics, analysis, audience-funded, journalism
+
+**The Spinoff**
+
+- The Spinoff is an independent, digital-native New Zealand news and culture website, founded in 2014, covering politics, society, and Māori affairs through articles, podcasts, newsletters, and a mobile app.
+- Region: Auckland
+- Links: [Website](https://thespinoff.co.nz) · [LinkedIn](https://nz.linkedin.com/company/the-spinoff)
+- Tags: independent media, digital-native, journalism, podcasts
+- Related: Newsroom
+
 ## Crisis & Humanitarian Tech
 
 Technology used during emergencies and disasters: coordinating relief, sharing warnings, and helping people find help fast when it matters most.
@@ -1606,123 +1849,6 @@ _4 entries in this domain._
 - Links: [Website](https://whakarongorau.nz) · [LinkedIn](https://nz.linkedin.com/company/whakarongorau-new-zealand)
 - Tags: telehealth, crisis line, mental health, government-funded
 - Related: New Zealand Red Cross
-
-## Financial Inclusion & Fintech for Good
-
-Tools that help people who are excluded from mainstream banking manage money, build savings, or access fair credit.
-
-_3 entries in this domain._
-
-**Good Shepherd New Zealand**
-
-- Good Shepherd New Zealand is a charity that helps women, girls, and families facing hardship, including family violence, by giving no-interest loans, insurance help, and financial counselling so people can avoid predatory lenders and unmanageable debt.
-- Region: Wellington
-- Links: [Website](https://www.goodshepherd.org.nz) · [LinkedIn](https://www.linkedin.com/company/good-shepherd-nz)
-- Tags: financial inclusion, microfinance, charity, family violence support
-- Related: Ngā Tāngata Microfinance
-
-**Ngā Tāngata Microfinance**
-
-- Ngā Tāngata Microfinance is a New Zealand non-profit, backed by Kiwibank, that gives interest-free and fee-free loans up to $5,000 to financially vulnerable New Zealanders, after they work with a financial mentor, so people can avoid high-interest debt.
-- Region: national
-- Links: [Website](https://ngatangatamicrofinance.org.nz)
-- Tags: financial inclusion, microfinance, non-profit, fintech
-- Related: Good Shepherd New Zealand
-
-**Sorted**
-
-- Sorted is a free money guidance platform run by Te Ara Ahunga Ora Retirement Commission that gives New Zealanders budgeting tools, debt, KiwiSaver and retirement calculators, and a free automated savings app, to lift financial capability nationwide.
-- Region: national
-- Links: [Website](https://sorted.org.nz) · [LinkedIn](https://nz.linkedin.com/company/retirement-commission)
-- Tags: financial literacy, budgeting, KiwiSaver, government service, financial capability
-
-## Health Tech for Good / Hauora Māori
-
-Digital health tools built for public benefit, including Māori-led and Māori-owned tech supporting hauora (holistic wellbeing).
-
-_3 entries in this domain._
-
-**Hāpai Te Hauora**
-
-- Hāpai Te Hauora is a Māori public health organisation that works on issues like tobacco control, alcohol and drug harm, and mental wellbeing, and shares research, resources, and grant funding to support Māori-led community health projects.
-- Region: national
-- Links: [Website](https://hapai.co.nz)
-- Tags: hauora Māori, public health, Māori-led, non-profit
-- Related: Te Mana Raraunga
-
-**Karo**
-
-- Karo is a Māori-owned tech company that builds digital tools for primary and community health providers and social services, including Te Pokapū (a claims and decision support system), Kotahi (client and case management for NGOs and community organisations), and Māramatanga (data insights and reporting), used across most of the primary care sector.
-- Region: Wellington
-- Links: [Website](https://karo.co.nz)
-- Tags: hauora Māori, health tech, Māori-owned, data and reporting
-
-**Whānau Tahi**
-
-- Whānau Tahi is a Māori-owned health and social services software company, set up by Te Whānau O Waipareira Trust to build the Whānau Tahi Navigator case management platform, and it now serves more than 100 health and social service organisations and over 100,000 patients across New Zealand, and has expanded into the Australian and North American markets.
-- Region: Auckland
-- Links: [Website](https://www.whanautahi.com)
-- Tags: hauora Māori, health tech, Māori-owned, case management
-
-## Disability Employment Tech
-
-Tools and platforms that connect disabled people with employers, or make workplaces and hiring processes more accessible.
-
-_3 entries in this domain._
-
-**IHC New Zealand**
-
-- IHC is New Zealand's largest charity supporting people with intellectual disabilities, running housing, community, and advocacy services through its subsidiaries IDEA Services, Choices NZ, and Accessible Properties, so people can live full lives in their communities.
-- Region: national
-- Links: [Website](https://www.ihc.org.nz)
-- Tags: disability support, intellectual disability, charity, advocacy
-- Related: Blind Low Vision NZ, Workbridge
-
-**One in Six**
-
-- One in Six is a disability employment hub built by the New Zealand Disability Employers' Network and Whaikaha, the Ministry of Disabled People, giving employers free tools, guidance, and the ARM-Up accessible recruitment model to hire and support disabled staff. It launched in February 2026, and takes its name from the one in six New Zealanders who are disabled.
-- Region: national
-- Links: [Website](https://oneinsix.nz)
-- Tags: disability employment, accessible recruitment, employer resource, disability inclusion
-- Related: Workbridge, IHC New Zealand
-
-**Workbridge**
-
-- Workbridge is a New Zealand employment service that helps disabled jobseekers find work, offering things like CV help, employer connections, and up to a year of ongoing support once someone starts a new job.
-- Region: national
-- Links: [Website](https://www.workbridge.co.nz)
-- Tags: disability employment, employment service, non-profit
-- Related: IHC New Zealand, Blind Low Vision NZ
-
-## Journalism & Media Tech
-
-Public-interest journalism and the platforms or funding that support independent, accountable reporting.
-
-_3 entries in this domain._
-
-**Newsroom**
-
-- Newsroom is a New Zealand-owned, independent, reader- and donor-supported news website known for investigative reporting on politics, business, and climate change.
-- Region: Auckland
-- Links: [Website](https://newsroom.co.nz) · [LinkedIn](https://nz.linkedin.com/company/newsroom-new-zealand)
-- Tags: independent media, investigative journalism, reader-funded
-- Related: NZ On Air — Public Interest Journalism Fund
-
-**NZ On Air — Public Interest Journalism Fund**
-
-- The Public Interest Journalism Fund was a NZ$55 million government fund, run through NZ On Air, that supported New Zealand news organisations (including small, Māori, Pacific, and ethnic media) to keep producing investigative and community journalism.
-- Region: national
-- Links: [Website](https://www.nzonair.govt.nz/news/government-backs-sustainable-public-interest-journalism/)
-- Tags: journalism funding, government agency, media innovation, public interest
-- Related: Newsroom
-
-**The Spinoff**
-
-- The Spinoff is an independent, digital-native New Zealand news and culture website, founded in 2014, covering politics, society, and Māori affairs through articles, podcasts, newsletters, and a mobile app.
-- Region: Auckland
-- Links: [Website](https://thespinoff.co.nz) · [LinkedIn](https://nz.linkedin.com/company/the-spinoff)
-- Tags: independent media, digital-native, journalism, podcasts
-- Related: Newsroom
 
 ## Māori Data Sovereignty
 
