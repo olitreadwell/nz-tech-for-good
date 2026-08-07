@@ -72,6 +72,7 @@ const fullTitle =
     </script>
   </head>
   <body>
+    <div id="scroll-progress" style="position:fixed;top:0;left:0;height:3px;background:var(--accent,#2563eb);z-index:1000;width:0;"></div>
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header">
       <div class="bar">
@@ -157,6 +158,9 @@ const fullTitle =
             >Source & how to contribute on GitHub</a
           >
         </p>
+        <p style="margin:0;font-size:0.8rem;color:var(--text-muted);">
+          Updated: {new Date().toISOString().slice(0, 10)}
+        </p>
       </div>
     </footer>
 
@@ -197,6 +201,18 @@ const fullTitle =
             siteNav.classList.toggle("open", !expanded);
           });
         }
+      })();
+    </script>
+
+    <script is:inline>
+      // Scroll progress bar
+      (function() {
+        var bar = document.getElementById("scroll-progress");
+        if (!bar) return;
+        window.addEventListener("scroll", function() {
+          var h = document.documentElement.scrollHeight - window.innerHeight;
+          bar.style.width = h > 0 ? Math.round((window.scrollY / h) * 100) + "%" : "0";
+        });
       })();
     </script>
 

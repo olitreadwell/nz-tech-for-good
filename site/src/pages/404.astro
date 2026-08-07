@@ -7,9 +7,23 @@ import { url } from "../lib/url";
   <div class="prose">
     <h1>Page not found</h1>
     <p class="lead">Sorry, that page does not exist here.</p>
-    <p>
-      <a class="button" href={url("/")}>Go to the home page</a>
-      <a class="button secondary" href={url("/directory/")}>Browse the directory</a>
-    </p>
+
+    <form action={url("/directory/")} method="get" style="margin:1.5rem 0;">
+      <label for="q-404">Search the directory:</label>
+      <div style="display:flex;gap:0.5rem;max-width:400px;">
+        <input type="search" id="q-404" name="q" placeholder="Search 176 organisations…" style="flex:1;font:inherit;border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.5rem;" />
+        <button type="submit" style="font:inherit;border:1px solid var(--border);background:var(--accent);color:white;border-radius:var(--radius-sm);padding:0.5rem 1rem;cursor:pointer;font-weight:600;">Search</button>
+      </div>
+    </form>
+
+    <p>Or try one of these:</p>
+    <ul>
+      <li><a href={url("/")}>Home page</a></li>
+      <li><a href={url("/directory/")}>Browse the full directory</a></li>
+      <li><a href={url("/domains/")}>Browse by domain</a></li>
+      <li><a href={url("/regions/")}>Browse by region</a></li>
+      <li><a href={url("/tags/")}>Browse by tag</a></li>
+      <li><a href={url("/get-involved/")}>Get involved</a></li>
+    </ul>
   </div>
 </Layout>

@@ -91,6 +91,17 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     </div>
   </form>
 
+  <div class="js-only" style="display:flex;gap:0.5rem;align-items:center;margin:0.5rem 0;">
+    <label for="sort-by" style="font-size:0.85rem;">Sort:</label>
+    <select id="sort-by" style="font:inherit;border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.25rem 0.5rem;background:var(--surface);color:var(--text);">
+      <option value="name-asc">Name A–Z</option>
+      <option value="name-desc">Name Z–A</option>
+      <option value="verified-desc">Recently verified</option>
+      <option value="verified-asc">Least recently verified</option>
+    </select>
+    <button type="button" id="random-entry" style="font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.25rem 0.7rem;cursor:pointer;font-weight:600;margin-left:auto;">🎲 Random</button>
+  </div>
+
   <p class="filter-status" id="result-count" aria-live="polite" role="status">
     Showing all {totalEntries} organisations.
   </p>
@@ -286,6 +297,32 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
 
     compareClose.addEventListener("click", function() {
       compareView.hidden = true;
+    });
+
+    // Sort
+    var sortBy = document.getElementById("sort-by");
+    var entryList = document.getElementById("entry-list");
+    sortBy.addEventListener("change", function() {
+      var val = sortBy.value;
+      var sorted = cards.slice().sort(function(a, b) {
+        if (val === "name-asc") return a.querySelector("h3 a").textContent.localeCompare(b.querySelector("h3 a").textContent);
+        if (val === "name-desc") return b.querySelector("h3 a").textContent.localeCompare(a.querySelector("h3 a").textContent);
+        if (val === "verified-desc") return (b.dataset.verified || "").localeCompare(a.dataset.verified || "");
+        if (val === "verified-asc") return (a.dataset.verified || "").localeCompare(b.dataset.verified || "");
+        return 0;
+      });
+      sorted.forEach(function(card) { entryList.appendChild(card); });
+      cards = Array.prototype.slice.call(document.querySelectorAll("[data-entry]"));
+    });
+
+    // Random entry
+    var randomBtn = document.getElementById("random-entry");
+    randomBtn.addEventListener("click", function() {
+      var visible = cards.filter(function(c) { return !c.hidden; });
+      if (visible.length === 0) return;
+      var pick = visible[Math.floor(Math.random() * visible.length)];
+      var link = pick.querySelector("h3 a");
+      if (link) window.location.href = link.getAttribute("href");
     });
   })();
 </script>

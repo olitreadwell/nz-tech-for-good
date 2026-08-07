@@ -39,6 +39,7 @@ const searchBlob = [
   data-region={entry.region}
   data-tags={entry.tags.join("|")}
   data-search={searchBlob}
+  data-verified={entry.last_verified || ""}
 >
   {
     showDomain && (
