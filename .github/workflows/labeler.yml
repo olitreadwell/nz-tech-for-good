@@ -1,0 +1,20 @@
+name: Label PRs by changed path
+
+# Auto-labels pull requests based on which paths they touch.
+# Only adds labels — never removes them.
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@8558fd74291d67161a8a78ce36a881fa63b766a9 # v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"

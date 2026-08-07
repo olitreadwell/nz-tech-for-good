@@ -25,21 +25,26 @@ account-level settings only the repo owner can change.
   dependabot-label.yml` + `dependabot-automerge-sweep.yml`, done 2026-08-06)
 - [ ] Auto-close stale link-check issues if left open with no new failures for
   N weeks (belt-and-braces on top of the recover-close logic).
-- [ ] Add a `stale` workflow (actions/stale) to nudge and close abandoned
+- [x] Add a `stale` workflow (actions/stale) to nudge and close abandoned
   issues/PRs politely, with generous timeouts (this is a low-traffic repo).
-- [ ] Add a labeler workflow that auto-labels PRs touching `data/entries/`
-  vs `scripts/` vs `docs/` so triage is faster.
+  (`.github/workflows/stale.yml`, done 2026-08-07)
+- [x] Add a labeler workflow that auto-labels PRs touching `data/entries/`
+  vs `scripts/` vs `docs/` so triage is faster. (`.github/workflows/labeler.yml`
+  + `.github/labeler.yml`, done 2026-08-07)
 - [ ] Add an "entry count" badge or shield to the README, generated from a
   small step in CI (keeps the headline number honest as the directory grows).
 
 ## CI & quality gates
 
-- [ ] Pin all GitHub Actions to commit SHAs (not just major tags) for supply-
-  chain safety; let Dependabot bump them. (Currently pinned to `@v4`/`@v5`.)
-- [ ] Add a lint step for the YAML entries (e.g. `yamllint`) so formatting
-  stays consistent, not just schema-valid.
-- [ ] Add a spell/style check for `GUIDE.md` and docs (e.g. a lightweight
-  vale or codespell pass, non-blocking at first).
+- [x] Pin all GitHub Actions to commit SHAs (not just major tags) for supply-
+  chain safety; let Dependabot bump them. (Done 2026-08-07, all 7 workflows
+  pinned — Dependabot already configured to bump github-actions ecosystem.)
+- [x] Add a lint step for the YAML entries (e.g. `yamllint`) so formatting
+  stays consistent, not just schema-valid. (`.yamllint.yml` + CI step, done
+  2026-08-07, non-blocking.)
+- [x] Add a spell/style check for `GUIDE.md` and docs (e.g. a lightweight
+  vale or codespell pass, non-blocking at first). (`codespell` CI step, done
+  2026-08-07, non-blocking.)
 - [x] Cache pip dependencies in CI to speed up runs (`actions/setup-python`
   cache key on `requirements.txt`). (`.github/workflows/ci.yml`, `.github/workflows/linkcheck.yml`, done 2026-08-06)
 - [ ] Run the link check inside the main CI as advisory only (already
@@ -101,7 +106,8 @@ account-level settings only the repo owner can change.
   search and per-domain navigation. Scope it as its own change, do not
   half-build it. Options: a minimal Jekyll/MkDocs setup, or a small generator
   that emits one HTML page per domain from the YAML.
-- [ ] Add a `CODEOWNERS` file so review requests route automatically.
+- [x] Add a `CODEOWNERS` file so review requests route automatically.
+  (`.github/CODEOWNERS`, done 2026-08-07)
 - [ ] Add a `.github/FUNDING.yml` if/when there is a funding channel to point
   at (skip until there is a real one, do not invent).
 - [ ] Add an all-contributors setup to credit everyone who adds or verifies
@@ -172,3 +178,7 @@ these in a loop iteration, bring to Oli first):**
   `github`, 126 missing `linkedin_org`, 141 missing `founding_year`, 164
   missing `takes_contributors`, 169 missing `careers_url`, 77 missing
   `related_to`. (2026-08-07)
+- All GitHub Actions pinned to commit SHAs across 7 workflows; stale workflow
+  added (`.github/workflows/stale.yml`); labeler workflow added
+  (`.github/workflows/labeler.yml` + `.github/labeler.yml`); CODEOWNERS file
+  added; yamllint and codespell added to CI (both non-blocking). (2026-08-07)
