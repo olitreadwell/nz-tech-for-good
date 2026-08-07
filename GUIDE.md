@@ -440,7 +440,7 @@ flowchart TD
 flowchart TD
     n_elocal["elocal"]
     n_Newsroom["Newsroom"]
-    n_NZOnAirPublicInterestJou["NZ On Air — Public Interest Journalism Fund"]
+    n_NZOnAirPublicInterestJou["NZ On Air ; Public Interest Journalism Fund"]
     n_PublicInterest["Public Interest"]
     n_TheSpinoff["The Spinoff"]
     n_NZOnAirPublicInterestJou --- n_Newsroom
@@ -1243,7 +1243,7 @@ _6 entries in this domain._
 
 **Home Steps**
 
-- Home Steps is a free digital companion by the Vector Group Charitable Trust providing calm explainers, checklists, and NZ support signposting for whānau navigating renting, money, bills, employment, and emergency readiness — available 24/7.
+- Home Steps is a free digital companion by the Vector Group Charitable Trust providing calm explainers, checklists, and NZ support signposting for whānau navigating renting, money, bills, employment, and emergency readiness ; available 24/7.
 - Region: national
 - Links: [Website](https://homesteps.vectorgroup.org.nz)
 - Tags: housing-support, financial-literacy, digital-companion, whānau
@@ -1265,7 +1265,7 @@ _6 entries in this domain._
 
 **The People's Project**
 
-- The People's Project uses the Housing First approach to support people experiencing homelessness in Hamilton and Tauranga, combining immediate housing with individualised specialist support — part of the Wise Group, with over 1,765 housing outcomes delivered.
+- The People's Project uses the Housing First approach to support people experiencing homelessness in Hamilton and Tauranga, combining immediate housing with individualised specialist support ; part of the Wise Group, with over 1,765 housing outcomes delivered.
 - Region: waikato
 - Links: [Website](https://www.thepeoplesproject.org.nz)
 - Tags: housing-first, homelessness, waikato, bay-of-plenty
@@ -1512,7 +1512,7 @@ _7 entries in this domain._
 
 **ignite**
 
-- ignite is a digital wellbeing platform connecting individuals and organisations to mental health and wellbeing support across NZ — offering counsellors, psychologists, and holistic practitioners bookable online with no referral or waitlist, including a free rural wellbeing programme with Farmlands and the Rural Support Trust.
+- ignite is a digital wellbeing platform connecting individuals and organisations to mental health and wellbeing support across NZ ; offering counsellors, psychologists, and holistic practitioners bookable online with no referral or waitlist, including a free rural wellbeing programme with Farmlands and the Rural Support Trust.
 - Region: national
 - Links: [Website](https://ignite.org.nz)
 - Tags: wellbeing-platform, mental-health, telehealth, rural-health, counselling
@@ -1526,7 +1526,7 @@ _7 entries in this domain._
 
 **Screen Sense**
 
-- Screen Sense provides cyberpsychology-informed resources, self-paced courses, and practical tools to help adults and young people build healthier relationships with technology — addressing screen time, digital habits, and online wellbeing without shame or fear.
+- Screen Sense provides cyberpsychology-informed resources, self-paced courses, and practical tools to help adults and young people build healthier relationships with technology ; addressing screen time, digital habits, and online wellbeing without shame or fear.
 - Region: national
 - Links: [Website](https://digitalwellbeing.org.nz)
 - Tags: digital-wellbeing, screen-time, cyberpsychology, digital-habits, self-regulation
@@ -1641,7 +1641,7 @@ _12 entries in this domain._
 
 **Community IT**
 
-- Community IT is a community-based project that provides access to digital technology for those who would otherwise go without — accepting device donations, running free tech repair workshops, donating repaired equipment, and offering subsidised Skinny Jump broadband as a DIAA Industry Partner.
+- Community IT is a community-based project that provides access to digital technology for those who would otherwise go without ; accepting device donations, running free tech repair workshops, donating repaired equipment, and offering subsidised Skinny Jump broadband as a DIAA Industry Partner.
 - Region: national
 - Links: [Website](https://communityit.org.nz)
 - Tags: digital-inclusion, device-donation, tech-repair, broadband, community-workshops
@@ -1656,7 +1656,7 @@ _12 entries in this domain._
 
 **Digital Equity Coalition Aotearoa**
 
-- The Digital Equity Coalition Aotearoa (DECA) connects and supports the digital inclusion community in Aotearoa, shining a light on initiatives, identifying gaps, advocating, and offering space for collaboration — working toward digital equity for every Kiwi.
+- The Digital Equity Coalition Aotearoa (DECA) connects and supports the digital inclusion community in Aotearoa, shining a light on initiatives, identifying gaps, advocating, and offering space for collaboration ; working toward digital equity for every Kiwi.
 - Region: national
 - Links: [Website](https://digitalequity.nz) · [LinkedIn](https://linkedin.com/company/digital-equity-coalition-aotearoa)
 - Tags: digital-inclusion, digital-equity, coalition, advocacy, connectivity
@@ -1707,7 +1707,7 @@ _12 entries in this domain._
 
 **Tu Mai Digital**
 
-- Tu Mai Digital works with community organisations to help the most vulnerable connect and navigate the digital economy — providing affordable internet connectivity, devices, training, and guidance, operating under the Poutiri Trust umbrella.
+- Tu Mai Digital works with community organisations to help the most vulnerable connect and navigate the digital economy ; providing affordable internet connectivity, devices, training, and guidance, operating under the Poutiri Trust umbrella.
 - Region: national
 - Links: [Website](https://tumaidigital.org.nz)
 - Tags: digital-inclusion, connectivity, devices, digital-literacy, community
@@ -1742,7 +1742,7 @@ _5 entries in this domain._
 
 **Money Sweetspot**
 
-- Money Sweetspot is a purpose-led lender that provides fair, transparent loans while linking financial education to debt repayment and savings — designed to help people move through debt with dignity rather than profit from it.
+- Money Sweetspot is a purpose-led lender that provides fair, transparent loans while linking financial education to debt repayment and savings ; designed to help people move through debt with dignity rather than profit from it.
 - Region: auckland
 - Links: [Website](https://www.moneysweetspot.co.nz)
 - Tags: ethical-lending, financial-education, debt-support, social-enterprise
@@ -1777,7 +1777,7 @@ _9 entries in this domain._
 
 **FYI.org.nz**
 
-- FYI.org.nz is a free platform that helps anyone in New Zealand make Official Information Act requests to over 3,184 public authorities — publishing all requests and responses online so the public can see what information has been released, with over 34,500 requests made.
+- FYI.org.nz is a free platform that helps anyone in New Zealand make Official Information Act requests to over 3,184 public authorities ; publishing all requests and responses online so the public can see what information has been released, with over 34,500 requests made.
 - Region: national
 - Links: [Website](https://fyi.org.nz)
 - Tags: civic-tech, OIA, transparency, open-government, freedom-of-information
@@ -1801,7 +1801,7 @@ _9 entries in this domain._
 
 **Lobby for Good**
 
-- Lobby for Good is NZ's first member-funded civic portal, helping everyday people understand public decisions, keep paper trails, spot patterns, and push for change — building shared civic infrastructure to close the lobbying transparency gap in New Zealand.
+- Lobby for Good is NZ's first member-funded civic portal, helping everyday people understand public decisions, keep paper trails, spot patterns, and push for change ; building shared civic infrastructure to close the lobbying transparency gap in New Zealand.
 - Region: national
 - Links: [Website](https://www.lobbyforgood.co.nz)
 - Tags: civic-tech, transparency, lobbying, public-participation, accountability
@@ -1825,7 +1825,7 @@ _9 entries in this domain._
 
 **Trust Democracy**
 
-- Trust Democracy strengthens NZ democracy through research, education, and practical experiments — creating opportunities for everyday people to share perspectives on democracy and testing democratic innovations like public dialogue and deliberation.
+- Trust Democracy strengthens NZ democracy through research, education, and practical experiments ; creating opportunities for everyday people to share perspectives on democracy and testing democratic innovations like public dialogue and deliberation.
 - Region: national
 - Links: [Website](https://trustdemocracy.nz)
 - Tags: civic-tech, democracy, deliberation, public-participation, research
@@ -1846,7 +1846,7 @@ _5 entries in this domain._
 
 **elocal**
 
-- elocal is an independent NZ news and opinion platform established in 2004, committed to evidence-led, independent journalism — covering underreported stories on economics, policy, and sovereignty without corporate or political influence.
+- elocal is an independent NZ news and opinion platform established in 2004, committed to evidence-led, independent journalism ; covering underreported stories on economics, policy, and sovereignty without corporate or political influence.
 - Region: national
 - Links: [Website](https://www.elocal.co.nz)
 - Tags: independent-media, investigative-journalism, opinion, policy, sovereignty
@@ -1857,9 +1857,9 @@ _5 entries in this domain._
 - Region: auckland
 - Links: [Website](https://newsroom.co.nz) · [LinkedIn](https://nz.linkedin.com/company/newsroom-new-zealand)
 - Tags: independent media, investigative journalism, reader-funded
-- Related: NZ On Air — Public Interest Journalism Fund, The Spinoff
+- Related: NZ On Air ; Public Interest Journalism Fund, The Spinoff
 
-**NZ On Air — Public Interest Journalism Fund**
+**NZ On Air ; Public Interest Journalism Fund**
 
 - The Public Interest Journalism Fund was a NZ$55 million government fund, run through NZ On Air, that supported New Zealand news organisations (including small, Māori, Pacific, and ethnic media) to keep producing investigative and community journalism.
 - Region: national
@@ -1869,7 +1869,7 @@ _5 entries in this domain._
 
 **Public Interest**
 
-- Public Interest is an independent, audience-funded media organisation producing clear analysis of NZ politics, economics, and culture — looking past the daily news cycle to examine how power works, who holds it, and who misses out.
+- Public Interest is an independent, audience-funded media organisation producing clear analysis of NZ politics, economics, and culture ; looking past the daily news cycle to examine how power works, who holds it, and who misses out.
 - Region: national
 - Links: [Website](https://www.publicinterest.nz)
 - Tags: independent-media, politics, analysis, audience-funded, journalism
