@@ -41,3 +41,4 @@ ruvector.db
 *.tsbuildinfo
 out/
 next-env.d.ts
+coverage/
