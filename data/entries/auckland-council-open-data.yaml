@@ -3,7 +3,7 @@ domain: open-data
 what: Auckland Council Open Data is the council's public website for browsing and downloading geospatial
   datasets, such as maps of parks, property boundaries, and infrastructure, so residents and developers
   can reuse council information.
-region: Auckland
+region: auckland
 website: https://data-aucklandcouncil.opendata.arcgis.com/
 github: ''
 linkedin_org: ''

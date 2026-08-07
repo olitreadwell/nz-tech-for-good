@@ -76,8 +76,9 @@ account-level settings only the repo owner can change.
 - [x] Add a coverage report: count entries per domain and per region, and flag
   thin domains that need more entries. Surface it in the job summary.
   (`scripts/coverage.py`, done 2026-08-06)
-- [ ] Normalise region values against a fixed list (schema `enum`) so filtering
-  and mapping stay reliable.
+- [x] Normalise region values against a fixed list (schema `enum`) so filtering
+  and mapping stay reliable. (93 entries normalised, schema enum with 16
+  canonical NZ regions, done 2026-08-07)
 - [ ] Backfill `github` and `linkedin_org` fields where missing but publicly
   available, one verified source at a time. (2026-08-07 audit: 162/176 entries
   missing `github`, 126/176 missing `linkedin_org`.)

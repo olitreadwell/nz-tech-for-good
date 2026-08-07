@@ -2,7 +2,7 @@ name: Marlborough District Council Open Data
 domain: open-data
 what: Marlborough District Council shares its public geographic data, such as property boundaries and
   environmental information, through an open data portal that anyone can browse and download from.
-region: Marlborough
+region: marlborough
 website: https://data-marlborough.opendata.arcgis.com/
 github: ''
 linkedin_org: ''

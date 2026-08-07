@@ -530,14 +530,14 @@ _4 entries in this domain._
 **ActionStation**
 
 - ActionStation is a New Zealand digital campaigning organisation that helps everyday people run online petitions and coordinated campaigns on issues like Te Tiriti o Waitangi (the Treaty of Waitangi), climate justice, and welfare.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://actionstation.org.nz) · [LinkedIn](https://nz.linkedin.com/company/actionstation)
 - Tags: digital campaigning, advocacy, petitions, Te Tiriti
 
 **Amnesty International Aotearoa New Zealand**
 
 - Amnesty International Aotearoa New Zealand is the local chapter of the global human rights movement, established in 1965, that runs online petitions, letter-writing actions, and digital campaigns on issues like refugee rights and climate justice.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://amnesty.org.nz)
 - Tags: human rights, digital campaigning, advocacy, non-profit
 - Related: ActionStation
@@ -545,7 +545,7 @@ _4 entries in this domain._
 **InternetNZ**
 
 - InternetNZ is a non-profit membership organisation that manages the .nz internet domain name system and advocates for an open, secure internet in New Zealand, including work on digital equity and online harm.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://internetnz.nz)
 - Tags: digital rights, internet policy, domain names, non-profit
 
@@ -574,7 +574,7 @@ _4 entries in this domain._
 **AI Safety Aotearoa**
 
 - AI Safety Aotearoa is an independent public education initiative that explains AI risks and safety in plain language for New Zealanders, covering topics like deepfakes, data sovereignty, algorithmic bias and election integrity through explainers, research and community events.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.aisafetyaotearoa.org)
 - Tags: AI safety, AI ethics, public education, responsible AI, advocacy
 
@@ -588,7 +588,7 @@ _4 entries in this domain._
 **Centre for Artificial Intelligence and Public Policy (CAIPP)**
 
 - CAIPP is a University of Otago research centre that studies the policy, regulation, ethics and governance implications of artificial intelligence, drawing on researchers across law, philosophy, computer science and other fields, and advising government agencies including the Department of Internal Affairs on AI-related policy.
-- Region: Dunedin
+- Region: otago
 - Links: [Website](https://www.otago.ac.nz/caipp)
 - Tags: AI policy, AI ethics, university research, governance, Otago
 
@@ -601,7 +601,7 @@ _7 entries in this domain._
 **ALTER (Advancing Law and Technology Responsibly)**
 
 - ALTER is a University of Auckland Law School initiative that runs a student hackathon, fellowships, and publications to build technology that improves access to legal and social support in New Zealand, while thinking carefully about the ethics of that technology.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.alter.auckland.ac.nz/)
 - Tags: legal tech, hackathon, university, access to justice, responsible tech
 - Related: OpenLaw NZ, Wellington Community Justice Project
@@ -648,7 +648,7 @@ _7 entries in this domain._
 **Wellington Community Justice Project**
 
 - The Wellington Community Justice Project is a charity run by Victoria University of Wellington law students, started in 2010, that runs free advocacy, education, human rights, and law reform projects to improve access to justice for people the legal system overlooks.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.wellingtoncjp.com/)
 - Tags: access to justice, student-led, advocacy, non-profit
 - Related: Community Law Centres o Aotearoa
@@ -677,7 +677,7 @@ _8 entries in this domain._
 **Digital Natives Academy**
 
 - Digital Natives Academy is a Rotorua-based charity, started in 2014, that gives young people, especially Māori rangatahi (youth), free training and access to technology in coding, robotics, animation, and game development, to help them move from using technology to creating it.
-- Region: Rotorua
+- Region: bay-of-plenty
 - Links: [Website](https://digitalnatives.academy/)
 - Tags: Māori tech, youth technology education, digital skills, charity
 - Related: Dev Academy Aotearoa
@@ -685,14 +685,14 @@ _8 entries in this domain._
 **IndigiShare**
 
 - IndigiShare is a kaupapa Māori fintech startup building economic resilience for indigenous communities through zero-interest peer-to-peer lending, a business development programme (Te Aka Matua), and culturally-grounded financial products powered by koha.
-- Region: Bay of Plenty
+- Region: bay-of-plenty
 - Links: [Website](https://indigishare.co.nz)
 - Tags: kaupapa Māori, fintech, peer-to-peer lending, indigenous-economy, financial-inclusion
 
 **Kiwa Digital**
 
 - Kiwa Digital is an Auckland technology company, founded in 2003, that builds apps and cloud software helping Indigenous communities record, protect, and share their languages and cultural stories, including tools for te reo Māori.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://kiwadigital.com/)
 - Tags: Māori tech, indigenous language technology, cultural data sovereignty, startup
 - Related: Te Hiku Media / Papa Reo
@@ -759,7 +759,7 @@ _6 entries in this domain._
 **Kaibosh**
 
 - Kaibosh is a food rescue charity that has worked in the Wellington region since 2008, using volunteers to collect surplus food from shops and farms and pass it on to community groups, aiming for zero food poverty and zero food waste.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://kaibosh.org.nz)
 - Tags: food rescue, food security, charity, volunteer-run
 - Related: KiwiHarvest, Everybody Eats
@@ -781,7 +781,7 @@ _6 entries in this domain._
 **Aotearoa Resettled Community Coalition (ARCC)**
 
 - The Aotearoa Resettled Community Coalition is an Auckland umbrella charity representing 26 member organisations from former refugee communities, helping people find housing, healthcare, and legal services, and giving them a collective voice on resettlement issues.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://arcc.org.nz/)
 - Tags: refugee support, resettlement, umbrella organisation, non-profit
 - Related: Belong Aotearoa, ChangeMakers Resettlement Forum
@@ -789,7 +789,7 @@ _6 entries in this domain._
 **Asylum Seekers Support Trust (ASST)**
 
 - The Asylum Seekers Support Trust is the only New Zealand organisation that focuses specifically on people seeking asylum, giving them emergency housing and practical help from qualified social workers while their claims are processed.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://asst.org.nz/)
 - Tags: refugee support, asylum seekers, emergency housing, non-profit
 - Related: Belong Aotearoa
@@ -797,7 +797,7 @@ _6 entries in this domain._
 **Belong Aotearoa**
 
 - Belong Aotearoa (formerly Auckland Regional Migrant Services) is a charity that has helped migrants, international students, and former refugees settle into New Zealand life for over 20 years, running programmes that help people find connection, housing, and work.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.belong.org.nz/)
 - Tags: refugee support, migrant support, settlement services, non-profit
 - Related: HOST International Aotearoa
@@ -805,7 +805,7 @@ _6 entries in this domain._
 **ChangeMakers Resettlement Forum**
 
 - ChangeMakers Resettlement Forum is a Wellington-region charity representing more than 18 refugee-background communities, working through advocacy, research, and community projects so former refugees can fully take part in life in New Zealand.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://crf.org.nz/) · [LinkedIn](https://nz.linkedin.com/company/changemakers-resettlement-forum)
 - Tags: refugee support, resettlement, advocacy, non-profit
 - Related: Belong Aotearoa
@@ -820,7 +820,7 @@ _6 entries in this domain._
 **Refugees as Survivors New Zealand (RASNZ)**
 
 - Refugees as Survivors New Zealand is a charity, running since 1995, that gives mental health and wellbeing support to people from refugee backgrounds, including survivors of torture, through specialist assessment and treatment services.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://rasnz.co.nz/)
 - Tags: refugee support, mental health, trauma support, non-profit
 - Related: Belong Aotearoa
@@ -834,21 +834,21 @@ _11 entries in this domain._
 **Ara Ake**
 
 - Ara Ake is a New Zealand government-established energy innovation centre, based in Taranaki, that helps businesses test and commercialise new clean energy technologies.
-- Region: Taranaki
+- Region: taranaki
 - Links: [Website](https://www.araake.co.nz) · [LinkedIn](https://nz.linkedin.com/company/ara-ake)
 - Tags: clean energy, climate tech, government agency, innovation
 
 **CarbonCrop**
 
 - CarbonCrop is a New Zealand company, spun out of the Nelson AI Institute in 2020, that uses artificial intelligence and satellite imagery to help farmers and landowners measure their native forests and turn forest restoration into paid carbon credits.
-- Region: Nelson
+- Region: tasman-nelson
 - Links: [Website](https://www.carboncrop.com) · [LinkedIn](https://nz.linkedin.com/company/carboncrop)
 - Tags: climate tech, carbon credits, AI, forestry, startup
 
 **Cawthron Institute Ocean Technologies**
 
 - Cawthron Institute, a science research institute based in Nelson, builds ocean sensors and data buoys that let mussel and salmon farmers check water conditions on their phones, and it recently spun out a company called Ocean Intelligence to sell this technology.
-- Region: Nelson
+- Region: tasman-nelson
 - Links: [Website](https://www.cawthron.org.nz/what-we-do/ocean-health/ocean-technologies/)
 - Tags: ocean tech, aquaculture, remote sensors, research institute, climate tech
 - Related: CarbonCrop
@@ -856,14 +856,14 @@ _11 entries in this domain._
 **Envico Technologies**
 
 - Envico Technologies is a Tauranga-based company that builds heavy-lifting drones to help protect New Zealand's native wildlife, using them to drop pest bait and native seeds in places that are too remote or dangerous for people to reach on foot.
-- Region: Tauranga
+- Region: bay-of-plenty
 - Links: [Website](https://www.envicotech.co.nz) · [LinkedIn](https://nz.linkedin.com/company/envicotech)
 - Tags: climate tech, conservation tech, drones, pest control, startup
 
 **Para Kore**
 
 - Para Kore is a Māori charitable trust that helps marae, kura, and communities cut waste to zero, teaching zero-waste practices grounded in Māori knowledge and values.
-- Region: Waikato
+- Region: waikato
 - Links: [Website](https://parakore.maori.nz)
 - Tags: zero waste, Māori-led, kaupapa Māori, charitable trust
 
@@ -877,14 +877,14 @@ _11 entries in this domain._
 **Sustainable Business Network**
 
 - The Sustainable Business Network is New Zealand's longest-running sustainable business organisation, helping companies act on climate change, waste, and nature through training, tools, and research reports on clean-tech innovation.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://sustainable.org.nz) · [LinkedIn](https://nz.linkedin.com/company/sustainable-business-network)
 - Tags: sustainability, climate action, business network, clean tech
 
 **Sustainable Coastlines**
 
 - Sustainable Coastlines is an Auckland-based charity that runs Litter Intelligence, New Zealand's national database of beach litter, where trained volunteers survey rubbish on beaches using a standard method so the data can be used by government to shape plastic pollution policy.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://sustainablecoastlines.org) · [LinkedIn](https://nz.linkedin.com/company/sustainable-coastlines)
 - Tags: climate tech, environmental data, citizen science, charity, plastic pollution
 
@@ -919,7 +919,7 @@ _4 entries in this domain._
 **Auckland Co-design Lab**
 
 - The Auckland Co-design Lab is a public sector innovation team, jointly funded by Auckland Council and several central government agencies, that works directly with communities and iwi (Māori tribal groups) to design better public services for complex social problems.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.aucklandco-lab.nz) · [LinkedIn](https://nz.linkedin.com/company/auckland-co-design-lab)
 - Tags: govtech, service design, public sector innovation, co-design
 - Related: Digital.govt.nz
@@ -943,7 +943,7 @@ _4 entries in this domain._
 **GOVIS**
 
 - GOVIS is a non-profit association of New Zealand government IT and information professionals, running since 1991, that organises conferences and forums to help public servants share knowledge about technology, data, and digital government.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.govis.org.nz) · [LinkedIn](https://nz.linkedin.com/company/govis-incorporated)
 - Tags: govtech, government IT, professional community, non-profit
 - Related: Digital.govt.nz, NZ GovTech
@@ -957,7 +957,7 @@ _24 entries in this domain._
 **Auckland Council Open Data**
 
 - Auckland Council Open Data is the council's public website for browsing and downloading geospatial datasets, such as maps of parks, property boundaries, and infrastructure, so residents and developers can reuse council information.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://data-aucklandcouncil.opendata.arcgis.com/)
 - Tags: open data, geospatial, local government, council
 - Related: data.govt.nz, Koordinates
@@ -965,14 +965,14 @@ _24 entries in this domain._
 **Bay of Plenty Regional Council Open Data (Bay of Plenty Maps)**
 
 - Bay of Plenty Maps is an open data site where Bay of Plenty Regional Council, Tauranga City Council, Western Bay of Plenty District Council, and Whakatāne District Council share public spatial data, like resource consents and council boundaries.
-- Region: Bay of Plenty
+- Region: bay-of-plenty
 - Links: [Website](https://data-boprc.opendata.arcgis.com/)
 - Tags: regional council, open data, environment, GIS
 
 **Christchurch City Council Open Data Portal**
 
 - Christchurch City Council's Spatial Open Data Portal publishes public datasets about council assets, infrastructure, and planning rules, so contractors and residents can find authoritative maps of the city.
-- Region: Christchurch
+- Region: canterbury
 - Links: [Website](https://opendata-christchurchcity.hub.arcgis.com/)
 - Tags: city council, open data, GIS
 
@@ -995,49 +995,49 @@ _24 entries in this domain._
 **Dunedin City Council Open Data**
 
 - Dunedin City Council runs an open data hub where people can explore and download the council's public spatial data and build their own maps and tools with it.
-- Region: Dunedin
+- Region: otago
 - Links: [Website](https://city-of-dunedin-open-data-dunedin-gis.hub.arcgis.com/)
 - Tags: city council, open data, GIS
 
 **Environment Canterbury Open Data**
 
 - Environment Canterbury runs an open data portal where anyone can download the regional council's public information about air quality, freshwater, and resource consents in the Canterbury region.
-- Region: Canterbury
+- Region: canterbury
 - Links: [Website](https://data.ecan.govt.nz/)
 - Tags: regional council, open data, environment, GIS
 
 **Environment Southland Open Data**
 
 - Environment Southland, the Southland Regional Council, publishes open GIS data on rivers, resource consents, and monitoring sites, including live environmental data like river flows and rainfall for the Southland region.
-- Region: Southland
+- Region: southland
 - Links: [Website](https://data-esgis.opendata.arcgis.com/)
 - Tags: regional council, open data, environment, GIS
 
 **Figure.NZ**
 
 - Figure.NZ is a charity that publishes free, easy-to-understand data and charts about New Zealand, so anyone can find and reuse the country's numbers without needing to be a data expert.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://figure.nz) · [LinkedIn](https://nz.linkedin.com/company/figure-nz)
 - Tags: open data, data visualisation, data literacy, charity
 
 **Gisborne District Council Geoportal (Tairāwhiti)**
 
 - Gisborne District Council's Geoportal Data Hub lets people explore and download public spatial data for the Tairāwhiti (Gisborne) region, like parks, public toilets, and sites of geological significance.
-- Region: Gisborne
+- Region: gisborne
 - Links: [Website](https://geoportal-gizzy.opendata.arcgis.com/)
 - Tags: district council, open data, GIS
 
 **Greater Wellington Regional Council Open Data**
 
 - Greater Wellington Regional Council shares open data on air quality, rainfall, river levels, and water quality for the Wellington region, free to download or connect to as live map layers.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://data-gwrc.opendata.arcgis.com/)
 - Tags: regional council, open data, environment, GIS
 
 **Hawke's Bay Regional Council Open Data**
 
 - Hawke's Bay Regional Council's open data page lets people view and download council-collected data, like water quality and environmental monitoring information, for free reuse.
-- Region: Hawke's Bay
+- Region: hawkes-bay
 - Links: [Website](https://www.hbrc.govt.nz/our-council/open-data/)
 - Tags: open data, environmental data, local government, council
 - Related: data.govt.nz
@@ -1045,7 +1045,7 @@ _24 entries in this domain._
 **Koordinates**
 
 - Koordinates is an Auckland-founded company that runs a cloud platform for storing, versioning, and sharing geospatial data, and it is the technology behind the government's LINZ Data Service.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://koordinates.com) · [GitHub](https://github.com/koordinates) · [LinkedIn](https://nz.linkedin.com/company/koordinates)
 - Tags: open data, geospatial, government contractor, open source
 - Related: LINZ Data Service (Toitū Te Whenua), data.govt.nz
@@ -1069,14 +1069,14 @@ _24 entries in this domain._
 **Marlborough District Council Open Data**
 
 - Marlborough District Council shares its public geographic data, such as property boundaries and environmental information, through an open data portal that anyone can browse and download from.
-- Region: Marlborough
+- Region: marlborough
 - Links: [Website](https://data-marlborough.opendata.arcgis.com/)
 - Tags: district council, open data, GIS
 
 **Nelson City Council Open Data**
 
 - Nelson City Council publishes its public GIS data, such as property and infrastructure information, through an ArcGIS open data portal that anyone can browse for free.
-- Region: Nelson
+- Region: tasman-nelson
 - Links: [Website](https://data2018-12-16t234104082z-nelsoncity.opendata.arcgis.com/)
 - Tags: city council, open data, GIS
 
@@ -1091,14 +1091,14 @@ _24 entries in this domain._
 **Northland Regional Council Open Data**
 
 - Northland Regional Council publishes an open data portal with public information, such as resource consents and land use data, for people who want to make their own maps of the Northland region.
-- Region: Northland
+- Region: northland
 - Links: [Website](https://data-nrcgis.opendata.arcgis.com/)
 - Tags: regional council, open data, environment, GIS
 
 **Otago Regional Council Spatial Data Portal**
 
 - The Otago Regional Council Spatial Data Portal is a website where people can discover, explore, and download the council's geographic datasets, like maps of land, water, and boundaries in the Otago region.
-- Region: Otago
+- Region: otago
 - Links: [Website](https://orc-spatial-data-portal-orcnz.hub.arcgis.com/)
 - Tags: open data, geospatial, local government, council
 - Related: data.govt.nz
@@ -1106,21 +1106,21 @@ _24 entries in this domain._
 **Taranaki Regional Council Open Data**
 
 - Taranaki Regional Council's open data hub lets people download public datasets and story maps about biodiversity, rivers, resource consents, and iwi boundaries in the Taranaki region.
-- Region: Taranaki
+- Region: taranaki
 - Links: [Website](https://opendata-trcnz.hub.arcgis.com/)
 - Tags: regional council, open data, environment, GIS
 
 **Tasman District Council GeoHUB**
 
 - Tasman District Council's GeoHUB is an open data catalogue where people can download the council's public GIS layers, like property and planning information, for the Tasman region.
-- Region: Tasman
+- Region: tasman-nelson
 - Links: [Website](https://geohub.tasman.govt.nz/)
 - Tags: district council, open data, GIS
 
 **Waikato Open Data Hub**
 
 - The Waikato Open Data Hub is a website where nine councils across the Waikato region share their maps and datasets together, covering things like roads, pipes, and land boundaries, so anyone can search and download them in one place.
-- Region: Waikato
+- Region: waikato
 - Links: [Website](https://colabsolutions.govt.nz/shared-services/geospatial-projects-and-services/wodh/)
 - Tags: open data, geospatial, local government, council
 - Related: data.govt.nz
@@ -1128,7 +1128,7 @@ _24 entries in this domain._
 **Wellington City Council Open Data**
 
 - Wellington City Council has published open geospatial data since 2010, including aerial photos, historic maps, building footprints, and hazard information, free for anyone to download and reuse.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://data-wcc.opendata.arcgis.com/)
 - Tags: city council, open data, GIS
 
@@ -1141,7 +1141,7 @@ _4 entries in this domain._
 **Auckland Library of Tools**
 
 - Auckland Library of Tools is a Grey Lynn community hub where people can borrow up to 10 tools at a time, from power drills to sewing machines, instead of buying their own, and it also runs monthly repair cafes to help people fix things rather than throw them away.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.aucklandlibraryoftools.com/)
 - Tags: makerspace, tool library, community tech space, sustainability, volunteer-run
 - Related: Hackland
@@ -1149,7 +1149,7 @@ _4 entries in this domain._
 **Kura Matahuna Unleash Space Makerspace (University of Auckland)**
 
 - Kura Matahuna Unleash Space Makerspace is a free workshop at the University of Auckland, open to all students and staff, with 3D printers, laser cutters, and electronics gear, where people learn to build and prototype their own projects after safety training.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.auckland.ac.nz/en/cie/locations/unleash-space/makerspace.html)
 - Tags: makerspace, university, digital fabrication, prototyping, innovation hub
 - Related: Hackland, Auckland Library of Tools
@@ -1157,14 +1157,14 @@ _4 entries in this domain._
 **Te Au Pūngao**
 
 - Te Au Pūngao is Marlborough's technology and innovation hub in Blenheim, run by Whiringa under contract to Marlborough District Council, offering co-working space, 3D printers, soldering stations and VR headsets, plus a microgrants programme to help local start-ups take their first steps.
-- Region: Marlborough
+- Region: marlborough
 - Links: [Website](https://www.teaupungao.com)
 - Tags: makerspace, coworking, innovation hub, Marlborough, microgrants
 
 **Tinkd Makerspace**
 
 - Tinkd Makerspace is a not-for-profit community workshop in Tauranga, run by STEM Wana Trust, where people share 3D printers, laser cutters, sewing machines, and electronics gear, and learn making and digital skills from each other at open evening and weekend sessions.
-- Region: Tauranga
+- Region: bay-of-plenty
 - Links: [Website](https://tinkd.nz)
 - Tags: makerspace, hackerspace, community tech space, STEM education, charity
 
@@ -1199,14 +1199,14 @@ _5 entries in this domain._
 **Karo**
 
 - Karo is a Māori-owned tech company that builds digital tools for primary and community health providers and social services, including Te Pokapū (a claims and decision support system), Kotahi (client and case management for NGOs and community organisations), and Māramatanga (data insights and reporting), used across most of the primary care sector.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://karo.co.nz)
 - Tags: hauora Māori, health tech, Māori-owned, data and reporting
 
 **Whānau Tahi**
 
 - Whānau Tahi is a Māori-owned health and social services software company, set up by Te Whānau O Waipareira Trust to build the Whānau Tahi Navigator case management platform, and it now serves more than 100 health and social service organisations and over 100,000 patients across New Zealand, and has expanded into the Australian and North American markets.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.whanautahi.com)
 - Tags: hauora Māori, health tech, Māori-owned, case management
 
@@ -1226,7 +1226,7 @@ _6 entries in this domain._
 **Community Housing Aotearoa**
 
 - Community Housing Aotearoa is the peak body for New Zealand's community housing sector, representing more than 175 housing providers and partners who together house around 30,000 people, and it campaigns and shares research so more New Zealanders can access a warm, safe, affordable home.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.communityhousing.org.nz)
 - Tags: housing, homelessness, peak body, advocacy
 
@@ -1240,7 +1240,7 @@ _6 entries in this domain._
 **Housing First Auckland**
 
 - Housing First Auckland is a collective of Auckland City Mission, Lifewise, LinkPeople, and Visionwest, working to end chronic homelessness in Tāmaki Makaurau, with backbone support from Wise Group, whose Wild Bamboo team runs the shared Recordbase data system the collective uses to coordinate referrals, track outcomes, and report on progress across the partner agencies.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.housingfirst.co.nz)
 - Tags: housing, homelessness, data coordination, collective impact
 - Related: Community Housing Aotearoa
@@ -1248,14 +1248,14 @@ _6 entries in this domain._
 **Renters United**
 
 - Renters United is a renter advocacy group that campaigns for warmer, safer, and more secure rentals in Aotearoa, and it built TenancyHelp, a free tool that lets renters draft letters, look up Tenancy Tribunal decisions, and get plain-language answers about their rights when dealing with issues like rent rises or unrepaired homes.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://rentersunited.org.nz)
 - Tags: housing, tenancy, renters, advocacy
 
 **The People's Project**
 
 - The People's Project uses the Housing First approach to support people experiencing homelessness in Hamilton and Tauranga, combining immediate housing with individualised specialist support — part of the Wise Group, with over 1,765 housing outcomes delivered.
-- Region: Waikato
+- Region: waikato
 - Links: [Website](https://www.thepeoplesproject.org.nz)
 - Tags: housing-first, homelessness, waikato, bay-of-plenty
 
@@ -1284,7 +1284,7 @@ _4 entries in this domain._
 **Kiwi Coast**
 
 - Kiwi Coast Trust links more than 270 community, hapu, and iwi-led pest control groups along 291 kilometres of Northland coastline, coordinating them with AI-enabled traps, radio-tagged kiwi tracking, and shared data tools so volunteers can build New Zealand's first kiwi corridor.
-- Region: Northland
+- Region: northland
 - Links: [Website](https://kiwicoast.org.nz)
 - Tags: conservation, citizen science, predator control, community network, kiwi recovery
 - Related: Predator Free NZ Trust, Trap.NZ
@@ -1314,7 +1314,7 @@ _4 entries in this domain._
 **Givealittle**
 
 - Givealittle is a New Zealand-owned, not-for-profit crowdfunding website, owned by Perpetual Guardian, where people and charities can raise money online for personal causes, community projects, and disaster response.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.givealittle.co.nz) · [LinkedIn](https://www.linkedin.com/company/givealittle)
 - Tags: crowdfunding, giving platform, charity, fundraising
 - Related: Volunteering New Zealand (Tūao Aotearoa)
@@ -1330,7 +1330,7 @@ _4 entries in this domain._
 **The Good Registry**
 
 - The Good Registry is a Wellington social enterprise and charitable trust that sells charity gift cards and runs corporate giving programmes, letting people split a gift between more than 60 New Zealand causes instead of buying more stuff. It was founded in 2017 by Christine Langdon, Tracey Bridges, and Sue McCabe.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://thegoodregistry.com) · [LinkedIn](https://nz.linkedin.com/company/the-good-registry)
 - Tags: charity gift cards, corporate giving, giving platform, social enterprise
 - Related: Givealittle
@@ -1360,7 +1360,7 @@ _4 entries in this domain._
 **Enspiral**
 
 - Enspiral is a Wellington-founded network of people and social enterprises who support each other to do work that helps society, and it is the community that the decision-making tool Loomio originally grew out of.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.enspiral.com) · [LinkedIn](https://nz.linkedin.com/company/enspiral)
 - Tags: social enterprise network, cooperative, incubator, collective
 - Related: Loomio
@@ -1368,7 +1368,7 @@ _4 entries in this domain._
 **Loomio**
 
 - Loomio is a Wellington-based worker-owned cooperative that builds open-source software helping groups, from community organisations to unions, discuss a topic and reach a collective decision online.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.loomio.com) · [GitHub](https://github.com/loomio)
 - Tags: worker cooperative, decision-making, open source, civic tech
 - Related: Enspiral
@@ -1382,7 +1382,7 @@ _6 entries in this domain._
 **Catalyst IT**
 
 - Catalyst IT is a New Zealand-owned open-source software company, founded in Wellington in 1997, that builds and supports open-source systems for education (such as Moodle) and libraries (such as Koha), and does significant work for the public sector.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.catalyst.net.nz) · [LinkedIn](https://nz.linkedin.com/company/catalyst-it-limited)
 - Tags: open source, education technology, library systems, government contractor
 - Related: Digital.govt.nz
@@ -1398,7 +1398,7 @@ _6 entries in this domain._
 **Koi Tū – Centre for Informed Futures**
 
 - Koi Tū is an independent research centre at the University of Auckland that studies big, long-term problems facing New Zealand, like technology's impact on society, and turns that research into policy advice.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://informedfutures.org)
 - Tags: policy research, future of technology, University of Auckland, think tank
 
@@ -1412,14 +1412,14 @@ _6 entries in this domain._
 **Te Pūnaha Matatini**
 
 - Te Pūnaha Matatini is a research centre that studies complex systems, like disease spread, ecosystems, and social networks, to help New Zealand understand and respond to big interconnected challenges.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.tepunahamatatini.ac.nz)
 - Tags: complex systems research, data science, Centre of Research Excellence, University of Auckland
 
 **Tātai Aho Rau Core Education**
 
 - Tātai Aho Rau Core Education is a Christchurch-founded, charity-registered social enterprise that has worked since 2003 on educational research, teacher professional development, and free digital resources like the LEARNZ virtual field trips for New Zealand schools.
-- Region: Christchurch
+- Region: canterbury
 - Links: [Website](https://core-ed.org) · [LinkedIn](https://nz.linkedin.com/company/tatai-aho-rau-core-education)
 - Tags: education technology, research, teacher training, charity
 
@@ -1447,7 +1447,7 @@ _5 entries in this domain._
 **NZ Disability Employers' Network**
 
 - The NZ Disability Employers' Network (NZDEN) is a collective of NZ employers committed to improving disability inclusion and accessibility practices, running the Accessibility Tick programme and the annual Disability Inclusive Pathways Conference.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://nzden.org.nz)
 - Tags: disability-employment, workplace-inclusion, accessibility, employer-network, neurodiversity
 
@@ -1506,7 +1506,7 @@ _7 entries in this domain._
 **Le Va**
 
 - Le Va is a Pasifika-led organisation that runs Aunty Dee, a free online structured problem-solving tool for Pasifika young people, alongside community-led suicide prevention programmes that have engaged over 590,000 people across Aotearoa.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.leva.co.nz)
 - Tags: Pasifika, youth-mental-health, suicide-prevention, digital-tool, community-led
 
@@ -1520,7 +1520,7 @@ _7 entries in this domain._
 **SPARX**
 
 - SPARX is a free self-help game, built by the University of Auckland, that teaches young people cognitive behavioural therapy skills to manage depression and anxiety through a fantasy quest storyline, available online and as a mobile app.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.sparx.org.nz)
 - Tags: youth mental health, digital therapy, CBT, gaming, research
 
@@ -1533,14 +1533,14 @@ _5 entries in this domain._
 **Code 4 Change NZ**
 
 - Code 4 Change NZ is a charity that delivers free coding, robotics, and 3D design and printing programmes to South Auckland primary schools, working to close the digital equity gap for Māori, Pacific, and other underserved tamariki who miss out on tech and STEM education because of cost or access barriers.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://code4changenz.org)
 - Tags: coding education, STEM, Māori, Pasifika, South Auckland, digital equity
 
 **Digital Future Aotearoa**
 
 - Digital Future Aotearoa is a Christchurch-based charitable trust (CC51617) that runs Code Club Aotearoa, a national network of free coding clubs for children, and the Recycle a Device programme, which refurbishes donated laptops for students who cannot afford a device.
-- Region: Canterbury
+- Region: canterbury
 - Links: [Website](https://www.digitalfutureaotearoa.nz) · [LinkedIn](https://nz.linkedin.com/company/digital-future-aotearoa)
 - Tags: coding education, digital inclusion, device recycling, youth, christchurch
 - Related: Digital Natives Academy
@@ -1548,7 +1548,7 @@ _5 entries in this domain._
 **Manaiakalani Education Trust**
 
 - Manaiakalani Education Trust is an Auckland-based charity that runs a digital learning programme for schools in lower-income communities, giving students devices and teachers training so technology helps close, rather than widen, the education gap for Māori and Pacific students.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.manaiakalani.org) · [LinkedIn](https://www.linkedin.com/company/manaiakalani-education-trust)
 - Tags: education equity, digital learning, charity, Māori and Pacific education
 - Related: Dev Academy Aotearoa (Māori and Pasifika cohorts), Digital Natives Academy
@@ -1585,28 +1585,28 @@ _5 entries in this domain._
 **Consumer NZ**
 
 - Consumer NZ is an independent, not-for-profit organisation, running since 1959, that tests products, publishes reviews, and campaigns for stronger consumer protection laws so New Zealanders can make better purchasing decisions.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.consumer.org.nz) · [LinkedIn](https://nz.linkedin.com/company/consumer-nz)
 - Tags: consumer protection, advocacy, product testing, non-profit
 
 **Hui E! Community Aotearoa**
 
 - Hui E! Community Aotearoa connects community groups, hapū, and iwi around the country, helping them build capability and pushing for fairer funding and policy for the community sector.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.huie.org.nz)
 - Tags: community sector, capability building, Treaty partnership, network
 
 **Tech for Good New Zealand**
 
 - A free, volunteer-run meetup community for anyone interested in using technology for social good in Aotearoa. Part of the global NetSquared network, it brings together charities, community groups, social enterprises, tech professionals, and digital marketers at regular events.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.meetup.com/tech-for-good-new-zealand/) · [Events](https://www.meetup.com/tech-for-good-new-zealand/events/)
 - Tags: community, meetup, netsquared, networking
 
 **Volunteering New Zealand (Tūao Aotearoa)**
 
 - Volunteering New Zealand is the national body for volunteering, an incorporated society that runs training, online tools, and a volunteer centre network to help community organisations recruit and manage volunteers.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.volunteeringnz.org.nz)
 - Tags: volunteering, nonprofit tech, peak body, community organisations
 - Related: Collaborate
@@ -1620,7 +1620,7 @@ _12 entries in this domain._
 **Com2Tech**
 
 - Com2Tech is a volunteer-led community trust in Dunedin that provides free digital skills classes, low-cost refurbished devices, and community tech support to help people of all ages get online, including dedicated programmes for seniors and job-seekers.
-- Region: Otago
+- Region: otago
 - Links: [Website](https://www.com2.tech) · [LinkedIn](https://nz.linkedin.com/company/community-communications-technology-trust-com2tech)
 - Tags: digital inclusion, device recycling, community tech, seniors, dunedin
 - Related: Katoa Connect (formerly 20/20 Trust)
@@ -1636,7 +1636,7 @@ _12 entries in this domain._
 **DigiFale**
 
 - DigiFale is an intergenerational digital health literacy programme for Pacific communities, training young "navigators" to teach their elders how to use phones and online health services with confidence, starting in a Niue community in Māngere in 2020.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://digifale.com)
 - Tags: Pasifika, digital inclusion, digital health literacy, intergenerational, community navigators
 
@@ -1651,7 +1651,7 @@ _12 entries in this domain._
 **Digital Inclusion Alliance Aotearoa**
 
 - Digital Inclusion Alliance Aotearoa is a Wellington-based charity that runs a federated network of more than 300 local partner organisations across New Zealand, delivering programmes like Digital Steps and Digi-Coaches so more people can get online, build digital skills, and find work.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://digitalinclusionalliance.nz) · [LinkedIn](https://nz.linkedin.com/company/digital-inclusion-alliance-aotearoa)
 - Tags: digital inclusion, digital skills, charity, federated network, community partnerships
 - Related: Katoa Connect (formerly 20/20 Trust)
@@ -1659,14 +1659,14 @@ _12 entries in this domain._
 **EPIC Westport**
 
 - EPIC Westport is a Buller innovation hub and business incubator offering digital literacy workshops, mentoring and co-working space, set up to help the region's economy diversify into digital industries after major local job losses at Solid Energy and Holcim Cement.
-- Region: West Coast
+- Region: west-coast
 - Links: [Website](https://www.epicwestport.co.nz)
 - Tags: digital literacy, business incubator, coworking, regional development, West Coast
 
 **Fibre Fale**
 
 - Fibre Fale is a Pasifika-led social enterprise creating pathways into the technology industry for Pacific people in Aotearoa. Founded in 2022, it delivers events, mentoring programmes, and free AI literacy resources (including the 'AI with Eteroa' online course), with a goal of equal Pasifika representation in the NZ tech workforce by 2042.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.fibrefale.com) · [LinkedIn](https://www.linkedin.com/company/fibre-fale)
 - Tags: pasifika, digital-inclusion, tech-pathways, ai-literacy, social-enterprise
 
@@ -1680,14 +1680,14 @@ _12 entries in this domain._
 **The Cause Collective**
 
 - The Cause Collective is a South Auckland charitable organisation that runs a Creative and Tech Hub and a mobile tech van, giving rangatahi Maori and Pasifika free hands-on technology training, device access, and pathways into the tech sector.
-- Region: Tamaki Makaurau
+- Region: auckland
 - Links: [Website](https://www.thecausecollective.org.nz) · [LinkedIn](https://nz.linkedin.com/company/the-cause-collective-nz)
 - Tags: digital inclusion, maori, pasifika, youth tech, south auckland
 
 **Tolaga Bay Innovation**
 
 - Tolaga Bay Innovation runs a co-working and technology hub in Uawa (Tolaga Bay) offering digital skills training, business mentorship and seed funding to grassroots and Māori entrepreneurs, and is part of the Te Tairāwhiti Digital Equity Collective helping set up tech hubs from Hicks Bay to Wairoa.
-- Region: Gisborne
+- Region: gisborne
 - Links: [Website](https://www.tbict.org)
 - Tags: digital equity, rural, Māori entrepreneurship, tech hub, East Coast
 
@@ -1701,7 +1701,7 @@ _12 entries in this domain._
 **WestREAP (Westland Rural Education Activities Programme)**
 
 - WestREAP is a not-for-profit based in Hokitika that has run adult and community education across the West Coast for more than 40 years, including digital literacy workshops that help isolated communities, like Runanga, learn everyday technology skills such as Wi-Fi calling to stay in touch with whanau.
-- Region: West Coast
+- Region: west-coast
 - Links: [Website](https://www.westreap.org.nz)
 - Tags: digital inclusion, digital literacy, rural education, charity, adult education
 
@@ -1714,14 +1714,14 @@ _5 entries in this domain._
 **Community Finance**
 
 - Community Finance is a social enterprise that provides low-cost finance to New Zealand's community housing providers, with over $150 million in impact investments enabled through partnerships with Westpac NZ and Simplicity.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://communityfinance.co.nz) · [LinkedIn](https://linkedin.com/company/communityfinance)
 - Tags: social-enterprise, impact-investing, community-housing, finance
 
 **Good Shepherd New Zealand**
 
 - Good Shepherd New Zealand is a charity that helps women, girls, and families facing hardship, including family violence, by giving no-interest loans, insurance help, and financial counselling so people can avoid predatory lenders and unmanageable debt.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.goodshepherd.org.nz) · [LinkedIn](https://www.linkedin.com/company/good-shepherd-nz)
 - Tags: financial inclusion, microfinance, charity, family violence support
 - Related: Ngā Tāngata Microfinance
@@ -1729,7 +1729,7 @@ _5 entries in this domain._
 **Money Sweetspot**
 
 - Money Sweetspot is a purpose-led lender that provides fair, transparent loans while linking financial education to debt repayment and savings — designed to help people move through debt with dignity rather than profit from it.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.moneysweetspot.co.nz)
 - Tags: ethical-lending, financial-education, debt-support, social-enterprise
 
@@ -1780,7 +1780,7 @@ _9 entries in this domain._
 **Hackland**
 
 - Hackland is a volunteer-run community makerspace in Grey Lynn, Auckland, where members share tools like 3D printers, laser cutters, and woodworking and metalworking equipment, and learn skills from each other at weekly open evenings.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://hackland.nz) · [GitHub](https://github.com/HakLand)
 - Tags: makerspace, hackerspace, community tech space, volunteer-run
 
@@ -1795,7 +1795,7 @@ _9 entries in this domain._
 **NZ GovTech**
 
 - NZ GovTech is a Wellington-based volunteer community group, with nearly 1,000 members, that brings together public servants and technologists to talk about open government, civic innovation, and using technology to solve public problems.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.meetup.com/nzgovtech/)
 - Tags: civic tech, open government, community group, meetup
 - Related: GovHack Aotearoa New Zealand, GOVIS
@@ -1803,7 +1803,7 @@ _9 entries in this domain._
 **Public Good Aotearoa (Te Iwi Whānui)**
 
 - Public Good is a volunteer network of New Zealanders working to rebuild trust between people and government, by pushing for a stronger public sector, genuine democracy, and community wealth-building.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://www.publicgood.nz)
 - Tags: civic advocacy, public sector reform, democracy, volunteer network
 - Related: ActionStation
@@ -1818,7 +1818,7 @@ _9 entries in this domain._
 **Wellington Hackspace (WHACK)**
 
 - WHACK, or Wellington Hackspace, is a member-run community workshop in Wellington where people share tools like 3D printers, laser cutters, and CNC machines, and learn making and electronics skills from each other.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://whack.nz)
 - Tags: makerspace, hackerspace, community tech space, volunteer-run
 - Related: Hackland
@@ -1839,7 +1839,7 @@ _5 entries in this domain._
 **Newsroom**
 
 - Newsroom is a New Zealand-owned, independent, reader- and donor-supported news website known for investigative reporting on politics, business, and climate change.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://newsroom.co.nz) · [LinkedIn](https://nz.linkedin.com/company/newsroom-new-zealand)
 - Tags: independent media, investigative journalism, reader-funded
 - Related: NZ On Air — Public Interest Journalism Fund
@@ -1862,7 +1862,7 @@ _5 entries in this domain._
 **The Spinoff**
 
 - The Spinoff is an independent, digital-native New Zealand news and culture website, founded in 2014, covering politics, society, and Māori affairs through articles, podcasts, newsletters, and a mobile app.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://thespinoff.co.nz) · [LinkedIn](https://nz.linkedin.com/company/the-spinoff)
 - Tags: independent media, digital-native, journalism, podcasts
 - Related: Newsroom
@@ -1914,7 +1914,7 @@ _7 entries in this domain._
 **Ngā Pae o te Māramatanga**
 
 - Ngā Pae o te Māramatanga is Aotearoa's only Māori Centre of Research Excellence, funding and coordinating research across universities to grow Māori scholarship and support Māori futures.
-- Region: Auckland
+- Region: auckland
 - Links: [Website](https://www.maramatanga.ac.nz)
 - Tags: Māori research, Centre of Research Excellence, indigenous scholarship, University of Auckland
 - Related: Te Mana Raraunga, Te Kāhui Raraunga
@@ -1929,7 +1929,7 @@ _7 entries in this domain._
 **Te Hiku Media / Papa Reo**
 
 - Te Hiku Media is a Northland-based iwi (tribal) radio and media organisation whose Papa Reo project builds speech-recognition and language technology for te reo Māori, while keeping ownership of the language data with the Māori community that provided it.
-- Region: Kaitaia
+- Region: northland
 - Links: [Website](https://papareo.nz) · [GitHub](https://github.com/TeHikuMedia)
 - Tags: Māori data sovereignty, language technology, speech recognition, te reo Māori, open source
 - Related: Te Mana Raraunga
@@ -1937,7 +1937,7 @@ _7 entries in this domain._
 **Te Hīhiri Digital Innovation Hub**
 
 - Te Hīhiri Digital Innovation Hub, run by Te Matarau a Maui in the Wellington region, supports Māori entrepreneurs and technologists through five local hubs, offering mentoring and access to funding and networks so tech businesses can grow in a way grounded in Māori values.
-- Region: Wellington
+- Region: wellington
 - Links: [Website](https://tematarau.co.nz/programmes/te-hihiri-digital-innovation-hub)
 - Tags: Māori tech, digital innovation hub, entrepreneurship, regional network
 - Related: Te Mana Raraunga, Te Kāhui Raraunga

@@ -2,7 +2,7 @@ name: Northland Regional Council Open Data
 domain: open-data
 what: Northland Regional Council publishes an open data portal with public information, such as resource
   consents and land use data, for people who want to make their own maps of the Northland region.
-region: Northland
+region: northland
 website: https://data-nrcgis.opendata.arcgis.com/
 github: ''
 linkedin_org: ''

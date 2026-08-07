@@ -2,7 +2,7 @@ name: Greater Wellington Regional Council Open Data
 domain: open-data
 what: Greater Wellington Regional Council shares open data on air quality, rainfall, river levels, and
   water quality for the Wellington region, free to download or connect to as live map layers.
-region: Wellington
+region: wellington
 website: https://data-gwrc.opendata.arcgis.com/
 github: ''
 linkedin_org: ''
