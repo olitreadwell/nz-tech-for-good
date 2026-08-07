@@ -57,20 +57,28 @@ const emerging = entries.filter((e) => e.founding_year && e.founding_year >= 202
     </p>
   </div>
 
-  <ul class="stat-row" aria-label="Directory at a glance">
-    <li class="stat">
-      <div class="n">{totalEntries}</div>
-      <div class="l">organisations</div>
-    </li>
-    <li class="stat">
-      <div class="n">{domains.length}</div>
-      <div class="l">domains</div>
-    </li>
-    <li class="stat">
-      <div class="n">{regions.length}</div>
-      <div class="l">regions</div>
-    </li>
-  </ul>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-bottom:2rem;">
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center;">
+      <div style="font-size:2rem;">📋</div>
+      <div style="font-size:2rem;font-weight:800;color:var(--accent);margin:0.25rem 0;">{totalEntries}</div>
+      <div style="font-size:0.85rem;color:var(--text-muted);">organisations</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center;">
+      <div style="font-size:2rem;">📂</div>
+      <div style="font-size:2rem;font-weight:800;color:var(--accent);margin:0.25rem 0;">{domains.length}</div>
+      <div style="font-size:0.85rem;color:var(--text-muted);">domains</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center;">
+      <div style="font-size:2rem;">📍</div>
+      <div style="font-size:2rem;font-weight:800;color:var(--accent);margin:0.25rem 0;">{regions.length}</div>
+      <div style="font-size:0.85rem;color:var(--text-muted);">regions</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center;">
+      <div style="font-size:2rem;">🔗</div>
+      <div style="font-size:2rem;font-weight:800;color:var(--accent);margin:0.25rem 0;">{withRelated}</div>
+      <div style="font-size:0.85rem;color:var(--text-muted);">cross-linked</div>
+    </div>
+  </div>
 
   <section aria-labelledby="growth-heading">
     <h2 id="growth-heading">Entry growth</h2>

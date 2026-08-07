@@ -1,8 +1,7 @@
 ---
 import Layout from "../components/Layout.astro";
-import EntryCard from "../components/EntryCard.astro";
+import EmptyState from "../components/EmptyState";
 import { url } from "../lib/url";
-import { entries, totalEntries } from "../lib/data";
 ---
 
 <Layout
@@ -26,9 +25,7 @@ import { entries, totalEntries } from "../lib/data";
     <p id="saved-status">Loading saved entries…</p>
     <ul class="grid" id="saved-list"></ul>
     <p class="prose" id="saved-empty" hidden>
-      You have not saved any entries yet. Browse the
-      <a href={url("/directory/")}>directory</a> and click ☆ Save on any
-      entry to bookmark it.
+      <EmptyState icon="☆" title="No saved entries" description="You have not saved any entries yet. Browse the directory and click ☆ Save on any entry to bookmark it." action={{ label: "Browse directory", href: "/directory/" }} />
     </p>
     <p class="prose" style="margin-top:1rem;">
       <a href={url("/directory/")}>← Back to directory</a>

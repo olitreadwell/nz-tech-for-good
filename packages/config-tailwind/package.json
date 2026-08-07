@@ -1,0 +1,7 @@
+{
+  "name": "@olitreadwell/config-tailwind",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.ts",
+  "devDependencies": { "tailwindcss": "^4.0.0" }
+}

@@ -131,7 +131,10 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       <option value="verified-asc">Least recently verified</option>
     </select>
     <button type="button" id="random-entry" style="font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.25rem 0.7rem;cursor:pointer;font-weight:600;margin-left:auto;">🎲 Random</button>
+    <button type="button" id="view-toggle" style="font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.25rem 0.7rem;cursor:pointer;font-weight:600;" data-view="list">🗺 Map</button>
   </div>
+
+  <div id="map-view" hidden style="height:350px;border-radius:var(--radius);overflow:hidden;margin:0.5rem 0;"></div>
 
   <p class="filter-status" id="result-count" aria-live="polite" role="status">
     Showing all {totalEntries} organisations.
@@ -151,6 +154,12 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
   <p class="filter-status js-only" id="no-results" hidden>
     No organisations match those filters. Try removing one.
   </p>
+
+  <div class="js-only" id="pagination" style="display:flex;gap:0.5rem;justify-content:center;align-items:center;margin:1.5rem 0;">
+    <button type="button" id="prev-page" style="font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.4rem 0.9rem;cursor:pointer;font-weight:600;" disabled>← Previous</button>
+    <span id="page-info" style="font-size:0.85rem;color:var(--text-muted);"></span>
+    <button type="button" id="next-page" style="font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.4rem 0.9rem;cursor:pointer;font-weight:600;">Next →</button>
+  </div>
 </Layout>
 
 <script is:inline>
@@ -333,5 +342,68 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       var link = pick.querySelector("h3 a");
       if (link) window.location.href = link.getAttribute("href");
     });
+
+    // Pagination
+    var PAGE_SIZE = 20;
+    var currentPage = 1;
+    var prevBtn = document.getElementById("prev-page");
+    var nextBtn = document.getElementById("next-page");
+    var pageInfo = document.getElementById("page-info");
+
+    function updatePagination() {
+      var visible = cards.filter(function(c) { return !c.hidden; });
+      var totalPages = Math.ceil(visible.length / PAGE_SIZE) || 1;
+      if (currentPage > totalPages) currentPage = totalPages;
+      visible.forEach(function(c, i) {
+        var page = Math.floor(i / PAGE_SIZE) + 1;
+        c.style.display = page === currentPage ? "" : "none";
+      });
+      prevBtn.disabled = currentPage <= 1;
+      nextBtn.disabled = currentPage >= totalPages;
+      pageInfo.textContent = "Page " + currentPage + " of " + totalPages;
+      document.getElementById("pagination").hidden = visible.length <= PAGE_SIZE;
+    }
+
+    prevBtn.addEventListener("click", function() { if (currentPage > 1) { currentPage--; updatePagination(); window.scrollTo(0,0); } });
+    nextBtn.addEventListener("click", function() { var totalPages = Math.ceil(cards.filter(function(c) { return !c.hidden; }).length / PAGE_SIZE); if (currentPage < totalPages) { currentPage++; updatePagination(); window.scrollTo(0,0); } });
+
+    // Hook pagination into apply() — store original and wrap
+    var originalApply = apply;
+    apply = function() { originalApply(); currentPage = 1; updatePagination(); };
+
+    // Map toggle
+    var viewToggle = document.getElementById("view-toggle");
+    var mapView = document.getElementById("map-view");
+    var mapLoaded = false;
+    viewToggle.addEventListener("click", function() {
+      var isMap = viewToggle.dataset.view === "map";
+      if (isMap) {
+        viewToggle.textContent = "🗺 Map"; viewToggle.dataset.view = "list";
+        mapView.hidden = true;
+        entryList.hidden = false;
+        document.getElementById("pagination").hidden = false;
+        updatePagination();
+      } else {
+        viewToggle.textContent = "📋 List"; viewToggle.dataset.view = "map";
+        entryList.hidden = true;
+        document.getElementById("pagination").hidden = true;
+        mapView.hidden = false;
+        if (!mapLoaded) { loadMap(); mapLoaded = true; }
+      }
+    });
+
+    function loadMap() {
+      var script = document.createElement("script");
+      script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+      script.onload = initDirMap;
+      document.head.appendChild(script);
+      var link = document.createElement("link");
+      link.rel = "stylesheet"; link.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+      document.head.appendChild(link);
+    }
+    function initDirMap() {
+      var map = L.map("map-view").setView([-40.9, 174.0], 6);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: '&copy; OSM', maxZoom: 18 }).addTo(map);
+    }
   })();
 </script>

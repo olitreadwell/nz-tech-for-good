@@ -306,22 +306,22 @@ main {
 
 .pill {
   display: inline-block;
-  padding: 0.15rem 0.6rem;
+  padding: 0.1rem 0.5rem;
   border-radius: 999px;
-  background: var(--surface-2);
+  background: var(--surface-2, #f3f4f6);
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   text-decoration: none;
-  border: 1px solid var(--border);
-  line-height: 1.5;
+  border: none;
+  line-height: 1.6;
+  font-weight: 500;
 }
 a.pill:hover {
-  background: var(--accent-soft);
-  color: var(--accent-strong);
+  background: var(--accent, #2563eb);
+  color: #fff;
 }
-a.pill:visited {
-  color: var(--text-muted);
-}
+a.pill:visited { color: var(--text-muted); }
+a.pill:visited:hover { color: #fff; }
 
 .tag-row {
   display: flex;
@@ -500,7 +500,7 @@ a.pill:visited {
 }
 
 /* Touch targets — minimum 44×44px for fingers */
-button, .button, select, .pill, .tile, .tag, .site-nav a, .crumbs a {
+button, .button, select, .tile, .tag, .site-nav a, .crumbs a {
   min-height: 44px;
   min-width: 44px;
   box-sizing: border-box;
