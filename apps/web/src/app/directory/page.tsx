@@ -82,6 +82,16 @@ export default function DirectoryPage() {
               document.getElementById('dir-search').addEventListener('input',filter);
               document.getElementById('dir-domain').addEventListener('change',filter);
               document.getElementById('dir-region').addEventListener('change',filter);
+
+              // Read query params on load
+              var params = new URLSearchParams(window.location.search);
+              var qp = params.get('q') || '';
+              var dp = params.get('domain') || '';
+              var rp = params.get('region') || '';
+              if (qp) document.getElementById('dir-search').value = qp;
+              if (dp) document.getElementById('dir-domain').value = dp;
+              if (rp) document.getElementById('dir-region').value = rp;
+              if (qp || dp || rp) filter();
             })();
           `,
         }}
