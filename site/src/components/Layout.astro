@@ -170,7 +170,11 @@ const fullTitle =
           >
         </p>
         <p style="margin:0;font-size:0.8rem;color:var(--text-muted);">
-          Updated: {new Date().toISOString().slice(0, 10)} · <span lang="mi">Aotearoa</span>
+          Updated: {new Date().toISOString().slice(0, 10)} · <span lang="mi">Aotearoa</span> ·
+          <select id="lang-switcher" aria-label="Language" style="font:inherit;font-size:0.8rem;border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.1rem 0.3rem;background:var(--surface);color:var(--text-muted);cursor:pointer;">
+            <option value="en-NZ" selected>English</option>
+            <option value="mi">Te Reo Māori</option>
+          </select>
         </p>
       </div>
     </footer>
@@ -211,6 +215,20 @@ const fullTitle =
             menuToggle.setAttribute("aria-expanded", String(!expanded));
             siteNav.classList.toggle("open", !expanded);
           });
+        }
+
+        // Language switcher
+        var langSwitcher = document.getElementById("lang-switcher");
+        if (langSwitcher) {
+          langSwitcher.addEventListener("change", function() {
+            document.documentElement.setAttribute("lang", langSwitcher.value);
+            try { localStorage.setItem("lang", langSwitcher.value); } catch(e) {}
+          });
+          // Restore saved preference
+          try {
+            var saved = localStorage.getItem("lang");
+            if (saved) { langSwitcher.value = saved; document.documentElement.setAttribute("lang", saved); }
+          } catch(e) {}
         }
       })();
     </script>

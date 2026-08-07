@@ -24,6 +24,24 @@ const withCommunity = entries.filter((e) => e.community_url).length;
 const withEvents = entries.filter((e) => e.events_url).length;
 const withContributors = entries.filter((e) => e.takes_contributors === true).length;
 const withRelated = entries.filter((e) => e.related_to.length > 0).length;
+
+// Founding decade distribution
+const decades = new Map<string, number>([
+  ["Before 2000", 0], ["2000–2009", 0], ["2010–2019", 0], ["2020+", 0], ["Unknown", 0]
+]);
+for (const e of entries) {
+  if (!e.founding_year) { decades.set("Unknown", (decades.get("Unknown") ?? 0) + 1); }
+  else if (e.founding_year < 2000) { decades.set("Before 2000", (decades.get("Before 2000") ?? 0) + 1); }
+  else if (e.founding_year < 2010) { decades.set("2000–2009", (decades.get("2000–2009") ?? 0) + 1); }
+  else if (e.founding_year < 2020) { decades.set("2010–2019", (decades.get("2010–2019") ?? 0) + 1); }
+  else { decades.set("2020+", (decades.get("2020+") ?? 0) + 1); }
+}
+const maxDecade = Math.max(...[...decades.values()], 1);
+
+// Org maturity
+const mature = entries.filter((e) => e.founding_year && e.founding_year < 2010).length;
+const growing = entries.filter((e) => e.founding_year && e.founding_year >= 2010 && e.founding_year < 2020).length;
+const emerging = entries.filter((e) => e.founding_year && e.founding_year >= 2020).length;
 ---
 
 <Layout
@@ -110,6 +128,37 @@ const withRelated = entries.filter((e) => e.related_to.length > 0).length;
             aria-label={`${r.count} entries`}
           ></span>
           <span class="bar-count">{r.count}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="founding-heading">
+    <h2 id="founding-heading">Organisation maturity</h2>
+    <p>
+      How long organisations have been around, based on verified founding years
+      ({totalEntries - (decades.get("Unknown") ?? 0)} of {totalEntries} known).
+    </p>
+    <ul class="stat-row" aria-label="Maturity breakdown">
+      <li class="stat">
+        <div class="n">{mature}</div>
+        <div class="l">Established (pre-2010)</div>
+      </li>
+      <li class="stat">
+        <div class="n">{growing}</div>
+        <div class="l">Growing (2010–2019)</div>
+      </li>
+      <li class="stat">
+        <div class="n">{emerging}</div>
+        <div class="l">Emerging (2020+)</div>
+      </li>
+    </ul>
+    <div class="bar-chart" aria-label="Founding decade distribution">
+      {[...decades.entries()].map(([decade, count]) => (
+        <div class="bar-row">
+          <span class="bar-label">{decade}</span>
+          <span class="bar" style={`width:${Math.round((count / maxDecade) * 100)}%`} aria-label={`${count} entries`}></span>
+          <span class="bar-count">{count}</span>
         </div>
       ))}
     </div>
