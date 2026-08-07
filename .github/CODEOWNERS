@@ -1,0 +1,22 @@
+# Global owner: Oli reviews everything by default.
+* @olitreadwell
+
+# Data entries — the core directory content.
+/data/entries/ @olitreadwell
+
+# Schema changes affect validation and the data contract.
+/schema/ @olitreadwell
+
+# Scripts and tooling (validation, guide generation, link checking).
+/scripts/ @olitreadwell
+
+# Documentation — the guide, contributing docs, roadmap.
+/docs/ @olitreadwell
+GUIDE.md @olitreadwell
+
+# CI/CD and automation workflows.
+/.github/workflows/ @olitreadwell
+/.github/dependabot.yml @olitreadwell
+
+# Site (Astro frontend).
+/site/ @olitreadwell

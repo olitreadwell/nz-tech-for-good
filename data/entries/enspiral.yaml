@@ -3,9 +3,9 @@ domain: worker-coop / platform-coop tech
 what: Enspiral is a Wellington-founded network of people and social enterprises who support each other
   to do work that helps society, and it is the community that the decision-making tool Loomio originally
   grew out of.
-region: Wellington
+region: wellington
 website: https://www.enspiral.com
-github: ''
+github: https://github.com/enspiral
 linkedin_org: https://nz.linkedin.com/company/enspiral
 linkedin_people: []
 tags:
@@ -16,7 +16,7 @@ tags:
 related_to:
 - Loomio
 source: enspiral.com (verified via WebFetch); P2P Foundation and Corporate Rebels background via web search
-founding_year: null
-takes_contributors: null
+founding_year: 2010
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

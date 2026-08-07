@@ -1,0 +1,45 @@
+name: Stale issue and PR management
+
+# Marks abandoned issues and PRs as stale after a generous timeout,
+# then closes them after a further period. Low-traffic repo, so timeouts
+# are intentionally long. Issues/PRs with the "on-hold", "pinned", or
+# "security" label are never marked stale.
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@5bef64f19d7facfb25b37b414482c7164d639639 # v9
+        with:
+          days-before-issue-stale: 180
+          days-before-issue-close: 30
+          days-before-pr-stale: 90
+          days-before-pr-close: 30
+          stale-issue-label: stale
+          stale-pr-label: stale
+          exempt-issue-labels: on-hold,pinned,security
+          exempt-pr-labels: on-hold,pinned,security
+          stale-issue-message: >
+            This issue has been inactive for 6 months and has been marked
+            as stale. It will be closed in 30 days unless there is new
+            activity. Feel free to comment or reopen if it is still
+            relevant.
+          close-issue-message: >
+            This issue was closed due to extended inactivity. If it is
+            still relevant, please reopen it or open a new issue.
+          stale-pr-message: >
+            This PR has been inactive for 3 months and has been marked
+            as stale. It will be closed in 30 days unless there is new
+            activity.
+          close-pr-message: >
+            This PR was closed due to extended inactivity. If the work
+            is still needed, please reopen or open a new PR.

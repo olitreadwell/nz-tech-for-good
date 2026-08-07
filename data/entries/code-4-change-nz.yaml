@@ -3,7 +3,7 @@ domain: education equity tech
 what: Code 4 Change NZ is a charity that delivers free coding, robotics, and 3D design and printing programmes
   to South Auckland primary schools, working to close the digital equity gap for Māori, Pacific, and other
   underserved tamariki who miss out on tech and STEM education because of cost or access barriers.
-region: Auckland
+region: auckland
 website: https://code4changenz.org
 github: ''
 linkedin_org: ''
@@ -18,6 +18,6 @@ tags:
 related_to: []
 source: code4changenz.org homepage (verified via WebFetch) and Foundation North "Digital Equity in South Auckland" article, registered charity CC63744 since 29 October 2024
 founding_year: 2024
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-06'

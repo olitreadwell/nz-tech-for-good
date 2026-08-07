@@ -3,7 +3,7 @@ domain: digital-inclusion
 what: EPIC Westport is a Buller innovation hub and business incubator offering digital literacy
   workshops, mentoring and co-working space, set up to help the region's economy diversify into
   digital industries after major local job losses at Solid Energy and Holcim Cement.
-region: West Coast
+region: west-coast
 website: https://www.epicwestport.co.nz
 github: ''
 linkedin_org: ''
@@ -18,6 +18,6 @@ related_to: []
 source: epicwestport.co.nz About page (verified via WebFetch); Beehive.govt.nz release "EPIC co-working
   space opens in Westport"; Stuff.co.nz article on EPIC's arrival in Westport
 founding_year: 2016
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-06'

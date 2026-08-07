@@ -20,6 +20,12 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         href="https://github.com/olitreadwell/nz-tech-for-good/issues/new?template=add-entry.yml"
         >Suggest an entry</a
       >. No coding needed.
+      <a
+        class="button secondary"
+        href="https://raw.githubusercontent.com/olitreadwell/nz-tech-for-good/main/data/exports/entries.csv"
+        style="margin-left:0.5rem;font-size:0.85rem;"
+        >Export as CSV ↓</a
+      >
     </p>
   </div>
 
@@ -85,6 +91,17 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     </div>
   </form>
 
+  <div class="js-only" style="display:flex;gap:0.5rem;align-items:center;margin:0.5rem 0;">
+    <label for="sort-by" style="font-size:0.85rem;">Sort:</label>
+    <select id="sort-by" style="font:inherit;border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.25rem 0.5rem;background:var(--surface);color:var(--text);">
+      <option value="name-asc">Name A–Z</option>
+      <option value="name-desc">Name Z–A</option>
+      <option value="verified-desc">Recently verified</option>
+      <option value="verified-asc">Least recently verified</option>
+    </select>
+    <button type="button" id="random-entry" style="font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.25rem 0.7rem;cursor:pointer;font-weight:600;margin-left:auto;">🎲 Random</button>
+  </div>
+
   <p class="filter-status" id="result-count" aria-live="polite" role="status">
     Showing all {totalEntries} organisations.
   </p>
@@ -94,6 +111,19 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     <a href={import.meta.env.BASE_URL + "domains/"}>domain</a> or
     <a href={import.meta.env.BASE_URL + "regions/"}>region</a> instead.
   </p>
+
+  <div class="js-only" id="compare-bar" hidden style="margin:0.5rem 0;">
+    <button type="button" id="compare-btn" style="font:inherit;border:1px solid var(--border);background:var(--accent);color:white;border-radius:var(--radius-sm);padding:0.5rem 1rem;cursor:pointer;font-weight:600;">
+      Compare selected
+    </button>
+    <span id="compare-count" style="margin-left:0.5rem;color:var(--text-muted);"></span>
+  </div>
+
+  <div class="js-only" id="compare-view" hidden style="margin:1rem 0;padding:1rem;border:2px solid var(--accent);border-radius:var(--radius-sm);background:var(--surface);">
+    <h3 style="margin-top:0;">Comparing <span id="compare-names"></span></h3>
+    <div id="compare-content" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;"></div>
+    <button type="button" id="compare-close" style="margin-top:0.5rem;font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.3rem 0.8rem;cursor:pointer;">✕ Close</button>
+  </div>
 
   <h2 class="visually-hidden">Organisations</h2>
   <ul class="grid" id="entry-list">
@@ -118,6 +148,22 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       document.querySelectorAll("[data-entry]")
     );
     var total = cards.length;
+
+    function readURL() {
+      var p = new URLSearchParams(window.location.search);
+      return { q: p.get("q") || "", domain: p.get("domain") || "", region: p.get("region") || "", tag: p.get("tag") || "" };
+    }
+
+    function syncURL() {
+      var p = new URLSearchParams();
+      if (q.value) p.set("q", q.value);
+      if (domainSel.value) p.set("domain", domainSel.value);
+      if (regionSel.value) p.set("region", regionSel.value);
+      if (tagSel.value) p.set("tag", tagSel.value);
+      var s = p.toString();
+      var url = window.location.pathname + (s ? "?" + s : "");
+      history.replaceState(null, "", url);
+    }
 
     function apply() {
       var text = q.value.trim().toLowerCase();
@@ -147,7 +193,32 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
           "Showing " + shown + " of " + total + " organisations.";
       }
       noResults.hidden = shown !== 0;
+      if (shown === 0) {
+        noResults.innerHTML = 'No organisations match those filters. Try <a href="javascript:void(0)" id="clear-suggest">clearing all filters</a> or <a href="' + (window.location.origin + '/nz-tech-for-good/domains/') + '">browsing by domain</a>.';
+        var clearSuggest = document.getElementById("clear-suggest");
+        if (clearSuggest) {
+          clearSuggest.addEventListener("click", function() {
+            q.value = "";
+            domainSel.value = "";
+            regionSel.value = "";
+            tagSel.value = "";
+            apply();
+            q.focus();
+          });
+        }
+      }
+      syncURL();
     }
+
+    // Init from URL params on load
+    (function() {
+      var u = readURL();
+      if (u.q) q.value = u.q;
+      if (u.domain) domainSel.value = u.domain;
+      if (u.region) regionSel.value = u.region;
+      if (u.tag) tagSel.value = u.tag;
+      apply();
+    })();
 
     [q, domainSel, regionSel, tagSel].forEach(function (el) {
       el.addEventListener("input", apply);
@@ -163,5 +234,95 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         q.focus();
       });
     }
+
+    // Keyboard shortcut: press / to focus search
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "/" && document.activeElement !== q && document.activeElement?.tagName !== "INPUT" && document.activeElement?.tagName !== "TEXTAREA") {
+        e.preventDefault();
+        q.focus();
+        q.select();
+      }
+    });
+
+    // Entry comparison
+    var compareBar = document.getElementById("compare-bar");
+    var compareBtn = document.getElementById("compare-btn");
+    var compareCount = document.getElementById("compare-count");
+    var compareView = document.getElementById("compare-view");
+    var compareNames = document.getElementById("compare-names");
+    var compareContent = document.getElementById("compare-content");
+    var compareClose = document.getElementById("compare-close");
+    var selected = [];
+
+    // Inject compare checkboxes into each card
+    cards.forEach(function(card) {
+      var link = card.querySelector("h3 a");
+      if (!link) return;
+      var slug = link.getAttribute("href").split("/entry/")[1]?.replace(/\/$/, "");
+      var name = link.textContent.trim();
+      var cb = document.createElement("input");
+      cb.type = "checkbox";
+      cb.className = "compare-cb";
+      cb.setAttribute("aria-label", "Select " + name + " for comparison");
+      cb.style.cssText = "margin-right:0.4rem;cursor:pointer;";
+      cb.dataset.slug = slug;
+      cb.dataset.name = name;
+      cb.addEventListener("change", updateCompare);
+      link.parentNode.insertBefore(cb, link);
+    });
+
+    function updateCompare() {
+      var cbs = document.querySelectorAll(".compare-cb:checked");
+      selected = Array.from(cbs).map(function(cb) { return { slug: cb.dataset.slug, name: cb.dataset.name }; });
+      if (selected.length >= 2) {
+        compareBar.hidden = false;
+        compareCount.textContent = selected.length + " selected";
+      } else {
+        compareBar.hidden = true;
+        compareView.hidden = true;
+      }
+    }
+
+    compareBtn.addEventListener("click", function() {
+      if (selected.length < 2) return;
+      compareNames.textContent = selected.map(function(s) { return s.name; }).join(" vs ");
+      compareContent.innerHTML = selected.map(function(s) {
+        var card = document.querySelector('.compare-cb[data-slug="' + s.slug + '"]').closest("[data-entry]");
+        if (!card) return "";
+        return '<div style="padding:0.5rem;border:1px solid var(--border);border-radius:var(--radius-sm);">' + card.innerHTML + "</div>";
+      }).join("");
+      compareView.hidden = false;
+      compareView.scrollIntoView({ behavior: "smooth" });
+    });
+
+    compareClose.addEventListener("click", function() {
+      compareView.hidden = true;
+    });
+
+    // Sort
+    var sortBy = document.getElementById("sort-by");
+    var entryList = document.getElementById("entry-list");
+    sortBy.addEventListener("change", function() {
+      var val = sortBy.value;
+      var sorted = cards.slice().sort(function(a, b) {
+        if (val === "name-asc") return a.querySelector("h3 a").textContent.localeCompare(b.querySelector("h3 a").textContent);
+        if (val === "name-desc") return b.querySelector("h3 a").textContent.localeCompare(a.querySelector("h3 a").textContent);
+        if (val === "verified-desc") return (b.dataset.verified || "").localeCompare(a.dataset.verified || "");
+        if (val === "verified-asc") return (a.dataset.verified || "").localeCompare(b.dataset.verified || "");
+        return 0;
+      });
+      sorted.forEach(function(card) { entryList.appendChild(card); });
+      cards = Array.prototype.slice.call(document.querySelectorAll("[data-entry]"));
+    });
+
+    // Random entry
+    var randomBtn = document.getElementById("random-entry");
+    randomBtn.addEventListener("click", function() {
+      var visible = cards.filter(function(c) { return !c.hidden; });
+      if (visible.length === 0) return;
+      var pick = visible[Math.floor(Math.random() * visible.length)];
+      var link = pick.querySelector("h3 a");
+      if (link) window.location.href = link.getAttribute("href");
+    });
   })();
 </script>

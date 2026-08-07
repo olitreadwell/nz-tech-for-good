@@ -1,0 +1,10 @@
+{
+  "name": "NZ Tech-for-Good",
+  "short_name": "NZ TFG",
+  "description": "A directory of Aotearoa New Zealand organisations using technology for public good.",
+  "start_url": "/nz-tech-for-good/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": []
+}

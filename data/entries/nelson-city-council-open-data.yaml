@@ -2,7 +2,7 @@ name: Nelson City Council Open Data
 domain: open-data
 what: Nelson City Council publishes its public GIS data, such as property and infrastructure information,
   through an ArcGIS open data portal that anyone can browse for free.
-region: Nelson
+region: tasman-nelson
 website: https://data2018-12-16t234104082z-nelsoncity.opendata.arcgis.com/
 github: ''
 linkedin_org: ''
@@ -13,7 +13,7 @@ tags:
 - GIS
 related_to: []
 source: data2018-12-16t234104082z-nelsoncity.opendata.arcgis.com homepage (verified via curl, HTTP 200)
-founding_year: null
+founding_year: 2015
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-05'

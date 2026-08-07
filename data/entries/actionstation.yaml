@@ -3,9 +3,9 @@ domain: human-rights tech
 what: ActionStation is a New Zealand digital campaigning organisation that helps everyday people run online
   petitions and coordinated campaigns on issues like Te Tiriti o Waitangi (the Treaty of Waitangi), climate
   justice, and welfare.
-region: Wellington
+region: wellington
 website: https://actionstation.org.nz
-github: ''
+github: https://github.com/actionstation
 linkedin_org: https://nz.linkedin.com/company/actionstation
 linkedin_people: []
 tags:
@@ -13,10 +13,11 @@ tags:
 - advocacy
 - petitions
 - Te Tiriti
-related_to: []
+related_to:
+- Amnesty International Aotearoa New Zealand
 source: actionstation.org.nz (verified via WebFetch); Wikipedia page for co-director Kassie Hartendorp
   found via web search
-founding_year: null
-takes_contributors: null
+founding_year: 2012
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

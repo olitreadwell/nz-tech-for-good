@@ -4,7 +4,7 @@ what: GovHack is an annual 46-hour hackathon held across Australia and New Zeala
   using open government data, run in NZ cities including Auckland, Wellington, Christchurch, and Dunedin.
 region: national
 website: https://www.govhack.org
-github: ''
+github: https://github.com/GovHackNZ
 linkedin_org: https://nz.linkedin.com/company/govhack
 linkedin_people: []
 tags:
@@ -16,9 +16,9 @@ related_to:
 - data.govt.nz
 - DigitalNZ
 - LINZ Data Service
-source: 'govhack.org (verified via WebFetch — note: the separate govhack.org.nz domain has expired and
+source: 'govhack.org (verified via WebFetch ; note: the separate govhack.org.nz domain has expired and
   now redirects to an unrelated casino review site, so only govhack.org should be used)'
-founding_year: null
-takes_contributors: null
+founding_year: 2015
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

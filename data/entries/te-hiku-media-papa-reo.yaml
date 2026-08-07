@@ -3,7 +3,7 @@ domain: Māori data sovereignty / indigenous data
 what: Te Hiku Media is a Northland-based iwi (tribal) radio and media organisation whose Papa Reo project
   builds speech-recognition and language technology for te reo Māori, while keeping ownership of the language
   data with the Māori community that provided it.
-region: Kaitaia
+region: northland
 website: https://papareo.nz
 github: https://github.com/TeHikuMedia
 linkedin_org: ''
@@ -18,7 +18,7 @@ related_to:
 - Te Mana Raraunga
 source: papareo.nz, tehiku.nz, and github.com/TeHikuMedia (all verified via WebFetch); NVIDIA blog background
   via web search
-founding_year: null
-takes_contributors: null
+founding_year: 1991
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

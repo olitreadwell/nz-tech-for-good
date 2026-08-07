@@ -3,7 +3,7 @@ domain: green / climate-tech
 what: Envico Technologies is a Tauranga-based company that builds heavy-lifting drones to help protect
   New Zealand's native wildlife, using them to drop pest bait and native seeds in places that are too
   remote or dangerous for people to reach on foot.
-region: Tauranga
+region: bay-of-plenty
 website: https://www.envicotech.co.nz
 github: ''
 linkedin_org: https://nz.linkedin.com/company/envicotech
@@ -17,7 +17,7 @@ tags:
 related_to: []
 source: envicotech.co.nz About Us page (verified via WebFetch); LinkedIn company listing and Callaghan
   Innovation background found via web search
-founding_year: null
+founding_year: 2015
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-05'

@@ -3,7 +3,7 @@ domain: environmental citizen-science
 what: Kiwi Coast Trust links more than 270 community, hapu, and iwi-led pest control groups along 291 kilometres
   of Northland coastline, coordinating them with AI-enabled traps, radio-tagged kiwi tracking, and shared
   data tools so volunteers can build New Zealand's first kiwi corridor.
-region: Northland
+region: northland
 website: https://kiwicoast.org.nz
 github: ''
 linkedin_org: ''
@@ -19,7 +19,7 @@ related_to:
 - Trap.NZ
 source: kiwicoast.org.nz and kiwicoast.org.nz/about (verified via WebFetch); NZ Herald and Farmers Weekly
   coverage of AI trap technology, and Northland Regional Council partnership release, found via web search
-founding_year: null
+founding_year: 2014
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-06'

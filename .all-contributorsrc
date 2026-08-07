@@ -1,0 +1,21 @@
+{
+  "projectName": "nz-tech-for-good",
+  "projectOwner": "olitreadwell",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["README.md"],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "olitreadwell",
+      "name": "Oli Treadwell",
+      "avatar_url": "https://github.com/olitreadwell.png",
+      "profile": "https://github.com/olitreadwell",
+      "contributions": ["code", "doc", "data", "design", "ideas", "maintenance", "projectManagement", "review"]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": true
+}

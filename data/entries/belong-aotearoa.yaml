@@ -3,7 +3,7 @@ domain: refugee / migrant support tech
 what: Belong Aotearoa (formerly Auckland Regional Migrant Services) is a charity that has helped migrants,
   international students, and former refugees settle into New Zealand life for over 20 years, running
   programmes that help people find connection, housing, and work.
-region: Auckland
+region: auckland
 website: https://www.belong.org.nz/
 github: ''
 linkedin_org: ''
@@ -16,7 +16,7 @@ tags:
 related_to:
 - HOST International Aotearoa
 source: belong.org.nz homepage (verified via curl, HTTP 200); web search of belong.org.nz about pages
-founding_year: null
-takes_contributors: null
+founding_year: 2016
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

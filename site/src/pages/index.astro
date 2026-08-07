@@ -1,9 +1,11 @@
 ---
 import Layout from "../components/Layout.astro";
 import { url } from "../lib/url";
-import { totalEntries, domains, regions } from "../lib/data";
+import { totalEntries, domains, regions, recentEntries } from "../lib/data";
+import EntryCard from "../components/EntryCard.astro";
 
 const topDomains = domains.slice(0, 8);
+const newest = recentEntries.slice(0, 5);
 ---
 
 <Layout title="NZ Tech-for-Good" active="home">
@@ -63,6 +65,16 @@ const topDomains = domains.slice(0, 8);
     </ul>
     <p>
       <a href={url("/domains/")}>See all {domains.length} domains →</a>
+    </p>
+  </section>
+
+  <section aria-labelledby="recent-heading">
+    <h2 id="recent-heading">Recently added or updated</h2>
+    <ul class="grid">
+      {newest.map((entry) => <EntryCard entry={entry} />)}
+    </ul>
+    <p>
+      <a href={url("/directory/")}>Browse all {totalEntries} organisations →</a>
     </p>
   </section>
 

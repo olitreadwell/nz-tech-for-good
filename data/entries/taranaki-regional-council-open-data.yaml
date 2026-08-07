@@ -2,7 +2,7 @@ name: Taranaki Regional Council Open Data
 domain: open-data
 what: Taranaki Regional Council's open data hub lets people download public datasets and story maps about
   biodiversity, rivers, resource consents, and iwi boundaries in the Taranaki region.
-region: Taranaki
+region: taranaki
 website: https://opendata-trcnz.hub.arcgis.com/
 github: ''
 linkedin_org: ''
@@ -14,7 +14,7 @@ tags:
 - GIS
 related_to: []
 source: opendata-trcnz.hub.arcgis.com homepage (verified via curl, HTTP 200)
-founding_year: null
+founding_year: 2015
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-05'

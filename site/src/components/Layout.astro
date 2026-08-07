@@ -1,25 +1,32 @@
 ---
 import "../styles/global.css";
+import "../styles/print.css";
 import { url } from "../lib/url";
+import BackToTop from "./BackToTop.astro";
 
 interface Props {
   title: string;
   description?: string;
-  /** Which top-level nav item is current: home | directory | domains | regions | ecosystem */
+  /** Which top-level nav item is current: home | directory | domains | regions | ecosystem | tags | stats | get-involved */
   active?: string;
+  /** Optional breadcrumb trail: [{label, href}] */
+  breadcrumbs?: { label: string; href?: string }[];
 }
 
 const {
   title,
   description = "A directory of Aotearoa New Zealand organisations, projects, and networks using technology for public good.",
   active,
+  breadcrumbs,
 } = Astro.props;
 
 const nav = [
   { key: "directory", label: "Directory", href: url("/directory/") },
   { key: "domains", label: "Domains", href: url("/domains/") },
   { key: "regions", label: "Regions", href: url("/regions/") },
+  { key: "tags", label: "Tags", href: url("/tags/") },
   { key: "ecosystem", label: "Ecosystem", href: url("/ecosystem/") },
+  { key: "stats", label: "Stats", href: url("/stats/") },
   { key: "get-involved", label: "Get Involved", href: url("/get-involved/") },
 ];
 
@@ -36,9 +43,21 @@ const fullTitle =
     <meta name="description" content={description} />
     <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="alternate" type="application/rss+xml" title="NZ Tech-for-Good" href={url("/feed.xml")} />
+    <link rel="search" type="application/opensearchdescription+xml" title="NZ Tech-for-Good" href={url("/opensearch.xml")} />
+    <link rel="manifest" href={url("/manifest.json")} />
+    <script is:inline>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register(new URL("/nz-tech-for-good/sw.js", window.location.origin));
+      }
+    </script>
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
     <!-- Set the theme before paint so there is no flash; falls back to OS setting. -->
     <script is:inline>
       (function () {
@@ -53,6 +72,7 @@ const fullTitle =
     </script>
   </head>
   <body>
+    <div id="scroll-progress" style="position:fixed;top:0;left:0;height:3px;background:var(--accent,#2563eb);z-index:1000;width:0;"></div>
     <a class="skip-link" href="#main">Skip to main content</a>
     <header class="site-header">
       <div class="bar">
@@ -60,7 +80,17 @@ const fullTitle =
           <span class="mark" aria-hidden="true">◇</span>
           <span>NZ Tech-for-Good</span>
         </a>
-        <nav class="site-nav" aria-label="Primary">
+        <button
+          type="button"
+          id="menu-toggle"
+          class="js-only"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+          style="display:none;font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.4rem 0.7rem;cursor:pointer;font-weight:600;font-size:1.2rem;"
+        >
+          ☰
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
           <ul>
             {
               nav.map((item) => (
@@ -91,6 +121,25 @@ const fullTitle =
       </div>
     </header>
 
+    {
+      breadcrumbs && breadcrumbs.length > 0 && (
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            {breadcrumbs.map((crumb, i) => (
+              <li>
+                {i > 0 && <span aria-hidden="true" class="crumb-sep">/</span>}
+                {crumb.href ? (
+                  <a href={crumb.href}>{crumb.label}</a>
+                ) : (
+                  <span aria-current="page">{crumb.label}</span>
+                )}
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )
+    }
+
     <main id="main">
       <slot />
     </main>
@@ -101,16 +150,22 @@ const fullTitle =
           Community-maintained directory. Data licensed
           <a
             href="https://creativecommons.org/licenses/by-sa/4.0/"
-            rel="license">CC&nbsp;BY-SA&nbsp;4.0</a
+            target="_blank" rel="license noopener noreferrer">CC&nbsp;BY-SA&nbsp;4.0</a
           >. Every entry is verified against a live source.
         </p>
         <p style="margin:0;">
           <a href="https://github.com/olitreadwell/nz-tech-for-good"
+            target="_blank" rel="noopener noreferrer"
             >Source & how to contribute on GitHub</a
           >
         </p>
+        <p style="margin:0;font-size:0.8rem;color:var(--text-muted);">
+          Updated: {new Date().toISOString().slice(0, 10)}
+        </p>
       </div>
     </footer>
+
+    <BackToTop />
 
     <script is:inline>
       (function () {
@@ -136,7 +191,44 @@ const fullTitle =
           } catch (e) {}
           sync();
         });
+
+        // Mobile nav toggle
+        var menuToggle = document.getElementById("menu-toggle");
+        var siteNav = document.getElementById("site-nav");
+        if (menuToggle && siteNav) {
+          menuToggle.addEventListener("click", function () {
+            var expanded = menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", String(!expanded));
+            siteNav.classList.toggle("open", !expanded);
+          });
+        }
       })();
     </script>
+
+    <script is:inline>
+      // Scroll progress bar
+      (function() {
+        var bar = document.getElementById("scroll-progress");
+        if (!bar) return;
+        window.addEventListener("scroll", function() {
+          var h = document.documentElement.scrollHeight - window.innerHeight;
+          bar.style.width = h > 0 ? Math.round((window.scrollY / h) * 100) + "%" : "0";
+        });
+      })();
+    </script>
+
+    <style>
+      @media (max-width: 768px) {
+        #menu-toggle { display: inline-block !important; }
+        #site-nav { display: none; }
+        #site-nav.open { display: block; }
+        #site-nav ul {
+          flex-direction: column;
+          gap: 0.5rem;
+          padding: 0.5rem 0;
+        }
+        .bar { flex-wrap: wrap; }
+      }
+    </style>
   </body>
 </html>

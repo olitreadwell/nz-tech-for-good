@@ -2,7 +2,7 @@ name: Para Kore
 domain: green / climate-tech
 what: Para Kore is a Māori charitable trust that helps marae, kura, and communities cut waste to zero,
   teaching zero-waste practices grounded in Māori knowledge and values.
-region: Waikato
+region: waikato
 website: https://parakore.maori.nz
 github: ''
 linkedin_org: ''
@@ -14,7 +14,7 @@ tags:
 - charitable trust
 related_to: []
 source: parakore.maori.nz homepage (verified via WebFetch)
-founding_year: null
-takes_contributors: null
+founding_year: 2011
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

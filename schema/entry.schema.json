@@ -53,7 +53,24 @@
     "region": {
       "type": "string",
       "description": "The NZ region it's based in, or \"national\".",
-      "minLength": 1
+      "enum": [
+        "national",
+        "northland",
+        "auckland",
+        "waikato",
+        "bay-of-plenty",
+        "gisborne",
+        "hawkes-bay",
+        "taranaki",
+        "manawatu-whanganui",
+        "wellington",
+        "tasman-nelson",
+        "marlborough",
+        "west-coast",
+        "canterbury",
+        "otago",
+        "southland"
+      ]
     },
     "website": {
       "type": "string",

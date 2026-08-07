@@ -3,7 +3,7 @@ domain: refugee / migrant support tech
 what: The Aotearoa Resettled Community Coalition is an Auckland umbrella charity representing 26 member
   organisations from former refugee communities, helping people find housing, healthcare, and legal services,
   and giving them a collective voice on resettlement issues.
-region: Auckland
+region: auckland
 website: https://arcc.org.nz/
 github: ''
 linkedin_org: ''
@@ -18,6 +18,6 @@ related_to:
 - ChangeMakers Resettlement Forum
 source: arcc.org.nz homepage (verified via curl, HTTP 200); web search of arcc.org.nz about-us page
 founding_year: null
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

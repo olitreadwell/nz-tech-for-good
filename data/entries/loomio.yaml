@@ -2,7 +2,7 @@ name: Loomio
 domain: worker-coop / platform-coop tech
 what: Loomio is a Wellington-based worker-owned cooperative that builds open-source software helping groups,
   from community organisations to unions, discuss a topic and reach a collective decision online.
-region: Wellington
+region: wellington
 website: https://www.loomio.com
 github: https://github.com/loomio
 linkedin_org: ''
@@ -16,7 +16,7 @@ related_to:
 - Enspiral
 source: loomio.com and github.com/loomio (both verified via WebFetch); Wikipedia and P2P Foundation background
   via web search
-founding_year: null
-takes_contributors: null
+founding_year: 2012
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

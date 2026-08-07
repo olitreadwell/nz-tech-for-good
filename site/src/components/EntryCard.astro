@@ -10,6 +10,17 @@ interface Props {
 }
 const { entry, showDomain = true } = Astro.props;
 
+// Days since last verification
+const daysAgo = entry.last_verified
+  ? Math.floor((Date.now() - new Date(entry.last_verified).getTime()) / 86400000)
+  : null;
+const freshness =
+  daysAgo === null ? null
+  : daysAgo <= 7 ? "Verified this week"
+  : daysAgo <= 30 ? `Verified ${daysAgo} days ago`
+  : daysAgo <= 90 ? `Verified ${Math.round(daysAgo / 7)} weeks ago`
+  : `Verified ${Math.round(daysAgo / 30)} months ago`;
+
 const searchBlob = [
   entry.name,
   entry.what,
@@ -28,6 +39,7 @@ const searchBlob = [
   data-region={entry.region}
   data-tags={entry.tags.join("|")}
   data-search={searchBlob}
+  data-verified={entry.last_verified || ""}
 >
   {
     showDomain && (
@@ -43,6 +55,7 @@ const searchBlob = [
   <p class="meta">
     <span>📍 {entry.region}</span>
     {entry.founding_year && <span>Est. {entry.founding_year}</span>}
+    {freshness && <span class={daysAgo !== null && daysAgo > 90 ? "stale" : ""}>🕐 {freshness}</span>}
   </p>
   {
     entry.tags.length > 0 && (
@@ -58,35 +71,35 @@ const searchBlob = [
   <p class="links">
     {
       entry.website && (
-        <a href={entry.website} rel="noopener">
+        <a href={entry.website} target="_blank" rel="noopener noreferrer">
           Website<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )
     }
     {
       entry.github && (
-        <a href={entry.github} rel="noopener">
+        <a href={entry.github} target="_blank" rel="noopener noreferrer">
           GitHub<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )
     }
     {
       entry.linkedin_org && (
-        <a href={entry.linkedin_org} rel="noopener">
+        <a href={entry.linkedin_org} target="_blank" rel="noopener noreferrer">
           LinkedIn<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )
     }
     {
       entry.community_url && (
-        <a href={entry.community_url} rel="noopener">
+        <a href={entry.community_url} target="_blank" rel="noopener noreferrer">
           Join community<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )
     }
     {
       entry.events_url && (
-        <a href={entry.events_url} rel="noopener">
+        <a href={entry.events_url} target="_blank" rel="noopener noreferrer">
           Events<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )

@@ -1,0 +1,4 @@
+[codespell]
+ignore-words-list = te,ake,koordinates,linz,fale,wananga,hauora,taiao,whanau,whenua,iwi,kai,marae,papa,aroha,kura,mahi,ora,pakeha,pasifika,reo,rohe,tamariki,tangata,taonga,tapu,wai,waka,whare,wahine,toi
+skip = .git,node_modules,site/dist,site/node_modules
+quiet-level = 2

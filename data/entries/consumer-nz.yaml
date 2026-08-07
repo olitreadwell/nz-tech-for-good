@@ -3,7 +3,7 @@ domain: nonprofit / NGO tech
 what: Consumer NZ is an independent, not-for-profit organisation, running since 1959, that tests products,
   publishes reviews, and campaigns for stronger consumer protection laws so New Zealanders can make better
   purchasing decisions.
-region: Auckland
+region: auckland
 website: https://www.consumer.org.nz
 github: ''
 linkedin_org: https://nz.linkedin.com/company/consumer-nz
@@ -15,7 +15,7 @@ tags:
 - non-profit
 related_to: []
 source: consumer.org.nz/about-us (verified via WebFetch); LinkedIn company listing found via web search
-founding_year: null
-takes_contributors: null
+founding_year: 1959
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

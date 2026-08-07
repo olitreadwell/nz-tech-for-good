@@ -1,0 +1,20 @@
+<button type="button" id="back-to-top" class="js-only" aria-label="Back to top" title="Back to top" style="position:fixed;bottom:1.5rem;right:1.5rem;width:2.5rem;height:2.5rem;border-radius:50%;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;font-size:1.2rem;display:none;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.12);">↑</button>
+<script is:inline>
+  (function() {
+    var btn = document.getElementById("back-to-top");
+    if (!btn) return;
+    var ticking = false;
+    window.addEventListener("scroll", function() {
+      if (!ticking) {
+        requestAnimationFrame(function() {
+          btn.style.display = window.scrollY > 400 ? "block" : "none";
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+    btn.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  })();
+</script>
