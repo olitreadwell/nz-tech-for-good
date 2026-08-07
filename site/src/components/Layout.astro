@@ -1,4 +1,5 @@
 ---
+import "../styles/tailwind.css";
 import "../styles/global.css";
 import "../styles/print.css";
 import { url } from "../lib/url";
@@ -153,20 +154,46 @@ const fullTitle =
     </main>
 
     <footer class="site-footer" role="contentinfo">
-      <div class="inner">
-        <p style="margin:0;">
-          Community-maintained directory. Data licensed
-          <a
-            href="https://creativecommons.org/licenses/by-sa/4.0/"
-            target="_blank" rel="license noopener noreferrer">CC&nbsp;BY-SA&nbsp;4.0</a
-          >. Every entry is verified against a live source.
-        </p>
-        <p style="margin:0;">
-          <a href="https://github.com/olitreadwell/nz-tech-for-good"
-            target="_blank" rel="noopener noreferrer"
-            >Source & how to contribute on GitHub</a
-          >
-        </p>
+      <div class="inner" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;">
+        <div>
+          <h4 style="margin:0 0 0.5rem;font-size:0.9rem;">NZ Tech-for-Good</h4>
+          <p style="margin:0;font-size:0.85rem;color:var(--text-muted);">
+            Community-maintained directory of Aotearoa organisations using technology for public good.
+            <br/><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a>.
+          </p>
+        </div>
+        <div>
+          <h4 style="margin:0 0 0.5rem;font-size:0.9rem;">Browse</h4>
+          <ul style="list-style:none;padding:0;margin:0;font-size:0.85rem;">
+            <li><a href={url("/directory/")}>Directory</a></li>
+            <li><a href={url("/map/")}>Map</a></li>
+            <li><a href={url("/domains/")}>Domains</a></li>
+            <li><a href={url("/regions/")}>Regions</a></li>
+            <li><a href={url("/tags/")}>Tags</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin:0 0 0.5rem;font-size:0.9rem;">Info</h4>
+          <ul style="list-style:none;padding:0;margin:0;font-size:0.85rem;">
+            <li><a href={url("/get-involved/")}>Get Involved</a></li>
+            <li><a href={url("/stats/")}>Stats</a></li>
+            <li><a href={url("/saved/")}>Saved entries</a></li>
+            <li><a href={url("/methodology/")}>Methodology</a></li>
+            <li><a href={url("/ecosystem/")}>Ecosystem</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin:0 0 0.5rem;font-size:0.9rem;">Contribute</h4>
+          <ul style="list-style:none;padding:0;margin:0;font-size:0.85rem;">
+            <li><a href="https://github.com/olitreadwell/nz-tech-for-good" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://github.com/olitreadwell/nz-tech-for-good/issues/new?template=add-entry.yml">Suggest entry</a></li>
+            <li><a href="https://github.com/olitreadwell/nz-tech-for-good/blob/main/CONTRIBUTING.md">Contributing</a></li>
+            <li><a href={url("/feed.xml")}>RSS Feed</a></li>
+            <li><a href={url("/api.json")}>JSON API</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="margin-top:1rem;padding-top:0.75rem;border-top:1px solid var(--border);font-size:0.8rem;color:var(--text-muted);text-align:center;">
         <p style="margin:0;font-size:0.8rem;color:var(--text-muted);">
           Updated: {new Date().toISOString().slice(0, 10)} · <span lang="mi">Aotearoa</span> ·
           <select id="lang-switcher" aria-label="Language" style="font:inherit;font-size:0.8rem;border:1px solid var(--border);border-radius:var(--radius-sm);padding:0.1rem 0.3rem;background:var(--surface);color:var(--text-muted);cursor:pointer;">

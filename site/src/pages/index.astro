@@ -2,51 +2,45 @@
 import Layout from "../components/Layout.astro";
 import { url } from "../lib/url";
 import { totalEntries, domains, regions, recentEntries } from "../lib/data";
-import EntryCard from "../components/EntryCard.astro";
+import EntryCard from "../components/EntryCard";
 
 const topDomains = domains.slice(0, 8);
 const newest = recentEntries.slice(0, 5);
 ---
 
 <Layout title="NZ Tech-for-Good" active="home">
-  <section class="prose">
-    <h1>Aotearoa New Zealand tech for public good</h1>
-    <p class="lead">
-      A plain-language directory of New Zealand organisations, projects, and
-      networks that use technology to help people: open data, civic tech,
-      climate tech, accessibility, Māori data sovereignty, humanitarian
-      response, and more.
+  <section style="padding:2rem 0 1.5rem;text-align:center;">
+    <h1 style="font-size:2.2rem;font-weight:800;letter-spacing:-0.02em;margin:0 0 0.75rem;line-height:1.2;">
+      Aotearoa New Zealand<br/>tech for public good
+    </h1>
+    <p style="font-size:1.1rem;color:var(--text-muted);max-width:36rem;margin:0 auto 1.5rem;line-height:1.5;">
+      A living directory of {totalEntries} organisations, projects, and networks
+      using technology for public benefit — open data, civic tech, climate,
+      accessibility, Māori data sovereignty, and more.
     </p>
-    <p>
-      It is for anyone looking for NZ tech-for-good groups to work with,
-      volunteer with, or learn from. It is also for anyone mapping who is doing
-      what in this space. Every entry is a short description with links, checked
-      against a live source. Nothing here is invented.
-    </p>
-    <p>
-      <a class="button" href={url("/directory/")}
-        >Browse the directory ({totalEntries} organisations)</a
-      >
-      <a class="button secondary" href={url("/get-involved/")}
-        >Get involved</a
-      >
-    </p>
+    <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;">
+      <a class="button" href={url("/directory/")} style="font-size:1rem;padding:0.7rem 1.5rem;">
+        Browse {totalEntries} organisations →
+      </a>
+      <a class="button secondary" href={url("/get-involved/")} style="font-size:1rem;padding:0.7rem 1.5rem;">
+        Get involved
+      </a>
+    </div>
+    <div style="display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;">
+      <div style="text-align:center;">
+        <div style="font-size:1.8rem;font-weight:800;color:var(--accent);">{totalEntries}</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">organisations</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:1.8rem;font-weight:800;color:var(--accent);">{domains.length}</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">domains</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:1.8rem;font-weight:800;color:var(--accent);">{regions.length}</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">regions</div>
+      </div>
+    </div>
   </section>
-
-  <ul class="stat-row" aria-label="Directory at a glance">
-    <li class="stat">
-      <div class="n">{totalEntries}</div>
-      <div class="l">organisations</div>
-    </li>
-    <li class="stat">
-      <div class="n">{domains.length}</div>
-      <div class="l">domains</div>
-    </li>
-    <li class="stat">
-      <div class="n">{regions.length}</div>
-      <div class="l">regions</div>
-    </li>
-  </ul>
 
   <section aria-labelledby="start-heading" class="js-only" id="start-here" style="background:var(--surface);border:2px solid var(--accent);border-radius:var(--radius);padding:1.25rem;margin:1.5rem 0;">
     <h2 id="start-heading" style="margin-top:0;">👋 New to NZ tech-for-good?</h2>
