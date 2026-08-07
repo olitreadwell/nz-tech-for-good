@@ -38,7 +38,7 @@ account-level settings only the repo owner can change.
 
 - [x] Pin all GitHub Actions to commit SHAs (not just major tags) for supply-
   chain safety; let Dependabot bump them. (Done 2026-08-07, all 7 workflows
-  pinned — Dependabot already configured to bump github-actions ecosystem.)
+  pinned ; Dependabot already configured to bump github-actions ecosystem.)
 - [x] Add a lint step for the YAML entries (e.g. `yamllint`) so formatting
   stays consistent, not just schema-valid. (`.yamllint.yml` + CI step, done
   2026-08-07, non-blocking.)
@@ -88,13 +88,13 @@ account-level settings only the repo owner can change.
   available, one verified source at a time. (2026-08-07 audit: 162/176 entries
   missing `github`, 126/176 missing `linkedin_org`.)
 - [ ] Backfill `founding_year` where discoverable from about pages or official
-  sources — 141/176 entries currently missing it.
+  sources ; 141/176 entries currently missing it.
 - [ ] Backfill `takes_contributors` where the org has a public volunteering or
-  open-source contribution page — 164/176 entries currently null.
+  open-source contribution page ; 164/176 entries currently null.
 - [ ] Backfill `careers_url` where the org has a careers, jobs, or volunteering
-  page — 169/176 entries currently empty.
+  page ; 169/176 entries currently empty.
 - [ ] Cross-link entries via `related_to` where real, verifiable connections
-  exist (e.g. same network, data dependency, shared founder) — 77/176 entries
+  exist (e.g. same network, data dependency, shared founder) ; 77/176 entries
   currently have empty `related_to`.
 
 ## Community & discoverability
@@ -163,12 +163,12 @@ these in a loop iteration, bring to Oli first):**
 - [x] Short "what is this and why does it matter" explainer text for each
   domain (e.g. what "food-rescue / food-security tech" covers and why it's
   its own category), shown on each domain page. (
-  `data/domain-descriptions.yaml` — all 27 domains have descriptions,
+  `data/domain-descriptions.yaml` ; all 27 domains have descriptions,
   done 2026-08-07)
 - [x] Consider new optional schema fields for a `community_url` (Slack/
   Discord invite) and `events_url` (meetup/events page), separate from
   `website`. (Already added to `schema/entry.schema.json`,
-  `data/entry.template.yaml`, and all scripts/pages — fields exist and
+  `data/entry.template.yaml`, and all scripts/pages ; fields exist and
   are rendered on entry detail pages, done 2026-08-07)
 - [x] A prominent "Add an entry" call to action on the directory/homepage
   (not just a CONTRIBUTING.md link), pointing at the existing
