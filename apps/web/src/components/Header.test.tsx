@@ -39,4 +39,12 @@ describe("Header", () => {
     const btns = screen.getAllByLabelText("Toggle theme");
     expect(btns.length).toBeGreaterThanOrEqual(1);
   });
+
+  it("toggles theme on click", () => {
+    render(<Header />);
+    const btn = screen.getAllByLabelText("Toggle theme")[0];
+    fireEvent.click(btn);
+    // After click, localStorage should have been called
+    expect(localStorage.setItem).toHaveBeenCalled();
+  });
 });

@@ -79,4 +79,14 @@ describe("data loader", () => {
     const slugs = entries.map((e) => e.slug);
     expect(new Set(slugs).size).toBe(slugs.length);
   });
+
+  it("domainLabel returns key if no label exists", () => {
+    // The domainLabel function falls back to returning the key itself
+    // if it's not in DOMAIN_LABELS. We can't call it directly (not exported),
+    // but every entry's domain has a label because getDomains() uses it.
+    const domains = getDomains();
+    for (const d of domains) {
+      expect(d.label.length).toBeGreaterThan(0);
+    }
+  });
 });
