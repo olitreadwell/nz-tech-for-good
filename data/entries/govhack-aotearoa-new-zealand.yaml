@@ -19,6 +19,6 @@ related_to:
 source: 'govhack.org (verified via WebFetch — note: the separate govhack.org.nz domain has expired and
   now redirects to an unrelated casino review site, so only govhack.org should be used)'
 founding_year: null
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

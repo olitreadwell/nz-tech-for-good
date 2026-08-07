@@ -17,7 +17,7 @@ related_to: []
 source: web search of internetnz.nz official pages; direct fetch of the site returned an HTTP 403 from
   the site's own bot-protection, but the domain is confirmed live and returning real content indexed by
   search engines
-founding_year: null
+founding_year: 1995
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-05'

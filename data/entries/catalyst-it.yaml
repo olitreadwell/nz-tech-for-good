@@ -19,6 +19,6 @@ source: web search of catalyst.net.nz official pages (about-us, our-history, gov
   direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is
   confirmed live and returning real content indexed by search engines
 founding_year: null
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

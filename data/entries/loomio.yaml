@@ -17,6 +17,6 @@ related_to:
 source: loomio.com and github.com/loomio (both verified via WebFetch); Wikipedia and P2P Foundation background
   via web search
 founding_year: null
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'

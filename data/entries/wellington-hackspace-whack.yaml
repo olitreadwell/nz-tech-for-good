@@ -17,6 +17,6 @@ related_to:
 - Hackland
 source: whack.nz homepage (verified via curl, HTTP 200); whack.nz/spaces page found via web search
 founding_year: null
-takes_contributors: null
+takes_contributors: true
 careers_url: ''
 last_verified: '2026-08-05'
