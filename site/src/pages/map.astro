@@ -1,7 +1,7 @@
 ---
 import Layout from "../components/Layout.astro";
 import { url } from "../lib/url";
-import { entries, regions, domains, slugify, domainLabel } from "../lib/data";
+import { entries, regions, domains, tags, slugify, domainLabel } from "../lib/data";
 import { REGION_COORDS } from "../lib/regions";
 
 // Group entries by region with counts
@@ -46,6 +46,36 @@ const domainColor = new Map(domains.map((d, i) => [d.key, PALETTE[i % PALETTE.le
         <select id="map-domain" style="width:100%;font:inherit;padding:0.4rem 0.6rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg);color:var(--text);">
           <option value="">All domains</option>
           {domains.map((d) => <option value={d.key}>{d.label} ({d.count})</option>)}
+        </select>
+      </div>
+      <div class="field" style="margin-bottom:0.5rem;">
+        <select id="map-region" style="width:100%;font:inherit;padding:0.4rem 0.6rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg);color:var(--text);">
+          <option value="">All regions</option>
+          {regions.map((r) => <option value={r.name}>{r.name} ({r.count})</option>)}
+        </select>
+      </div>
+      <div class="field" style="margin-bottom:0.5rem;">
+        <select id="map-tag" style="width:100%;font:inherit;padding:0.4rem 0.6rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg);color:var(--text);">
+          <option value="">All tags</option>
+          {tags.slice(0, 40).map((t) => <option value={t.name}>{t.name} ({t.count})</option>)}
+        </select>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:0.25rem 0.75rem;margin-bottom:0.5rem;font-size:0.85rem;">
+        <label style="cursor:pointer;"><input type="checkbox" id="map-contributors" /> Contributors</label>
+        <label style="cursor:pointer;"><input type="checkbox" id="map-careers" /> Careers</label>
+        <label style="cursor:pointer;"><input type="checkbox" id="map-remote" /> Remote</label>
+        <label style="cursor:pointer;"><input type="checkbox" id="map-github" /> GitHub</label>
+        <label style="cursor:pointer;"><input type="checkbox" id="map-linkedin" /> LinkedIn</label>
+        <label style="cursor:pointer;"><input type="checkbox" id="map-community" /> Community</label>
+        <label style="cursor:pointer;"><input type="checkbox" id="map-events" /> Events</label>
+      </div>
+      <div class="field" style="margin-bottom:1rem;">
+        <select id="map-decade" style="width:100%;font:inherit;padding:0.4rem 0.6rem;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bg);color:var(--text);">
+          <option value="">Any founding decade</option>
+          <option value="pre-2000">Before 2000</option>
+          <option value="2000s">2000–2009</option>
+          <option value="2010s">2010–2019</option>
+          <option value="2020s">2020+</option>
         </select>
       </div>
       <ul id="map-region-list" style="list-style:none;padding:0;margin:0;">
@@ -179,27 +209,82 @@ const domainColor = new Map(domains.map((d, i) => [d.key, PALETTE[i % PALETTE.le
     });
 
     // Search
-    document.getElementById("map-search").addEventListener("input", function() {
-      var active = document.querySelector(".region-btn.active");
-      var region = active ? active.dataset.region : "national";
-      var domain = document.getElementById("map-domain").value;
-      renderEntries(region, this.value, domain);
-    });
+    document.getElementById("map-search").addEventListener("input", applyAll);
+
+    // Region clicks set the region dropdown
+    function showRegion(regionName) {
+      document.getElementById("map-region").value = regionName;
+      var btns = document.querySelectorAll(".region-btn");
+      btns.forEach(function(b) { b.classList.toggle("active", b.dataset.region === regionName); });
+      applyAll();
+    }
 
     // Domain filter
-    document.getElementById("map-domain").addEventListener("change", function() {
-      var active = document.querySelector(".region-btn.active");
-      var region = active ? active.dataset.region : "national";
-      var search = document.getElementById("map-search").value;
-      renderEntries(region, search, this.value);
+    document.getElementById("map-domain").addEventListener("change", applyAll);
+    document.getElementById("map-region").addEventListener("change", applyAll);
+    document.getElementById("map-tag").addEventListener("change", applyAll);
+    document.getElementById("map-decade").addEventListener("change", applyAll);
+    ["map-contributors","map-careers","map-remote","map-github","map-linkedin","map-community","map-events"].forEach(function(id) {
+      document.getElementById(id).addEventListener("change", applyAll);
     });
+
+    function applyAll() {
+      var region = document.getElementById("map-region").value;
+      var search = document.getElementById("map-search").value;
+      var domain = document.getElementById("map-domain").value;
+      var tag = document.getElementById("map-tag").value;
+      var decade = document.getElementById("map-decade").value;
+      var contributors = document.getElementById("map-contributors").checked;
+      var careers = document.getElementById("map-careers").checked;
+      var remote = document.getElementById("map-remote").checked;
+      var github = document.getElementById("map-github").checked;
+      var linkedin = document.getElementById("map-linkedin").checked;
+      var community = document.getElementById("map-community").checked;
+      var events = document.getElementById("map-events").checked;
+      renderAllEntries(region, search, domain, tag, decade, contributors, careers, remote, github, linkedin, community, events);
+    }
+
+    function renderAllEntries(region, search, domain, tag, decade, contributors, careers, remote, github, linkedin, community, events) {
+      var all = entries;
+      if (region) all = all.filter(function(e) { return e.region === region; });
+      if (search) {
+        var s = search.toLowerCase();
+        all = all.filter(function(e) { return (e.name + " " + e.what + " " + e.tags.join(" ")).toLowerCase().indexOf(s) !== -1; });
+      }
+      if (domain) all = all.filter(function(e) { return e.domain === domain; });
+      if (tag) all = all.filter(function(e) { return e.tags.indexOf(tag) !== -1; });
+      if (decade) {
+        all = all.filter(function(e) {
+          var fy = e.founding_year || 0;
+          if (decade === "pre-2000") return fy < 2000 && fy > 0;
+          if (decade === "2000s") return fy >= 2000 && fy < 2010;
+          if (decade === "2010s") return fy >= 2010 && fy < 2020;
+          if (decade === "2020s") return fy >= 2020;
+        });
+      }
+      if (contributors) all = all.filter(function(e) { return e.takes_contributors === true; });
+      if (careers) all = all.filter(function(e) { return e.careers_url; });
+      if (remote) all = all.filter(function(e) { return e.tags.indexOf("remote") !== -1; });
+      if (github) all = all.filter(function(e) { return e.github; });
+      if (linkedin) all = all.filter(function(e) { return e.linkedin_org; });
+      if (community) all = all.filter(function(e) { return e.community_url; });
+      if (events) all = all.filter(function(e) { return e.events_url; });
+
+      var container = document.getElementById("map-entries");
+      if (all.length === 0) { container.innerHTML = "<p>No entries match.</p>"; return; }
+      container.innerHTML = "<h3>" + (region || "All regions") + " (" + all.length + ")</h3>" +
+        all.map(function(e) {
+          return '<div style="margin-bottom:0.5rem;padding:0.5rem;border:1px solid var(--border);border-radius:var(--radius-sm);"><a href="/nz-tech-for-good/entry/' + e.slug + '/" style="font-weight:600;">' + e.name + '</a><br/><span style="font-size:0.85rem;color:var(--text-muted);">' + e.domainLabel + ' · ' + e.region + '</span></div>';
+        }).join("");
+    }
 
     // Show national by default
     showRegion("national");
   }
 </script>
 
-<script is:inline define:vars={{ markers: markers.map(m => JSON.stringify(m)), domainColors: JSON.stringify(Object.fromEntries(domainColor)) }}>
+<script is:inline define:vars={{ markers: markers.map(m => JSON.stringify(m)), domainColors: JSON.stringify(Object.fromEntries(domainColor)), entriesJSON: JSON.stringify(entries.map(e => ({slug:e.slug,name:e.name,domain:e.domain,domainLabel:e.domainLabel,region:e.region,what:e.what,tags:e.tags,takes_contributors:e.takes_contributors,careers_url:!!e.careers_url,github:!!e.github,linkedin_org:!!e.linkedin_org,community_url:!!e.community_url,events_url:!!e.events_url,founding_year:e.founding_year}))) }}>
   var MARKERS = markers.map(JSON.parse);
   var DOMAIN_COLORS = JSON.parse(domainColors);
+  var entries = JSON.parse(entriesJSON);
 </script>

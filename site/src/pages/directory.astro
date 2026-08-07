@@ -86,7 +86,19 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         <input type="checkbox" id="f-contributors" /> Takes contributors/volunteers <span id="count-contributors" style="color:var(--text-muted);"></span>
       </label>
       <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
-        <input type="checkbox" id="f-careers" /> Has careers/volunteering page <span id="count-careers" style="color:var(--text-muted);"></span>
+        <input type="checkbox" id="f-remote" /> Remote-friendly
+      </label>
+      <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
+        <input type="checkbox" id="f-github" /> Has GitHub
+      </label>
+      <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
+        <input type="checkbox" id="f-linkedin" /> Has LinkedIn
+      </label>
+      <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
+        <input type="checkbox" id="f-community" /> Has community (Slack/Discord)
+      </label>
+      <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
+        <input type="checkbox" id="f-events" /> Has events/meetups
       </label>
     </div>
     <div class="js-only" style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;">
@@ -164,6 +176,10 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     var careersCb = document.getElementById("f-careers");
     var decadeSel = document.getElementById("f-decade");
     var remoteCb = document.getElementById("f-remote");
+    var githubCb = document.getElementById("f-github");
+    var linkedinCb = document.getElementById("f-linkedin");
+    var communityCb = document.getElementById("f-community");
+    var eventsCb = document.getElementById("f-events");
     var status = document.getElementById("result-count");
     var noResults = document.getElementById("no-results");
     var clearBtn = document.getElementById("clear-filters");
@@ -216,6 +232,10 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
           if (decade === "2020s" && fy < 2020) ok = false;
         }
         if (remoteCb.checked && card.getAttribute("data-tags").indexOf("remote") === -1) ok = false;
+        if (githubCb.checked && card.getAttribute("data-github") !== "true") ok = false;
+        if (linkedinCb.checked && card.getAttribute("data-linkedin") !== "true") ok = false;
+        if (communityCb.checked && card.getAttribute("data-community") !== "true") ok = false;
+        if (eventsCb.checked && card.getAttribute("data-events") !== "true") ok = false;
         card.hidden = !ok;
         if (ok) shown++;
       });
@@ -270,7 +290,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       el.addEventListener("input", apply);
       el.addEventListener("change", apply);
     });
-    [contributorsCb, careersCb, decadeSel, remoteCb].forEach(function(cb) {
+    [contributorsCb, careersCb, decadeSel, remoteCb, githubCb, linkedinCb, communityCb, eventsCb].forEach(function(cb) {
       cb.addEventListener("change", apply);
     });
     if (clearBtn) {
@@ -283,6 +303,10 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         careersCb.checked = false;
         decadeSel.value = "";
         remoteCb.checked = false;
+        githubCb.checked = false;
+        linkedinCb.checked = false;
+        communityCb.checked = false;
+        eventsCb.checked = false;
         apply();
         q.focus();
       });

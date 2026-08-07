@@ -43,6 +43,10 @@ const searchBlob = [
   data-contributors={entry.takes_contributors === true ? "true" : "false"}
   data-careers={entry.careers_url ? "true" : "false"}
   data-founded={entry.founding_year ? String(entry.founding_year) : ""}
+  data-github={entry.github ? "true" : "false"}
+  data-linkedin={entry.linkedin_org ? "true" : "false"}
+  data-community={entry.community_url ? "true" : "false"}
+  data-events={entry.events_url ? "true" : "false"}
 >
   {
     showDomain && (
