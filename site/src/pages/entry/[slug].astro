@@ -19,6 +19,16 @@ const slugFor = (name: string) => entries.find((e) => e.name === name)?.slug;
   { label: "Directory", href: url("/directory/") },
   { label: entry.name },
 ]}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": entry.name,
+    "description": entry.what,
+    "url": entry.website || undefined,
+    "sameAs": [entry.github, entry.linkedin_org].filter(Boolean).length > 0 ? [entry.github, entry.linkedin_org].filter(Boolean) : undefined,
+    "foundingDate": entry.founding_year ? String(entry.founding_year) : undefined,
+    "location": entry.region !== "national" ? { "@type": "Place", "name": entry.region } : { "@type": "Country", "name": "New Zealand" },
+  })} />
   <p class="crumbs">
     <a href={url("/directory/")}>← Directory</a>
   </p>

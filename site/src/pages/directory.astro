@@ -163,6 +163,20 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
           "Showing " + shown + " of " + total + " organisations.";
       }
       noResults.hidden = shown !== 0;
+      if (shown === 0) {
+        noResults.innerHTML = 'No organisations match those filters. Try <a href="javascript:void(0)" id="clear-suggest">clearing all filters</a> or <a href="' + (window.location.origin + '/nz-tech-for-good/domains/') + '">browsing by domain</a>.';
+        var clearSuggest = document.getElementById("clear-suggest");
+        if (clearSuggest) {
+          clearSuggest.addEventListener("click", function() {
+            q.value = "";
+            domainSel.value = "";
+            regionSel.value = "";
+            tagSel.value = "";
+            apply();
+            q.focus();
+          });
+        }
+      }
       syncURL();
     }
 

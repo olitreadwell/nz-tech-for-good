@@ -73,7 +73,17 @@ const fullTitle =
           <span class="mark" aria-hidden="true">◇</span>
           <span>NZ Tech-for-Good</span>
         </a>
-        <nav class="site-nav" aria-label="Primary">
+        <button
+          type="button"
+          id="menu-toggle"
+          class="js-only"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+          style="display:none;font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.4rem 0.7rem;cursor:pointer;font-weight:600;font-size:1.2rem;"
+        >
+          ☰
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
           <ul>
             {
               nav.map((item) => (
@@ -170,7 +180,32 @@ const fullTitle =
           } catch (e) {}
           sync();
         });
+
+        // Mobile nav toggle
+        var menuToggle = document.getElementById("menu-toggle");
+        var siteNav = document.getElementById("site-nav");
+        if (menuToggle && siteNav) {
+          menuToggle.addEventListener("click", function () {
+            var expanded = menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", String(!expanded));
+            siteNav.classList.toggle("open", !expanded);
+          });
+        }
       })();
     </script>
+
+    <style>
+      @media (max-width: 768px) {
+        #menu-toggle { display: inline-block !important; }
+        #site-nav { display: none; }
+        #site-nav.open { display: block; }
+        #site-nav ul {
+          flex-direction: column;
+          gap: 0.5rem;
+          padding: 0.5rem 0;
+        }
+        .bar { flex-wrap: wrap; }
+      }
+    </style>
   </body>
 </html>
