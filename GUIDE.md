@@ -33,14 +33,14 @@ Entries are grouped by **domain**: the area of public good the organisation work
 - **Mental Health Tech** (mental-health tech): 7 entries
 - **Education Equity Tech** (education equity tech): 5 entries
 - **Nonprofit & NGO Tech** (nonprofit / NGO tech): 5 entries
-- **Digital Inclusion** (digital-inclusion): 9 entries
+- **Digital Inclusion** (digital-inclusion): 12 entries
 - **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good): 5 entries
-- **Civic Tech** (civic-tech): 6 entries
+- **Civic Tech** (civic-tech): 9 entries
 - **Journalism & Media Tech** (journalism / media-tech): 5 entries
 - **Crisis & Humanitarian Tech** (crisis / humanitarian-tech): 4 entries
 - **Māori Data Sovereignty** (Māori data sovereignty / indigenous data): 7 entries
 
-**Total entries: 170, across 27 domains.**
+**Total entries: 176, across 27 domains.**
 
 ## Ecosystem overview
 
@@ -69,9 +69,9 @@ flowchart TD
     d18["Mental Health Tech<br/>(7 entries)"]
     d19["Education Equity Tech<br/>(5 entries)"]
     d20["Nonprofit & NGO Tech<br/>(5 entries)"]
-    d21["Digital Inclusion<br/>(9 entries)"]
+    d21["Digital Inclusion<br/>(12 entries)"]
     d22["Financial Inclusion & Fintech for Good<br/>(5 entries)"]
-    d23["Civic Tech<br/>(6 entries)"]
+    d23["Civic Tech<br/>(9 entries)"]
     d24["Journalism & Media Tech<br/>(5 entries)"]
     d25["Crisis & Humanitarian Tech<br/>(4 entries)"]
     d26["Māori Data Sovereignty<br/>(7 entries)"]
@@ -81,7 +81,7 @@ flowchart TD
     d23 ---|"1 link"| d8
     d23 ---|"1 link"| d1
     d23 ---|"2 links"| d10
-    d23 ---|"3 links"| d9
+    d23 ---|"4 links"| d9
     d25 ---|"1 link"| d18
     d25 ---|"1 link"| d20
     d25 ---|"2 links"| d9
@@ -382,15 +382,20 @@ flowchart TD
 ```mermaid
 flowchart TD
     n_Com2Tech["Com2Tech"]
+    n_CommunityIT["Community IT"]
     n_DigiFale["DigiFale"]
+    n_DigitalEquityCoalitionAo["Digital Equity Coalition Aotearoa"]
     n_DigitalInclusionAlliance["Digital Inclusion Alliance Aotearoa"]
     n_EPICWestport["EPIC Westport"]
     n_FibreFale["Fibre Fale"]
     n_KatoaConnectformerly2020["Katoa Connect (formerly 20/20 Trust)"]
     n_TheCauseCollective["The Cause Collective"]
     n_TolagaBayInnovation["Tolaga Bay Innovation"]
+    n_TuMaiDigital["Tu Mai Digital"]
     n_WestREAPWestlandRuralEdu["WestREAP (Westland Rural Education Activities Programme)"]
     n_Com2Tech --- n_KatoaConnectformerly2020
+    n_CommunityIT --- n_DigitalInclusionAlliance
+    n_DigitalEquityCoalitionAo --- n_DigitalInclusionAlliance
     n_DigitalInclusionAlliance --- n_KatoaConnectformerly2020
 ```
 
@@ -411,11 +416,15 @@ flowchart TD
 ```mermaid
 flowchart TD
     n_DigitalAotearoaCollectiv["Digital Aotearoa Collective"]
+    n_FYIorgnz["FYI.org.nz"]
     n_GovHackAotearoaNewZealan["GovHack Aotearoa New Zealand"]
     n_Hackland["Hackland"]
+    n_LobbyforGood["Lobby for Good"]
     n_NZGovTech["NZ GovTech"]
     n_PublicGoodAotearoaTeIwiW["Public Good Aotearoa (Te Iwi Whānui)"]
+    n_TrustDemocracy["Trust Democracy"]
     n_WellingtonHackspaceWHACK["Wellington Hackspace (WHACK)"]
+    n_FYIorgnz --- n_LobbyforGood
     n_GovHackAotearoaNewZealan --- n_NZGovTech
     n_Hackland --- n_WellingtonHackspaceWHACK
 ```
@@ -1606,7 +1615,7 @@ _5 entries in this domain._
 
 Helping people who are shut out of the digital world get online, get devices, and build the skills and confidence to use them.
 
-_9 entries in this domain._
+_12 entries in this domain._
 
 **Com2Tech**
 
@@ -1616,12 +1625,28 @@ _9 entries in this domain._
 - Tags: digital inclusion, device recycling, community tech, seniors, dunedin
 - Related: Katoa Connect (formerly 20/20 Trust)
 
+**Community IT**
+
+- Community IT is a community-based project that provides access to digital technology for those who would otherwise go without — accepting device donations, running free tech repair workshops, donating repaired equipment, and offering subsidised Skinny Jump broadband as a DIAA Industry Partner.
+- Region: national
+- Links: [Website](https://communityit.org.nz)
+- Tags: digital-inclusion, device-donation, tech-repair, broadband, community-workshops
+- Related: Digital Inclusion Alliance Aotearoa
+
 **DigiFale**
 
 - DigiFale is an intergenerational digital health literacy programme for Pacific communities, training young "navigators" to teach their elders how to use phones and online health services with confidence, starting in a Niue community in Māngere in 2020.
 - Region: Auckland
 - Links: [Website](https://digifale.com)
 - Tags: Pasifika, digital inclusion, digital health literacy, intergenerational, community navigators
+
+**Digital Equity Coalition Aotearoa**
+
+- The Digital Equity Coalition Aotearoa (DECA) connects and supports the digital inclusion community in Aotearoa, shining a light on initiatives, identifying gaps, advocating, and offering space for collaboration — working toward digital equity for every Kiwi.
+- Region: national
+- Links: [Website](https://digitalequity.nz) · [LinkedIn](https://linkedin.com/company/digital-equity-coalition-aotearoa)
+- Tags: digital-inclusion, digital-equity, coalition, advocacy, connectivity
+- Related: Digital Inclusion Alliance Aotearoa
 
 **Digital Inclusion Alliance Aotearoa**
 
@@ -1665,6 +1690,13 @@ _9 entries in this domain._
 - Region: Gisborne
 - Links: [Website](https://www.tbict.org)
 - Tags: digital equity, rural, Māori entrepreneurship, tech hub, East Coast
+
+**Tu Mai Digital**
+
+- Tu Mai Digital works with community organisations to help the most vulnerable connect and navigate the digital economy — providing affordable internet connectivity, devices, training, and guidance, operating under the Poutiri Trust umbrella.
+- Region: national
+- Links: [Website](https://tumaidigital.org.nz)
+- Tags: digital-inclusion, connectivity, devices, digital-literacy, community
 
 **WestREAP (Westland Rural Education Activities Programme)**
 
@@ -1720,7 +1752,7 @@ _5 entries in this domain._
 
 Tools that help people take part in how their communities and government work: petitions, submissions, participatory budgeting, and ways to hold decision-makers to account.
 
-_6 entries in this domain._
+_9 entries in this domain._
 
 **Digital Aotearoa Collective**
 
@@ -1728,6 +1760,14 @@ _6 entries in this domain._
 - Region: national
 - Links: [Website](https://github.com/digitalaotearoa) · [GitHub](https://github.com/digitalaotearoa) · [Community](https://digitalaotearoa.github.io/chat/)
 - Tags: community, slack, open source, civil society
+
+**FYI.org.nz**
+
+- FYI.org.nz is a free platform that helps anyone in New Zealand make Official Information Act requests to over 3,184 public authorities — publishing all requests and responses online so the public can see what information has been released, with over 34,500 requests made.
+- Region: national
+- Links: [Website](https://fyi.org.nz)
+- Tags: civic-tech, OIA, transparency, open-government, freedom-of-information
+- Related: data.govt.nz
 
 **GovHack Aotearoa New Zealand**
 
@@ -1744,6 +1784,14 @@ _6 entries in this domain._
 - Links: [Website](https://hackland.nz) · [GitHub](https://github.com/HakLand)
 - Tags: makerspace, hackerspace, community tech space, volunteer-run
 
+**Lobby for Good**
+
+- Lobby for Good is NZ's first member-funded civic portal, helping everyday people understand public decisions, keep paper trails, spot patterns, and push for change — building shared civic infrastructure to close the lobbying transparency gap in New Zealand.
+- Region: national
+- Links: [Website](https://www.lobbyforgood.co.nz)
+- Tags: civic-tech, transparency, lobbying, public-participation, accountability
+- Related: FYI.org.nz
+
 **NZ GovTech**
 
 - NZ GovTech is a Wellington-based volunteer community group, with nearly 1,000 members, that brings together public servants and technologists to talk about open government, civic innovation, and using technology to solve public problems.
@@ -1759,6 +1807,13 @@ _6 entries in this domain._
 - Links: [Website](https://www.publicgood.nz)
 - Tags: civic advocacy, public sector reform, democracy, volunteer network
 - Related: ActionStation
+
+**Trust Democracy**
+
+- Trust Democracy strengthens NZ democracy through research, education, and practical experiments — creating opportunities for everyday people to share perspectives on democracy and testing democratic innovations like public dialogue and deliberation.
+- Region: national
+- Links: [Website](https://trustdemocracy.nz)
+- Tags: civic-tech, democracy, deliberation, public-participation, research
 
 **Wellington Hackspace (WHACK)**
 

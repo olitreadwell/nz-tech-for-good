@@ -74,7 +74,17 @@ account-level settings only the repo owner can change.
 - [ ] Normalise region values against a fixed list (schema `enum`) so filtering
   and mapping stay reliable.
 - [ ] Backfill `github` and `linkedin_org` fields where missing but publicly
-  available, one verified source at a time.
+  available, one verified source at a time. (2026-08-07 audit: 162/176 entries
+  missing `github`, 126/176 missing `linkedin_org`.)
+- [ ] Backfill `founding_year` where discoverable from about pages or official
+  sources — 141/176 entries currently missing it.
+- [ ] Backfill `takes_contributors` where the org has a public volunteering or
+  open-source contribution page — 164/176 entries currently null.
+- [ ] Backfill `careers_url` where the org has a careers, jobs, or volunteering
+  page — 169/176 entries currently empty.
+- [ ] Cross-link entries via `related_to` where real, verifiable connections
+  exist (e.g. same network, data dependency, shared founder) — 77/176 entries
+  currently have empty `related_to`.
 
 ## Community & discoverability
 
@@ -155,3 +165,10 @@ these in a loop iteration, bring to Oli first):**
   employment (+3), housing (+4), health tech (+3), mental health (+4),
   journalism (+2), plus IndigiShare in iwi/Māori tech (+1). Total: 117→170
   entries, 27 domains. (2026-08-07)
+- 6 more entries across civic-tech and digital-inclusion: Lobby for Good,
+  FYI.org.nz, Trust Democracy, Digital Equity Coalition Aotearoa, Community IT,
+  Tu Mai Digital. Total: 170→176 entries. (2026-08-07)
+- Optional-field audit added to Data quality roadmap: 162 entries missing
+  `github`, 126 missing `linkedin_org`, 141 missing `founding_year`, 164
+  missing `takes_contributors`, 169 missing `careers_url`, 77 missing
+  `related_to`. (2026-08-07)
