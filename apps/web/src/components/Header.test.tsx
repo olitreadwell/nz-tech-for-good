@@ -2,11 +2,6 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { describe, it, expect, vi, beforeAll } from "vitest";
 import { Header } from "@/components/Header";
 
-// Mock next/navigation
-vi.mock("next/navigation", () => ({
-  usePathname: () => "/directory",
-}));
-
 describe("Header", () => {
   beforeAll(() => {
     Object.defineProperty(window, "localStorage", {
