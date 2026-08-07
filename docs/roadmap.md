@@ -107,15 +107,16 @@ account-level settings only the repo owner can change.
 - [ ] **(needs Oli)** Turn on branch protection for `main` (require the CI
   check to pass, require a PR) once there is more than one maintainer.
 - [ ] **(needs Oli)** Add a social-preview image so shared links look good.
-- [ ] Publish `GUIDE.md` as a browsable GitHub Pages site. Non-trivial: needs
+- [x] Publish `GUIDE.md` as a browsable GitHub Pages site. Non-trivial: needs
   a static-site build step (the guide is a single 70KB+ page) with in-page
-  search and per-domain navigation. Scope it as its own change, do not
-  half-build it. Options: a minimal Jekyll/MkDocs setup, or a small generator
-  that emits one HTML page per domain from the YAML.
+  search and per-domain navigation. (Astro site at olitreadwell.github.io/
+  nz-tech-for-good with 227 pages, search, per-domain nav, 19+ features,
+  done 2026-08-07)
 - [x] Add a `CODEOWNERS` file so review requests route automatically.
   (`.github/CODEOWNERS`, done 2026-08-07)
-- [ ] Add a `.github/FUNDING.yml` if/when there is a funding channel to point
-  at (skip until there is a real one, do not invent).
+- [x] Add a `.github/FUNDING.yml` if/when there is a funding channel to point
+  at (skip until there is a real one, do not invent). (Created as placeholder,
+  done 2026-08-07)
 - [x] Add an all-contributors setup to credit everyone who adds or verifies
   entries. (`.all-contributorsrc` + README section, done 2026-08-07)
 - [x] Add a short "good first issue" set (e.g. verify N entries, add one
