@@ -36,7 +36,7 @@ const volunteering = entries.filter(
             {communities.map((e) => (
               <li>
                 <a href={url(`/entry/${e.slug}/`)}>{e.name}</a>: {e.what}{" "}
-                <a href={e.community_url} rel="noopener">
+                <a href={e.community_url} target="_blank" rel="noopener noreferrer">
                   Join ↗
                 </a>
               </li>
@@ -68,7 +68,7 @@ const volunteering = entries.filter(
             {events.map((e) => (
               <li>
                 <a href={url(`/entry/${e.slug}/`)}>{e.name}</a>:{" "}
-                <a href={e.events_url} rel="noopener">
+                <a href={e.events_url} target="_blank" rel="noopener noreferrer">
                   Upcoming events ↗
                 </a>
               </li>
@@ -97,7 +97,7 @@ const volunteering = entries.filter(
                 {e.careers_url && (
                   <>
                     {" "}
-                    <a href={e.careers_url} rel="noopener">
+                    <a href={e.careers_url} target="_blank" rel="noopener noreferrer">
                       Careers / volunteering ↗
                     </a>
                   </>

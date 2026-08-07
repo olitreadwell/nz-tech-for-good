@@ -71,35 +71,35 @@ const searchBlob = [
   <p class="links">
     {
       entry.website && (
-        <a href={entry.website} rel="noopener">
+        <a href={entry.website} target="_blank" rel="noopener noreferrer">
           Website<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )
     }
     {
       entry.github && (
-        <a href={entry.github} rel="noopener">
+        <a href={entry.github} target="_blank" rel="noopener noreferrer">
           GitHub<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )
     }
     {
       entry.linkedin_org && (
-        <a href={entry.linkedin_org} rel="noopener">
+        <a href={entry.linkedin_org} target="_blank" rel="noopener noreferrer">
           LinkedIn<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )
     }
     {
       entry.community_url && (
-        <a href={entry.community_url} rel="noopener">
+        <a href={entry.community_url} target="_blank" rel="noopener noreferrer">
           Join community<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )
     }
     {
       entry.events_url && (
-        <a href={entry.events_url} rel="noopener">
+        <a href={entry.events_url} target="_blank" rel="noopener noreferrer">
           Events<span class="visually-hidden"> for {entry.name}</span> ↗
         </a>
       )

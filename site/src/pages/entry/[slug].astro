@@ -24,20 +24,6 @@ const sameDomain = entries
   { label: "Directory", href: url("/directory/") },
   { label: entry.name },
 ]}>
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": entry.name,
-    "description": entry.what,
-    "url": entry.website || undefined,
-    "sameAs": [entry.github, entry.linkedin_org].filter(Boolean).length > 0 ? [entry.github, entry.linkedin_org].filter(Boolean) : undefined,
-    "foundingDate": entry.founding_year ? String(entry.founding_year) : undefined,
-    "location": entry.region !== "national" ? { "@type": "Place", "name": entry.region } : { "@type": "Country", "name": "New Zealand" },
-  })} />
-  <p class="crumbs">
-    <a href={url("/directory/")}>← Directory</a>
-  </p>
-
   <div class="detail-header prose">
     <a class="pill" href={url(`/domains/${slugify(entry.domain)}/`)}
       >{entry.domainLabel}</a
@@ -55,45 +41,45 @@ const sameDomain = entries
         🔗 Copy link
       </button>
       <button type="button" id="share-twitter" class="js-only" title="Share on X (Twitter)" style="font:inherit;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--radius-sm);padding:0.3rem 0.7rem;cursor:pointer;font-weight:600;margin-right:0.5rem;">𝕏 Share</button>
-      <a href={`https://github.com/olitreadwell/nz-tech-for-good/edit/main/data/entries/${entry.slug}.yaml`} rel="noopener" style="font:inherit;font-size:0.85rem;color:var(--text-muted);">✏ Edit on GitHub</a>
+      <a href={`https://github.com/olitreadwell/nz-tech-for-good/edit/main/data/entries/${entry.slug}.yaml`} target="_blank" rel="noopener noreferrer" style="font:inherit;font-size:0.85rem;color:var(--text-muted);">✏ Edit on GitHub</a>
       {
         entry.website && (
-          <a href={entry.website} rel="noopener">
+          <a href={entry.website} target="_blank" rel="noopener noreferrer">
             Visit website ↗
           </a>
         )
       }
       {
         entry.github && (
-          <a href={entry.github} rel="noopener">
+          <a href={entry.github} target="_blank" rel="noopener noreferrer">
             GitHub ↗
           </a>
         )
       }
       {
         entry.linkedin_org && (
-          <a href={entry.linkedin_org} rel="noopener">
+          <a href={entry.linkedin_org} target="_blank" rel="noopener noreferrer">
             LinkedIn ↗
           </a>
         )
       }
       {
         entry.careers_url && (
-          <a href={entry.careers_url} rel="noopener">
+          <a href={entry.careers_url} target="_blank" rel="noopener noreferrer">
             Careers / volunteering ↗
           </a>
         )
       }
       {
         entry.community_url && (
-          <a href={entry.community_url} rel="noopener">
+          <a href={entry.community_url} target="_blank" rel="noopener noreferrer">
             Join community ↗
           </a>
         )
       }
       {
         entry.events_url && (
-          <a href={entry.events_url} rel="noopener">
+          <a href={entry.events_url} target="_blank" rel="noopener noreferrer">
             Events ↗
           </a>
         )
@@ -189,7 +175,7 @@ const sameDomain = entries
         <ul>
           {entry.linkedin_people.map((p) => (
             <li>
-              <a href={p.linkedin_url} rel="noopener">
+              <a href={p.linkedin_url} target="_blank" rel="noopener noreferrer">
                 {p.name}
               </a>{" "}
               · {p.role}
