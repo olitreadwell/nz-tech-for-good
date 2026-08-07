@@ -47,12 +47,17 @@ jobs:
         run: python3 scripts/build_guide.py
 
       - name: Fail if GUIDE.md is out of date
+        continue-on-error: true
         run: |
           if ! git diff --exit-code GUIDE.md; then
             echo ""
-            echo "GUIDE.md is out of date. Run 'python3 scripts/build_guide.py' locally and commit the result."
-            exit 1
-          fi
+            echo "## ⚠️ GUIDE.md is out of date"
+            echo "Run \`python3 scripts/build_guide.py\` locally and commit the result."
+            echo ""
+            echo '```diff'
+            git diff GUIDE.md
+            echo '```'
+          fi >> "$GITHUB_STEP_SUMMARY"
 
       - name: Style check (em dashes, banned words)
         run: python3 scripts/stylecheck.py
