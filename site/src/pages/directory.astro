@@ -98,6 +98,9 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         <option value="2010s">2010–2019</option>
         <option value="2020s">2020+</option>
       </select>
+      <label style="font-size:0.85rem;cursor:pointer;display:flex;align-items:center;gap:0.25rem;">
+        <input type="checkbox" id="f-remote" /> Remote-friendly
+      </label>
       <button
         type="button"
         id="clear-filters"
@@ -160,6 +163,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
     var contributorsCb = document.getElementById("f-contributors");
     var careersCb = document.getElementById("f-careers");
     var decadeSel = document.getElementById("f-decade");
+    var remoteCb = document.getElementById("f-remote");
     var status = document.getElementById("result-count");
     var noResults = document.getElementById("no-results");
     var clearBtn = document.getElementById("clear-filters");
@@ -211,6 +215,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
           if (decade === "2010s" && (fy < 2010 || fy >= 2020)) ok = false;
           if (decade === "2020s" && fy < 2020) ok = false;
         }
+        if (remoteCb.checked && card.getAttribute("data-tags").indexOf("remote") === -1) ok = false;
         card.hidden = !ok;
         if (ok) shown++;
       });
@@ -253,7 +258,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
       el.addEventListener("input", apply);
       el.addEventListener("change", apply);
     });
-    [contributorsCb, careersCb, decadeSel].forEach(function(cb) {
+    [contributorsCb, careersCb, decadeSel, remoteCb].forEach(function(cb) {
       cb.addEventListener("change", apply);
     });
     if (clearBtn) {
@@ -265,6 +270,7 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         contributorsCb.checked = false;
         careersCb.checked = false;
         decadeSel.value = "";
+        remoteCb.checked = false;
         apply();
         q.focus();
       });
