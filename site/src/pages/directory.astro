@@ -190,5 +190,14 @@ import { entries, domains, regions, tags, totalEntries } from "../lib/data";
         q.focus();
       });
     }
+
+    // Keyboard shortcut: press / to focus search
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "/" && document.activeElement !== q && document.activeElement?.tagName !== "INPUT" && document.activeElement?.tagName !== "TEXTAREA") {
+        e.preventDefault();
+        q.focus();
+        q.select();
+      }
+    });
   })();
 </script>

@@ -7,14 +7,17 @@ import BackToTop from "./BackToTop.astro";
 interface Props {
   title: string;
   description?: string;
-  /** Which top-level nav item is current: home | directory | domains | regions | ecosystem */
+  /** Which top-level nav item is current: home | directory | domains | regions | ecosystem | tags | stats | get-involved */
   active?: string;
+  /** Optional breadcrumb trail: [{label, href}] */
+  breadcrumbs?: { label: string; href?: string }[];
 }
 
 const {
   title,
   description = "A directory of Aotearoa New Zealand organisations, projects, and networks using technology for public good.",
   active,
+  breadcrumbs,
 } = Astro.props;
 
 const nav = [
@@ -100,6 +103,25 @@ const fullTitle =
         </nav>
       </div>
     </header>
+
+    {
+      breadcrumbs && breadcrumbs.length > 0 && (
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            {breadcrumbs.map((crumb, i) => (
+              <li>
+                {i > 0 && <span aria-hidden="true" class="crumb-sep">/</span>}
+                {crumb.href ? (
+                  <a href={crumb.href}>{crumb.label}</a>
+                ) : (
+                  <span aria-current="page">{crumb.label}</span>
+                )}
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )
+    }
 
     <main id="main">
       <slot />

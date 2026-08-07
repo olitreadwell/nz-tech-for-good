@@ -15,7 +15,10 @@ const related = relatedEntries(entry);
 const slugFor = (name: string) => entries.find((e) => e.name === name)?.slug;
 ---
 
-<Layout title={entry.name} description={entry.what}>
+<Layout title={entry.name} description={entry.what} breadcrumbs={[
+  { label: "Directory", href: url("/directory/") },
+  { label: entry.name },
+]}>
   <p class="crumbs">
     <a href={url("/directory/")}>← Directory</a>
   </p>
