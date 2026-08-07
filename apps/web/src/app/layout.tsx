@@ -1,4 +1,5 @@
 import "../../../../packages/ui/src/styles/globals.css";
+import "@/styles/print.css";
 import type { Metadata } from "next";
 
 import { Header } from "@/components/Header";
