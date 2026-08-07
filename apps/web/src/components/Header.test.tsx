@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeAll } from "vitest";
 import { Header } from "@/components/Header";
 
 // Mock next/navigation
@@ -7,24 +7,20 @@ vi.mock("next/navigation", () => ({
   usePathname: () => "/directory",
 }));
 
-// Mock localStorage
-const localStorageMock = (() => {
-  let store: Record<string, string> = {};
-  return {
-    getItem: vi.fn((key: string) => store[key] ?? null),
-    setItem: vi.fn((key: string, value: string) => {
-      store[key] = value;
-    }),
-    removeItem: vi.fn(),
-    clear: vi.fn(),
-  };
-})();
-Object.defineProperty(window, "localStorage", { value: localStorageMock });
-Object.defineProperty(window, "matchMedia", {
-  value: vi.fn().mockReturnValue({ matches: false }),
-});
-
 describe("Header", () => {
+  beforeAll(() => {
+    Object.defineProperty(window, "localStorage", {
+      value: {
+        getItem: vi.fn(() => null),
+        setItem: vi.fn(),
+        removeItem: vi.fn(),
+        clear: vi.fn(),
+      },
+    });
+    Object.defineProperty(window, "matchMedia", {
+      value: vi.fn().mockReturnValue({ matches: false }),
+    });
+  });
   it("renders the site name", () => {
     render(<Header />);
     expect(screen.getByText("NZ Tech-for-Good")).toBeInTheDocument();
