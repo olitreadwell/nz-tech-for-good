@@ -1139,7 +1139,7 @@ _24 entries in this domain._
 - Wellington City Council has published open geospatial data since 2010, including aerial photos, historic maps, building footprints, and hazard information, free for anyone to download and reuse.
 - Region: wellington
 - Links: [Website](https://data-wcc.opendata.arcgis.com/)
-- Tags: city council, open data, GIS
+- Tags: city council, open data, GIS, govtech
 
 ## Makerspaces & Hackerspaces
 
@@ -1477,7 +1477,7 @@ _5 entries in this domain._
 - Workbridge is a New Zealand employment service that helps disabled jobseekers find work, offering things like CV help, employer connections, and up to a year of ongoing support once someone starts a new job.
 - Region: national
 - Links: [Website](https://www.workbridge.co.nz)
-- Tags: disability employment, employment service, non-profit
+- Tags: disability employment, employment service, non-profit, disability
 - Related: IHC New Zealand, Blind Low Vision NZ
 
 ## Mental Health Tech
@@ -1579,7 +1579,7 @@ _5 entries in this domain._
 - Summer of Tech is a New Zealand charitable programme that connects students and junior tech talent with employers through internships and mentoring, helping people get their first step into a tech career.
 - Region: national
 - Links: [Website](https://www.summeroftech.co.nz) · [GitHub](https://github.com/summeroftech)
-- Tags: internships, tech careers, talent pipeline, charity
+- Tags: internships, tech careers, talent pipeline, charity, education
 - Related: Dev Academy Aotearoa
 
 ## Nonprofit & NGO Tech
@@ -1615,7 +1615,7 @@ _5 entries in this domain._
 - A free, volunteer-run meetup community for anyone interested in using technology for social good in Aotearoa. Part of the global NetSquared network, it brings together charities, community groups, social enterprises, tech professionals, and digital marketers at regular events.
 - Region: auckland
 - Links: [Website](https://www.meetup.com/tech-for-good-new-zealand/) · [Events](https://www.meetup.com/tech-for-good-new-zealand/events/)
-- Tags: community, meetup, netsquared, networking
+- Tags: community, meetup, netsquared, networking, volunteer
 
 **Volunteering New Zealand (Tūao Aotearoa)**
 
@@ -1979,7 +1979,7 @@ _7 entries in this domain._
 - Te Pā Tūwatawata is Aotearoa's first decentralised, Māori-owned data storage network, letting marae, hapū, iwi, and other Māori organisations store their data on New Zealand-owned infrastructure under their own tikanga rather than on foreign-owned cloud servers.
 - Region: national
 - Links: [Website](https://tepatuwatawata.io)
-- Tags: Māori data sovereignty, data storage, decentralised infrastructure, tikanga, open source
+- Tags: Māori data sovereignty, data storage, decentralised infrastructure, tikanga, open source, indigenous data
 - Related: Te Kāhui Raraunga
 
 ## How this is maintained / how to add an entry
