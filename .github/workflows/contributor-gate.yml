@@ -34,7 +34,7 @@ jobs:
       - name: Evaluate author
         id: evaluate
         env:
-          ACTOR: ${{ github.actor }}
+          ACTOR: ${{ github.event.pull_request.user.login }}
           ACTION: ${{ github.event.action }}
           IS_FORK: ${{ github.event.pull_request.head.repo.fork }}
         run: |
