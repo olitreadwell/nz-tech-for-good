@@ -34,6 +34,9 @@ account-level settings only the repo owner can change.
 - [x] Add a labeler workflow that auto-labels PRs touching `data/entries/`
   vs `scripts/` vs `docs/` so triage is faster. (`.github/workflows/labeler.yml`
   + `.github/labeler.yml`, done 2026-08-07)
+- [x] Deploy only on explicit merge to the `production` branch; pushes to
+  `main` never deploy (`docs/deploy.md`, production branch created 2026-08-24;
+  Vercel dashboard setting still needs the one-time flip).
 - [ ] Add an "entry count" badge or shield to the README, generated from a
   small step in CI (keeps the headline number honest as the directory grows).
 

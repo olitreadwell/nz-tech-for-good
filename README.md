@@ -37,7 +37,7 @@ purely commercial products. Aotearoa New Zealand only.
 
 **🌐 [Browse the live website](https://olitreadwell.github.io/nz-tech-for-good/)**: searchable, filter by
 domain, region, or tag, with a page for every organisation and ecosystem
-diagrams. (Deploys from `main`; give it a minute after a change.)
+diagrams. Deploys are deliberate: merge `main` into the `production` branch to ship (see `docs/deploy.md`); pushes to `main` never deploy.
 
 **📖 [Or read the full directory in GUIDE.md](GUIDE.md)**: every entry, grouped
 by domain, with a short description, region, links, tags, and diagrams
