@@ -14,16 +14,18 @@ permissions:
 
 jobs:
   auto-merge:
-    name: Approve and auto-merge safe updates
+    name: Auto-merge safe updates
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' && github.event.pull_request.head.repo.full_name == github.repository }}
 
     steps:
       - uses: actions/checkout@v4
 
-      # Approves every Dependabot PR, then enables auto-merge when the update
-      # is low-risk and every bumped release is at least MIN_AGE_DAYS old.
-      - name: Approve and conditionally auto-merge
+      # Enables auto-merge when the update is low-risk and every bumped release
+      # is at least MIN_AGE_DAYS old. GitHub Actions tokens cannot approve PRs,
+      # so nothing here approves; branch protection requiring reviews would
+      # need a PAT secret.
+      - name: Conditionally auto-merge
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

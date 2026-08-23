@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Dependabot auto-merge gate. Approves every Dependabot PR, then enables
-// auto-merge only for low-risk updates whose releases are all at least
+// Dependabot auto-merge gate. Enables auto-merge only for low-risk updates
+// whose releases are all at least
 // MIN_AGE_DAYS old. Mirrors the old Renovate minimumReleaseAge policy:
 //   - development deps: auto-merge any non-major version
 //   - production deps: auto-merge patch only
@@ -147,10 +147,8 @@ async function main() {
   const labels = (info.labels ?? []).map((l) => (typeof l === "string" ? l : l.name));
   const updates = parseUpdates(body);
 
-  if (!dryRun && prUrl) gh(`pr review ${prUrl} --approve`);
-
   if (updates.length === 0) {
-    console.log("dependabot-auto-merge: no parseable updates in PR body; approved, kept for human");
+    console.log("dependabot-auto-merge: no parseable updates in PR body; kept for human");
     return;
   }
 
@@ -191,7 +189,7 @@ async function main() {
       console.log(`dependabot-auto-merge: auto-merge enabled for ${prUrl}`);
     }
   } else {
-    console.log("dependabot-auto-merge: approved, kept for human review");
+    console.log("dependabot-auto-merge: kept for human review");
   }
 }
 
