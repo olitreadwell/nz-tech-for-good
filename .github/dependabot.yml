@@ -1,3 +1,4 @@
+# Config touch to trigger a fresh Dependabot run after the auto-merge rework.
 version: 2
 updates:
   # npm workspaces (apps/web, packages/*) are resolved from the root lockfile.
