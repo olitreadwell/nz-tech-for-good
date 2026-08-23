@@ -11,13 +11,14 @@ on:
 
 permissions:
   pull-requests: write
+  issues: write
 
 jobs:
   gate:
     name: Contributor gate
     runs-on: ubuntu-latest
     steps:
-      - uses: olitreadwell/pr-vetting@v0.3.1-beta.1
+      - uses: olitreadwell/pr-vetting@v0.4.1-beta.1
         id: vet
         with:
           pr-number: ${{ github.event.pull_request.number }}
@@ -25,3 +26,4 @@ jobs:
           allowlist: "olitreadwell,dependabot[bot]"
           min-account-age-days: 90
           min-in-repo-merged-prs: 1
+          auto-close-dormant: "true"
