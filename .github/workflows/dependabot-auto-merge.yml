@@ -1,0 +1,31 @@
+name: Dependabot auto-merge
+
+# pull_request_target runs with the base branch's secrets so Dependabot PRs
+# (which come from a fork) can be approved and auto-merged. The repo's own
+# script checks out from the base branch and only talks to the gh CLI, so no
+# untrusted PR code ever executes here.
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, edited, labeled, unlabeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    name: Approve and auto-merge safe updates
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' && github.event.pull_request.head.repo.full_name == github.repository }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Approves every Dependabot PR, then enables auto-merge when the update
+      # is low-risk and every bumped release is at least MIN_AGE_DAYS old.
+      - name: Approve and conditionally auto-merge
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MIN_AGE_DAYS: 3
+        run: node scripts/dependabot-auto-merge.mjs "$PR_URL"

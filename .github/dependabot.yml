@@ -1,0 +1,47 @@
+version: 2
+updates:
+  # npm workspaces (apps/web, packages/*) are resolved from the root lockfile.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Pacific/Auckland"
+    open-pull-requests-limit: 10
+    labels: ["dependencies"]
+    groups:
+      production-patch:
+        dependency-type: "production"
+        update-types: ["patch"]
+      production-minor:
+        dependency-type: "production"
+        update-types: ["minor"]
+      development-patch:
+        dependency-type: "development"
+        update-types: ["patch"]
+      development-minor:
+        dependency-type: "development"
+        update-types: ["minor"]
+
+  # Python build, validation, and test tooling.
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Pacific/Auckland"
+    open-pull-requests-limit: 5
+    labels: ["dependencies"]
+
+  # GitHub Actions used by the CI workflows.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Pacific/Auckland"
+    open-pull-requests-limit: 5
+    labels: ["dependencies"]
