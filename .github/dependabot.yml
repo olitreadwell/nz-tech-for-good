@@ -1,5 +1,5 @@
 # Config touch to trigger a fresh Dependabot run after the auto-merge rework.
-# Second touch: drop stale dev-patch branch that kept jest-dom 7.0.1.
+# Third touch: force Dependabot to rebase open PRs so their auto-merge checks re-run green.
 version: 2
 updates:
   # npm workspaces (apps/web, packages/*) are resolved from the root lockfile.
