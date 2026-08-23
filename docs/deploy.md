@@ -36,3 +36,21 @@ vercel --prod
 ```
 
 Deploys directly without touching any branch.
+
+## Deploy budget
+
+Vercel free tier counts every build, production and preview. Levers, biggest
+first:
+
+1. **Auto-cancel same-branch builds** — already on (`vercel.json`
+   `github.autoJobCancelation: true`). A new commit cancels queued and
+   in-progress deploys for that branch.
+2. **Skip previews for Dependabot PRs** (Vercel dashboard): Settings → Git →
+   Deploy Previews → "Only specific branches", allowlist `main`,
+   `production`, `dev`. Dependabot PRs merge automatically anyway, so their
+   preview builds are wasted.
+3. **Fewer concurrent Dependabot PRs** — `open-pull-requests-limit` in
+   `.github/dependabot.yml` caps open update PRs at once.
+4. **No git-triggered deploys at all** (last resort): set
+   `"git": { "deploymentEnabled": false }` in `vercel.json` and deploy only
+   via `vercel --prod` or a workflow with a Vercel token. Kills PR previews.

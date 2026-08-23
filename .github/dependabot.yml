@@ -8,7 +8,7 @@ updates:
       day: "monday"
       time: "06:00"
       timezone: "Pacific/Auckland"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     labels: ["dependencies"]
     ignore:
       # 7.0.1 regression: vitest matcher types stop augmenting Assertion, tsc breaks.
