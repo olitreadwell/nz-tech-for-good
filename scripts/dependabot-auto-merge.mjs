@@ -189,8 +189,12 @@ async function main() {
     if (dryRun) {
       console.log(`dependabot-auto-merge: dry-run would enable auto-merge (${updates.map((u) => u.name).join(", ")})`);
     } else {
-      gh(`pr merge ${prUrl} --auto --squash`);
-      console.log(`dependabot-auto-merge: auto-merge enabled for ${prUrl}`);
+      try {
+        gh(`pr merge ${prUrl} --auto --squash`);
+        console.log(`dependabot-auto-merge: auto-merge enabled for ${prUrl}`);
+      } catch (err) {
+        console.log(`dependabot-auto-merge: could not enable auto-merge (${err.message.split("\n")[0]}); keeping PR open`);
+      }
     }
   } else {
     console.log("dependabot-auto-merge: kept for human review");
