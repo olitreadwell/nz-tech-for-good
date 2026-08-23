@@ -74,6 +74,22 @@ Include what you verified and how in the PR description.
 Same flow: edit the YAML file, update `last_verified` to today's date, run
 `scripts/validate.py` and `scripts/build_guide.py`, then open a PR.
 
+## First-time contributors
+
+Pull requests from new accounts are checked by a contributor gate before
+they can merge. The gate looks at the GitHub account behind the PR and
+fails the PR when the account is new or has no merged pull requests in
+this repository. This stops bot and spam accounts from pushing entries
+into the directory without a human decision.
+
+A maintainer can override the gate by adding the `vetted-contributor`
+label after a manual review. That review is the real decision. The gate
+only stops automated merges, and a vetted account still has to pass the
+normal validation and style checks.
+
+If a PR looks like it was opened by a bot, a spammer, or an automated
+account, it may be closed without review.
+
 ## People and privacy
 
 Only include public professional information: something the organisation

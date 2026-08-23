@@ -1,0 +1,110 @@
+name: contributor-gate
+
+# Reputation gate for pull requests from forks. New or unknown accounts get
+# a failing status check until they meet the policy below, or a maintainer
+# vets them manually.
+#
+# Policy (tune the env block in the gate job):
+#   pass if the PR already carries the VETTED_LABEL, or the author is a
+#   bot or a repo member, or the author has:
+#     - account age >= ACCOUNT_MIN_AGE_DAYS, and
+#     - at least PRIOR_MERGED_PRS merged PRs in this repository.
+#
+# Why pull_request_target: this workflow never checks out pull request
+# code, it only reads PR metadata and the author profile through the
+# GitHub API, so running on the base branch is safe.
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled, unlabeled]
+    branches: [main]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  gate:
+    name: Contributor gate
+    runs-on: ubuntu-latest
+    env:
+      ACCOUNT_MIN_AGE_DAYS: "90"
+      PRIOR_MERGED_PRS: "1"
+      VETTED_LABEL: "vetted-contributor"
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Evaluate author
+        id: evaluate
+        env:
+          ACTOR: ${{ github.actor }}
+          ACTION: ${{ github.event.action }}
+          IS_FORK: ${{ github.event.pull_request.head.repo.fork }}
+        run: |
+          set -euo pipefail
+
+          repo="$GITHUB_REPOSITORY"
+          pr_number="${{ github.event.pull_request.number }}"
+
+          # Branches inside this repo come from trusted members only.
+          if [[ "$IS_FORK" != "true" ]]; then
+            echo "gate=pass"
+            echo "reason=same-repo branch"
+            exit 0
+          fi
+
+          # A maintainer already vetted this PR by hand.
+          if gh pr view "$pr_number" --repo "$repo" --json labels \
+            --jq '.labels[].name' | grep -qx "$VETTED_LABEL"; then
+            echo "gate=pass"
+            echo "reason=vetted by maintainer label $VETTED_LABEL"
+            exit 0
+          fi
+
+          # Bots (dependabot and friends) are first-party tooling.
+          if [[ "$ACTOR" == *"[bot]" ]]; then
+            echo "gate=pass"
+            echo "reason=trusted bot $ACTOR"
+            exit 0
+          fi
+
+          user="$(gh api "users/$ACTOR")"
+          account_type="$(jq -r .type <<<"$user")"
+          if [[ "$account_type" != "User" ]]; then
+            echo "gate=fail"
+            echo "reason=unrecognised account type $account_type"
+            exit 1
+          fi
+
+          created_at="$(jq -r .created_at <<<"$user")"
+          age_days="$(python3 -c "import datetime; print((datetime.date.today() - datetime.date.fromisoformat(\"$created_at\"[:10])).days)")"
+          prior_merged="$(gh api -X GET "search/issues" \
+            -f q="repo:$repo type:pr author:$ACTOR is:merged" \
+            --jq .total_count)"
+
+          failures=()
+          if (( age_days < ACCOUNT_MIN_AGE_DAYS )); then
+            failures+=("GitHub account age is $age_days days; minimum is $ACCOUNT_MIN_AGE_DAYS.")
+          fi
+          if (( prior_merged < PRIOR_MERGED_PRS )); then
+            failures+=("No prior merged pull requests in this repository; minimum is $PRIOR_MERGED_PRS.")
+          fi
+
+          if [[ ${#failures[@]} -gt 0 ]]; then
+            if [[ "$ACTION" == "opened" || "$ACTION" == "reopened" ]]; then
+              body="Thanks for the pull request. This repository gates first-time contributions by default. Your PR does not pass the contributor gate yet:
+              "
+              for failure in "${failures[@]}"; do
+                body+="
+                - $failure"
+              done
+              body+="
+
+              What to do: keep contributing so the account builds history, or ask a maintainer to add the \`vetted-contributor\` label after a manual review. The maintainer review is what decides; the gate just stops automation from merging.
+              "
+              gh pr comment "$pr_number" --repo "$repo" --body "$body"
+            fi
+            echo "gate=fail"
+            printf '%s\n' "${failures[@]}"
+            exit 1
+          fi
+
+          echo "gate=pass"
+          echo "reason=account age $age_days days, prior merged $prior_merged"
