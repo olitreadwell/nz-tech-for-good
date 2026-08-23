@@ -19,7 +19,7 @@ jobs:
     if: ${{ github.actor == 'dependabot[bot]' && github.event.pull_request.head.repo.full_name == github.repository }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # Enables auto-merge when the update is low-risk and every bumped release
       # is at least MIN_AGE_DAYS old. GitHub Actions tokens cannot approve PRs,
