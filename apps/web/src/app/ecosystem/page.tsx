@@ -18,7 +18,9 @@ export default function EcosystemPage() {
       const da = e.domain;
       const db = target.domain;
       const key = [da, db].sort().join("||");
-      const existing = domainEdges.find((x) => [x.a, x.b].sort().join("||") === key);
+      const existing = domainEdges.find(
+        (x) => [x.a, x.b].sort().join("||") === key,
+      );
       if (existing) existing.count++;
       else domainEdges.push({ a: da, b: db, count: 1 });
     }

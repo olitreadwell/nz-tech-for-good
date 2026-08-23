@@ -56,70 +56,71 @@ export function MapClient({ entries }: { entries: Entry[] }) {
       const L = (window as any).L;
       if (!L || !mapRef.current) return;
 
-    const map = L.map(mapRef.current).setView([-40.9, 174.0], 6);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "&copy; OSM",
-      maxZoom: 18,
-    }).addTo(map);
+      const map = L.map(mapRef.current).setView([-40.9, 174.0], 6);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OSM",
+        maxZoom: 18,
+      }).addTo(map);
 
-    const regionEntries: Record<string, Entry[]> = {};
-    entries.forEach((e) => {
-      if (!regionEntries[e.region]) regionEntries[e.region] = [];
-      regionEntries[e.region].push(e);
-    });
-
-    const regions = [...new Set(entries.map((e) => e.region))].filter(
-      (r) => REGION_COORDS[r],
-    );
-
-    regions.forEach((name) => {
-      const list = regionEntries[name] || [];
-      L.circleMarker(REGION_COORDS[name], {
-        radius: Math.max(8, Math.min(30, list.length * 2.5)),
-        fillColor: "#2563eb",
-        color: "#fff",
-        weight: 2,
-        fillOpacity: 0.8,
-      })
-        .addTo(map)
-        .bindTooltip(name + " (" + list.length + ")");
-    });
-
-    // Search
-    const search = document.getElementById("map-search") as HTMLInputElement;
-    const container = document.getElementById("map-entries")!;
-    if (search) {
-      search.addEventListener("input", () => {
-        const q = search.value.toLowerCase();
-        if (!q) {
-          container.innerHTML = "";
-          return;
-        }
-        const filtered = entries.filter((e) =>
-          (e.name + " " + e.what + " " + e.tags.join(" "))
-            .toLowerCase()
-            .includes(q),
-        );
-        container.innerHTML =
-          "<h3 class='font-bold text-sm mb-2'>Results (" +
-          filtered.length +
-          ")</h3>" +
-          filtered
-            .slice(0, 20)
-            .map(
-              (e) =>
-                "<div class='mb-1 text-sm'><a href='/entry/" +
-                e.slug +
-                "/' class='text-brand hover:underline'>" +
-                e.name +
-                "</a> <span class='text-text-muted'>· " +
-                e.domainLabel +
-                " · " +
-                e.region +
-                "</span></div>",
-            )
-            .join("");
+      const regionEntries: Record<string, Entry[]> = {};
+      entries.forEach((e) => {
+        if (!regionEntries[e.region]) regionEntries[e.region] = [];
+        regionEntries[e.region].push(e);
       });
+
+      const regions = [...new Set(entries.map((e) => e.region))].filter(
+        (r) => REGION_COORDS[r],
+      );
+
+      regions.forEach((name) => {
+        const list = regionEntries[name] || [];
+        L.circleMarker(REGION_COORDS[name], {
+          radius: Math.max(8, Math.min(30, list.length * 2.5)),
+          fillColor: "#2563eb",
+          color: "#fff",
+          weight: 2,
+          fillOpacity: 0.8,
+        })
+          .addTo(map)
+          .bindTooltip(name + " (" + list.length + ")");
+      });
+
+      // Search
+      const search = document.getElementById("map-search") as HTMLInputElement;
+      const container = document.getElementById("map-entries")!;
+      if (search) {
+        search.addEventListener("input", () => {
+          const q = search.value.toLowerCase();
+          if (!q) {
+            container.innerHTML = "";
+            return;
+          }
+          const filtered = entries.filter((e) =>
+            (e.name + " " + e.what + " " + e.tags.join(" "))
+              .toLowerCase()
+              .includes(q),
+          );
+          container.innerHTML =
+            "<h3 class='font-bold text-sm mb-2'>Results (" +
+            filtered.length +
+            ")</h3>" +
+            filtered
+              .slice(0, 20)
+              .map(
+                (e) =>
+                  "<div class='mb-1 text-sm'><a href='/entry/" +
+                  e.slug +
+                  "/' class='text-brand hover:underline'>" +
+                  e.name +
+                  "</a> <span class='text-text-muted'>· " +
+                  e.domainLabel +
+                  " · " +
+                  e.region +
+                  "</span></div>",
+              )
+              .join("");
+        });
+      }
     };
     loadLeaflet();
   }, [entries]);

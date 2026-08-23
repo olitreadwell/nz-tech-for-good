@@ -5,7 +5,8 @@ import { getAllEntries } from "@/lib/data";
 export default function TagsPage() {
   const entries = getAllEntries();
   const tagCounts = new Map<string, number>();
-  for (const e of entries) for (const t of e.tags) tagCounts.set(t, (tagCounts.get(t) ?? 0) + 1);
+  for (const e of entries)
+    for (const t of e.tags) tagCounts.set(t, (tagCounts.get(t) ?? 0) + 1);
   const tags = [...tagCounts.entries()]
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count)

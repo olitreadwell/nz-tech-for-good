@@ -25,7 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en-NZ">
       <body className="min-h-screen antialiased flex flex-col">
-        <div id="scroll-progress" className="fixed top-0 left-0 z-[100] h-0.5 bg-brand transition-all" style={{ width: "0%" }} />
+        <div
+          id="scroll-progress"
+          className="fixed top-0 left-0 z-[100] h-0.5 bg-brand transition-all"
+          style={{ width: "0%" }}
+        />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

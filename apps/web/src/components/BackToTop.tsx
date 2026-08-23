@@ -13,7 +13,8 @@ export function BackToTop() {
     const onProgress = () => {
       if (!bar) return;
       const h = document.documentElement.scrollHeight - window.innerHeight;
-      bar.style.width = h > 0 ? `${Math.round((window.scrollY / h) * 100)}%` : "0";
+      bar.style.width =
+        h > 0 ? `${Math.round((window.scrollY / h) * 100)}%` : "0";
     };
     window.addEventListener("scroll", onProgress, { passive: true });
     return () => {

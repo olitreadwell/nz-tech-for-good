@@ -102,7 +102,10 @@ export function EntryCard({
       </h3>
       <p className="mt-1 text-sm text-text-muted line-clamp-2">{what}</p>
       <p className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-text-muted">
-        <Link href={`/regions/${region.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} className="inline-flex items-center gap-1 hover:text-brand">
+        <Link
+          href={`/regions/${region.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+          className="inline-flex items-center gap-1 hover:text-brand"
+        >
           <MapPin className="h-3.5 w-3.5" />
           {region}
         </Link>

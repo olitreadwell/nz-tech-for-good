@@ -26,13 +26,21 @@ export default async function RegionPage({
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-8">
-      <Link href="/" className="mb-4 inline-block text-sm text-text-muted hover:text-brand">← Home</Link>
+      <Link
+        href="/"
+        className="mb-4 inline-block text-sm text-text-muted hover:text-brand"
+      >
+        ← Home
+      </Link>
       <h1 className="text-3xl font-extrabold tracking-tight">{r.name}</h1>
       <p className="mt-2 text-text-muted">
-        {items.length} {items.length === 1 ? "organisation" : "organisations"} in this region.
+        {items.length} {items.length === 1 ? "organisation" : "organisations"}{" "}
+        in this region.
       </p>
       <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((entry) => <EntryCard key={entry.slug} {...entry} />)}
+        {items.map((entry) => (
+          <EntryCard key={entry.slug} {...entry} />
+        ))}
       </ul>
     </main>
   );

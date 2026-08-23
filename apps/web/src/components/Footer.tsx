@@ -51,7 +51,10 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/regions" className="text-text-muted hover:text-text">
+                <Link
+                  href="/regions"
+                  className="text-text-muted hover:text-text"
+                >
                   Regions
                 </Link>
               </li>
