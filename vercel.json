@@ -1,6 +1,6 @@
 {
-  "github": {
-    "autoJobCancelation": true
+  "git": {
+    "deploymentEnabled": false
   },
   "buildCommand": "npm run build",
   "installCommand": "npm install"
