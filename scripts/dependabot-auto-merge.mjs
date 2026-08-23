@@ -40,10 +40,12 @@ export function parseUpdates(body) {
   const plainTableRe = /^\| ([^|[\]]+) \| ([\w.+-]+) \| ([\w.+-]+) \|$/gm;
   const singleRe = /\[([^\]]+)\]\([^)]*\) from ([\w.+-]+) to ([\w.+-]+)/g;
   const pipRe = /Updates:?\s+([\w.-]+) from ([\w.+-]+) to ([\w.+-]+)/g;
+  const backtickRe = /Updates?\s+`([^`]+)` from ([\w.+-]+) to ([\w.+-]+)/g;
   for (const m of body.matchAll(linkTableRe)) updates.push({ name: m[1], from: m[2], to: m[3] });
   for (const m of body.matchAll(plainTableRe)) updates.push({ name: m[1].trim(), from: m[2], to: m[3] });
   for (const m of body.matchAll(singleRe)) updates.push({ name: m[1], from: m[2], to: m[3] });
   for (const m of body.matchAll(pipRe)) updates.push({ name: m[1], from: m[2], to: m[3] });
+  for (const m of body.matchAll(backtickRe)) updates.push({ name: m[1], from: m[2], to: m[3] });
   const clean = updates
     .map((u) => ({ name: u.name, from: versionOf(u.from), to: versionOf(u.to) }))
     .filter((u) => /^\d/.test(u.from) && /^\d/.test(u.to));
@@ -109,8 +111,9 @@ export async function githubReleaseDate(name, version) {
 export function dependencyTypeOf(name, body) {
   const group = body.match(/the (production|development)-(?:patch|minor) group/);
   if (group) return group[1];
-  if (body.includes("github-actions group")) return "actions";
-  if (body.includes("Updates:")) {
+  const head = body.split("\n").slice(0, 3).join("\n");
+  if (head.includes("github-actions group")) return "actions";
+  if (head.includes("Updates the requirements") || head.includes("Updates:")) {
     return readFileSafe("requirements-dev.txt", "").includes(name) ? "development" : "production";
   }
   for (const manifest of ["package.json", "apps/web/package.json", "packages/ui/package.json"]) {
@@ -134,8 +137,9 @@ async function releaseDateFor(name, version, ecosystem) {
 }
 
 function ecosystemOf(body) {
-  if (body.includes("github-actions group")) return "actions";
-  if (body.includes("Updates:")) return "pip";
+  const head = body.split("\n").slice(0, 3).join("\n");
+  if (head.includes("github-actions group")) return "actions";
+  if (head.includes("Updates the requirements") || head.includes("Updates:")) return "pip";
   return "npm";
 }
 
