@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-08-25 - Prune weak-fit entries, restore automation, site feedback loop
+
+- Pruned 45 weak-fit entries (176 -> 131): refugee/migrant support, legal
+  advice, housing, food rescue, media, and advocacy orgs where technology is
+  incidental to the mission. Regenerated GUIDE.md and exports, cleaned
+  `related_to` refs, untracked build artifacts.
+- Restored the weekly link-check workflow (`linkcheck.yml`, had gone missing
+  from `.github/workflows`); backfilled its unit tests.
+- Added Wayback Machine archiving (`scripts/archive_wayback.py`, weekly
+  `wayback.yml`, `data/archives.json`).
+- Added a weekly data-quality freshness sweep (`dataquality.yml`).
+- Backfilled optional fields (github, linkedin_org, founding_year,
+  takes_contributors, careers_url) for the 74 campaign orgs.
+- Added a contact page (`/contact`) and a "spot a mistake / update this entry"
+  feedback action on entry pages (pre-filled GitHub issue).
+- Git workflow: features land on `development`; a blocked `development -> main`
+  PR (#101) carries the full set. Old branches (dev, production, claude/*,
+  fix/*, dependabot/*, renovate/*) and stale worktrees cleaned up.
+
+
 All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
