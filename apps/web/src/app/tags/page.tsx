@@ -23,7 +23,7 @@ export default function TagsPage() {
           <Link
             key={t.name}
             href={`/directory?q=${encodeURIComponent(t.name)}`}
-            className="rounded-full bg-surface-alt px-3 py-1 text-sm hover:bg-brand-soft hover:text-brand"
+            className="rounded-full bg-surface-alt px-3 py-1 text-center text-sm hover:bg-brand-soft hover:text-brand"
             style={{ fontSize: `${0.75 + (t.count / tags[0].count) * 1}rem` }}
           >
             {t.name} <span className="text-text-muted">({t.count})</span>

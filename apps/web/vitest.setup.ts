@@ -3,15 +3,10 @@ import { vi } from "vitest";
 
 // next/link references window at module level — mock it before any test loads
 vi.mock("next/link", () => ({
-  default: ({
-    children,
-    href,
-  }: {
-    children: React.ReactNode;
-    href: string;
-  }) => {
+  default: (props: { children: React.ReactNode; href: string }) => {
     const React = require("react");
-    return React.createElement("a", { href }, children);
+    const { children, ...rest } = props;
+    return React.createElement("a", rest, children);
   },
 }));
 

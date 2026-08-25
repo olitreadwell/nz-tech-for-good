@@ -77,7 +77,7 @@ export default async function EntryPage({
       />
 
       <div className="mb-4 flex items-center gap-2">
-        <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-sm font-medium text-brand">
+        <span className="rounded-full bg-brand-soft px-2.5 py-0.5 text-center text-sm font-medium text-brand">
           {entry.domainLabel}
         </span>
         {entry.takes_contributors && (
@@ -194,7 +194,7 @@ export default async function EntryPage({
             {entry.tags.map((t) => (
               <span
                 key={t}
-                className="rounded-full bg-surface-alt px-2.5 py-0.5 text-sm text-text-muted"
+                className="rounded-full bg-surface-alt px-2.5 py-0.5 text-center text-sm text-text-muted"
               >
                 {t}
               </span>

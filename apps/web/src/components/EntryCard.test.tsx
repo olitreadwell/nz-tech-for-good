@@ -30,9 +30,15 @@ describe("EntryCard", () => {
   });
 
   it("shows domain badge", () => {
-    render(<EntryCard {...baseEntry} />);
+    const { container } = render(<EntryCard {...baseEntry} />);
     // Domain label appears twice: badge pill + meta row. Use getAllByText.
     expect(screen.getAllByText("Civic Tech").length).toBeGreaterThanOrEqual(1);
+    // Pill text stays centered when a long label wraps onto two lines.
+    const pills = Array.from(container.querySelectorAll("a")).filter((a) =>
+      a.textContent?.includes("Civic Tech"),
+    );
+    expect(pills.length).toBeGreaterThanOrEqual(1);
+    expect(pills[0].className).toContain("text-center");
   });
 
   it("shows region and founding year", () => {
