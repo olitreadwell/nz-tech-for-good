@@ -12,6 +12,7 @@ export async function GET() {
     `<url><loc>${base}/map</loc><priority>0.8</priority></url>`,
     `<url><loc>${base}/stats</loc><priority>0.7</priority></url>`,
     `<url><loc>${base}/get-involved</loc><priority>0.8</priority></url>`,
+    `<url><loc>${base}/contact</loc><priority>0.7</priority></url>`,
     `<url><loc>${base}/domains</loc><priority>0.7</priority></url>`,
     ...domains.map(
       (d) =>
