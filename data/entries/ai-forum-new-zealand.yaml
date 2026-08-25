@@ -6,7 +6,7 @@ what: AI Forum New Zealand is a member organisation that brings together busines
 region: national
 website: https://aiforum.org.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/aiforumnz/
 linkedin_people: []
 tags:
 - responsible AI
@@ -15,7 +15,7 @@ tags:
 - AI governance
 related_to:
 - Te Mana Raraunga
-source: aiforum.org.nz homepage (verified via WebFetch)
+source: aiforum.org.nz homepage (verified via WebFetch); linkedin_org verified from aiforum.org.nz footer and linkedin.com (2026-08-25)
 founding_year: 2017
 takes_contributors: true
 careers_url: ''

@@ -17,8 +17,8 @@ related_to:
 - DigitalNZ
 - LINZ Data Service
 source: 'govhack.org (verified via WebFetch ; note: the separate govhack.org.nz domain has expired and
-  now redirects to an unrelated casino review site, so only govhack.org should be used)'
+  now redirects to an unrelated casino review site, so only govhack.org should be used); careers_url verified via govhack.org/volunteer (2026-08-25)'
 founding_year: 2015
 takes_contributors: true
-careers_url: ''
+careers_url: https://govhack.org/volunteer/
 last_verified: '2026-08-05'

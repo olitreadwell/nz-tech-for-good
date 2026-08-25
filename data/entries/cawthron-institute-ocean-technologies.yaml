@@ -5,8 +5,8 @@ what: Cawthron Institute, a science research institute based in Nelson, builds o
   out a company called Ocean Intelligence to sell this technology.
 region: tasman-nelson
 website: https://www.cawthron.org.nz/what-we-do/ocean-health/ocean-technologies/
-github: ''
-linkedin_org: ''
+github: https://github.com/cawthron
+linkedin_org: https://www.linkedin.com/company/cawthron-institute
 linkedin_people: []
 tags:
 - ocean tech
@@ -17,7 +17,7 @@ tags:
 related_to:
 - CarbonCrop
 source: cawthron.org.nz/what-we-do/ocean-health/ocean-technologies (verified via curl, HTTP 200); cawthron.org.nz
-  news page on the Ocean Intelligence spin-out found via web search
+  news page on the Ocean Intelligence spin-out found via web search; github and linkedin_org verified for parent Cawthron Institute via github.com/cawthron and linkedin.com (2026-08-25)
 founding_year: null
 takes_contributors: null
 careers_url: ''

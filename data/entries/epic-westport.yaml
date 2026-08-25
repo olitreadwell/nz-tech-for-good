@@ -6,7 +6,7 @@ what: EPIC Westport is a Buller innovation hub and business incubator offering d
 region: west-coast
 website: https://www.epicwestport.co.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/epic-westport
 linkedin_people: []
 tags:
 - digital literacy
@@ -16,7 +16,7 @@ tags:
 - West Coast
 related_to: []
 source: epicwestport.co.nz About page (verified via WebFetch); Beehive.govt.nz release "EPIC co-working
-  space opens in Westport"; Stuff.co.nz article on EPIC's arrival in Westport
+  space opens in Westport"; Stuff.co.nz article on EPIC's arrival in Westport; linkedin_org verified via linkedin.com (2026-08-25)
 founding_year: 2016
 takes_contributors: true
 careers_url: ''

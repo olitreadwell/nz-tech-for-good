@@ -6,7 +6,7 @@ what: Digital Natives Academy is a Rotorua-based charity, started in 2014, that 
 region: bay-of-plenty
 website: https://digitalnatives.academy/
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/digitalnativesacademy
 linkedin_people: []
 tags:
 - Māori tech
@@ -16,7 +16,7 @@ tags:
 related_to:
 - Dev Academy Aotearoa
 source: digitalnatives.academy homepage (verified via curl, HTTP 200); web search of digitalnatives.academy
-  and Wikipedia
+  and Wikipedia; linkedin_org verified via linkedin.com (2026-08-25)
 founding_year: 2014
 takes_contributors: true
 careers_url: ''

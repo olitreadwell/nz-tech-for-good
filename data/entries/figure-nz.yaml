@@ -14,8 +14,8 @@ tags:
 - charity
 related_to:
 - data.govt.nz
-source: figure.nz homepage (verified via WebFetch); LinkedIn company listing found via web search
+source: figure.nz homepage (verified via WebFetch); LinkedIn company listing found via web search; careers_url (volunteer page) verified via tohu.figure.nz/external/connect_with_us (2026-08-25)
 founding_year: 2012
 takes_contributors: true
-careers_url: ''
+careers_url: https://tohu.figure.nz/external/connect_with_us/
 last_verified: '2026-08-05'

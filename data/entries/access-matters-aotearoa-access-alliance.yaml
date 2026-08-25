@@ -6,7 +6,7 @@ what: Access Matters Aotearoa (originally the Access Alliance, formed in 2017 wi
 region: national
 website: https://www.accessmatters.org.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/access-matters-aotearoa/
 linkedin_people: []
 tags:
 - accessibility
@@ -16,8 +16,8 @@ tags:
 related_to:
 - Blind Low Vision NZ
 source: accessmatters.org.nz (verified via WebFetch); founding history from abcnz.org.nz (Blind Citizens
-  NZ) found via web search
+  NZ) found via web search; linkedin_org, volunteer page and careers_url verified via accessmatters.org.nz (2026-08-25)
 founding_year: 2023
-takes_contributors: null
-careers_url: ''
+takes_contributors: true
+careers_url: https://www.accessmatters.org.nz/volunteer
 last_verified: '2026-08-05'
