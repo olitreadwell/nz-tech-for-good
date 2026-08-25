@@ -1,3 +1,4 @@
+---
 name: Kai Commitment
 domain: food-rescue / food-security tech
 what: Kai Commitment is a registered New Zealand charity running a food-waste measurement
@@ -15,9 +16,7 @@ tags:
 - sustainability
 - sdg 12.3
 - charity
-related_to:
-- KiwiHarvest
-- Kaibosh
+related_to: []
 source: Web search confirmed via kaicommitment.org.nz/about/, tmnz.co.nz/nz-food-waste-champions-12-3-kai-commitment-impact-story/,
   and NZ Charities Register CC60845 at register.charities.govt.nz/Charity/CC60845;
   direct site fetch blocked by bot protection (403) (verified 2026-08-05)

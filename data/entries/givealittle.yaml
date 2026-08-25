@@ -1,8 +1,9 @@
+---
 name: Givealittle
 domain: volunteering / giving platforms
-what: Givealittle is a New Zealand-owned, not-for-profit crowdfunding website, owned by Perpetual Guardian,
-  where people and charities can raise money online for personal causes, community projects, and disaster
-  response.
+what: Givealittle is a New Zealand-owned, not-for-profit crowdfunding website, owned
+  by Perpetual Guardian, where people and charities can raise money online for personal
+  causes, community projects, and disaster response.
 region: auckland
 website: https://www.givealittle.co.nz
 github: ''
@@ -13,10 +14,10 @@ tags:
 - giving platform
 - charity
 - fundraising
-related_to:
-- Volunteering New Zealand (Tūao Aotearoa)
-source: givealittle.co.nz homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch
+related_to: []
+source: givealittle.co.nz homepage (verified via WebFetch); LinkedIn company page
+  confirmed via WebFetch
 founding_year: 2011
-takes_contributors: null
+takes_contributors: 
 careers_url: ''
 last_verified: '2026-08-05'

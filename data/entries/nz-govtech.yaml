@@ -1,8 +1,9 @@
+---
 name: NZ GovTech
 domain: civic-tech
-what: NZ GovTech is a Wellington-based volunteer community group, with nearly 1,000 members, that brings
-  together public servants and technologists to talk about open government, civic innovation, and using
-  technology to solve public problems.
+what: NZ GovTech is a Wellington-based volunteer community group, with nearly 1,000
+  members, that brings together public servants and technologists to talk about open
+  government, civic innovation, and using technology to solve public problems.
 region: wellington
 website: https://www.meetup.com/nzgovtech/
 github: ''
@@ -15,7 +16,6 @@ tags:
 - meetup
 related_to:
 - GovHack Aotearoa New Zealand
-- GOVIS
 source: meetup.com/nzgovtech (verified via WebFetch)
 founding_year: 2019
 takes_contributors: true

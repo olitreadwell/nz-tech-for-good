@@ -1,3 +1,4 @@
+---
 name: Aotearoa Food Rescue Alliance
 domain: food-rescue / food-security tech
 what: The Aotearoa Food Rescue Alliance (AFRA) is the national peak body for food
@@ -15,10 +16,7 @@ tags:
 - advocacy
 - data
 - national
-related_to:
-- KiwiHarvest
-- Kaibosh
-- Everybody Eats
+related_to: []
 source: Web search confirmed via afra.org.nz/about-us/, waiwaste.org.nz/about/aotearoa-food-rescue-alliance/,
   LinkedIn company page, and Facebook page showing active posts in 2025; direct site
   fetch blocked by bot protection (403) (verified 2026-08-05)

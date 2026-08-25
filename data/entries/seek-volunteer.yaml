@@ -1,8 +1,10 @@
+---
 name: SEEK Volunteer
 domain: volunteering / giving platforms
-what: SEEK Volunteer is a free, non-profit platform that matches people across Aotearoa with volunteer
-  roles at community organisations, covering everything from food rescue to mental health to arts and
-  culture. It has run in New Zealand since 2015, alongside SEEK's paid job listings.
+what: SEEK Volunteer is a free, non-profit platform that matches people across Aotearoa
+  with volunteer roles at community organisations, covering everything from food rescue
+  to mental health to arts and culture. It has run in New Zealand since 2015, alongside
+  SEEK's paid job listings.
 region: national
 website: https://seekvolunteer.co.nz
 github: ''
@@ -13,11 +15,10 @@ tags:
 - volunteer matching
 - matching platform
 - community
-related_to:
-- Volunteering New Zealand (Tūao Aotearoa)
-source: seekvolunteer.co.nz homepage and volunteering pages (verified via WebFetch); Volunteering New
-  Zealand news post confirming the partnership, and coverage noting the 2015 NZ launch (verified via
-  WebSearch)
+related_to: []
+source: seekvolunteer.co.nz homepage and volunteering pages (verified via WebFetch);
+  Volunteering New Zealand news post confirming the partnership, and coverage noting
+  the 2015 NZ launch (verified via WebSearch)
 founding_year: 2015
 takes_contributors: true
 careers_url: ''
