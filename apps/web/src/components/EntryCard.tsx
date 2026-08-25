@@ -87,7 +87,7 @@ export function EntryCard({
       <div className="mb-2 flex items-center gap-2">
         <Link
           href={`/domains/${domainLabel.toLowerCase().replace(/\s+/g, "-")}`}
-          className="rounded-full bg-brand-soft px-2 py-0.5 text-xs font-medium text-brand"
+          className="rounded-full bg-brand-soft px-2 py-0.5 text-center text-xs font-medium text-brand"
         >
           {domainLabel}
         </Link>
@@ -127,7 +127,7 @@ export function EntryCard({
             <Link
               key={t}
               href={`/directory?q=${encodeURIComponent(t)}`}
-              className="rounded-full bg-surface-alt px-2 py-0.5 text-xs text-text-muted hover:bg-brand-soft hover:text-brand"
+              className="rounded-full bg-surface-alt px-2 py-0.5 text-center text-xs text-text-muted hover:bg-brand-soft hover:text-brand"
             >
               {t}
             </Link>

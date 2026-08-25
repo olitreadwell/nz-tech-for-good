@@ -47,7 +47,7 @@ export default async function DomainPage({
             <Link
               key={r.slug}
               href={`/domains/${r.slug}`}
-              className="rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-medium text-brand hover:bg-brand hover:text-white"
+              className="rounded-full bg-brand-soft px-2.5 py-0.5 text-center text-xs font-medium text-brand hover:bg-brand hover:text-white"
             >
               {r.label}
             </Link>
