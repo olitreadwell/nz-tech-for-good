@@ -6,7 +6,7 @@ what: The LINZ Data Service, run by Land Information New Zealand (a government a
 region: national
 website: https://www.linz.govt.nz/products-services/data/linz-data-service
 github: https://github.com/linz
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/toit%C5%AB-te-whenua-linz-/
 linkedin_people: []
 tags:
 - open data
@@ -17,8 +17,9 @@ tags:
 related_to:
 - data.govt.nz
 - GovHack Aotearoa
-source: linz.govt.nz page and github.com/linz (both verified via WebFetch)
+source: linz.govt.nz page and github.com/linz (both verified via WebFetch); LinkedIn company page (Toitū Te
+  Whenua) and careers page (linz.govt.nz/careers) verified via direct fetch, 2026-08-25
 founding_year: 1996
 takes_contributors: true
-careers_url: ''
+careers_url: https://www.linz.govt.nz/careers
 last_verified: '2026-08-05'

@@ -6,7 +6,7 @@ what: The Cacophony Project is a New Zealand non-profit that builds free, open-s
 region: national
 website: https://www.cacophony.org.nz
 github: https://github.com/TheCacophonyProject
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/cacophony/
 linkedin_people: []
 tags:
 - climate tech
@@ -17,7 +17,8 @@ tags:
 - predator control
 related_to: []
 source: cacophony.org.nz homepage (verified via WebFetch) and github.com/TheCacophonyProject (verified
-  via web search); opensource.com background via web search
+  via web search); opensource.com background via web search; LinkedIn company page (The Cacophony Project)
+  verified via direct fetch, 2026-08-25
 founding_year: 2015
 takes_contributors: true
 careers_url: ''

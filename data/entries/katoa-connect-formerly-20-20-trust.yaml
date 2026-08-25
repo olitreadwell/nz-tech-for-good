@@ -6,7 +6,7 @@ what: Katoa Connect, previously known as the 20/20 Trust, is a New Zealand chari
 region: national
 website: https://www.katoaconnect.org.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/katoaconnect/
 linkedin_people: []
 tags:
 - digital inclusion
@@ -14,7 +14,8 @@ tags:
 - charity
 - adult education
 related_to: []
-source: katoaconnect.org.nz homepage, redirected from 2020.org.nz (verified via WebFetch)
+source: katoaconnect.org.nz homepage, redirected from 2020.org.nz (verified via WebFetch); LinkedIn company
+  page (Katoa Connect) verified via direct fetch, 2026-08-25
 founding_year: null
 takes_contributors: null
 careers_url: ''

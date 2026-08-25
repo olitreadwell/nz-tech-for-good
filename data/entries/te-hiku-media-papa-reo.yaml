@@ -6,7 +6,7 @@ what: Te Hiku Media is a Northland-based iwi (tribal) radio and media organisati
 region: northland
 website: https://papareo.nz
 github: https://github.com/TeHikuMedia
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/te-hiku-media/
 linkedin_people: []
 tags:
 - Māori data sovereignty
@@ -17,7 +17,7 @@ tags:
 related_to:
 - Te Mana Raraunga
 source: papareo.nz, tehiku.nz, and github.com/TeHikuMedia (all verified via WebFetch); NVIDIA blog background
-  via web search
+  via web search; LinkedIn company page (Te Hiku Media) verified via direct fetch, 2026-08-25
 founding_year: 1991
 takes_contributors: true
 careers_url: ''

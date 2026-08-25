@@ -6,7 +6,7 @@ what: WestREAP is a not-for-profit based in Hokitika that has run adult and comm
 region: west-coast
 website: https://www.westreap.org.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/westreap/
 linkedin_people: []
 tags:
 - digital inclusion
@@ -16,7 +16,8 @@ tags:
 - adult education
 related_to: []
 source: westreap.org.nz/about (verified via WebFetch); aceaotearoa.org.nz article "WestREAP's ACE Programmes
-  Strengthening Rural Communities" describing its digital literacy workshops, found via web search
+  Strengthening Rural Communities" describing its digital literacy workshops, found via web search; LinkedIn
+  company page (WestREAP) verified via direct fetch, 2026-08-25
 founding_year: 1985
 takes_contributors: null
 careers_url: ''

@@ -5,8 +5,8 @@ what: Kiwa Digital is an Auckland technology company, founded in 2003, that buil
   tools for te reo Māori.
 region: auckland
 website: https://kiwadigital.com/
-github: ''
-linkedin_org: ''
+github: https://github.com/kiwa-digital
+linkedin_org: https://www.linkedin.com/company/kiwa-digital/
 linkedin_people: []
 tags:
 - Māori tech
@@ -15,8 +15,10 @@ tags:
 - startup
 related_to:
 - Te Hiku Media / Papa Reo
-source: kiwadigital.com about-us page (verified via curl and WebFetch, HTTP 200)
-founding_year: null
+source: kiwadigital.com about-us page (verified via curl and WebFetch, HTTP 200); Kiwa Digital founded 2003
+  per about-us page, GitHub org github.com/kiwa-digital and LinkedIn company page verified via direct fetch,
+  2026-08-25
+founding_year: 2003
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-05'
