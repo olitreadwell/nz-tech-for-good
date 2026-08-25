@@ -11,6 +11,7 @@ const links = [
   { href: "/ecosystem", label: "Ecosystem" },
   { href: "/stats", label: "Stats" },
   { href: "/get-involved", label: "Get Involved" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Header() {
