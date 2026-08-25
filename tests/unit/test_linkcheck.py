@@ -1,9 +1,10 @@
 """Unit tests for the non-network parts of scripts/linkcheck.py: URL
-collection and result formatting. run_lychee() and fallback_check() do
-real subprocess/network calls, so the bulk of their branches are covered
-in tests/features/linkcheck.feature with mocked collaborators; a couple
-of fallback_check()'s less common branches and all of main()'s branches
-are covered here with urlopen/collect_urls/etc monkeypatched directly.
+collection, dead/bot-block classification, and result formatting.
+run_lychee() and fallback_check() do real subprocess/network calls, so the
+bulk of their branches are covered in tests/features/linkcheck.feature with
+mocked collaborators; the classification branches and all of main()'s
+branches are covered here with urlopen/collect_urls/etc monkeypatched
+directly.
 """
 
 import urllib.error
@@ -75,6 +76,33 @@ class TestBotBlockCodes:
 
 
 class TestFallbackCheckExtraBranches:
+    def test_404_http_error_is_dead(self, monkeypatch):
+        def fake_urlopen(req, timeout=10):
+            raise urllib.error.HTTPError(req.full_url, 404, "Not Found", {}, None)
+
+        monkeypatch.setattr(linkcheck.urllib.request, "urlopen", fake_urlopen)
+        dead, bot_blocked = linkcheck.fallback_check(["https://example.org/gone"])
+        assert dead == [("https://example.org/gone", 404)]
+        assert bot_blocked == []
+
+    def test_403_http_error_is_bot_blocked(self, monkeypatch):
+        def fake_urlopen(req, timeout=10):
+            raise urllib.error.HTTPError(req.full_url, 403, "Forbidden", {}, None)
+
+        monkeypatch.setattr(linkcheck.urllib.request, "urlopen", fake_urlopen)
+        dead, bot_blocked = linkcheck.fallback_check(["https://linkedin.com/company/example"])
+        assert dead == []
+        assert bot_blocked == [("https://linkedin.com/company/example", 403)]
+
+    def test_dns_urlerror_is_dead(self, monkeypatch):
+        def fake_urlopen(req, timeout=10):
+            raise urllib.error.URLError("name resolution failed")
+
+        monkeypatch.setattr(linkcheck.urllib.request, "urlopen", fake_urlopen)
+        dead, bot_blocked = linkcheck.fallback_check(["https://nonexistent.example"])
+        assert dead == [("https://nonexistent.example", "DNS/connection error: name resolution failed")]
+        assert bot_blocked == []
+
     def test_non_404_non_bot_block_http_error_is_treated_as_bot_blocked(self, monkeypatch):
         def fake_urlopen(req, timeout=10):
             raise urllib.error.HTTPError(req.full_url, 500, "Server Error", {}, None)
