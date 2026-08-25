@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { EntryCard } from "@/components/EntryCard";
 
 const baseEntry = {
@@ -82,6 +82,34 @@ describe("EntryCard", () => {
   it("shows website link when present", () => {
     render(<EntryCard {...baseEntry} />);
     expect(screen.getAllByText("Website").length).toBeGreaterThanOrEqual(1);
+  });
+
+  it("renders a pre-filled feedback link to spot a mistake", () => {
+    const { container } = render(<EntryCard {...baseEntry} />);
+    const link = within(container).getByRole("link", {
+      name: /Spot a mistake/i,
+    });
+    expect(link).toBeInTheDocument();
+    expect(link.getAttribute("href")).toContain("issues/new");
+    expect(link.getAttribute("href")).toContain(
+      encodeURIComponent("Entry update: Test Organisation"),
+    );
+    expect(link.getAttribute("href")).toContain(
+      encodeURIComponent("/entry/test-org"),
+    );
+    expect(link.getAttribute("href")).toContain(
+      encodeURIComponent("data/entries/test-org.yaml"),
+    );
+  });
+
+  it("falls back to the slug in the feedback link when name is missing", () => {
+    const { container } = render(<EntryCard {...baseEntry} name="" />);
+    const link = within(container).getByRole("link", {
+      name: /Spot a mistake/i,
+    });
+    expect(link.getAttribute("href")).toContain(
+      encodeURIComponent("Entry update: test-org"),
+    );
   });
 
   it("shows freshness indicator", () => {
