@@ -6,7 +6,7 @@ what: The Waikato Open Data Hub is a website where nine councils across the Waik
 region: waikato
 website: https://colabsolutions.govt.nz/shared-services/geospatial-projects-and-services/wodh/
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/co-labsolutions
 linkedin_people: []
 tags:
 - open data
@@ -15,7 +15,8 @@ tags:
 - council
 related_to:
 - data.govt.nz
-source: colabsolutions.govt.nz Waikato Open Data Hub page (verified via WebFetch)
+source: colabsolutions.govt.nz Waikato Open Data Hub page (verified via WebFetch); Co-Lab Solutions LinkedIn
+  company page (operator of the hub) verified via direct fetch, 2026-08-25
 founding_year: 2016
 takes_contributors: null
 careers_url: ''

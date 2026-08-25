@@ -6,7 +6,7 @@ what: Le Va is a Pasifika-led organisation that runs Aunty Dee, a free online st
 region: auckland
 website: https://www.leva.co.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/le-va-pasifika/
 linkedin_people: []
 tags:
 - Pasifika
@@ -15,8 +15,9 @@ tags:
 - digital-tool
 - community-led
 related_to: []
-source: leva.co.nz homepage, verified 2026-08-07 via web search
+source: leva.co.nz homepage, verified 2026-08-07 via web search; LinkedIn company page (Le Va Pasifika) and
+  Work with us page verified via direct fetch, 2026-08-25
 founding_year: null
 takes_contributors: null
-careers_url: ''
+careers_url: https://www.leva.co.nz/about-us/work-with-us/
 last_verified: '2026-08-07'

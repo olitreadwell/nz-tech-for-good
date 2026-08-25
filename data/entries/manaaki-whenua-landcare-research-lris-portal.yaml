@@ -6,7 +6,7 @@ what: The Land Resource Information System (LRIS) Portal, run by Crown research 
 region: national
 website: https://soils.landcareresearch.co.nz/tools/lris-portal
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/landcare-research/
 linkedin_people: []
 tags:
 - land data
@@ -18,8 +18,9 @@ related_to:
 - LINZ Data Service (Toitū Te Whenua)
 - Koordinates
 source: soils.landcareresearch.co.nz/tools/lris-portal (verified via curl, HTTP 200); landcareresearch.co.nz
-  description pages found via web search
+  description pages found via web search; LinkedIn company page (Manaaki Whenua - Landcare Research Group)
+  and careers page verified via direct fetch, 2026-08-25
 founding_year: null
 takes_contributors: null
-careers_url: ''
+careers_url: https://www.landcareresearch.co.nz/about-us/careers-at-manaaki-whenua
 last_verified: '2026-08-05'

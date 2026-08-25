@@ -8,7 +8,7 @@ what: SEEK Volunteer is a free, non-profit platform that matches people across A
 region: national
 website: https://seekvolunteer.co.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/seek-volunteer/
 linkedin_people: []
 tags:
 - volunteering
@@ -18,7 +18,8 @@ tags:
 related_to: []
 source: seekvolunteer.co.nz homepage and volunteering pages (verified via WebFetch);
   Volunteering New Zealand news post confirming the partnership, and coverage noting
-  the 2015 NZ launch (verified via WebSearch)
+  the 2015 NZ launch (verified via WebSearch); LinkedIn company page (SEEK Volunteer) verified via direct
+  fetch, 2026-08-25
 founding_year: 2015
 takes_contributors: true
 careers_url: ''
