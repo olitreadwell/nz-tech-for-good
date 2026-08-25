@@ -346,7 +346,7 @@ _5 entries in this domain._
 
 - Access Advisors is a New Zealand digital accessibility consultancy that helps organisations, including government agencies and banks, test and design websites and services so they work for disabled people, using a panel of disabled testers with real assistive technology.
 - Region: national
-- Links: [Website](https://accessadvisors.nz)
+- Links: [Website](https://accessadvisors.nz) · [LinkedIn](https://www.linkedin.com/company/access-advisors-nz)
 - Tags: accessibility, disability, consulting, WCAG, assistive technology
 - Related: Blind Low Vision NZ, Be. Lab
 
@@ -354,7 +354,7 @@ _5 entries in this domain._
 
 - Access Matters Aotearoa (originally the Access Alliance, formed in 2017 with support from Blind Low Vision NZ) is a coalition of disabled people's organisations campaigning for an Accessibility Act that would require services and technology across New Zealand to be accessible to disabled people.
 - Region: national
-- Links: [Website](https://www.accessmatters.org.nz)
+- Links: [Website](https://www.accessmatters.org.nz) · [LinkedIn](https://www.linkedin.com/company/access-matters-aotearoa/)
 - Tags: accessibility, disability advocacy, legislation, coalition
 - Related: Blind Low Vision NZ
 
@@ -421,7 +421,7 @@ _4 entries in this domain._
 
 - AI Forum New Zealand is a member organisation that brings together businesses, researchers, and government to guide artificial intelligence in New Zealand, running working groups on AI governance and a Māori AI Advisory Panel to help make sure AI is developed responsibly and inclusively.
 - Region: national
-- Links: [Website](https://aiforum.org.nz)
+- Links: [Website](https://aiforum.org.nz) · [LinkedIn](https://www.linkedin.com/company/aiforumnz/)
 - Tags: responsible AI, tech ethics, industry network, AI governance
 - Related: Te Mana Raraunga
 
@@ -429,7 +429,7 @@ _4 entries in this domain._
 
 - AI Safety Aotearoa is an independent public education initiative that explains AI risks and safety in plain language for New Zealanders, covering topics like deepfakes, data sovereignty, algorithmic bias and election integrity through explainers, research and community events.
 - Region: wellington
-- Links: [Website](https://www.aisafetyaotearoa.org)
+- Links: [Website](https://www.aisafetyaotearoa.org) · [LinkedIn](https://www.linkedin.com/company/ai-safety-aotearoa)
 - Tags: AI safety, AI ethics, public education, responsible AI, advocacy
 
 **Brainbox Institute**
@@ -492,7 +492,7 @@ _8 entries in this domain._
 
 - Dev Academy Aotearoa is a New Zealand coding bootcamp that runs dedicated scholarships for Māori, Pasifika, and women, cutting course fees so more people from these groups can retrain as web developers, and it has graduated more than twice the share of women and Māori compared with a typical computer science degree.
 - Region: national
-- Links: [Website](https://devacademy.co.nz/)
+- Links: [Website](https://devacademy.co.nz/) · [LinkedIn](https://www.linkedin.com/school/3529441)
 - Tags: Māori tech, coding bootcamp, scholarships, digital skills
 - Related: Digital Natives Academy
 
@@ -500,7 +500,7 @@ _8 entries in this domain._
 
 - Digital Natives Academy is a Rotorua-based charity, started in 2014, that gives young people, especially Māori rangatahi (youth), free training and access to technology in coding, robotics, animation, and game development, to help them move from using technology to creating it.
 - Region: bay-of-plenty
-- Links: [Website](https://digitalnatives.academy/)
+- Links: [Website](https://digitalnatives.academy/) · [LinkedIn](https://www.linkedin.com/company/digitalnativesacademy)
 - Tags: Māori tech, youth technology education, digital skills, charity
 - Related: Dev Academy Aotearoa
 
@@ -515,7 +515,7 @@ _8 entries in this domain._
 
 - Kiwa Digital is an Auckland technology company, founded in 2003, that builds apps and cloud software helping Indigenous communities record, protect, and share their languages and cultural stories, including tools for te reo Māori.
 - Region: auckland
-- Links: [Website](https://kiwadigital.com/)
+- Links: [Website](https://kiwadigital.com/) · [GitHub](https://github.com/kiwa-digital) · [LinkedIn](https://www.linkedin.com/company/kiwa-digital/)
 - Tags: Māori tech, indigenous language technology, cultural data sovereignty, startup
 - Related: Te Hiku Media / Papa Reo
 
@@ -565,7 +565,7 @@ _3 entries in this domain._
 
 - Kai Commitment is a registered New Zealand charity running a food-waste measurement programme for large food businesses, using a Target-Measure-Act-Collaborate data framework to help signatories set reduction targets and track progress toward halving food waste by 2030.
 - Region: national
-- Links: [Website](https://kaicommitment.org.nz)
+- Links: [Website](https://kaicommitment.org.nz) · [LinkedIn](https://www.linkedin.com/showcase/kai-commitment/)
 - Tags: food waste, data measurement, sustainability, sdg 12.3, charity
 
 ## Green & Climate Tech
@@ -592,7 +592,7 @@ _9 entries in this domain._
 
 - Cawthron Institute, a science research institute based in Nelson, builds ocean sensors and data buoys that let mussel and salmon farmers check water conditions on their phones, and it recently spun out a company called Ocean Intelligence to sell this technology.
 - Region: tasman-nelson
-- Links: [Website](https://www.cawthron.org.nz/what-we-do/ocean-health/ocean-technologies/)
+- Links: [Website](https://www.cawthron.org.nz/what-we-do/ocean-health/ocean-technologies/) · [GitHub](https://github.com/cawthron) · [LinkedIn](https://www.linkedin.com/company/cawthron-institute)
 - Tags: ocean tech, aquaculture, remote sensors, research institute, climate tech
 - Related: CarbonCrop
 
@@ -621,7 +621,7 @@ _9 entries in this domain._
 
 - The Cacophony Project is a New Zealand non-profit that builds free, open-source cameras and software that use artificial intelligence to automatically spot introduced predators, like rats and stoats, so conservation workers can protect native birds more effectively.
 - Region: national
-- Links: [Website](https://www.cacophony.org.nz) · [GitHub](https://github.com/TheCacophonyProject)
+- Links: [Website](https://www.cacophony.org.nz) · [GitHub](https://github.com/TheCacophonyProject) · [LinkedIn](https://www.linkedin.com/company/cacophony/)
 - Tags: climate tech, conservation tech, AI, open source, non-profit, predator control
 
 **Toha Network**
@@ -671,7 +671,7 @@ _24 entries in this domain._
 
 - data.govt.nz is the New Zealand government's central website for finding and downloading open datasets published by government agencies, covering topics like health, education, transport, and the environment.
 - Region: national
-- Links: [Website](https://data.govt.nz)
+- Links: [Website](https://data.govt.nz) · [GitHub](https://github.com/data-govt-nz)
 - Tags: open data, government, data catalogue, govtech
 - Related: LINZ Data Service, DigitalNZ, GovHack Aotearoa
 
@@ -730,7 +730,7 @@ _24 entries in this domain._
 
 - Hawke's Bay Regional Council's open data page lets people view and download council-collected data, like water quality and environmental monitoring information, for free reuse.
 - Region: hawkes-bay
-- Links: [Website](https://www.hbrc.govt.nz/our-council/open-data/)
+- Links: [Website](https://www.hbrc.govt.nz/our-council/open-data/) · [LinkedIn](https://www.linkedin.com/company/hawkes-bay-regional-council)
 - Tags: open data, environmental data, local government, council
 - Related: data.govt.nz
 
@@ -746,7 +746,7 @@ _24 entries in this domain._
 
 - The LINZ Data Service, run by Land Information New Zealand (a government agency, known in Māori as Toitū Te Whenua), gives free open access to New Zealand's land, property, and seabed data, including maps, aerial imagery, and elevation data.
 - Region: national
-- Links: [Website](https://www.linz.govt.nz/products-services/data/linz-data-service) · [GitHub](https://github.com/linz)
+- Links: [Website](https://www.linz.govt.nz/products-services/data/linz-data-service) · [GitHub](https://github.com/linz) · [LinkedIn](https://www.linkedin.com/company/toit%C5%AB-te-whenua-linz-/)
 - Tags: open data, geospatial, government, mapping, open source
 - Related: data.govt.nz, GovHack Aotearoa
 
@@ -754,7 +754,7 @@ _24 entries in this domain._
 
 - The Land Resource Information System (LRIS) Portal, run by Crown research institute Manaaki Whenua Landcare Research, is a free online tool with over 200 layers of New Zealand land data, like soil types, erosion risk, and land cover, that anyone can search and download.
 - Region: national
-- Links: [Website](https://soils.landcareresearch.co.nz/tools/lris-portal)
+- Links: [Website](https://soils.landcareresearch.co.nz/tools/lris-portal) · [LinkedIn](https://www.linkedin.com/company/landcare-research/)
 - Tags: land data, soil data, conservation, Crown research institute, open data
 - Related: LINZ Data Service (Toitū Te Whenua), Koordinates
 
@@ -776,7 +776,7 @@ _24 entries in this domain._
 
 - NIWA, now part of Earth Sciences New Zealand after a 2025 merger with GNS Science, runs online tools like the Hydro Web Portal and National Climate Database, which let people look up New Zealand's river flow, rainfall, and climate data for free.
 - Region: national
-- Links: [Website](https://niwa.co.nz/environmental-information/environmental-information-services-0)
+- Links: [Website](https://niwa.co.nz/environmental-information/environmental-information-services-0) · [GitHub](https://github.com/niwa) · [LinkedIn](https://nz.linkedin.com/company/niwa)
 - Tags: climate data, water data, open data, science institute
 - Related: GeoNet
 
@@ -813,7 +813,7 @@ _24 entries in this domain._
 
 - The Waikato Open Data Hub is a website where nine councils across the Waikato region share their maps and datasets together, covering things like roads, pipes, and land boundaries, so anyone can search and download them in one place.
 - Region: waikato
-- Links: [Website](https://colabsolutions.govt.nz/shared-services/geospatial-projects-and-services/wodh/)
+- Links: [Website](https://colabsolutions.govt.nz/shared-services/geospatial-projects-and-services/wodh/) · [LinkedIn](https://www.linkedin.com/company/co-labsolutions)
 - Tags: open data, geospatial, local government, council
 - Related: data.govt.nz
 
@@ -842,7 +842,7 @@ _4 entries in this domain._
 
 - Kura Matahuna Unleash Space Makerspace is a free workshop at the University of Auckland, open to all students and staff, with 3D printers, laser cutters, and electronics gear, where people learn to build and prototype their own projects after safety training.
 - Region: auckland
-- Links: [Website](https://www.auckland.ac.nz/en/cie/locations/unleash-space/makerspace.html)
+- Links: [Website](https://www.auckland.ac.nz/en/cie/locations/unleash-space/makerspace.html) · [GitHub](https://github.com/unleash-space)
 - Tags: makerspace, university, digital fabrication, prototyping, innovation hub
 - Related: Hackland, Auckland Library of Tools
 
@@ -850,7 +850,7 @@ _4 entries in this domain._
 
 - Te Au Pūngao is Marlborough's technology and innovation hub in Blenheim, run by Whiringa under contract to Marlborough District Council, offering co-working space, 3D printers, soldering stations and VR headsets, plus a microgrants programme to help local start-ups take their first steps.
 - Region: marlborough
-- Links: [Website](https://www.teaupungao.com)
+- Links: [Website](https://www.teaupungao.com) · [LinkedIn](https://www.linkedin.com/company/teaupungao/)
 - Tags: makerspace, coworking, innovation hub, Marlborough, microgrants
 
 **Tinkd Makerspace**
@@ -871,14 +871,14 @@ _4 entries in this domain._
 
 - Awa Digital is a Māori-owned health technology company building AI-powered clinical documentation infrastructure (Tuhi) deployed within the Health NZ ecosystem, with Māori data sovereignty embedded in every layer.
 - Region: national
-- Links: [Website](https://awadigital.co.nz)
+- Links: [Website](https://awadigital.co.nz) · [LinkedIn](https://www.linkedin.com/company/awa-digital-nz)
 - Tags: Māori-owned, health-tech, clinical-documentation, AI, Māori-data-sovereignty
 
 **Health Navigator Charitable Trust**
 
 - The Health Navigator Charitable Trust runs Healthify (NZ's largest consumer health website with over 1.1 million monthly page views), the NZ Health App Library, and the Digital Health Accreditation Pathway (DHAP) for evaluating digital health tools.
 - Region: national
-- Links: [Website](https://www.hnct.nz)
+- Links: [Website](https://www.hnct.nz) · [LinkedIn](https://www.linkedin.com/company/health-navigator-charitable-trust)
 - Tags: digital-health, health-information, health-apps, consumer-health, accreditation
 
 **Karo**
@@ -948,7 +948,7 @@ _3 entries in this domain._
 
 - SEEK Volunteer is a free, non-profit platform that matches people across Aotearoa with volunteer roles at community organisations, covering everything from food rescue to mental health to arts and culture. It has run in New Zealand since 2015, alongside SEEK's paid job listings.
 - Region: national
-- Links: [Website](https://seekvolunteer.co.nz)
+- Links: [Website](https://seekvolunteer.co.nz) · [LinkedIn](https://www.linkedin.com/company/seek-volunteer/)
 - Tags: volunteering, volunteer matching, matching platform, community
 
 ## Worker & Platform Co-ops
@@ -1007,28 +1007,28 @@ _6 entries in this domain._
 
 - Koi Tū is an independent research centre at the University of Auckland that studies big, long-term problems facing New Zealand, like technology's impact on society, and turns that research into policy advice.
 - Region: auckland
-- Links: [Website](https://informedfutures.org)
+- Links: [Website](https://informedfutures.org) · [LinkedIn](https://www.linkedin.com/company/koi-tu-centre-for-informed-futures/)
 - Tags: policy research, future of technology, University of Auckland, think tank
 
 **REANNZ**
 
 - REANNZ (Research and Education Advanced Network New Zealand) is a Crown-owned non-profit that runs New Zealand's high-speed internet network dedicated to universities, research institutes, and schools, connecting them to more than 120 similar networks worldwide.
 - Region: national
-- Links: [Website](https://www.reannz.co.nz) · [LinkedIn](https://nz.linkedin.com/company/reannz)
+- Links: [Website](https://www.reannz.co.nz) · [GitHub](https://github.com/reannz) · [LinkedIn](https://nz.linkedin.com/company/reannz)
 - Tags: research network, education infrastructure, Crown entity, connectivity
 
 **Te Pūnaha Matatini**
 
 - Te Pūnaha Matatini is a research centre that studies complex systems, like disease spread, ecosystems, and social networks, to help New Zealand understand and respond to big interconnected challenges.
 - Region: auckland
-- Links: [Website](https://www.tepunahamatatini.ac.nz)
+- Links: [Website](https://www.tepunahamatatini.ac.nz) · [LinkedIn](https://www.linkedin.com/company/te-punaha-matatini/)
 - Tags: complex systems research, data science, Centre of Research Excellence, University of Auckland
 
 **Tātai Aho Rau Core Education**
 
 - Tātai Aho Rau Core Education is a Christchurch-founded, charity-registered social enterprise that has worked since 2003 on educational research, teacher professional development, and free digital resources like the LEARNZ virtual field trips for New Zealand schools.
 - Region: canterbury
-- Links: [Website](https://core-ed.org) · [LinkedIn](https://nz.linkedin.com/company/tatai-aho-rau-core-education)
+- Links: [Website](https://core-ed.org) · [GitHub](https://github.com/core-ed) · [LinkedIn](https://nz.linkedin.com/company/tatai-aho-rau-core-education)
 - Tags: education technology, research, teacher training, charity
 
 ## Mental Health Tech
@@ -1057,7 +1057,7 @@ _6 entries in this domain._
 
 - Headstrong is a free mental health app for NZ teenagers developed by the University of Auckland alongside rangatahi, using chatbot guides to deliver evidence-based psychological skills grounded in Te Whare Tapa Whā, funded by Health NZ.
 - Region: national
-- Links: [Website](https://www.headstrong.org.nz)
+- Links: [Website](https://www.headstrong.org.nz) · [LinkedIn](https://www.linkedin.com/company/headstrongnz/)
 - Tags: youth-mental-health, chatbot, CBT, Te-Whare-Tapa-Whā, digital-therapeutics
 - Related: SPARX
 
@@ -1072,7 +1072,7 @@ _6 entries in this domain._
 
 - Le Va is a Pasifika-led organisation that runs Aunty Dee, a free online structured problem-solving tool for Pasifika young people, alongside community-led suicide prevention programmes that have engaged over 590,000 people across Aotearoa.
 - Region: auckland
-- Links: [Website](https://www.leva.co.nz)
+- Links: [Website](https://www.leva.co.nz) · [LinkedIn](https://www.linkedin.com/company/le-va-pasifika/)
 - Tags: Pasifika, youth-mental-health, suicide-prevention, digital-tool, community-led
 
 **SPARX**
@@ -1122,7 +1122,7 @@ _5 entries in this domain._
 
 - Summer of Tech is a New Zealand charitable programme that connects students and junior tech talent with employers through internships and mentoring, helping people get their first step into a tech career.
 - Region: national
-- Links: [Website](https://www.summeroftech.co.nz) · [GitHub](https://github.com/summeroftech)
+- Links: [Website](https://www.summeroftech.co.nz) · [GitHub](https://github.com/summeroftech) · [LinkedIn](https://www.linkedin.com/company/summer-of-tech)
 - Tags: internships, tech careers, talent pipeline, charity
 - Related: Dev Academy Aotearoa
 
@@ -1136,7 +1136,7 @@ _2 entries in this domain._
 
 - Collaborate is a New Zealand volunteering app that matches people's skills and interests to volunteer roles at non-profit and community organisations, and has been used by groups including New Zealand Red Cross.
 - Region: national
-- Links: [Website](https://www.letscollaborate.co.nz)
+- Links: [Website](https://www.letscollaborate.co.nz) · [LinkedIn](https://www.linkedin.com/company/collaboratenz)
 - Tags: volunteering, nonprofit tech, matching platform, app
 - Related: New Zealand Red Cross
 
@@ -1196,7 +1196,7 @@ _12 entries in this domain._
 
 - EPIC Westport is a Buller innovation hub and business incubator offering digital literacy workshops, mentoring and co-working space, set up to help the region's economy diversify into digital industries after major local job losses at Solid Energy and Holcim Cement.
 - Region: west-coast
-- Links: [Website](https://www.epicwestport.co.nz)
+- Links: [Website](https://www.epicwestport.co.nz) · [LinkedIn](https://www.linkedin.com/company/epic-westport)
 - Tags: digital literacy, business incubator, coworking, regional development, West Coast
 
 **Fibre Fale**
@@ -1210,7 +1210,7 @@ _12 entries in this domain._
 
 - Katoa Connect, previously known as the 20/20 Trust, is a New Zealand charity that helps adults build everyday digital skills, like online banking and job applications, so the more than 800,000 New Zealand adults who currently lack these skills are not left behind.
 - Region: national
-- Links: [Website](https://www.katoaconnect.org.nz)
+- Links: [Website](https://www.katoaconnect.org.nz) · [LinkedIn](https://www.linkedin.com/company/katoaconnect/)
 - Tags: digital inclusion, digital skills, charity, adult education
 
 **The Cause Collective**
@@ -1231,14 +1231,14 @@ _12 entries in this domain._
 
 - Tu Mai Digital works with community organisations to help the most vulnerable connect and navigate the digital economy ; providing affordable internet connectivity, devices, training, and guidance, operating under the Poutiri Trust umbrella.
 - Region: national
-- Links: [Website](https://tumaidigital.org.nz)
+- Links: [Website](https://tumaidigital.org.nz) · [LinkedIn](https://www.linkedin.com/company/tu-mai-digital/)
 - Tags: digital-inclusion, connectivity, devices, digital-literacy, community
 
 **WestREAP (Westland Rural Education Activities Programme)**
 
 - WestREAP is a not-for-profit based in Hokitika that has run adult and community education across the West Coast for more than 40 years, including digital literacy workshops that help isolated communities, like Runanga, learn everyday technology skills such as Wi-Fi calling to stay in touch with whanau.
 - Region: west-coast
-- Links: [Website](https://www.westreap.org.nz)
+- Links: [Website](https://www.westreap.org.nz) · [LinkedIn](https://www.linkedin.com/company/westreap/)
 - Tags: digital inclusion, digital literacy, rural education, charity, adult education
 
 ## Civic Tech
@@ -1312,7 +1312,7 @@ _2 entries in this domain._
 
 - Digital Identity New Zealand brings together government, business, and community groups working on digital identity, so that New Zealanders can prove who they are online in ways that are open, trustworthy, and work well together.
 - Region: national
-- Links: [Website](https://digitalidentity.nz)
+- Links: [Website](https://digitalidentity.nz) · [LinkedIn](https://www.linkedin.com/company/digitalidnz/)
 - Tags: digital identity, digital trust, industry association, govtech
 - Related: Digital.govt.nz
 
@@ -1342,7 +1342,7 @@ _4 entries in this domain._
 
 - Get Ready is the New Zealand government's National Emergency Management Agency website that helps people prepare for disasters like earthquakes and floods, including information on the Emergency Mobile Alert system that broadcasts warnings straight to phones without needing an app.
 - Region: national
-- Links: [Website](https://getready.govt.nz)
+- Links: [Website](https://getready.govt.nz) · [LinkedIn](https://www.linkedin.com/company/national-emergency-management-agency)
 - Tags: disaster preparedness, government agency, emergency alerts, civil defence
 - Related: GeoNet, New Zealand Red Cross
 
@@ -1350,7 +1350,7 @@ _4 entries in this domain._
 
 - New Zealand Red Cross runs the free Hazard App, downloaded over 200,000 times, which sends official emergency warnings and step-by-step guidance to help people prepare for and get through disasters.
 - Region: national
-- Links: [Website](https://www.redcross.org.nz)
+- Links: [Website](https://www.redcross.org.nz) · [LinkedIn](https://nz.linkedin.com/company/new-zealand-red-cross)
 - Tags: disaster response, emergency app, humanitarian, NGO
 - Related: Collaborate
 
@@ -1388,7 +1388,7 @@ _3 entries in this domain._
 
 - Predator Free NZ Trust mobilises communities across the country to trap invasive predators and protect native wildlife, using a national map, trail cameras, and data tools so volunteers can track and coordinate their conservation efforts.
 - Region: national
-- Links: [Website](https://predatorfreenz.org)
+- Links: [Website](https://predatorfreenz.org) · [LinkedIn](https://www.linkedin.com/company/predatorfreenz/)
 - Tags: conservation, citizen science, predator control, community mapping
 - Related: Trap.NZ, The Cacophony Project
 
@@ -1417,7 +1417,7 @@ _7 entries in this domain._
 
 - Te Hiku Media is a Northland-based iwi (tribal) radio and media organisation whose Papa Reo project builds speech-recognition and language technology for te reo Māori, while keeping ownership of the language data with the Māori community that provided it.
 - Region: northland
-- Links: [Website](https://papareo.nz) · [GitHub](https://github.com/TeHikuMedia)
+- Links: [Website](https://papareo.nz) · [GitHub](https://github.com/TeHikuMedia) · [LinkedIn](https://www.linkedin.com/company/te-hiku-media/)
 - Tags: Māori data sovereignty, language technology, speech recognition, te reo Māori, open source
 - Related: Te Mana Raraunga
 

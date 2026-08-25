@@ -6,7 +6,7 @@
     "region": "national",
     "website": "https://accessadvisors.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/access-advisors-nz",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -21,7 +21,7 @@
       "Blind Low Vision NZ",
       "Be. Lab"
     ],
-    "source": "accessadvisors.nz homepage (verified via WebFetch)",
+    "source": "accessadvisors.nz homepage (verified via WebFetch); linkedin_org verified from accessadvisors.nz footer and linkedin.com (2026-08-25)",
     "founding_year": 2020,
     "takes_contributors": true,
     "careers_url": "",
@@ -34,7 +34,7 @@
     "region": "national",
     "website": "https://www.accessmatters.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/access-matters-aotearoa/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -47,10 +47,10 @@
     "related_to": [
       "Blind Low Vision NZ"
     ],
-    "source": "accessmatters.org.nz (verified via WebFetch); founding history from abcnz.org.nz (Blind Citizens NZ) found via web search",
+    "source": "accessmatters.org.nz (verified via WebFetch); founding history from abcnz.org.nz (Blind Citizens NZ) found via web search; linkedin_org, volunteer page and careers_url verified via accessmatters.org.nz (2026-08-25)",
     "founding_year": 2023,
-    "takes_contributors": null,
-    "careers_url": "",
+    "takes_contributors": true,
+    "careers_url": "https://www.accessmatters.org.nz/volunteer",
     "last_verified": "2026-08-05"
   },
   {
@@ -86,7 +86,7 @@
     "region": "national",
     "website": "https://aiforum.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/aiforumnz/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -99,7 +99,7 @@
     "related_to": [
       "Te Mana Raraunga"
     ],
-    "source": "aiforum.org.nz homepage (verified via WebFetch)",
+    "source": "aiforum.org.nz homepage (verified via WebFetch); linkedin_org verified from aiforum.org.nz footer and linkedin.com (2026-08-25)",
     "founding_year": 2017,
     "takes_contributors": true,
     "careers_url": "",
@@ -112,7 +112,7 @@
     "region": "wellington",
     "website": "https://www.aisafetyaotearoa.org",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/ai-safety-aotearoa",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -124,7 +124,7 @@
       "advocacy"
     ],
     "related_to": [],
-    "source": "aisafetyaotearoa.org homepage and get-involved page, verified via WebFetch 2026-08-06",
+    "source": "aisafetyaotearoa.org homepage and get-involved page, verified via WebFetch 2026-08-06; linkedin_org verified via linkedin.com (2026-08-25)",
     "founding_year": 2025,
     "takes_contributors": true,
     "careers_url": "https://www.aisafetyaotearoa.org/get-involved",
@@ -177,10 +177,10 @@
     "related_to": [
       "ActionStation"
     ],
-    "source": "amnesty.org.nz/who-we-are (verified via WebFetch)",
+    "source": "amnesty.org.nz/who-we-are (verified via WebFetch); careers_url verified via amnesty.org.nz/work-with-us (2026-08-25)",
     "founding_year": 1961,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://amnesty.org.nz/work-with-us/",
     "last_verified": "2026-08-05"
   },
   {
@@ -305,10 +305,10 @@
     "related_to": [
       "Hackland"
     ],
-    "source": "aucklandlibraryoftools.com homepage (verified via curl and WebFetch, HTTP 200)",
+    "source": "aucklandlibraryoftools.com homepage (verified via curl and WebFetch, HTTP 200); careers_url (volunteer page) verified via aucklandlibraryoftools.com/volunteer (2026-08-25)",
     "founding_year": 2018,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.aucklandlibraryoftools.com/volunteer/",
     "last_verified": "2026-08-05"
   },
   {
@@ -318,7 +318,7 @@
     "region": "national",
     "website": "https://awadigital.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/awa-digital-nz",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -330,7 +330,7 @@
       "Māori-data-sovereignty"
     ],
     "related_to": [],
-    "source": "awadigital.co.nz homepage, verified 2026-08-07 via web search",
+    "source": "awadigital.co.nz homepage, verified 2026-08-07 via web search; linkedin_org verified from awadigital.co.nz homepage and linkedin.com (2026-08-25)",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
@@ -434,10 +434,10 @@
     "related_to": [
       "Access Matters Aotearoa"
     ],
-    "source": "blindlowvision.org.nz (verified via WebFetch)",
+    "source": "blindlowvision.org.nz (verified via WebFetch); takes_contributors and careers_url verified via blindlowvision.org.nz/support-us/volunteer (2026-08-25)",
     "founding_year": 1890,
-    "takes_contributors": null,
-    "careers_url": "",
+    "takes_contributors": true,
+    "careers_url": "https://blindlowvision.org.nz/support-us/volunteer/",
     "last_verified": "2026-08-05"
   },
   {
@@ -574,8 +574,8 @@
     "what": "Cawthron Institute, a science research institute based in Nelson, builds ocean sensors and data buoys that let mussel and salmon farmers check water conditions on their phones, and it recently spun out a company called Ocean Intelligence to sell this technology.",
     "region": "tasman-nelson",
     "website": "https://www.cawthron.org.nz/what-we-do/ocean-health/ocean-technologies/",
-    "github": "",
-    "linkedin_org": "",
+    "github": "https://github.com/cawthron",
+    "linkedin_org": "https://www.linkedin.com/company/cawthron-institute",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -589,7 +589,7 @@
     "related_to": [
       "CarbonCrop"
     ],
-    "source": "cawthron.org.nz/what-we-do/ocean-health/ocean-technologies (verified via curl, HTTP 200); cawthron.org.nz news page on the Ocean Intelligence spin-out found via web search",
+    "source": "cawthron.org.nz/what-we-do/ocean-health/ocean-technologies (verified via curl, HTTP 200); cawthron.org.nz news page on the Ocean Intelligence spin-out found via web search; github and linkedin_org verified for parent Cawthron Institute via github.com/cawthron and linkedin.com (2026-08-25)",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
@@ -702,7 +702,7 @@
     "region": "national",
     "website": "https://www.letscollaborate.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/collaboratenz",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -715,10 +715,10 @@
     "related_to": [
       "New Zealand Red Cross"
     ],
-    "source": "letscollaborate.co.nz (verified via WebFetch)",
-    "founding_year": null,
+    "source": "letscollaborate.co.nz (verified via WebFetch); founding year (2015), linkedin_org and careers_url verified via letscollaborate.co.nz/story and /volunteer (2026-08-25)",
+    "founding_year": 2015,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.letscollaborate.co.nz/volunteer",
     "last_verified": "2026-08-05"
   },
   {
@@ -808,7 +808,7 @@
     "what": "data.govt.nz is the New Zealand government's central website for finding and downloading open datasets published by government agencies, covering topics like health, education, transport, and the environment.",
     "region": "national",
     "website": "https://data.govt.nz",
-    "github": "",
+    "github": "https://github.com/data-govt-nz",
     "linkedin_org": "",
     "community_url": "",
     "events_url": "",
@@ -824,8 +824,8 @@
       "DigitalNZ",
       "GovHack Aotearoa"
     ],
-    "source": "data.govt.nz homepage (verified via WebFetch)",
-    "founding_year": null,
+    "source": "data.govt.nz homepage (verified via WebFetch); github verified via github.com/data-govt-nz, founding year (2009) from first Wayback snapshot Nov 2009 (2026-08-25)",
+    "founding_year": 2009,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -837,7 +837,7 @@
     "region": "national",
     "website": "https://devacademy.co.nz/",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/school/3529441",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -850,10 +850,10 @@
     "related_to": [
       "Digital Natives Academy"
     ],
-    "source": "devacademy.co.nz homepage (verified via curl, HTTP 200); web search of devacademy.co.nz and ecommercenews.co.nz",
+    "source": "devacademy.co.nz homepage (verified via curl, HTTP 200); web search of devacademy.co.nz and ecommercenews.co.nz; linkedin_org from devacademy.co.nz footer and careers_url verified via devacademy.co.nz/about-us/working-for-us (2026-08-25)",
     "founding_year": 2013,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://devacademy.co.nz/about-us/working-for-us",
     "last_verified": "2026-08-05"
   },
   {
@@ -926,8 +926,8 @@
     "related_to": [
       "Digital Inclusion Alliance Aotearoa"
     ],
-    "source": "digitalequity.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
+    "source": "digitalequity.nz homepage, verified 2026-08-07 via web search; founding year (2021) verified via digitalequity.nz/about (2026-08-25)",
+    "founding_year": 2021,
     "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-07"
@@ -966,7 +966,7 @@
     "region": "national",
     "website": "https://digitalidentity.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/digitalidnz/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -979,7 +979,7 @@
     "related_to": [
       "Digital.govt.nz"
     ],
-    "source": "digitalidentity.nz homepage (verified via WebFetch)",
+    "source": "digitalidentity.nz homepage (verified via WebFetch); linkedin_org verified from digitalidentity.nz homepage and linkedin.com (2026-08-25)",
     "founding_year": 2019,
     "takes_contributors": null,
     "careers_url": "",
@@ -1019,7 +1019,7 @@
     "region": "bay-of-plenty",
     "website": "https://digitalnatives.academy/",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/digitalnativesacademy",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1032,7 +1032,7 @@
     "related_to": [
       "Dev Academy Aotearoa"
     ],
-    "source": "digitalnatives.academy homepage (verified via curl, HTTP 200); web search of digitalnatives.academy and Wikipedia",
+    "source": "digitalnatives.academy homepage (verified via curl, HTTP 200); web search of digitalnatives.academy and Wikipedia; linkedin_org verified via linkedin.com (2026-08-25)",
     "founding_year": 2014,
     "takes_contributors": true,
     "careers_url": "",
@@ -1058,8 +1058,8 @@
     "related_to": [
       "data.govt.nz"
     ],
-    "source": "digital.govt.nz (verified via WebFetch); Service Innovation Lab closure reported on digital.govt.nz news page found via web search",
-    "founding_year": null,
+    "source": "digital.govt.nz (verified via WebFetch); Service Innovation Lab closure reported on digital.govt.nz news page found via web search; founding year (2017) verified via digital.govt.nz blog post 'Building a new digital presence' (Dec 2017, Wayback) (2026-08-25)",
+    "founding_year": 2017,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -1160,10 +1160,10 @@
       "startup"
     ],
     "related_to": [],
-    "source": "envicotech.co.nz About Us page (verified via WebFetch); LinkedIn company listing and Callaghan Innovation background found via web search",
+    "source": "envicotech.co.nz About Us page (verified via WebFetch); LinkedIn company listing and Callaghan Innovation background found via web search; careers_url verified via envicotech.co.nz/careers (2026-08-25)",
     "founding_year": 2015,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://www.envicotech.co.nz/careers",
     "last_verified": "2026-08-05"
   },
   {
@@ -1221,7 +1221,7 @@
     "region": "west-coast",
     "website": "https://www.epicwestport.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/epic-westport",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1233,7 +1233,7 @@
       "West Coast"
     ],
     "related_to": [],
-    "source": "epicwestport.co.nz About page (verified via WebFetch); Beehive.govt.nz release \"EPIC co-working space opens in Westport\"; Stuff.co.nz article on EPIC's arrival in Westport",
+    "source": "epicwestport.co.nz About page (verified via WebFetch); Beehive.govt.nz release \"EPIC co-working space opens in Westport\"; Stuff.co.nz article on EPIC's arrival in Westport; linkedin_org verified via linkedin.com (2026-08-25)",
     "founding_year": 2016,
     "takes_contributors": true,
     "careers_url": "",
@@ -1284,10 +1284,10 @@
     "related_to": [
       "data.govt.nz"
     ],
-    "source": "figure.nz homepage (verified via WebFetch); LinkedIn company listing found via web search",
+    "source": "figure.nz homepage (verified via WebFetch); LinkedIn company listing found via web search; careers_url (volunteer page) verified via tohu.figure.nz/external/connect_with_us (2026-08-25)",
     "founding_year": 2012,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://tohu.figure.nz/external/connect_with_us/",
     "last_verified": "2026-08-05"
   },
   {
@@ -1350,7 +1350,7 @@
     "region": "national",
     "website": "https://getready.govt.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/national-emergency-management-agency",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1364,10 +1364,10 @@
       "GeoNet",
       "New Zealand Red Cross"
     ],
-    "source": "web search of getready.govt.nz and civildefence.govt.nz official pages; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines",
+    "source": "web search of getready.govt.nz and civildefence.govt.nz official pages; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines; takes_contributors and careers_url verified via getready.govt.nz/involved/volunteer (Wayback), linkedin_org verified for NEMA via linkedin.com (2026-08-25)",
     "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
+    "takes_contributors": true,
+    "careers_url": "https://getready.govt.nz/involved/volunteer/",
     "last_verified": "2026-08-05"
   },
   {
@@ -1464,10 +1464,10 @@
       "DigitalNZ",
       "LINZ Data Service"
     ],
-    "source": "govhack.org (verified via WebFetch ; note: the separate govhack.org.nz domain has expired and now redirects to an unrelated casino review site, so only govhack.org should be used)",
+    "source": "govhack.org (verified via WebFetch ; note: the separate govhack.org.nz domain has expired and now redirects to an unrelated casino review site, so only govhack.org should be used); careers_url verified via govhack.org/volunteer (2026-08-25)",
     "founding_year": 2015,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://govhack.org/volunteer/",
     "last_verified": "2026-08-05"
   },
   {
@@ -1553,7 +1553,7 @@
     "region": "hawkes-bay",
     "website": "https://www.hbrc.govt.nz/our-council/open-data/",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/hawkes-bay-regional-council",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1566,7 +1566,7 @@
     "related_to": [
       "data.govt.nz"
     ],
-    "source": "web search of hbrc.govt.nz open data page; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines",
+    "source": "web search of hbrc.govt.nz open data page; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines; linkedin_org verified from hbrc.govt.nz footer and linkedin.com (2026-08-25)",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
@@ -1579,7 +1579,7 @@
     "region": "national",
     "website": "https://www.headstrong.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/headstrongnz/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1593,8 +1593,8 @@
     "related_to": [
       "SPARX"
     ],
-    "source": "headstrong.org.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
+    "source": "headstrong.org.nz homepage, verified 2026-08-07 via web search; founding year (2018) verified via headstrong.org.nz/about-us, linkedin_org via linkedin.com (2026-08-25)",
+    "founding_year": 2018,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-07"
@@ -1606,7 +1606,7 @@
     "region": "national",
     "website": "https://www.hnct.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/health-navigator-charitable-trust",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1618,8 +1618,8 @@
       "accreditation"
     ],
     "related_to": [],
-    "source": "hnct.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
+    "source": "hnct.nz homepage, verified 2026-08-07 via web search; founding year (2008) verified via hnct.nz, linkedin_org via linkedin.com (2026-08-25)",
+    "founding_year": 2008,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-07"
@@ -1756,7 +1756,7 @@
     "region": "national",
     "website": "https://kaicommitment.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/showcase/kai-commitment/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1768,7 +1768,7 @@
       "charity"
     ],
     "related_to": [],
-    "source": "Web search confirmed via kaicommitment.org.nz/about/, tmnz.co.nz/nz-food-waste-champions-12-3-kai-commitment-impact-story/, and NZ Charities Register CC60845 at register.charities.govt.nz/Charity/CC60845; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
+    "source": "Web search confirmed via kaicommitment.org.nz/about/, tmnz.co.nz/nz-food-waste-champions-12-3-kai-commitment-impact-story/, and NZ Charities Register CC60845 at register.charities.govt.nz/Charity/CC60845; direct site fetch blocked by bot protection (403) (verified 2026-08-05); linkedin_org verified via kaicommitment.org.nz and linkedin.com (2026-08-25)",
     "founding_year": 2020,
     "takes_contributors": true,
     "careers_url": "",
@@ -1805,7 +1805,7 @@
     "region": "national",
     "website": "https://www.katoaconnect.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/katoaconnect/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1816,7 +1816,7 @@
       "adult education"
     ],
     "related_to": [],
-    "source": "katoaconnect.org.nz homepage, redirected from 2020.org.nz (verified via WebFetch)",
+    "source": "katoaconnect.org.nz homepage, redirected from 2020.org.nz (verified via WebFetch); LinkedIn company page (Katoa Connect) verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
@@ -1828,8 +1828,8 @@
     "what": "Kiwa Digital is an Auckland technology company, founded in 2003, that builds apps and cloud software helping Indigenous communities record, protect, and share their languages and cultural stories, including tools for te reo Māori.",
     "region": "auckland",
     "website": "https://kiwadigital.com/",
-    "github": "",
-    "linkedin_org": "",
+    "github": "https://github.com/kiwa-digital",
+    "linkedin_org": "https://www.linkedin.com/company/kiwa-digital/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1842,8 +1842,8 @@
     "related_to": [
       "Te Hiku Media / Papa Reo"
     ],
-    "source": "kiwadigital.com about-us page (verified via curl and WebFetch, HTTP 200)",
-    "founding_year": null,
+    "source": "kiwadigital.com about-us page (verified via curl and WebFetch, HTTP 200); Kiwa Digital founded 2003 per about-us page, GitHub org github.com/kiwa-digital and LinkedIn company page verified via direct fetch, 2026-08-25",
+    "founding_year": 2003,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -1870,10 +1870,10 @@
       "Predator Free NZ Trust",
       "Trap.NZ"
     ],
-    "source": "kiwicoast.org.nz and kiwicoast.org.nz/about (verified via WebFetch); NZ Herald and Farmers Weekly coverage of AI trap technology, and Northland Regional Council partnership release, found via web search",
+    "source": "kiwicoast.org.nz and kiwicoast.org.nz/about (verified via WebFetch); NZ Herald and Farmers Weekly coverage of AI trap technology, and Northland Regional Council partnership release, found via web search; Groups & Projects page invites the public to join projects ('get involved'), verified 2026-08-25",
     "founding_year": 2014,
-    "takes_contributors": null,
-    "careers_url": "",
+    "takes_contributors": true,
+    "careers_url": "https://kiwicoast.org.nz/about/groups-projects/",
     "last_verified": "2026-08-06"
   },
   {
@@ -1896,10 +1896,10 @@
     "related_to": [
       "Ara Ake"
     ],
-    "source": "kiwinet.org.nz/About (verified via WebFetch); LinkedIn company listing found via web search",
-    "founding_year": null,
+    "source": "kiwinet.org.nz/About (verified via WebFetch); LinkedIn company listing found via web search; founded 2011 and Careers page (kiwinet.org.nz/About/Careers) verified via direct fetch, 2026-08-25",
+    "founding_year": 2011,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://kiwinet.org.nz/About/Careers",
     "last_verified": "2026-08-05"
   },
   {
@@ -1909,7 +1909,7 @@
     "region": "auckland",
     "website": "https://informedfutures.org",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/koi-tu-centre-for-informed-futures/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1920,8 +1920,8 @@
       "think tank"
     ],
     "related_to": [],
-    "source": "informedfutures.org homepage (verified via WebFetch)",
-    "founding_year": null,
+    "source": "informedfutures.org homepage and /about (verified via WebFetch); Koi Tū set up in 2019 per informedfutures.org/about; LinkedIn company page verified via direct fetch, 2026-08-25",
+    "founding_year": 2019,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -1959,7 +1959,7 @@
     "what": "Kura Matahuna Unleash Space Makerspace is a free workshop at the University of Auckland, open to all students and staff, with 3D printers, laser cutters, and electronics gear, where people learn to build and prototype their own projects after safety training.",
     "region": "auckland",
     "website": "https://www.auckland.ac.nz/en/cie/locations/unleash-space/makerspace.html",
-    "github": "",
+    "github": "https://github.com/unleash-space",
     "linkedin_org": "",
     "community_url": "",
     "events_url": "",
@@ -1975,7 +1975,7 @@
       "Hackland",
       "Auckland Library of Tools"
     ],
-    "source": "auckland.ac.nz Unleash Space makerspace page (verified via curl and WebFetch, HTTP 200)",
+    "source": "auckland.ac.nz Unleash Space makerspace page (verified via curl and WebFetch, HTTP 200); GitHub org github.com/unleash-space (UoA Unleash Space) verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": true,
     "careers_url": "",
@@ -1988,7 +1988,7 @@
     "region": "auckland",
     "website": "https://www.leva.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/le-va-pasifika/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2000,10 +2000,10 @@
       "community-led"
     ],
     "related_to": [],
-    "source": "leva.co.nz homepage, verified 2026-08-07 via web search",
+    "source": "leva.co.nz homepage, verified 2026-08-07 via web search; LinkedIn company page (Le Va Pasifika) and Work with us page verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://www.leva.co.nz/about-us/work-with-us/",
     "last_verified": "2026-08-07"
   },
   {
@@ -2013,7 +2013,7 @@
     "region": "national",
     "website": "https://www.linz.govt.nz/products-services/data/linz-data-service",
     "github": "https://github.com/linz",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/toit%C5%AB-te-whenua-linz-/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2028,10 +2028,10 @@
       "data.govt.nz",
       "GovHack Aotearoa"
     ],
-    "source": "linz.govt.nz page and github.com/linz (both verified via WebFetch)",
+    "source": "linz.govt.nz page and github.com/linz (both verified via WebFetch); LinkedIn company page (Toitū Te Whenua) and careers page (linz.govt.nz/careers) verified via direct fetch, 2026-08-25",
     "founding_year": 1996,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.linz.govt.nz/careers",
     "last_verified": "2026-08-05"
   },
   {
@@ -2094,7 +2094,7 @@
     "region": "national",
     "website": "https://soils.landcareresearch.co.nz/tools/lris-portal",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/landcare-research/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2109,10 +2109,10 @@
       "LINZ Data Service (Toitū Te Whenua)",
       "Koordinates"
     ],
-    "source": "soils.landcareresearch.co.nz/tools/lris-portal (verified via curl, HTTP 200); landcareresearch.co.nz description pages found via web search",
+    "source": "soils.landcareresearch.co.nz/tools/lris-portal (verified via curl, HTTP 200); landcareresearch.co.nz description pages found via web search; LinkedIn company page (Manaaki Whenua - Landcare Research Group) and careers page verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://www.landcareresearch.co.nz/about-us/careers-at-manaaki-whenua",
     "last_verified": "2026-08-05"
   },
   {
@@ -2136,10 +2136,10 @@
       "Dev Academy Aotearoa (Māori and Pasifika cohorts)",
       "Digital Natives Academy"
     ],
-    "source": "manaiakalani.org homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch",
+    "source": "manaiakalani.org homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch; Vacancies page verified via direct fetch, 2026-08-25",
     "founding_year": 2007,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.manaiakalani.org/about/vacancies",
     "last_verified": "2026-08-05"
   },
   {
@@ -2246,7 +2246,7 @@
     "region": "national",
     "website": "https://www.redcross.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://nz.linkedin.com/company/new-zealand-red-cross",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2259,10 +2259,10 @@
     "related_to": [
       "Collaborate"
     ],
-    "source": "redcross.org.nz (verified via WebFetch); redcross.org.nz Hazard App story page found via web search",
+    "source": "redcross.org.nz (verified via WebFetch); redcross.org.nz Hazard App story page found via web search; LinkedIn company page and Get involved page verified via direct fetch, 2026-08-25",
     "founding_year": 1931,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.redcross.org.nz/get-involved/",
     "last_verified": "2026-08-05"
   },
   {
@@ -2298,8 +2298,8 @@
     "what": "NIWA, now part of Earth Sciences New Zealand after a 2025 merger with GNS Science, runs online tools like the Hydro Web Portal and National Climate Database, which let people look up New Zealand's river flow, rainfall, and climate data for free.",
     "region": "national",
     "website": "https://niwa.co.nz/environmental-information/environmental-information-services-0",
-    "github": "",
-    "linkedin_org": "",
+    "github": "https://github.com/niwa",
+    "linkedin_org": "https://nz.linkedin.com/company/niwa",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2312,10 +2312,10 @@
     "related_to": [
       "GeoNet"
     ],
-    "source": "niwa.co.nz/environmental-information/environmental-information-services-0 (verified via curl, HTTP 200)",
-    "founding_year": null,
+    "source": "niwa.co.nz/environmental-information/environmental-information-services-0 (verified via curl, HTTP 200); NIWA established in 1992 per niwa.co.nz/about; GitHub org, LinkedIn company page and careers page verified via direct fetch, 2026-08-25",
+    "founding_year": 1992,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://niwa.co.nz/about-niwa/careers-niwa",
     "last_verified": "2026-08-05"
   },
   {
@@ -2425,7 +2425,7 @@
     "region": "national",
     "website": "https://predatorfreenz.org",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/predatorfreenz/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2439,7 +2439,7 @@
       "Trap.NZ",
       "The Cacophony Project"
     ],
-    "source": "predatorfreenz.org homepage (verified via WebFetch)",
+    "source": "predatorfreenz.org homepage (verified via WebFetch); LinkedIn company page (Predator Free NZ Trust) verified via direct fetch, 2026-08-25",
     "founding_year": 2013,
     "takes_contributors": true,
     "careers_url": "",
@@ -2476,7 +2476,7 @@
     "what": "REANNZ (Research and Education Advanced Network New Zealand) is a Crown-owned non-profit that runs New Zealand's high-speed internet network dedicated to universities, research institutes, and schools, connecting them to more than 120 similar networks worldwide.",
     "region": "national",
     "website": "https://www.reannz.co.nz",
-    "github": "",
+    "github": "https://github.com/reannz",
     "linkedin_org": "https://nz.linkedin.com/company/reannz",
     "community_url": "",
     "events_url": "",
@@ -2488,10 +2488,10 @@
       "connectivity"
     ],
     "related_to": [],
-    "source": "reannz.co.nz (verified via WebFetch)",
+    "source": "reannz.co.nz (verified via WebFetch); GitHub org (github.com/reannz) and Careers page verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://www.reannz.co.nz/about/careers",
     "last_verified": "2026-08-05"
   },
   {
@@ -2537,10 +2537,10 @@
       "non-profit"
     ],
     "related_to": [],
-    "source": "rewiring.nz homepage (verified via WebFetch); LinkedIn company listing found via web search",
+    "source": "rewiring.nz homepage (verified via WebFetch); LinkedIn company listing found via web search; Jobs page (rewiring.nz/jobs) verified via direct fetch, 2026-08-25",
     "founding_year": 2021,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.rewiring.nz/jobs",
     "last_verified": "2026-08-05"
   },
   {
@@ -2550,7 +2550,7 @@
     "region": "national",
     "website": "https://seekvolunteer.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/seek-volunteer/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2561,7 +2561,7 @@
       "community"
     ],
     "related_to": [],
-    "source": "seekvolunteer.co.nz homepage and volunteering pages (verified via WebFetch); Volunteering New Zealand news post confirming the partnership, and coverage noting the 2015 NZ launch (verified via WebSearch)",
+    "source": "seekvolunteer.co.nz homepage and volunteering pages (verified via WebFetch); Volunteering New Zealand news post confirming the partnership, and coverage noting the 2015 NZ launch (verified via WebSearch); LinkedIn company page (SEEK Volunteer) verified via direct fetch, 2026-08-25",
     "founding_year": 2015,
     "takes_contributors": true,
     "careers_url": "",
@@ -2624,7 +2624,7 @@
     "region": "national",
     "website": "https://www.summeroftech.co.nz",
     "github": "https://github.com/summeroftech",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/summer-of-tech",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2637,10 +2637,10 @@
     "related_to": [
       "Dev Academy Aotearoa"
     ],
-    "source": "summeroftech.co.nz homepage (verified via WebFetch)",
+    "source": "summeroftech.co.nz homepage (verified via WebFetch); LinkedIn company page and Volunteers page verified via direct fetch, 2026-08-25",
     "founding_year": 2006,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.summeroftech.co.nz/volunteers",
     "last_verified": "2026-08-05"
   },
   {
@@ -2662,10 +2662,10 @@
       "plastic pollution"
     ],
     "related_to": [],
-    "source": "sustainablecoastlines.org Litter Intelligence page (verified via WebFetch); LinkedIn company listing found via web search",
-    "founding_year": null,
+    "source": "sustainablecoastlines.org Litter Intelligence page (verified via WebFetch); LinkedIn company listing found via web search; launched in 2009 per sustainablecoastlines.org/about/our-story; Volunteer events page verified via direct fetch, 2026-08-25",
+    "founding_year": 2009,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://sustainablecoastlines.org/events/",
     "last_verified": "2026-08-05"
   },
   {
@@ -2775,7 +2775,7 @@
     "region": "marlborough",
     "website": "https://www.teaupungao.com",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/teaupungao/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2787,7 +2787,7 @@
       "microgrants"
     ],
     "related_to": [],
-    "source": "Scoop \"New Marlborough Tech Hub A 'Gamechanger'\" (31 Jul 2025); whiringa.com (verified via WebFetch); Weekly Voice article on the Te Au Pūngao microgrants programme",
+    "source": "Scoop \"New Marlborough Tech Hub A 'Gamechanger'\" (31 Jul 2025); whiringa.com (verified via WebFetch); Weekly Voice article on the Te Au Pūngao microgrants programme; LinkedIn company page (Te Au Pūngao) verified via direct fetch, 2026-08-25",
     "founding_year": 2025,
     "takes_contributors": true,
     "careers_url": "",
@@ -2825,7 +2825,7 @@
     "region": "northland",
     "website": "https://papareo.nz",
     "github": "https://github.com/TeHikuMedia",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/te-hiku-media/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2839,7 +2839,7 @@
     "related_to": [
       "Te Mana Raraunga"
     ],
-    "source": "papareo.nz, tehiku.nz, and github.com/TeHikuMedia (all verified via WebFetch); NVIDIA blog background via web search",
+    "source": "papareo.nz, tehiku.nz, and github.com/TeHikuMedia (all verified via WebFetch); NVIDIA blog background via web search; LinkedIn company page (Te Hiku Media) verified via direct fetch, 2026-08-25",
     "founding_year": 1991,
     "takes_contributors": true,
     "careers_url": "",
@@ -2958,7 +2958,7 @@
     "region": "auckland",
     "website": "https://www.tepunahamatatini.ac.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/te-punaha-matatini/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2969,7 +2969,7 @@
       "University of Auckland"
     ],
     "related_to": [],
-    "source": "tepunahamatatini.ac.nz homepage (verified via WebFetch)",
+    "source": "tepunahamatatini.ac.nz homepage (verified via WebFetch); LinkedIn company page verified via direct fetch, 2026-08-25",
     "founding_year": 2014,
     "takes_contributors": true,
     "careers_url": "",
@@ -3006,7 +3006,7 @@
     "region": "national",
     "website": "https://www.cacophony.org.nz",
     "github": "https://github.com/TheCacophonyProject",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/cacophony/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3019,7 +3019,7 @@
       "predator control"
     ],
     "related_to": [],
-    "source": "cacophony.org.nz homepage (verified via WebFetch) and github.com/TheCacophonyProject (verified via web search); opensource.com background via web search",
+    "source": "cacophony.org.nz homepage (verified via WebFetch) and github.com/TheCacophonyProject (verified via web search); opensource.com background via web search; LinkedIn company page (The Cacophony Project) verified via direct fetch, 2026-08-25",
     "founding_year": 2015,
     "takes_contributors": true,
     "careers_url": "",
@@ -3044,10 +3044,10 @@
       "south auckland"
     ],
     "related_to": [],
-    "source": "Web search confirmed via aceaotearoa.org.nz/news-and-resources/news/cause-collective-championing-maori-and-pacific-talent-tech, tindall.org.nz/one-community-shaping-aotearoas-tech-future-the-cause-collective/, and LinkedIn company page; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
+    "source": "Web search confirmed via aceaotearoa.org.nz/news-and-resources/news/cause-collective-championing-maori-and-pacific-talent-tech, tindall.org.nz/one-community-shaping-aotearoas-tech-future-the-cause-collective/, and LinkedIn company page; direct site fetch blocked by bot protection (403) (verified 2026-08-05); Job vacancies page verified via direct fetch, 2026-08-25",
     "founding_year": 2013,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.thecausecollective.org.nz/job-vacancies/",
     "last_verified": "2026-08-05"
   },
   {
@@ -3160,7 +3160,7 @@
     "region": "national",
     "website": "https://tumaidigital.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/tu-mai-digital/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3172,7 +3172,7 @@
       "community"
     ],
     "related_to": [],
-    "source": "tumaidigital.org.nz homepage, verified 2026-08-07 via web search",
+    "source": "tumaidigital.org.nz homepage, verified 2026-08-07 via web search; LinkedIn company page (Tu Mai Digital) verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": true,
     "careers_url": "",
@@ -3184,7 +3184,7 @@
     "what": "Tātai Aho Rau Core Education is a Christchurch-founded, charity-registered social enterprise that has worked since 2003 on educational research, teacher professional development, and free digital resources like the LEARNZ virtual field trips for New Zealand schools.",
     "region": "canterbury",
     "website": "https://core-ed.org",
-    "github": "",
+    "github": "https://github.com/core-ed",
     "linkedin_org": "https://nz.linkedin.com/company/tatai-aho-rau-core-education",
     "community_url": "",
     "events_url": "",
@@ -3196,10 +3196,10 @@
       "charity"
     ],
     "related_to": [],
-    "source": "core-ed.org/en_NZ/about-core/our-whakapapa (verified via WebFetch)",
-    "founding_year": null,
+    "source": "core-ed.org/en_NZ/about-core/our-whakapapa (verified via WebFetch); Tātai Aho Rau began in 2003 per whakapapa page; GitHub org (github.com/core-ed) and careers page verified via direct fetch, 2026-08-25",
+    "founding_year": 2003,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://core-ed.org/en_NZ/careers/",
     "last_verified": "2026-08-05"
   },
   {
@@ -3209,7 +3209,7 @@
     "region": "waikato",
     "website": "https://colabsolutions.govt.nz/shared-services/geospatial-projects-and-services/wodh/",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/co-labsolutions",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3222,7 +3222,7 @@
     "related_to": [
       "data.govt.nz"
     ],
-    "source": "colabsolutions.govt.nz Waikato Open Data Hub page (verified via WebFetch)",
+    "source": "colabsolutions.govt.nz Waikato Open Data Hub page (verified via WebFetch); Co-Lab Solutions LinkedIn company page (operator of the hub) verified via direct fetch, 2026-08-25",
     "founding_year": 2016,
     "takes_contributors": null,
     "careers_url": "",
@@ -3284,7 +3284,7 @@
     "region": "west-coast",
     "website": "https://www.westreap.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/westreap/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3296,7 +3296,7 @@
       "adult education"
     ],
     "related_to": [],
-    "source": "westreap.org.nz/about (verified via WebFetch); aceaotearoa.org.nz article \"WestREAP's ACE Programmes Strengthening Rural Communities\" describing its digital literacy workshops, found via web search",
+    "source": "westreap.org.nz/about (verified via WebFetch); aceaotearoa.org.nz article \"WestREAP's ACE Programmes Strengthening Rural Communities\" describing its digital literacy workshops, found via web search; LinkedIn company page (WestREAP) verified via direct fetch, 2026-08-25",
     "founding_year": 1985,
     "takes_contributors": null,
     "careers_url": "",
@@ -3322,10 +3322,10 @@
     "related_to": [
       "New Zealand Red Cross"
     ],
-    "source": "whakarongorau.nz (verified via WebFetch); LinkedIn company listing found via web search",
-    "founding_year": null,
+    "source": "whakarongorau.nz (verified via WebFetch); LinkedIn company listing found via web search; renamed from Homecare Medical to Whakarongorau Aotearoa in 2021 per whakarongorau.nz/about; careers page verified via direct fetch, 2026-08-25",
+    "founding_year": 2021,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://whakarongorau.nz/careers",
     "last_verified": "2026-08-05"
   },
   {
