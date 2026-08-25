@@ -134,6 +134,9 @@ same data flattened to columns), both regenerated from `data/entries/` by
 - Links are checked automatically every week
   ([`.github/workflows/linkcheck.yml`](.github/workflows/linkcheck.yml)); a
   tracking issue opens on genuine dead links and closes when they recover.
+- Every entry website is archived to the Wayback Machine every week
+  ([`.github/workflows/wayback.yml`](.github/workflows/wayback.yml)); the
+  snapshot URLs are recorded in `data/archives.json`.
 - `GUIDE.md` is regenerated from the YAML entries, so it's always in sync
   with the underlying data. CI fails a PR if it's out of date.
 - Accuracy comes first: every entry is verified against a live source, and
@@ -181,6 +184,7 @@ pip install -r requirements.txt
 python3 scripts/validate.py      # check entries against the schema
 python3 scripts/build_guide.py   # regenerate GUIDE.md from data/entries/
 python3 scripts/linkcheck.py     # optional: check all links for dead ones
+python3 scripts/archive_wayback.py --dry-run  # preview Wayback archives
 ```
 
 Run both `validate.py` and `build_guide.py` after adding or editing an
