@@ -6,7 +6,7 @@ what: Get Ready is the New Zealand government's National Emergency Management Ag
 region: national
 website: https://getready.govt.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/national-emergency-management-agency
 linkedin_people: []
 tags:
 - disaster preparedness
@@ -18,8 +18,8 @@ related_to:
 - New Zealand Red Cross
 source: web search of getready.govt.nz and civildefence.govt.nz official pages; direct fetch of the site
   returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning
-  real content indexed by search engines
+  real content indexed by search engines; takes_contributors and careers_url verified via getready.govt.nz/involved/volunteer (Wayback), linkedin_org verified for NEMA via linkedin.com (2026-08-25)
 founding_year: null
-takes_contributors: null
-careers_url: ''
+takes_contributors: true
+careers_url: https://getready.govt.nz/involved/volunteer/
 last_verified: '2026-08-05'

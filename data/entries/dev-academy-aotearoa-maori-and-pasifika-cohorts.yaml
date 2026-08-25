@@ -7,7 +7,7 @@ what: Dev Academy Aotearoa is a New Zealand coding bootcamp that runs dedicated 
 region: national
 website: https://devacademy.co.nz/
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/school/3529441
 linkedin_people: []
 tags:
 - Māori tech
@@ -16,8 +16,9 @@ tags:
 - digital skills
 related_to:
 - Digital Natives Academy
-source: devacademy.co.nz homepage (verified via curl, HTTP 200); web search of devacademy.co.nz and ecommercenews.co.nz
+source: devacademy.co.nz homepage (verified via curl, HTTP 200); web search of devacademy.co.nz and ecommercenews.co.nz;
+  linkedin_org from devacademy.co.nz footer and careers_url verified via devacademy.co.nz/about-us/working-for-us (2026-08-25)
 founding_year: 2013
 takes_contributors: true
-careers_url: ''
+careers_url: https://devacademy.co.nz/about-us/working-for-us
 last_verified: '2026-08-05'

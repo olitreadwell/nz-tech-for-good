@@ -16,8 +16,8 @@ tags:
 - volunteer-run
 related_to:
 - Hackland
-source: aucklandlibraryoftools.com homepage (verified via curl and WebFetch, HTTP 200)
+source: aucklandlibraryoftools.com homepage (verified via curl and WebFetch, HTTP 200); careers_url (volunteer page) verified via aucklandlibraryoftools.com/volunteer (2026-08-25)
 founding_year: 2018
 takes_contributors: true
-careers_url: ''
+careers_url: https://www.aucklandlibraryoftools.com/volunteer/
 last_verified: '2026-08-05'

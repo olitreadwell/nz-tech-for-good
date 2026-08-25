@@ -4,7 +4,7 @@ what: data.govt.nz is the New Zealand government's central website for finding a
   published by government agencies, covering topics like health, education, transport, and the environment.
 region: national
 website: https://data.govt.nz
-github: ''
+github: https://github.com/data-govt-nz
 linkedin_org: ''
 linkedin_people: []
 tags:
@@ -16,8 +16,8 @@ related_to:
 - LINZ Data Service
 - DigitalNZ
 - GovHack Aotearoa
-source: data.govt.nz homepage (verified via WebFetch)
-founding_year: null
+source: data.govt.nz homepage (verified via WebFetch); github verified via github.com/data-govt-nz, founding year (2009) from first Wayback snapshot Nov 2009 (2026-08-25)
+founding_year: 2009
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-05'
