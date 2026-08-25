@@ -20,7 +20,7 @@ export default function HomePage() {
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-lg text-text-muted">
           A living directory of {entries.length} organisations, projects, and
-          networks using technology for public benefit — open data, civic tech,
+          networks using technology for public benefit: open data, civic tech,
           climate, accessibility, Māori data sovereignty, and more.
         </p>
         <div className="mt-6 flex justify-center gap-3">

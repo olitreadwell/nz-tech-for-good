@@ -12,7 +12,7 @@ An entry belongs here if ALL of the following are true:
    New Zealand. International orgs with a small NZ presence are generally
    out, unless their NZ work is substantial and independently verifiable.
 
-2. **Tech-for-good.** Technology is central to what they do ; not incidental.
+2. **Tech-for-good.** Technology is central to what they do, not incidental.
    "Technology" here includes software, data, digital platforms, hardware,
    and applied research. "For good" means the primary mission is public
    benefit: not-for-profit, government, community-led, or mission-led.
@@ -54,9 +54,9 @@ An entry belongs here if ALL of the following are true:
 
 If you know a group that fits the scope:
 
-1. **Check it's not already listed** ; browse [GUIDE.md](../GUIDE.md) or
+1. **Check it's not already listed**: browse [GUIDE.md](../GUIDE.md) or
    search the [live site](https://olitreadwell.github.io/nz-tech-for-good/).
-2. **Verify it's active** ; check the website resolves and the org is
+2. **Verify it's active**: check the website resolves and the org is
    still operating.
 3. **Open an issue** using the [add-entry template](../../issues/new?template=add-entry.yml)
    or open a pull request following [CONTRIBUTING.md](../CONTRIBUTING.md).

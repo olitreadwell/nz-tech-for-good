@@ -110,6 +110,9 @@ def check_text(label, text, violations, known_names=()):
         for name in known_names:
             if name in line:
                 line = line.replace(name, "")
+        # URLs are facts, not prose: a banned word inside a URL (e.g.
+        # linkedin.com/showcase/...) is not a style violation.
+        line = re.sub(r"https?://\S+", "", line)
         if EM_DASH in line:
             violations.append((label, i, "em dash", raw_line.strip()))
         for m in BANNED_PATTERN.finditer(line):

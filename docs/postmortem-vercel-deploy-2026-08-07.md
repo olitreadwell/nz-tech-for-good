@@ -1,14 +1,14 @@
-# Postmortem: Vercel deploy failure — 2026-08-07
+# Postmortem: Vercel deploy failure (2026-08-07)
 
 ## Timeline
 
 | Time | Event |
 |------|-------|
 | ~00:30 | Created vercel.json at repo root, pushed |
-| ~00:35 | Vercel deploy failed — unknown error (did not check logs) |
-| ~00:38 | Hypothesised root dir issue — moved vercel.json into apps/web/ |
-| ~00:40 | Deploy still failing — still guessing, still not checking Vercel logs |
-| ~01:00 | Asked user what the actual error was — user unable to see logs |
+| ~00:35 | Vercel deploy failed: unknown error (did not check logs) |
+| ~00:38 | Hypothesised root dir issue, moved vercel.json into apps/web/ |
+| ~00:40 | Deploy still failing: still guessing, still not checking Vercel logs |
+| ~01:00 | Asked user what the actual error was; user could not see logs |
 | ~01:10 | Set up CI + pre-push hooks to prevent future blind pushes |
 
 ## What happened
@@ -35,7 +35,7 @@ diagnosed because build logs were not checked before attempting fixes.
 
 ## Resolution
 
-Still pending — the actual Vercel error has not been read. Next step:
+Still pending: the actual Vercel error has not been read. Next step:
 open Vercel dashboard → Deployments → click failed build → read logs.
 
 Known fixes applied proactively:
@@ -45,8 +45,8 @@ Known fixes applied proactively:
 
 ## Prevention
 
-1. **Pre-push hook** — `npm run prepush` blocks pushes that fail local build
-2. **CI gate** — `.github/workflows/ci.yml` catches the same on PRs
+1. **Pre-push hook**: `npm run prepush` blocks pushes that fail local build
+2. **CI gate**: `.github/workflows/ci.yml` catches the same on PRs
 3. **Incident response checklist**:
    1. Read the error logs FIRST
    2. Reproduce locally

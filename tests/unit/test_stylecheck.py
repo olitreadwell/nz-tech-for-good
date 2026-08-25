@@ -33,6 +33,15 @@ class TestCheckText:
         stylecheck.check_text("doc.md", "This is a plain, clear sentence.", violations)
         assert violations == []
 
+    def test_banned_word_inside_url_is_not_flagged(self):
+        violations = []
+        stylecheck.check_text(
+            "doc.md",
+            "Links: https://www.linkedin.com/showcase/kai-commitment/",
+            violations,
+        )
+        assert violations == []
+
     def test_known_entry_name_with_em_dash_is_not_flagged(self):
         violations = []
         text = "NZ On Air — Public Interest Journalism Fund is listed here."

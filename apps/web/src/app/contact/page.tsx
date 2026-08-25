@@ -6,7 +6,7 @@ export default function ContactPage() {
       <h1 className="text-3xl font-extrabold tracking-tight">Get in touch</h1>
       <p className="mt-2 text-lg text-text-muted">
         This directory is open source and built for public benefit. The best way
-        to reach us is on GitHub — no email address to guess.
+        to reach us is on GitHub. No email address to guess.
       </p>
 
       <div className="mt-6 space-y-3">

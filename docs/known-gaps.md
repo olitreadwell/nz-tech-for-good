@@ -1,17 +1,24 @@
 # Known gaps
 
-## Recently filled (2026-08-07)
+## Scope changes (2026-08-25)
 
-20 entries added across 6 under-covered domains:
-- Financial Inclusion & Fintech: +3 (Ngā Tāngata Microfinance, Community Finance, Money Sweetspot)
-- Disability Employment Tech: +3 (NZ Disability Employers' Network, Choices NZ, One in Six)
-- Housing & Homelessness Tech: +4 (Housing First Auckland, The People's Project, BenefitMe, Home Steps)
-- Health Tech / Hauora Māori: +3 (Awa Digital, Health Navigator Charitable Trust, Whānau Tahi)
-- Mental Health Tech: +4 (Headstrong, ignite, Le Va, Screen Sense)
-- Journalism & Media Tech: +2 (Public Interest, elocal)
-- Iwi & Māori Tech Initiatives: +1 (IndigiShare)
-
-Total entries: 117 → 170 across 27 domains.
+- 2026-08-07: 20 entries added across 6 under-covered domains (financial
+  inclusion, disability employment, housing, health tech, mental health,
+  journalism). Total 117 to 170.
+- 2026-08-25: 45 entries pruned where technology is incidental to the
+  mission (refugee support, legal advice, housing, food rescue, media,
+  advocacy bodies). Total 170 to 131 across 24 domains. Pruned orgs:
+  ARCC, ASST, Belong Aotearoa, ChangeMakers, HOST International, RASNZ,
+  CAB, Community Law Centres, Wellington Community Justice Project,
+  Community Housing Aotearoa, Housing First Auckland, The People's
+  Project, IHC, Workbridge, Choices NZ, Consumer NZ, JustSpeak, Hui E!,
+  Volunteering NZ, Cooperative Business NZ, Sustainable Business Network,
+  Para Kore, Everybody Eats, Kaibosh, KiwiHarvest, Good Shepherd, Ngā
+  Tāngata Microfinance, Money Sweetspot, Community Finance, Newsroom,
+  The Spinoff, Public Interest, elocal, NZ On Air PIJF, Hāpai Te Hauora,
+  Birds NZ, Auckland Co-design Lab, GOVIS, Privacy Foundation, Trust
+  Democracy, Public Good Aotearoa, NZDEN, The Good Registry, Screen Sense.
+  Reversible via git history.
 
 ## People / LinkedIn enrichment
 
