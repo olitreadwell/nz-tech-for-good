@@ -45,3 +45,5 @@ coverage/
 .vercel
 
 .local/
+
+.turbo/
