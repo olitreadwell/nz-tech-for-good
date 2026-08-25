@@ -8,7 +8,10 @@ import {
   Clock,
   MapPin,
   Users,
+  PenLine,
 } from "lucide-react";
+
+import { buildEntryFeedbackUrl } from "@/lib/feedback";
 
 interface EntryCardProps {
   slug: string;
@@ -165,6 +168,15 @@ export function EntryCard({
             LinkedIn
           </a>
         )}
+        <a
+          href={buildEntryFeedbackUrl({ slug, name })}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 font-medium text-brand hover:underline"
+        >
+          <PenLine className="h-3.5 w-3.5" />
+          Spot a mistake
+        </a>
       </div>
     </li>
   );

@@ -5,7 +5,7 @@ what: Hawke's Bay Regional Council's open data page lets people view and downloa
 region: hawkes-bay
 website: https://www.hbrc.govt.nz/our-council/open-data/
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/hawkes-bay-regional-council
 linkedin_people: []
 tags:
 - open data
@@ -16,7 +16,7 @@ related_to:
 - data.govt.nz
 source: web search of hbrc.govt.nz open data page; direct fetch of the site returned an HTTP 403 from
   the site's own bot-protection, but the domain is confirmed live and returning real content indexed by
-  search engines
+  search engines; linkedin_org verified from hbrc.govt.nz footer and linkedin.com (2026-08-25)
 founding_year: null
 takes_contributors: null
 careers_url: ''

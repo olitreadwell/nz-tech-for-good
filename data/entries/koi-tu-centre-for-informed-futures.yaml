@@ -6,7 +6,7 @@ what: Koi Tū is an independent research centre at the University of Auckland th
 region: auckland
 website: https://informedfutures.org
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/koi-tu-centre-for-informed-futures/
 linkedin_people: []
 tags:
 - policy research
@@ -14,8 +14,9 @@ tags:
 - University of Auckland
 - think tank
 related_to: []
-source: informedfutures.org homepage (verified via WebFetch)
-founding_year: null
+source: informedfutures.org homepage and /about (verified via WebFetch); Koi Tū set up in 2019 per
+  informedfutures.org/about; LinkedIn company page verified via direct fetch, 2026-08-25
+founding_year: 2019
 takes_contributors: null
 careers_url: ''
 last_verified: '2026-08-05'

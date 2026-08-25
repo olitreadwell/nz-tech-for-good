@@ -6,7 +6,7 @@ what: Predator Free NZ Trust mobilises communities across the country to trap in
 region: national
 website: https://predatorfreenz.org
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/predatorfreenz/
 linkedin_people: []
 tags:
 - conservation
@@ -16,7 +16,8 @@ tags:
 related_to:
 - Trap.NZ
 - The Cacophony Project
-source: predatorfreenz.org homepage (verified via WebFetch)
+source: predatorfreenz.org homepage (verified via WebFetch); LinkedIn company page (Predator Free NZ Trust)
+  verified via direct fetch, 2026-08-25
 founding_year: 2013
 takes_contributors: true
 careers_url: ''

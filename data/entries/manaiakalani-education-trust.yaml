@@ -16,8 +16,9 @@ tags:
 related_to:
 - Dev Academy Aotearoa (Māori and Pasifika cohorts)
 - Digital Natives Academy
-source: manaiakalani.org homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch
+source: manaiakalani.org homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch;
+  Vacancies page verified via direct fetch, 2026-08-25
 founding_year: 2007
 takes_contributors: true
-careers_url: ''
+careers_url: https://www.manaiakalani.org/about/vacancies
 last_verified: '2026-08-05'

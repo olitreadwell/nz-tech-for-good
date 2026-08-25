@@ -5,8 +5,8 @@ what: NIWA, now part of Earth Sciences New Zealand after a 2025 merger with GNS 
   flow, rainfall, and climate data for free.
 region: national
 website: https://niwa.co.nz/environmental-information/environmental-information-services-0
-github: ''
-linkedin_org: ''
+github: https://github.com/niwa
+linkedin_org: https://nz.linkedin.com/company/niwa
 linkedin_people: []
 tags:
 - climate data
@@ -16,8 +16,9 @@ tags:
 related_to:
 - GeoNet
 source: niwa.co.nz/environmental-information/environmental-information-services-0 (verified via curl,
-  HTTP 200)
-founding_year: null
+  HTTP 200); NIWA established in 1992 per niwa.co.nz/about; GitHub org, LinkedIn company page and careers
+  page verified via direct fetch, 2026-08-25
+founding_year: 1992
 takes_contributors: null
-careers_url: ''
+careers_url: https://niwa.co.nz/about-niwa/careers-niwa
 last_verified: '2026-08-05'

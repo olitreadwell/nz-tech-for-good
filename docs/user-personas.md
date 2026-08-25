@@ -3,9 +3,9 @@
 Six personas who use the NZ Tech-for-Good directory, their needs,
 journeys, and pain points.
 
-## 1. Job Seeker — Tāne
+## 1. Job Seeker: Tāne
 
-**Who**: Early-career developer looking for mission-driven work in NZ.
+**Who**: Early-career developer looking for mission-led work in NZ.
 **Needs**: Find orgs that are hiring, filter by region and domain, see what
 kinds of roles exist in tech-for-good.
 **Journey**: Lands on homepage → filters directory by region (Wellington) →
@@ -16,7 +16,7 @@ entries don't have careers URLs filled in. No way to save/bookmark entries.
 **Features needed**: Hiring/takes-contributors filter, careers URL
 prominence, saved entries (localStorage bookmarks), "orgs hiring near you."
 
-## 2. Volunteer — Māia
+## 2. Volunteer: Māia
 
 **Who**: Data scientist wanting to volunteer skills for a cause.
 **Needs**: Find orgs that take volunteers, match skills to opportunities,
@@ -30,7 +30,7 @@ remote vs in-person.
 **Features needed**: Volunteer-matching search, skills taxonomy,
 contributor-type indicators, remote/in-person badge.
 
-## 3. Researcher — Dr. Aroha
+## 3. Researcher: Dr. Aroha
 
 **Who**: Academic studying NZ's civic tech ecosystem for a paper.
 **Needs**: Comprehensive data, export capabilities, citation info,
@@ -43,7 +43,7 @@ year or other structured fields.
 **Features needed**: Citation generator, methodology page, enhanced data
 exports, structured field filters (founding year range), API documentation.
 
-## 4. Org Representative — Hana
+## 4. Org Representative: Hana
 
 **Who**: Runs a small climate-tech nonprofit, wants their org listed and
 wants to discover peer orgs.
@@ -58,7 +58,7 @@ navigate. No way to claim/verify an org entry.
 **Features needed**: "Similar orgs" widget on entry pages, "also in this
 domain" section (exists), claimed/verified org badge, easier entry editing.
 
-## 5. Funder / Investor — James
+## 5. Funder / Investor: James
 
 **Who**: Impact investor evaluating the NZ tech-for-good landscape for
 potential grants.
@@ -72,7 +72,7 @@ Stats page exists but could show more.
 **Features needed**: Maturity indicators (founding decade filter), org
 size/staff count, domain gap analysis, funder-focused stats.
 
-## 6. Curious Citizen — Sam
+## 6. Curious Citizen: Sam
 
 **Who**: New to NZ, heard about tech-for-good, wants to learn what exists and
 how to get involved.

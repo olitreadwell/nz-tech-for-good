@@ -5,7 +5,7 @@ what: REANNZ (Research and Education Advanced Network New Zealand) is a Crown-ow
   connecting them to more than 120 similar networks worldwide.
 region: national
 website: https://www.reannz.co.nz
-github: ''
+github: https://github.com/reannz
 linkedin_org: https://nz.linkedin.com/company/reannz
 linkedin_people: []
 tags:
@@ -14,8 +14,9 @@ tags:
 - Crown entity
 - connectivity
 related_to: []
-source: reannz.co.nz (verified via WebFetch)
+source: reannz.co.nz (verified via WebFetch); GitHub org (github.com/reannz) and Careers page verified via
+  direct fetch, 2026-08-25
 founding_year: null
 takes_contributors: null
-careers_url: ''
+careers_url: https://www.reannz.co.nz/about/careers
 last_verified: '2026-08-05'

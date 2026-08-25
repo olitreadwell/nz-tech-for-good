@@ -14,8 +14,9 @@ tags:
 - startups
 related_to:
 - Ara Ake
-source: kiwinet.org.nz/About (verified via WebFetch); LinkedIn company listing found via web search
-founding_year: null
+source: kiwinet.org.nz/About (verified via WebFetch); LinkedIn company listing found via web search;
+  founded 2011 and Careers page (kiwinet.org.nz/About/Careers) verified via direct fetch, 2026-08-25
+founding_year: 2011
 takes_contributors: null
-careers_url: ''
+careers_url: https://kiwinet.org.nz/About/Careers
 last_verified: '2026-08-05'

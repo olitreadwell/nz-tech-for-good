@@ -5,7 +5,7 @@ what: New Zealand Red Cross runs the free Hazard App, downloaded over 200,000 ti
 region: national
 website: https://www.redcross.org.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://nz.linkedin.com/company/new-zealand-red-cross
 linkedin_people: []
 tags:
 - disaster response
@@ -14,8 +14,9 @@ tags:
 - NGO
 related_to:
 - Collaborate
-source: redcross.org.nz (verified via WebFetch); redcross.org.nz Hazard App story page found via web search
+source: redcross.org.nz (verified via WebFetch); redcross.org.nz Hazard App story page found via web search;
+  LinkedIn company page and Get involved page verified via direct fetch, 2026-08-25
 founding_year: 1931
 takes_contributors: true
-careers_url: ''
+careers_url: https://www.redcross.org.nz/get-involved/
 last_verified: '2026-08-05'

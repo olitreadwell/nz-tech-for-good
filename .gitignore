@@ -43,3 +43,7 @@ out/
 next-env.d.ts
 coverage/
 .vercel
+
+.local/
+
+.turbo/

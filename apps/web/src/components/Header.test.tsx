@@ -32,6 +32,7 @@ describe("Header", () => {
     fireEvent.click(screen.getAllByTestId("menu-toggle")[0]);
     expect(screen.getAllByText("Browse").length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText("Map").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText("Contact").length).toBeGreaterThanOrEqual(1);
   });
 
   it("has theme toggle button", () => {

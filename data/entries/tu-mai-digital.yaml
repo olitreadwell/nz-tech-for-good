@@ -6,7 +6,7 @@ what: Tu Mai Digital works with community organisations to help the most vulnera
 region: national
 website: https://tumaidigital.org.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/tu-mai-digital/
 linkedin_people: []
 tags:
 - digital-inclusion
@@ -15,7 +15,8 @@ tags:
 - digital-literacy
 - community
 related_to: []
-source: tumaidigital.org.nz homepage, verified 2026-08-07 via web search
+source: tumaidigital.org.nz homepage, verified 2026-08-07 via web search; LinkedIn company page (Tu Mai
+  Digital) verified via direct fetch, 2026-08-25
 founding_year: null
 takes_contributors: true
 careers_url: ''

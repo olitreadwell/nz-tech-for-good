@@ -5,7 +5,7 @@ what: Te Pūnaha Matatini is a research centre that studies complex systems, lik
 region: auckland
 website: https://www.tepunahamatatini.ac.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/te-punaha-matatini/
 linkedin_people: []
 tags:
 - complex systems research
@@ -13,7 +13,8 @@ tags:
 - Centre of Research Excellence
 - University of Auckland
 related_to: []
-source: tepunahamatatini.ac.nz homepage (verified via WebFetch)
+source: tepunahamatatini.ac.nz homepage (verified via WebFetch); LinkedIn company page verified via direct
+  fetch, 2026-08-25
 founding_year: 2014
 takes_contributors: true
 careers_url: ''

@@ -15,6 +15,7 @@ describe("Footer", () => {
     expect(screen.getAllByText("Directory").length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText("Stats").length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText("GitHub").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText("Contact").length).toBeGreaterThanOrEqual(1);
   });
 
   it("shows data export links", () => {

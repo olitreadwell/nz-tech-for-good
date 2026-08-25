@@ -1,8 +1,10 @@
+---
 name: Digital.govt.nz
 domain: govtech
-what: Digital.govt.nz is the New Zealand government's hub for digital transformation guidance, standards,
-  and case studies, including work formerly run by the Department of Internal Affairs' Service Innovation
-  Lab (which closed after several years of running government innovation projects).
+what: Digital.govt.nz is the New Zealand government's hub for digital transformation
+  guidance, standards, and case studies, including work formerly run by the Department
+  of Internal Affairs' Service Innovation Lab (which closed after several years of
+  running government innovation projects).
 region: national
 website: https://www.digital.govt.nz
 github: ''
@@ -14,11 +16,10 @@ tags:
 - standards
 - service design
 related_to:
-- Auckland Co-Design Lab
 - data.govt.nz
-source: digital.govt.nz (verified via WebFetch); Service Innovation Lab closure reported on digital.govt.nz
-  news page found via web search
-founding_year: null
-takes_contributors: null
+source: digital.govt.nz (verified via WebFetch); Service Innovation Lab closure reported
+  on digital.govt.nz news page found via web search; founding year (2017) verified via digital.govt.nz blog post 'Building a new digital presence' (Dec 2017, Wayback) (2026-08-25)
+founding_year: 2017
+takes_contributors: 
 careers_url: ''
 last_verified: '2026-08-05'

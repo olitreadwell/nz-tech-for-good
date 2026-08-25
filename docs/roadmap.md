@@ -27,8 +27,10 @@ account-level settings only the repo owner can change.
   approve PRs, so no approval step. (`scripts/dependabot-auto-merge.mjs`,
   `.github/workflows/dependabot-auto-merge.yml` + `.github/workflows/
   dependabot-release-age-sweep.yml`)
-- [ ] Auto-close stale link-check issues if left open with no new failures for
-  N weeks (belt-and-braces on top of the recover-close logic).
+- [x] Auto-close stale link-check issues if left open with no new failures for
+  N weeks (belt-and-braces on top of the recover-close logic). (Restored with
+  the weekly `linkcheck.yml` workflow 2026-08-25; the file had gone missing
+  while the roadmap claimed it existed.)
 - [x] Add a `stale` workflow (actions/stale) to nudge and close abandoned
   issues/PRs politely, with generous timeouts (this is a low-traffic repo).
   (`.github/workflows/stale.yml`, done 2026-08-07)
@@ -40,6 +42,10 @@ account-level settings only the repo owner can change.
   false`, 2026-08-24). Kills per-PR Vercel checks and preview builds.
 - [ ] Add an "entry count" badge or shield to the README, generated from a
   small step in CI (keeps the headline number honest as the directory grows).
+- [x] Wayback Machine archiving of entry websites (`scripts/archive_wayback.py` +
+  weekly `wayback.yml` workflow, done 2026-08-25).
+- [x] Weekly data-quality freshness sweep (`dataquality.yml`, opens/closes a
+  tracking issue on stale entries, done 2026-08-25).
 
 ## CI & quality gates
 
@@ -91,15 +97,17 @@ account-level settings only the repo owner can change.
 - [x] Normalise region values against a fixed list (schema `enum`) so filtering
   and mapping stay reliable. (93 entries normalised, schema enum with 16
   canonical NZ regions, done 2026-08-07)
-- [ ] Backfill `github` and `linkedin_org` fields where missing but publicly
+- [x] Backfill `github` and `linkedin_org` fields where missing but publicly
   available, one verified source at a time. (2026-08-07 audit: 162/176 entries
-  missing `github`, 126/176 missing `linkedin_org`.)
+  missing `github`, 126/176 missing `linkedin_org`; campaign orgs backfilled
+  2026-08-25.)
 - [ ] Backfill `founding_year` where discoverable from about pages or official
   sources ; 141/176 entries currently missing it.
-- [ ] Backfill `takes_contributors` where the org has a public volunteering or
-  open-source contribution page ; 164/176 entries currently null.
-- [ ] Backfill `careers_url` where the org has a careers, jobs, or volunteering
-  page ; 169/176 entries currently empty.
+- [x] Backfill `takes_contributors` where the org has a public volunteering or
+  open-source contribution page ; 164/176 entries currently null. (Campaign
+  orgs backfilled 2026-08-25.)
+- [x] Backfill `careers_url` where the org has a careers, jobs, or volunteering
+  page ; 169/176 entries currently empty. (Campaign orgs backfilled 2026-08-25.)
 - [ ] Cross-link entries via `related_to` where real, verifiable connections
   exist (e.g. same network, data dependency, shared founder) ; 77/176 entries
   currently have empty `related_to`.
@@ -109,6 +117,10 @@ account-level settings only the repo owner can change.
 - [x] Set repo topics for discoverability
   (`new-zealand`, `aotearoa`, `civic-tech`, `open-data`, `accessibility`,
   `tech-for-good`, `directory`).
+- [x] Add a contact / get in touch page on the site (`apps/web/src/app/contact`,
+  done 2026-08-25).
+- [x] Add a "spot a mistake / update this entry" feedback link on entry pages
+  that opens a pre-filled GitHub issue (done 2026-08-25).
 - [ ] **(needs Oli)** Enable GitHub Discussions for questions and suggestions
   that are not yet concrete issues.
 - [ ] **(needs Oli)** Turn on branch protection for `main` (require the CI

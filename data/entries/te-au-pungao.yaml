@@ -6,7 +6,7 @@ what: Te Au Pūngao is Marlborough's technology and innovation hub in Blenheim, 
 region: marlborough
 website: https://www.teaupungao.com
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/teaupungao/
 linkedin_people: []
 tags:
 - makerspace
@@ -16,7 +16,8 @@ tags:
 - microgrants
 related_to: []
 source: Scoop "New Marlborough Tech Hub A 'Gamechanger'" (31 Jul 2025); whiringa.com (verified via
-  WebFetch); Weekly Voice article on the Te Au Pūngao microgrants programme
+  WebFetch); Weekly Voice article on the Te Au Pūngao microgrants programme; LinkedIn company page (Te Au
+  Pūngao) verified via direct fetch, 2026-08-25
 founding_year: 2025
 takes_contributors: true
 careers_url: ''

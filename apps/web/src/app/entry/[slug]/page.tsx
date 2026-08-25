@@ -8,9 +8,11 @@ import {
   Calendar,
   MapPin,
   Clock,
+  PenLine,
 } from "lucide-react";
 
 import { getAllEntries } from "@/lib/data";
+import { buildEntryFeedbackUrl } from "@/lib/feedback";
 
 export default async function EntryPage({
   params,
@@ -149,6 +151,14 @@ export default async function EntryPage({
             Careers
           </a>
         )}
+        <a
+          href={buildEntryFeedbackUrl({ slug: entry.slug, name: entry.name })}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-1.5 font-medium hover:bg-surface-alt"
+        >
+          <PenLine className="h-4 w-4" /> Spot a mistake or update this entry
+        </a>
       </div>
 
       <dl className="mt-6 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-sm">

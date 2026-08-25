@@ -6,7 +6,7 @@ what: Digital Identity New Zealand brings together government, business, and com
 region: national
 website: https://digitalidentity.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/digitalidnz/
 linkedin_people: []
 tags:
 - digital identity
@@ -15,7 +15,7 @@ tags:
 - govtech
 related_to:
 - Digital.govt.nz
-source: digitalidentity.nz homepage (verified via WebFetch)
+source: digitalidentity.nz homepage (verified via WebFetch); linkedin_org verified from digitalidentity.nz homepage and linkedin.com (2026-08-25)
 founding_year: 2019
 takes_contributors: null
 careers_url: ''

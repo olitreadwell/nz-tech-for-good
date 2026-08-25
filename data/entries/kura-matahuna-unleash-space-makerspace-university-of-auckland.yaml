@@ -5,7 +5,7 @@ what: Kura Matahuna Unleash Space Makerspace is a free workshop at the Universit
   build and prototype their own projects after safety training.
 region: auckland
 website: https://www.auckland.ac.nz/en/cie/locations/unleash-space/makerspace.html
-github: ''
+github: https://github.com/unleash-space
 linkedin_org: ''
 linkedin_people: []
 tags:
@@ -17,7 +17,8 @@ tags:
 related_to:
 - Hackland
 - Auckland Library of Tools
-source: auckland.ac.nz Unleash Space makerspace page (verified via curl and WebFetch, HTTP 200)
+source: auckland.ac.nz Unleash Space makerspace page (verified via curl and WebFetch, HTTP 200); GitHub org
+  github.com/unleash-space (UoA Unleash Space) verified via direct fetch, 2026-08-25
 founding_year: null
 takes_contributors: true
 careers_url: ''

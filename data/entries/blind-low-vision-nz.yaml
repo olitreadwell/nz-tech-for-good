@@ -16,8 +16,8 @@ tags:
 - charity
 related_to:
 - Access Matters Aotearoa
-source: blindlowvision.org.nz (verified via WebFetch)
+source: blindlowvision.org.nz (verified via WebFetch); takes_contributors and careers_url verified via blindlowvision.org.nz/support-us/volunteer (2026-08-25)
 founding_year: 1890
-takes_contributors: null
-careers_url: ''
+takes_contributors: true
+careers_url: https://blindlowvision.org.nz/support-us/volunteer/
 last_verified: '2026-08-05'

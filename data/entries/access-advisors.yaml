@@ -6,7 +6,7 @@ what: Access Advisors is a New Zealand digital accessibility consultancy that he
 region: national
 website: https://accessadvisors.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/access-advisors-nz
 linkedin_people: []
 tags:
 - accessibility
@@ -17,7 +17,7 @@ tags:
 related_to:
 - Blind Low Vision NZ
 - Be. Lab
-source: accessadvisors.nz homepage (verified via WebFetch)
+source: accessadvisors.nz homepage (verified via WebFetch); linkedin_org verified from accessadvisors.nz footer and linkedin.com (2026-08-25)
 founding_year: 2020
 takes_contributors: true
 careers_url: ''

@@ -6,7 +6,7 @@ what: Collaborate is a New Zealand volunteering app that matches people's skills
 region: national
 website: https://www.letscollaborate.co.nz
 github: ''
-linkedin_org: ''
+linkedin_org: https://www.linkedin.com/company/collaboratenz
 linkedin_people: []
 tags:
 - volunteering
@@ -15,8 +15,8 @@ tags:
 - app
 related_to:
 - New Zealand Red Cross
-source: letscollaborate.co.nz (verified via WebFetch)
-founding_year: null
+source: letscollaborate.co.nz (verified via WebFetch); founding year (2015), linkedin_org and careers_url verified via letscollaborate.co.nz/story and /volunteer (2026-08-25)
+founding_year: 2015
 takes_contributors: true
-careers_url: ''
+careers_url: https://www.letscollaborate.co.nz/volunteer
 last_verified: '2026-08-05'

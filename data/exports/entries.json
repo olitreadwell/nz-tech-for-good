@@ -6,7 +6,7 @@
     "region": "national",
     "website": "https://accessadvisors.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/access-advisors-nz",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -21,7 +21,7 @@
       "Blind Low Vision NZ",
       "Be. Lab"
     ],
-    "source": "accessadvisors.nz homepage (verified via WebFetch)",
+    "source": "accessadvisors.nz homepage (verified via WebFetch); linkedin_org verified from accessadvisors.nz footer and linkedin.com (2026-08-25)",
     "founding_year": 2020,
     "takes_contributors": true,
     "careers_url": "",
@@ -34,7 +34,7 @@
     "region": "national",
     "website": "https://www.accessmatters.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/access-matters-aotearoa/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -47,10 +47,10 @@
     "related_to": [
       "Blind Low Vision NZ"
     ],
-    "source": "accessmatters.org.nz (verified via WebFetch); founding history from abcnz.org.nz (Blind Citizens NZ) found via web search",
+    "source": "accessmatters.org.nz (verified via WebFetch); founding history from abcnz.org.nz (Blind Citizens NZ) found via web search; linkedin_org, volunteer page and careers_url verified via accessmatters.org.nz (2026-08-25)",
     "founding_year": 2023,
-    "takes_contributors": null,
-    "careers_url": "",
+    "takes_contributors": true,
+    "careers_url": "https://www.accessmatters.org.nz/volunteer",
     "last_verified": "2026-08-05"
   },
   {
@@ -86,7 +86,7 @@
     "region": "national",
     "website": "https://aiforum.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/aiforumnz/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -99,7 +99,7 @@
     "related_to": [
       "Te Mana Raraunga"
     ],
-    "source": "aiforum.org.nz homepage (verified via WebFetch)",
+    "source": "aiforum.org.nz homepage (verified via WebFetch); linkedin_org verified from aiforum.org.nz footer and linkedin.com (2026-08-25)",
     "founding_year": 2017,
     "takes_contributors": true,
     "careers_url": "",
@@ -112,7 +112,7 @@
     "region": "wellington",
     "website": "https://www.aisafetyaotearoa.org",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/ai-safety-aotearoa",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -124,7 +124,7 @@
       "advocacy"
     ],
     "related_to": [],
-    "source": "aisafetyaotearoa.org homepage and get-involved page, verified via WebFetch 2026-08-06",
+    "source": "aisafetyaotearoa.org homepage and get-involved page, verified via WebFetch 2026-08-06; linkedin_org verified via linkedin.com (2026-08-25)",
     "founding_year": 2025,
     "takes_contributors": true,
     "careers_url": "https://www.aisafetyaotearoa.org/get-involved",
@@ -149,8 +149,7 @@
       "responsible tech"
     ],
     "related_to": [
-      "OpenLaw NZ",
-      "Wellington Community Justice Project"
+      "OpenLaw NZ"
     ],
     "source": "alter.auckland.ac.nz/hackathon (verified via WebFetch)",
     "founding_year": 2020,
@@ -178,10 +177,10 @@
     "related_to": [
       "ActionStation"
     ],
-    "source": "amnesty.org.nz/who-we-are (verified via WebFetch)",
+    "source": "amnesty.org.nz/who-we-are (verified via WebFetch); careers_url verified via amnesty.org.nz/work-with-us (2026-08-25)",
     "founding_year": 1961,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://amnesty.org.nz/work-with-us/",
     "last_verified": "2026-08-05"
   },
   {
@@ -227,40 +226,9 @@
       "data",
       "national"
     ],
-    "related_to": [
-      "KiwiHarvest",
-      "Kaibosh",
-      "Everybody Eats"
-    ],
+    "related_to": [],
     "source": "Web search confirmed via afra.org.nz/about-us/, waiwaste.org.nz/about/aotearoa-food-rescue-alliance/, LinkedIn company page, and Facebook page showing active posts in 2025; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
     "founding_year": 2021,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Aotearoa Resettled Community Coalition (ARCC)",
-    "domain": "refugee / migrant support tech",
-    "what": "The Aotearoa Resettled Community Coalition is an Auckland umbrella charity representing 26 member organisations from former refugee communities, helping people find housing, healthcare, and legal services, and giving them a collective voice on resettlement issues.",
-    "region": "auckland",
-    "website": "https://arcc.org.nz/",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "refugee support",
-      "resettlement",
-      "umbrella organisation",
-      "non-profit"
-    ],
-    "related_to": [
-      "Belong Aotearoa",
-      "ChangeMakers Resettlement Forum"
-    ],
-    "source": "arcc.org.nz homepage (verified via curl, HTTP 200); web search of arcc.org.nz about-us page",
-    "founding_year": null,
     "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -285,58 +253,6 @@
     "related_to": [],
     "source": "araake.co.nz (verified via WebFetch)",
     "founding_year": 2021,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Asylum Seekers Support Trust (ASST)",
-    "domain": "refugee / migrant support tech",
-    "what": "The Asylum Seekers Support Trust is the only New Zealand organisation that focuses specifically on people seeking asylum, giving them emergency housing and practical help from qualified social workers while their claims are processed.",
-    "region": "auckland",
-    "website": "https://asst.org.nz/",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "refugee support",
-      "asylum seekers",
-      "emergency housing",
-      "non-profit"
-    ],
-    "related_to": [
-      "Belong Aotearoa"
-    ],
-    "source": "asst.org.nz homepage (verified via curl, HTTP 200); web search of asst.org.nz about-us page",
-    "founding_year": null,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Auckland Co-design Lab",
-    "domain": "govtech",
-    "what": "The Auckland Co-design Lab is a public sector innovation team, jointly funded by Auckland Council and several central government agencies, that works directly with communities and iwi (Māori tribal groups) to design better public services for complex social problems.",
-    "region": "auckland",
-    "website": "https://www.aucklandco-lab.nz",
-    "github": "",
-    "linkedin_org": "https://nz.linkedin.com/company/auckland-co-design-lab",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "govtech",
-      "service design",
-      "public sector innovation",
-      "co-design"
-    ],
-    "related_to": [
-      "Digital.govt.nz"
-    ],
-    "source": "aucklandco-lab.nz (verified via WebFetch)",
-    "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -389,10 +305,10 @@
     "related_to": [
       "Hackland"
     ],
-    "source": "aucklandlibraryoftools.com homepage (verified via curl and WebFetch, HTTP 200)",
+    "source": "aucklandlibraryoftools.com homepage (verified via curl and WebFetch, HTTP 200); careers_url (volunteer page) verified via aucklandlibraryoftools.com/volunteer (2026-08-25)",
     "founding_year": 2018,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.aucklandlibraryoftools.com/volunteer/",
     "last_verified": "2026-08-05"
   },
   {
@@ -402,7 +318,7 @@
     "region": "national",
     "website": "https://awadigital.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/awa-digital-nz",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -414,7 +330,7 @@
       "Māori-data-sovereignty"
     ],
     "related_to": [],
-    "source": "awadigital.co.nz homepage, verified 2026-08-07 via web search",
+    "source": "awadigital.co.nz homepage, verified 2026-08-07 via web search; linkedin_org verified from awadigital.co.nz homepage and linkedin.com (2026-08-25)",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
@@ -472,32 +388,6 @@
     "last_verified": "2026-08-05"
   },
   {
-    "name": "Belong Aotearoa",
-    "domain": "refugee / migrant support tech",
-    "what": "Belong Aotearoa (formerly Auckland Regional Migrant Services) is a charity that has helped migrants, international students, and former refugees settle into New Zealand life for over 20 years, running programmes that help people find connection, housing, and work.",
-    "region": "auckland",
-    "website": "https://www.belong.org.nz/",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "refugee support",
-      "migrant support",
-      "settlement services",
-      "non-profit"
-    ],
-    "related_to": [
-      "HOST International Aotearoa"
-    ],
-    "source": "belong.org.nz homepage (verified via curl, HTTP 200); web search of belong.org.nz about pages",
-    "founding_year": 2016,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
     "name": "BenefitMe",
     "domain": "housing / homelessness tech",
     "what": "BenefitMe is a free tool by the Digital Aotearoa Collective that helps New Zealanders discover their legal entitlements to benefits and social support, designed to reduce the power imbalance between people seeking help and government departments.",
@@ -524,32 +414,6 @@
     "last_verified": "2026-08-07"
   },
   {
-    "name": "Birds New Zealand (Ornithological Society of New Zealand)",
-    "domain": "environmental citizen-science",
-    "what": "Birds New Zealand is the country's bird-watching and research society, running citizen science projects and pointing members to tools like eBird so anyone can record bird sightings and help build a picture of how New Zealand's bird populations are changing.",
-    "region": "national",
-    "website": "https://www.birdsnz.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "citizen science",
-      "birds",
-      "conservation",
-      "non-profit"
-    ],
-    "related_to": [
-      "iNaturalist NZ – Mātaki Taiao (formerly NatureWatch NZ)"
-    ],
-    "source": "birdsnz.org.nz homepage (verified via WebFetch)",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
     "name": "Blind Low Vision NZ",
     "domain": "disability & accessibility tech",
     "what": "Blind Low Vision NZ (formerly the Royal New Zealand Foundation of the Blind) supports blind, deafblind, and low-vision New Zealanders, including publishing web accessibility guidelines and running an Accessible Formats Service that produces documents in Braille, large print, and audio.",
@@ -570,10 +434,10 @@
     "related_to": [
       "Access Matters Aotearoa"
     ],
-    "source": "blindlowvision.org.nz (verified via WebFetch)",
+    "source": "blindlowvision.org.nz (verified via WebFetch); takes_contributors and careers_url verified via blindlowvision.org.nz/support-us/volunteer (2026-08-25)",
     "founding_year": 1890,
-    "takes_contributors": null,
-    "careers_url": "",
+    "takes_contributors": true,
+    "careers_url": "https://blindlowvision.org.nz/support-us/volunteer/",
     "last_verified": "2026-08-05"
   },
   {
@@ -645,8 +509,7 @@
       "freelance"
     ],
     "related_to": [
-      "Loomio",
-      "Cooperative Business New Zealand"
+      "Loomio"
     ],
     "source": "bridgeseat.substack.com (verified via WebFetch)",
     "founding_year": 2020,
@@ -711,8 +574,8 @@
     "what": "Cawthron Institute, a science research institute based in Nelson, builds ocean sensors and data buoys that let mussel and salmon farmers check water conditions on their phones, and it recently spun out a company called Ocean Intelligence to sell this technology.",
     "region": "tasman-nelson",
     "website": "https://www.cawthron.org.nz/what-we-do/ocean-health/ocean-technologies/",
-    "github": "",
-    "linkedin_org": "",
+    "github": "https://github.com/cawthron",
+    "linkedin_org": "https://www.linkedin.com/company/cawthron-institute",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -726,7 +589,7 @@
     "related_to": [
       "CarbonCrop"
     ],
-    "source": "cawthron.org.nz/what-we-do/ocean-health/ocean-technologies (verified via curl, HTTP 200); cawthron.org.nz news page on the Ocean Intelligence spin-out found via web search",
+    "source": "cawthron.org.nz/what-we-do/ocean-health/ocean-technologies (verified via curl, HTTP 200); cawthron.org.nz news page on the Ocean Intelligence spin-out found via web search; github and linkedin_org verified for parent Cawthron Institute via github.com/cawthron and linkedin.com (2026-08-25)",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
@@ -758,58 +621,6 @@
     "last_verified": "2026-08-06"
   },
   {
-    "name": "ChangeMakers Resettlement Forum",
-    "domain": "refugee / migrant support tech",
-    "what": "ChangeMakers Resettlement Forum is a Wellington-region charity representing more than 18 refugee-background communities, working through advocacy, research, and community projects so former refugees can fully take part in life in New Zealand.",
-    "region": "wellington",
-    "website": "https://crf.org.nz/",
-    "github": "",
-    "linkedin_org": "https://nz.linkedin.com/company/changemakers-resettlement-forum",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "refugee support",
-      "resettlement",
-      "advocacy",
-      "non-profit"
-    ],
-    "related_to": [
-      "Belong Aotearoa"
-    ],
-    "source": "crf.org.nz homepage (verified via curl, HTTP 200); crf.org.nz about-us page found via web search",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Choices NZ",
-    "domain": "disability employment tech",
-    "what": "Choices NZ works with disabled people and health-impaired job seekers to achieve employment through pre-employment training and tailored on-the-job support, partnering with local businesses across nine NZ regions.",
-    "region": "national",
-    "website": "https://www.choicesnz.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "disability-employment",
-      "job-support",
-      "inclusive-hiring",
-      "training"
-    ],
-    "related_to": [
-      "Workbridge"
-    ],
-    "source": "choicesnz.org.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-07"
-  },
-  {
     "name": "Christchurch City Council Open Data Portal",
     "domain": "open-data",
     "what": "Christchurch City Council's Spatial Open Data Portal publishes public datasets about council assets, infrastructure, and planning rules, so contractors and residents can find authoritative maps of the city.",
@@ -829,32 +640,6 @@
     "source": "opendata-christchurchcity.hub.arcgis.com homepage (verified via curl, HTTP 200)",
     "founding_year": 2014,
     "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Citizens Advice Bureau New Zealand (CAB)",
-    "domain": "legal-aid / justice tech",
-    "what": "Citizens Advice Bureau New Zealand is a national charity, running since 1970, with about 80 branches and over 2,000 volunteers who give free, confidential advice on legal, tenancy, and everyday problems, and maintain a directory of more than 30,000 community organisations.",
-    "region": "national",
-    "website": "https://www.cab.org.nz/",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "legal aid",
-      "advice service",
-      "non-profit",
-      "community directory"
-    ],
-    "related_to": [
-      "Community Law Centres o Aotearoa"
-    ],
-    "source": "cab.org.nz homepage (verified via curl, HTTP 200); web search of cab.org.nz and Wikipedia",
-    "founding_year": 1970,
-    "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-05"
   },
@@ -917,7 +702,7 @@
     "region": "national",
     "website": "https://www.letscollaborate.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/collaboratenz",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -930,10 +715,10 @@
     "related_to": [
       "New Zealand Red Cross"
     ],
-    "source": "letscollaborate.co.nz (verified via WebFetch)",
-    "founding_year": null,
+    "source": "letscollaborate.co.nz (verified via WebFetch); founding year (2015), linkedin_org and careers_url verified via letscollaborate.co.nz/story and /volunteer (2026-08-25)",
+    "founding_year": 2015,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.letscollaborate.co.nz/volunteer",
     "last_verified": "2026-08-05"
   },
   {
@@ -964,54 +749,6 @@
     "last_verified": "2026-08-05"
   },
   {
-    "name": "Community Finance",
-    "domain": "financial-inclusion / fintech-for-good",
-    "what": "Community Finance is a social enterprise that provides low-cost finance to New Zealand's community housing providers, with over $150 million in impact investments enabled through partnerships with Westpac NZ and Simplicity.",
-    "region": "auckland",
-    "website": "https://communityfinance.co.nz",
-    "github": "",
-    "linkedin_org": "https://linkedin.com/company/communityfinance",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "social-enterprise",
-      "impact-investing",
-      "community-housing",
-      "finance"
-    ],
-    "related_to": [],
-    "source": "communityfinance.co.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-07"
-  },
-  {
-    "name": "Community Housing Aotearoa",
-    "domain": "housing / homelessness tech",
-    "what": "Community Housing Aotearoa is the peak body for New Zealand's community housing sector, representing more than 175 housing providers and partners who together house around 30,000 people, and it campaigns and shares research so more New Zealanders can access a warm, safe, affordable home.",
-    "region": "wellington",
-    "website": "https://www.communityhousing.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "housing",
-      "homelessness",
-      "peak body",
-      "advocacy"
-    ],
-    "related_to": [],
-    "source": "communityhousing.org.nz homepage (verified via WebFetch)",
-    "founding_year": 2004,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
     "name": "Community IT",
     "domain": "digital-inclusion",
     "what": "Community IT is a community-based project that provides access to digital technology for those who would otherwise go without ; accepting device donations, running free tech repair workshops, donating repaired equipment, and offering subsidised Skinny Jump broadband as a DIAA Industry Partner.",
@@ -1037,81 +774,6 @@
     "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-07"
-  },
-  {
-    "name": "Community Law Centres o Aotearoa",
-    "domain": "legal-aid / justice tech",
-    "what": "Community Law Centres o Aotearoa runs 24 free legal help centres across New Zealand and publishes the Community Law Manual Online, a free plain-English guide to New Zealand law used by about 70,000 people a month, so people who cannot afford a lawyer can still understand their rights.",
-    "region": "national",
-    "website": "https://communitylaw.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "legal aid",
-      "access to justice",
-      "non-profit",
-      "legal information"
-    ],
-    "related_to": [],
-    "source": "communitylaw.org.nz homepage (verified via WebFetch); Community Law Manual usage figure found via web search",
-    "founding_year": 1987,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Consumer NZ",
-    "domain": "nonprofit / NGO tech",
-    "what": "Consumer NZ is an independent, not-for-profit organisation, running since 1959, that tests products, publishes reviews, and campaigns for stronger consumer protection laws so New Zealanders can make better purchasing decisions.",
-    "region": "auckland",
-    "website": "https://www.consumer.org.nz",
-    "github": "",
-    "linkedin_org": "https://nz.linkedin.com/company/consumer-nz",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "consumer protection",
-      "advocacy",
-      "product testing",
-      "non-profit"
-    ],
-    "related_to": [],
-    "source": "consumer.org.nz/about-us (verified via WebFetch); LinkedIn company listing found via web search",
-    "founding_year": 1959,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Cooperative Business New Zealand",
-    "domain": "worker-coop / platform-coop tech",
-    "what": "Cooperative Business New Zealand is the peak industry body for cooperatives, mutuals, and member-owned businesses, representing them to government and running education and networking programmes like the Co-op Academy.",
-    "region": "national",
-    "website": "https://nz.coop",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "worker cooperative",
-      "peak body",
-      "advocacy",
-      "member-owned business"
-    ],
-    "related_to": [
-      "Loomio",
-      "Enspiral"
-    ],
-    "source": "nz.coop/about-us (verified via WebFetch)",
-    "founding_year": 1986,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
   },
   {
     "name": "Creative Tech NZ",
@@ -1146,7 +808,7 @@
     "what": "data.govt.nz is the New Zealand government's central website for finding and downloading open datasets published by government agencies, covering topics like health, education, transport, and the environment.",
     "region": "national",
     "website": "https://data.govt.nz",
-    "github": "",
+    "github": "https://github.com/data-govt-nz",
     "linkedin_org": "",
     "community_url": "",
     "events_url": "",
@@ -1162,8 +824,8 @@
       "DigitalNZ",
       "GovHack Aotearoa"
     ],
-    "source": "data.govt.nz homepage (verified via WebFetch)",
-    "founding_year": null,
+    "source": "data.govt.nz homepage (verified via WebFetch); github verified via github.com/data-govt-nz, founding year (2009) from first Wayback snapshot Nov 2009 (2026-08-25)",
+    "founding_year": 2009,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -1175,7 +837,7 @@
     "region": "national",
     "website": "https://devacademy.co.nz/",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/school/3529441",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1188,10 +850,10 @@
     "related_to": [
       "Digital Natives Academy"
     ],
-    "source": "devacademy.co.nz homepage (verified via curl, HTTP 200); web search of devacademy.co.nz and ecommercenews.co.nz",
+    "source": "devacademy.co.nz homepage (verified via curl, HTTP 200); web search of devacademy.co.nz and ecommercenews.co.nz; linkedin_org from devacademy.co.nz footer and careers_url verified via devacademy.co.nz/about-us/working-for-us (2026-08-25)",
     "founding_year": 2013,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://devacademy.co.nz/about-us/working-for-us",
     "last_verified": "2026-08-05"
   },
   {
@@ -1264,8 +926,8 @@
     "related_to": [
       "Digital Inclusion Alliance Aotearoa"
     ],
-    "source": "digitalequity.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
+    "source": "digitalequity.nz homepage, verified 2026-08-07 via web search; founding year (2021) verified via digitalequity.nz/about (2026-08-25)",
+    "founding_year": 2021,
     "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-07"
@@ -1304,7 +966,7 @@
     "region": "national",
     "website": "https://digitalidentity.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/digitalidnz/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1317,7 +979,7 @@
     "related_to": [
       "Digital.govt.nz"
     ],
-    "source": "digitalidentity.nz homepage (verified via WebFetch)",
+    "source": "digitalidentity.nz homepage (verified via WebFetch); linkedin_org verified from digitalidentity.nz homepage and linkedin.com (2026-08-25)",
     "founding_year": 2019,
     "takes_contributors": null,
     "careers_url": "",
@@ -1357,7 +1019,7 @@
     "region": "bay-of-plenty",
     "website": "https://digitalnatives.academy/",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/digitalnativesacademy",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1370,7 +1032,7 @@
     "related_to": [
       "Dev Academy Aotearoa"
     ],
-    "source": "digitalnatives.academy homepage (verified via curl, HTTP 200); web search of digitalnatives.academy and Wikipedia",
+    "source": "digitalnatives.academy homepage (verified via curl, HTTP 200); web search of digitalnatives.academy and Wikipedia; linkedin_org verified via linkedin.com (2026-08-25)",
     "founding_year": 2014,
     "takes_contributors": true,
     "careers_url": "",
@@ -1394,11 +1056,10 @@
       "service design"
     ],
     "related_to": [
-      "Auckland Co-Design Lab",
       "data.govt.nz"
     ],
-    "source": "digital.govt.nz (verified via WebFetch); Service Innovation Lab closure reported on digital.govt.nz news page found via web search",
-    "founding_year": null,
+    "source": "digital.govt.nz (verified via WebFetch); Service Innovation Lab closure reported on digital.govt.nz news page found via web search; founding year (2017) verified via digital.govt.nz blog post 'Building a new digital presence' (Dec 2017, Wayback) (2026-08-25)",
+    "founding_year": 2017,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -1455,31 +1116,6 @@
     "last_verified": "2026-08-05"
   },
   {
-    "name": "elocal",
-    "domain": "journalism / media-tech",
-    "what": "elocal is an independent NZ news and opinion platform established in 2004, committed to evidence-led, independent journalism ; covering underreported stories on economics, policy, and sovereignty without corporate or political influence.",
-    "region": "national",
-    "website": "https://www.elocal.co.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "independent-media",
-      "investigative-journalism",
-      "opinion",
-      "policy",
-      "sovereignty"
-    ],
-    "related_to": [],
-    "source": "elocal.co.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-07"
-  },
-  {
     "name": "Enspiral",
     "domain": "worker-coop / platform-coop tech",
     "what": "Enspiral is a Wellington-founded network of people and social enterprises who support each other to do work that helps society, and it is the community that the decision-making tool Loomio originally grew out of.",
@@ -1524,10 +1160,10 @@
       "startup"
     ],
     "related_to": [],
-    "source": "envicotech.co.nz About Us page (verified via WebFetch); LinkedIn company listing and Callaghan Innovation background found via web search",
+    "source": "envicotech.co.nz About Us page (verified via WebFetch); LinkedIn company listing and Callaghan Innovation background found via web search; careers_url verified via envicotech.co.nz/careers (2026-08-25)",
     "founding_year": 2015,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://www.envicotech.co.nz/careers",
     "last_verified": "2026-08-05"
   },
   {
@@ -1585,7 +1221,7 @@
     "region": "west-coast",
     "website": "https://www.epicwestport.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/epic-westport",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1597,38 +1233,11 @@
       "West Coast"
     ],
     "related_to": [],
-    "source": "epicwestport.co.nz About page (verified via WebFetch); Beehive.govt.nz release \"EPIC co-working space opens in Westport\"; Stuff.co.nz article on EPIC's arrival in Westport",
+    "source": "epicwestport.co.nz About page (verified via WebFetch); Beehive.govt.nz release \"EPIC co-working space opens in Westport\"; Stuff.co.nz article on EPIC's arrival in Westport; linkedin_org verified via linkedin.com (2026-08-25)",
     "founding_year": 2016,
     "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-06"
-  },
-  {
-    "name": "Everybody Eats",
-    "domain": "food-rescue / food-security tech",
-    "what": "Everybody Eats is a New Zealand charity that runs pay-what-you-can restaurants cooking three-course meals from surplus and rescued food, so anyone can eat a proper meal regardless of what they can afford to pay.",
-    "region": "national",
-    "website": "https://everybodyeats.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "food rescue",
-      "food security",
-      "charity",
-      "hospitality"
-    ],
-    "related_to": [
-      "KiwiHarvest",
-      "Kaibosh"
-    ],
-    "source": "everybodyeats.nz homepage title confirmed via curl (HTTP 200); WebFetch was blocked by the site's own bot-protection (403)",
-    "founding_year": 2017,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
   },
   {
     "name": "Fibre Fale",
@@ -1675,10 +1284,10 @@
     "related_to": [
       "data.govt.nz"
     ],
-    "source": "figure.nz homepage (verified via WebFetch); LinkedIn company listing found via web search",
+    "source": "figure.nz homepage (verified via WebFetch); LinkedIn company listing found via web search; careers_url (volunteer page) verified via tohu.figure.nz/external/connect_with_us (2026-08-25)",
     "founding_year": 2012,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://tohu.figure.nz/external/connect_with_us/",
     "last_verified": "2026-08-05"
   },
   {
@@ -1741,7 +1350,7 @@
     "region": "national",
     "website": "https://getready.govt.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/national-emergency-management-agency",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -1755,10 +1364,10 @@
       "GeoNet",
       "New Zealand Red Cross"
     ],
-    "source": "web search of getready.govt.nz and civildefence.govt.nz official pages; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines",
+    "source": "web search of getready.govt.nz and civildefence.govt.nz official pages; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines; takes_contributors and careers_url verified via getready.govt.nz/involved/volunteer (Wayback), linkedin_org verified for NEMA via linkedin.com (2026-08-25)",
     "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
+    "takes_contributors": true,
+    "careers_url": "https://getready.govt.nz/involved/volunteer/",
     "last_verified": "2026-08-05"
   },
   {
@@ -1801,9 +1410,7 @@
       "charity",
       "fundraising"
     ],
-    "related_to": [
-      "Volunteering New Zealand (Tūao Aotearoa)"
-    ],
+    "related_to": [],
     "source": "givealittle.co.nz homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch",
     "founding_year": 2011,
     "takes_contributors": null,
@@ -1836,32 +1443,6 @@
     "last_verified": "2026-08-06"
   },
   {
-    "name": "Good Shepherd New Zealand",
-    "domain": "financial-inclusion / fintech-for-good",
-    "what": "Good Shepherd New Zealand is a charity that helps women, girls, and families facing hardship, including family violence, by giving no-interest loans, insurance help, and financial counselling so people can avoid predatory lenders and unmanageable debt.",
-    "region": "wellington",
-    "website": "https://www.goodshepherd.org.nz",
-    "github": "",
-    "linkedin_org": "https://www.linkedin.com/company/good-shepherd-nz",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "financial inclusion",
-      "microfinance",
-      "charity",
-      "family violence support"
-    ],
-    "related_to": [
-      "Ngā Tāngata Microfinance"
-    ],
-    "source": "goodshepherd.org.nz homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
     "name": "GovHack Aotearoa New Zealand",
     "domain": "civic-tech",
     "what": "GovHack is an annual 46-hour hackathon held across Australia and New Zealand where teams build projects using open government data, run in NZ cities including Auckland, Wellington, Christchurch, and Dunedin.",
@@ -1883,37 +1464,10 @@
       "DigitalNZ",
       "LINZ Data Service"
     ],
-    "source": "govhack.org (verified via WebFetch ; note: the separate govhack.org.nz domain has expired and now redirects to an unrelated casino review site, so only govhack.org should be used)",
+    "source": "govhack.org (verified via WebFetch ; note: the separate govhack.org.nz domain has expired and now redirects to an unrelated casino review site, so only govhack.org should be used); careers_url verified via govhack.org/volunteer (2026-08-25)",
     "founding_year": 2015,
     "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "GOVIS",
-    "domain": "govtech",
-    "what": "GOVIS is a non-profit association of New Zealand government IT and information professionals, running since 1991, that organises conferences and forums to help public servants share knowledge about technology, data, and digital government.",
-    "region": "wellington",
-    "website": "https://www.govis.org.nz",
-    "github": "",
-    "linkedin_org": "https://nz.linkedin.com/company/govis-incorporated",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "govtech",
-      "government IT",
-      "professional community",
-      "non-profit"
-    ],
-    "related_to": [
-      "Digital.govt.nz",
-      "NZ GovTech"
-    ],
-    "source": "govis.org.nz/page/about (verified via WebFetch)",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://govhack.org/volunteer/",
     "last_verified": "2026-08-05"
   },
   {
@@ -1999,7 +1553,7 @@
     "region": "hawkes-bay",
     "website": "https://www.hbrc.govt.nz/our-council/open-data/",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/hawkes-bay-regional-council",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2012,7 +1566,7 @@
     "related_to": [
       "data.govt.nz"
     ],
-    "source": "web search of hbrc.govt.nz open data page; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines",
+    "source": "web search of hbrc.govt.nz open data page; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines; linkedin_org verified from hbrc.govt.nz footer and linkedin.com (2026-08-25)",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
@@ -2025,7 +1579,7 @@
     "region": "national",
     "website": "https://www.headstrong.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/headstrongnz/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2039,8 +1593,8 @@
     "related_to": [
       "SPARX"
     ],
-    "source": "headstrong.org.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
+    "source": "headstrong.org.nz homepage, verified 2026-08-07 via web search; founding year (2018) verified via headstrong.org.nz/about-us, linkedin_org via linkedin.com (2026-08-25)",
+    "founding_year": 2018,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-07"
@@ -2052,7 +1606,7 @@
     "region": "national",
     "website": "https://www.hnct.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/health-navigator-charitable-trust",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2064,8 +1618,8 @@
       "accreditation"
     ],
     "related_to": [],
-    "source": "hnct.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
+    "source": "hnct.nz homepage, verified 2026-08-07 via web search; founding year (2008) verified via hnct.nz, linkedin_org via linkedin.com (2026-08-25)",
+    "founding_year": 2008,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-07"
@@ -2095,107 +1649,6 @@
     "last_verified": "2026-08-07"
   },
   {
-    "name": "HOST International Aotearoa",
-    "domain": "refugee / migrant support tech",
-    "what": "HOST International Aotearoa is a New Zealand charity that works with former refugees, migrants, and asylum seekers, focusing on new ideas that help people settle in and feel included in their new communities.",
-    "region": "national",
-    "website": "https://www.hostinternational.org.nz/",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "refugee support",
-      "migrant support",
-      "settlement services",
-      "non-profit",
-      "innovation"
-    ],
-    "related_to": [],
-    "source": "hostinternational.org.nz homepage (verified via curl, HTTP 200)",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Housing First Auckland",
-    "domain": "housing / homelessness tech",
-    "what": "Housing First Auckland is a collective of Auckland City Mission, Lifewise, LinkPeople, and Visionwest, working to end chronic homelessness in Tāmaki Makaurau, with backbone support from Wise Group, whose Wild Bamboo team runs the shared Recordbase data system the collective uses to coordinate referrals, track outcomes, and report on progress across the partner agencies.",
-    "region": "auckland",
-    "website": "https://www.housingfirst.co.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "housing",
-      "homelessness",
-      "data coordination",
-      "collective impact"
-    ],
-    "related_to": [
-      "Community Housing Aotearoa"
-    ],
-    "source": "housingfirst.co.nz/our-collective and wildbamboo.co.nz/products/recordbase (verified via WebFetch and WebSearch)",
-    "founding_year": 2017,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-06"
-  },
-  {
-    "name": "Hui E! Community Aotearoa",
-    "domain": "nonprofit / NGO tech",
-    "what": "Hui E! Community Aotearoa connects community groups, hapū, and iwi around the country, helping them build capability and pushing for fairer funding and policy for the community sector.",
-    "region": "wellington",
-    "website": "https://www.huie.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "community sector",
-      "capability building",
-      "Treaty partnership",
-      "network"
-    ],
-    "related_to": [],
-    "source": "huie.org.nz homepage (verified via WebFetch)",
-    "founding_year": 2011,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Hāpai Te Hauora",
-    "domain": "health tech for good / hauora Māori",
-    "what": "Hāpai Te Hauora is a Māori public health organisation that works on issues like tobacco control, alcohol and drug harm, and mental wellbeing, and shares research, resources, and grant funding to support Māori-led community health projects.",
-    "region": "national",
-    "website": "https://hapai.co.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "hauora Māori",
-      "public health",
-      "Māori-led",
-      "non-profit"
-    ],
-    "related_to": [
-      "Te Mana Raraunga"
-    ],
-    "source": "hapai.co.nz homepage (verified via WebFetch)",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
     "name": "ignite",
     "domain": "mental-health tech",
     "what": "ignite is a digital wellbeing platform connecting individuals and organisations to mental health and wellbeing support across NZ ; offering counsellors, psychologists, and holistic practitioners bookable online with no referral or waitlist, including a free rural wellbeing programme with Farmlands and the Rural Support Trust.",
@@ -2219,33 +1672,6 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-07"
-  },
-  {
-    "name": "IHC New Zealand",
-    "domain": "disability employment tech",
-    "what": "IHC is New Zealand's largest charity supporting people with intellectual disabilities, running housing, community, and advocacy services through its subsidiaries IDEA Services, Choices NZ, and Accessible Properties, so people can live full lives in their communities.",
-    "region": "national",
-    "website": "https://www.ihc.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "disability support",
-      "intellectual disability",
-      "charity",
-      "advocacy"
-    ],
-    "related_to": [
-      "Blind Low Vision NZ",
-      "Workbridge"
-    ],
-    "source": "ihc.org.nz homepage (verified via WebFetch)",
-    "founding_year": 1949,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
   },
   {
     "name": "iNaturalist NZ – Mātaki Taiao (formerly NatureWatch NZ)",
@@ -2324,39 +1750,13 @@
     "last_verified": "2026-08-05"
   },
   {
-    "name": "JustSpeak",
-    "domain": "legal-aid / justice tech",
-    "what": "JustSpeak is a New Zealand movement of young people who campaign for a fairer criminal justice system, pushing for policy based on evidence rather than punishment through public campaigns and submissions to Parliament.",
-    "region": "national",
-    "website": "https://www.justspeak.org.nz/",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "justice reform",
-      "advocacy",
-      "youth movement",
-      "non-profit"
-    ],
-    "related_to": [
-      "Community Law Centres o Aotearoa"
-    ],
-    "source": "justspeak.org.nz homepage (verified via curl, HTTP 200); web search of justspeak.org.nz purpose page",
-    "founding_year": 2010,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
     "name": "Kai Commitment",
     "domain": "food-rescue / food-security tech",
     "what": "Kai Commitment is a registered New Zealand charity running a food-waste measurement programme for large food businesses, using a Target-Measure-Act-Collaborate data framework to help signatories set reduction targets and track progress toward halving food waste by 2030.",
     "region": "national",
     "website": "https://kaicommitment.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/showcase/kai-commitment/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2367,39 +1767,9 @@
       "sdg 12.3",
       "charity"
     ],
-    "related_to": [
-      "KiwiHarvest",
-      "Kaibosh"
-    ],
-    "source": "Web search confirmed via kaicommitment.org.nz/about/, tmnz.co.nz/nz-food-waste-champions-12-3-kai-commitment-impact-story/, and NZ Charities Register CC60845 at register.charities.govt.nz/Charity/CC60845; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
+    "related_to": [],
+    "source": "Web search confirmed via kaicommitment.org.nz/about/, tmnz.co.nz/nz-food-waste-champions-12-3-kai-commitment-impact-story/, and NZ Charities Register CC60845 at register.charities.govt.nz/Charity/CC60845; direct site fetch blocked by bot protection (403) (verified 2026-08-05); linkedin_org verified via kaicommitment.org.nz and linkedin.com (2026-08-25)",
     "founding_year": 2020,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Kaibosh",
-    "domain": "food-rescue / food-security tech",
-    "what": "Kaibosh is a food rescue charity that has worked in the Wellington region since 2008, using volunteers to collect surplus food from shops and farms and pass it on to community groups, aiming for zero food poverty and zero food waste.",
-    "region": "wellington",
-    "website": "https://kaibosh.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "food rescue",
-      "food security",
-      "charity",
-      "volunteer-run"
-    ],
-    "related_to": [
-      "KiwiHarvest",
-      "Everybody Eats"
-    ],
-    "source": "kaibosh.org.nz homepage (verified via WebFetch)",
-    "founding_year": 2008,
     "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -2435,7 +1805,7 @@
     "region": "national",
     "website": "https://www.katoaconnect.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/katoaconnect/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2446,7 +1816,7 @@
       "adult education"
     ],
     "related_to": [],
-    "source": "katoaconnect.org.nz homepage, redirected from 2020.org.nz (verified via WebFetch)",
+    "source": "katoaconnect.org.nz homepage, redirected from 2020.org.nz (verified via WebFetch); LinkedIn company page (Katoa Connect) verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
@@ -2458,8 +1828,8 @@
     "what": "Kiwa Digital is an Auckland technology company, founded in 2003, that builds apps and cloud software helping Indigenous communities record, protect, and share their languages and cultural stories, including tools for te reo Māori.",
     "region": "auckland",
     "website": "https://kiwadigital.com/",
-    "github": "",
-    "linkedin_org": "",
+    "github": "https://github.com/kiwa-digital",
+    "linkedin_org": "https://www.linkedin.com/company/kiwa-digital/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2472,8 +1842,8 @@
     "related_to": [
       "Te Hiku Media / Papa Reo"
     ],
-    "source": "kiwadigital.com about-us page (verified via curl and WebFetch, HTTP 200)",
-    "founding_year": null,
+    "source": "kiwadigital.com about-us page (verified via curl and WebFetch, HTTP 200); Kiwa Digital founded 2003 per about-us page, GitHub org github.com/kiwa-digital and LinkedIn company page verified via direct fetch, 2026-08-25",
+    "founding_year": 2003,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -2500,38 +1870,11 @@
       "Predator Free NZ Trust",
       "Trap.NZ"
     ],
-    "source": "kiwicoast.org.nz and kiwicoast.org.nz/about (verified via WebFetch); NZ Herald and Farmers Weekly coverage of AI trap technology, and Northland Regional Council partnership release, found via web search",
+    "source": "kiwicoast.org.nz and kiwicoast.org.nz/about (verified via WebFetch); NZ Herald and Farmers Weekly coverage of AI trap technology, and Northland Regional Council partnership release, found via web search; Groups & Projects page invites the public to join projects ('get involved'), verified 2026-08-25",
     "founding_year": 2014,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-06"
-  },
-  {
-    "name": "KiwiHarvest",
-    "domain": "food-rescue / food-security tech",
-    "what": "KiwiHarvest is a New Zealand charity, founded in 2012 by Deborah Manning, that collects surplus food from supermarkets, growers, and other businesses before it goes to waste, and gives it to charities feeding people in need.",
-    "region": "national",
-    "website": "https://www.kiwiharvest.org.nz",
-    "github": "",
-    "linkedin_org": "https://www.linkedin.com/company/kiwiharvest",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "food rescue",
-      "food security",
-      "charity",
-      "sustainability"
-    ],
-    "related_to": [
-      "Kaibosh",
-      "Everybody Eats"
-    ],
-    "source": "kiwiharvest.org.nz About Us page (verified via WebFetch); LinkedIn company page confirmed via WebFetch",
-    "founding_year": 2012,
     "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
+    "careers_url": "https://kiwicoast.org.nz/about/groups-projects/",
+    "last_verified": "2026-08-06"
   },
   {
     "name": "KiwiNet (Kiwi Innovation Network)",
@@ -2553,10 +1896,10 @@
     "related_to": [
       "Ara Ake"
     ],
-    "source": "kiwinet.org.nz/About (verified via WebFetch); LinkedIn company listing found via web search",
-    "founding_year": null,
+    "source": "kiwinet.org.nz/About (verified via WebFetch); LinkedIn company listing found via web search; founded 2011 and Careers page (kiwinet.org.nz/About/Careers) verified via direct fetch, 2026-08-25",
+    "founding_year": 2011,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://kiwinet.org.nz/About/Careers",
     "last_verified": "2026-08-05"
   },
   {
@@ -2566,7 +1909,7 @@
     "region": "auckland",
     "website": "https://informedfutures.org",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/koi-tu-centre-for-informed-futures/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2577,8 +1920,8 @@
       "think tank"
     ],
     "related_to": [],
-    "source": "informedfutures.org homepage (verified via WebFetch)",
-    "founding_year": null,
+    "source": "informedfutures.org homepage and /about (verified via WebFetch); Koi Tū set up in 2019 per informedfutures.org/about; LinkedIn company page verified via direct fetch, 2026-08-25",
+    "founding_year": 2019,
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-05"
@@ -2616,7 +1959,7 @@
     "what": "Kura Matahuna Unleash Space Makerspace is a free workshop at the University of Auckland, open to all students and staff, with 3D printers, laser cutters, and electronics gear, where people learn to build and prototype their own projects after safety training.",
     "region": "auckland",
     "website": "https://www.auckland.ac.nz/en/cie/locations/unleash-space/makerspace.html",
-    "github": "",
+    "github": "https://github.com/unleash-space",
     "linkedin_org": "",
     "community_url": "",
     "events_url": "",
@@ -2632,7 +1975,7 @@
       "Hackland",
       "Auckland Library of Tools"
     ],
-    "source": "auckland.ac.nz Unleash Space makerspace page (verified via curl and WebFetch, HTTP 200)",
+    "source": "auckland.ac.nz Unleash Space makerspace page (verified via curl and WebFetch, HTTP 200); GitHub org github.com/unleash-space (UoA Unleash Space) verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": true,
     "careers_url": "",
@@ -2645,7 +1988,7 @@
     "region": "auckland",
     "website": "https://www.leva.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/le-va-pasifika/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2657,10 +2000,10 @@
       "community-led"
     ],
     "related_to": [],
-    "source": "leva.co.nz homepage, verified 2026-08-07 via web search",
+    "source": "leva.co.nz homepage, verified 2026-08-07 via web search; LinkedIn company page (Le Va Pasifika) and Work with us page verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://www.leva.co.nz/about-us/work-with-us/",
     "last_verified": "2026-08-07"
   },
   {
@@ -2670,7 +2013,7 @@
     "region": "national",
     "website": "https://www.linz.govt.nz/products-services/data/linz-data-service",
     "github": "https://github.com/linz",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/toit%C5%AB-te-whenua-linz-/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2685,10 +2028,10 @@
       "data.govt.nz",
       "GovHack Aotearoa"
     ],
-    "source": "linz.govt.nz page and github.com/linz (both verified via WebFetch)",
+    "source": "linz.govt.nz page and github.com/linz (both verified via WebFetch); LinkedIn company page (Toitū Te Whenua) and careers page (linz.govt.nz/careers) verified via direct fetch, 2026-08-25",
     "founding_year": 1996,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.linz.govt.nz/careers",
     "last_verified": "2026-08-05"
   },
   {
@@ -2751,7 +2094,7 @@
     "region": "national",
     "website": "https://soils.landcareresearch.co.nz/tools/lris-portal",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/landcare-research/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2766,10 +2109,10 @@
       "LINZ Data Service (Toitū Te Whenua)",
       "Koordinates"
     ],
-    "source": "soils.landcareresearch.co.nz/tools/lris-portal (verified via curl, HTTP 200); landcareresearch.co.nz description pages found via web search",
+    "source": "soils.landcareresearch.co.nz/tools/lris-portal (verified via curl, HTTP 200); landcareresearch.co.nz description pages found via web search; LinkedIn company page (Manaaki Whenua - Landcare Research Group) and careers page verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://www.landcareresearch.co.nz/about-us/careers-at-manaaki-whenua",
     "last_verified": "2026-08-05"
   },
   {
@@ -2793,10 +2136,10 @@
       "Dev Academy Aotearoa (Māori and Pasifika cohorts)",
       "Digital Natives Academy"
     ],
-    "source": "manaiakalani.org homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch",
+    "source": "manaiakalani.org homepage (verified via WebFetch); LinkedIn company page confirmed via WebFetch; Vacancies page verified via direct fetch, 2026-08-25",
     "founding_year": 2007,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.manaiakalani.org/about/vacancies",
     "last_verified": "2026-08-05"
   },
   {
@@ -2848,30 +2191,6 @@
     "last_verified": "2026-08-05"
   },
   {
-    "name": "Money Sweetspot",
-    "domain": "financial-inclusion / fintech-for-good",
-    "what": "Money Sweetspot is a purpose-led lender that provides fair, transparent loans while linking financial education to debt repayment and savings ; designed to help people move through debt with dignity rather than profit from it.",
-    "region": "auckland",
-    "website": "https://www.moneysweetspot.co.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "ethical-lending",
-      "financial-education",
-      "debt-support",
-      "social-enterprise"
-    ],
-    "related_to": [],
-    "source": "moneysweetspot.co.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-07"
-  },
-  {
     "name": "Nelson City Council Open Data",
     "domain": "open-data",
     "what": "Nelson City Council publishes its public GIS data, such as property and infrastructure information, through an ArcGIS open data portal that anyone can browse for free.",
@@ -2912,8 +2231,7 @@
       "university"
     ],
     "related_to": [
-      "OpenLaw NZ",
-      "Community Law Centres o Aotearoa"
+      "OpenLaw NZ"
     ],
     "source": "nzlii.org returned an HTTP 403 from the site's own bot-protection when checked directly, but its existence and content are corroborated by Wikipedia and lawfoundation.org.nz, both found via web search",
     "founding_year": 2004,
@@ -2928,7 +2246,7 @@
     "region": "national",
     "website": "https://www.redcross.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://nz.linkedin.com/company/new-zealand-red-cross",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -2941,36 +2259,10 @@
     "related_to": [
       "Collaborate"
     ],
-    "source": "redcross.org.nz (verified via WebFetch); redcross.org.nz Hazard App story page found via web search",
+    "source": "redcross.org.nz (verified via WebFetch); redcross.org.nz Hazard App story page found via web search; LinkedIn company page and Get involved page verified via direct fetch, 2026-08-25",
     "founding_year": 1931,
     "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Newsroom",
-    "domain": "journalism / media-tech",
-    "what": "Newsroom is a New Zealand-owned, independent, reader- and donor-supported news website known for investigative reporting on politics, business, and climate change.",
-    "region": "auckland",
-    "website": "https://newsroom.co.nz",
-    "github": "",
-    "linkedin_org": "https://nz.linkedin.com/company/newsroom-new-zealand",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "independent media",
-      "investigative journalism",
-      "reader-funded"
-    ],
-    "related_to": [
-      "NZ On Air ; Public Interest Journalism Fund",
-      "The Spinoff"
-    ],
-    "source": "web search of newsroom.co.nz About page and LinkedIn listing; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines",
-    "founding_year": 2017,
-    "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://www.redcross.org.nz/get-involved/",
     "last_verified": "2026-08-05"
   },
   {
@@ -3001,39 +2293,13 @@
     "last_verified": "2026-08-05"
   },
   {
-    "name": "Ngā Tāngata Microfinance",
-    "domain": "financial-inclusion / fintech-for-good",
-    "what": "Ngā Tāngata Microfinance is a New Zealand non-profit, backed by Kiwibank, that gives interest-free and fee-free loans up to $5,000 to financially vulnerable New Zealanders, after they work with a financial mentor, so people can avoid high-interest debt.",
-    "region": "national",
-    "website": "https://ngatangatamicrofinance.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "financial inclusion",
-      "microfinance",
-      "non-profit",
-      "fintech"
-    ],
-    "related_to": [
-      "Good Shepherd New Zealand"
-    ],
-    "source": "ngatangatamicrofinance.org.nz homepage (verified via WebFetch)",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
     "name": "NIWA Environmental Data Services",
     "domain": "open-data",
     "what": "NIWA, now part of Earth Sciences New Zealand after a 2025 merger with GNS Science, runs online tools like the Hydro Web Portal and National Climate Database, which let people look up New Zealand's river flow, rainfall, and climate data for free.",
     "region": "national",
     "website": "https://niwa.co.nz/environmental-information/environmental-information-services-0",
-    "github": "",
-    "linkedin_org": "",
+    "github": "https://github.com/niwa",
+    "linkedin_org": "https://nz.linkedin.com/company/niwa",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3046,10 +2312,10 @@
     "related_to": [
       "GeoNet"
     ],
-    "source": "niwa.co.nz/environmental-information/environmental-information-services-0 (verified via curl, HTTP 200)",
-    "founding_year": null,
+    "source": "niwa.co.nz/environmental-information/environmental-information-services-0 (verified via curl, HTTP 200); NIWA established in 1992 per niwa.co.nz/about; GitHub org, LinkedIn company page and careers page verified via direct fetch, 2026-08-25",
+    "founding_year": 1992,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://niwa.co.nz/about-niwa/careers-niwa",
     "last_verified": "2026-08-05"
   },
   {
@@ -3077,33 +2343,6 @@
     "last_verified": "2026-08-05"
   },
   {
-    "name": "NZ Disability Employers' Network",
-    "domain": "disability employment tech",
-    "what": "The NZ Disability Employers' Network (NZDEN) is a collective of NZ employers committed to improving disability inclusion and accessibility practices, running the Accessibility Tick programme and the annual Disability Inclusive Pathways Conference.",
-    "region": "auckland",
-    "website": "https://nzden.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "disability-employment",
-      "workplace-inclusion",
-      "accessibility",
-      "employer-network",
-      "neurodiversity"
-    ],
-    "related_to": [
-      "Workbridge"
-    ],
-    "source": "nzden.org.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-07"
-  },
-  {
     "name": "NZ GovTech",
     "domain": "civic-tech",
     "what": "NZ GovTech is a Wellington-based volunteer community group, with nearly 1,000 members, that brings together public servants and technologists to talk about open government, civic innovation, and using technology to solve public problems.",
@@ -3121,67 +2360,13 @@
       "meetup"
     ],
     "related_to": [
-      "GovHack Aotearoa New Zealand",
-      "GOVIS"
+      "GovHack Aotearoa New Zealand"
     ],
     "source": "meetup.com/nzgovtech (verified via WebFetch)",
     "founding_year": 2019,
     "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-05"
-  },
-  {
-    "name": "NZ On Air ; Public Interest Journalism Fund",
-    "domain": "journalism / media-tech",
-    "what": "The Public Interest Journalism Fund was a NZ$55 million government fund, run through NZ On Air, that supported New Zealand news organisations (including small, Māori, Pacific, and ethnic media) to keep producing investigative and community journalism.",
-    "region": "national",
-    "website": "https://www.nzonair.govt.nz/news/government-backs-sustainable-public-interest-journalism/",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "journalism funding",
-      "government agency",
-      "media innovation",
-      "public interest"
-    ],
-    "related_to": [
-      "Newsroom"
-    ],
-    "source": "nzonair.govt.nz news release (verified via WebFetch)",
-    "founding_year": 2021,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "One in Six",
-    "domain": "disability employment tech",
-    "what": "One in Six is a disability employment hub built by the New Zealand Disability Employers' Network and Whaikaha, the Ministry of Disabled People, giving employers free tools, guidance, and the ARM-Up accessible recruitment model to hire and support disabled staff. It launched in February 2026, and takes its name from the one in six New Zealanders who are disabled.",
-    "region": "national",
-    "website": "https://oneinsix.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "disability employment",
-      "accessible recruitment",
-      "employer resource",
-      "disability inclusion"
-    ],
-    "related_to": [
-      "Workbridge",
-      "IHC New Zealand"
-    ],
-    "source": "oneinsix.nz about and knowledge hub pages (verified via WebFetch); Whaikaha - Ministry of Disabled People news page confirming the launch, and the NZ Disability Employers' Network launch post (verified via WebSearch)",
-    "founding_year": 2026,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-06"
   },
   {
     "name": "OpenLaw NZ",
@@ -3200,9 +2385,7 @@
       "access to justice",
       "non-profit"
     ],
-    "related_to": [
-      "Community Law Centres o Aotearoa"
-    ],
+    "related_to": [],
     "source": "openlaw.nz/our-mission (verified via curl, HTTP 200)",
     "founding_year": 2017,
     "takes_contributors": true,
@@ -3236,37 +2419,13 @@
     "last_verified": "2026-08-05"
   },
   {
-    "name": "Para Kore",
-    "domain": "green / climate-tech",
-    "what": "Para Kore is a Māori charitable trust that helps marae, kura, and communities cut waste to zero, teaching zero-waste practices grounded in Māori knowledge and values.",
-    "region": "waikato",
-    "website": "https://parakore.maori.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "zero waste",
-      "Māori-led",
-      "kaupapa Māori",
-      "charitable trust"
-    ],
-    "related_to": [],
-    "source": "parakore.maori.nz homepage (verified via WebFetch)",
-    "founding_year": 2011,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
     "name": "Predator Free NZ Trust",
     "domain": "environmental citizen-science",
     "what": "Predator Free NZ Trust mobilises communities across the country to trap invasive predators and protect native wildlife, using a national map, trail cameras, and data tools so volunteers can track and coordinate their conservation efforts.",
     "region": "national",
     "website": "https://predatorfreenz.org",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/predatorfreenz/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3280,91 +2439,11 @@
       "Trap.NZ",
       "The Cacophony Project"
     ],
-    "source": "predatorfreenz.org homepage (verified via WebFetch)",
+    "source": "predatorfreenz.org homepage (verified via WebFetch); LinkedIn company page (Predator Free NZ Trust) verified via direct fetch, 2026-08-25",
     "founding_year": 2013,
     "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Privacy Foundation New Zealand",
-    "domain": "human-rights tech",
-    "what": "The Privacy Foundation is a volunteer-run, not-for-profit society that researches and campaigns for New Zealanders' privacy rights, including a digital economy working group that comments on how technology and data laws affect personal privacy.",
-    "region": "national",
-    "website": "https://privacyfoundation.nz",
-    "github": "",
-    "linkedin_org": "https://nz.linkedin.com/company/privacy-foundation-new-zealand",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "digital rights",
-      "privacy",
-      "advocacy",
-      "non-profit"
-    ],
-    "related_to": [
-      "InternetNZ"
-    ],
-    "source": "web search of privacyfoundation.nz About Us and working-groups pages; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines",
-    "founding_year": 1990,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Public Good Aotearoa (Te Iwi Whānui)",
-    "domain": "civic-tech",
-    "what": "Public Good is a volunteer network of New Zealanders working to rebuild trust between people and government, by pushing for a stronger public sector, genuine democracy, and community wealth-building.",
-    "region": "wellington",
-    "website": "https://www.publicgood.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "civic advocacy",
-      "public sector reform",
-      "democracy",
-      "volunteer network"
-    ],
-    "related_to": [
-      "ActionStation"
-    ],
-    "source": "publicgood.nz homepage (verified via WebFetch)",
-    "founding_year": 2019,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Public Interest",
-    "domain": "journalism / media-tech",
-    "what": "Public Interest is an independent, audience-funded media organisation producing clear analysis of NZ politics, economics, and culture ; looking past the daily news cycle to examine how power works, who holds it, and who misses out.",
-    "region": "national",
-    "website": "https://www.publicinterest.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "independent-media",
-      "politics",
-      "analysis",
-      "audience-funded",
-      "journalism"
-    ],
-    "related_to": [
-      "Newsroom",
-      "The Spinoff"
-    ],
-    "source": "publicinterest.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-07"
   },
   {
     "name": "Pūhoro STEMM Academy",
@@ -3397,7 +2476,7 @@
     "what": "REANNZ (Research and Education Advanced Network New Zealand) is a Crown-owned non-profit that runs New Zealand's high-speed internet network dedicated to universities, research institutes, and schools, connecting them to more than 120 similar networks worldwide.",
     "region": "national",
     "website": "https://www.reannz.co.nz",
-    "github": "",
+    "github": "https://github.com/reannz",
     "linkedin_org": "https://nz.linkedin.com/company/reannz",
     "community_url": "",
     "events_url": "",
@@ -3409,36 +2488,10 @@
       "connectivity"
     ],
     "related_to": [],
-    "source": "reannz.co.nz (verified via WebFetch)",
+    "source": "reannz.co.nz (verified via WebFetch); GitHub org (github.com/reannz) and Careers page verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Refugees as Survivors New Zealand (RASNZ)",
-    "domain": "refugee / migrant support tech",
-    "what": "Refugees as Survivors New Zealand is a charity, running since 1995, that gives mental health and wellbeing support to people from refugee backgrounds, including survivors of torture, through specialist assessment and treatment services.",
-    "region": "auckland",
-    "website": "https://rasnz.co.nz/",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "refugee support",
-      "mental health",
-      "trauma support",
-      "non-profit"
-    ],
-    "related_to": [
-      "Belong Aotearoa"
-    ],
-    "source": "rasnz.co.nz homepage (verified via curl, HTTP 200); web search of rasnz.co.nz and Wikipedia",
-    "founding_year": 1993,
-    "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.reannz.co.nz/about/careers",
     "last_verified": "2026-08-05"
   },
   {
@@ -3484,36 +2537,11 @@
       "non-profit"
     ],
     "related_to": [],
-    "source": "rewiring.nz homepage (verified via WebFetch); LinkedIn company listing found via web search",
+    "source": "rewiring.nz homepage (verified via WebFetch); LinkedIn company listing found via web search; Jobs page (rewiring.nz/jobs) verified via direct fetch, 2026-08-25",
     "founding_year": 2021,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.rewiring.nz/jobs",
     "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Screen Sense",
-    "domain": "mental-health tech",
-    "what": "Screen Sense provides cyberpsychology-informed resources, self-paced courses, and practical tools to help adults and young people build healthier relationships with technology ; addressing screen time, digital habits, and online wellbeing without shame or fear.",
-    "region": "national",
-    "website": "https://digitalwellbeing.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "digital-wellbeing",
-      "screen-time",
-      "cyberpsychology",
-      "digital-habits",
-      "self-regulation"
-    ],
-    "related_to": [],
-    "source": "digitalwellbeing.org.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-07"
   },
   {
     "name": "SEEK Volunteer",
@@ -3522,7 +2550,7 @@
     "region": "national",
     "website": "https://seekvolunteer.co.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/seek-volunteer/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3532,10 +2560,8 @@
       "matching platform",
       "community"
     ],
-    "related_to": [
-      "Volunteering New Zealand (Tūao Aotearoa)"
-    ],
-    "source": "seekvolunteer.co.nz homepage and volunteering pages (verified via WebFetch); Volunteering New Zealand news post confirming the partnership, and coverage noting the 2015 NZ launch (verified via WebSearch)",
+    "related_to": [],
+    "source": "seekvolunteer.co.nz homepage and volunteering pages (verified via WebFetch); Volunteering New Zealand news post confirming the partnership, and coverage noting the 2015 NZ launch (verified via WebSearch); LinkedIn company page (SEEK Volunteer) verified via direct fetch, 2026-08-25",
     "founding_year": 2015,
     "takes_contributors": true,
     "careers_url": "",
@@ -3598,7 +2624,7 @@
     "region": "national",
     "website": "https://www.summeroftech.co.nz",
     "github": "https://github.com/summeroftech",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/summer-of-tech",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3611,34 +2637,10 @@
     "related_to": [
       "Dev Academy Aotearoa"
     ],
-    "source": "summeroftech.co.nz homepage (verified via WebFetch)",
+    "source": "summeroftech.co.nz homepage (verified via WebFetch); LinkedIn company page and Volunteers page verified via direct fetch, 2026-08-25",
     "founding_year": 2006,
     "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Sustainable Business Network",
-    "domain": "green / climate-tech",
-    "what": "The Sustainable Business Network is New Zealand's longest-running sustainable business organisation, helping companies act on climate change, waste, and nature through training, tools, and research reports on clean-tech innovation.",
-    "region": "auckland",
-    "website": "https://sustainable.org.nz",
-    "github": "",
-    "linkedin_org": "https://nz.linkedin.com/company/sustainable-business-network",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "sustainability",
-      "climate action",
-      "business network",
-      "clean tech"
-    ],
-    "related_to": [],
-    "source": "web search of sustainable.org.nz official pages; direct fetch of the site returned an HTTP 403 from the site's own bot-protection, but the domain is confirmed live and returning real content indexed by search engines",
-    "founding_year": 2002,
-    "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://www.summeroftech.co.nz/volunteers",
     "last_verified": "2026-08-05"
   },
   {
@@ -3660,10 +2662,10 @@
       "plastic pollution"
     ],
     "related_to": [],
-    "source": "sustainablecoastlines.org Litter Intelligence page (verified via WebFetch); LinkedIn company listing found via web search",
-    "founding_year": null,
+    "source": "sustainablecoastlines.org Litter Intelligence page (verified via WebFetch); LinkedIn company listing found via web search; launched in 2009 per sustainablecoastlines.org/about/our-story; Volunteer events page verified via direct fetch, 2026-08-25",
+    "founding_year": 2009,
     "takes_contributors": true,
-    "careers_url": "",
+    "careers_url": "https://sustainablecoastlines.org/events/",
     "last_verified": "2026-08-05"
   },
   {
@@ -3773,7 +2775,7 @@
     "region": "marlborough",
     "website": "https://www.teaupungao.com",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/teaupungao/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3785,7 +2787,7 @@
       "microgrants"
     ],
     "related_to": [],
-    "source": "Scoop \"New Marlborough Tech Hub A 'Gamechanger'\" (31 Jul 2025); whiringa.com (verified via WebFetch); Weekly Voice article on the Te Au Pūngao microgrants programme",
+    "source": "Scoop \"New Marlborough Tech Hub A 'Gamechanger'\" (31 Jul 2025); whiringa.com (verified via WebFetch); Weekly Voice article on the Te Au Pūngao microgrants programme; LinkedIn company page (Te Au Pūngao) verified via direct fetch, 2026-08-25",
     "founding_year": 2025,
     "takes_contributors": true,
     "careers_url": "",
@@ -3823,7 +2825,7 @@
     "region": "northland",
     "website": "https://papareo.nz",
     "github": "https://github.com/TeHikuMedia",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/te-hiku-media/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3837,7 +2839,7 @@
     "related_to": [
       "Te Mana Raraunga"
     ],
-    "source": "papareo.nz, tehiku.nz, and github.com/TeHikuMedia (all verified via WebFetch); NVIDIA blog background via web search",
+    "source": "papareo.nz, tehiku.nz, and github.com/TeHikuMedia (all verified via WebFetch); NVIDIA blog background via web search; LinkedIn company page (Te Hiku Media) verified via direct fetch, 2026-08-25",
     "founding_year": 1991,
     "takes_contributors": true,
     "careers_url": "",
@@ -3956,7 +2958,7 @@
     "region": "auckland",
     "website": "https://www.tepunahamatatini.ac.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/te-punaha-matatini/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -3967,7 +2969,7 @@
       "University of Auckland"
     ],
     "related_to": [],
-    "source": "tepunahamatatini.ac.nz homepage (verified via WebFetch)",
+    "source": "tepunahamatatini.ac.nz homepage (verified via WebFetch); LinkedIn company page verified via direct fetch, 2026-08-25",
     "founding_year": 2014,
     "takes_contributors": true,
     "careers_url": "",
@@ -4004,7 +3006,7 @@
     "region": "national",
     "website": "https://www.cacophony.org.nz",
     "github": "https://github.com/TheCacophonyProject",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/cacophony/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -4017,7 +3019,7 @@
       "predator control"
     ],
     "related_to": [],
-    "source": "cacophony.org.nz homepage (verified via WebFetch) and github.com/TheCacophonyProject (verified via web search); opensource.com background via web search",
+    "source": "cacophony.org.nz homepage (verified via WebFetch) and github.com/TheCacophonyProject (verified via web search); opensource.com background via web search; LinkedIn company page (The Cacophony Project) verified via direct fetch, 2026-08-25",
     "founding_year": 2015,
     "takes_contributors": true,
     "careers_url": "",
@@ -4042,86 +3044,10 @@
       "south auckland"
     ],
     "related_to": [],
-    "source": "Web search confirmed via aceaotearoa.org.nz/news-and-resources/news/cause-collective-championing-maori-and-pacific-talent-tech, tindall.org.nz/one-community-shaping-aotearoas-tech-future-the-cause-collective/, and LinkedIn company page; direct site fetch blocked by bot protection (403) (verified 2026-08-05)",
+    "source": "Web search confirmed via aceaotearoa.org.nz/news-and-resources/news/cause-collective-championing-maori-and-pacific-talent-tech, tindall.org.nz/one-community-shaping-aotearoas-tech-future-the-cause-collective/, and LinkedIn company page; direct site fetch blocked by bot protection (403) (verified 2026-08-05); Job vacancies page verified via direct fetch, 2026-08-25",
     "founding_year": 2013,
     "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "The Good Registry",
-    "domain": "volunteering / giving platforms",
-    "what": "The Good Registry is a Wellington social enterprise and charitable trust that sells charity gift cards and runs corporate giving programmes, letting people split a gift between more than 60 New Zealand causes instead of buying more stuff. It was founded in 2017 by Christine Langdon, Tracey Bridges, and Sue McCabe.",
-    "region": "wellington",
-    "website": "https://thegoodregistry.com",
-    "github": "",
-    "linkedin_org": "https://nz.linkedin.com/company/the-good-registry",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "charity gift cards",
-      "corporate giving",
-      "giving platform",
-      "social enterprise"
-    ],
-    "related_to": [
-      "Givealittle"
-    ],
-    "source": "thegoodregistry.com about page (verified via WebFetch); WebSearch results confirming the 2017 founding date and Wellington base; LinkedIn company page confirmed via WebSearch",
-    "founding_year": 2017,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-06"
-  },
-  {
-    "name": "The People's Project",
-    "domain": "housing / homelessness tech",
-    "what": "The People's Project uses the Housing First approach to support people experiencing homelessness in Hamilton and Tauranga, combining immediate housing with individualised specialist support ; part of the Wise Group, with over 1,765 housing outcomes delivered.",
-    "region": "waikato",
-    "website": "https://www.thepeoplesproject.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "housing-first",
-      "homelessness",
-      "waikato",
-      "bay-of-plenty"
-    ],
-    "related_to": [],
-    "source": "thepeoplesproject.org.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-07"
-  },
-  {
-    "name": "The Spinoff",
-    "domain": "journalism / media-tech",
-    "what": "The Spinoff is an independent, digital-native New Zealand news and culture website, founded in 2014, covering politics, society, and Māori affairs through articles, podcasts, newsletters, and a mobile app.",
-    "region": "auckland",
-    "website": "https://thespinoff.co.nz",
-    "github": "",
-    "linkedin_org": "https://nz.linkedin.com/company/the-spinoff",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "independent media",
-      "digital-native",
-      "journalism",
-      "podcasts"
-    ],
-    "related_to": [
-      "Newsroom"
-    ],
-    "source": "thespinoff.co.nz (verified via WebFetch); LinkedIn company listing found via web search",
-    "founding_year": 2014,
-    "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://www.thecausecollective.org.nz/job-vacancies/",
     "last_verified": "2026-08-05"
   },
   {
@@ -4228,38 +3154,13 @@
     "last_verified": "2026-08-05"
   },
   {
-    "name": "Trust Democracy",
-    "domain": "civic-tech",
-    "what": "Trust Democracy strengthens NZ democracy through research, education, and practical experiments ; creating opportunities for everyday people to share perspectives on democracy and testing democratic innovations like public dialogue and deliberation.",
-    "region": "national",
-    "website": "https://trustdemocracy.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "civic-tech",
-      "democracy",
-      "deliberation",
-      "public-participation",
-      "research"
-    ],
-    "related_to": [],
-    "source": "trustdemocracy.nz homepage, verified 2026-08-07 via web search",
-    "founding_year": null,
-    "takes_contributors": true,
-    "careers_url": "",
-    "last_verified": "2026-08-07"
-  },
-  {
     "name": "Tu Mai Digital",
     "domain": "digital-inclusion",
     "what": "Tu Mai Digital works with community organisations to help the most vulnerable connect and navigate the digital economy ; providing affordable internet connectivity, devices, training, and guidance, operating under the Poutiri Trust umbrella.",
     "region": "national",
     "website": "https://tumaidigital.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/tu-mai-digital/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -4271,7 +3172,7 @@
       "community"
     ],
     "related_to": [],
-    "source": "tumaidigital.org.nz homepage, verified 2026-08-07 via web search",
+    "source": "tumaidigital.org.nz homepage, verified 2026-08-07 via web search; LinkedIn company page (Tu Mai Digital) verified via direct fetch, 2026-08-25",
     "founding_year": null,
     "takes_contributors": true,
     "careers_url": "",
@@ -4283,7 +3184,7 @@
     "what": "Tātai Aho Rau Core Education is a Christchurch-founded, charity-registered social enterprise that has worked since 2003 on educational research, teacher professional development, and free digital resources like the LEARNZ virtual field trips for New Zealand schools.",
     "region": "canterbury",
     "website": "https://core-ed.org",
-    "github": "",
+    "github": "https://github.com/core-ed",
     "linkedin_org": "https://nz.linkedin.com/company/tatai-aho-rau-core-education",
     "community_url": "",
     "events_url": "",
@@ -4295,36 +3196,10 @@
       "charity"
     ],
     "related_to": [],
-    "source": "core-ed.org/en_NZ/about-core/our-whakapapa (verified via WebFetch)",
-    "founding_year": null,
+    "source": "core-ed.org/en_NZ/about-core/our-whakapapa (verified via WebFetch); Tātai Aho Rau began in 2003 per whakapapa page; GitHub org (github.com/core-ed) and careers page verified via direct fetch, 2026-08-25",
+    "founding_year": 2003,
     "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Volunteering New Zealand (Tūao Aotearoa)",
-    "domain": "nonprofit / NGO tech",
-    "what": "Volunteering New Zealand is the national body for volunteering, an incorporated society that runs training, online tools, and a volunteer centre network to help community organisations recruit and manage volunteers.",
-    "region": "wellington",
-    "website": "https://www.volunteeringnz.org.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "volunteering",
-      "nonprofit tech",
-      "peak body",
-      "community organisations"
-    ],
-    "related_to": [
-      "Collaborate"
-    ],
-    "source": "volunteeringnz.org.nz (verified via WebFetch)",
-    "founding_year": null,
-    "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://core-ed.org/en_NZ/careers/",
     "last_verified": "2026-08-05"
   },
   {
@@ -4334,7 +3209,7 @@
     "region": "waikato",
     "website": "https://colabsolutions.govt.nz/shared-services/geospatial-projects-and-services/wodh/",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/co-labsolutions",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -4347,7 +3222,7 @@
     "related_to": [
       "data.govt.nz"
     ],
-    "source": "colabsolutions.govt.nz Waikato Open Data Hub page (verified via WebFetch)",
+    "source": "colabsolutions.govt.nz Waikato Open Data Hub page (verified via WebFetch); Co-Lab Solutions LinkedIn company page (operator of the hub) verified via direct fetch, 2026-08-25",
     "founding_year": 2016,
     "takes_contributors": null,
     "careers_url": "",
@@ -4373,32 +3248,6 @@
     "source": "data-wcc.opendata.arcgis.com homepage (verified via curl, HTTP 200)",
     "founding_year": 2014,
     "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
-  },
-  {
-    "name": "Wellington Community Justice Project",
-    "domain": "legal-aid / justice tech",
-    "what": "The Wellington Community Justice Project is a charity run by Victoria University of Wellington law students, started in 2010, that runs free advocacy, education, human rights, and law reform projects to improve access to justice for people the legal system overlooks.",
-    "region": "wellington",
-    "website": "https://www.wellingtoncjp.com/",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "access to justice",
-      "student-led",
-      "advocacy",
-      "non-profit"
-    ],
-    "related_to": [
-      "Community Law Centres o Aotearoa"
-    ],
-    "source": "wellingtoncjp.com homepage and about-us page (verified via curl, HTTP 200, outside default sandbox network restrictions)",
-    "founding_year": null,
-    "takes_contributors": true,
     "careers_url": "",
     "last_verified": "2026-08-05"
   },
@@ -4435,7 +3284,7 @@
     "region": "west-coast",
     "website": "https://www.westreap.org.nz",
     "github": "",
-    "linkedin_org": "",
+    "linkedin_org": "https://www.linkedin.com/company/westreap/",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -4447,7 +3296,7 @@
       "adult education"
     ],
     "related_to": [],
-    "source": "westreap.org.nz/about (verified via WebFetch); aceaotearoa.org.nz article \"WestREAP's ACE Programmes Strengthening Rural Communities\" describing its digital literacy workshops, found via web search",
+    "source": "westreap.org.nz/about (verified via WebFetch); aceaotearoa.org.nz article \"WestREAP's ACE Programmes Strengthening Rural Communities\" describing its digital literacy workshops, found via web search; LinkedIn company page (WestREAP) verified via direct fetch, 2026-08-25",
     "founding_year": 1985,
     "takes_contributors": null,
     "careers_url": "",
@@ -4473,10 +3322,10 @@
     "related_to": [
       "New Zealand Red Cross"
     ],
-    "source": "whakarongorau.nz (verified via WebFetch); LinkedIn company listing found via web search",
-    "founding_year": null,
+    "source": "whakarongorau.nz (verified via WebFetch); LinkedIn company listing found via web search; renamed from Homecare Medical to Whakarongorau Aotearoa in 2021 per whakarongorau.nz/about; careers page verified via direct fetch, 2026-08-25",
+    "founding_year": 2021,
     "takes_contributors": null,
-    "careers_url": "",
+    "careers_url": "https://whakarongorau.nz/careers",
     "last_verified": "2026-08-05"
   },
   {
@@ -4502,31 +3351,5 @@
     "takes_contributors": null,
     "careers_url": "",
     "last_verified": "2026-08-06"
-  },
-  {
-    "name": "Workbridge",
-    "domain": "disability employment tech",
-    "what": "Workbridge is a New Zealand employment service that helps disabled jobseekers find work, offering things like CV help, employer connections, and up to a year of ongoing support once someone starts a new job.",
-    "region": "national",
-    "website": "https://www.workbridge.co.nz",
-    "github": "",
-    "linkedin_org": "",
-    "community_url": "",
-    "events_url": "",
-    "linkedin_people": [],
-    "tags": [
-      "disability employment",
-      "employment service",
-      "non-profit"
-    ],
-    "related_to": [
-      "IHC New Zealand",
-      "Blind Low Vision NZ"
-    ],
-    "source": "workbridge.co.nz homepage (verified via WebFetch)",
-    "founding_year": 1996,
-    "takes_contributors": null,
-    "careers_url": "",
-    "last_verified": "2026-08-05"
   }
 ]

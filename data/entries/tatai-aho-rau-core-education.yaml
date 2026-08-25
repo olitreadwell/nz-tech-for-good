@@ -5,7 +5,7 @@ what: Tātai Aho Rau Core Education is a Christchurch-founded, charity-registere
   like the LEARNZ virtual field trips for New Zealand schools.
 region: canterbury
 website: https://core-ed.org
-github: ''
+github: https://github.com/core-ed
 linkedin_org: https://nz.linkedin.com/company/tatai-aho-rau-core-education
 linkedin_people: []
 tags:
@@ -14,8 +14,9 @@ tags:
 - teacher training
 - charity
 related_to: []
-source: core-ed.org/en_NZ/about-core/our-whakapapa (verified via WebFetch)
-founding_year: null
+source: core-ed.org/en_NZ/about-core/our-whakapapa (verified via WebFetch); Tātai Aho Rau began in 2003 per
+  whakapapa page; GitHub org (github.com/core-ed) and careers page verified via direct fetch, 2026-08-25
+founding_year: 2003
 takes_contributors: null
-careers_url: ''
+careers_url: https://core-ed.org/en_NZ/careers/
 last_verified: '2026-08-05'
