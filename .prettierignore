@@ -1,0 +1,12 @@
+node_modules
+.next
+dist
+coverage
+playwright-report
+test-results
+pnpm-lock.yaml
+public
+*.md
+next-env.d.ts
+*.yml
+*.yaml

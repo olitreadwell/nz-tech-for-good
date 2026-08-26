@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a bug with as much detail as possible.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps from a clean state.
+      placeholder: "1. Go to...\n2. Click...\n3. See..."
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+  - type: input
+    id: page
+    attributes:
+      label: Page or URL
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, OS, device, app version.
+      placeholder: "Chrome 140 / macOS 15 / v0.1.0"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console or error output
+      description: Paste error messages; redact anything sensitive.

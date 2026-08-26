@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contact the maintainers
+    url: /contact
+    about: Use the contact form for anything that is not a bug or feature request.

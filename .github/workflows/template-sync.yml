@@ -1,0 +1,25 @@
+name: Template Sync
+
+on:
+  schedule:
+    - cron: '0 3 * * 1' # weekly, Monday 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    name: Sync files from template
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.TEMPLATE_SYNC_TOKEN || secrets.GITHUB_TOKEN }}
+      - name: Sync and open PR when there are changes
+        run: node scripts/sync-from-template.mjs --apply --push
+        env:
+          GH_TOKEN: ${{ secrets.TEMPLATE_SYNC_TOKEN || secrets.GITHUB_TOKEN }}
+          TEMPLATE_URL: ${{ secrets.TEMPLATE_URL || 'https://github.com/olitreadwell/template.git' }}
