@@ -1,1 +1,10 @@
-npm run prepush
+#!/usr/bin/env bash
+# Pre-push gate: the full contract. CI runs the exact same thing.
+set -e
+
+echo "=== Pre-push: npm run check ==="
+npm run check
+
+# Shift the security gate left too: fail before the push, not in CI.
+echo "=== Pre-push: dependency audit ==="
+pnpm audit --audit-level=high

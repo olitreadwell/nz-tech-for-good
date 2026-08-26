@@ -1,0 +1,29 @@
+name: Code Review
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: code-review-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  alibaba-open-code-review:
+    name: Alibaba open-code-review
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run open-code-review
+        uses: alibaba/open-code-review@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: set LLM_API_KEY (OpenAI/Anthropic compatible) to enable
+          # LLM-assisted review; deterministic rules run regardless.
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}

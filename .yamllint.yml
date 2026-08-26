@@ -1,8 +1,16 @@
 extends: default
 
 rules:
-  line-length: disable
+  line-length:
+    max: 200
   document-start: disable
-  comments-indentation: disable
-  truthy: disable
-  indentation: disable
+  truthy:
+    disable
+  braces:
+    max-spaces-inside: 1
+  brackets:
+    max-spaces-inside: 1
+  indentation:
+    spaces: 2
+  comments:
+    min-spaces-from-content: 1

@@ -1,4 +1,5 @@
 [codespell]
-ignore-words-list = te,ake,koordinates,linz,fale,wananga,hauora,taiao,whanau,whenua,iwi,kai,marae,papa,aroha,kura,mahi,ora,pakeha,pasifika,reo,rohe,tamariki,tangata,taonga,tapu,wai,waka,whare,wahine,toi
-skip = .git,node_modules,site/dist,site/node_modules
-quiet-level = 2
+skip = .git,node_modules,.next,dist,coverage,playwright-report,test-results,package-lock.json,pnpm-lock.yaml,docs/contributing,.codespellrc
+ignore-words-list = organise,organised,organisation,organisations,modelling,behaviour,licence,programme,defence,optimisation,normalise,colour,afterAll
+check-hidden = false
+quiet-level = 3

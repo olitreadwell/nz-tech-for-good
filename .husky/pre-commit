@@ -1,1 +1,31 @@
-npm test
+#!/usr/bin/env bash
+# Pre-commit gate: lint, typecheck, and tests in parallel.
+set -e
+
+echo "=== Pre-commit checks ==="
+
+(
+  npm run lint --if-present
+) &
+G1=$!
+
+(
+  npm run typecheck --if-present
+) &
+G2=$!
+
+(
+  npm test --if-present
+) &
+G3=$!
+
+FAILED=0
+wait $G1 || FAILED=1
+wait $G2 || FAILED=1
+wait $G3 || FAILED=1
+
+if [ $FAILED -eq 1 ]; then
+  echo "FAILED. Fix then commit again. Skip with: git commit --no-verify"
+  exit 1
+fi
+echo "All checks passed."
