@@ -1,22 +1,20 @@
-import Link from "next/link";
-import { MessageCircle, Calendar, Users, FileText } from "lucide-react";
+import Link from 'next/link';
+import { MessageCircle, Calendar, Users, FileText } from 'lucide-react';
 
-import { getAllEntries } from "@/lib/data";
+import { getAllEntries } from '@/lib/data';
 
 export default function GetInvolvedPage() {
   const entries = getAllEntries();
   const communities = entries.filter((e) => e.community_url);
   const events = entries.filter((e) => e.events_url);
-  const volunteering = entries.filter(
-    (e) => e.careers_url || e.takes_contributors === true,
-  );
+  const volunteering = entries.filter((e) => e.careers_url || e.takes_contributors === true);
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="text-3xl font-extrabold tracking-tight">Get Involved</h1>
       <p className="mt-2 text-lg text-text-muted">
-        This directory lists organisations. This page is about what to do next:
-        who to talk to, where to show up, and how to help.
+        This directory lists organisations. This page is about what to do next: who to talk to,
+        where to show up, and how to help.
       </p>
 
       <Section
@@ -64,8 +62,7 @@ export default function GetInvolvedPage() {
       <section className="mt-10">
         <h2 className="text-xl font-bold">Add or fix an entry</h2>
         <p className="mt-1 text-text-muted">
-          Know a group that should be listed, or spotted something out of date?
-          No coding needed.
+          Know a group that should be listed, or spotted something out of date? No coding needed.
         </p>
         <div className="mt-3 flex gap-3">
           <a
@@ -118,10 +115,7 @@ function Section({
               className="flex items-center justify-between rounded-lg border border-border p-3"
             >
               <div>
-                <Link
-                  href={`/entry/${e.slug}`}
-                  className="font-semibold hover:text-brand"
-                >
+                <Link href={`/entry/${e.slug}`} className="font-semibold hover:text-brand">
                   {e.name}
                 </Link>
                 <p className="text-sm text-text-muted">{e.what}</p>

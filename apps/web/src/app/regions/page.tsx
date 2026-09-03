@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { getRegions } from "@/lib/data";
+import { getRegions } from '@/lib/data';
 
 export default function RegionsPage() {
   const regions = getRegions();

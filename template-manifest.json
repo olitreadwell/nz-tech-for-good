@@ -3,39 +3,140 @@
   "template": "https://github.com/olitreadwell/template.git",
   "policies": {
     "copy": [
-      { "path": ".codespellrc", "if": "package.json" },
-      { "path": ".prettierignore", "if": "package.json" },
-      { "path": ".prettierrc.json", "if": "package.json" },
-      { "path": ".yamllint.yml", "if": "package.json" },
-      { "path": "eslint.config.mjs", "if": "package.json" },
-      { "path": "lighthouserc.cjs", "if": "package.json" },
-      { "path": ".github/ISSUE_TEMPLATE/bug_report.yml" },
-      { "path": ".github/ISSUE_TEMPLATE/config.yml" },
-      { "path": ".github/ISSUE_TEMPLATE/feature_request.yml" },
-      { "path": ".github/workflows/code-review.yml" },
-      { "path": ".github/workflows/ci.yml", "if": "next.config.*" },
-      { "path": ".github/workflows/docker.yml", "if": "next.config.*" },
-      { "path": ".github/workflows/quality.yml", "if": "next.config.*" },
-      { "path": ".github/workflows/release.yml", "if": "package.json" },
-      { "path": ".github/workflows/security.yml", "if": "package.json" },
-      { "path": ".husky/pre-commit", "if": "package.json" },
-      { "path": ".husky/pre-push", "if": "package.json" },
-      { "path": "scripts/security-checks.sh", "if": "package.json" },
-      { "path": "scripts/sync-from-template.mjs" },
-      { "path": "template-manifest.json" },
-      { "path": "docs/a11y.md" },
-      { "path": "docs/audits.md" },
-      { "path": "docs/ci-optimization.md" },
-      { "path": "docs/template-sync.md" }
+      {
+        "path": ".codespellrc",
+        "if": "package.json"
+      },
+      {
+        "path": ".prettierignore",
+        "if": "package.json"
+      },
+      {
+        "path": ".prettierrc.json",
+        "if": "package.json"
+      },
+      {
+        "path": ".yamllint.yml",
+        "if": "package.json"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "if": "next.config.*"
+      },
+      {
+        "path": "lighthouserc.cjs",
+        "if": "next.config.*"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.yml"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/config.yml"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.yml"
+      },
+      {
+        "path": ".github/workflows/code-review.yml"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "if": "next.config.*"
+      },
+      {
+        "path": ".github/workflows/docker.yml",
+        "if": "next.config.*"
+      },
+      {
+        "path": ".github/workflows/quality.yml",
+        "if": "next.config.*"
+      },
+      {
+        "path": "Dockerfile",
+        "if": "next.config.*"
+      },
+      {
+        "path": ".dockerignore",
+        "if": "next.config.*"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "if": "package.json"
+      },
+      {
+        "path": ".github/workflows/security.yml",
+        "if": "package.json"
+      },
+      {
+        "path": ".husky/pre-commit",
+        "if": "package.json"
+      },
+      {
+        "path": ".husky/pre-push",
+        "if": "package.json"
+      },
+      {
+        "path": "scripts/security-checks.sh",
+        "if": "package.json"
+      },
+      {
+        "path": "scripts/check-external-links.mjs",
+        "if": "package.json"
+      },
+      {
+        "path": "scripts/sync-from-template.mjs"
+      },
+      {
+        "path": "scripts/check-internal-links.mjs",
+        "if": "package.json"
+      },
+      {
+        "path": "template-manifest.json"
+      },
+      {
+        "path": "docs/a11y.md"
+      },
+      {
+        "path": "docs/api.md"
+      },
+      {
+        "path": "docs/audits.md"
+      },
+      {
+        "path": "docs/ci-optimization.md"
+      },
+      {
+        "path": "docs/template-sync.md"
+      }
     ],
     "copyIfAbsent": [
-      { "path": ".env.example", "if": "package.json" },
-      { "path": ".nvmrc", "if": "package.json" },
-      { "path": "AGENTS.md" },
-      { "path": "CLAUDE.md" },
-      { "path": ".github/workflows/template-sync.yml" },
-      { "path": "docs/contact.md" },
-      { "path": "docs/faq.md" }
+      {
+        "path": ".env.example",
+        "if": "package.json"
+      },
+      {
+        "path": ".nvmrc",
+        "if": "package.json"
+      },
+      {
+        "path": "AGENTS.md"
+      },
+      {
+        "path": "CLAUDE.md"
+      },
+      {
+        "path": ".github/workflows/template-sync.yml"
+      },
+      {
+        "path": "docs/contact.md"
+      },
+      {
+        "path": "docs/faq.md"
+      },
+      {
+        "path": "scripts/smoke.sh",
+        "if": "package.json"
+      }
     ],
     "merge": ["package.json"]
   }

@@ -1,12 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { getAllEntries } from "@/lib/data";
+import { getAllEntries } from '@/lib/data';
 
 export default function TagsPage() {
   const entries = getAllEntries();
   const tagCounts = new Map<string, number>();
-  for (const e of entries)
-    for (const t of e.tags) tagCounts.set(t, (tagCounts.get(t) ?? 0) + 1);
+  for (const e of entries) for (const t of e.tags) tagCounts.set(t, (tagCounts.get(t) ?? 0) + 1);
   const tags = [...tagCounts.entries()]
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count)
@@ -15,9 +14,7 @@ export default function TagsPage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="text-3xl font-extrabold tracking-tight">Tags</h1>
-      <p className="mt-2 text-text-muted">
-        Browse by tag. Bigger tags have more entries.
-      </p>
+      <p className="mt-2 text-text-muted">Browse by tag. Bigger tags have more entries.</p>
       <div className="mt-6 flex flex-wrap gap-2">
         {tags.map((t) => (
           <Link

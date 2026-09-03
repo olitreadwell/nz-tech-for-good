@@ -7,4 +7,8 @@ npm run check
 
 # Shift the security gate left too: fail before the push, not in CI.
 echo "=== Pre-push: dependency audit ==="
-pnpm audit --audit-level=high
+if [ -f pnpm-lock.yaml ]; then
+  pnpm audit --audit-level=high
+else
+  npm audit --audit-level=high
+fi

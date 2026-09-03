@@ -1,5 +1,5 @@
-import { notFound } from "next/navigation";
-import Link from "next/link";
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import {
   Globe,
   GitBranch,
@@ -9,24 +9,19 @@ import {
   MapPin,
   Clock,
   PenLine,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { getAllEntries } from "@/lib/data";
-import { buildEntryFeedbackUrl } from "@/lib/feedback";
+import { getAllEntries } from '@/lib/data';
+import { buildEntryFeedbackUrl } from '@/lib/feedback';
 
-export default async function EntryPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function EntryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const entries = getAllEntries();
   const entry = entries.find((e) => e.slug === slug);
   if (!entry) notFound();
 
   const related = entries.filter(
-    (e) =>
-      entry.related_to.includes(e.name) || e.related_to.includes(entry.name),
+    (e) => entry.related_to.includes(e.name) || e.related_to.includes(entry.name)
   );
 
   return (
@@ -54,8 +49,8 @@ export default async function EntryPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
             name: entry.name,
             description: entry.what,
             url: entry.website || undefined,
@@ -65,13 +60,11 @@ export default async function EntryPage({
               entry.community_url,
               entry.events_url,
             ].filter(Boolean),
-            foundingDate: entry.founding_year
-              ? String(entry.founding_year)
-              : undefined,
+            foundingDate: entry.founding_year ? String(entry.founding_year) : undefined,
             location:
-              entry.region !== "national"
-                ? { "@type": "Place", name: entry.region }
-                : { "@type": "Country", name: "New Zealand" },
+              entry.region !== 'national'
+                ? { '@type': 'Place', name: entry.region }
+                : { '@type': 'Country', name: 'New Zealand' },
           }),
         }}
       />
@@ -165,7 +158,7 @@ export default async function EntryPage({
         <dt className="font-semibold text-text-muted">Domain</dt>
         <dd>
           <Link
-            href={`/domains/${entry.domain.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+            href={`/domains/${entry.domain.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
             className="text-brand hover:underline"
           >
             {entry.domainLabel}
@@ -221,11 +214,7 @@ export default async function EntryPage({
         </div>
       )}
 
-      {entry.source && (
-        <p className="mt-6 text-xs text-text-muted">
-          Verified via: {entry.source}
-        </p>
-      )}
+      {entry.source && <p className="mt-6 text-xs text-text-muted">Verified via: {entry.source}</p>}
     </main>
   );
 }

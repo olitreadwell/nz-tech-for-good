@@ -1,12 +1,12 @@
-import { GitBranch, MessageSquare } from "lucide-react";
+import { GitBranch, MessageSquare } from 'lucide-react';
 
 export default function ContactPage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="text-3xl font-extrabold tracking-tight">Get in touch</h1>
       <p className="mt-2 text-lg text-text-muted">
-        This directory is open source and built for public benefit. The best way
-        to reach us is on GitHub. No email address to guess.
+        This directory is open source and built for public benefit. The best way to reach us is on
+        GitHub. No email address to guess.
       </p>
 
       <div className="mt-6 space-y-3">
@@ -33,9 +33,7 @@ export default function ContactPage() {
           <GitBranch className="h-5 w-5 flex-shrink-0 text-brand" />
           <div>
             <div className="font-semibold">View the repo</div>
-            <p className="text-sm text-text-muted">
-              Browse the code, data, and contributor guide.
-            </p>
+            <p className="text-sm text-text-muted">Browse the code, data, and contributor guide.</p>
           </div>
         </a>
       </div>

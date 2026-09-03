@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useState, useMemo } from "react";
-import Link from "next/link";
+import { useState, useMemo } from 'react';
+import Link from 'next/link';
 
-import type { Entry, getDomains, getRegions } from "@/lib/data";
-import { EntryCard } from "@/components/EntryCard";
+import type { Entry, getDomains, getRegions } from '@/lib/data';
+import { EntryCard } from '@/components/EntryCard';
 
 const PAGE_SIZE = 20;
 
@@ -14,14 +14,10 @@ interface DirectoryClientProps {
   regions: ReturnType<typeof getRegions>;
 }
 
-export default function DirectoryClient({
-  entries,
-  domains,
-  regions,
-}: DirectoryClientProps) {
-  const [search, setSearch] = useState("");
-  const [domain, setDomain] = useState("");
-  const [region, setRegion] = useState("");
+export default function DirectoryClient({ entries, domains, regions }: DirectoryClientProps) {
+  const [search, setSearch] = useState('');
+  const [domain, setDomain] = useState('');
+  const [region, setRegion] = useState('');
   const [contributors, setContributors] = useState(false);
   const [careers, setCareers] = useState(false);
   const [remote, setRemote] = useState(false);
@@ -29,8 +25,8 @@ export default function DirectoryClient({
   const [linkedin, setLinkedin] = useState(false);
   const [community, setCommunity] = useState(false);
   const [events, setEvents] = useState(false);
-  const [decade, setDecade] = useState("");
-  const [sort, setSort] = useState("name-asc");
+  const [decade, setDecade] = useState('');
+  const [sort, setSort] = useState('name-asc');
   const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {
@@ -38,19 +34,14 @@ export default function DirectoryClient({
     const q = search.toLowerCase();
     if (q)
       result = result.filter((e) =>
-        (e.name + " " + e.what + " " + e.tags.join(" "))
-          .toLowerCase()
-          .includes(q),
+        (e.name + ' ' + e.what + ' ' + e.tags.join(' ')).toLowerCase().includes(q)
       );
     if (domain) result = result.filter((e) => e.domain === domain);
     if (region)
-      result = result.filter(
-        (e) => e.region.toLowerCase().replace(/[^a-z0-9]+/g, "-") === region,
-      );
-    if (contributors)
-      result = result.filter((e) => e.takes_contributors === true);
+      result = result.filter((e) => e.region.toLowerCase().replace(/[^a-z0-9]+/g, '-') === region);
+    if (contributors) result = result.filter((e) => e.takes_contributors === true);
     if (careers) result = result.filter((e) => e.careers_url);
-    if (remote) result = result.filter((e) => e.tags.includes("remote"));
+    if (remote) result = result.filter((e) => e.tags.includes('remote'));
     if (github) result = result.filter((e) => e.github);
     if (linkedin) result = result.filter((e) => e.linkedin_org);
     if (community) result = result.filter((e) => e.community_url);
@@ -58,21 +49,19 @@ export default function DirectoryClient({
     if (decade) {
       result = result.filter((e) => {
         const fy = e.founding_year ?? 0;
-        if (decade === "pre-2000") return fy < 2000 && fy > 0;
-        if (decade === "2000s") return fy >= 2000 && fy < 2010;
-        if (decade === "2010s") return fy >= 2010 && fy < 2020;
-        if (decade === "2020s") return fy >= 2020;
+        if (decade === 'pre-2000') return fy < 2000 && fy > 0;
+        if (decade === '2000s') return fy >= 2000 && fy < 2010;
+        if (decade === '2010s') return fy >= 2010 && fy < 2020;
+        if (decade === '2020s') return fy >= 2020;
         return true;
       });
     }
 
     // Sort
     result = [...result];
-    if (sort === "name-asc")
-      result.sort((a, b) => a.name.localeCompare(b.name));
-    if (sort === "name-desc")
-      result.sort((a, b) => b.name.localeCompare(a.name));
-    if (sort === "verified-desc")
+    if (sort === 'name-asc') result.sort((a, b) => a.name.localeCompare(b.name));
+    if (sort === 'name-desc') result.sort((a, b) => b.name.localeCompare(a.name));
+    if (sort === 'verified-desc')
       result.sort((a, b) => b.last_verified.localeCompare(a.last_verified));
     return result;
   }, [
@@ -95,9 +84,9 @@ export default function DirectoryClient({
   const paged = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   const clear = () => {
-    setSearch("");
-    setDomain("");
-    setRegion("");
+    setSearch('');
+    setDomain('');
+    setRegion('');
     setContributors(false);
     setCareers(false);
     setRemote(false);
@@ -105,8 +94,8 @@ export default function DirectoryClient({
     setLinkedin(false);
     setCommunity(false);
     setEvents(false);
-    setDecade("");
-    setSort("name-asc");
+    setDecade('');
+    setSort('name-asc');
     setPage(1);
   };
 
@@ -126,8 +115,7 @@ export default function DirectoryClient({
       <div className="mb-6">
         <h1 className="text-3xl font-extrabold tracking-tight">Directory</h1>
         <p className="mt-2 text-text-muted">
-          {entries.length} organisations. Filter by domain, region, tag, or any
-          field.
+          {entries.length} organisations. Filter by domain, region, tag, or any field.
         </p>
       </div>
 
@@ -177,60 +165,26 @@ export default function DirectoryClient({
         </div>
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
           <label className="cursor-pointer inline-flex items-center gap-1">
-            <input
-              type="checkbox"
-              checked={contributors}
-              onChange={toggle(setContributors)}
-            />{" "}
+            <input type="checkbox" checked={contributors} onChange={toggle(setContributors)} />{' '}
             Contributors
           </label>
           <label className="cursor-pointer inline-flex items-center gap-1">
-            <input
-              type="checkbox"
-              checked={careers}
-              onChange={toggle(setCareers)}
-            />{" "}
-            Careers
+            <input type="checkbox" checked={careers} onChange={toggle(setCareers)} /> Careers
           </label>
           <label className="cursor-pointer inline-flex items-center gap-1">
-            <input
-              type="checkbox"
-              checked={remote}
-              onChange={toggle(setRemote)}
-            />{" "}
-            Remote
+            <input type="checkbox" checked={remote} onChange={toggle(setRemote)} /> Remote
           </label>
           <label className="cursor-pointer inline-flex items-center gap-1">
-            <input
-              type="checkbox"
-              checked={github}
-              onChange={toggle(setGithub)}
-            />{" "}
-            GitHub
+            <input type="checkbox" checked={github} onChange={toggle(setGithub)} /> GitHub
           </label>
           <label className="cursor-pointer inline-flex items-center gap-1">
-            <input
-              type="checkbox"
-              checked={linkedin}
-              onChange={toggle(setLinkedin)}
-            />{" "}
-            LinkedIn
+            <input type="checkbox" checked={linkedin} onChange={toggle(setLinkedin)} /> LinkedIn
           </label>
           <label className="cursor-pointer inline-flex items-center gap-1">
-            <input
-              type="checkbox"
-              checked={community}
-              onChange={toggle(setCommunity)}
-            />{" "}
-            Community
+            <input type="checkbox" checked={community} onChange={toggle(setCommunity)} /> Community
           </label>
           <label className="cursor-pointer inline-flex items-center gap-1">
-            <input
-              type="checkbox"
-              checked={events}
-              onChange={toggle(setEvents)}
-            />{" "}
-            Events
+            <input type="checkbox" checked={events} onChange={toggle(setEvents)} /> Events
           </label>
           <select
             value={decade}
@@ -287,12 +241,8 @@ export default function DirectoryClient({
       </ul>
       {filtered.length === 0 && (
         <p className="mt-8 text-center text-text-muted">
-          No organisations match those filters.{" "}
-          <button
-            type="button"
-            onClick={clear}
-            className="underline hover:text-text"
-          >
+          No organisations match those filters.{' '}
+          <button type="button" onClick={clear} className="underline hover:text-text">
             Clear all
           </button>
         </p>
