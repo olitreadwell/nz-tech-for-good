@@ -18,7 +18,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         if: hashFiles('pnpm-lock.yaml') != ''
       - uses: actions/setup-node@v4
         with:
