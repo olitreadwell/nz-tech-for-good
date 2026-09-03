@@ -63,5 +63,8 @@
     "prettier-plugin-tailwindcss": "^0.8.1",
     "turbo": "^2.10.11"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "overrides": {
+    "postcss": "8.5.25"
+  }
 }
