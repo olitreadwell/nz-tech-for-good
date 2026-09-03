@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { getDomains } from "@/lib/data";
+import { getDomains } from '@/lib/data';
 
 export default function DomainsPage() {
   const domains = getDomains();

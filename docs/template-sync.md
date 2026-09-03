@@ -12,8 +12,11 @@ evolve with the template):
   issue templates, security checks.
 - `copyIfAbsent` — added only when missing: `AGENTS.md`, `CLAUDE.md`,
   `.nvmrc`, `.env.example`, contact/FAQ docs, the weekly sync workflow.
-- `merge` — `package.json`: union of `scripts`, `dependencies`, and
-  `devDependencies`, local values winning on conflict.
+- `merge` — `package.json`: union of `scripts` only, local values winning on
+  conflict. `dependencies` and `devDependencies` always stay local: the
+  template's app deps (Radix, next, nodemailer, …) and tooling majors (vitest,
+  playwright, …) are opt-in per repo, never forced by a sync. A sync must
+  never break `npm install`.
 - Everything else (`src/**`, `app/**`, `README.md`, tests) is left alone.
 
 ## Run it

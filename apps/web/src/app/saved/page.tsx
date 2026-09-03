@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Star } from "lucide-react";
+import Link from 'next/link';
+import { Star } from 'lucide-react';
 
 export default function SavedPage() {
   return (
@@ -7,9 +7,7 @@ export default function SavedPage() {
       <h1 className="flex items-center gap-2 text-3xl font-extrabold tracking-tight">
         <Star className="h-7 w-7 text-brand" /> Saved entries
       </h1>
-      <p className="mt-2 text-text-muted">
-        Your bookmarked organisations. Saved in your browser.
-      </p>
+      <p className="mt-2 text-text-muted">Your bookmarked organisations. Saved in your browser.</p>
       <div id="saved-root" className="mt-6" />
       <script
         dangerouslySetInnerHTML={{

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export function Footer() {
   return (
@@ -8,8 +8,8 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-semibold">NZ Tech-for-Good</h4>
             <p className="mt-1 text-xs text-text-muted">
-              Community-maintained directory of Aotearoa organisations using
-              technology for public good.{" "}
+              Community-maintained directory of Aotearoa organisations using technology for public
+              good.{' '}
               <a
                 href="https://creativecommons.org/licenses/by-sa/4.0/"
                 target="_blank"
@@ -25,10 +25,7 @@ export function Footer() {
             <h4 className="text-sm font-semibold">Browse</h4>
             <ul className="mt-1 space-y-1 text-xs">
               <li>
-                <Link
-                  href="/directory"
-                  className="text-text-muted hover:text-text"
-                >
+                <Link href="/directory" className="text-text-muted hover:text-text">
                   Directory
                 </Link>
               </li>
@@ -38,10 +35,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/domains"
-                  className="text-text-muted hover:text-text"
-                >
+                <Link href="/domains" className="text-text-muted hover:text-text">
                   Domains
                 </Link>
               </li>
@@ -51,10 +45,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/regions"
-                  className="text-text-muted hover:text-text"
-                >
+                <Link href="/regions" className="text-text-muted hover:text-text">
                   Regions
                 </Link>
               </li>
@@ -74,18 +65,12 @@ export function Footer() {
             <h4 className="text-sm font-semibold">Info</h4>
             <ul className="mt-1 space-y-1 text-xs">
               <li>
-                <Link
-                  href="/get-involved"
-                  className="text-text-muted hover:text-text"
-                >
+                <Link href="/get-involved" className="text-text-muted hover:text-text">
                   Get Involved
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="text-text-muted hover:text-text"
-                >
+                <Link href="/contact" className="text-text-muted hover:text-text">
                   Contact
                 </Link>
               </li>
@@ -143,8 +128,7 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-6 text-center text-xs text-text-muted">
-          Updated: {new Date().toISOString().slice(0, 10)} · Aotearoa New
-          Zealand
+          Updated: {new Date().toISOString().slice(0, 10)} · Aotearoa New Zealand
         </p>
       </div>
     </footer>

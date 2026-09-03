@@ -47,3 +47,6 @@ coverage/
 .local/
 
 .turbo/
+
+# Dependencies
+node_modules/

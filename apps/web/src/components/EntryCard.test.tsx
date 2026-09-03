@@ -1,76 +1,70 @@
-import { describe, it, expect } from "vitest";
-import { render, screen, within } from "@testing-library/react";
-import { EntryCard } from "@/components/EntryCard";
+import { describe, it, expect } from 'vitest';
+import { render, screen, within } from '@testing-library/react';
+import { EntryCard } from '@/components/EntryCard';
 
 const baseEntry = {
-  slug: "test-org",
-  name: "Test Organisation",
-  domain: "civic-tech",
-  domainLabel: "Civic Tech",
-  what: "Test Organisation does important civic tech work in Aotearoa.",
-  region: "wellington",
-  tags: ["civic-tech", "open-source"],
+  slug: 'test-org',
+  name: 'Test Organisation',
+  domain: 'civic-tech',
+  domainLabel: 'Civic Tech',
+  what: 'Test Organisation does important civic tech work in Aotearoa.',
+  region: 'wellington',
+  tags: ['civic-tech', 'open-source'],
   founding_year: 2020,
   takes_contributors: true,
-  website: "https://test.org",
-  github: "https://github.com/test",
-  linkedin_org: "https://linkedin.com/company/test",
-  community_url: "https://discord.gg/test",
-  events_url: "https://meetup.com/test",
+  website: 'https://test.org',
+  github: 'https://github.com/test',
+  linkedin_org: 'https://linkedin.com/company/test',
+  community_url: 'https://discord.gg/test',
+  events_url: 'https://meetup.com/test',
   last_verified: new Date().toISOString().slice(0, 10),
 };
 
-describe("EntryCard", () => {
-  it("renders name and description", () => {
+describe('EntryCard', () => {
+  it('renders name and description', () => {
     render(<EntryCard {...baseEntry} />);
-    expect(screen.getByText("Test Organisation")).toBeInTheDocument();
-    expect(
-      screen.getByText(/does important civic tech work/),
-    ).toBeInTheDocument();
+    expect(screen.getByText('Test Organisation')).toBeInTheDocument();
+    expect(screen.getByText(/does important civic tech work/)).toBeInTheDocument();
   });
 
-  it("shows domain badge", () => {
+  it('shows domain badge', () => {
     const { container } = render(<EntryCard {...baseEntry} />);
     // Domain label appears twice: badge pill + meta row. Use getAllByText.
-    expect(screen.getAllByText("Civic Tech").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Civic Tech').length).toBeGreaterThanOrEqual(1);
     // Pill text stays centered when a long label wraps onto two lines.
-    const pills = Array.from(container.querySelectorAll("a")).filter((a) =>
-      a.textContent?.includes("Civic Tech"),
+    const pills = Array.from(container.querySelectorAll('a')).filter((a) =>
+      a.textContent?.includes('Civic Tech')
     );
     expect(pills.length).toBeGreaterThanOrEqual(1);
-    expect(pills[0].className).toContain("text-center");
+    expect(pills[0].className).toContain('text-center');
   });
 
-  it("shows region and founding year", () => {
+  it('shows region and founding year', () => {
     render(<EntryCard {...baseEntry} />);
-    expect(screen.getAllByText("wellington").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('wellington').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText(/Est. 2020/).length).toBeGreaterThanOrEqual(1);
   });
 
-  it("shows contributors badge when true", () => {
+  it('shows contributors badge when true', () => {
     render(<EntryCard {...baseEntry} takes_contributors={true} />);
-    expect(screen.getAllByText("Contributors").length).toBeGreaterThanOrEqual(
-      1,
-    );
+    expect(screen.getAllByText('Contributors').length).toBeGreaterThanOrEqual(1);
   });
 
-  it("hides contributors badge when false", () => {
-    const { container } = render(
-      <EntryCard {...baseEntry} takes_contributors={false} />,
-    );
+  it('hides contributors badge when false', () => {
+    const { container } = render(<EntryCard {...baseEntry} takes_contributors={false} />);
     // The green badge with "Contributors" text should not exist
-    const badges = container.querySelectorAll(".bg-green-100");
+    const badges = container.querySelectorAll('.bg-green-100');
     expect(badges.length).toBe(0);
   });
 
-  it("renders metadata icon SVGs for available links", () => {
+  it('renders metadata icon SVGs for available links', () => {
     const { container } = render(<EntryCard {...baseEntry} />);
     // lucide icons render as SVG elements
-    const svgs = container.querySelectorAll("svg");
+    const svgs = container.querySelectorAll('svg');
     expect(svgs.length).toBeGreaterThan(4); // map pin, clock, branch, briefcase, message, calendar, globe...
   });
 
-  it("renders fewer SVGs when links are empty", () => {
+  it('renders fewer SVGs when links are empty', () => {
     const { container } = render(
       <EntryCard
         {...baseEntry}
@@ -79,60 +73,49 @@ describe("EntryCard", () => {
         community_url=""
         events_url=""
         website=""
-      />,
+      />
     );
-    const svgs = container.querySelectorAll("svg");
+    const svgs = container.querySelectorAll('svg');
     expect(svgs.length).toBeLessThan(8); // only map pin, clock remain
   });
 
-  it("shows website link when present", () => {
+  it('shows website link when present', () => {
     render(<EntryCard {...baseEntry} />);
-    expect(screen.getAllByText("Website").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText('Website').length).toBeGreaterThanOrEqual(1);
   });
 
-  it("renders a pre-filled feedback link to spot a mistake", () => {
+  it('renders a pre-filled feedback link to spot a mistake', () => {
     const { container } = render(<EntryCard {...baseEntry} />);
-    const link = within(container).getByRole("link", {
+    const link = within(container).getByRole('link', {
       name: /Spot a mistake/i,
     });
     expect(link).toBeInTheDocument();
-    expect(link.getAttribute("href")).toContain("issues/new");
-    expect(link.getAttribute("href")).toContain(
-      encodeURIComponent("Entry update: Test Organisation"),
+    expect(link.getAttribute('href')).toContain('issues/new');
+    expect(link.getAttribute('href')).toContain(
+      encodeURIComponent('Entry update: Test Organisation')
     );
-    expect(link.getAttribute("href")).toContain(
-      encodeURIComponent("/entry/test-org"),
-    );
-    expect(link.getAttribute("href")).toContain(
-      encodeURIComponent("data/entries/test-org.yaml"),
-    );
+    expect(link.getAttribute('href')).toContain(encodeURIComponent('/entry/test-org'));
+    expect(link.getAttribute('href')).toContain(encodeURIComponent('data/entries/test-org.yaml'));
   });
 
-  it("falls back to the slug in the feedback link when name is missing", () => {
+  it('falls back to the slug in the feedback link when name is missing', () => {
     const { container } = render(<EntryCard {...baseEntry} name="" />);
-    const link = within(container).getByRole("link", {
+    const link = within(container).getByRole('link', {
       name: /Spot a mistake/i,
     });
-    expect(link.getAttribute("href")).toContain(
-      encodeURIComponent("Entry update: test-org"),
-    );
+    expect(link.getAttribute('href')).toContain(encodeURIComponent('Entry update: test-org'));
   });
 
-  it("shows freshness indicator", () => {
+  it('shows freshness indicator', () => {
     render(<EntryCard {...baseEntry} />);
     expect(screen.getAllByText(/This week/).length).toBeGreaterThanOrEqual(1);
   });
 
-  it("marks stale entries over 90 days red", () => {
+  it('marks stale entries over 90 days red', () => {
     const oldDate = new Date();
     oldDate.setDate(oldDate.getDate() - 100);
-    render(
-      <EntryCard
-        {...baseEntry}
-        last_verified={oldDate.toISOString().slice(0, 10)}
-      />,
-    );
+    render(<EntryCard {...baseEntry} last_verified={oldDate.toISOString().slice(0, 10)} />);
     const freshness = screen.getByText(/mo ago/);
-    expect(freshness.closest("span")?.className).toContain("text-red-500");
+    expect(freshness.closest('span')?.className).toContain('text-red-500');
   });
 });

@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { ArrowRight, BarChart3, FolderOpen, MapPin } from "lucide-react";
+import Link from 'next/link';
+import { ArrowRight, BarChart3, FolderOpen, MapPin } from 'lucide-react';
 
-import { getAllEntries, getDomains, getRegions } from "@/lib/data";
-import { EntryCard } from "@/components/EntryCard";
+import { getAllEntries, getDomains, getRegions } from '@/lib/data';
+import { EntryCard } from '@/components/EntryCard';
 
 export default function HomePage() {
   const entries = getAllEntries();
@@ -15,13 +15,11 @@ export default function HomePage() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-8">
       <section className="text-center">
-        <h1 className="text-4xl font-extrabold tracking-tight">
-          Aotearoa tech for public good
-        </h1>
+        <h1 className="text-4xl font-extrabold tracking-tight">Aotearoa tech for public good</h1>
         <p className="mx-auto mt-4 max-w-xl text-lg text-text-muted">
-          A living directory of {entries.length} organisations, projects, and
-          networks using technology for public benefit: open data, civic tech,
-          climate, accessibility, Māori data sovereignty, and more.
+          A living directory of {entries.length} organisations, projects, and networks using
+          technology for public benefit: open data, civic tech, climate, accessibility, Māori data
+          sovereignty, and more.
         </p>
         <div className="mt-6 flex justify-center gap-3">
           <Link
@@ -41,23 +39,17 @@ export default function HomePage() {
         <div className="mt-6 flex justify-center gap-8">
           <div className="text-center">
             <FolderOpen className="mx-auto h-6 w-6 text-brand" />
-            <div className="mt-1 text-3xl font-extrabold text-brand">
-              {entries.length}
-            </div>
+            <div className="mt-1 text-3xl font-extrabold text-brand">{entries.length}</div>
             <div className="text-sm text-text-muted">organisations</div>
           </div>
           <div className="text-center">
             <BarChart3 className="mx-auto h-6 w-6 text-brand" />
-            <div className="mt-1 text-3xl font-extrabold text-brand">
-              {domains.length}
-            </div>
+            <div className="mt-1 text-3xl font-extrabold text-brand">{domains.length}</div>
             <div className="text-sm text-text-muted">domains</div>
           </div>
           <div className="text-center">
             <MapPin className="mx-auto h-6 w-6 text-brand" />
-            <div className="mt-1 text-3xl font-extrabold text-brand">
-              {regions.length}
-            </div>
+            <div className="mt-1 text-3xl font-extrabold text-brand">{regions.length}</div>
             <div className="text-sm text-text-muted">regions</div>
           </div>
         </div>

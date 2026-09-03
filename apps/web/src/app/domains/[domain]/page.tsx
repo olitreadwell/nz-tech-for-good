@@ -1,18 +1,14 @@
-import Link from "next/link";
-import { notFound } from "next/navigation";
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
-import { getAllEntries, getDomains } from "@/lib/data";
-import { EntryCard } from "@/components/EntryCard";
+import { getAllEntries, getDomains } from '@/lib/data';
+import { EntryCard } from '@/components/EntryCard';
 
 export function generateStaticParams() {
   return getDomains().map((d) => ({ domain: d.slug }));
 }
 
-export default async function DomainPage({
-  params,
-}: {
-  params: Promise<{ domain: string }>;
-}) {
+export default async function DomainPage({ params }: { params: Promise<{ domain: string }> }) {
   const { domain } = await params;
   const entries = getAllEntries();
   const domains = getDomains();
@@ -28,16 +24,12 @@ export default async function DomainPage({
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-8">
-      <Link
-        href="/domains"
-        className="mb-4 inline-block text-sm text-text-muted hover:text-brand"
-      >
+      <Link href="/domains" className="mb-4 inline-block text-sm text-text-muted hover:text-brand">
         ← All domains
       </Link>
       <h1 className="text-3xl font-extrabold tracking-tight">{d.label}</h1>
       <p className="mt-2 text-lg text-text-muted">
-        {items.length} {items.length === 1 ? "organisation" : "organisations"}{" "}
-        in this domain.
+        {items.length} {items.length === 1 ? 'organisation' : 'organisations'} in this domain.
       </p>
 
       {relatedDomains.length > 0 && (
