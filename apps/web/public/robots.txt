@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://olitreadwell.github.io/nz-tech-for-good/sitemap.xml
