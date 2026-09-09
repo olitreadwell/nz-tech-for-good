@@ -136,6 +136,22 @@
       {
         "path": "scripts/smoke.sh",
         "if": "package.json"
+      },
+      {
+        "path": "public/llms.txt",
+        "if": "next.config.*"
+      },
+      {
+        "path": "src/app/sitemap.ts",
+        "if": "next.config.*"
+      },
+      {
+        "path": "src/app/not-found.tsx",
+        "if": "next.config.*"
+      },
+      {
+        "path": "src/app/icon.svg",
+        "if": "next.config.*"
       }
     ],
     "merge": ["package.json"]

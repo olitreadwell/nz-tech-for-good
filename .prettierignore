@@ -10,3 +10,4 @@ public
 next-env.d.ts
 *.yml
 *.yaml
+src/generated

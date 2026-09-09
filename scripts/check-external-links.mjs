@@ -7,6 +7,7 @@ import { join, resolve } from 'node:path';
 
 const rootDir = resolve(import.meta.dirname, '..');
 const violations = [];
+const srcDir = join(rootDir, 'src');
 
 function walk(dir) {
   for (const entry of readdirSync(dir)) {
@@ -37,7 +38,9 @@ function checkFile(file) {
   }
 }
 
-walk(join(rootDir, 'src'));
+if (statSync(srcDir, { throwIfNoEntry: false })?.isDirectory()) {
+  walk(srcDir);
+}
 
 if (violations.length > 0) {
   console.error('External links must open in a new tab:');

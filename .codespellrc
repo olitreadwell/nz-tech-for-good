@@ -1,5 +1,5 @@
 [codespell]
-skip = .git,node_modules,.next,dist,coverage,playwright-report,test-results,package-lock.json,pnpm-lock.yaml,docs/contributing,.codespellrc
-ignore-words-list = organise,organised,organisation,organisations,modelling,behaviour,licence,programme,defence,optimisation,normalise,colour,afterAll
+skip = .git,node_modules,.claude*,.next,out,dist,coverage,playwright-report,test-results,package-lock.json,pnpm-lock.yaml,docs/contributing,./src/generated*,assets,.codespellrc
+ignore-words-list = organise,organised,organisation,organisations,modelling,behaviour,licence,programme,defence,optimisation,normalise,colour,afterAll,abd,mane,tread,ot,brunch,rouge,te,trough
 check-hidden = false
 quiet-level = 3

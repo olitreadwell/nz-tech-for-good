@@ -39,6 +39,13 @@ snippets here are the GitHub Actions form used by this repo.
     nightly scans. There are no staging/preview environments; the Docker
     job is a throwaway container with a healthcheck.
 
+11. **Dependabot auto-merge (low-risk bumps)** — `.github/dependabot.yml`
+    targets `development`; the `dependabot-automerge.yml` workflow approves
+    and auto-merges patch/minor PRs once the required checks pass (`Check
+    (mirrors npm run check)` + both e2e shards). Major bumps stay open for
+    a human. Branch protection on `development` enforces those checks for
+    PR merges.
+
 ## Scaling rules of thumb (apply as you grow)
 
 - Add a remote build cache (Turborepo/Nx/Bazel) when builds exceed ~5 min
