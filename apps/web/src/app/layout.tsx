@@ -1,6 +1,6 @@
 import '../../../../packages/ui/src/styles/globals.css';
 import '@/styles/print.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -15,6 +15,13 @@ export const metadata: Metadata = {
     'A directory of Aotearoa New Zealand organisations using technology for public good.',
   icons: { icon: '/favicon.svg' },
   alternates: { types: { 'application/rss+xml': '/feed.xml' } },
+  metadataBase: new URL('https://olitreadwell.github.io'),
+};
+
+export const viewport: Viewport = {
+  themeColor: '#2563eb', 
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
