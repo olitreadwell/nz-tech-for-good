@@ -362,7 +362,7 @@ _5 entries in this domain._
 
 - Be. Lab (formerly Be. Accessible) is a New Zealand organisation, launched in 2011, that helps businesses make their websites, apps, and workplaces accessible through digital accessibility assessments, training, and consulting.
 - Region: national
-- Links: [Website](https://www.belab.co.nz) · [LinkedIn](https://www.linkedin.com/company/belabnz)
+- Links: _no links on file_
 - Tags: accessibility, digital accessibility, consulting, disability employment
 - Related: Blind Low Vision NZ, Access Matters Aotearoa
 
@@ -592,7 +592,7 @@ _9 entries in this domain._
 
 - Cawthron Institute, a science research institute based in Nelson, builds ocean sensors and data buoys that let mussel and salmon farmers check water conditions on their phones, and it recently spun out a company called Ocean Intelligence to sell this technology.
 - Region: tasman-nelson
-- Links: [Website](https://www.cawthron.org.nz/what-we-do/ocean-health/ocean-technologies/) · [GitHub](https://github.com/cawthron) · [LinkedIn](https://www.linkedin.com/company/cawthron-institute)
+- Links: [Website](https://openocean.cawthron.org.nz/new-technologies/monitoring/) · [GitHub](https://github.com/cawthron) · [LinkedIn](https://www.linkedin.com/company/cawthron-institute)
 - Tags: ocean tech, aquaculture, remote sensors, research institute, climate tech
 - Related: CarbonCrop
 
@@ -1266,7 +1266,7 @@ _7 entries in this domain._
 
 - GovHack is an annual 46-hour hackathon held across Australia and New Zealand where teams build projects using open government data, run in NZ cities including Auckland, Wellington, Christchurch, and Dunedin.
 - Region: national
-- Links: [Website](https://www.govhack.org) · [GitHub](https://github.com/GovHackNZ) · [LinkedIn](https://nz.linkedin.com/company/govhack)
+- Links: [Website](https://www.facebook.com/GovHackAotearoaNZ/) · [GitHub](https://github.com/GovHackNZ) · [LinkedIn](https://nz.linkedin.com/company/govhack)
 - Tags: hackathon, open data, civic tech, volunteer-run
 - Related: data.govt.nz, DigitalNZ, LINZ Data Service
 
