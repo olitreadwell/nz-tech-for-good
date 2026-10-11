@@ -24,6 +24,18 @@ import { join } from 'node:path';
 const MIN_AGE_DAYS = Number(process.env.MIN_AGE_DAYS ?? 3);
 // Set REQUIRE_GREEN_CHECKS=false only where branch protection already waits on CI.
 const requireGreenChecks = () => (process.env.REQUIRE_GREEN_CHECKS ?? 'true') !== 'false';
+// Peer-dependency-sensitive packages always get a human, even on a patch and
+// even when the PR is a security advisory. Ported from the Renovate
+// "core runtime (manual review)" rule when Renovate was dropped, because one
+// bump in this set broke a peer-dep tree and a TypeScript build.
+// Override with MANUAL_REVIEW_PACKAGES=react,next (empty string allows all).
+const MANUAL_REVIEW_PACKAGES = new Set(
+  (process.env.MANUAL_REVIEW_PACKAGES ??
+    'react,react-dom,@types/react,@types/react-dom,next,typescript,@react-three/fiber,@react-three/drei,@react-three/postprocessing,three,@types/three')
+    .split(',')
+    .map((name) => name.trim())
+    .filter(Boolean)
+);
 const prUrl = process.argv[2];
 const dryRun = !!process.env.PR_DRY_RUN;
 
@@ -350,6 +362,14 @@ async function main() {
     const release = await releaseDateFor(update.name, update.to, ecosystem);
     const ageDays = release ? (Date.now() - release.getTime()) / 86400000 : null;
     if (youngest === null || (ageDays !== null && ageDays < youngest)) youngest = ageDays;
+
+    if (MANUAL_REVIEW_PACKAGES.has(update.name)) {
+      allow = false;
+      console.log(
+        `dependabot-auto-merge: human review needed, ${update.name} is on the core-runtime list`
+      );
+      continue;
+    }
 
     if (security) continue;
     const lowRisk =

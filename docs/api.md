@@ -14,7 +14,7 @@ drift.
 ## What the contract test proves
 
 1. The document is valid OpenAPI 3.1 and lists every app route.
-2. Every route handler under `src/app/api/**` plus `/health` is documented : 
+2. Every route handler under `src/app/api/**` plus `/health` is documented —
    adding a route without documenting it fails the check.
 3. Every documented response matches what the real route handler returns:
    the test calls the handlers and parses the bodies with the documented

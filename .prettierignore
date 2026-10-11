@@ -11,3 +11,7 @@ next-env.d.ts
 *.yml
 *.yaml
 src/generated
+
+# Rewritten by the dependency-batching automation, which does not run prettier.
+# Formatting it here gets reverted on the next batch.
+scripts/dependabot-auto-merge.mjs

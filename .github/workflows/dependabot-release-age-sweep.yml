@@ -5,20 +5,26 @@ name: Dependabot release-age sweep
 # every open Dependabot PR so those mature into auto-merge on their own.
 on:
   schedule:
-    - cron: '0 19 * * *'
+    # 15:00 UTC is 04:00 Pacific/Auckland during NZDT (and 03:00 during NZST),
+    # which keeps the sweep inside the quiet window.
+    - cron: '0 15 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: dependabot-release-age-sweep
+  cancel-in-progress: false
+
 jobs:
   sweep:
     name: Enable auto-merge for matured updates
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Sweep open Dependabot PRs
         env:

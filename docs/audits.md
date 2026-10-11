@@ -18,7 +18,7 @@ green CI.
 
 - Automated: axe (WCAG 2.2 A/AA + best practice) on every route in
   `e2e/a11y.spec.ts`, plus `vitest-axe` in component tests.
-- Manual AAA checklist: `docs/a11y.md`: required before release.
+- Manual AAA checklist: `docs/a11y.md` — required before release.
 
 ## Security
 
@@ -67,7 +67,7 @@ green CI.
 
 ## Local equivalents
 
-- `pnpm test:a11y`: axe route audit only.
-- `pnpm run perf`: runs Lighthouse via `pnpm dlx @lhci/cli` (no persistent
+- `pnpm test:a11y` — axe route audit only.
+- `pnpm run perf` — runs Lighthouse via `pnpm dlx @lhci/cli` (no persistent
   dependency; the CI action bundles its own LHCI).
-- `pnpm run check`: everything else.
+- `pnpm run check` — everything else.

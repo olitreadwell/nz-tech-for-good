@@ -6,7 +6,10 @@ name: Dependabot auto-merge
 # as text, so no PR code ever executes here.
 on:
   pull_request_target:
-    types: [opened, synchronize, reopened, edited, labeled, unlabeled, ready_for_review]
+    # edited, labeled and unlabeled each re-ran the whole workflow, and
+    # dependabot labels its own PRs on open, so every PR triggered it three or
+    # four times. synchronize is kept: a fresh push can change the verdict.
+    types: [opened, synchronize, reopened, ready_for_review]
 
 permissions:
   contents: write
@@ -14,7 +17,9 @@ permissions:
 
 concurrency:
   group: dependabot-auto-merge-${{ github.event.pull_request.number }}
-  cancel-in-progress: false
+  # The script re-reads PR state on every run, so a newer event can safely
+  # replace a queued one instead of stacking behind it.
+  cancel-in-progress: true
 
 jobs:
   auto-merge:
@@ -26,7 +31,7 @@ jobs:
       !github.event.pull_request.draft &&
       github.event.pull_request.head.repo.full_name == github.repository
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Gate on update type, release age, and check status
         env:

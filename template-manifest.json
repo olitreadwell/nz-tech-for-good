@@ -37,7 +37,8 @@
         "path": ".github/ISSUE_TEMPLATE/feature_request.yml"
       },
       {
-        "path": ".github/workflows/code-review.yml"
+        "path": ".github/workflows/code-review.yml",
+        "if": "package.json"
       },
       {
         "path": ".github/workflows/ci.yml",
@@ -84,6 +85,10 @@
         "if": "package.json"
       },
       {
+        "path": "scripts/local-ci.sh",
+        "if": "package.json"
+      },
+      {
         "path": "scripts/sync-from-template.mjs"
       },
       {
@@ -107,6 +112,22 @@
       },
       {
         "path": "docs/template-sync.md"
+      },
+      {
+        "path": ".github/workflows/dependabot-auto-merge.yml",
+        "if": ".github/dependabot.yml"
+      },
+      {
+        "path": ".github/workflows/dependabot-release-age-sweep.yml",
+        "if": ".github/dependabot.yml"
+      },
+      {
+        "path": "scripts/dependabot-auto-merge.mjs",
+        "if": ".github/dependabot.yml"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "if": ".github/dependabot.yml"
       }
     ],
     "copyIfAbsent": [

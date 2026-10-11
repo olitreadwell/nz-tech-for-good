@@ -1,65 +1,44 @@
-# Config touch to trigger a fresh Dependabot run after the auto-merge rework.
-# Third touch: force Dependabot to rebase open PRs so their auto-merge checks re-run green.
+# Grouped so a normal run produces one PR per upgrade class instead of ten.
+# Majors stay ungrouped and unmerged: scripts/dependabot-auto-merge.mjs only
+# enables auto-merge for patch and minor bumps that are old enough to trust.
+#
+# Cron is the only interval that can express "about every two weeks".
+# "0 4 */14 * *" fires on days 1, 15 and 29, so the gap is 12 to 17 days rather
+# than exactly 14. The cronjob is read in the timezone below, so updates land at
+# 04:00 Pacific/Auckland, inside the 03:00 to 06:00 window.
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: /
-  schedule:
-    interval: weekly
-    day: monday
-    time: 06:00
-    timezone: Pacific/Auckland
-  open-pull-requests-limit: 5
-  labels:
-  - dependencies
-  groups:
-    production-patch:
-      dependency-type: production
-      update-types:
-      - patch
-    production-minor:
-      dependency-type: production
-      update-types:
-      - minor
-    development-patch:
-      dependency-type: development
-      update-types:
-      - patch
-    development-minor:
-      dependency-type: development
-      update-types:
-      - minor
-- package-ecosystem: pip
-  directory: /
-  schedule:
-    interval: weekly
-    day: monday
-    time: 06:00
-    timezone: Pacific/Auckland
-  open-pull-requests-limit: 5
-  labels:
-  - dependencies
-  groups:
-    all-dependencies:
-      patterns:
-      - "*"
-      update-types:
-      - patch
-      - minor
-- package-ecosystem: github-actions
-  directory: /
-  schedule:
-    interval: weekly
-    day: monday
-    time: 06:00
-    timezone: Pacific/Auckland
-  open-pull-requests-limit: 5
-  labels:
-  - dependencies
-  groups:
-    all-dependencies:
-      patterns:
-      - "*"
-      update-types:
-      - patch
-      - minor
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'cron'
+      cronjob: '0 4 */14 * *'
+      timezone: 'Pacific/Auckland'
+    versioning-strategy: increase-if-necessary
+    open-pull-requests-limit: 5
+    labels: ['dependencies']
+    groups:
+      production-patch:
+        dependency-type: 'production'
+        update-types: ['patch']
+      production-minor:
+        dependency-type: 'production'
+        update-types: ['minor']
+      development-patch:
+        dependency-type: 'development'
+        update-types: ['patch']
+      development-minor:
+        dependency-type: 'development'
+        update-types: ['minor']
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'cron'
+      cronjob: '0 4 */14 * *'
+      timezone: 'Pacific/Auckland'
+    open-pull-requests-limit: 5
+    labels: ['dependencies']
+    groups:
+      github-actions:
+        patterns: ['*']

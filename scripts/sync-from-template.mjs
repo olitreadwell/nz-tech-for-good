@@ -12,7 +12,7 @@ import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { mkdir, mkdtemp, readFile, writeFile, copyFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
-import { dirname, join, resolve } from 'node:path';
+import { basename, dirname, join, resolve } from 'node:path';
 
 const args = process.argv.slice(2);
 const apply = args.includes('--apply');
@@ -68,10 +68,22 @@ function globToRegExp(glob) {
   return new RegExp(`^${glob.replace(/[.+^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*')}$`);
 }
 
+// A condition is matched against the target repo, so manifests can opt a file
+// into only the repos that need it. A condition with a slash ("Dockerfile" vs
+// ".github/dependabot.yml") is resolved as a path relative to the repo root;
+// a bare name is matched against the top level.
 async function conditionMet(condition, targetDir) {
   if (!condition) return true;
-  const entries = await readdir(targetDir);
-  const re = globToRegExp(condition);
+  const nested = condition.includes('/');
+  const dir = nested ? join(targetDir, dirname(condition)) : targetDir;
+  const pattern = nested ? basename(condition) : condition;
+  let entries;
+  try {
+    entries = await readdir(dir);
+  } catch {
+    return false;
+  }
+  const re = globToRegExp(pattern);
   return entries.some((name) => re.test(name));
 }
 
@@ -163,7 +175,7 @@ async function main() {
     const base = defaultBranch();
     console.log(`\ntarget: ${repoDir} (base: ${base})`);
     if (changes.length === 0) {
-      console.log('in sync: nothing to do');
+      console.log('in sync — nothing to do');
       return;
     }
     for (const c of changes) console.log(`  ${c.action.padEnd(6)} ${c.rel}`);
