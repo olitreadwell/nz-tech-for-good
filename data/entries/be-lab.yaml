@@ -4,9 +4,9 @@ what: Be. Lab (formerly Be. Accessible) is a New Zealand organisation, launched 
   make their websites, apps, and workplaces accessible through digital accessibility assessments, training,
   and consulting.
 region: national
-website: https://www.belab.co.nz
+website: ''
 github: ''
-linkedin_org: https://www.linkedin.com/company/belabnz
+linkedin_org: ''
 linkedin_people: []
 tags:
 - accessibility
@@ -16,10 +16,12 @@ tags:
 related_to:
 - Blind Low Vision NZ
 - Access Matters Aotearoa
-source: web search of belab.co.nz About Us, Our Services, and Digital Accessibility Assessments pages;
-  direct fetch of the site returned a repeated TLS/SSL handshake error rather than real content, but the
-  domain is confirmed live and returning real content indexed by search engines
+source: 'links cleared 2026-10-12: belab.co.nz resolves but fails the TLS handshake in both curl and a
+  real browser (ERR_SSL_PROTOCOL_ERROR), and no Wayback snapshot exists. The LinkedIn page
+  linkedin.com/company/belabnz returns 404 on both the www and nz subdomains. The organisation is still
+  listed by Your Way Kia Roha and Future Ready, so the entry is kept with an empty website until a working
+  URL appears.'
 founding_year: null
 takes_contributors: null
 careers_url: ''
-last_verified: '2026-08-05'
+last_verified: '2026-10-12'

@@ -365,9 +365,9 @@
     "domain": "disability & accessibility tech",
     "what": "Be. Lab (formerly Be. Accessible) is a New Zealand organisation, launched in 2011, that helps businesses make their websites, apps, and workplaces accessible through digital accessibility assessments, training, and consulting.",
     "region": "national",
-    "website": "https://www.belab.co.nz",
+    "website": "",
     "github": "",
-    "linkedin_org": "https://www.linkedin.com/company/belabnz",
+    "linkedin_org": "",
     "community_url": "",
     "events_url": "",
     "linkedin_people": [],
@@ -381,11 +381,11 @@
       "Blind Low Vision NZ",
       "Access Matters Aotearoa"
     ],
-    "source": "web search of belab.co.nz About Us, Our Services, and Digital Accessibility Assessments pages; direct fetch of the site returned a repeated TLS/SSL handshake error rather than real content, but the domain is confirmed live and returning real content indexed by search engines",
+    "source": "links cleared 2026-10-12: belab.co.nz resolves but fails the TLS handshake in both curl and a real browser (ERR_SSL_PROTOCOL_ERROR), and no Wayback snapshot exists. The LinkedIn page linkedin.com/company/belabnz returns 404 on both the www and nz subdomains. The organisation is still listed by Your Way Kia Roha and Future Ready, so the entry is kept with an empty website until a working URL appears.",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
-    "last_verified": "2026-08-05"
+    "last_verified": "2026-10-12"
   },
   {
     "name": "BenefitMe",
@@ -573,7 +573,7 @@
     "domain": "green / climate-tech",
     "what": "Cawthron Institute, a science research institute based in Nelson, builds ocean sensors and data buoys that let mussel and salmon farmers check water conditions on their phones, and it recently spun out a company called Ocean Intelligence to sell this technology.",
     "region": "tasman-nelson",
-    "website": "https://www.cawthron.org.nz/what-we-do/ocean-health/ocean-technologies/",
+    "website": "https://openocean.cawthron.org.nz/new-technologies/monitoring/",
     "github": "https://github.com/cawthron",
     "linkedin_org": "https://www.linkedin.com/company/cawthron-institute",
     "community_url": "",
@@ -589,11 +589,11 @@
     "related_to": [
       "CarbonCrop"
     ],
-    "source": "cawthron.org.nz/what-we-do/ocean-health/ocean-technologies (verified via curl, HTTP 200); cawthron.org.nz news page on the Ocean Intelligence spin-out found via web search; github and linkedin_org verified for parent Cawthron Institute via github.com/cawthron and linkedin.com (2026-08-25)",
+    "source": "website updated 2026-10-12: the old ocean-technologies page returns 404, so the entry now points at Cawthron open ocean monitoring (openocean.cawthron.org.nz/new-technologies/monitoring/, HTTP 200, verified 2026-10-12). The Ocean Intelligence spin-out site oceanintelligence.io also returns HTTP 200. github.com/cawthron and linkedin.com/company/cawthron-institute verified for the parent institute (2026-08-25).",
     "founding_year": null,
     "takes_contributors": null,
     "careers_url": "",
-    "last_verified": "2026-08-05"
+    "last_verified": "2026-10-12"
   },
   {
     "name": "Centre for Artificial Intelligence and Public Policy (CAIPP)",
@@ -1447,7 +1447,7 @@
     "domain": "civic-tech",
     "what": "GovHack is an annual 46-hour hackathon held across Australia and New Zealand where teams build projects using open government data, run in NZ cities including Auckland, Wellington, Christchurch, and Dunedin.",
     "region": "national",
-    "website": "https://www.govhack.org",
+    "website": "https://www.facebook.com/GovHackAotearoaNZ/",
     "github": "https://github.com/GovHackNZ",
     "linkedin_org": "https://nz.linkedin.com/company/govhack",
     "community_url": "",
@@ -1464,11 +1464,11 @@
       "DigitalNZ",
       "LINZ Data Service"
     ],
-    "source": "govhack.org (verified via WebFetch ; note: the separate govhack.org.nz domain has expired and now redirects to an unrelated casino review site, so only govhack.org should be used); careers_url verified via govhack.org/volunteer (2026-08-25)",
+    "source": "website updated 2026-10-12: govhack.org no longer resolves (no NS records on 1.1.1.1, Google or Quad9 DNS), so the entry now points at the live GovHack Aotearoa NZ Facebook page. LinkedIn company page verified 2026-10-12 (HTTP 200). The event itself still runs, most recently 29-31 August.",
     "founding_year": 2015,
     "takes_contributors": true,
-    "careers_url": "https://govhack.org/volunteer/",
-    "last_verified": "2026-08-05"
+    "careers_url": "",
+    "last_verified": "2026-10-12"
   },
   {
     "name": "Greater Wellington Regional Council Open Data",
