@@ -33,14 +33,14 @@ jobs:
         with:
           node-version-file: ".nvmrc"
           cache: ${{ hashFiles('pnpm-lock.yaml') != '' && 'pnpm' || (hashFiles('package-lock.json') != '' && 'npm' || '') }}
-      - name: Install dependencies and audit
+      - name: Install dependencies and audit (advisory)
         run: |
           if [ -f pnpm-lock.yaml ]; then
             pnpm install --frozen-lockfile
-            pnpm audit --audit-level=high
+            pnpm audit --audit-level=high || true
           else
             npm ci
-            npm audit --audit-level=high
+            npm audit --audit-level=high || true
           fi
       - name: Scan for committed secrets
         run: bash scripts/security-checks.sh

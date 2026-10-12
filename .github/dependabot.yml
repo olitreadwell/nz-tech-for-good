@@ -17,6 +17,26 @@ updates:
     versioning-strategy: increase-if-necessary
     open-pull-requests-limit: 5
     labels: ['dependencies']
+    # Majors that cannot pass the local check gate stay held until the
+    # upstream peer range widens. Each one below was verified by running
+    # the repo's own `npm run check` against the bump.
+    ignore:
+      # typescript-eslint 8.7x peers typescript ">=4.8.4 <6.1.0"; a 7.x
+      # typescript makes eslint abort before it lints a single file.
+      - dependency-name: 'typescript'
+        versions: ['>=7.0.0']
+      # eslint-plugin-jsx-a11y 6.10.2 peers eslint "^3 || ... || ^9", so
+      # eslint 10 crash-loops the react rules.
+      - dependency-name: 'eslint'
+        versions: ['>=10.0.0']
+      - dependency-name: '@eslint/js'
+        versions: ['>=10.0.0']
+      # vitest and its coverage provider must move majors together, and
+      # Dependabot cannot express that pairing in a group.
+      - dependency-name: 'vitest'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@vitest/coverage-v8'
+        update-types: ['version-update:semver-major']
     groups:
       production-patch:
         dependency-type: 'production'
