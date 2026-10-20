@@ -124,6 +124,7 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
         <div className="flex flex-wrap gap-3">
           <input
             type="search"
+            aria-label="Search entries"
             value={search}
             onChange={(e) => {
               setSearch(e.target.value);
@@ -133,6 +134,7 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
             className="flex-1 min-w-[200px] rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm"
           />
           <select
+            aria-label="Filter by domain"
             value={domain}
             onChange={(e) => {
               setDomain(e.target.value);
@@ -148,6 +150,7 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
             ))}
           </select>
           <select
+            aria-label="Filter by region"
             value={region}
             onChange={(e) => {
               setRegion(e.target.value);
@@ -187,6 +190,7 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
             <input type="checkbox" checked={events} onChange={toggle(setEvents)} /> Events
           </label>
           <select
+            aria-label="Filter by founding decade"
             value={decade}
             onChange={(e) => {
               setDecade(e.target.value);
@@ -210,6 +214,7 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
         </div>
         <div className="flex items-center gap-3 text-sm">
           <select
+            aria-label="Sort entries"
             value={sort}
             onChange={(e) => setSort(e.target.value)}
             className="rounded border border-border bg-surface-alt px-2 py-1 text-sm"

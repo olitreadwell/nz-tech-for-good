@@ -5,7 +5,7 @@ import { defineConfig, devices } from "@playwright/test";
 // answering there, which would test the wrong app. E2E_PORT moves the port for
 // callers that need a different one.
 const e2ePort = process.env.E2E_PORT ?? "3301";
-const e2eBaseUrl = `http://localhost:${e2ePort}/kiwi-tech-for-good`;
+const e2eBaseUrl = `http://localhost:${e2ePort}`;
 
 export default defineConfig({
   testDir: "./e2e",
@@ -25,7 +25,8 @@ export default defineConfig({
   ],
   webServer: {
     command: `npm run dev -- -p ${e2ePort}`,
-    url: e2eBaseUrl,
+    cwd: __dirname,
+    url: `${e2eBaseUrl}/kiwi-tech-for-good`,
     reuseExistingServer: !process.env.CI,
   },
 });

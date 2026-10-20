@@ -116,5 +116,5 @@ jobs:
           created_epoch=$(date -u -d "$created" +%s 2>/dev/null || date -u -jf "%Y-%m-%dT%H:%M:%SZ" "$created" +%s)
           four_weeks_ago=$(date -u -d "-4 weeks" +%s 2>/dev/null || date -u -v-4w +%s)
           if [ "$created_epoch" -lt "$four_weeks_ago" ]; then
-            gh issue comment "$number" --body "This issue has been open for over 4 weeks with unresolved dead links. These links may be permanently dead: consider removing or updating the affected entries."
+            gh issue comment "$number" --body "This issue has been open for over 4 weeks with unresolved links. They may be permanently dead: consider removing or updating the affected entries."
           fi

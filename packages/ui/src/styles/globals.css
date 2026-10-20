@@ -4,7 +4,7 @@
 
 @theme {
   --color-brand: #2563eb;
-  --color-brand-soft: #dbeafe;
+  --color-brand-soft: #eff6ff;
   --color-surface: #ffffff;
   --color-surface-alt: #f9fafb;
   --color-border: #e5e7eb;
@@ -14,6 +14,8 @@
 }
 
 .dark {
+  --color-brand: #93c5fd;
+  --color-brand-soft: #1e3a8a;
   --color-surface: #1a1a1a;
   --color-surface-alt: #262626;
   --color-border: #404040;
@@ -23,6 +25,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
+    --color-brand: #93c5fd;
+    --color-brand-soft: #1e3a8a;
     --color-surface: #1a1a1a;
     --color-surface-alt: #262626;
     --color-border: #404040;

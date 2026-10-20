@@ -1,23 +1,25 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
+const BASE_PATH = "/kiwi-tech-for-good";
+
 test.describe("homepage", () => {
   test("renders title and stats", async ({ page }) => {
-    await page.goto("/");
+    await page.goto(BASE_PATH);
     await expect(page.locator("h1")).toContainText("tech for public good");
-    await expect(page.locator("text=organisations")).toBeVisible();
-    await expect(page.locator("text=domains")).toBeVisible();
-    await expect(page.locator("text=regions")).toBeVisible();
+    await expect(page.getByText("organisations", { exact: true })).toBeVisible();
+    await expect(page.getByText("domains", { exact: true })).toBeVisible();
+    await expect(page.getByText("regions", { exact: true })).toBeVisible();
   });
 
   test("browse link navigates to directory", async ({ page }) => {
-    await page.goto("/");
+    await page.goto(BASE_PATH);
     await page.click("text=Browse");
     await expect(page).toHaveURL(/\/directory/);
   });
 
   test("has no serious a11y violations", async ({ page }) => {
-    await page.goto("/");
+    await page.goto(BASE_PATH);
     const results = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"])
       .analyze();
@@ -27,12 +29,12 @@ test.describe("homepage", () => {
 
 test.describe("directory page", () => {
   test("renders entry cards", async ({ page }) => {
-    await page.goto("/directory");
+    await page.goto(`${BASE_PATH}/directory`);
     await expect(page.locator("h3 a").first()).toBeVisible();
   });
 
   test("has no serious a11y violations", async ({ page }) => {
-    await page.goto("/directory");
+    await page.goto(`${BASE_PATH}/directory`);
     const results = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa"])
       .analyze();
@@ -42,12 +44,13 @@ test.describe("directory page", () => {
 
 test.describe("adversarial", () => {
   test("404 page returns not-found", async ({ page }) => {
-    const response = await page.goto("/nonexistent");
+    const response = await page.goto(`${BASE_PATH}/nonexistent`);
     expect(response?.status()).toBe(404);
   });
 
-  test("handles missing entry gracefully", async ({ page }) => {
-    await page.goto("/entry/nonexistent-entry");
-    await expect(page.locator("text=not found")).toBeVisible();
+  test("shows the not-found page for unknown routes", async ({ page }) => {
+    await page.goto(`${BASE_PATH}/nonexistent`);
+    await expect(page.locator("h1")).toHaveText("404");
+    await expect(page.getByText("That page could not be found.")).toBeVisible();
   });
 });

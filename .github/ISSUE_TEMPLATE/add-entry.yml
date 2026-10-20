@@ -24,7 +24,7 @@ body:
     id: domain
     attributes:
       label: Domain
-      description: The area of public good this works in. Pick the closest fit: if none fit, choose "Other / not sure" and explain in the description.
+      description: 'The area of public good this works in. Pick the closest fit: if none fit, choose "Other / not sure" and explain in the description.'
       options:
         - Māori data sovereignty / indigenous data
         - civic-tech
@@ -120,7 +120,7 @@ body:
     id: source
     attributes:
       label: Source
-      description: How you verified this: which page you checked, and when.
+      description: 'How you verified this: which page you checked, and when.'
       placeholder: "example.nz homepage, checked 2026-08-05"
     validations:
       required: true

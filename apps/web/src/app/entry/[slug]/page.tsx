@@ -15,6 +15,8 @@ import { getAllEntries } from '@/lib/data';
 import { domainSlug } from '@/lib/domain-slug';
 import { buildEntryFeedbackUrl } from '@/lib/feedback';
 
+export const dynamicParams = false;
+
 export default async function EntryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const entries = getAllEntries();
