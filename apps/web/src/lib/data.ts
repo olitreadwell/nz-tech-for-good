@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import yaml from 'js-yaml';
+import { load as loadYaml } from 'js-yaml';
 
 export interface Entry {
   slug: string;
@@ -70,7 +70,7 @@ export function getAllEntries(): Entry[] {
     .sort();
   const entries: Entry[] = [];
   for (const file of files) {
-    const raw = yaml.load(fs.readFileSync(path.join(ENTRIES_DIR, file), 'utf8')) as Record<
+    const raw = loadYaml(fs.readFileSync(path.join(ENTRIES_DIR, file), 'utf8')) as Record<
       string,
       unknown
     > | null;
