@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nz-tech-for-good.vercel.app/sitemap.xml
