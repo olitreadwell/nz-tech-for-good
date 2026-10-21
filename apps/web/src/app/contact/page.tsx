@@ -11,7 +11,7 @@ export default function ContactPage() {
 
       <div className="mt-6 space-y-3">
         <a
-          href="https://github.com/olitreadwell/kiwi-tech-for-good/issues/new/choose"
+          href="https://github.com/olitreadwell/nz-tech-for-good/issues/new/choose"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 rounded-lg border border-border p-4 hover:bg-surface-alt"
@@ -25,7 +25,7 @@ export default function ContactPage() {
           </div>
         </a>
         <a
-          href="https://github.com/olitreadwell/kiwi-tech-for-good"
+          href="https://github.com/olitreadwell/nz-tech-for-good"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 rounded-lg border border-border p-4 hover:bg-surface-alt"

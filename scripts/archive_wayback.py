@@ -38,8 +38,8 @@ DEFAULT_MIN_AGE_DAYS = 7
 REQUEST_TIMEOUT_SECONDS = 60
 REQUEST_DELAY_SECONDS = 2
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; kiwi-tech-for-good wayback archiver; "
-    "+https://github.com/olitreadwell/kiwi-tech-for-good)"
+    "Mozilla/5.0 (compatible; nz-tech-for-good wayback archiver; "
+    "+https://github.com/olitreadwell/nz-tech-for-good)"
 )
 
 try:

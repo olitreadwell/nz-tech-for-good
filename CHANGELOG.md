@@ -110,7 +110,7 @@ Every domain now has at least 3 entries (`scripts/coverage.py` no longer flags a
 
 ## Historical (pre-changelog)
 
-All changes before 2026-08-05 are captured in the [git log](https://github.com/olitreadwell/kiwi-tech-for-good/commits/main).
+All changes before 2026-08-05 are captured in the [git log](https://github.com/olitreadwell/nz-tech-for-good/commits/main).
 
 Notable milestones:
 - **v0.1 (2025)**: initial directory with first entries and GitHub Pages site

@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-const BASE_PATH = "/kiwi-tech-for-good";
+const BASE_PATH = "/nz-tech-for-good";
 
 test.describe("homepage", () => {
   test("renders title and stats", async ({ page }) => {

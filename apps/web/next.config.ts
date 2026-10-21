@@ -2,9 +2,9 @@
 const nextConfig = {
   images: { unoptimized: true },
   // Static export so the site can be served from GitHub Pages at
-  // https://olitreadwell.github.io/kiwi-tech-for-good/.
+  // https://olitreadwell.github.io/nz-tech-for-good/.
   output: 'export',
-  basePath: '/kiwi-tech-for-good',
+  basePath: '/nz-tech-for-good',
 };
 
 export default nextConfig;

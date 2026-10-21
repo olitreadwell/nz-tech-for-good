@@ -3,8 +3,8 @@
 A directory of Aotearoa New Zealand organisations, projects, networks, and
 people who use technology for public good.
 
-[![CI](https://github.com/olitreadwell/kiwi-tech-for-good/actions/workflows/ci.yml/badge.svg)](https://github.com/olitreadwell/kiwi-tech-for-good/actions/workflows/ci.yml)
-[![Entries](https://img.shields.io/github/directory-file-count/olitreadwell/kiwi-tech-for-good/data/entries?type=file&extension=yaml&label=entries&color=brightgreen)](GUIDE.md)
+[![CI](https://github.com/olitreadwell/nz-tech-for-good/actions/workflows/ci.yml/badge.svg)](https://github.com/olitreadwell/nz-tech-for-good/actions/workflows/ci.yml)
+[![Entries](https://img.shields.io/github/directory-file-count/olitreadwell/nz-tech-for-good/data/entries?type=file&extension=yaml&label=entries&color=brightgreen)](GUIDE.md)
 [![License: MIT (code) / CC-BY-SA-4.0 (data)](https://img.shields.io/badge/license-MIT%20%2F%20CC--BY--SA--4.0-blue)](#use-the-data)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)](#add-an-organisation--contribute)
 
@@ -36,7 +36,7 @@ purely commercial products. Aotearoa New Zealand only.
 
 ## Browse it now
 
-**[Browse the live website](https://olitreadwell.github.io/kiwi-tech-for-good/)**: searchable, filter by
+**[Browse the live website](https://olitreadwell.github.io/nz-tech-for-good/)**: searchable, filter by
 domain, region, or tag, with a page for every organisation and ecosystem
 diagrams. Deploys are manual: `cd apps/web && vercel --prod` (see `docs/deploy.md`). Pushes never deploy on their own.
 
@@ -89,7 +89,7 @@ search service and open API that brings together more than 30 million
 digitised items from over 200 NZ museums, libraries, and archives into one
 searchable place.
 
-**[Browse the live website](https://olitreadwell.github.io/kiwi-tech-for-good/)**: the full directory as a
+**[Browse the live website](https://olitreadwell.github.io/nz-tech-for-good/)**: the full directory as a
 searchable, filterable site.
 
 ## Add an organisation / contribute
@@ -197,8 +197,8 @@ Clone the repo and set up the scripts used to validate and regenerate the
 directory:
 
 ```bash
-git clone https://github.com/olitreadwell/kiwi-tech-for-good.git
-cd kiwi-tech-for-good
+git clone https://github.com/olitreadwell/nz-tech-for-good.git
+cd nz-tech-for-good
 pip install -r requirements.txt
 
 python3 scripts/validate.py      # check entries against the schema
@@ -234,7 +234,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/olitreadwell"><img src="https://github.com/olitreadwell.png?s=100" width="100px;" alt="Oli Treadwell"/><br /><sub><b>Oli Treadwell</b></sub></a><br /><a href="https://github.com/olitreadwell/kiwi-tech-for-good/commits?author=olitreadwell" title="Code">💻</a> <a href="https://github.com/olitreadwell/kiwi-tech-for-good/commits?author=olitreadwell" title="Documentation">📖</a> <a href="#data-olitreadwell" title="Data">🔣</a> <a href="#design-olitreadwell" title="Design">🎨</a> <a href="#ideas-olitreadwell" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-olitreadwell" title="Maintenance">🚧</a> <a href="#projectManagement-olitreadwell" title="Project Management">📆</a> <a href="https://github.com/olitreadwell/kiwi-tech-for-good/pulls?q=is%3Apr+reviewed-by%3Aolitreadwell" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/olitreadwell"><img src="https://github.com/olitreadwell.png?s=100" width="100px;" alt="Oli Treadwell"/><br /><sub><b>Oli Treadwell</b></sub></a><br /><a href="https://github.com/olitreadwell/nz-tech-for-good/commits?author=olitreadwell" title="Code">💻</a> <a href="https://github.com/olitreadwell/nz-tech-for-good/commits?author=olitreadwell" title="Documentation">📖</a> <a href="#data-olitreadwell" title="Data">🔣</a> <a href="#design-olitreadwell" title="Design">🎨</a> <a href="#ideas-olitreadwell" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-olitreadwell" title="Maintenance">🚧</a> <a href="#projectManagement-olitreadwell" title="Project Management">📆</a> <a href="https://github.com/olitreadwell/nz-tech-for-good/pulls?q=is%3Apr+reviewed-by%3Aolitreadwell" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>

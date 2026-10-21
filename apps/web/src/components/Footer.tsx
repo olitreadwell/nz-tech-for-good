@@ -81,7 +81,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/olitreadwell/kiwi-tech-for-good"
+                  href="https://github.com/olitreadwell/nz-tech-for-good"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-muted hover:text-text"
@@ -91,7 +91,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/olitreadwell/kiwi-tech-for-good/blob/main/CONTRIBUTING.md"
+                  href="https://github.com/olitreadwell/nz-tech-for-good/blob/main/CONTRIBUTING.md"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-muted hover:text-text"
@@ -106,7 +106,7 @@ export function Footer() {
             <ul className="mt-1 space-y-1 text-xs">
               <li>
                 <a
-                  href="https://raw.githubusercontent.com/olitreadwell/kiwi-tech-for-good/main/data/exports/entries.json"
+                  href="https://raw.githubusercontent.com/olitreadwell/nz-tech-for-good/main/data/exports/entries.json"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-muted hover:text-text"
@@ -116,7 +116,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://raw.githubusercontent.com/olitreadwell/kiwi-tech-for-good/main/data/exports/entries.csv"
+                  href="https://raw.githubusercontent.com/olitreadwell/nz-tech-for-good/main/data/exports/entries.csv"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-muted hover:text-text"

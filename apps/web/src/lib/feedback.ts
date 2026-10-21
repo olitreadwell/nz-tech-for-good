@@ -1,5 +1,5 @@
-const SITE_BASE_URL = 'https://olitreadwell.github.io/kiwi-tech-for-good';
-const REPO_BASE_URL = 'https://github.com/olitreadwell/kiwi-tech-for-good';
+const SITE_BASE_URL = 'https://olitreadwell.github.io/nz-tech-for-good';
+const REPO_BASE_URL = 'https://github.com/olitreadwell/nz-tech-for-good';
 
 export interface EntryFeedbackInput {
   slug: string;

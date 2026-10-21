@@ -129,7 +129,7 @@ account-level settings only the repo owner can change.
 - [x] Publish `GUIDE.md` as a browsable GitHub Pages site. Non-trivial: needs
   a static-site build step (the guide is a single 70KB+ page) with in-page
   search and per-domain navigation. (Astro site at olitreadwell.github.io/
-  kiwi-tech-for-good with 227 pages, search, per-domain nav, 19+ features,
+  nz-tech-for-good with 227 pages, search, per-domain nav, 19+ features,
   done 2026-08-07)
 - [x] Add a `CODEOWNERS` file so review requests route automatically.
   (`.github/CODEOWNERS`, done 2026-08-07)

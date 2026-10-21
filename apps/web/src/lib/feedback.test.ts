@@ -9,10 +9,10 @@ describe('buildEntryFeedbackUrl', () => {
       name: 'Test Organisation',
     });
 
-    expect(url).toMatch(/^https:\/\/github\.com\/olitreadwell\/kiwi-tech-for-good\/issues\/new\?/);
+    expect(url).toMatch(/^https:\/\/github\.com\/olitreadwell\/nz-tech-for-good\/issues\/new\?/);
     expect(url).toContain(`title=${encodeURIComponent('Entry update: Test Organisation')}`);
     expect(url).toContain(
-      encodeURIComponent('https://olitreadwell.github.io/kiwi-tech-for-good/entry/test-org')
+      encodeURIComponent('https://olitreadwell.github.io/nz-tech-for-good/entry/test-org')
     );
     expect(url).toContain(encodeURIComponent('data/entries/test-org.yaml'));
     expect(url).toContain(encodeURIComponent('Spotted a mistake'));

@@ -7,7 +7,7 @@ export async function GET() {
   const entries = getAllEntries();
   const domains = getDomains();
   const regions = getRegions();
-  const base = 'https://olitreadwell.github.io/kiwi-tech-for-good';
+  const base = 'https://olitreadwell.github.io/nz-tech-for-good';
 
   const urls = [
     `<url><loc>${base}/</loc><priority>1.0</priority></url>`,

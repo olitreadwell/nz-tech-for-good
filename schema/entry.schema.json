@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/olitreadwell/kiwi-tech-for-good/schema/entry.schema.json",
+  "$id": "https://github.com/olitreadwell/nz-tech-for-good/schema/entry.schema.json",
   "title": "NZ Tech-for-Good directory entry",
   "description": "One organisation, project, or network in the Aotearoa New Zealand tech-for-good directory.",
   "type": "object",

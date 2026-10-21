@@ -26,7 +26,7 @@ export default defineConfig({
   webServer: {
     command: `npm run dev -- -p ${e2ePort}`,
     cwd: __dirname,
-    url: `${e2eBaseUrl}/kiwi-tech-for-good`,
+    url: `${e2eBaseUrl}/nz-tech-for-good`,
     reuseExistingServer: !process.env.CI,
   },
 });

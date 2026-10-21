@@ -21,7 +21,7 @@ You are free to:
 Under the following terms:
 
 - **Attribution**: you must give appropriate credit to the
-  [NZ Tech-for-Good](https://github.com/olitreadwell/kiwi-tech-for-good)
+  [NZ Tech-for-Good](https://github.com/olitreadwell/nz-tech-for-good)
   project, link to the licence, and indicate if changes were made.
 - **ShareAlike**: if you remix, transform, or build upon the data, you
   must distribute your contributions under the same CC BY-SA 4.0 licence.
