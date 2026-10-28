@@ -30,14 +30,14 @@ Entries are grouped by **domain**: the area of public good the organisation work
 - **Education Equity Tech** (education equity tech): 5 entries
 - **Nonprofit & NGO Tech** (nonprofit / NGO tech): 2 entries
 - **Digital Inclusion** (digital-inclusion): 12 entries
-- **Civic Tech** (civic-tech): 7 entries
+- **Civic Tech** (civic-tech): 8 entries
 - **GovTech** (govtech): 2 entries
 - **Crisis & Humanitarian Tech** (crisis / humanitarian-tech): 4 entries
 - **Environmental Citizen Science** (environmental citizen-science): 3 entries
 - **Māori Data Sovereignty** (Māori data sovereignty / indigenous data): 7 entries
 - **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good): 1 entry
 
-**Total entries: 131, across 24 domains.**
+**Total entries: 132, across 24 domains.**
 
 ## Ecosystem overview
 
@@ -63,7 +63,7 @@ flowchart TD
     d15["Education Equity Tech<br/>(5 entries)"]
     d16["Nonprofit & NGO Tech<br/>(2 entries)"]
     d17["Digital Inclusion<br/>(12 entries)"]
-    d18["Civic Tech<br/>(7 entries)"]
+    d18["Civic Tech<br/>(8 entries)"]
     d19["GovTech<br/>(2 entries)"]
     d20["Crisis & Humanitarian Tech<br/>(4 entries)"]
     d21["Environmental Citizen Science<br/>(3 entries)"]
@@ -277,8 +277,10 @@ flowchart TD
     n_GovHackAotearoaNewZealan["GovHack Aotearoa New Zealand"]
     n_Hackland["Hackland"]
     n_LobbyforGood["Lobby for Good"]
+    n_NewZealandOpenSourceSoci["New Zealand Open Source Society"]
     n_NZGovTech["NZ GovTech"]
     n_WellingtonHackspaceWHACK["Wellington Hackspace (WHACK)"]
+    n_DigitalAotearoaCollectiv --- n_NewZealandOpenSourceSoci
     n_FYIorgnz --- n_LobbyforGood
     n_GovHackAotearoaNewZealan --- n_NZGovTech
     n_Hackland --- n_WellingtonHackspaceWHACK
@@ -1245,7 +1247,7 @@ _12 entries in this domain._
 
 Tools that help people take part in how their communities and government work: petitions, submissions, participatory budgeting, and ways to hold decision-makers to account.
 
-_7 entries in this domain._
+_8 entries in this domain._
 
 **Digital Aotearoa Collective**
 
@@ -1285,6 +1287,14 @@ _7 entries in this domain._
 - Links: [Website](https://www.lobbyforgood.co.nz)
 - Tags: civic-tech, transparency, lobbying, public-participation, accountability
 - Related: FYI.org.nz
+
+**New Zealand Open Source Society**
+
+- A charitable, non-profit society that educates, advocates and advances free and open source software, open standards and open information across government, business and the wider community in Aotearoa New Zealand.
+- Region: national
+- Links: [Website](https://nzoss.nz/)
+- Tags: open source, open standards, community, advocacy
+- Related: Digital Aotearoa Collective
 
 **NZ GovTech**
 
