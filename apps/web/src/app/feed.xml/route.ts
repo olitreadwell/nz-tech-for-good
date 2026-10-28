@@ -1,4 +1,6 @@
 import { getAllEntries } from '@/lib/data';
+import { getSiteUrl } from '@/lib/site';
+import { escapeXml } from '@/lib/xml';
 
 // Resolved at build time so the route can be exported to a static file.
 export const dynamic = 'force-static';
@@ -9,17 +11,17 @@ export async function GET() {
     .filter((e) => e.last_verified)
     .sort((a, b) => b.last_verified.localeCompare(a.last_verified))
     .slice(0, 20);
-  const base = 'https://olitreadwell.github.io/nz-tech-for-good';
+  const base = getSiteUrl('/');
 
   const items = newest
     .map(
       (e) =>
-        `<item><title>${e.name}</title><link>${base}/entry/${e.slug}</link><description>${e.what}</description><pubDate>${new Date(e.last_verified).toUTCString()}</pubDate><category>${e.domainLabel}</category></item>`
+        `<item><title>${escapeXml(e.name)}</title><link>${escapeXml(getSiteUrl(`/entry/${e.slug}`))}</link><description>${escapeXml(e.what)}</description><pubDate>${new Date(e.last_verified).toUTCString()}</pubDate><category>${escapeXml(e.domainLabel)}</category></item>`
     )
     .join('');
 
   return new Response(
-    `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>NZ Tech-for-Good</title><link>${base}</link><description>Recently updated organisations</description>${items}</channel></rss>`,
-    { headers: { 'Content-Type': 'application/rss+xml' } }
+    `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>NZ Tech-for-Good</title><link>${escapeXml(base)}</link><description>Recently updated organisations</description>${items}</channel></rss>`,
+    { headers: { 'Content-Type': 'application/rss+xml; charset=utf-8' } }
   );
 }

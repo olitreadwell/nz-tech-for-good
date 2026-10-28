@@ -1,8 +1,9 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import { describe, it, expect, vi, beforeAll } from 'vitest';
+import { cleanup, render, screen, fireEvent } from '@testing-library/react';
+import { describe, it, expect, vi, beforeAll, afterEach } from 'vitest';
 import { Header } from '@/components/Header';
 
 describe('Header', () => {
+  afterEach(cleanup);
   beforeAll(() => {
     Object.defineProperty(window, 'localStorage', {
       value: {
@@ -13,7 +14,11 @@ describe('Header', () => {
       },
     });
     Object.defineProperty(window, 'matchMedia', {
-      value: vi.fn().mockReturnValue({ matches: false }),
+      value: vi.fn().mockReturnValue({
+        matches: false,
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+      }),
     });
   });
   it('renders the site name', () => {
@@ -47,5 +52,13 @@ describe('Header', () => {
     fireEvent.click(btn);
     // After click, localStorage should have been called
     expect(localStorage.setItem).toHaveBeenCalled();
+  });
+
+  it('closes the mobile menu on Escape', () => {
+    render(<Header />);
+    fireEvent.click(screen.getByTestId('menu-toggle'));
+    expect(screen.getByTestId('menu-toggle')).toHaveAttribute('aria-expanded', 'true');
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(screen.getByTestId('menu-toggle')).toHaveAttribute('aria-expanded', 'false');
   });
 });

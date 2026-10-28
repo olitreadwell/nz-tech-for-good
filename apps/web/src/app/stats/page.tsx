@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BarChart3, FolderOpen, MapPin, Link2, Clock } from 'lucide-react';
+import { BarChart3, FolderOpen, MapPin, Link2 } from 'lucide-react';
 
 import { getAllEntries, getDomains, getRegions } from '@/lib/data';
 
@@ -32,6 +32,8 @@ export default function StatsPage() {
     else decades['2020s']++;
   }
   const maxDecade = Math.max(...Object.values(decades), 1);
+  const knownFoundingYears = entries.length - decades.Unknown;
+  const maxRegion = regions[0]?.count ?? 1;
 
   const mature = entries.filter((e) => e.founding_year && e.founding_year < 2010).length;
   const growing = entries.filter(
@@ -58,40 +60,47 @@ export default function StatsPage() {
       <section className="mt-10">
         <h2 className="text-xl font-bold">Organisation maturity</h2>
         <p className="text-sm text-text-muted">
-          Based on verified founding years ({entries.length - decades.Unknown} of {entries.length}{' '}
-          known).
+          Based on verified founding years ({knownFoundingYears} of {entries.length} known).
         </p>
-        <div className="mt-3 grid grid-cols-3 gap-4">
-          <div className="rounded-lg border border-border p-4 text-center">
-            <div className="text-2xl font-extrabold text-brand">{mature}</div>
-            <div className="text-xs text-text-muted">Established (&lt;2010)</div>
-          </div>
-          <div className="rounded-lg border border-border p-4 text-center">
-            <div className="text-2xl font-extrabold text-brand">{growing}</div>
-            <div className="text-xs text-text-muted">Growing (2010–19)</div>
-          </div>
-          <div className="rounded-lg border border-border p-4 text-center">
-            <div className="text-2xl font-extrabold text-brand">{emerging}</div>
-            <div className="text-xs text-text-muted">Emerging (2020+)</div>
-          </div>
-        </div>
-        <div className="mt-3 space-y-1">
-          {Object.entries(decades).map(([decade, count]) => (
-            <div key={decade} className="flex items-center gap-2 text-sm">
-              <span className="w-24 text-right text-text-muted">{decade}</span>
-              <div className="flex-1">
-                <div
-                  className="h-5 rounded bg-brand"
-                  style={{
-                    width: `${Math.round((count / maxDecade) * 100)}%`,
-                    minWidth: count > 0 ? 8 : 0,
-                  }}
-                />
+        {knownFoundingYears === 0 ? (
+          <p className="mt-3 rounded-lg border border-border bg-surface-alt p-4 text-sm text-text-muted">
+            Founding years are not yet available for enough entries to show this chart.
+          </p>
+        ) : (
+          <>
+            <div className="mt-3 grid grid-cols-3 gap-4">
+              <div className="rounded-lg border border-border p-4 text-center">
+                <div className="text-2xl font-extrabold text-brand">{mature}</div>
+                <div className="text-xs text-text-muted">Established (&lt;2010)</div>
               </div>
-              <span className="w-8 text-right text-text-muted">{count}</span>
+              <div className="rounded-lg border border-border p-4 text-center">
+                <div className="text-2xl font-extrabold text-brand">{growing}</div>
+                <div className="text-xs text-text-muted">Growing (2010–19)</div>
+              </div>
+              <div className="rounded-lg border border-border p-4 text-center">
+                <div className="text-2xl font-extrabold text-brand">{emerging}</div>
+                <div className="text-xs text-text-muted">Emerging (2020+)</div>
+              </div>
             </div>
-          ))}
-        </div>
+            <div className="mt-3 space-y-1">
+              {Object.entries(decades).map(([decade, count]) => (
+                <div key={decade} className="flex items-center gap-2 text-sm">
+                  <span className="w-24 text-right text-text-muted">{decade}</span>
+                  <div className="flex-1">
+                    <div
+                      className="h-5 rounded bg-brand"
+                      style={{
+                        width: `${Math.round((count / maxDecade) * 100)}%`,
+                        minWidth: count > 0 ? 8 : 0,
+                      }}
+                    />
+                  </div>
+                  <span className="w-8 text-right text-text-muted">{count}</span>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </section>
 
       {/* Regions */}
@@ -109,7 +118,7 @@ export default function StatsPage() {
                 <div
                   className="h-5 rounded bg-brand-soft"
                   style={{
-                    width: `${Math.round((r.count / regions[0].count) * 100)}%`,
+                    width: `${Math.round((r.count / maxRegion) * 100)}%`,
                     minWidth: r.count > 0 ? 8 : 0,
                   }}
                 />

@@ -8,6 +8,7 @@ export default function GetInvolvedPage() {
   const communities = entries.filter((e) => e.community_url);
   const events = entries.filter((e) => e.events_url);
   const volunteering = entries.filter((e) => e.careers_url || e.takes_contributors === true);
+  const hasAnyListings = communities.length + events.length + volunteering.length > 0;
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
@@ -17,32 +18,41 @@ export default function GetInvolvedPage() {
         where to show up, and how to help.
       </p>
 
-      <Section
-        icon={MessageCircle}
-        title="Join a community"
-        items={communities}
-        linkKey="community_url"
-        linkLabel="Join"
-        empty="No communities listed yet. Know an active NZ tech-for-good Slack or Discord? Suggest it on GitHub."
-      />
+      {!hasAnyListings && (
+        <p className="mt-8 rounded-lg border border-border bg-surface-alt p-4 text-text-muted">
+          No community, event, or volunteering links are listed yet. Know one? Suggest it on GitHub.
+        </p>
+      )}
 
-      <Section
-        icon={Calendar}
-        title="Find an event"
-        items={events}
-        linkKey="events_url"
-        linkLabel="Events"
-        empty="No events listed yet."
-      />
+      {communities.length > 0 && (
+        <Section
+          icon={MessageCircle}
+          title="Join a community"
+          items={communities}
+          linkKey="community_url"
+          linkLabel="Join"
+        />
+      )}
 
-      <Section
-        icon={Users}
-        title="Volunteer or work with someone"
-        items={volunteering}
-        linkKey="careers_url"
-        linkLabel="Careers"
-        empty="No volunteering opportunities listed yet."
-      />
+      {events.length > 0 && (
+        <Section
+          icon={Calendar}
+          title="Find an event"
+          items={events}
+          linkKey="events_url"
+          linkLabel="Events"
+        />
+      )}
+
+      {volunteering.length > 0 && (
+        <Section
+          icon={Users}
+          title="Volunteer or work with someone"
+          items={volunteering}
+          linkKey="careers_url"
+          linkLabel="Careers"
+        />
+      )}
 
       <section className="mt-10">
         <h2 className="flex items-center gap-2 text-xl font-bold">
@@ -93,49 +103,43 @@ function Section({
   items,
   linkKey,
   linkLabel,
-  empty,
 }: {
   icon: React.ComponentType<{ className?: string }>;
   title: string;
   items: ReturnType<typeof getAllEntries>;
   linkKey: string;
   linkLabel: string;
-  empty: string;
 }) {
   return (
     <section className="mt-10">
       <h2 className="flex items-center gap-2 text-xl font-bold">
         <Icon className="h-5 w-5" /> {title}
       </h2>
-      {items.length > 0 ? (
-        <ul className="mt-3 space-y-2">
-          {items.map((e) => (
-            <li
-              key={e.slug}
-              className="flex items-center justify-between rounded-lg border border-border p-3"
-            >
-              <div>
-                <Link href={`/entry/${e.slug}`} className="font-semibold hover:text-brand">
-                  {e.name}
-                </Link>
-                <p className="text-sm text-text-muted">{e.what}</p>
-              </div>
-              {e[linkKey as keyof typeof e] && (
-                <a
-                  href={String(e[linkKey as keyof typeof e])}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ml-3 flex-shrink-0 rounded-lg border border-border px-3 py-1 text-sm font-medium hover:bg-surface-alt"
-                >
-                  {linkLabel} ↗
-                </a>
-              )}
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p className="mt-1 text-sm text-text-muted">{empty}</p>
-      )}
+      <ul className="mt-3 space-y-2">
+        {items.map((e) => (
+          <li
+            key={e.slug}
+            className="flex items-center justify-between rounded-lg border border-border p-3"
+          >
+            <div>
+              <Link href={`/entry/${e.slug}`} className="font-semibold hover:text-brand">
+                {e.name}
+              </Link>
+              <p className="text-sm text-text-muted">{e.what}</p>
+            </div>
+            {e[linkKey as keyof typeof e] && (
+              <a
+                href={String(e[linkKey as keyof typeof e])}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-3 flex-shrink-0 rounded-lg border border-border px-3 py-1 text-sm font-medium hover:bg-surface-alt"
+              >
+                {linkLabel} ↗
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
