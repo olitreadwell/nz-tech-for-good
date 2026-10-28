@@ -10,17 +10,22 @@ export default function EcosystemPage() {
   const domainEdges: { a: string; b: string; count: number }[] = [];
   const entryMap = new Map(entries.map((e) => [e.name, e]));
   const domainMap = new Map(domains.map((d) => [d.key, d]));
+  const edgeMap = new Map<string, { a: string; b: string; count: number }>();
 
   for (const e of entries) {
     for (const ref of e.related_to) {
-      const target = entries.find((x) => x.name === ref);
+      const target = entryMap.get(ref);
       if (!target || target.domain === e.domain) continue;
       const da = e.domain;
       const db = target.domain;
       const key = [da, db].sort().join('||');
-      const existing = domainEdges.find((x) => [x.a, x.b].sort().join('||') === key);
+      const existing = edgeMap.get(key);
       if (existing) existing.count++;
-      else domainEdges.push({ a: da, b: db, count: 1 });
+      else {
+        const edge = { a: da, b: db, count: 1 };
+        edgeMap.set(key, edge);
+        domainEdges.push(edge);
+      }
     }
   }
   domainEdges.sort((a, b) => b.count - a.count);

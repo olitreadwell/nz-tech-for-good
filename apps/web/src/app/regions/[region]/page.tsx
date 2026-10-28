@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 
 import { getAllEntries, getRegions } from '@/lib/data';
 import { EntryCard } from '@/components/EntryCard';
+import { toSlug } from '@/lib/slug';
 
 export function generateStaticParams() {
   return getRegions().map((r) => ({ region: r.slug }));
@@ -16,8 +17,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
   if (!r) notFound();
 
   const items = entries.filter((e) => {
-    const slug = e.region.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    return slug === region;
+    return toSlug(e.region) === region;
   });
 
   return (

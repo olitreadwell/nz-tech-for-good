@@ -10,7 +10,10 @@
   --color-border: #e5e7eb;
   --color-text: #1a1a1a;
   --color-text-muted: #737373;
-  --font-sans: system-ui, -apple-system, sans-serif;
+  /* System fonts avoid a network round-trip and already cover Latin, macrons,
+     and the CJK fallbacks browsers supply. If a custom webfont is added, load
+     it with `font-display: swap` so text stays visible while it downloads. */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .dark {
@@ -39,4 +42,11 @@ body {
   background: var(--color-surface);
   color: var(--color-text);
   font-family: var(--font-sans);
+}
+
+/* Keep keyboard focus visible in both themes; Tailwind's reset removes the
+   browser default in some browsers. */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
 }

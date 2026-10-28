@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import {
   Globe,
   GitBranch,
@@ -14,8 +15,31 @@ import {
 import { getAllEntries } from '@/lib/data';
 import { domainSlug } from '@/lib/domain-slug';
 import { buildEntryFeedbackUrl } from '@/lib/feedback';
+import { SaveEntryButton } from '@/components/SaveEntryButton';
+import { getSiteUrl } from '@/lib/site';
 
 export const dynamicParams = false;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const entry = getAllEntries().find((candidate) => candidate.slug === slug);
+  if (!entry) return { title: 'Entry not found' };
+  return {
+    title: entry.name,
+    description: entry.what,
+    alternates: { canonical: getSiteUrl(`/entry/${entry.slug}`) },
+    openGraph: {
+      title: `${entry.name} · NZ Tech-for-Good`,
+      description: entry.what,
+      type: 'profile',
+      url: getSiteUrl(`/entry/${entry.slug}`),
+    },
+  };
+}
 
 export default async function EntryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -87,6 +111,7 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
       <p className="mt-3 text-lg text-text-muted">{entry.what}</p>
 
       <div className="mt-4 flex flex-wrap gap-3 text-sm">
+        <SaveEntryButton slug={entry.slug} name={entry.name} />
         {entry.website && (
           <a
             href={entry.website}

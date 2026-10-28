@@ -2,11 +2,11 @@
   "tasks": {
     "build": { "dependsOn": ["^build"], "outputs": [".next/**", "dist/**", "out/**"] },
     "dev": { "cache": false, "persistent": true },
-    "lint": {},
-    "format": {},
-    "format:check": {},
-    "type-check": { "dependsOn": ["^build"] },
-    "test": {},
-    "test:coverage": {}
+    "lint": { "outputs": [] },
+    "format": { "outputs": [] },
+    "format:check": { "outputs": [] },
+    "type-check": { "dependsOn": ["^build"], "outputs": [] },
+    "test": { "outputs": [] },
+    "test:coverage": { "outputs": ["coverage/**"] }
   }
 }

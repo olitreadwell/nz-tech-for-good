@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getAllEntries, getDomains, getRegions } from '@/lib/data';
+import { getAllEntries, getDomains, getLatestVerified, getRegions, parseEntry } from '@/lib/data';
 import { domainSlug } from '@/lib/domain-slug';
 
 describe('data loader', () => {
@@ -98,5 +98,34 @@ describe('data loader', () => {
     for (const domain of getDomains()) {
       expect(slugs.has(domainSlug(domain.key))).toBe(true);
     }
+  });
+
+  it('rejects an entry missing a required field, naming the file', () => {
+    expect(() =>
+      parseEntry(
+        { domain: 'civic-tech', what: 'Something', region: 'national', source: 'test' },
+        'broken.yaml'
+      )
+    ).toThrow(/broken\.yaml.*name/);
+  });
+
+  it('rejects tags that are not a string array', () => {
+    expect(() =>
+      parseEntry(
+        {
+          name: 'Test',
+          domain: 'civic-tech',
+          what: 'Something',
+          region: 'national',
+          source: 'test',
+          tags: 'civic-tech',
+        },
+        'broken.yaml'
+      )
+    ).toThrow(/tags/);
+  });
+
+  it('reports the latest verification date in ISO form', () => {
+    expect(getLatestVerified()).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });
 });

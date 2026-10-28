@@ -5,7 +5,6 @@ import {
   Briefcase,
   MessageCircle,
   Calendar,
-  Clock,
   MapPin,
   Users,
   PenLine,
@@ -13,6 +12,8 @@ import {
 
 import { buildEntryFeedbackUrl } from '@/lib/feedback';
 import { domainSlug } from '@/lib/domain-slug';
+import { toSlug } from '@/lib/slug';
+import { Freshness } from '@/components/Freshness';
 
 interface EntryCardProps {
   slug: string;
@@ -30,23 +31,6 @@ interface EntryCardProps {
   community_url: string;
   events_url: string;
   last_verified: string;
-}
-
-function Freshness({ date }: { date: string }) {
-  const daysAgo = Math.floor((Date.now() - new Date(date).getTime()) / 86400000);
-  const label =
-    daysAgo <= 7
-      ? 'This week'
-      : daysAgo <= 30
-        ? `${daysAgo}d ago`
-        : `${Math.round(daysAgo / 30)}mo ago`;
-
-  return (
-    <span className={`inline-flex items-center gap-1 ${daysAgo > 90 ? 'text-red-500' : ''}`}>
-      <Clock className="h-4 w-4" />
-      {label}
-    </span>
-  );
 }
 
 function MetaIcon({
@@ -104,11 +88,11 @@ export function EntryCard({
       <p className="mt-1 text-sm text-text-muted line-clamp-2">{what}</p>
       <p className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-text-muted">
         <Link
-          href={`/regions/${region.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-          className="inline-flex items-center gap-1 hover:text-brand"
+          href={`/regions/${toSlug(region)}`}
+          className="inline-flex max-w-full items-center gap-1 hover:text-brand"
         >
           <MapPin className="h-3.5 w-3.5" />
-          {region}
+          <span className="truncate">{region}</span>
         </Link>
         {founding_year && <span>Est. {founding_year}</span>}
         {github && <MetaIcon icon={GitBranch} label="Has GitHub" />}
@@ -123,7 +107,8 @@ export function EntryCard({
             <Link
               key={t}
               href={`/directory?q=${encodeURIComponent(t)}`}
-              className="rounded-full bg-surface-alt px-2 py-0.5 text-center text-xs text-text-muted hover:bg-brand-soft hover:text-brand"
+              title={t}
+              className="max-w-[10rem] truncate rounded-full bg-surface-alt px-2 py-0.5 text-center text-xs text-text-muted hover:bg-brand-soft hover:text-brand"
             >
               {t}
             </Link>

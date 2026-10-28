@@ -1,18 +1,31 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import Link from 'next/link';
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
+import type { Dispatch, SetStateAction } from 'react';
 
 import type { Entry, getDomains, getRegions } from '@/lib/data';
+import {
+  PAGE_SIZES,
+  clampPage,
+  readDirectoryState,
+  writeDirectoryState,
+  type PageSize,
+} from '@/lib/directory-filters';
+import { toSlug } from '@/lib/slug';
+import { withBasePath } from '@/lib/site';
 import { EntryCard } from '@/components/EntryCard';
-
-const PAGE_SIZE = 20;
 
 interface DirectoryClientProps {
   entries: Entry[];
   domains: ReturnType<typeof getDomains>;
   regions: ReturnType<typeof getRegions>;
 }
+
+const SORT_LABELS: Record<string, string> = {
+  'name-asc': 'Name A–Z',
+  'name-desc': 'Name Z–A',
+  'verified-desc': 'Recently verified',
+};
 
 export default function DirectoryClient({ entries, domains, regions }: DirectoryClientProps) {
   const [search, setSearch] = useState('');
@@ -27,18 +40,69 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
   const [events, setEvents] = useState(false);
   const [decade, setDecade] = useState('');
   const [sort, setSort] = useState('name-asc');
+  const [pageSize, setPageSize] = useState<PageSize>(20);
   const [page, setPage] = useState(1);
+  const searchRef = useRef<HTMLInputElement>(null);
+  const resultsRef = useRef<HTMLUListElement>(null);
+  const restoredUrl = useRef(false);
+  const deferredSearch = useDeferredValue(search);
+
+  useEffect(() => {
+    const initial = readDirectoryState(window.location.search);
+    setSearch(initial.q);
+    setDomain(initial.domain);
+    setRegion(initial.region);
+    setSort(initial.sort);
+    setPageSize(initial.perPage);
+    restoredUrl.current = true;
+  }, []);
+
+  useEffect(() => {
+    if (!restoredUrl.current) return;
+    const query = writeDirectoryState({ q: search, domain, region, sort, perPage: pageSize });
+    window.history.replaceState(
+      null,
+      '',
+      `${window.location.pathname}${query}${window.location.hash}`
+    );
+  }, [search, domain, region, sort, pageSize]);
+
+  const clear = useCallback(() => {
+    setSearch('');
+    setDomain('');
+    setRegion('');
+    setContributors(false);
+    setCareers(false);
+    setRemote(false);
+    setGithub(false);
+    setLinkedin(false);
+    setCommunity(false);
+    setEvents(false);
+    setDecade('');
+    setSort('name-asc');
+    setPageSize(20);
+    setPage(1);
+  }, []);
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      clear();
+      searchRef.current?.focus();
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [clear]);
 
   const filtered = useMemo(() => {
     let result = entries;
-    const q = search.toLowerCase();
+    const q = deferredSearch.toLowerCase();
     if (q)
       result = result.filter((e) =>
         (e.name + ' ' + e.what + ' ' + e.tags.join(' ')).toLowerCase().includes(q)
       );
     if (domain) result = result.filter((e) => e.domain === domain);
-    if (region)
-      result = result.filter((e) => e.region.toLowerCase().replace(/[^a-z0-9]+/g, '-') === region);
+    if (region) result = result.filter((e) => toSlug(e.region) === region);
     if (contributors) result = result.filter((e) => e.takes_contributors === true);
     if (careers) result = result.filter((e) => e.careers_url);
     if (remote) result = result.filter((e) => e.tags.includes('remote'));
@@ -57,7 +121,6 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
       });
     }
 
-    // Sort
     result = [...result];
     if (sort === 'name-asc') result.sort((a, b) => a.name.localeCompare(b.name));
     if (sort === 'name-desc') result.sort((a, b) => b.name.localeCompare(a.name));
@@ -66,7 +129,7 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
     return result;
   }, [
     entries,
-    search,
+    deferredSearch,
     domain,
     region,
     contributors,
@@ -80,33 +143,27 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
     sort,
   ]);
 
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE) || 1;
-  const paged = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const totalPages = Math.ceil(filtered.length / pageSize) || 1;
+  const safePage = clampPage(page, totalPages);
+  const paged = filtered.slice((safePage - 1) * pageSize, safePage * pageSize);
 
-  const clear = () => {
-    setSearch('');
-    setDomain('');
-    setRegion('');
-    setContributors(false);
-    setCareers(false);
-    setRemote(false);
-    setGithub(false);
-    setLinkedin(false);
-    setCommunity(false);
-    setEvents(false);
-    setDecade('');
-    setSort('name-asc');
-    setPage(1);
+  useEffect(() => {
+    if (page !== safePage) setPage(safePage);
+  }, [page, safePage]);
+
+  const goToPage = (nextPage: number) => {
+    setPage(clampPage(nextPage, totalPages));
+    resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   const randomEntry = () => {
     if (filtered.length === 0) return;
     const pick = filtered[Math.floor(Math.random() * filtered.length)];
-    window.location.href = `/entry/${pick.slug}`;
+    window.location.href = withBasePath(`/entry/${pick.slug}`);
   };
 
-  const toggle = (setter: (fn: (prev: boolean) => boolean) => void) => () => {
-    setter((v) => !v);
+  const toggle = (setter: Dispatch<SetStateAction<boolean>>) => () => {
+    setter((value) => !value);
     setPage(1);
   };
 
@@ -119,10 +176,10 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
         </p>
       </div>
 
-      {/* Filters */}
       <div className="space-y-3 rounded-lg border border-border bg-surface p-4">
         <div className="flex flex-wrap gap-3">
           <input
+            ref={searchRef}
             type="search"
             aria-label="Search entries"
             value={search}
@@ -131,7 +188,7 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
               setPage(1);
             }}
             placeholder={`Search ${entries.length} organisations…`}
-            className="flex-1 min-w-[200px] rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm"
+            className="min-w-[200px] flex-1 rounded-lg border border-border bg-surface-alt px-3 py-2 text-sm"
           />
           <select
             aria-label="Filter by domain"
@@ -167,26 +224,26 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
           </select>
         </div>
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
-          <label className="cursor-pointer inline-flex items-center gap-1">
+          <label className="inline-flex cursor-pointer items-center gap-1">
             <input type="checkbox" checked={contributors} onChange={toggle(setContributors)} />{' '}
             Contributors
           </label>
-          <label className="cursor-pointer inline-flex items-center gap-1">
+          <label className="inline-flex cursor-pointer items-center gap-1">
             <input type="checkbox" checked={careers} onChange={toggle(setCareers)} /> Careers
           </label>
-          <label className="cursor-pointer inline-flex items-center gap-1">
+          <label className="inline-flex cursor-pointer items-center gap-1">
             <input type="checkbox" checked={remote} onChange={toggle(setRemote)} /> Remote
           </label>
-          <label className="cursor-pointer inline-flex items-center gap-1">
+          <label className="inline-flex cursor-pointer items-center gap-1">
             <input type="checkbox" checked={github} onChange={toggle(setGithub)} /> GitHub
           </label>
-          <label className="cursor-pointer inline-flex items-center gap-1">
+          <label className="inline-flex cursor-pointer items-center gap-1">
             <input type="checkbox" checked={linkedin} onChange={toggle(setLinkedin)} /> LinkedIn
           </label>
-          <label className="cursor-pointer inline-flex items-center gap-1">
+          <label className="inline-flex cursor-pointer items-center gap-1">
             <input type="checkbox" checked={community} onChange={toggle(setCommunity)} /> Community
           </label>
-          <label className="cursor-pointer inline-flex items-center gap-1">
+          <label className="inline-flex cursor-pointer items-center gap-1">
             <input type="checkbox" checked={events} onChange={toggle(setEvents)} /> Events
           </label>
           <select
@@ -207,22 +264,46 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
           <button
             type="button"
             onClick={clear}
-            className="text-text-muted hover:text-text text-sm underline"
+            className="text-sm text-text-muted underline hover:text-text"
           >
             Clear all
           </button>
         </div>
-        <div className="flex items-center gap-3 text-sm">
+        <div className="flex flex-wrap items-center gap-3 text-sm">
+          <span className="text-text-muted">Sort</span>
           <select
             aria-label="Sort entries"
             value={sort}
             onChange={(e) => setSort(e.target.value)}
             className="rounded border border-border bg-surface-alt px-2 py-1 text-sm"
           >
-            <option value="name-asc">Name A–Z</option>
-            <option value="name-desc">Name Z–A</option>
-            <option value="verified-desc">Recently verified</option>
+            {Object.entries(SORT_LABELS).map(([value, label]) => (
+              <option key={value} value={value}>
+                {label}
+              </option>
+            ))}
           </select>
+          <span className="rounded-full bg-brand-soft px-2 py-0.5 text-xs font-medium text-brand">
+            {SORT_LABELS[sort] ?? sort}
+          </span>
+          <label className="inline-flex items-center gap-1 text-text-muted">
+            Per page
+            <select
+              aria-label="Entries per page"
+              value={pageSize}
+              onChange={(e) => {
+                setPageSize(Number(e.target.value) as PageSize);
+                setPage(1);
+              }}
+              className="rounded border border-border bg-surface-alt px-2 py-1 text-sm text-text"
+            >
+              {PAGE_SIZES.map((size) => (
+                <option key={size} value={size}>
+                  {size}
+                </option>
+              ))}
+            </select>
+          </label>
           <button
             type="button"
             onClick={randomEntry}
@@ -238,8 +319,11 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
         </div>
       </div>
 
-      {/* Entry list */}
-      <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <ul
+        ref={resultsRef}
+        id="directory-results"
+        className="mt-6 grid scroll-mt-24 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+      >
         {paged.map((entry) => (
           <EntryCard key={entry.slug} {...entry} />
         ))}
@@ -253,24 +337,23 @@ export default function DirectoryClient({ entries, domains, regions }: Directory
         </p>
       )}
 
-      {/* Pagination */}
       {totalPages > 1 && (
         <div className="mt-6 flex items-center justify-center gap-4">
           <button
             type="button"
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-            disabled={page <= 1}
+            onClick={() => goToPage(safePage - 1)}
+            disabled={safePage <= 1}
             className="rounded border border-border px-4 py-2 text-sm hover:bg-surface-alt disabled:opacity-30"
           >
             ← Previous
           </button>
           <span className="text-sm text-text-muted">
-            Page {page} of {totalPages}
+            Page {safePage} of {totalPages}
           </span>
           <button
             type="button"
-            onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-            disabled={page >= totalPages}
+            onClick={() => goToPage(safePage + 1)}
+            disabled={safePage >= totalPages}
             className="rounded border border-border px-4 py-2 text-sm hover:bg-surface-alt disabled:opacity-30"
           >
             Next →
