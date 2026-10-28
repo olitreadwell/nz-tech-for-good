@@ -23,7 +23,7 @@
     "@olitreadwell/config-typescript": "*",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "react": "^19.3.0",
+    "react": "^19.3.1",
     "tailwindcss": "^4.0.0",
     "typescript": "^6"
   },
