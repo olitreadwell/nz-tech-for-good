@@ -3,6 +3,9 @@ import path from 'node:path';
 
 import { load as loadYaml } from 'js-yaml';
 
+import { domainSlug } from '@/lib/domain-slug';
+import { toSlug } from '@/lib/slug';
+
 export interface Entry {
   slug: string;
   name: string;
@@ -58,52 +61,116 @@ function domainLabel(domain: string): string {
   return DOMAIN_LABELS[domain] ?? domain;
 }
 
-const ENTRIES_DIR = path.resolve(process.cwd(), '../../data/entries');
+const ENTRIES_DIR = process.env.ENTRIES_DIR
+  ? path.resolve(process.env.ENTRIES_DIR)
+  : path.resolve(process.cwd(), '../../data/entries');
 
 let _entries: Entry[] | null = null;
 
+const REQUIRED_STRING_FIELDS = ['name', 'domain', 'what', 'region', 'source'] as const;
+
+function requireString(raw: Record<string, unknown>, field: string, file: string): string {
+  const value = raw[field];
+  if (typeof value !== 'string' || value.trim() === '') {
+    throw new Error(`Invalid entry ${file}: "${field}" must be a non-empty string`);
+  }
+  return value;
+}
+
+function optionalString(raw: Record<string, unknown>, field: string): string {
+  const value = raw[field];
+  return typeof value === 'string' ? value : '';
+}
+
+function optionalStringArray(raw: Record<string, unknown>, field: string, file: string): string[] {
+  const value = raw[field];
+  if (value === undefined || value === null) return [];
+  if (!Array.isArray(value) || value.some((item) => typeof item !== 'string')) {
+    throw new Error(`Invalid entry ${file}: "${field}" must be an array of strings`);
+  }
+  return value;
+}
+
+/** Build one validated entry from its YAML object. Throws with the file name. */
+export function parseEntry(raw: Record<string, unknown>, file: string): Entry {
+  for (const field of REQUIRED_STRING_FIELDS) requireString(raw, field, file);
+  const domain = String(raw.domain);
+  const tags = optionalStringArray(raw, 'tags', file);
+  const relatedTo = optionalStringArray(raw, 'related_to', file);
+  const foundingYear = raw.founding_year;
+  if (foundingYear !== undefined && foundingYear !== null && typeof foundingYear !== 'number') {
+    throw new Error(`Invalid entry ${file}: "founding_year" must be a number or null`);
+  }
+  const takesContributors = raw.takes_contributors;
+  if (
+    takesContributors !== undefined &&
+    takesContributors !== null &&
+    typeof takesContributors !== 'boolean'
+  ) {
+    throw new Error(`Invalid entry ${file}: "takes_contributors" must be a boolean or null`);
+  }
+  return {
+    slug: file.replace(/\.yaml$/, ''),
+    name: requireString(raw, 'name', file),
+    domain,
+    domainLabel: domainLabel(domain),
+    what: requireString(raw, 'what', file),
+    region: requireString(raw, 'region', file),
+    website: optionalString(raw, 'website'),
+    github: optionalString(raw, 'github'),
+    linkedin_org: optionalString(raw, 'linkedin_org'),
+    community_url: optionalString(raw, 'community_url'),
+    events_url: optionalString(raw, 'events_url'),
+    tags,
+    related_to: relatedTo,
+    source: requireString(raw, 'source', file),
+    founding_year: typeof foundingYear === 'number' ? foundingYear : null,
+    takes_contributors: typeof takesContributors === 'boolean' ? takesContributors : null,
+    careers_url: optionalString(raw, 'careers_url'),
+    last_verified: optionalString(raw, 'last_verified'),
+  };
+}
+
+/** Load, validate, cache, and sort every directory entry. */
 export function getAllEntries(): Entry[] {
   if (_entries) return _entries;
-  const files = fs
-    .readdirSync(ENTRIES_DIR)
-    .filter((f) => f.endsWith('.yaml'))
-    .sort();
+  let files: string[];
+  try {
+    files = fs
+      .readdirSync(ENTRIES_DIR)
+      .filter((f) => f.endsWith('.yaml'))
+      .sort();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.warn(`Could not read entries directory ${ENTRIES_DIR}: ${message}`);
+    _entries = [];
+    return _entries;
+  }
   const entries: Entry[] = [];
   for (const file of files) {
     const raw = loadYaml(fs.readFileSync(path.join(ENTRIES_DIR, file), 'utf8')) as Record<
       string,
       unknown
     > | null;
-    if (!raw?.name) continue;
-    const domain = String(raw.domain ?? '');
-    entries.push({
-      slug: file.replace(/\.yaml$/, ''),
-      name: String(raw.name),
-      domain,
-      domainLabel: domainLabel(domain),
-      what: String(raw.what ?? ''),
-      region: String(raw.region ?? ''),
-      website: String(raw.website ?? ''),
-      github: String(raw.github ?? ''),
-      linkedin_org: String(raw.linkedin_org ?? ''),
-      community_url: String(raw.community_url ?? ''),
-      events_url: String(raw.events_url ?? ''),
-      tags: (raw.tags as string[]) ?? [],
-      related_to: (raw.related_to as string[]) ?? [],
-      source: String(raw.source ?? ''),
-      founding_year: (raw.founding_year as number | null) ?? null,
-      takes_contributors: (raw.takes_contributors as boolean | null) ?? null,
-      careers_url: String(raw.careers_url ?? ''),
-      last_verified: String(raw.last_verified ?? ''),
-    });
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) {
+      throw new Error(`Invalid entry ${file}: root must be a YAML mapping`);
+    }
+    entries.push(parseEntry(raw, file));
   }
   entries.sort((a, b) => a.name.localeCompare(b.name));
+  const names = new Set(entries.map((entry) => entry.name));
+  for (const entry of entries) {
+    for (const reference of entry.related_to) {
+      if (!names.has(reference)) {
+        console.warn(`Unresolved related_to in ${entry.slug}.yaml: "${reference}"`);
+      }
+    }
+  }
   _entries = entries;
   return entries;
 }
 
-import { domainSlug } from '@/lib/domain-slug';
-
+/** Domain keys with their display labels, slugs, and entry counts. */
 export function getDomains() {
   const counts = new Map<string, number>();
   for (const e of getAllEntries()) {
@@ -119,6 +186,7 @@ export function getDomains() {
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 
+/** Region names with stable slugs and entry counts. */
 export function getRegions() {
   const counts = new Map<string, number>();
   for (const e of getAllEntries()) {
@@ -127,8 +195,16 @@ export function getRegions() {
   return [...counts.entries()]
     .map(([name, count]) => ({
       name,
-      slug: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+      slug: toSlug(name),
       count,
     }))
     .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+}
+
+/** Most recent last_verified date in the directory, or an empty string. */
+export function getLatestVerified(): string {
+  return getAllEntries().reduce(
+    (latest, entry) => (entry.last_verified > latest ? entry.last_verified : latest),
+    ''
+  );
 }

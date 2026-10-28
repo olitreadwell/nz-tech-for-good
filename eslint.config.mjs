@@ -1,18 +1,29 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
-import nextVitals from 'eslint-config-next/core-web-vitals';
-import nextTs from 'eslint-config-next/typescript';
+import next from '@next/eslint-plugin-next';
 import jsdoc from 'eslint-plugin-jsdoc';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+import tseslint from 'typescript-eslint';
 
-const eslintConfig = defineConfig([
-  ...nextVitals,
-  ...nextTs,
+export default defineConfig([
+  ...tseslint.configs.recommended,
+
+  {
+    files: ['apps/web/src/**/*.{ts,tsx}'],
+    plugins: { '@next/next': next },
+    rules: {
+      ...next.configs.recommended.rules,
+      ...next.configs['core-web-vitals'].rules,
+      // This repo uses the App Router only, so the Pages Router rule has no
+      // directory to inspect.
+      '@next/next/no-html-link-for-pages': 'off',
+    },
+  },
 
   // Every exported function in the domain layer carries a doc comment,
   // so IDE hover and agent search explain it without opening the file.
   {
     plugins: { jsdoc },
-    files: ['src/lib/**/*.ts', 'src/server/**/*.ts'],
+    files: ['apps/web/src/lib/**/*.ts', 'apps/web/src/server/**/*.ts'],
     ignores: ['**/*.test.ts'],
     rules: {
       'jsdoc/require-jsdoc': [
@@ -32,9 +43,7 @@ const eslintConfig = defineConfig([
   },
 
   // Accessibility rules enforced explicitly so a broken interaction pattern
-  // cannot be merged unnoticed. Registered under `jsxA11y` (not `jsx-a11y`)
-  // so the plugin does not collide with the copy eslint-config-next bundles
-  // when the two configs merge for the same file.
+  // cannot be merged unnoticed.
   {
     plugins: { jsxA11y },
     rules: {
@@ -51,13 +60,12 @@ const eslintConfig = defineConfig([
   },
 
   globalIgnores([
-    '.next/**',
-    'node_modules/**',
-    'coverage/**',
-    'playwright-report/**',
-    'test-results/**',
-    'dist/**',
+    '**/.next/**',
+    '**/node_modules/**',
+    '**/coverage/**',
+    '**/playwright-report/**',
+    '**/test-results/**',
+    '**/dist/**',
+    '**/out/**',
   ]),
 ]);
-
-export default eslintConfig;
