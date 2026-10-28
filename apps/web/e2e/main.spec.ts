@@ -12,9 +12,20 @@ test.describe("homepage", () => {
     await expect(page.getByText("regions", { exact: true })).toBeVisible();
   });
 
-  test("browse link navigates to directory", async ({ page }) => {
+  test("browse link navigates to directory", async ({ page }, testInfo) => {
     await page.goto(BASE_PATH);
-    await page.click("text=Browse");
+    if (testInfo.project.name === "mobile-chrome") {
+      await page.getByTestId("menu-toggle").click();
+      await page
+        .getByRole("navigation", { name: "Primary mobile" })
+        .getByRole("link", { name: "Browse" })
+        .click();
+    } else {
+      await page
+        .getByRole("navigation", { name: "Primary" })
+        .getByRole("link", { name: "Browse" })
+        .click();
+    }
     await expect(page).toHaveURL(/\/directory/);
   });
 
