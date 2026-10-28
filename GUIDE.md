@@ -30,14 +30,14 @@ Entries are grouped by **domain**: the area of public good the organisation work
 - **Education Equity Tech** (education equity tech): 5 entries
 - **Nonprofit & NGO Tech** (nonprofit / NGO tech): 2 entries
 - **Digital Inclusion** (digital-inclusion): 12 entries
-- **Civic Tech** (civic-tech): 7 entries
+- **Civic Tech** (civic-tech): 8 entries
 - **GovTech** (govtech): 2 entries
 - **Crisis & Humanitarian Tech** (crisis / humanitarian-tech): 4 entries
 - **Environmental Citizen Science** (environmental citizen-science): 3 entries
 - **Māori Data Sovereignty** (Māori data sovereignty / indigenous data): 7 entries
 - **Financial Inclusion & Fintech for Good** (financial-inclusion / fintech-for-good): 1 entry
 
-**Total entries: 131, across 24 domains.**
+**Total entries: 132, across 24 domains.**
 
 ## Ecosystem overview
 
@@ -63,7 +63,7 @@ flowchart TD
     d15["Education Equity Tech<br/>(5 entries)"]
     d16["Nonprofit & NGO Tech<br/>(2 entries)"]
     d17["Digital Inclusion<br/>(12 entries)"]
-    d18["Civic Tech<br/>(7 entries)"]
+    d18["Civic Tech<br/>(8 entries)"]
     d19["GovTech<br/>(2 entries)"]
     d20["Crisis & Humanitarian Tech<br/>(4 entries)"]
     d21["Environmental Citizen Science<br/>(3 entries)"]
@@ -277,8 +277,10 @@ flowchart TD
     n_GovHackAotearoaNewZealan["GovHack Aotearoa New Zealand"]
     n_Hackland["Hackland"]
     n_LobbyforGood["Lobby for Good"]
+    n_NewZealandOpenSourceSoci["New Zealand Open Source Society"]
     n_NZGovTech["NZ GovTech"]
     n_WellingtonHackspaceWHACK["Wellington Hackspace (WHACK)"]
+    n_DigitalAotearoaCollectiv --- n_NewZealandOpenSourceSoci
     n_FYIorgnz --- n_LobbyforGood
     n_GovHackAotearoaNewZealan --- n_NZGovTech
     n_Hackland --- n_WellingtonHackspaceWHACK
@@ -364,7 +366,7 @@ _5 entries in this domain._
 - Region: national
 - Links: _no links on file_
 - Tags: accessibility, digital accessibility, consulting, disability employment
-- Related: Blind Low Vision NZ, Access Matters Aotearoa
+- Related: Blind Low Vision NZ, Access Matters Aotearoa (Access Alliance)
 
 **Blind Low Vision NZ**
 
@@ -372,7 +374,7 @@ _5 entries in this domain._
 - Region: national
 - Links: [Website](https://blindlowvision.org.nz) · [LinkedIn](https://nz.linkedin.com/company/blind-low-vision-nz)
 - Tags: accessibility, disability, WCAG, assistive technology, charity
-- Related: Access Matters Aotearoa
+- Related: Access Matters Aotearoa (Access Alliance)
 
 **Creative Tech NZ**
 
@@ -486,7 +488,7 @@ _8 entries in this domain._
 - Amotai is Aotearoa's supplier diversity intermediary, connecting public and private sector buyers with over 2,200 verified Māori and Pasifika-owned businesses, including more than 100 tech suppliers working across AI, cybersecurity, automation, and digital services. Founded in 2018 within Auckland Council, it now operates nationally, helping grow Māori and Pasifika business capability and increasing the share of procurement contracts awarded to these communities.
 - Region: national
 - Links: [Website](https://amotai.nz) · [LinkedIn](https://nz.linkedin.com/company/amotai)
-- Tags: māori-business, pasifika-business, supplier-diversity, procurement, economic-equity
+- Tags: māori-business, pasifika-business, supplier-diversity, procurement, economic-equity, verified-suppliers
 
 **Dev Academy Aotearoa (Māori and Pasifika cohorts)**
 
@@ -502,7 +504,7 @@ _8 entries in this domain._
 - Region: bay-of-plenty
 - Links: [Website](https://digitalnatives.academy/) · [LinkedIn](https://www.linkedin.com/company/digitalnativesacademy)
 - Tags: Māori tech, youth technology education, digital skills, charity
-- Related: Dev Academy Aotearoa
+- Related: Dev Academy Aotearoa (Māori and Pasifika cohorts)
 
 **IndigiShare**
 
@@ -539,7 +541,7 @@ _8 entries in this domain._
 - Te Hapori Matihiko is a global community for Māori working in, or aspiring to work in, the digital and tech industries. Founded in 2022 by Katie Brown and Lee Timutimu with MBIE Māori Innovation funding, it provides advocacy, professional networking, and cultural support, and runs the annual Ngā Tohu Matihiko awards celebrating Māori excellence in digital and technology across Aotearoa and the world.
 - Region: national
 - Links: [Website](https://matihiko.nz) · [LinkedIn](https://www.linkedin.com/company/te-hapori-matihiko)
-- Tags: māori-tech, digital-community, advocacy, tech-leadership, te-ao-māori
+- Tags: māori-tech, digital-community, advocacy, tech-leadership, te-ao-māori, networking
 
 ## Food Rescue & Food Security Tech
 
@@ -673,7 +675,7 @@ _24 entries in this domain._
 - Region: national
 - Links: [Website](https://data.govt.nz) · [GitHub](https://github.com/data-govt-nz)
 - Tags: open data, government, data catalogue, govtech
-- Related: LINZ Data Service, DigitalNZ, GovHack Aotearoa
+- Related: LINZ Data Service (Toitū Te Whenua), DigitalNZ, GovHack Aotearoa New Zealand
 
 **DigitalNZ**
 
@@ -681,7 +683,7 @@ _24 entries in this domain._
 - Region: national
 - Links: [Website](https://digitalnz.org) · [GitHub](https://github.com/DigitalNZ)
 - Tags: open data, cultural heritage, API, aggregator, open source
-- Related: data.govt.nz, GovHack Aotearoa
+- Related: data.govt.nz, GovHack Aotearoa New Zealand
 
 **Dunedin City Council Open Data**
 
@@ -748,7 +750,7 @@ _24 entries in this domain._
 - Region: national
 - Links: [Website](https://www.linz.govt.nz/products-services/data/linz-data-service) · [GitHub](https://github.com/linz) · [LinkedIn](https://www.linkedin.com/company/toit%C5%AB-te-whenua-linz-/)
 - Tags: open data, geospatial, government, mapping, open source
-- Related: data.govt.nz, GovHack Aotearoa
+- Related: data.govt.nz, GovHack Aotearoa New Zealand
 
 **Manaaki Whenua Landcare Research LRIS Portal**
 
@@ -1116,7 +1118,7 @@ _5 entries in this domain._
 - Pūhoro STEMM Academy supports Māori secondary school students (rangatahi) into science, technology, engineering, mathematics, and mātauranga (STEMM) pathways. Founded in 2016 at Massey University in Palmerston North, it delivers kaupapa Māori mentoring, tutoring, and wānanga across 12 regions, improving academic achievement and building pathways into high-value STEMM careers for rangatahi who would otherwise be under-represented in these fields.
 - Region: national
 - Links: [Website](https://www.puhoro.org.nz) · [LinkedIn](https://nz.linkedin.com/company/p%C5%ABhoro)
-- Tags: kaupapa-māori, stemm, rangatahi, science-pathways, education
+- Tags: kaupapa-māori, stemm, rangatahi, science-pathways, education, mentoring
 
 **Summer of Tech**
 
@@ -1124,7 +1126,7 @@ _5 entries in this domain._
 - Region: national
 - Links: [Website](https://www.summeroftech.co.nz) · [GitHub](https://github.com/summeroftech) · [LinkedIn](https://www.linkedin.com/company/summer-of-tech)
 - Tags: internships, tech careers, talent pipeline, charity
-- Related: Dev Academy Aotearoa
+- Related: Dev Academy Aotearoa (Māori and Pasifika cohorts)
 
 ## Nonprofit & NGO Tech
 
@@ -1204,7 +1206,7 @@ _12 entries in this domain._
 - Fibre Fale is a Pasifika-led social enterprise creating pathways into the technology industry for Pacific people in Aotearoa. Founded in 2022, it delivers events, mentoring programmes, and free AI literacy resources (including the 'AI with Eteroa' online course), with a goal of equal Pasifika representation in the NZ tech workforce by 2042.
 - Region: auckland
 - Links: [Website](https://www.fibrefale.com) · [LinkedIn](https://www.linkedin.com/company/fibre-fale)
-- Tags: pasifika, digital-inclusion, tech-pathways, ai-literacy, social-enterprise
+- Tags: pasifika, digital-inclusion, tech-pathways, ai-literacy, social-enterprise, mentoring
 
 **Katoa Connect (formerly 20/20 Trust)**
 
@@ -1245,7 +1247,7 @@ _12 entries in this domain._
 
 Tools that help people take part in how their communities and government work: petitions, submissions, participatory budgeting, and ways to hold decision-makers to account.
 
-_7 entries in this domain._
+_8 entries in this domain._
 
 **Digital Aotearoa Collective**
 
@@ -1268,7 +1270,7 @@ _7 entries in this domain._
 - Region: national
 - Links: [Website](https://www.facebook.com/GovHackAotearoaNZ/) · [GitHub](https://github.com/GovHackNZ) · [LinkedIn](https://nz.linkedin.com/company/govhack)
 - Tags: hackathon, open data, civic tech, volunteer-run
-- Related: data.govt.nz, DigitalNZ, LINZ Data Service
+- Related: data.govt.nz, DigitalNZ, LINZ Data Service (Toitū Te Whenua)
 
 **Hackland**
 
@@ -1285,6 +1287,14 @@ _7 entries in this domain._
 - Links: [Website](https://www.lobbyforgood.co.nz)
 - Tags: civic-tech, transparency, lobbying, public-participation, accountability
 - Related: FYI.org.nz
+
+**New Zealand Open Source Society**
+
+- A charitable, non-profit society that educates, advocates and advances free and open source software, open standards and open information across government, business and the wider community in Aotearoa New Zealand.
+- Region: national
+- Links: [Website](https://nzoss.nz/)
+- Tags: open source, open standards, community, advocacy
+- Related: Digital Aotearoa Collective
 
 **NZ GovTech**
 
@@ -1411,7 +1421,7 @@ _7 entries in this domain._
 - Taiuru & Associates is a New Zealand consultancy specialising in Māori data sovereignty, AI governance, and responsible emerging technology. It advises iwi, government agencies, and private organisations on tikanga Māori and digital systems, producing widely cited frameworks, Te Tiriti-based AI ethical principles, and policy guidance to protect Māori rights in the data and AI age.
 - Region: national
 - Links: [Website](https://www.taiuru.co.nz)
-- Tags: māori-data-sovereignty, ai-governance, responsible-ai, tech-ethics, indigenous-rights
+- Tags: māori-data-sovereignty, ai-governance, responsible-ai, tech-ethics, indigenous-rights, consultancy
 
 **Te Hiku Media / Papa Reo**
 
@@ -1443,7 +1453,7 @@ _7 entries in this domain._
 - Region: national
 - Links: [Website](https://www.temanararaunga.maori.nz)
 - Tags: Māori data sovereignty, indigenous rights, data governance, network
-- Related: Te Hiku Media
+- Related: Te Hiku Media / Papa Reo
 
 **Te Pā Tūwatawata**
 

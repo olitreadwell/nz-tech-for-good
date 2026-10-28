@@ -15,7 +15,7 @@ tags:
 related_to:
 - data.govt.nz
 - DigitalNZ
-- LINZ Data Service
+- LINZ Data Service (Toitū Te Whenua)
 source: 'website updated 2026-10-12: govhack.org no longer resolves (no NS records on 1.1.1.1,
   Google or Quad9 DNS), so the entry now points at the live GovHack Aotearoa NZ Facebook page. LinkedIn
   company page verified 2026-10-12 (HTTP 200). The event itself still runs, most recently 29-31 August.'

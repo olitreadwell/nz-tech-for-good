@@ -1,0 +1,21 @@
+name: "New Zealand Open Source Society"
+domain: "civic-tech"
+what: >-
+  A charitable, non-profit society that educates, advocates and advances free
+  and open source software, open standards and open information across
+  government, business and the wider community in Aotearoa New Zealand.
+region: "national"
+website: "https://nzoss.nz/"
+github: ""
+linkedin_org: ""
+community_url: ""
+events_url: ""
+linkedin_people: []
+tags: ["open source", "open standards", "community", "advocacy"]
+related_to: ["Digital Aotearoa Collective"]
+source: >-
+  nzoss.nz homepage about and mission copy, verified 2026-10-29 (HTTP 200)
+founding_year: null
+takes_contributors: true
+careers_url: ""
+last_verified: "2026-10-29"
