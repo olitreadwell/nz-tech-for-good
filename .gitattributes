@@ -1,1 +1,4 @@
 *.png binary linguist-generated=true
+GUIDE.md linguist-generated=true
+data/exports/*.csv linguist-generated=true
+data/exports/*.json linguist-generated=true
