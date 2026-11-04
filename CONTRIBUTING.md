@@ -55,15 +55,19 @@ python3 scripts/validate.py
 This checks your new file (and every existing one) against the schema and
 flags duplicate names or slugs. Fix anything it reports before continuing.
 
-### 5. Regenerate the guide
+### 5. Regenerate the public files
 
 ```bash
 python3 scripts/build_guide.py
+python3 scripts/export.py
+python3 scripts/build_readme.py
 ```
 
-This rebuilds `GUIDE.md` from all the YAML files. CI will fail your PR if
-`GUIDE.md` is out of date, so always run this after adding or editing an
-entry and commit the result.
+This rebuilds `GUIDE.md`, the JSON and CSV exports, and `README.md` from all
+the YAML files. CI will fail your PR if any of them is out of date, so always
+run this after adding or editing an entry and commit the result.
+
+`README.md` is the public awesome list. Edit the YAML file, not the README.
 
 ### 6. Open a pull request
 
@@ -72,7 +76,8 @@ Include what you verified and how in the PR description.
 ## Updating an existing entry
 
 Same flow: edit the YAML file, update `last_verified` to today's date, run
-`scripts/validate.py` and `scripts/build_guide.py`, then open a PR.
+`scripts/validate.py`, `scripts/build_guide.py`, `scripts/export.py`, and
+`scripts/build_readme.py`, then open a PR.
 
 ## First-time contributors
 

@@ -1,4 +1,5 @@
-const SITE_BASE_URL = 'https://olitreadwell.github.io/nz-tech-for-good';
+import { getSiteUrl } from '@/lib/site';
+
 const REPO_BASE_URL = 'https://github.com/olitreadwell/nz-tech-for-good';
 
 export interface EntryFeedbackInput {
@@ -15,7 +16,7 @@ export function buildEntryFeedbackUrl({ slug, name }: EntryFeedbackInput): strin
   const title = `Entry update: ${entryName}`;
   const body = [
     `**Entry:** ${entryName}`,
-    `**Entry link:** ${SITE_BASE_URL}/entry/${slug}`,
+    `**Entry link:** ${getSiteUrl(`/entry/${slug}`)}`,
     `**Data file:** ${REPO_BASE_URL}/blob/main/data/entries/${slug}.yaml`,
     '',
     'Spotted a mistake or have an update for this entry? Describe what should change below.',

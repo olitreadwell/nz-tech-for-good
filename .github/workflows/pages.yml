@@ -1,16 +1,8 @@
-name: Pages
+name: Pages redirect
 
-# Publishes the static export of apps/web to GitHub Pages at
-# https://olitreadwell.github.io/kiwi-tech-for-good/
-#
-# The build runs the repo's own `npm run build`, which already exports the
-# site (next.config.ts sets output: 'export' and a basePath matching the
-# project path). This workflow only uploads the result and deploys it, so a
-# local `npm run build` and a Pages deploy produce the same files.
-#
-# The repo lost its old pages.yml when the Astro `site/` directory was
-# replaced by the Next app, which left the published site frozen on the old
-# build and every link pointing at /nz-tech-for-good/.
+# The site now lives at https://nz-tech-for-good.vercel.app/.
+# This workflow keeps old GitHub Pages links working by publishing a small
+# redirect page instead of the old nested build.
 
 on:
   push:
@@ -28,33 +20,19 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build static export
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version-file: ".nvmrc"
-          cache: "npm"
-      - run: npm ci
-      - run: npm run build
-      # Pages serves files starting with an underscore only when Jekyll is off.
-      - run: touch apps/web/out/.nojekyll
-      - uses: actions/configure-pages@v6
-      - uses: actions/upload-pages-artifact@v5
-        with:
-          path: apps/web/out
-
   deploy:
-    name: Deploy to Pages
-    needs: [build]
+    name: Deploy redirect
     runs-on: ubuntu-latest
     timeout-minutes: 5
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v7
+      - run: touch .github/pages-redirect/.nojekyll
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: .github/pages-redirect
       - id: deployment
         uses: actions/deploy-pages@v5

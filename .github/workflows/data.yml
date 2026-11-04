@@ -31,6 +31,10 @@ jobs:
           cache-dependency-path: |
             requirements.txt
             requirements-dev.txt
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
       - name: Install Python dependencies
         run: pip install -r requirements.txt -r requirements-dev.txt
       - name: Validate entries against the schema
@@ -39,9 +43,12 @@ jobs:
         run: python3 scripts/stylecheck.py
       - name: Run the test suite
         run: python3 -m pytest -q
-      - name: Regenerate the guide and the exports
+      - name: Regenerate the guide, exports, and public list
         run: |
           python3 scripts/build_guide.py
           python3 scripts/export.py
+          python3 scripts/build_readme.py
       - name: Fail when the generated files are out of date
         run: git diff --exit-code
+      - name: Check the readme against awesome.re
+        run: npx --yes awesome-lint README.md

@@ -1,21 +1,34 @@
 # Deployment
 
-Git-triggered deploys are disabled (`vercel.json` → `git.deploymentEnabled:
-false`). Vercel builds nothing on pushes or PRs, so no Vercel checks appear
-on pull requests.
+The site is a static Next.js export. Vercel builds it from the repository root
+and serves `apps/web/out`.
 
-## Deploy manually
+- Live site: <https://nz-tech-for-good.vercel.app/>
+- Vercel project: `nz-tech-for-good`
+
+## Deploy
+
+Push to `main`. Vercel builds with:
 
 ```sh
-cd apps/web
-vercel --prod
+npm install
+npm run build
 ```
 
-Needs Vercel CLI auth. This is the only way to ship.
+The output directory is `apps/web/out`. The settings live in `vercel.json`.
 
-## Why
+## Vercel project settings
 
-The repo gets many Dependabot PRs; Vercel preview builds on every one of
-them burned the free-tier build allowance and added noisy CI checks. Git
-integration also auto-deployed on every push to `main`. Disabling
-git-triggered deploys makes shipping deliberate and cheap.
+```sh
+vercel project update nz-tech-for-good \
+  --framework other \
+  --install-command "npm install" \
+  --build-command "npm run build" \
+  --output-directory "apps/web/out"
+```
+
+## GitHub Pages
+
+`https://olitreadwell.github.io/nz-tech-for-good/` is now a redirect to the
+Vercel site. The workflow in `.github/workflows/pages.yml` publishes only that
+redirect, so old links keep working.

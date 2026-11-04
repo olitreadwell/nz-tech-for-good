@@ -1,0 +1,5 @@
+# Generated public files. Their source is data/entries/*.yaml.
+README.md
+GUIDE.md
+data/exports/entries.json
+data/exports/entries.csv

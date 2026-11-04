@@ -116,6 +116,6 @@ describe('EntryCard', () => {
     oldDate.setDate(oldDate.getDate() - 100);
     render(<EntryCard {...baseEntry} last_verified={oldDate.toISOString().slice(0, 10)} />);
     const freshness = screen.getByText(/mo ago/);
-    expect(freshness.closest('span')?.className).toContain('text-red-500');
+    expect(freshness.closest('span')?.className).toContain('text-red-700');
   });
 });

@@ -1,5 +1,5 @@
-const DEFAULT_SITE_ORIGIN = 'https://olitreadwell.github.io';
-const DEFAULT_BASE_PATH = '/nz-tech-for-good';
+const DEFAULT_SITE_ORIGIN = 'https://nz-tech-for-good.vercel.app';
+const DEFAULT_BASE_PATH = '';
 
 /** Public site origin, without a trailing slash. */
 export function getSiteOrigin(): string {

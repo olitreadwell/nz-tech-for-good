@@ -55,7 +55,7 @@ An entry belongs here if ALL of the following are true:
 If you know a group that fits the scope:
 
 1. **Check it's not already listed**: browse [GUIDE.md](../GUIDE.md) or
-   search the [live site](https://olitreadwell.github.io/nz-tech-for-good/).
+   search the [live site](https://nz-tech-for-good.vercel.app/).
 2. **Verify it's active**: check the website resolves and the org is
    still operating.
 3. **Open an issue** using the [add-entry template](../../issues/new?template=add-entry.yml)

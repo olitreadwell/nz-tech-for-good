@@ -41,7 +41,9 @@ export function Freshness({ date }: { date: string }) {
         : `${Math.round(daysAgo / 30)}mo ago`;
 
   return (
-    <span className={`inline-flex items-center gap-1 ${daysAgo > 90 ? 'text-red-500' : ''}`}>
+    <span
+      className={`inline-flex items-center gap-1 ${daysAgo > 90 ? 'text-red-700 dark:text-red-400' : ''}`}
+    >
       <Clock className="h-4 w-4" />
       {label}
     </span>

@@ -1,0 +1,12 @@
+# Build caches and local environments are not deployment inputs.
+.turbo/
+.venv/
+node_modules/
+apps/web/.next/
+apps/web/out/
+coverage/
+test-results/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.env.local
