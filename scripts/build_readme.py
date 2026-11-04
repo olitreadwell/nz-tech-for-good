@@ -23,8 +23,20 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 ENTRIES_DIR = ROOT / "data" / "entries"
 README_PATH = ROOT / "README.md"
-SITE_URL = "https://nz-tech-for-good.vercel.app"
-REPO_URL = "https://github.com/olitreadwell/nz-tech-for-good"
+REPO_SLUG = ROOT.name
+SITE_URL = f"https://{REPO_SLUG}.vercel.app"
+REPO_URL = f"https://github.com/olitreadwell/{REPO_SLUG}"
+COUNTRY_PREFIX = REPO_SLUG.split("-", 1)[0].upper()
+TITLE = {
+    "NZ": "NZ Tech-for-Good",
+    "UK": "UK Tech-for-Good",
+    "USA": "USA Tech-for-Good",
+}.get(COUNTRY_PREFIX, "Tech-for-Good")
+REGION_LABEL = {
+    "NZ": "Aotearoa New Zealand",
+    "UK": "the United Kingdom",
+    "USA": "the United States",
+}.get(COUNTRY_PREFIX, "the country")
 
 # Broad categories keep the Contents short enough to scan. Each domain sits
 # under one category, so every organisation appears exactly once.
@@ -208,12 +220,18 @@ def render_entry(entry: dict[str, object]) -> str | None:
     return f"- [{escape_markdown(name)}]({url}) - {escape_markdown(description)}"
 
 
-def render_contents(categories: tuple[tuple[str, tuple[str, ...]], ...]) -> list[str]:
-    """Render the Contents block in heading order."""
+def render_contents(
+    categories: tuple[tuple[str, tuple[str, ...]], ...],
+    available_domains: set[str],
+) -> list[str]:
+    """Render the Contents block in heading order, skipping empty sections."""
     lines: list[str] = ["- [Start here](#start-here)"]
     for category, domains in categories:
+        present = [domain for domain in domains if domain in available_domains]
+        if not present:
+            continue
         lines.append(f"- [{category}](#{anchor(category)})")
-        for domain in domains:
+        for domain in present:
             lines.append(f"  - [{DOMAIN_LABELS[domain]}](#{anchor(DOMAIN_LABELS[domain])})")
     return lines
 
@@ -239,13 +257,13 @@ def render_readme(entries: list[dict[str, object]]) -> str:
     noun = "organisation" if count == 1 else "organisations"
 
     lines = [
-        "# NZ Tech-for-Good [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+        f"# {TITLE} [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
         "",
-        f"A plain-language list of {count} Aotearoa New Zealand {noun}, projects, and networks that use technology for public good.",
+        f"A plain-language list of {count} {REGION_LABEL} {noun}, projects, and networks that use technology for public good.",
         "",
         "## Contents",
         "",
-        *render_contents(CATEGORIES),
+        *render_contents(CATEGORIES, set(entries_by_domain)),
         "",
         "## Start here",
         "",
@@ -258,13 +276,13 @@ def render_readme(entries: list[dict[str, object]]) -> str:
     ]
 
     for category, domains in CATEGORIES:
+        present = [domain for domain in domains if entries_by_domain.get(domain)]
+        if not present:
+            continue
         lines.extend([f"## {category}", ""])
-        for domain in domains:
-            domain_entries = entries_by_domain.get(domain, [])
-            if not domain_entries:
-                continue
+        for domain in present:
             lines.extend([f"### {DOMAIN_LABELS[domain]}", ""])
-            for entry in domain_entries:
+            for entry in entries_by_domain[domain]:
                 line = render_entry(entry)
                 if line:
                     lines.append(line)
