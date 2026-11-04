@@ -58,6 +58,7 @@ CATEGORIES: tuple[tuple[str, tuple[str, ...]], ...] = (
             "crisis / humanitarian-tech",
             "human-rights tech",
             "legal-aid / justice tech",
+            "journalism / media-tech",
         ),
     ),
     (
@@ -115,6 +116,7 @@ DOMAIN_LABELS = {
     "crisis / humanitarian-tech": "Crisis and humanitarian technology",
     "human-rights tech": "Human rights technology",
     "legal-aid / justice tech": "Legal aid and justice technology",
+    "journalism / media-tech": "Journalism and media technology",
     "Māori data sovereignty / indigenous data": "Māori data sovereignty",
     "iwi / Māori tech initiatives": "Iwi and Māori technology",
     "digital-inclusion": "Digital inclusion",

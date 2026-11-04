@@ -46,7 +46,7 @@ class TestRenderEntry:
     def test_falls_back_to_the_entry_page_when_no_public_url_exists(self):
         assert (
             build_readme.render_entry(entry(website="", github="", linkedin_org=""))
-            == "- [Example Org](https://nz-tech-for-good.vercel.app/entry/example-org) - Publishes open data for public use."
+            == f"- [Example Org]({build_readme.SITE_URL}/entry/example-org) - Publishes open data for public use."
         )
 
     def test_splits_semicolons_into_sentences(self):
@@ -69,7 +69,7 @@ class TestRenderReadme:
     def test_has_badge_contents_categories_and_entries(self):
         text = build_readme.render_readme([entry()])
 
-        assert text.startswith("# NZ Tech-for-Good [![Awesome]")
+        assert text.startswith(f"# {build_readme.TITLE} [![Awesome]")
         assert "## Contents" in text
         assert "- [Data and knowledge](#data-and-knowledge)" in text
         assert "### Open data" in text
@@ -85,7 +85,7 @@ class TestRenderReadme:
     def test_keeps_an_entry_with_no_public_url_by_linking_its_entry_page(self):
         text = build_readme.render_readme([entry(website="", github="", linkedin_org="")])
 
-        assert "https://nz-tech-for-good.vercel.app/entry/example-org" in text
+        assert f"{build_readme.SITE_URL}/entry/example-org" in text
 
 
 class TestCheckReadme:
