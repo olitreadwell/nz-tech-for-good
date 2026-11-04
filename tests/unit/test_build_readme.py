@@ -80,7 +80,7 @@ class TestRenderReadme:
     def test_counts_entries_in_plain_language(self):
         text = build_readme.render_readme([entry(), entry(slug="second-org", name="Second Org")])
 
-        assert "2 Aotearoa New Zealand organisations" in text
+        assert "2 organisations" in text and build_readme.REGION_LABEL in text
 
     def test_keeps_an_entry_with_no_public_url_by_linking_its_entry_page(self):
         text = build_readme.render_readme([entry(website="", github="", linkedin_org="")])

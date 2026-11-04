@@ -261,7 +261,7 @@ def render_readme(entries: list[dict[str, object]]) -> str:
     lines = [
         f"# {TITLE} [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
         "",
-        f"A plain-language list of {count} {REGION_LABEL} {noun}, projects, and networks that use technology for public good.",
+        f"A plain-language list of {count} {noun}, projects, and networks in {REGION_LABEL} that use technology for public good.",
         "",
         "## Contents",
         "",

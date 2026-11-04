@@ -1,6 +1,6 @@
 # NZ Tech-for-Good [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A plain-language list of 132 Aotearoa New Zealand organisations, projects, and networks that use technology for public good.
+A plain-language list of 132 organisations, projects, and networks in Aotearoa New Zealand that use technology for public good.
 
 ## Contents
 
