@@ -15,7 +15,7 @@ adds a stricter rule. Read `AGENTS.md` for layout and scope.
 
 ## Commands
 
-- Full gate: `npm run check`
+- Full gate: `make check`
 - Tests: `npm run test`
 
 ## Test-first in this repo
@@ -40,6 +40,20 @@ adds a stricter rule. Read `AGENTS.md` for layout and scope.
 - Test files sit next to their source and are named after it.
 - Comments explain why, directly above the code they explain.
 
+## PR browser evidence
+
+Trigger: a PR diff changes anything a user clicks, types into, or waits
+for.
+
+- Drive the changed flow in a real browser with Playwright, on the final
+  code.
+- Record one continuous run of the full flow, start to finish.
+- Convert it to a GIF under 10 MB so GitHub renders it inline.
+- Add it to an `## Evidence` section in the PR description.
+- If a step cannot be verified, write `Unverified: <reason>` there.
+- No interactive surface means no recording. Write
+  `no browser evidence: <reason>` in the Evidence section.
+
 ## Branch names
 
 `<type>/<domain>/<kebab-description>/<issue-id>`. Omit the trailing id
@@ -48,5 +62,5 @@ clearly in use.
 
 ## Done when
 
-`npm run check` passes and every changed behaviour has a test, or a one-line
+`make check` passes and every changed behaviour has a test, or a one-line
 reason it has none.
