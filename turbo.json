@@ -1,6 +1,10 @@
 {
   "tasks": {
-    "build": { "dependsOn": ["^build"], "outputs": [".next/**", "dist/**", "out/**"] },
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/data/entries/**"],
+      "outputs": [".next/**", "dist/**", "out/**"]
+    },
     "dev": { "cache": false, "persistent": true },
     "lint": { "outputs": [] },
     "format": { "outputs": [] },
