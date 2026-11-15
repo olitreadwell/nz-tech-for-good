@@ -2,12 +2,12 @@
 // Pulls template-owned files into this repo so quality gates and docs stay
 // in sync without touching app code. Policies live in template-manifest.json
 // (in the TEMPLATE repo, so they can evolve with the template).
-//
+
 // Usage:
-//   node scripts/sync-from-template.mjs                # dry-run report
-//   node scripts/sync-from-template.mjs --apply        # write + commit
-//   node scripts/sync-from-template.mjs --apply --push # commit + push + PR
-//   node scripts/sync-from-template.mjs --repo ../x    # target another repo
+//   node scripts/sync-from-template.mjs: dry-run report.
+//   node scripts/sync-from-template.mjs --apply: write and commit.
+//   node scripts/sync-from-template.mjs --apply --push: commit, push, and open a pull request.
+//   node scripts/sync-from-template.mjs --repo ../x: target another repo.
 import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { mkdir, mkdtemp, readFile, writeFile, copyFile, readdir, rm } from 'node:fs/promises';
@@ -54,8 +54,8 @@ function readJson(path) {
 }
 
 // A manifest entry is either a path string or { path, if }. The `if` value
-// is a top-level glob (e.g. "package.json", "next.config.*") that must match
-// something in the target repo for the file to be copied.
+// is a top-level glob, such as "package.json" or "next.config.*". It must
+// match something in the target repo for the file to be copied.
 function entryPath(entry) {
   return typeof entry === 'string' ? entry : entry.path;
 }
@@ -69,9 +69,9 @@ function globToRegExp(glob) {
 }
 
 // A condition is matched against the target repo, so manifests can opt a file
-// into only the repos that need it. A condition with a slash ("Dockerfile" vs
-// ".github/dependabot.yml") is resolved as a path relative to the repo root;
-// a bare name is matched against the top level.
+// into only the repos that need it. A condition with a slash, such as
+// "Dockerfile" or ".github/dependabot.yml", is resolved as a path relative to
+// the repo root. A bare name is matched against the top level.
 async function conditionMet(condition, targetDir) {
   if (!condition) return true;
   const nested = condition.includes('/');
@@ -151,7 +151,7 @@ async function main() {
       }
       const merged = structuredClone(localPkg);
       merged.scripts = { ...tmplPkg.scripts, ...(localPkg.scripts ?? {}) };
-      // Don't force the husky prepare hook onto repos without a husky
+      // Do not force the husky prepare hook onto repos without a husky
       // dependency (older apps and monorepos manage hooks differently).
       const hasHuskyDep = localPkg.dependencies?.husky ?? localPkg.devDependencies?.husky;
       if (!hasHuskyDep) {
@@ -162,7 +162,7 @@ async function main() {
       merged.dependencies = localPkg.dependencies ?? {};
       // Tooling stays local too: template devDeps (vitest 4, playwright, …)
       // can conflict with a repo's pinned majors (ERESOLVE). A sync must
-      // never break `npm install`; repos adopt tooling upgrades by choice.
+      // never break `npm install`. Repos adopt tooling upgrades by choice.
       merged.devDependencies = localPkg.devDependencies ?? {};
       merged.packageManager = localPkg.packageManager ?? tmplPkg.packageManager;
       if (JSON.stringify(merged) !== JSON.stringify(localPkg)) {
@@ -190,7 +190,7 @@ async function main() {
     try {
       run(['git', 'branch', '-D', branch]);
     } catch {
-      // Branch does not exist locally yet; nothing to delete.
+      // Branch does not exist locally yet. Nothing to delete.
     }
     run(['git', 'checkout', '-q', '-b', branch]);
     run(['git', 'add', '-A']);

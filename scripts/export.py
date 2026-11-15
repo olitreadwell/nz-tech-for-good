@@ -1,17 +1,9 @@
 #!/usr/bin/env python3
 """Export data/entries/*.yaml as machine-readable JSON and CSV.
 
-Reads every YAML file in data/entries/ and writes:
-  - data/exports/entries.json: the full entry list, one JSON object per
-    entry, sorted by name.
-  - data/exports/entries.csv: the same data flattened to columns, with
-    list fields (tags, related_to, linkedin_people) joined into a single
-    cell.
+Reads every yaml file in data/entries/ and writes two files. data/exports/entries.json holds the full entry list, one JSON object per entry, sorted by name. data/exports/entries.csv holds the same data flattened to columns, with list fields (tags, related_to, linkedin_people) joined into a single cell.
 
-Every entry is written with the same fixed field order (matching
-schema/entry.schema.json), regardless of key order in the source YAML, so
-both outputs are byte-for-byte reproducible across runs. Safe to re-run any
-time an entry is added or changed.
+Every entry is written with the same fixed field order, matching schema/entry.schema.json, regardless of key order in the source yaml. Both outputs are byte-for-byte reproducible across runs. Safe to re-run any time an entry is added or changed.
 
 Usage:
     python3 scripts/export.py
@@ -36,7 +28,7 @@ except ImportError:  # pragma: no cover - needs pyyaml missing to trigger
     sys.exit(1)
 
 # Fixed field order, matching schema/entry.schema.json. Used for both
-# outputs so column/key order never depends on YAML key order or dict
+# outputs so column/key order never depends on yaml key order or dict
 # iteration order.
 FIELDS = [
     "name",

@@ -8,7 +8,7 @@ let findBrokenInternalLinks;
 try {
   ({ findBrokenInternalLinks } = await import('../src/lib/links.ts'));
 } catch {
-  // Older apps don't ship the links registry; nothing to check.
+  // Older apps do not ship the links registry. Nothing to check.
   console.log('check:links ok (no src/lib/links.ts - nothing to check)');
   process.exit(0);
 }

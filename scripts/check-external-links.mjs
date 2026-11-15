@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Enforces the template rule: every link to an external domain opens in a
-// new tab with rel="noopener noreferrer". Scans JSX/TSX source for <a> and
-// <Link> tags with external hrefs and fails when target/rel are missing.
+// new tab with rel="noopener noreferrer". It scans React source files for <a>
+// and <Link> tags with external hrefs. It fails when target or rel is missing.
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 

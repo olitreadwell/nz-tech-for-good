@@ -1,12 +1,11 @@
 """Step definitions for tests/features/validate.feature.
 
-Step patterns are anchored regex (parsers.re), not parsers.parse: an
-untyped parsers.parse field is greedy and can swallow quote characters,
-so a short pattern like `a valid entry file "{filename}"` can wrongly
-match a longer step's text (e.g. `... named "{name}"`) when several
-patterns here share a literal prefix. Anchoring with ^...$ and excluding
-quotes from each group ([^"]+) makes every pattern match only its own
-exact step text.
+Step patterns are anchored regex (parsers.re), not parsers.parse.
+An untyped parsers.parse field is greedy and can swallow quote characters.
+So a short pattern like `a valid entry file "{filename}"` can wrongly match the text of a longer step.
+That happens when several patterns here share a literal prefix.
+
+Anchoring with ^...$ and excluding quotes from each group ([^"]+) makes every pattern match only its own step text.
 """
 
 from pytest_bdd import given, parsers, scenarios, when

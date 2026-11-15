@@ -1,10 +1,8 @@
-"""Unit tests for the non-network parts of scripts/linkcheck.py: URL
-collection, dead/bot-block classification, and result formatting.
-run_lychee() and fallback_check() do real subprocess/network calls, so the
-bulk of their branches are covered in tests/features/linkcheck.feature with
-mocked collaborators; the classification branches and all of main()'s
-branches are covered here with urlopen/collect_urls/etc monkeypatched
-directly.
+"""Unit tests for the non-network parts of scripts/linkcheck.py.
+These are URL collection, dead and bot-block classification, and result formatting.
+run_lychee() and fallback_check() do real subprocess and network calls.
+The bulk of their branches are covered in tests/features/linkcheck.feature with mocked collaborators.
+The classification branches and all branches of main() are covered here with urlopen, collect_urls, and other calls monkeypatched directly.
 """
 
 import urllib.error

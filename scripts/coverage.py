@@ -3,19 +3,19 @@
 
 Runs fully offline (no network calls). Reports, in order:
 
-  TOTAL
+  total
     - How many entries were read.
 
-  ENTRIES PER DOMAIN
+  ENTRIES per domain
     - A count for every valid `domain` enum value from
       schema/entry.schema.json, sorted most entries first.
 
-  ENTRIES PER REGION
+  ENTRIES per region
     - A count for every distinct `region` value seen in the data, sorted
       most entries first (region is a free string in the schema, not an
       enum, so only regions actually present are listed).
 
-  THIN DOMAINS (< 3 entries)
+  thin DOMAINS (< 3 entries)
     - Every valid domain with fewer than THIN_THRESHOLD entries, including
       domains with zero entries. Flags where more coverage is needed.
 

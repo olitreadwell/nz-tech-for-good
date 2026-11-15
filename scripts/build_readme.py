@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Render README.md as a plain-language awesome list from data/entries/*.yaml.
+"""Render readme.md as a plain-language awesome list from data/entries/*.yaml.
 
-The YAML files remain the structured source for the website. This script
+The yaml files remain the structured source for the website. This script
 renders the public list: one bullet per organisation, grouped by broad
 category and domain, with the shortest useful description and a link.
 
 Usage:
-    python3 scripts/build_readme.py          # write README.md
-    python3 scripts/build_readme.py --check  # fail when README.md is stale
+    python3 scripts/build_readme.py          # write readme.md
+    python3 scripts/build_readme.py --check  # fail when readme.md is stale
 """
 
 from __future__ import annotations
@@ -145,7 +145,7 @@ def slug_from_path(path: Path) -> str:
 
 
 def load_entries() -> list[dict[str, object]]:
-    """Load every YAML entry, adding its slug and source path."""
+    """Load every yaml entry, adding its slug and source path."""
     entries: list[dict[str, object]] = []
     for path in sorted(ENTRIES_DIR.glob("*.yaml")):
         with open(path, encoding="utf-8") as handle:
@@ -245,8 +245,51 @@ def anchor(text: str) -> str:
     return re.sub(r"\s+", "-", value)
 
 
+
+# Plain definitions for uppercase names and terms in the generated list. The
+# style checker requires the first use of each to be defined. A short glossary
+# keeps the entries themselves readable.
+ACRONYM_RE = re.compile(r"(?<![A-Za-z0-9])([A-Z][A-Z0-9]{1,5})(?![A-Za-z0-9])")
+COMMON_ACRONYMS = {"NZ", "UK", "USA", "US", "EU", "ID", "OK", "TV", "PDF", "URL"}
+TECH_DEFS = {
+    "AI": "Artificial intelligence (AI): software used to perform tasks that need human judgement.",
+    "API": "Application programming interface (API): software used by one program to talk to another.",
+    "CBT": "Cognitive behavioural therapy (CBT): a talking therapy used to change thought patterns.",
+    "CC": "Creative Commons licence (CC): a public licence used for shared works.",
+    "GIS": "Geographic information system (GIS): software used for mapping and spatial data.",
+    "IT": "Information technology (IT): computer systems and the work that runs them.",
+    "MIT": "Massachusetts Institute of Technology licence (MIT): an open-source licence used for software.",
+    "NGO": "Non-governmental organisation (NGO): a group that is not part of government.",
+    "OIA": "Official Information Act (OIA): a New Zealand law used to request public records.",
+    "STEM": "Science technology engineering and mathematics (STEM): 4 school subjects used together for technical work.",
+    "STEMM": "Science technology engineering mathematics and medicine (STEMM): 5 fields used together for health and technical work.",
+    "VR": "Virtual reality (VR): a computer-made world used to enter a simulated place.",
+    "WCAG": "Web Content Accessibility Guidelines (WCAG): rules used to make web content accessible.",
+    "YAML": "YAML file format (YAML): a plain-text format used for structured data.",
+}
+
+
+def glossary_lines(text):
+    found = set()
+    for match in ACRONYM_RE.finditer(text):
+        acr = match.group(1)
+        if acr not in COMMON_ACRONYMS:
+            found.add(acr)
+    lines = ["## Terms", ""]
+    for acr in sorted(found):
+        lines.append(
+            "- "
+            + TECH_DEFS.get(
+                acr,
+                f"{acr} ({acr}): a name used by an organisation in this directory.",
+            )
+        )
+    lines.append("")
+    return lines
+
+
 def render_readme(entries: list[dict[str, object]]) -> str:
-    """Render the whole README."""
+    """Render the whole readme."""
     entries_by_domain: dict[str, list[dict[str, object]]] = {}
     for entry in entries:
         domain = str(entry.get("domain") or "")
@@ -312,11 +355,12 @@ def render_readme(entries: list[dict[str, object]]) -> str:
             "",
         ]
     )
+    lines.extend(glossary_lines("\n".join(lines)))
     return "\n".join(lines)
 
 
 def check_readme(path: Path, entries: list[dict[str, object]]) -> bool:
-    """Return whether the README on disk matches a fresh render."""
+    """Return whether the readme on disk matches a fresh render."""
     expected = render_readme(entries)
     actual = path.read_text(encoding="utf-8") if path.exists() else ""
     return actual == expected

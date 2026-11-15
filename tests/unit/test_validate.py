@@ -1,7 +1,7 @@
 """Unit tests for scripts/validate.py's pure functions.
 
 No filesystem I/O beyond loading the real schema (a fixed, versioned
-file — treated as a constant, not test data) and no subprocess calls.
+file, treated as a constant, not test data) and no subprocess calls.
 """
 
 import jsonschema

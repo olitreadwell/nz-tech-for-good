@@ -1,12 +1,13 @@
 name: Dependabot release-age sweep
 
-# A Dependabot PR whose releases were younger than MIN_AGE_DAYS when it opened
-# never gets auto-merge from the open event alone. This daily sweep re-checks
-# every open Dependabot PR so those mature into auto-merge on their own.
+# A Dependabot pull request whose releases were younger than MIN_AGE_DAYS when
+# it opened never gets auto-merge from the open event alone. This daily sweep
+# re-checks every open Dependabot pull request. Those then mature into
+# auto-merge on their own.
 on:
   schedule:
-    # 15:00 UTC is 04:00 Pacific/Auckland during NZDT (and 03:00 during NZST),
-    # which keeps the sweep inside the quiet window.
+    # 15:00 universal time is 04:00 Pacific/Auckland during New Zealand Daylight Time and 03:00 during New Zealand Standard Time.
+    # This keeps the sweep inside the quiet window.
     - cron: '0 15 * * *'
   workflow_dispatch:
 

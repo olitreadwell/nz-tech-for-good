@@ -1,16 +1,16 @@
 # Short, plain-language explainers for each domain in schema/entry.schema.json.
-#
+
 # One or two sentences per domain: what it covers, in words someone new to
-# the space would understand. These are shown on the site's domain pages
-# and in GUIDE.md. Every key here must match a domain value in the schema's
-# enum exactly; scripts/validate.py checks that at build time.
-#
-# Keep these short and concrete. No em dashes, no banned words (see
-# docs/STYLE.md) ; scripts/stylecheck.py checks this file too.
+# the space would understand. These are shown on the domain pages of the site
+# and in the guide. Every key here must match a domain value in the schema
+# enum exactly. scripts/validate.py checks that at build time.
+
+# Keep these short and clear. No em dashes and no banned words. See
+# `docs/STYLE.md`. scripts/stylecheck.py checks this file too.
 
 "Māori data sovereignty / indigenous data": >-
-  Making sure Māori data, about Māori people, land, and taonga, stays
-  under Māori control and governance, instead of being held or used by
+  Māori data is data about Māori people, land, and taonga. It should stay
+  under Māori control and governance. It should not be held or used by
   others without consent.
 
 "civic-tech": >-
@@ -37,7 +37,7 @@
 
 "education equity tech": >-
   Tech that closes gaps in education: devices, coding programmes, and
-  digital skills training for learners who wouldn't otherwise get them.
+  digital skills training for learners who would not otherwise get them.
 
 "environmental citizen-science": >-
   Tools that let everyday people help track and protect the environment:

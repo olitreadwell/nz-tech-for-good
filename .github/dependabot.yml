@@ -1,7 +1,7 @@
-# Grouped so a normal run produces one PR per upgrade class instead of ten.
-# Majors stay ungrouped and unmerged: scripts/dependabot-auto-merge.mjs only
+# Grouped so a normal run produces one pull request per upgrade class instead of ten.
+# Majors stay ungrouped and unmerged. scripts/dependabot-auto-merge.mjs only
 # enables auto-merge for patch and minor bumps that are old enough to trust.
-#
+
 # Cron is the only interval that can express "about every two weeks".
 # "0 4 */14 * *" fires on days 1, 15 and 29, so the gap is 12 to 17 days rather
 # than exactly 14. The cronjob is read in the timezone below, so updates land at
@@ -19,9 +19,9 @@ updates:
     labels: ['dependencies']
     # Majors that cannot pass the local check gate stay held until the
     # upstream peer range widens. Each one below was verified by running
-    # the repo's own `npm run check` against the bump.
+    # the `npm run check` gate in this repo against the bump.
     ignore:
-      # typescript-eslint 8.7x peers typescript ">=4.8.4 <6.1.0"; a 7.x
+      # typescript-eslint 8.7x peers typescript ">=4.8.4 <6.1.0". A 7.x
       # typescript makes eslint abort before it lints a single file.
       - dependency-name: 'typescript'
         versions: ['>=7.0.0']

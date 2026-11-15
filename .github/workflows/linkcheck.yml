@@ -1,14 +1,14 @@
 name: Weekly link check
 
 # Runs scripts/linkcheck.py once a week against every entry's links.
-# If it finds genuinely dead links (404, DNS failure, refused connection),
+# If it finds genuinely dead links (404, Domain Name System failure, refused connection),
 # it opens a single tracking issue and keeps it updated. Bot-blocked links
-# (403 / 999, common for LinkedIn) are NOT treated as failures. When the
+# (403 / 999, common for LinkedIn) are not treated as failures. When the
 # links recover, the issue is closed automatically.
 
 on:
   schedule:
-    # Mondays 06:00 UTC: Monday evening in New Zealand.
+    # Mondays 06:00 universal time: Monday evening in New Zealand.
     - cron: "0 6 * * 1"
   workflow_dispatch:
 

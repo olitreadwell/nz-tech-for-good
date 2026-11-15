@@ -1,10 +1,6 @@
 """Step definitions for tests/features/linkcheck.feature.
 
-run_lychee() and fallback_check() are exercised with subprocess.run and
-urllib.request.urlopen monkeypatched to canned responses, so no real
-subprocess or network call happens. Uses anchored regex step patterns
-(see test_validate_steps.py's module docstring for why parsers.parse's
-greedy default field is unsafe here).
+run_lychee() and fallback_check() are exercised with subprocess.run and urllib.request.urlopen monkeypatched to canned responses. So no real subprocess or network call happens. It uses anchored regex step patterns. See the module docstring in test_validate_steps.py for why the greedy default field in parsers.parse is unsafe here.
 """
 
 import json

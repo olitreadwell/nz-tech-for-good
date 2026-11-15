@@ -1,33 +1,39 @@
 #!/usr/bin/env node
-// Dependabot auto-merge gate. Enables auto-merge only for low-risk updates
-// whose releases are all at least
-// MIN_AGE_DAYS old. Mirrors the old Renovate minimumReleaseAge policy:
-//   - development deps: auto-merge any non-major version
-//   - production deps: auto-merge patch only
-//   - github-actions: auto-merge any non-major version
-//   - security advisory PRs: auto-merge regardless of version or release age
-//   - an on-hold label always blocks auto-merge
-//   - a check that is failing does block auto-merge, because most of these
-//     repos now require a pull request but not a green one, so `gh pr merge
-//     --auto` would otherwise merge the moment it is enabled. Three kinds of
-//     failure are exempt, because none says anything about the bump: jobs that
-//     never started because the account's Actions minutes ran out, checks that
-//     are already red on the base branch before the PR, and a Vercel commit
-//     status refusing to build on the free plan
-//
-// Runs from the base branch's checkout via pull_request_target, so only
-// trusted code (this repo's own script) executes.
+// Dependabot auto-merge gate.
+// It enables auto-merge only for low-risk updates. Each release must be at
+// least MIN_AGE_DAYS old.
+
+// Policy:
+//   - development deps: auto-merge any non-major version.
+//   - production deps: auto-merge patch only.
+//   - github-actions: auto-merge any non-major version.
+
+//   - security advisory pull requests: auto-merge regardless of version or release age.
+//   - an on-hold label always blocks auto-merge.
+
+// A failing check does block auto-merge. Most of these repos now require a
+// pull request but not a green one. So `gh pr merge --auto` would otherwise
+// merge the moment it is enabled.
+
+// Three kinds of failure are exempt, because none says anything about the bump.
+// The first is jobs that never started because the account ran out of Actions
+// minutes. The second is checks already red on the base branch before the pull
+// request. The third is a Vercel commit status that refuses to build on the
+// free plan.
+
+// Runs from the base branch checkout via pull_request_target. So only trusted
+// code (this repo's own script) runs.
 import { execSync } from 'node:child_process';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const MIN_AGE_DAYS = Number(process.env.MIN_AGE_DAYS ?? 3);
-// Set REQUIRE_GREEN_CHECKS=false only where branch protection already waits on CI.
+// Set REQUIRE_GREEN_CHECKS=false only where branch protection already waits on test gate.
 const requireGreenChecks = () => (process.env.REQUIRE_GREEN_CHECKS ?? 'true') !== 'false';
 // Peer-dependency-sensitive packages always get a human, even on a patch and
-// even when the PR is a security advisory. Ported from the Renovate
-// "core runtime (manual review)" rule when Renovate was dropped, because one
-// bump in this set broke a peer-dep tree and a TypeScript build.
+// even when the pull request is a security advisory. Ported from the Renovate
+// "core runtime (manual review)" rule when Renovate was dropped. One bump in
+// this set broke a peer-dep tree and a TypeScript build.
 // Override with MANUAL_REVIEW_PACKAGES=react,next (empty string allows all).
 const MANUAL_REVIEW_PACKAGES = new Set(
   (process.env.MANUAL_REVIEW_PACKAGES ??
@@ -184,7 +190,7 @@ export function dependencyTypeOf(name, body) {
 }
 
 // A job that never started because the account is out of Actions minutes says
-// nothing about the dependency bump, and no dependency change can fix it.
+// nothing about the dependency bump. No dependency change can fix it.
 const BILLING_MARKER = 'recent account payments have failed';
 const FAILED_CONCLUSIONS = [
   'FAILURE',
@@ -202,9 +208,10 @@ const FAILED_CONCLUSIONS = [
 const PENDING_COMMIT_STATUS_STATES = ['PENDING', 'EXPECTED'];
 const FAILED_COMMIT_STATUS_STATES = ['ERROR', 'FAILURE'];
 
-// The Vercel GitHub app reports FAILURE with this marker on the free plan: the
-// build never ran, so the status says nothing about the dependency bump. Same
-// class as a job that never started because Actions was out of minutes.
+// The Vercel GitHub app reports FAILURE with this marker on the free plan.
+// The build never ran, so the status says nothing about the dependency bump.
+// This is the same class as a job that never started because Actions was out
+// of minutes.
 const VERCEL_PLAN_LIMIT_MARKER = 'upgradeToPro=build-rate-limit';
 
 function isCommitStatus(check) {
@@ -214,7 +221,7 @@ function isCommitStatus(check) {
   );
 }
 
-// Commit statuses have no `name`; their label lives in `context`.
+// Commit statuses have no `name`. Their label lives in `context`.
 function checkName(check) {
   return check.name ?? check.context ?? '(unnamed check)';
 }
@@ -253,7 +260,7 @@ export function billingOnlyFailure(repo, check) {
 }
 
 // A check that is already red on the base branch is not evidence against this
-// PR. Without this, one chronically broken job holds every bot PR open forever.
+// pull request. Without this, one chronically broken job holds every bot pull request open forever.
 function failingOnBaseBranch(repo, branch) {
   const red = new Set();
   try {

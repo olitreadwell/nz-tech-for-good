@@ -1,7 +1,8 @@
 name: Data and prose
 
-# The Python gate: entries against the schema, prose against the style
-# rules, the test suite, and the generated files in sync with data/.
+# The Python gate covers four things.
+# It checks entries against the schema, prose against the style rules, and
+# the test suite. It also checks that generated files match data/.
 # The Node jobs in ci.yml cover the app and never touch these files.
 
 on:

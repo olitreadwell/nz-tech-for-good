@@ -1,17 +1,10 @@
-"""Shared pytest fixtures and pytest-bdd step definitions for the scripts/
-test suite.
+"""Shared pytest fixtures and pytest-bdd step definitions for the scripts test suite.
 
-Puts scripts/ on sys.path so unit and integration tests can `import
-validate`, `import dataquality`, etc. directly (the scripts have no
-package __init__.py, they're standalone CLI modules). Smoke tests don't
-use this for the script under test: they invoke a fixture repo copy as a
-real subprocess instead.
+Puts scripts/ on sys.path so unit and integration tests can import validate, dataquality, and other modules directly. The scripts have no package __init__.py. They are standalone command-line modules.
 
-Step definitions common to more than one .feature file (building fixture
-data, running a script in-process or as a subprocess, asserting on exit
-codes and output) live here so every feature file under tests/features/
-can reuse them. Step definitions specific to one feature file live
-alongside its scenarios() call in tests/steps/.
+Smoke tests do not use this for the script under test. They invoke a fixture repo copy as a real subprocess instead.
+
+Step definitions common to more than one .feature file live here. The shared steps cover fixture data, running a script, and checking exit codes and output. Every feature file under tests/features/ can reuse them. Step definitions for one feature file live with its scenarios() call in tests/steps/.
 """
 
 import shutil
@@ -32,8 +25,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 
 def make_entry(**overrides):
-    """A minimal, schema-valid entry dict. Pass keyword overrides to
-    change or add fields for a specific test case."""
+    """A minimal, schema-valid entry dict. Pass keyword overrides to change or add fields for a specific test case."""
     entry = {
         "name": "Test Org",
         "domain": "civic-tech",
@@ -56,7 +48,7 @@ def make_entry(**overrides):
 
 
 def write_entry(entries_dir, filename, entry):
-    """Write one entry dict as YAML to entries_dir/filename."""
+    """Write one entry dict as yaml to entries_dir/filename."""
     path = Path(entries_dir) / filename
     with open(path, "w", encoding="utf-8") as f:
         yaml.safe_dump(dict(entry), f, sort_keys=False, allow_unicode=True)
@@ -64,17 +56,13 @@ def write_entry(entries_dir, filename, entry):
 
 
 def default_name_for(filename):
-    """A distinct, readable entry name derived from a fixture filename, so
-    scenarios using several files don't collide on the same default name
-    unless a scenario deliberately wants them to."""
+    """A distinct, readable entry name derived from a fixture filename. Scenarios that use several files do not collide on the same default name unless they want to."""
     return Path(filename).stem.replace("-", " ").title()
 
 
 @pytest.fixture
 def entries_dir(tmp_path):
-    """An empty data/entries-style directory for in-process integration
-    tests. Scripts under test point their ENTRIES_DIR at this via
-    monkeypatch."""
+    """An empty data/entries-style directory for in-process integration tests. Scripts under test point their ENTRIES_DIR at this via monkeypatch."""
     d = tmp_path / "data" / "entries"
     d.mkdir(parents=True)
     return d
@@ -82,12 +70,7 @@ def entries_dir(tmp_path):
 
 @pytest.fixture
 def fixture_repo(tmp_path):
-    """Build a standalone copy of the repo (scripts/ + schema/ + an empty
-    data/entries/) under tmp_path, for smoke tests that run the CLI as a
-    real subprocess. The scripts resolve their own paths from __file__,
-    not cwd, so a full copy (not just fixture data) is required for a
-    subprocess run to see fixture entries instead of the real dataset.
-    """
+    """Build a standalone copy of the repo under tmp_path. The copy has scripts/, schema/, and an empty data/entries/. Smoke tests run the command-line tool as a real subprocess. The scripts resolve their own paths from __file__, not cwd. A full copy is required so a subprocess sees fixture entries instead of the real dataset."""
     repo = tmp_path / "fixture-repo"
     (repo / "scripts").mkdir(parents=True)
     (repo / "schema").mkdir(parents=True)

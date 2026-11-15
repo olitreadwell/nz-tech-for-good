@@ -1,6 +1,6 @@
 name: contributor-gate
 
-# Reputation gate for pull requests. Scores the PR author from public
+# Reputation gate for pull requests. Scores the pull request author from public
 # GitHub signals using the pr-vetting action. New or unknown accounts
 # get a failing check until they meet the policy, or a maintainer adds
 # the vetted-contributor label after a manual review.

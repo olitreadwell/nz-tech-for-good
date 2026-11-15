@@ -2,120 +2,81 @@
 
 ## Our Pledge
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics,
-gender identity and expression, level of experience, education,
-socio-economic status, nationality, personal appearance, race, caste,
-color, religion, or sexual identity and orientation.
+We are members, helpers, and leaders. We want everyone in our group to feel safe and welcome.
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+This applies to people of any age, body size, disability, ethnicity, sex traits, gender identity, or level of experience. It also applies to people of any education, income, class, nationality, looks, race, caste, color, religion, or sexuality.
+
+We will act in ways that make our group open, kind, fair, and healthy.
 
 ## Our Standards
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+Good conduct includes:
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our
-  mistakes, and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+* Showing care and kindness to other people
+* Respecting other views and experiences
+* Giving and taking helpful feedback
+* Saying sorry when we cause harm
+* Learning from our mistakes
+* Putting the group first, not only ourselves
 
-Examples of unacceptable behavior include:
+Bad conduct includes:
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political
-  attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+* Sexual language or images
+* Sexual attention or advances of any kind
+* Trolling, insults, or hateful comments
+* Personal or political attacks
+* Public or private abuse
+* Sharing private details about others without permission. This includes a home or email address.
+* Other acts that a fair person would see as wrong at work
 
-## Enforcement Responsibilities
+## Enforcement Duties
 
-Community leaders are responsible for clarifying and enforcing our standards
-of acceptable behavior and will take appropriate and fair corrective action
-in response to any behavior that they deem inappropriate, threatening,
-offensive, or harmful.
+Leaders explain and enforce these rules. They take fair action when conduct is wrong, threatening, offensive, or harmful.
 
-Community leaders have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, and will communicate reasons
-for moderation decisions when appropriate.
+Leaders may remove, edit, or reject comments, commits, code, wiki edits, issues, and other work that does not follow this Code. They will explain their decision when it helps.
 
 ## Scope
 
-This Code of Conduct applies within all community spaces, and also applies
-when an individual is officially representing the community in public
-spaces.
+This Code applies in all group spaces. It also applies when a person speaks for the group in public.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by opening an issue in this repository, or by contacting the
-maintainers directly. All complaints will be reviewed and investigated
-promptly and fairly.
+Report abuse, threats, or other bad conduct by opening an issue in this repository. You can also contact the maintainers. We will review every report and act fast and fairly.
 
-All community leaders are obligated to respect the privacy and security of
-the reporter of any incident.
+All leaders must respect the privacy and safety of the person who reports a problem.
 
-## Enforcement Guidelines
+## Enforcement Rules
 
-Community leaders will follow these Community Impact Guidelines in
-determining the consequences for any action they deem in violation of this
-Code of Conduct:
+Leaders will use these rules to decide what happens after a breach of this Code.
 
 ### 1. Correction
 
-**Community Impact**: Use of inappropriate language or other behavior
-deemed unprofessional or unwelcome in the community.
+**Impact**: The person used bad language or acted in a way that is not welcome in the group.
 
-**Consequence**: A private, written warning from community leaders,
-providing clarity around the nature of the violation and an explanation of
-why the behavior was inappropriate. A public apology may be requested.
+**Result**: A private written warning from leaders. The warning explains what went wrong and why. A public apology may be asked for.
 
 ### 2. Warning
 
-**Community Impact**: A violation through a single incident or series of
-actions.
+**Impact**: A breach through one event or a series of acts.
 
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, for a specified period of time.
+**Result**: A warning with results if the conduct continues. The person must not contact the people involved for a set time. This includes leaders who enforce the Code.
 
-### 3. Temporary Ban
+### 3. Short Ban
 
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
+**Impact**: A serious breach of group rules, including repeated bad conduct.
 
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time.
+**Result**: A short ban from all contact or public talk with the group.
 
-### 4. Permanent Ban
+### 4. Long Ban
 
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior, harassment of an
-individual, or aggression toward or disparagement of classes of
-individuals.
+**Impact**: A pattern of breach of group rules. This includes repeated bad conduct, abuse of a person, or attacks on a group of people.
 
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
+**Result**: A long ban from public contact within the group.
 
-## Attribution
+## Credit
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.1, available at
-[https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
+This Code is adapted from the [Contributor Covenant][homepage], version 2.1, at [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
 
-Community Impact Guidelines were inspired by
-[Mozilla's code of conduct enforcement ladder][Mozilla CoC].
+The Impact Rules were inspired by [Mozilla's code of conduct enforcement ladder][Mozilla CoC].
 
-[homepage]: https://www.contributor-covenant.org
-[v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
-[Mozilla CoC]: https://github.com/mozilla/diversity
+[homepage]: https://www.contributor-covenant.org [v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html [Mozilla CoC]: https://github.com/mozilla/diversity

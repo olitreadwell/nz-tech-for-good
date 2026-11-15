@@ -2,13 +2,16 @@ name: Data quality
 
 # Weekly freshness and coverage sweep for data/entries/*.yaml.
 #
-# Runs scripts/dataquality.py (duplicates are fatal, freshness and slug
-# mismatches are non-fatal warnings) and scripts/coverage.py (per-domain
-# and per-region counts). While any entry's last_verified is missing or
-# older than 183 days (~6 months), a tracking issue is opened on first
-# sight and updated every run; once everything is fresh the issue is
-# closed. The job is non-blocking by design - stale data never fails the
-# run, it just lands in the tracking issue and the job summary.
+# It runs scripts/dataquality.py. Duplicates are fatal, while freshness and
+# slug mismatches are non-fatal warnings. It also runs scripts/coverage.py
+# for per-domain and per-region counts.
+
+# While the last_verified value of any entry is missing or older than 183 days
+# (about 6 months), it opens a tracking issue on first sight. It updates that
+# issue on every run. Once everything is fresh, the issue is closed.
+
+# The job is non-blocking by design. Stale data never fails the run. It lands
+# in the tracking issue and the job summary.
 on:
   schedule:
     - cron: "0 6 * * 2"  # weekly, Tuesday 06:00 UTC

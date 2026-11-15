@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Fails when secrets or env files are committed, or secret patterns appear
-# in tracked files. Runs locally and in CI (workflow: security.yml).
+# in tracked files. Runs locally and in test gate (workflow: security.yml).
 set -euo pipefail
 
 ROOT="${1:-$(pwd)}"

@@ -1,4 +1,4 @@
-"""Unit tests for scripts/stylecheck.py's pure functions."""
+"""Unit tests for the pure functions in scripts/stylecheck.py."""
 
 import stylecheck
 
@@ -18,10 +18,10 @@ class TestCheckText:
 
     def test_banned_word_matched_as_whole_word_only(self):
         violations = []
-        # "leverages" contains "leverage" as a substring but not a whole word
-        # match once pluralised — the pattern must still catch it since \b
-        # only requires a word boundary, not an exact token; verify the
-        # boundary doesn't over-match inside an unrelated word instead.
+        # "leverages" contains `leverage` as a substring, not a whole-word
+        # match. Once pluralised, the pattern must still catch it. The \b
+        # marker only requires a word boundary, not an exact token. Check that
+        # the boundary does not over-match inside an unrelated word.
         stylecheck.check_text("doc.md", "The wordfostering has foster inside it.", violations)
         kinds = [v[2] for v in violations]
         assert any("foster" in k for k in kinds)
@@ -97,8 +97,8 @@ class TestCheckEntries:
         assert stylecheck.check_entries(entries) == []
 
     def test_legitimate_em_dash_in_name_does_not_leak_into_what_check(self):
-        # The `what` field itself has no em dash; check_entries only looks
-        # at `what`, so a name with a real em dash never enters this check.
+        # The `what` field itself has no em dash. check_entries only looks at
+        # `what`, so a name with a real em dash never enters this check.
         entries = [
             (_FakePath("org.yaml"), {"name": "NZ On Air — Fund", "what": "Funds journalism."}),
         ]

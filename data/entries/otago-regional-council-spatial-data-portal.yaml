@@ -1,7 +1,7 @@
 name: Otago Regional Council Spatial Data Portal
 domain: open-data
 what: The Otago Regional Council Spatial Data Portal is a website where people can discover, explore,
-  and download the council's geographic datasets, like maps of land, water, and boundaries in the Otago
+  and download geographic datasets from the council, like maps of land, water, and boundaries in the Otago
   region.
 region: otago
 website: https://orc-spatial-data-portal-orcnz.hub.arcgis.com/

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Check website/github/linkedin_org URLs across all entries for dead links.
 
-Prefers `lychee` (https://github.com/lycheeverse/lychee) if it's on PATH,
+Prefers `lychee` (https://github.com/lycheeverse/lychee) if it is on the system search path,
 since it handles redirects, concurrency, and rate limits well. Falls back
-to a plain urllib HEAD/GET check if lychee isn't installed.
+to a plain urllib `HEAD` or `GET` request if lychee is not installed.
 
-Reports genuinely dead links (404, DNS failure, connection refused)
-separately from bot-blocked links (403, 999; LinkedIn does this a lot).
+Reports genuinely dead links (404, Domain Name System failure, connection refused)
+separately from bot-blocked links (403, 999. LinkedIn does this a lot).
 Only exits non-zero for genuine deaths, since bot-blocks are expected
 and not actionable.
 
@@ -99,7 +99,7 @@ def run_lychee(urls):
 
 
 def fallback_check(urls):
-    """Plain urllib check, used if lychee isn't installed."""
+    """Plain urllib check, used if lychee is not installed."""
     dead = []
     bot_blocked = []
 
@@ -114,7 +114,7 @@ def fallback_check(urls):
                 dead.append((url, e.code))
             else:
                 # Other 4xx/5xx: treat as informational, not a hard failure,
-                # since many sites reject HEAD requests but serve GET fine.
+                # since many sites reject `HEAD` requests but serve `GET` fine.
                 bot_blocked.append((url, e.code))
         except urllib.error.URLError as e:
             dead.append((url, f"DNS/connection error: {e.reason}"))
@@ -128,7 +128,7 @@ def find_refs(url, urls):
     """Look up which entries a (possibly slash-normalized) URL came from.
 
     lychee sometimes reports a URL with a trailing slash added even when
-    the source YAML didn't have one, so try an exact match first and fall
+    the source yaml did not have one, so try an exact match first and fall
     back to a trailing-slash-insensitive match before giving up.
     """
     if url in urls:

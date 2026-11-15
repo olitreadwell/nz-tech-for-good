@@ -1,4 +1,4 @@
-# Configuration for the awesome-list engine. The README is the public list;
+# Configuration for the awesome-list engine. The readme is the public list.
 # data/entries/*.yaml stays the structured source for the website.
 name = "NZ Tech-for-Good"
 repo_slug = "nz-tech-for-good"

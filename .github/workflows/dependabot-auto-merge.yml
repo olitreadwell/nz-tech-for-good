@@ -1,14 +1,15 @@
 name: Dependabot auto-merge
 
-# pull_request_target runs with the base branch's secrets so Dependabot PRs can
-# be given auto-merge. The checkout below is the base branch, and the only
-# untrusted input is the PR body, which scripts/dependabot-auto-merge.mjs reads
-# as text, so no PR code ever executes here.
+# pull_request_target runs with the secrets of the base branch, so Dependabot
+# pull requests can get auto-merge. The checkout below is the base branch.
+# The only untrusted input is the pull request body. The script reads it as
+# text. No pull request code ever runs here.
 on:
   pull_request_target:
-    # edited, labeled and unlabeled each re-ran the whole workflow, and
-    # dependabot labels its own PRs on open, so every PR triggered it three or
-    # four times. synchronize is kept: a fresh push can change the verdict.
+    # The edited, labeled, and unlabeled events each re-ran the whole
+    # workflow. Dependabot labels its own pull requests on open, so every pull
+    # request triggered it three or four times. The synchronize event is kept.
+    # A fresh push can change the verdict.
     types: [opened, synchronize, reopened, ready_for_review]
 
 permissions:
@@ -17,7 +18,7 @@ permissions:
 
 concurrency:
   group: dependabot-auto-merge-${{ github.event.pull_request.number }}
-  # The script re-reads PR state on every run, so a newer event can safely
+  # The script re-reads pull request state on every run. A newer event can safely
   # replace a queued one instead of stacking behind it.
   cancel-in-progress: true
 

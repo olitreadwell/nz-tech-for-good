@@ -1,7 +1,7 @@
 """Unit tests for scripts/coverage.py.
 
 print_counts() and print_thin_domains() only write to stdout (captured
-via capsys) — no filesystem or network I/O — so they're tested here
+via capsys), no filesystem or network I/O, so they are tested here
 alongside the fully pure functions.
 
 Loaded via importlib under the alias "coverage_script" rather than

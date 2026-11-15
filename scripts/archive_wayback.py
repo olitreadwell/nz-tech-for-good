@@ -1,17 +1,9 @@
 #!/usr/bin/env python3
-"""Archive every entry's website URL via the Wayback Machine.
+"""Archive the website URL of every entry via the Wayback Machine.
 
-Reads data/entries/*.yaml, asks the Wayback Machine Save Page Now endpoint
-(https://web.archive.org/save/<url>) for each entry's website, and records
-the result in data/archives.json as {slug: {url, archive_url, archived_at,
-status}}. Failed requests are recorded with status 'error' plus a note
-instead of stopping the run.
+Reads data/entries/*.yaml. For each entry, it asks the Wayback Machine Save Page Now endpoint (https://web.archive.org/save/<url>) for the website URL. It records the result in data/archives.json as {slug: {url, archive_url, archived_at, status}}. Failed requests are recorded with status 'error' plus a note instead of stopping the run.
 
-Records are merged with any existing data/archives.json, so re-running
-never clobbers history for other entries. Entries whose last successful
-archive is younger than --min-age-days are skipped (default 7) unless
---force is given. HTTP uses only the Python standard library (urllib),
-with a short delay between requests to be polite to web.archive.org.
+Records are merged with any existing data/archives.json, so re-running never clobbers history for other entries. Entries whose last successful archive is younger than --min-age-days are skipped (default 7) unless --force is given. HTTP uses only the Python standard library (urllib), with a short delay between requests to be polite to web.archive.org.
 
 Usage:
     python3 scripts/archive_wayback.py
@@ -50,12 +42,12 @@ except ImportError:  # pragma: no cover - needs pyyaml missing to trigger
 
 
 def now_utc():
-    """Current time as a tz-aware UTC datetime (patched in tests)."""
+    """Current time as a tz-aware universal time datetime (patched in tests)."""
     return datetime.now(timezone.utc)
 
 
 def load_entries():
-    """Return {slug: entry} for every parseable YAML file in data/entries/."""
+    """Return {slug: entry} for every parseable yaml file in data/entries/."""
     entries = {}
     for path in sorted(ENTRIES_DIR.glob("*.yaml")):
         with open(path, encoding="utf-8") as f:
@@ -109,7 +101,7 @@ def is_recently_archived(record, min_age_days, now):
 
 
 def fetch_save_page(url):
-    """Ask the Wayback Machine to capture url; return (archive_url, error).
+    """Ask the Wayback Machine to capture url. Return (archive_url, error).
 
     The Save Page Now endpoint answers with a redirect to the finished
     snapshot, which urllib follows by default, so response.geturl() is the
@@ -129,7 +121,7 @@ def fetch_save_page(url):
             archive_url = response.geturl()
             if "/web/" not in archive_url:
                 # Rarely the endpoint answers 200 with a status page instead
-                # of redirecting; fall back to the newest snapshot form.
+                # of redirecting. Fall back to the newest snapshot form.
                 archive_url = "https://web.archive.org/web/2/" + url
             return archive_url, None
     except urllib.error.HTTPError as e:

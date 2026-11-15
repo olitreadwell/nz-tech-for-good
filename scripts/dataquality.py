@@ -12,8 +12,8 @@ Runs fully offline (no network calls). Checks:
     - Entries whose `last_verified` is more than 6 months old, or missing
       / unparseable. Printed oldest-first.
 
-  SLUG SANITY (warning: non-fatal)
-    - Entries whose filename doesn't match the slug you'd derive from
+  slug sanity (warning: non-fatal)
+    - Entries whose filename does not match the slug you would derive from
       their `name`, per the convention in CONTRIBUTING.md (lowercase,
       macrons dropped, everything else non-alphanumeric collapsed to a
       single hyphen).
@@ -57,7 +57,7 @@ def slugify(name):
 
 
 def normalise_website(url):
-    """Strip scheme, "www.", and trailing slash; lowercase. Empty -> None."""
+    """Strip scheme, "www.", and trailing slash. Lowercase. Empty -> None."""
     if not url:
         return None
     u = url.strip().lower()

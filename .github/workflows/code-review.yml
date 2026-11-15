@@ -1,9 +1,9 @@
 name: Code Review
 
 on:
-  # Re-reviewing on every push to a bot branch replayed the whole LLM review
+  # Re-reviewing on every push to a bot branch replayed the whole model review
   # once per dependabot and renovate commit. New revisions are reviewed when
-  # the PR is opened or marked ready for review.
+  # the pull request is opened or marked ready for review.
   pull_request:
     types: [opened, reopened, ready_for_review]
 
@@ -23,15 +23,15 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Run open-code-review
-        # Advisory gate: posts review comments when an LLM endpoint is
-        # configured, but must never block a merge solely because the
-        # review secrets are absent on a repo.
+        # Advisory gate: it posts review comments when a model endpoint is
+        # configured. It must never block a merge solely because the review
+        # secrets are absent on a repo.
         continue-on-error: true
         uses: alibaba/open-code-review@main
         with:
-          # Input names come from the action's action.yml. The old
-          # LLM_API_KEY / LLM_BASE_URL / LLM_MODEL keys matched no input,
-          # so the action read an empty endpoint and exited 1 every run.
+          # Input names come from the action.yml of the action. The old
+          # LLM_API_KEY, LLM_BASE_URL, and LLM_MODEL keys matched no input.
+          # So the action read an empty endpoint and exited 1 every run.
           # github_token keeps its default value from action.yml.
           llm_url: ${{ secrets.LLM_BASE_URL }}
           llm_auth_token: ${{ secrets.LLM_API_KEY }}

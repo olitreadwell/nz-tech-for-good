@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Validate every entry in data/entries/*.yaml against schema/entry.schema.json.
+"""Check every entry in data/entries/*.yaml against schema/entry.schema.json.
 
-Also flags duplicate entry names and duplicate filenames (slugs). Exits
-non-zero if any entry fails validation or a duplicate is found.
+It also flags duplicate entry names and duplicate filenames (slugs). It exits
+non-zero if any entry fails the check or a duplicate is found.
 
 Usage:
     python3 scripts/validate.py
@@ -41,7 +41,7 @@ def load_schema():
 
 
 def basic_check(entry, schema):
-    """Minimal fallback validator used when jsonschema isn't installed."""
+    """A small fallback checker used when jsonschema is not installed."""
     errors = []
     for field in schema.get("required", []):
         if field not in entry or entry[field] in (None, ""):
@@ -55,17 +55,17 @@ def basic_check(entry, schema):
 
 
 def normalise_website_key(url):
-    """Strip whitespace and a trailing slash, for duplicate-website matching.
+    """Strip spaces and a trailing slash, for duplicate website matching.
 
-    Deliberately lighter-touch than dataquality.py's normalise_website():
-    this only catches exact duplicates (same scheme, same "www."), leaving
-    near-duplicates to the data-quality pass.
+    This is lighter than the check in dataquality.py. It only catches exact
+    duplicates (same scheme, same "www."). It leaves near-duplicates to the
+    data-quality pass.
     """
     return str(url or "").strip().rstrip("/")
 
 
 def entry_errors(entry, schema, validator):
-    """Return a list of human-readable schema error messages for one entry."""
+    """Return a list of schema error messages for one entry."""
     if validator is not None:
         errors = sorted(validator.iter_errors(entry), key=lambda e: e.path)
         return [f"{'/'.join(str(p) for p in e.path) or '<root>'}: {e.message}" for e in errors]
@@ -141,9 +141,9 @@ def main():
         dup_found = True
         print(f"FAIL  duplicate name '{name}' used in: {', '.join(paths)}")
 
-    # A slug is a path.stem drawn from files that all matched glob("*.yaml"),
-    # so two distinct filenames can never produce the same stem: this branch
-    # is unreachable in practice and kept only as a defensive guard.
+    # A slug is the path stem. All files matched glob("*.yaml"), so two
+    # different filenames can never make the same stem. This branch is not
+    # reached in practice. It is kept only as a safety check.
     for slug, paths in find_duplicates(slugs_seen).items():  # pragma: no cover
         dup_found = True
         print(f"FAIL  duplicate slug '{slug}' used in: {', '.join(paths)}")

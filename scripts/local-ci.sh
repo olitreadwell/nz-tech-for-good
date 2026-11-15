@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 # Local mirror of the GitHub Actions gate.
-#
-# The local run is the gate that decides a merge. The private repos in this
-# family cannot run Actions while the account has a billing block, and the
-# public repos queue their runs behind pushes, so the checks have to be
-# runnable here. Run this before you merge or push.
-#
+# The local run is the gate that decides a merge.
+
+# Some private repos in this family cannot run Actions while the account has a
+# billing block. Public repos queue their runs behind pushes. So the checks
+# must run here. Run this before you merge or push.
+
 # Usage:
-#   bash scripts/local-ci.sh               full app gate plus local tool checks
-#   bash scripts/local-ci.sh --fast         the pre-push subset only
-#   bash scripts/local-ci.sh --docker       also build the container image
-#   bash scripts/local-ci.sh --lighthouse   also run the Lighthouse budgets
-#
-# Optional tools (codespell, yamllint, actionlint, docker) are reported as
-# skipped when they are not installed. Everything else must pass. The
-# dependency audit is advisory, matching the CI job.
+#   bash scripts/local-ci.sh: full app gate plus local tool checks.
+#   bash scripts/local-ci.sh --fast: the pre-push subset only.
+#   bash scripts/local-ci.sh --docker: also build the container image.
+#   bash scripts/local-ci.sh --lighthouse: also run the Lighthouse budgets.
+
+# Optional tools (codespell, yamllint, actionlint, docker) are skipped when
+# they are not installed. Everything else must pass. The dependency audit
+# only warns, which matches the test gate job.
 set -uo pipefail
 
 MODE="full"

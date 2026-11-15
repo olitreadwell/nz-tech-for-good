@@ -1,23 +1,17 @@
 #!/usr/bin/env python3
-"""Voice/style checks for this repo's prose. See docs/STYLE.md for the rules.
+"""Voice/style checks for the prose in this repo. See `docs/STYLE.md` for the rules.
 
-Checks two things, both fatal on any hit:
+Checks two things. Both are fatal on any hit.
 
-  EM DASHES
-    - Any "—" character in README.md, CONTRIBUTING.md, docs/*.md, GUIDE.md,
-      or an entry's `what:` field.
+Em dashes:
+- Any `—` character in `README.md`, `CONTRIBUTING.md`, `docs/*.md`, `GUIDE.md`, or the `what:` field of an entry.
 
-  BANNED WORDS
-    - Any word from the list below, matched case-insensitively as a whole
-      word, in the same files/field.
+Banned words:
+- Any word from the list below, matched case-insensitively as a whole word, in the same files and field.
 
-This only checks prose surfaces, not code comments, YAML field names, or
-non-`what:` entry fields (e.g. `source`, which is a verification note, not
-voice-governed prose). docs/STYLE.md is excluded: it has to name the banned
-words to document them. An entry's own `name` can legitimately contain an
-em dash if that's how the organisation styles its real title (e.g. "NZ On
-Air — Public Interest Journalism Fund"); that's a fact, not prose, so known
-entry names are stripped out of a line before it's checked.
+This only checks prose surfaces. It does not check code comments, yaml field names, or non-`what:` entry fields. `source` is a verification note, not voice-governed prose. `docs/STYLE.md` is excluded because it has to name the banned words to document them.
+
+The real name of an entry can contain an em dash if that is how the organisation styles its title. That is a fact, not prose. Known entry names are stripped from a line before it is checked.
 
 Usage:
     python3 scripts/stylecheck.py
@@ -71,8 +65,8 @@ BANNED_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
-# docs/STYLE.md documents the banned words and the em dash character by
-# name, so it can't itself pass a check for their presence.
+# docs/style.md documents the banned words and the em dash character by
+# name, so it cannot itself pass a check for their presence.
 STYLE_DOC = ROOT / "docs" / "STYLE.md"
 
 PROSE_FILES = [
@@ -97,8 +91,8 @@ def load_entries():
 
 
 def load_known_names(entries):
-    """Real entry names, longest first so overlapping names don't partially
-    match. These can contain facts (including an em dash, if that's how the
+    """Real entry names, longest first so overlapping names do not partially
+    match. These can contain facts (including an em dash, if that is how the
     organisation styles its own title) that this check must not flag."""
     names = {entry["name"] for _, entry in entries if entry.get("name")}
     return sorted(names, key=len, reverse=True)
@@ -111,7 +105,7 @@ def check_text(label, text, violations, known_names=()):
             if name in line:
                 line = line.replace(name, "")
         # URLs are facts, not prose: a banned word inside a URL (e.g.
-        # linkedin.com/showcase/...) is not a style violation.
+        # linkedin.com/show/...) is not a style violation.
         line = re.sub(r"https?://\S+", "", line)
         if EM_DASH in line:
             violations.append((label, i, "em dash", raw_line.strip()))
