@@ -8,7 +8,7 @@ on:
   schedule:
     # 15:00 universal time is 04:00 Pacific/Auckland during New Zealand Daylight Time and 03:00 during New Zealand Standard Time.
     # This keeps the sweep inside the quiet window.
-    - cron: '0 15 * * *'
+    - cron: '0 15 * * 1,4'
   workflow_dispatch:
 
 permissions:
