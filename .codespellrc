@@ -1,5 +1,16 @@
 [codespell]
-skip = .git,node_modules,.claude*,.next,out,dist,coverage,playwright-report,test-results,package-lock.json,pnpm-lock.yaml,docs/contributing,./src/generated*,assets,fixtures,data/exports/*,.codespellrc
-ignore-words-list = organise,organised,organisation,organisations,modelling,behaviour,licence,programme,defence,optimisation,normalise,colour,afterAll,abd,mane,tread,ot,brunch,rouge,te,trough,goole,unparseable,artic,bootle,ons,linz,koordinates,mappin,ake,toi,fale
+# Spelling is checked in prose, code comments, and source. Data, generated
+# evidence, caches, lockfiles, fixtures, and minified vendor files are skipped
+# because they carry names and identifiers, not sentences.
+skip = .git,node_modules,.claude*,.next,out,dist,coverage,playwright-report,test-results,.audit,.lighthouseci,.venv,venv,__pycache__,.pytest_cache,package-lock.json,pnpm-lock.yaml,pnpm-lock.yml,docs/contributing,./src/generated*,assets,fixtures,data/exports/*,*.json,*.jsonl,*.csv,*.tsv,*.geojson,*.min.mjs,*.min.js,*.min.css,IMPROVEMENTS.md,.codespellrc
+
+# Acronyms and camelCase names are identifiers, not spelling mistakes. This
+# covers labels such as LINZ, ONS, ND, consentRate, and MapPin.
+ignore-regex = \b[A-Z]{2,}\b|\b[a-z]+[A-Z][A-Za-z]*\b|\b[A-Z][a-z]+[A-Z][A-Za-z]*\b
+
+# British spellings, product names, place names, and terms from the data
+# domain. Keep this list shared so a template sync does not remove a local
+# entry and turn a repo red.
+ignore-words-list = organise,organised,organisation,organisations,modelling,behaviour,licence,programme,defence,optimisation,normalise,colour,afterAll,abd,mane,tread,ot,brunch,rouge,te,trough,goole,unparseable,artic,bootle,ons,ags,mot,re-use,linz,koordinates,mappin,ake,toi,fale,humber,alcemy,enyway,invers,fulfilment,fallow,gage,hace,vas,posible,clases,pres,nd,caf,vie,tha,re-declare,pre-selects,re-uses,gameboy,leaded,ure,accomodation,fram
 check-hidden = false
 quiet-level = 3
