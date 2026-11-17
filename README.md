@@ -2,6 +2,44 @@
 
 A plain-language list of 132 organisations, projects, and networks in Aotearoa New Zealand that use technology for public good.
 
+## What this does
+
+This list names groups in Aotearoa New Zealand that use technology for public
+good. It groups them by the work they do. Each entry has a link so you can check
+the group yourself.
+
+## Why this exists
+
+A person with an idea for a civic tool cannot easily tell who already does the
+work. They rebuild a service that exists, or they miss the group that could
+help. This list makes the first check faster.
+
+## The problem, in plain words
+
+Think of a community noticeboard. The notices exist, but they sit on 40 boards
+in 40 buildings. This list copies the notices into one board.
+
+This is not a list of every technology company in New Zealand. It is a starting
+point for a prior-art check. Inclusion is not an endorsement.
+
+## What you get
+
+One page with 132 entries, grouped by topic. The live directory adds search,
+filters, and one page per organisation.
+
+## Run it
+
+Open the live directory:
+<https://nz-tech-for-good.vercel.app/>.
+
+To reuse the data, download the JSON or CSV file from Start here.
+
+## Limits
+
+- This list is a snapshot. Check the live link before you rely on an entry.
+- Inclusion means the group uses technology for public good. It is not an endorsement.
+- Many entries use the group's own description. A correction request takes priority.
+
 ## Contents
 
 - [Start here](#start-here)
@@ -334,15 +372,34 @@ If you are listed here and want your information corrected or removed, use the i
 - portal: a website that lists data or services.
 - governance: the rules for who decides and who checks.
 - sovereignty: the right of a group to control its own data.
-
-- open data: data that anyone can read and use.
-
-- wcc: Wellington City Council.
-
-- ai: artificial intelligence, software that makes guesses or text from patterns.
+- AI: software that can do tasks that usually need human judgement.
+- WCC: Wellington City Council.
 - HTML: the code that builds a web page.
-
-- niwa: National Institute of Water and Atmospheric Research.
-- mbie: Ministry of Business, Innovation and Employment.
-
-- get: a request that asks a web server for data.
+- NIWA: National Institute of Water and Atmospheric Research.
+- MBIE: Ministry of Business, Innovation and Employment.
+- GET: a request that asks a web server for data.
+- GIS: software for making and reading maps from data.
+- LRIS: Land Resource Information System, a land data portal run by Manaaki Whenua Landcare Research.
+- GNS: GNS Science, a Crown research institute that studies earth, water, and climate.
+- WHACK: Wellington Hackspace, a member-run community workshop.
+- SEEK: SEEK Volunteer, a national volunteer matching platform.
+- ALTER: Advancing Law and Technology Responsibly, a University of Auckland law initiative.
+- STEMM: science, technology, engineering, mathematics, and mātauranga.
+- CAIPP: Centre for Artificial Intelligence and Public Policy at the University of Otago.
+- NGO: non-governmental organisation, a group that is not part of government.
+- FYI: FYI.org.nz, a platform for Official Information Act requests.
+- CNC: computer numerical control, a way to guide a cutting or carving machine.
+- NZLII: New Zealand Legal Information Institute, a free legal research website.
+- IT: information technology, computer systems and the work that runs them.
+- DIAA: Digital Identity Aotearoa New Zealand, a group that works on digital identity.
+- DECA: Digital Equity Coalition Aotearoa, a group that works on digital inclusion.
+- EPIC: a name used by an organisation in this directory.
+- STEM: science, technology, engineering, and mathematics.
+- SPARX: a free self-help game that teaches skills for depression and anxiety.
+- DHAP: Digital Health Accreditation Pathway, a review process for digital health tools.
+- WWF: World Wide Fund for Nature, a conservation group.
+- AFRA: Aotearoa Food Rescue Alliance, the national peak body for food rescue groups.
+- REANNZ: Research and Education Advanced Network New Zealand, the research internet network.
+- LEARNZ: a programme of virtual field trips for New Zealand schools.
+- SA: a name used by an organisation in this directory.
+- VR: virtual reality, a computer-made world used to enter a simulated place.
