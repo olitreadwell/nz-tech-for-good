@@ -43,11 +43,11 @@ Known fixes applied proactively:
 1. **Pre-push hook**: `npm run prepush` blocks pushes that fail local build
 2. **test gate gate**: `.github/workflows/ci.yml` catches the same on pull requests
 3. **Incident response checklist**:
-   1. Read the error logs first
-   2. Reproduce locally
-   3. Form hypothesis based on evidence, not guesswork
-   4. Fix one thing at a time
-   5. Verify before pushing again
+ 1. Read the error logs first
+ 2. Reproduce locally
+ 3. Form hypothesis based on evidence, not guesswork
+ 4. Fix one thing at a time
+ 5. Verify before pushing again
 
 ## Action items
 

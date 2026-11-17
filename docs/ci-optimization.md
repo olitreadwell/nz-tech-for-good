@@ -42,16 +42,16 @@ They still hold a queue slot and make the Actions tab unreadable. Treat them as 
 ## Scaling rules of thumb (apply as you grow)
 
 - Add a remote build cache (Turborepo/Nx/Bazel) when builds exceed ~5 min or the monorepo has >3 packages, unchanged packages then skip compilation entirely.
-- Keep the test matrix Linux-only unless telemetry shows otherwise.  Split files with `--shard` before adding operating system variants.
+- Keep the test matrix Linux-only unless telemetry shows otherwise. Split files with `--shard` before adding operating system variants.
 - Push container images only when you actually deploy them, and prune untagged tags (keep latest 5 per major) in the registry lifecycle rules.
-- Preview environments: spot instances, auto-scale, hard time to live of 4–6 hours, destroyed on pull request close.
+- Preview environments: spot instances, auto-scale, hard time to live of 4,6 hours, destroyed on pull request close.
 
 ## Realistic savings (typical Next.js template usage)
 
-- test gate runner minutes: **30–50%** (path-skipped pushes, cancelled superseded runs, sharded e2e, cached installs).
+- test gate runner minutes: **30,50%** (path-skipped pushes, cancelled superseded runs, sharded e2e, cached installs).
 - Storage: **~80%** of artifact GB-months (3-day retention vs 90-day).
-- Docker build time: **50–70%** after the first run (layer cache hits).
-- Overall infrastructure spend: **20–40%** once preview/registry lifecycle rules are applied at scale.
+- Docker build time: **50,70%** after the first run (layer cache hits).
+- Overall infrastructure spend: **20,40%** once preview/registry lifecycle rules are applied at scale.
 
 Numbers assume a single-dev repo on hosted runners. Savings compound with more pushes per day.
 

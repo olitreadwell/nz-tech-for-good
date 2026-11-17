@@ -6,37 +6,37 @@ A plain-language list of 132 organisations, projects, and networks in Aotearoa N
 
 - [Start here](#start-here)
 - [Data and knowledge](#data-and-knowledge)
-  - [Open data](#open-data)
-  - [Environmental citizen science](#environmental-citizen-science)
+ - [Open data](#open-data)
+ - [Environmental citizen science](#environmental-citizen-science)
 - [Civic and community](#civic-and-community)
-  - [Civic tech](#civic-tech)
-  - [Government technology](#government-technology)
-  - [Nonprofit and NGO technology](#nonprofit-and-ngo-technology)
-  - [Volunteering and giving](#volunteering-and-giving)
-  - [Crisis and humanitarian technology](#crisis-and-humanitarian-technology)
-  - [Human rights technology](#human-rights-technology)
-  - [Legal aid and justice technology](#legal-aid-and-justice-technology)
+ - [Civic tech](#civic-tech)
+ - [Government technology](#government-technology)
+ - [Nonprofit and NGO technology](#nonprofit-and-ngo-technology)
+ - [Volunteering and giving](#volunteering-and-giving)
+ - [Crisis and humanitarian technology](#crisis-and-humanitarian-technology)
+ - [Human rights technology](#human-rights-technology)
+ - [Legal aid and justice technology](#legal-aid-and-justice-technology)
 - [Māori and indigenous data](#māori-and-indigenous-data)
-  - [Māori data sovereignty](#māori-data-sovereignty)
-  - [Iwi and Māori technology](#iwi-and-māori-technology)
+ - [Māori data sovereignty](#māori-data-sovereignty)
+ - [Iwi and Māori technology](#iwi-and-māori-technology)
 - [Access and inclusion](#access-and-inclusion)
-  - [Digital inclusion](#digital-inclusion)
-  - [Disability and accessibility technology](#disability-and-accessibility-technology)
-  - [Education equity technology](#education-equity-technology)
+ - [Digital inclusion](#digital-inclusion)
+ - [Disability and accessibility technology](#disability-and-accessibility-technology)
+ - [Education equity technology](#education-equity-technology)
 - [Health and wellbeing](#health-and-wellbeing)
-  - [Mental health technology](#mental-health-technology)
-  - [Health technology and hauora Māori](#health-technology-and-hauora-māori)
+ - [Mental health technology](#mental-health-technology)
+ - [Health technology and hauora Māori](#health-technology-and-hauora-māori)
 - [Climate, food and housing](#climate-food-and-housing)
-  - [Climate technology](#climate-technology)
-  - [Food rescue and food security](#food-rescue-and-food-security)
-  - [Housing and homelessness technology](#housing-and-homelessness-technology)
+ - [Climate technology](#climate-technology)
+ - [Food rescue and food security](#food-rescue-and-food-security)
+ - [Housing and homelessness technology](#housing-and-homelessness-technology)
 - [Work, money and learning](#work-money-and-learning)
-  - [Worker and platform co-ops](#worker-and-platform-co-ops)
-  - [Financial inclusion and fintech](#financial-inclusion-and-fintech)
-  - [Research and education technology](#research-and-education-technology)
-  - [Makerspaces and hackerspaces](#makerspaces-and-hackerspaces)
+ - [Worker and platform co-ops](#worker-and-platform-co-ops)
+ - [Financial inclusion and fintech](#financial-inclusion-and-fintech)
+ - [Research and education technology](#research-and-education-technology)
+ - [Makerspaces and hackerspaces](#makerspaces-and-hackerspaces)
 - [Tech ethics and responsible AI](#tech-ethics-and-responsible-ai)
-  - [Technology ethics and responsible AI](#technology-ethics-and-responsible-ai)
+ - [Technology ethics and responsible AI](#technology-ethics-and-responsible-ai)
 
 ## Start here
 
@@ -77,7 +77,7 @@ Download the data as [JSON](https://github.com/olitreadwell/nz-tech-for-good/blo
 
 ### Environmental citizen science
 
-- [iNaturalist NZ – Mātaki Taiao (formerly NatureWatch NZ)](https://www.inaturalist.nz) - INaturalist NZ – Mātaki Taiao, run by the New Zealand Bio-Recording Network Trust, is a website and app where anyone can record sightings of plants, animals, and fungi, helping scientists track new and spreading species across the country. It started in 2006 as NatureWatch NZ and rebranded in 2018.
+- [iNaturalist NZ, Mātaki Taiao (formerly NatureWatch NZ)](https://www.inaturalist.nz) - INaturalist NZ, Mātaki Taiao, run by the New Zealand Bio-Recording Network Trust, is a website and app where anyone can record sightings of plants, animals, and fungi, helping scientists track new and spreading species across the country. It started in 2006 as NatureWatch NZ and rebranded in 2018.
 - [Kiwi Coast](https://kiwicoast.org.nz) - Trust links more than 270 community, hapu, and iwi-led pest control groups along 291 kilometres of Northland coastline, coordinating them with AI-enabled traps, radio-tagged kiwi tracking, and shared data tools so volunteers can build the first kiwi corridor in New Zealand.
 - [Predator Free NZ Trust](https://predatorfreenz.org) - Mobilises communities across the country to trap invasive predators and protect native wildlife, using a national map, trail cameras, and data tools so volunteers can track and coordinate their conservation efforts.
 
@@ -192,7 +192,7 @@ Download the data as [JSON](https://github.com/olitreadwell/nz-tech-for-good/blo
 - [Clearhead](https://www.myclearhead.com) - A New Zealand company, built with clinical experts, that gives workplaces a digital mental health platform with self-help tools, staff wellbeing data, and access to therapy sessions in person, online, or after hours.
 - [Groov (formerly Mentemia)](https://www.groovnow.com) - Groov is a New Zealand mental health app, started in 2018 by former All Black Sir John Kirwan and tech entrepreneur Adam Clark under the name Mentemia, that gives people simple daily tools like mindfulness exercises and mood tracking to look after their mental wellbeing.
 - [Headstrong](https://www.headstrong.org.nz) - A free mental health app for NZ teenagers developed by the University of Auckland alongside rangatahi, using chatbot guides to deliver evidence-based psychological skills grounded in Te Whare Tapa Whā, funded by Health NZ.
-- [ignite](https://ignite.org.nz) - A digital wellbeing platform connecting individuals and organisations to mental health and wellbeing support across NZ . Offering counsellors, psychologists, and holistic practitioners bookable online with no referral or waitlist, including a free rural wellbeing programme with Farmlands and the Rural Support Trust.
+- [ignite](https://ignite.org.nz) - A digital wellbeing platform connecting individuals and organisations to mental health and wellbeing support across NZ . Offering counsellors, psychologists, and complete practitioners bookable online with no referral or waitlist, including a free rural wellbeing programme with Farmlands and the Rural Support Trust.
 - [Le Va](https://www.leva.co.nz) - A Pasifika-led organisation that runs Aunty Dee, a free online structured problem-solving tool for Pasifika young people, alongside community-led suicide prevention programmes that have engaged over 590,000 people across Aotearoa.
 - [SPARX](https://www.sparx.org.nz) - A free self-help game, built by the University of Auckland, that teaches young people cognitive behavioural therapy skills to manage depression and anxiety through a fantasy quest storyline, available online and as a mobile app.
 
@@ -245,7 +245,7 @@ Download the data as [JSON](https://github.com/olitreadwell/nz-tech-for-good/blo
 
 - [Catalyst IT](https://www.catalyst.net.nz) - A New Zealand-owned open-source software company, founded in Wellington in 1997, that builds and supports open-source systems for education (such as Moodle) and libraries (such as Koha), and does important work for the public sector.
 - [KiwiNet (Kiwi Innovation Network)](https://kiwinet.org.nz) - KiwiNet is a network of 14 New Zealand universities and research organisations that funds early-stage research and helps scientists turn discoveries into real-world products, patents, and startup companies.
-- [Koi Tū – Centre for Informed Futures](https://informedfutures.org) - Koi Tū is an independent research centre at the University of Auckland that studies big, long-term problems facing New Zealand, like the impact of technology on society, and turns that research into policy advice.
+- [Koi Tū, Centre for Informed Futures](https://informedfutures.org) - Koi Tū is an independent research centre at the University of Auckland that studies big, long-term problems facing New Zealand, like the impact of technology on society, and turns that research into policy advice.
 - [REANNZ](https://www.reannz.co.nz) - A Crown-owned non-profit that runs the high-speed internet network in New Zealand dedicated to universities, research institutes, and schools, connecting them to more than 120 similar networks worldwide.
 - [Te Pūnaha Matatini](https://www.tepunahamatatini.ac.nz) - A research centre that studies complex systems, like disease spread, ecosystems, and social networks, to help New Zealand understand and respond to big interconnected challenges.
 - [Tātai Aho Rau Core Education](https://core-ed.org) - A Christchurch-founded, charity-registered social enterprise that has worked since 2003 on educational research, teacher professional development, and free digital resources like the LEARNZ virtual field trips for New Zealand schools.
@@ -321,3 +321,28 @@ If you are listed here and want your information corrected or removed, use the i
 - Virtual reality (VR): a computer-made world used to enter a simulated place.
 - WHACK (WHACK): a name used by an organisation in this directory.
 - WWF (WWF): a name used by an organisation in this directory.
+
+## Words used
+
+- catalogue: a searchable list of datasets.
+- licence: the rules for using something.
+- open data: data that anyone can read and use.
+- API: a way for one computer to ask another for data.
+- CSV: a simple table file you can open in a spreadsheet.
+- JSON: a text file that computers read as labelled data.
+- LINZ: Land Information New Zealand, the government group that holds address data.
+- portal: a website that lists data or services.
+- governance: the rules for who decides and who checks.
+- sovereignty: the right of a group to control its own data.
+
+- open data: data that anyone can read and use.
+
+- wcc: Wellington City Council.
+
+- ai: artificial intelligence, software that makes guesses or text from patterns.
+- HTML: the code that builds a web page.
+
+- niwa: National Institute of Water and Atmospheric Research.
+- mbie: Ministry of Business, Innovation and Employment.
+
+- get: a request that asks a web server for data.

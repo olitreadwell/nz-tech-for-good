@@ -13,11 +13,11 @@ Legend: `[ ]` not started · `[x]` done · items marked **(needs Oli)** are acco
 - [x] Add a scheduled weekly link-check workflow that runs `scripts/linkcheck.py` and opens/updates a single tracking issue on genuine dead links, closing it when they recover. (`.github/workflows/linkcheck.yml`)
 - [x] Add Dependabot for the `github-actions`, `pip`, and `npm` (workspaces) ecosystems. (`.github/dependabot.yml`)
 - [x] Auto-merge low-risk Dependabot updates via `pull_request_target` workflow
-  + daily release-age sweep: development non-major, production patch, github-actions non-major, and security advisory pull requests auto-merge once test gate is green and every bumped release is at least 3 days old. Production minor and any major version wait for a human review. GitHub Actions tokens cannot approve pull requests, so no approval step. (`scripts/dependabot-auto-merge.mjs`, `.github/workflows/dependabot-auto-merge.yml` + `.github/workflows/ dependabot-release-age-sweep.yml`)
+ + daily release-age sweep: development non-major, production patch, github-actions non-major, and security advisory pull requests auto-merge once test gate is green and every bumped release is at least 3 days old. Production minor and any major version wait for a human review. GitHub Actions tokens cannot approve pull requests, so no approval step. (`scripts/dependabot-auto-merge.mjs`, `.github/workflows/dependabot-auto-merge.yml` + `.github/workflows/ dependabot-release-age-sweep.yml`)
 - [x] Auto-close stale link-check issues if left open with no new failures for N weeks (belt-and-braces on top of the recover-close logic). (Restored with the weekly `linkcheck.yml` workflow 2026-08-25. The file had gone missing while the roadmap claimed it existed.)
 - [x] Add a `stale` workflow (actions/stale) to nudge and close abandoned issues/pull requests politely, with generous timeouts (this is a low-traffic repo). (`.github/workflows/stale.yml`, done 2026-08-07)
 - [x] Add a labeler workflow that auto-labels pull requests touching `data/entries/` vs `scripts/` vs `docs/` so triage is faster. (`.github/workflows/labeler.yml`
-  + `.github/labeler.yml`, done 2026-08-07)
+ + `.github/labeler.yml`, done 2026-08-07)
 - [x] Disable git-triggered Vercel deploys entirely. Deploy only via the `vercel --prod` command-line tool (`docs/deploy.md`, `vercel.json` `git.deploymentEnabled: false`, 2026-08-24). Kills per-pull request Vercel checks and preview builds.
 - [ ] Add an "entry count" badge or shield to the readme, generated from a small step in test gate (keeps the headline number honest as the directory grows).
 - [x] Wayback Machine archiving of entry websites (`scripts/archive_wayback.py` + weekly `wayback.yml` workflow, done 2026-08-25).
@@ -26,8 +26,8 @@ Legend: `[ ]` not started · `[x]` done · items marked **(needs Oli)** are acco
 ## test gate & quality gates
 
 - [x] Pin all GitHub Actions to commit SHAs (not just major tags) for supply- chain safety. Let Dependabot bump them. (Done 2026-08-07, all 7 workflows pinned . Dependabot already configured to bump github-actions ecosystem.)
-- [x] Add a lint step for the yaml entries (e.g. `yamllint`) so formatting stays consistent, not just schema-valid. (`.yamllint.yml` + test gate step, done 2026-08-07, non-blocking.)
-- [x] Add a spell/style check for `GUIDE.md` and docs (e.g. a lightweight vale or codespell pass, non-blocking at first). (`codespell` test gate step, done 2026-08-07, non-blocking.)
+- [x] Add a lint step for the yaml entries (for example `yamllint`) so formatting stays consistent, not just schema-valid. (`.yamllint.yml` + test gate step, done 2026-08-07, non-blocking.)
+- [x] Add a spell/style check for `GUIDE.md` and docs (for example a lightweight vale or codespell pass, non-blocking at first). (`codespell` test gate step, done 2026-08-07, non-blocking.)
 - [x] Cache pip dependencies in test gate to speed up runs (`actions/setup-python` cache key on `requirements.txt`). (`.github/workflows/ci.yml`, `.github/workflows/linkcheck.yml`, done 2026-08-06)
 - [x] Run the link check inside the main test gate as advisory only (already non-blocking) but surface a summary in the job step summary (`$GITHUB_STEP_SUMMARY`) so it is visible without opening logs. (Done 2026-08-07)
 - [x] Auto-close stale link-check issues if left open with no new failures for N weeks (belt-and-braces on top of the recover-close logic). (Added nag comment after 4 weeks of unresolved dead links, done 2026-08-07)
@@ -50,7 +50,7 @@ Legend: `[ ]` not started · `[x]` done · items marked **(needs Oli)** are acco
 - [ ] Backfill `founding_year` where discoverable from about pages or official sources. 141/176 entries currently missing it.
 - [x] Backfill `takes_contributors` where the org has a public volunteering or open-source contribution page. 164/176 entries currently null. (Campaign orgs backfilled 2026-08-25.)
 - [x] Backfill `careers_url` where the org has a careers, jobs, or volunteering page. 169/176 entries currently empty. (Campaign orgs backfilled 2026-08-25.)
-- [ ] Cross-link entries via `related_to` where real, verifiable connections exist (e.g. same network, data dependency, shared founder). 77/176 entries currently have empty `related_to`.
+- [ ] Cross-link entries via `related_to` where real, verifiable connections exist (for example same network, data dependency, shared founder). 77/176 entries currently have empty `related_to`.
 
 ## Community & discoverability
 
@@ -64,10 +64,10 @@ Legend: `[ ]` not started · `[x]` done · items marked **(needs Oli)** are acco
 - [x] Add a `CODEOWNERS` file so review requests route automatically. (`.github/CODEOWNERS`, done 2026-08-07)
 - [x] Add a `.github/FUNDING.yml` if/when there is a funding channel to point at (skip until there is a real one, do not invent). (Created as placeholder, done 2026-08-07)
 - [x] Add an all-contributors setup to credit everyone who adds or verifies entries. (`.all-contributorsrc` + readme section, done 2026-08-07)
-- [x] Add a short "good first issue" set (e.g. verify N entries, add one resource) to lower the barrier for new contributors. (Issues #23, #24,
-  #25 created, done 2026-08-07)
+- [x] Add a short "good first issue" set (for example verify N entries, add one resource) to lower the barrier for new contributors. (Issues #23, #24,
+ #25 created, done 2026-08-07)
 - [x] Backfill `github` and `linkedin_org` fields where missing but publicly available, one verified source at a time. (9 GitHub orgs backfilled: InternetNZ, Enspiral, ActionStation, GeoNet, GovHackNZ, Figure.NZ, Summer of Tech, Catalyst it, Tinkd Makerspace, done 2026-08-07)
-- [x] Cross-link entries via `related_to` where real, verifiable connections exist (e.g. same network, data dependency, shared founder). (9 new cross-links added: ActionStation↔Amnesty, Choices NZ↔Workbridge, BenefitMe↔`DAC`, Headstrong↔`SPARX`, Figure.NZ↔data.govt.nz, Newsroom↔Spinoff, Public Interest↔Newsroom+Spinoff, Hackland↔Tinkd, `NZDEN`↔Workbridge, done 2026-08-07)
+- [x] Cross-link entries via `related_to` where real, verifiable connections exist (for example same network, data dependency, shared founder). (9 new cross-links added: ActionStation↔Amnesty, Choices NZ↔Workbridge, BenefitMe↔`DAC`, Headstrong↔`SPARX`, Figure.NZ↔data.govt.nz, Newsroom↔Spinoff, Public Interest↔Newsroom+Spinoff, Hackland↔Tinkd, `NZDEN`↔Workbridge, done 2026-08-07)
 
 ## Get involved (research-backed, added 2026-08-06)
 
@@ -82,7 +82,7 @@ This directory currently answers "what exists" well and "what do I do next" poor
 **Needs a design/product decision before building (do not silently build these in a loop iteration, bring to Oli first):**
 
 - [x] A "Get involved" page on the site with a small number of clear, low-commitment next actions (join a community, find an event, add an entry, read the guide for a domain), modelled on the Civic Tech Field Guide four-entry-point homepage pattern, not a wall of links. (`site/src/pages/get-involved.astro`, done 2026-08-07)
-- [x] Short "what is this and why does it matter" explainer text for each domain (e.g. what "food-rescue / food-security tech" covers and why it is its own category), shown on each domain page. (`data/domain-descriptions.yaml`). All 27 domains have descriptions, done 2026-08-07)
+- [x] Short "what is this and why does it matter" explainer text for each domain (for example what "food-rescue / food-security tech" covers and why it is its own category), shown on each domain page. (`data/domain-descriptions.yaml`). All 27 domains have descriptions, done 2026-08-07)
 - [x] Consider new optional schema fields for a `community_url` (Slack/ Discord invite) and `events_url` (meetup/events page), separate from `website`. (Already added to `schema/entry.schema.json`, `data/entry.template.yaml`, and all scripts and pages. Fields exist and are rendered on entry detail pages, done 2026-08-07)
 - [x] A prominent "Add an entry" call to action on the directory/homepage (not just a CONTRIBUTING.md link), pointing at the existing add-entry issue form. (Present on index.astro, directory.astro, and get-involved.astro, done 2026-08-07)
 - [ ] Consider whether this project should have its own social presence (a place to follow for new entries). **(needs Oli)** this means creating and owning an account, not something to invent.

@@ -42,9 +42,9 @@ An entry belongs here if all of the following are true:
 
 If you know a group that fits the scope:
 
-1. **Check it is not already listed**: browse <a href="../GUIDE.md">the guide</a> or search the [live site](https://nz-tech-for-good.vercel.app/).
+1. **Check it is not already listed**: browse <a href="./GUIDE.md">the guide</a> or search the [live site](https://nz-tech-for-good.vercel.app/).
 2. **Verify it is active**: check the website resolves and the org is still operating.
-3. **Open an issue** using the [add-entry template](../../issues/new?template=add-entry.yml) or open a pull request following [CONTRIBUTING.md](../CONTRIBUTING.md).
+3. **Open an issue** using the [add-entry template](././issues/new?template=add-entry.yml) or open a pull request following [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Edge cases
 

@@ -22,7 +22,7 @@ Every pull request and push runs the gates below. Anything marked **blocking** m
 
 - Progressive web app: `public/manifest.webmanifest` (linked from the root layout) plus a minimal service worker (`public/sw.js`) registered only in production (`src/components/providers/service-worker-register.tsx`). The worker is network-first for navigations, cache-first for same-origin static assets, and never caches `/api/*`.
 - Language-model discoverability: `public/llms.txt` describes the site for automated crawlers, with relative links so it stays correct in every scaffolded repo.
-- Internationalization: the site is English-only. `hreflang` (`en` and `x-default`) is declared in the root layout so crawlers know there is no localized variant. Locale routing (e.g. next-intl) is a deliberate non-goal for the template. Add it per-app when a second language lands.
+- Internationalization: the site is English-only. `hreflang` (`en` and `x-default`) is declared in the root layout so crawlers know there is no localized variant. Locale routing (for example next-intl) is a deliberate non-goal for the template. Add it per-app when a second language lands.
 - Theme tokens: `--default-transition-*` are registered with `@property` in `globals.css` so the browser treats them as typed, animatable values and the cascade stays deterministic when the theme class flips after load.
 
 ## Performance
