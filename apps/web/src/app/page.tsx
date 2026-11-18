@@ -3,6 +3,7 @@ import { ArrowRight, BarChart3, FolderOpen, MapPin } from 'lucide-react';
 
 import { getAllEntries, getDomains, getRegions } from '@/lib/data';
 import { EntryCard } from '@/components/EntryCard';
+import { Mission } from '@/components/Mission';
 
 export default function HomePage() {
   const entries = getAllEntries();
@@ -54,6 +55,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <Mission name="NZ Tech-for-Good" country="Aotearoa New Zealand" />
 
       <section className="mt-12">
         <h2 className="text-2xl font-bold">Recently added or updated</h2>

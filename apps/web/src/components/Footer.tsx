@@ -22,6 +22,9 @@ export function Footer({ latestVerified }: { latestVerified?: string }) {
               </a>
               .
             </p>
+            <p className="mt-2 text-xs font-medium">
+              Volunteer-run. No ads or tracking. Not monetised.
+            </p>
           </div>
           {footerNav.map((group) => (
             <div key={group.title}>

@@ -2,6 +2,12 @@
 
 A plain-language list of 132 organisations, projects, and networks in Aotearoa New Zealand that use technology for public good.
 
+## Mission
+
+NZ Tech-for-Good exists to make the work of organisations in Aotearoa New Zealand using technology for public good easier to find, check, and support. It is volunteer-run and built in the open, so anyone can find prior art before starting something new.
+
+Volunteer-run. No ads or tracking. Not monetised.
+
 ## What this does
 
 This list names groups in Aotearoa New Zealand that use technology for public

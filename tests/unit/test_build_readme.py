@@ -87,6 +87,21 @@ class TestRenderReadme:
 
         assert f"{build_readme.SITE_URL}/entry/example-org" in text
 
+    def test_states_the_mission_and_the_no_ads_pledge(self):
+        text = build_readme.render_readme([entry()])
+
+        assert "## Mission" in text
+        assert f"{build_readme.TITLE} exists" in text
+        assert "No ads or tracking. Not monetised." in text
+
+    def test_does_not_invent_definitions_for_uppercase_org_names(self):
+        text = build_readme.render_readme(
+            [entry(name="AFRA", slug="afra"), entry(name="LINZ", slug="linz")]
+        )
+
+        assert "## Terms" not in text
+        assert "a name used by an organisation" not in text
+
 
 class TestCheckReadme:
     def test_reports_stale_content(self, tmp_path):
