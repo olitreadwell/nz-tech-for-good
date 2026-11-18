@@ -102,6 +102,13 @@ class TestRenderReadme:
         assert "## Terms" not in text
         assert "a name used by an organisation" not in text
 
+    def test_has_one_words_used_section(self):
+        text = build_readme.render_readme([entry()])
+
+        assert text.count("## Words used") == 1
+        assert "### Words used in this list" not in text
+        assert "- AFRA: Aotearoa Food Rescue Alliance" in text
+
 
 class TestCheckReadme:
     def test_reports_stale_content(self, tmp_path):

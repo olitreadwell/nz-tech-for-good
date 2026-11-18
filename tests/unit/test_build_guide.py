@@ -201,6 +201,14 @@ class TestLoadDomainDescriptions:
 
 
 class TestRenderGuide:
+    def test_does_not_invent_definitions_for_uppercase_org_names(self):
+        entries = [{"name": "AFRA", "domain": "civic-tech", "what": "Publishes open data.",
+                    "region": "Auckland"}]
+        text, _ = build_guide.render_guide(entries, domain_descriptions={})
+
+        assert "## Terms" not in text
+        assert "a name used by an organisation" not in text
+
     def test_defaults_to_loading_real_domain_descriptions(self):
         # domain_descriptions=None (the default) should trigger a real load
         # from DOMAIN_DESCRIPTIONS_PATH rather than rendering with none.

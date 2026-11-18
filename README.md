@@ -320,52 +320,6 @@ The website is the searchable version of this list. The data is available under 
 
 If you are listed here and want your information corrected or removed, use the issue link in Start here. That request takes priority over completeness.
 
-### Words used in this list
-
-**API**: a way for one computer program to ask another for data.
-
-**GIS**: software for making and reading maps from data.
-
-**AI**: software that can do tasks that usually need human judgement.
-
-## Terms
-
-- AFRA (AFRA): a name used by an organisation in this directory.
-- Artificial intelligence (AI): software used to perform tasks that need human judgement.
-- ALTER (ALTER): a name used by an organisation in this directory.
-- Application programming interface (API): software used by one program to talk to another.
-- BY (BY): a name used by an organisation in this directory.
-- CAIPP (CAIPP): a name used by an organisation in this directory.
-- Creative Commons licence (CC): a public licence used for shared works.
-- CNC (CNC): a name used by an organisation in this directory.
-- CSV (CSV): a name used by an organisation in this directory.
-- DECA (DECA): a name used by an organisation in this directory.
-- DHAP (DHAP): a name used by an organisation in this directory.
-- DIAA (DIAA): a name used by an organisation in this directory.
-- EPIC (EPIC): a name used by an organisation in this directory.
-- FYI (FYI): a name used by an organisation in this directory.
-- Geographic information system (GIS): software used for mapping and spatial data.
-- GNS (GNS): a name used by an organisation in this directory.
-- Information technology (IT): computer systems and the work that runs them.
-- JSON (JSON): a name used by an organisation in this directory.
-- LEARNZ (LEARNZ): a name used by an organisation in this directory.
-- LINZ (LINZ): a name used by an organisation in this directory.
-- LRIS (LRIS): a name used by an organisation in this directory.
-- MBIE (MBIE): a name used by an organisation in this directory.
-- Massachusetts Institute of Technology licence (MIT): an open-source licence used for software.
-- Non-governmental organisation (NGO): a group that is not part of government.
-- NIWA (NIWA): a name used by an organisation in this directory.
-- NZLII (NZLII): a name used by an organisation in this directory.
-- REANNZ (REANNZ): a name used by an organisation in this directory.
-- SA (SA): a name used by an organisation in this directory.
-- SEEK (SEEK): a name used by an organisation in this directory.
-- SPARX (SPARX): a name used by an organisation in this directory.
-- Science technology engineering and mathematics (STEM): 4 school subjects used together for technical work.
-- Science technology engineering mathematics and medicine (STEMM): 5 fields used together for health and technical work.
-- Virtual reality (VR): a computer-made world used to enter a simulated place.
-- WHACK (WHACK): a name used by an organisation in this directory.
-- WWF (WWF): a name used by an organisation in this directory.
-
 ## Words used
 
 - catalogue: a searchable list of datasets.
@@ -399,7 +353,7 @@ If you are listed here and want your information corrected or removed, use the i
 - IT: information technology, computer systems and the work that runs them.
 - DIAA: Digital Identity Aotearoa New Zealand, a group that works on digital identity.
 - DECA: Digital Equity Coalition Aotearoa, a group that works on digital inclusion.
-- EPIC: a name used by an organisation in this directory.
+- EPIC: EPIC Westport, a Buller innovation hub and business incubator.
 - STEM: science, technology, engineering, and mathematics.
 - SPARX: a free self-help game that teaches skills for depression and anxiety.
 - DHAP: Digital Health Accreditation Pathway, a review process for digital health tools.
@@ -407,5 +361,5 @@ If you are listed here and want your information corrected or removed, use the i
 - AFRA: Aotearoa Food Rescue Alliance, the national peak body for food rescue groups.
 - REANNZ: Research and Education Advanced Network New Zealand, the research internet network.
 - LEARNZ: a programme of virtual field trips for New Zealand schools.
-- SA: a name used by an organisation in this directory.
+- SA: share-alike, a Creative Commons condition that keeps adaptations under the same licence.
 - VR: virtual reality, a computer-made world used to enter a simulated place.

@@ -185,48 +185,6 @@ def build_internal_edges(edge_set, entry_domain):
 
 
 
-# Plain definitions for uppercase names and terms in the generated list. The
-# style checker requires the first use of each to be defined. A short glossary
-# keeps the entries themselves readable.
-ACRONYM_RE = re.compile(r"(?<![A-Za-z0-9])([A-Z][A-Z0-9]{1,5})(?![A-Za-z0-9])")
-COMMON_ACRONYMS = {"NZ", "UK", "USA", "US", "EU", "ID", "OK", "TV", "PDF", "URL"}
-TECH_DEFS = {
-    "AI": "Artificial intelligence (AI): software used to perform tasks that need human judgement.",
-    "API": "Application programming interface (API): software used by one program to talk to another.",
-    "CBT": "Cognitive behavioural therapy (CBT): a talking therapy used to change thought patterns.",
-    "CC": "Creative Commons licence (CC): a public licence used for shared works.",
-    "GIS": "Geographic information system (GIS): software used for mapping and spatial data.",
-    "IT": "Information technology (IT): computer systems and the work that runs them.",
-    "MIT": "Massachusetts Institute of Technology licence (MIT): an open-source licence used for software.",
-    "NGO": "Non-governmental organisation (NGO): a group that is not part of government.",
-    "OIA": "Official Information Act (OIA): a New Zealand law used to request public records.",
-    "STEM": "Science technology engineering and mathematics (STEM): 4 school subjects used together for technical work.",
-    "STEMM": "Science technology engineering mathematics and medicine (STEMM): 5 fields used together for health and technical work.",
-    "VR": "Virtual reality (VR): a computer-made world used to enter a simulated place.",
-    "WCAG": "Web Content Accessibility Guidelines (WCAG): rules used to make web content accessible.",
-    "YAML": "YAML file format (YAML): a plain-text format used for structured data.",
-}
-
-
-def glossary_lines(text):
-    found = set()
-    for match in ACRONYM_RE.finditer(text):
-        acr = match.group(1)
-        if acr not in COMMON_ACRONYMS:
-            found.add(acr)
-    lines = ["## Terms", ""]
-    for acr in sorted(found):
-        lines.append(
-            "- "
-            + TECH_DEFS.get(
-                acr,
-                f"{acr} ({acr}): a name used by an organisation in this directory.",
-            )
-        )
-    lines.append("")
-    return lines
-
-
 def render_guide(
     entries,
     domain_label_short=DOMAIN_LABEL_SHORT,
@@ -423,7 +381,6 @@ def render_guide(
     )
     lines.append("")
 
-    lines.extend(glossary_lines("\n".join(lines)))
     text = "\n".join(lines) + "\n"
     stats = {
         "total": total,

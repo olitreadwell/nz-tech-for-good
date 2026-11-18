@@ -246,46 +246,51 @@ def anchor(text: str) -> str:
 
 
 
-# Plain definitions for uppercase names and terms in the generated list. The
-# style checker requires the first use of each to be defined. A short glossary
-# keeps the entries themselves readable.
-ACRONYM_RE = re.compile(r"(?<![A-Za-z0-9])([A-Z][A-Z0-9]{1,5})(?![A-Za-z0-9])")
-COMMON_ACRONYMS = {"NZ", "UK", "USA", "US", "EU", "ID", "OK", "TV", "PDF", "URL"}
-TECH_DEFS = {
-    "AI": "Artificial intelligence (AI): software used to perform tasks that need human judgement.",
-    "API": "Application programming interface (API): software used by one program to talk to another.",
-    "CBT": "Cognitive behavioural therapy (CBT): a talking therapy used to change thought patterns.",
-    "CC": "Creative Commons licence (CC): a public licence used for shared works.",
-    "GIS": "Geographic information system (GIS): software used for mapping and spatial data.",
-    "IT": "Information technology (IT): computer systems and the work that runs them.",
-    "MIT": "Massachusetts Institute of Technology licence (MIT): an open-source licence used for software.",
-    "NGO": "Non-governmental organisation (NGO): a group that is not part of government.",
-    "OIA": "Official Information Act (OIA): a New Zealand law used to request public records.",
-    "STEM": "Science technology engineering and mathematics (STEM): 4 school subjects used together for technical work.",
-    "STEMM": "Science technology engineering mathematics and medicine (STEMM): 5 fields used together for health and technical work.",
-    "VR": "Virtual reality (VR): a computer-made world used to enter a simulated place.",
-    "WCAG": "Web Content Accessibility Guidelines (WCAG): rules used to make web content accessible.",
-    "YAML": "YAML file format (YAML): a plain-text format used for structured data.",
-}
-
-
-def glossary_lines(text):
-    found = set()
-    for match in ACRONYM_RE.finditer(text):
-        acr = match.group(1)
-        if acr not in COMMON_ACRONYMS:
-            found.add(acr)
-    lines = ["## Terms", ""]
-    for acr in sorted(found):
-        lines.append(
-            "- "
-            + TECH_DEFS.get(
-                acr,
-                f"{acr} ({acr}): a name used by an organisation in this directory.",
-            )
-        )
-    lines.append("")
-    return lines
+# Terms used in the list. Kept in one place so the README has a single
+# glossary rather than a generated mini-glossary plus a hand-written one.
+WORDS_USED = (
+    ("catalogue", "a searchable list of datasets."),
+    ("licence", "the rules for using something."),
+    ("open data", "data that anyone can read and use."),
+    ("API", "a way for one computer to ask another for data."),
+    ("CSV", "a simple table file you can open in a spreadsheet."),
+    ("JSON", "a text file that computers read as labelled data."),
+    ("LINZ", "Land Information New Zealand, the government group that holds address data."),
+    ("portal", "a website that lists data or services."),
+    ("governance", "the rules for who decides and who checks."),
+    ("sovereignty", "the right of a group to control its own data."),
+    ("AI", "software that can do tasks that usually need human judgement."),
+    ("WCC", "Wellington City Council."),
+    ("HTML", "the code that builds a web page."),
+    ("NIWA", "National Institute of Water and Atmospheric Research."),
+    ("MBIE", "Ministry of Business, Innovation and Employment."),
+    ("GET", "a request that asks a web server for data."),
+    ("GIS", "software for making and reading maps from data."),
+    ("LRIS", "Land Resource Information System, a land data portal run by Manaaki Whenua Landcare Research."),
+    ("GNS", "GNS Science, a Crown research institute that studies earth, water, and climate."),
+    ("WHACK", "Wellington Hackspace, a member-run community workshop."),
+    ("SEEK", "SEEK Volunteer, a national volunteer matching platform."),
+    ("ALTER", "Advancing Law and Technology Responsibly, a University of Auckland law initiative."),
+    ("STEMM", "science, technology, engineering, mathematics, and mātauranga."),
+    ("CAIPP", "Centre for Artificial Intelligence and Public Policy at the University of Otago."),
+    ("NGO", "non-governmental organisation, a group that is not part of government."),
+    ("FYI", "FYI.org.nz, a platform for Official Information Act requests."),
+    ("CNC", "computer numerical control, a way to guide a cutting or carving machine."),
+    ("NZLII", "New Zealand Legal Information Institute, a free legal research website."),
+    ("IT", "information technology, computer systems and the work that runs them."),
+    ("DIAA", "Digital Identity Aotearoa New Zealand, a group that works on digital identity."),
+    ("DECA", "Digital Equity Coalition Aotearoa, a group that works on digital inclusion."),
+    ("EPIC", "EPIC Westport, a Buller innovation hub and business incubator."),
+    ("STEM", "science, technology, engineering, and mathematics."),
+    ("SPARX", "a free self-help game that teaches skills for depression and anxiety."),
+    ("DHAP", "Digital Health Accreditation Pathway, a review process for digital health tools."),
+    ("WWF", "World Wide Fund for Nature, a conservation group."),
+    ("AFRA", "Aotearoa Food Rescue Alliance, the national peak body for food rescue groups."),
+    ("REANNZ", "Research and Education Advanced Network New Zealand, the research internet network."),
+    ("LEARNZ", "a programme of virtual field trips for New Zealand schools."),
+    ("SA", "share-alike, a Creative Commons condition that keeps adaptations under the same licence."),
+    ("VR", "virtual reality, a computer-made world used to enter a simulated place."),
+)
 
 
 def render_readme(entries: list[dict[str, object]]) -> str:
@@ -351,17 +356,12 @@ def render_readme(entries: list[dict[str, object]]) -> str:
             "",
             "If you are listed here and want your information corrected or removed, use the issue link in Start here. That request takes priority over completeness.",
             "",
-            "### Words used in this list",
-            "",
-            "**API**: a way for one computer program to ask another for data.",
-            "",
-            "**GIS**: software for making and reading maps from data.",
-            "",
-            "**AI**: software that can do tasks that usually need human judgement.",
-            "",
         ]
     )
-    lines.extend(glossary_lines("\n".join(lines)))
+    lines.extend(["## Words used", ""])
+    for term, definition in WORDS_USED:
+        lines.append(f"- {term}: {definition}")
+    lines.append("")
     return "\n".join(lines)
 
 
