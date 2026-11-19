@@ -32,7 +32,7 @@ export function Footer({ latestVerified }: { latestVerified?: string }) {
               <ul className="mt-1 space-y-1 text-xs">
                 {group.links.map((link) => (
                   <li key={`${group.title}-${link.href}`}>
-                    <Link href={link.href} className="text-text-muted hover:text-text">
+                    <Link href={link.href} className="inline-flex min-h-6 items-center text-text-muted hover:text-text">
                       {link.label}
                     </Link>
                   </li>
@@ -44,7 +44,7 @@ export function Footer({ latestVerified }: { latestVerified?: string }) {
                         href="https://github.com/olitreadwell/nz-tech-for-good"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-text-muted hover:text-text"
+                        className="inline-flex min-h-6 items-center text-text-muted hover:text-text"
                       >
                         GitHub
                       </a>
@@ -54,7 +54,7 @@ export function Footer({ latestVerified }: { latestVerified?: string }) {
                         href="https://github.com/olitreadwell/nz-tech-for-good/blob/main/CONTRIBUTING.md"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-text-muted hover:text-text"
+                        className="inline-flex min-h-6 items-center text-text-muted hover:text-text"
                       >
                         Contribute
                       </a>
@@ -72,7 +72,7 @@ export function Footer({ latestVerified }: { latestVerified?: string }) {
                   href="https://raw.githubusercontent.com/olitreadwell/nz-tech-for-good/main/data/exports/entries.json"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-text-muted hover:text-text"
+                  className="inline-flex min-h-6 items-center text-text-muted hover:text-text"
                 >
                   JSON Export
                 </a>
@@ -82,7 +82,7 @@ export function Footer({ latestVerified }: { latestVerified?: string }) {
                   href="https://raw.githubusercontent.com/olitreadwell/nz-tech-for-good/main/data/exports/entries.csv"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-text-muted hover:text-text"
+                  className="inline-flex min-h-6 items-center text-text-muted hover:text-text"
                 >
                   CSV Export
                 </a>
